@@ -99,8 +99,13 @@ a book <2>
 <1> the metadata
 <2> the data
 
-- Data without metadata can be worthless (imagine a library without a library catalogue)
-- Metadata can be informative in its own right footnote:[http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata]
+==  !
+
+-> Data without metadata can be worthless (imagine a library without a library catalogue)
+
+-> Metadata can be informative in its own right, as shown with the NSA scandal: footnote:[http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata]
+
+image:metadata.png["The trouble with metadata"]
 
 === 3. zoom in, zoom out
 ==  3. zoom in, zoom out
