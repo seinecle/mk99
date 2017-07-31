@@ -523,16 +523,7 @@ table.CodeRay td.code>pre{padding:0}
 <ul class="sectlevel1">
 <li><a href="#_definition_of_data">Definition of data</a></li>
 <li><a href="#_examples">Examples!</a></li>
-<li><a href="#_3_take_aways_from_the_examples">3 take aways from the examples</a>
-<ul class="sectlevel2">
-<li><a href="#_1_think_about_data_in_a_broad_sense">1. Think about data in a broad sense</a></li>
-<li><a href="#_2_metadata_is_data_too">2. metadata is data, too</a></li>
-<li><a href="#_3_zoom_in_zoom_out">3. zoom in, zoom out</a></li>
-</ul>
-</li>
-<li><a href="#_some_essential_vocabulary_to_discuss_data">Some essential vocabulary to discuss data</a></li>
-<li><a href="#_data_presented_as_a_table">Data presented as a table</a></li>
-<li><a href="#_finally_data_and_size">Finally: data and size</a></li>
+<li><a href="#_the_end">The end</a></li>
 </ul>
 </div>
 </div>
@@ -610,219 +601,114 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>|||</p>
+</div>
+<div class="paragraph">
+<p>|A picture
+|A longitude and latitude
+|A price</p>
+</div>
+<div class="paragraph">
+<p>|A number of friends
+|A temperature
+|A list of favorite movies</p>
+</div>
+<div class="paragraph">
+<p>|etc&#8230;&#8203;
+|etc&#8230;&#8203;
+|etc&#8230;&#8203;</p>
+</div>
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 100%;">
 </colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A picture</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A longitude and latitude</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A price</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A number of friends</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A temperature</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A list of favorite movies</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">etc&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">etc&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">etc&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">== 3 take aways from the examples
+</p><p class="tableblock">=== 1. Think about data in a broad sense
+</p><p class="tableblock">Data is not just text and figures. You should train in thinking about data in a broader sense:
+</p><p class="tableblock">- pictures are data
+- language is data (including slang, lip movements, etc.)
+- relations are data (you know individual A, you know individual B, but the relationship between A and B is data as well)
+- preferences, emotional states&#8230;&#8203; are data
+- etc. There is no definitive list, you should train yourself looking at buisness situations and think: "where is the data?"
+</p><p class="tableblock">=== 2. metadata is data, too
+</p><p class="tableblock">Metadata: this is some data describing some other data.
+</p><p class="tableblock">Example:
+-----
+The bibliographical reference &lt;1&gt;
+describing
+a book &lt;2&gt;
+-----
+&lt;1&gt; the metadata
+&lt;2&gt; the data
+</p><p class="tableblock">=== 3. zoom in, zoom out
+</p><p class="tableblock">aWe should remember considering that a data point can be itself a collection of data points:
+</p><p class="tableblock">- a person walking into a building is a data point.
+- however this person is itself a collection of data points: location data + network relations + subscriber status to services + etc.
+</p><p class="tableblock">So it is a good habit to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)
+</p><p class="tableblock">== Some essential vocabulary to discuss data
+</p><p class="tableblock">image::tweet.png[width="500" align="center"]
+&#160;<br>
+</p><p class="tableblock">- This is a digital <strong>medium</strong> (because it&#8217;s on screen as opposed to analogic, if we had printed the pic on paper)
+- The <strong>type</strong> of the data is textual + image
+- The text is <strong>formatted</strong> in plain text (meaning, no special formatting), as opposed to more structured data-interchange formats (<a href="https://codingislove.com/json-tutorial-indepth/">check json or xml</a>).
+- The <strong>encoding</strong> of the text is UTF-8. Encoding has to do with the issue: how to represent alphabets and signs from different languages in text? (not even mentioning emojis?). UTF-8 is an encoding which is one of the most universal.
+- The tweet is part of a list of tweets. The list represents the <strong>data structure</strong> of my dataset, it is the way my data is organized. There are many alternative data structures: arrays, sets, dics, maps&#8230;&#8203;
+- The tweet is stored as a picture (png file) on my hard disk. "png" is the <strong>file format</strong>. The data is <strong>persisted</strong> as a file on disk (could have been stored in a database instead).
+</p><p class="tableblock"></p><p class="tableblock">== Data presented as a table
+</p><p class="tableblock"><span class="image"><img src="https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQYmkow/pub?w=1346&amp;h=657" alt="table"></span>
+</p><p class="tableblock">== Finally: data and size
+</p><p class="tableblock"><span class="image"><img src="images/russian_dolls.jpg" alt="Data sizes"></span></p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_3_take_aways_from_the_examples">3 take aways from the examples</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_1_think_about_data_in_a_broad_sense">1. Think about data in a broad sense</h3>
 <div class="paragraph">
-<p>Data is not just text and figures. You should train in thinking about data in a broader sense:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>pictures are data</p>
-</li>
-<li>
-<p>language is data (including slang, lip movements, etc.)</p>
-</li>
-<li>
-<p>relations are data (you know individual A, you know individual B, but the relationship between A and B is data as well)</p>
-</li>
-<li>
-<p>preferences, emotional states&#8230;&#8203; are data</p>
-</li>
-<li>
-<p>etc. There is no definitive list, you should train yourself looking at buisness situations and think: "where is the data?"</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_2_metadata_is_data_too">2. metadata is data, too</h3>
-<div class="paragraph">
-<p>Metadata: this is some data describing some other data.</p>
+<p>|||</p>
 </div>
 <div class="paragraph">
-<p>Example:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>The bibliographical reference <i class="conum" data-value="1"></i><b>(1)</b>
-describing
-a book <i class="conum" data-value="2"></i><b>(2)</b></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>the metadata</td>
-</tr>
-<tr>
-<td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>the data</td>
-</tr>
-</table>
+<p>|1 bit
+|
+|can store a binary value (yes / no, true / false&#8230;&#8203;)</p>
 </div>
 <div class="paragraph">
-<p>&#8594; Data without metadata can be worthless (imagine a library without a library catalogue)</p>
+<p>|8 bits
+|1 byte (or octet)
+|can store a single character</p>
 </div>
 <div class="paragraph">
-<p>&#8594; Metadata can be informative in its own right, as shown with the NSA scandal: <sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnote_3" title="View footnote.">3</a>]</sup></p>
+<p>|~ 1,000 bytes
+|1 kilobyte (kb)
+|Can store a paragraph of text</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/metadata.png" alt="The trouble with metadata"></span></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_3_zoom_in_zoom_out">3. zoom in, zoom out</h3>
-<div class="paragraph">
-<p>We should remember considering that a data point can be itself a collection of data points:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>a person walking into a building is a data point.</p>
-</li>
-<li>
-<p>however this person is itself a collection of data points: location data + network relations + subscriber status to services + etc.</p>
-</li>
-</ul>
+<p>|~ 1 million bytes
+|1 megabyte (Mb)
+|Can store a low res picture.</p>
 </div>
 <div class="paragraph">
-<p>So it is a good habit to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)</p>
+<p>|~ 1 billion bytes
+|1 gigabyte (Gb)
+|Can store a movie</p>
 </div>
+<div class="paragraph">
+<p>|~ 1 trillion bytes
+|1 terabyte (Tb)
+|Can store 1,000 movies. Size of commercial hard drives in 2017 is 2 Tb.</p>
+</div>
+<div class="paragraph">
+<p>|~ 1,000 trillion bytes
+|1 petabyte (Pb)
+|20 Pb = Google Maps in 2013</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_some_essential_vocabulary_to_discuss_data">Some essential vocabulary to discuss data</h2>
+<h2 id="_the_end">The end</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><span class="image"><img src="images/tweet.png" alt="tweet" width="500"></span></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>This is a digital <strong>medium</strong> (because it&#8217;s on screen as opposed to analogic, if we had printed the pic on paper)</p>
-</li>
-<li>
-<p>The <strong>type</strong> of the data is textual + image</p>
-</li>
-<li>
-<p>The text is <strong>formatted</strong> in plain text (meaning, no special formatting), as opposed to more structured data-interchange formats (<a href="https://codingislove.com/json-tutorial-indepth/">check json or xml</a>).</p>
-</li>
-<li>
-<p>The <strong>encoding</strong> of the text is UTF-8. Encoding has to do with the issue: how to represent alphabets and signs from different languages in text? (not even mentioning emojis?). UTF-8 is an encoding which is one of the most universal.</p>
-</li>
-<li>
-<p>The tweet is part of a list of tweets. The list represents the <strong>data structure</strong> of my dataset, it is the way my data is organized. There are many alternative data structures: arrays, sets, dics, maps&#8230;&#8203;</p>
-</li>
-<li>
-<p>The tweet is stored as a picture (png file) on my hard disk. "png" is the <strong>file format</strong>. The data is <strong>persisted</strong> as a file on disk (could have been stored in a database instead).</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_data_presented_as_a_table">Data presented as a table</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><span class="image"><img src="https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQYmkow/pub?w=1346&amp;h=657" alt="table"></span></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_finally_data_and_size">Finally: data and size</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><span class="image"><img src="images/russian_dolls.jpg" alt="Data sizes"></span></p>
-</div>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 bit</p></td>
-<td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">can store a binary value (yes / no, true / false&#8230;&#8203;)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8 bits</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 byte (or octet)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">can store a single character</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1,000 bytes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 kilobyte (kb)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Can store a paragraph of text</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1 million bytes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 megabyte (Mb)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Can store a low res picture.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1 billion bytes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 gigabyte (Gb)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Can store a movie</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1 trillion bytes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 terabyte (Tb)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Can store 1,000 movies. Size of commercial hard drives in 2017 is 2 Tb.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1,000 trillion bytes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 petabyte (Pb)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">20 Pb = Google Maps in 2013
-</p><p class="tableblock"></p><p class="tableblock">== The end
-</p><p class="tableblock">Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.
+<p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11304288;
@@ -839,10 +725,8 @@ a book <i class="conum" data-value="2"></i><b>(2)</b></pre>
     class="statcounter"
     src="//c.statcounter.com/11304288/0/4ace8383/1/" alt="site
     stats"></a></div></noscript>
-    <!-- End of StatCounter Code for Default Guide --></p></td>
-</tr>
-</tbody>
-</table>
+    <!-- End of StatCounter Code for Default Guide --></p>
+</div>
 </div>
 </div>
 </div>
@@ -854,14 +738,11 @@ a book <i class="conum" data-value="2"></i><b>(2)</b></pre>
 <div class="footnote" id="_footnote_2">
 <a href="#_footnoteref_2">2</a>. <a href="http://www.etymonline.com/index.php?term=data" class="bare">http://www.etymonline.com/index.php?term=data</a>
 </div>
-<div class="footnote" id="_footnote_3">
-<a href="#_footnoteref_3">3</a>. <a href="http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata" class="bare">http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata</a>
-</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2017-07-31 17:53:56 CEST
+Last updated 2017-07-31 17:45:51 CEST
 </div>
 </div>
 </body>

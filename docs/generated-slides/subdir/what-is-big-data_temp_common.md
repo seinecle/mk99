@@ -54,8 +54,6 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 |A duration
 |A curriculum vitae
 
-|===
-
 //ST: !
 
 
@@ -73,8 +71,8 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 |etc...
 |etc...
 |etc...
-|===
 
+|===
 
 
 == 3 take aways from the examples
@@ -100,27 +98,19 @@ Data is not just text and figures. You should train in thinking about data in a 
 Metadata: this is some data describing some other data.
 
 Example:
-----
+-----
 The bibliographical reference <1>
 describing
 a book <2>
-----
+-----
 <1> the metadata
 <2> the data
-
-//ST: !
-
--> Data without metadata can be worthless (imagine a library without a library catalogue)
-
--> Metadata can be informative in its own right, as shown with the NSA scandal: footnote:[http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata]
-
-image:metadata.png["The trouble with metadata"]
 
 === 3. zoom in, zoom out
 //ST: 3. zoom in, zoom out
 //ST: !
 
-We should remember considering that a data point can be itself a collection of data points:
+aWe should remember considering that a data point can be itself a collection of data points:
 
 - a person walking into a building is a data point.
 - however this person is itself a collection of data points: location data + network relations + subscriber status to services + etc.
@@ -131,9 +121,8 @@ So it is a good habit to wonder whether a data point can in fact be "unbundled" 
 //ST: Some essential vocabulary to discuss data
 //ST: !
 
-image:tweet.png[width="500" align="center"]
-
-//ST: !
+image::tweet.png[width="500" align="center"]
+{nbsp} +
 
 - This is a digital *medium* (because it's on screen as opposed to analogic, if we had printed the pic on paper)
 - The *type* of the data is textual + image
@@ -154,8 +143,6 @@ image:https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQ
 //ST: !
 
 image:russian_dolls.jpg[Data sizes]
-
-//ST: !
 
 
 |===

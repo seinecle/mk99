@@ -55,6 +55,13 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 |A duration
 |A curriculum vitae
 
+|===
+
+//ST: !
+
+
+|===
+|||
 
 |A picture
 |A longitude and latitude
@@ -67,8 +74,8 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 |etc...
 |etc...
 |etc...
-
 |===
+
 
 
 == 3 take aways from the examples
@@ -125,8 +132,9 @@ So it is a good habit to wonder whether a data point can in fact be "unbundled" 
 //ST: Some essential vocabulary to discuss data
 //ST: !
 
-image::tweet.png[width="500" align="center"]
-{nbsp} +
+image:tweet.png[width="500" align="center"]
+
+//ST: !
 
 - This is a digital *medium* (because it's on screen as opposed to analogic, if we had printed the pic on paper)
 - The *type* of the data is textual + image
@@ -147,6 +155,8 @@ image:https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQ
 //ST: !
 
 image:russian_dolls.jpg[Data sizes]
+
+//ST: !
 
 
 |===

@@ -11,15 +11,15 @@ last modified: {docdate}
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
+[.stretch]
 image::EMLyon_logo_corp.png[width="242" align="center"]
-{nbsp} +
-
-//ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 
-== Definition of data
-//ST: Definition of data
-//ST: !
+==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
+
+
+==  Definition of data
+==  !
 
 The English term "data" (1654) originates from “datum”, a Latin word for "a given".footnote:[http://www.etymonline.com/index.php?term=data]
 "Data" is a single factual, a single entity, a single point of matter.
@@ -34,9 +34,8 @@ Thoughts: the etymology suggests that data is "a given". Can you question this?
 Data represents either a single entity, or a collection of such entitities ("data points").
 We can speak also of datasets instead of data (so a dataset is a collection of data points).
 
-== Examples!
-//ST: Examples!
-//ST: !
+==  Examples!
+==  !
 
 
 |===
@@ -54,9 +53,7 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 |A duration
 |A curriculum vitae
 
-|===
-
-//ST: !
+==  !
 
 
 |===
@@ -73,17 +70,16 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 |etc...
 |etc...
 |etc...
+
 |===
 
 
-
-== 3 take aways from the examples
-//ST: 3 take aways from the examples
-//ST: !
+==  3 take aways from the examples
+==  !
 
 === 1. Think about data in a broad sense
-//ST: 1. Think about data in a broad sense
-//ST: !
+==  1. Think about data in a broad sense
+==  !
 
 Data is not just text and figures. You should train in thinking about data in a broader sense:
 
@@ -94,46 +90,37 @@ Data is not just text and figures. You should train in thinking about data in a 
 - etc. There is no definitive list, you should train yourself looking at buisness situations and think: "where is the data?"
 
 === 2. metadata is data, too
-//ST: 2. metadata is data, too
-//ST: !
+==  2. metadata is data, too
+==  !
 
 Metadata: this is some data describing some other data.
 
 Example:
-----
+-----
 The bibliographical reference <1>
 describing
 a book <2>
-----
+-----
 <1> the metadata
 <2> the data
 
-//ST: !
-
--> Data without metadata can be worthless (imagine a library without a library catalogue)
-
--> Metadata can be informative in its own right, as shown with the NSA scandal: footnote:[http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata]
-
-image:metadata.png["The trouble with metadata"]
-
 === 3. zoom in, zoom out
-//ST: 3. zoom in, zoom out
-//ST: !
+==  3. zoom in, zoom out
+==  !
 
-We should remember considering that a data point can be itself a collection of data points:
+aWe should remember considering that a data point can be itself a collection of data points:
 
 - a person walking into a building is a data point.
 - however this person is itself a collection of data points: location data + network relations + subscriber status to services + etc.
 
 So it is a good habit to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)
 
-== Some essential vocabulary to discuss data
-//ST: Some essential vocabulary to discuss data
-//ST: !
+==  Some essential vocabulary to discuss data
+==  !
 
-image:tweet.png[width="500" align="center"]
+[.stretch]
+image::tweet.png[width="500" align="center"]
 
-//ST: !
 
 - This is a digital *medium* (because it's on screen as opposed to analogic, if we had printed the pic on paper)
 - The *type* of the data is textual + image
@@ -143,19 +130,15 @@ image:tweet.png[width="500" align="center"]
 - The tweet is stored as a picture (png file) on my hard disk. "png" is the *file format*. The data is *persisted* as a file on disk (could have been stored in a database instead).
 
 
-== Data presented as a table
-//ST: data presented as a table
-//ST: !
+==  data presented as a table
+==  !
 
 image:https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQYmkow/pub?w=1346&h=657[table]
 
-== Finally: data and size
-//ST: data and size
-//ST: !
+==  data and size
+==  !
 
 image:russian_dolls.jpg[Data sizes]
-
-//ST: !
 
 
 |===
@@ -191,8 +174,24 @@ image:russian_dolls.jpg[Data sizes]
 |20 Pb = Google Maps in 2013
 
 
-== The end
-//ST: The end
-//ST: !
+==  The end
+==  !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+pass:[    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 11304288;
+        var sc_invisible = 1;
+        var sc_security = "11304288";
+        var scJsHost = (("https:" == document.location.protocol) ?
+            "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript><div class="statcounter"><a title="site stats"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="//c.statcounter.com/11304288/0/11304288/1/" alt="site
+    stats"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide -->]

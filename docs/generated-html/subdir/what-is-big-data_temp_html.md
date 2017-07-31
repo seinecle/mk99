@@ -8,6 +8,7 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
+:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -54,8 +55,6 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 |A duration
 |A curriculum vitae
 
-|===
-
 //ST: !
 
 
@@ -73,8 +72,8 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 |etc...
 |etc...
 |etc...
-|===
 
+|===
 
 
 == 3 take aways from the examples
@@ -100,27 +99,19 @@ Data is not just text and figures. You should train in thinking about data in a 
 Metadata: this is some data describing some other data.
 
 Example:
-----
+-----
 The bibliographical reference <1>
 describing
 a book <2>
-----
+-----
 <1> the metadata
 <2> the data
-
-//ST: !
-
--> Data without metadata can be worthless (imagine a library without a library catalogue)
-
--> Metadata can be informative in its own right, as shown with the NSA scandal: footnote:[http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata]
-
-image:metadata.png["The trouble with metadata"]
 
 === 3. zoom in, zoom out
 //ST: 3. zoom in, zoom out
 //ST: !
 
-We should remember considering that a data point can be itself a collection of data points:
+aWe should remember considering that a data point can be itself a collection of data points:
 
 - a person walking into a building is a data point.
 - however this person is itself a collection of data points: location data + network relations + subscriber status to services + etc.
@@ -131,9 +122,8 @@ So it is a good habit to wonder whether a data point can in fact be "unbundled" 
 //ST: Some essential vocabulary to discuss data
 //ST: !
 
-image:tweet.png[width="500" align="center"]
-
-//ST: !
+image::tweet.png[width="500" align="center"]
+{nbsp} +
 
 - This is a digital *medium* (because it's on screen as opposed to analogic, if we had printed the pic on paper)
 - The *type* of the data is textual + image
@@ -154,8 +144,6 @@ image:https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQ
 //ST: !
 
 image:russian_dolls.jpg[Data sizes]
-
-//ST: !
 
 
 |===
@@ -196,3 +184,20 @@ image:russian_dolls.jpg[Data sizes]
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+pass:[    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 11304288;
+        var sc_invisible = 1;
+        var sc_security = "4ace8383";
+        var scJsHost = (("https:" == document.location.protocol) ?
+            "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript><div class="statcounter"><a title="site stats"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="//c.statcounter.com/11304288/0/4ace8383/1/" alt="site
+    stats"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide -->]

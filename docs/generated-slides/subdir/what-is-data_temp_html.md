@@ -8,6 +8,7 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
+:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -54,13 +55,6 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 |A duration
 |A curriculum vitae
 
-|===
-
-//ST: !
-
-
-|===
-|||
 
 |A picture
 |A longitude and latitude
@@ -73,8 +67,8 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 |etc...
 |etc...
 |etc...
-|===
 
+|===
 
 
 == 3 take aways from the examples
@@ -131,9 +125,8 @@ So it is a good habit to wonder whether a data point can in fact be "unbundled" 
 //ST: Some essential vocabulary to discuss data
 //ST: !
 
-image:tweet.png[width="500" align="center"]
-
-//ST: !
+image::tweet.png[width="500" align="center"]
+{nbsp} +
 
 - This is a digital *medium* (because it's on screen as opposed to analogic, if we had printed the pic on paper)
 - The *type* of the data is textual + image
@@ -154,8 +147,6 @@ image:https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQ
 //ST: !
 
 image:russian_dolls.jpg[Data sizes]
-
-//ST: !
 
 
 |===
@@ -196,3 +187,20 @@ image:russian_dolls.jpg[Data sizes]
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+pass:[    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 11304288;
+        var sc_invisible = 1;
+        var sc_security = "4ace8383";
+        var scJsHost = (("https:" == document.location.protocol) ?
+            "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript><div class="statcounter"><a title="site stats"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="//c.statcounter.com/11304288/0/4ace8383/1/" alt="site
+    stats"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide -->]
