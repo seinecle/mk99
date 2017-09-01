@@ -139,6 +139,7 @@ image:tweet.png[width="500" align="center"]
 - This is a digital *medium* (because it's on screen as opposed to analogic, if we had printed the pic on paper)
 - The *type* of the data is textual + image
 - The text is *formatted* in plain text (meaning, no special formatting), as opposed to more structured data-interchange formats (https://codingislove.com/json-tutorial-indepth/[check json or xml]).
+//ST: !
 - The *encoding* of the text is UTF-8. Encoding has to do with the issue: how to represent alphabets and signs from different languages in text? (not even mentioning emojis?). UTF-8 is an encoding which is one of the most universal.
 - The tweet is part of a list of tweets. The list represents the *data structure* of my dataset, it is the way my data is organized. There are many alternative data structures: arrays, sets, dics, maps...
 - The tweet is stored as a picture (png file) on my hard disk. "png" is the *file format*. The data is *persisted* as a file on disk (could have been stored in a database instead).
@@ -178,6 +179,12 @@ image:russian_dolls.jpg[Data sizes]
 |~ 1 million bytes
 |1 megabyte (Mb)
 |Can store a low res picture.
+|===
+
+//ST: !
+
+|===
+|||
 
 |~ 1 billion bytes
 |1 gigabyte (Gb)
@@ -190,7 +197,9 @@ image:russian_dolls.jpg[Data sizes]
 |~ 1,000 trillion bytes
 |1 petabyte (Pb)
 |20 Pb = Google Maps in 2013
+|===
 
+//ST: !
 
 == The end
 //ST: The end
@@ -199,9 +208,9 @@ image:russian_dolls.jpg[Data sizes]
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
-        var sc_project = 11304288;
+        var sc_project = 11411204;
         var sc_invisible = 1;
-        var sc_security = "4ace8383";
+        var sc_security = "7b86ca26";
         var scJsHost = (("https:" == document.location.protocol) ?
             "https://secure." : "http://www.");
         document.write("<sc" + "ript type='text/javascript' src='" +
@@ -211,6 +220,6 @@ pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <noscript><div class="statcounter"><a title="site stats"
     href="http://statcounter.com/" target="_blank"><img
     class="statcounter"
-    src="//c.statcounter.com/11304288/0/4ace8383/1/" alt="site
+    src="//c.statcounter.com/11411204/0/7b86ca26/1/" alt="site
     stats"></a></div></noscript>
     <!-- End of StatCounter Code for Default Guide -->]

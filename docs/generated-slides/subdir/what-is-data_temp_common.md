@@ -198,6 +198,7 @@ image:russian_dolls.jpg[Data sizes]
 |20 Pb = Google Maps in 2013
 |===
 
+//ST: !
 
 == The end
 //ST: The end

@@ -22,9 +22,9 @@ data structures::
     A https://www.lynda.com/Developer-Programming-Foundations-tutorials/What-data-structure/149042/177101-4.html[4 minute video] explaining in simple language what is a data structure.
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
-        var sc_project = 11304288;
+        var sc_project = 11411204;
         var sc_invisible = 1;
-        var sc_security = "11304288";
+        var sc_security = "11411204";
         var scJsHost = (("https:" == document.location.protocol) ?
             "https://secure." : "http://www.");
         document.write("<sc" + "ript type='text/javascript' src='" +
@@ -34,6 +34,6 @@ pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <noscript><div class="statcounter"><a title="site stats"
     href="http://statcounter.com/" target="_blank"><img
     class="statcounter"
-    src="//c.statcounter.com/11304288/0/11304288/1/" alt="site
+    src="//c.statcounter.com/11411204/0/11411204/1/" alt="site
     stats"></a></div></noscript>
     <!-- End of StatCounter Code for Default Guide -->]

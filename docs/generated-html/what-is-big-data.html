@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.4">
 <meta name="author" content="Clément Levallois">
-<title>What is data?</title>
+<title>What is big data?</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -512,17 +512,52 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="article">
 <div id="header">
-<h1>What is data?</h1>
+<h1>What is big data?</h1>
 <div class="details">
 <span id="author" class="author">Clément Levallois</span><br>
 <span id="email" class="email"><a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a></span><br>
-<span id="revdate">2017-31-17</span>
+<span id="revdate">2017-31-07</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_definition_of_data">Definition of data</a></li>
-<li><a href="#_examples">Examples!</a></li>
+<li><a href="#_reading_list">Reading list</a></li>
+<li><a href="#_1_big_data_is_a_mess">1. Big data is a mess</a></li>
+<li><a href="#_2_the_3_v">2. The 3 V</a>
+<ul class="sectlevel3">
+<li><a href="#__strong_v_strong_for_volume"><strong>V</strong> for Volume</a></li>
+<li><a href="#__strong_v_strong_for_variety"><strong>V</strong> for Variety</a></li>
+<li><a href="#__strong_v_strong_for_velocity"><strong>V</strong> for Velocity</a></li>
+<li><a href="#_a_4th_strong_v_strong_can_be_added_for_veracity">A 4th <strong>V</strong> can be added, for Veracity</a></li>
+</ul>
+</li>
+<li><a href="#_3_what_is_the_minimum_size_to_count_as_big_data_it_s_all_relative">3. What is the minimum size to count as "big data"? It&#8217;s all relative</a>
+<ul class="sectlevel3">
+<li><a href="#_1_relative_to_time">1. relative to time</a></li>
+<li><a href="#_2_relative_to_the_industry">2. relative to the industry</a></li>
+<li><a href="#_3_not_just_about_size">3. not just about size</a></li>
+<li><a href="#_4_no_correlation_between_size_and_value">4. no correlation between size and value</a></li>
+<li><a href="#_5_as_an_expression_big_data_is_evolving">5. as an expression, "big data" is evolving</a></li>
+</ul>
+</li>
+<li><a href="#_4_where_did_big_data_come_from">4. Where did big data come from?</a>
+<ul class="sectlevel3">
+<li><a href="#_1_data_got_generated_in_bigger_volumes_because_of_the_digitalization_of_the_economy">1. Data got generated in bigger volumes because of the digitalization of the economy</a></li>
+<li><a href="#_2_computers_became_more_powerful">2. Computers became more powerful</a></li>
+<li><a href="#_3_storing_data_became_cheaper_every_year">3. Storing data became cheaper every year</a></li>
+<li><a href="#_4_the_mindset_changed_as_to_what_counts_as_data">4. The mindset changed as to what "counts" as data</a></li>
+<li><a href="#_5_with_open_source_software_the_rate_of_innovation_accelerated">5. With open source software, the rate of innovation accelerated</a></li>
+<li><a href="#_6_hype_kicked_in">6. Hype kicked in</a></li>
+<li><a href="#_6_big_data_transforms_industries_and_has_become_an_industry_in_itself">6. Big data transforms industries, and has become an industry in itself</a></li>
+</ul>
+</li>
+<li><a href="#_5_what_is_the_future_of_big_data">5. What is the future of big data?</a>
+<ul class="sectlevel3">
+<li><a href="#_1_more_data_is_coming">1. More data is coming</a></li>
+<li><a href="#_2_discussions_about_big_data_will_fuse_with_ai">2. Discussions about big data will fuse with AI</a></li>
+<li><a href="#_3_regulatory_frameworks_will_grow_in_complexity">3. Regulatory frameworks will grow in complexity</a></li>
+</ul>
+</li>
 <li><a href="#_the_end">The end</a></li>
 </ul>
 </div>
@@ -531,7 +566,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2017-07-31</p>
+<p>last modified: 2017-09-01</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -544,163 +579,488 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect1">
-<h2 id="_definition_of_data">Definition of data</h2>
+<h2 id="_reading_list">Reading list</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The English term "data" (1654) originates from “datum”, a Latin word for "a given".<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup>
-"Data" is a single factual, a single entity, a single point of matter.</p>
-</div>
-<div class="paragraph">
-<p>Using the word "data" to mean "transmittable and storable computer information" was first done in 1946.
-The expression "data processing" was first used in 1954.<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup></p>
-</div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>Thoughts: the etymology suggests that data is "a given". Can you question this?</p>
-</div>
-</div>
-</div>
-<div class="paragraph">
-<p>Data represents either a single entity, or a collection of such entitities ("data points").
-We can speak also of datasets instead of data (so a dataset is a collection of data points).</p>
+<p>Find the reading list for this session on Pinterest:
+<a href="https://fr.pinterest.com/seinecle/what-is-data-what-is-big-data/" class="bare">https://fr.pinterest.com/seinecle/what-is-data-what-is-big-data/</a></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_examples">Examples!</h2>
+<h2 id="_1_big_data_is_a_mess">1. Big data is a mess</h2>
 <div class="sectionbody">
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A color</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A grade</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A relation of friendship</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A sound</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A hearbeat</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A user input</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A duration</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A curriculum vitae</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>|||</p>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/ariely.png" alt="ariely">
+</div>
+<div class="title">Figure 1. Facebook post by Dan Ariely in 2013</div>
 </div>
 <div class="paragraph">
-<p>|A picture
-|A longitude and latitude
-|A price</p>
+<p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>|A number of friends
-|A temperature
-|A list of favorite movies</p>
+<p>Jokes aside, defining big data and what it covers needs a bit of precision. Let&#8217;s bring some clarity.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_the_3_v">2. The 3 V</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Big data is usually described with the "3 Vs":</p>
+</div>
+<div class="sect3">
+<h4 id="__strong_v_strong_for_volume"><strong>V</strong> for Volume</h4>
+<div class="paragraph">
+<p>The size of datasets available today is staggering (ex: Facebook had 250 billion pics in 2016).</p>
 </div>
 <div class="paragraph">
-<p>|etc&#8230;&#8203;
-|etc&#8230;&#8203;
-|etc&#8230;&#8203;</p>
+<p>We should also note that the volumes of data are increasing at an <strong>accelerating rate</strong>. According to sources, <a href="https://www.sciencedaily.com/releases/2013/05/130522085217.htm">"90% of all the data in the world has been generated over the last two years"</a> (statement from 2013) or said differently, <a href="https://appdevelopermagazine.com/4773/2016/12/23/more-data-will-be-created-in-2017-than-the-previous-5,000-years-of-humanity-/">"More data will be created in 2017 than the previous 5,000 years of humanity"</a></p>
 </div>
-<table class="tableblock frame-all grid-all spread">
-<colgroup>
-<col style="width: 100%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">== 3 take aways from the examples
-</p><p class="tableblock">=== 1. Think about data in a broad sense
-</p><p class="tableblock">Data is not just text and figures. You should train in thinking about data in a broader sense:
-</p><p class="tableblock">- pictures are data
-- language is data (including slang, lip movements, etc.)
-- relations are data (you know individual A, you know individual B, but the relationship between A and B is data as well)
-- preferences, emotional states&#8230;&#8203; are data
-- etc. There is no definitive list, you should train yourself looking at buisness situations and think: "where is the data?"
-</p><p class="tableblock">=== 2. metadata is data, too
-</p><p class="tableblock">Metadata: this is some data describing some other data.
-</p><p class="tableblock">Example:
------
-The bibliographical reference &lt;1&gt;
-describing
-a book &lt;2&gt;
------
-&lt;1&gt; the metadata
-&lt;2&gt; the data
-</p><p class="tableblock">=== 3. zoom in, zoom out
-</p><p class="tableblock">aWe should remember considering that a data point can be itself a collection of data points:
-</p><p class="tableblock">- a person walking into a building is a data point.
-- however this person is itself a collection of data points: location data + network relations + subscriber status to services + etc.
-</p><p class="tableblock">So it is a good habit to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)
-</p><p class="tableblock">== Some essential vocabulary to discuss data
-</p><p class="tableblock">image::tweet.png[width="500" align="center"]
-&#160;<br>
-</p><p class="tableblock">- This is a digital <strong>medium</strong> (because it&#8217;s on screen as opposed to analogic, if we had printed the pic on paper)
-- The <strong>type</strong> of the data is textual + image
-- The text is <strong>formatted</strong> in plain text (meaning, no special formatting), as opposed to more structured data-interchange formats (<a href="https://codingislove.com/json-tutorial-indepth/">check json or xml</a>).
-- The <strong>encoding</strong> of the text is UTF-8. Encoding has to do with the issue: how to represent alphabets and signs from different languages in text? (not even mentioning emojis?). UTF-8 is an encoding which is one of the most universal.
-- The tweet is part of a list of tweets. The list represents the <strong>data structure</strong> of my dataset, it is the way my data is organized. There are many alternative data structures: arrays, sets, dics, maps&#8230;&#8203;
-- The tweet is stored as a picture (png file) on my hard disk. "png" is the <strong>file format</strong>. The data is <strong>persisted</strong> as a file on disk (could have been stored in a database instead).
-</p><p class="tableblock"></p><p class="tableblock">== Data presented as a table
-</p><p class="tableblock"><span class="image"><img src="https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQYmkow/pub?w=1346&amp;h=657" alt="table"></span>
-</p><p class="tableblock">== Finally: data and size
-</p><p class="tableblock"><span class="image"><img src="images/russian_dolls.jpg" alt="Data sizes"></span></p></td>
-</tr>
-</tbody>
-</table>
+</div>
+<div class="sect3">
+<h4 id="__strong_v_strong_for_variety"><strong>V</strong> for Variety</h4>
 <div class="paragraph">
-<p>|||</p>
+<p>This is a bit less intuitive. "Variety" means here that data is increasingly unstructured and messy, and this is an important characteristic of the "big data" phenomenon. To carictature a bit, try to picture a shift from A to B:</p>
 </div>
 <div class="paragraph">
-<p>|1 bit
-|
-|can store a binary value (yes / no, true / false&#8230;&#8203;)</p>
+<p><strong>A - Structured data</strong>:</p>
 </div>
 <div class="paragraph">
-<p>|8 bits
-|1 byte (or octet)
-|can store a single character</p>
+<p>phonebooks, accounting books, governmental statistics&#8230;&#8203; anything that can be represented as well organized tables of numbers and short pieces of text with the expected format, size, and conventions of writing.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/book.png" alt="book">
+</div>
+<div class="title">Figure 2. A book of accounts showing structured data</div>
 </div>
 <div class="paragraph">
-<p>|~ 1,000 bytes
-|1 kilobyte (kb)
-|Can store a paragraph of text</p>
+<p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>|~ 1 million bytes
-|1 megabyte (Mb)
-|Can store a low res picture.</p>
+<p><strong>B - Unstructured data</strong>:</p>
 </div>
 <div class="paragraph">
-<p>|~ 1 billion bytes
-|1 gigabyte (Gb)
-|Can store a movie</p>
+<p>datasets made of "unruly" items: text of any length, without proper categorization, encoded in different formats, including possibly pictures, sound, geographical coordinates and what not&#8230;&#8203;</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/unstructured-data.png" alt="unstructured data">
+</div>
+<div class="title">Figure 3. Structured vs unstructured data</div>
 </div>
 <div class="paragraph">
-<p>|~ 1 trillion bytes
-|1 terabyte (Tb)
-|Can store 1,000 movies. Size of commercial hard drives in 2017 is 2 Tb.</p>
+<p>&#160;<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__strong_v_strong_for_velocity"><strong>V</strong> for Velocity</h4>
+<div class="paragraph">
+<p>In a nutshell, the speed of creation and communication of data is accelerating (<a href="http://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/">examples taken from here</a>):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Facebook hosts 250 billion pics? It receives 900 million more pictures <strong>per day</strong></p>
+</li>
+<li>
+<p>Examining tweets can be done automatically (with computers). If you want to connect to Twitter to receive tweets in real time as they are tweeted, be prepared to receive in excess of 500 million tweets <strong>per day</strong>. Twitter calls this service the <a href="http://support.gnip.com/apis/firehose/">"firehose"</a>, which reflects the velocity of the stream of tweets.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/firehose.jpg" alt="firehose">
+</div>
+<div class="title">Figure 4. The Twitter Firehose</div>
 </div>
 <div class="paragraph">
-<p>|~ 1,000 trillion bytes
-|1 petabyte (Pb)
-|20 Pb = Google Maps in 2013</p>
+<p>&#160;<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sensor data is bound to increase speed as well. While pictures, tweets, individual records&#8230;&#8203; are single item data sent at intervals, more and more sensors can send data <strong>in a continuous stream</strong> (measures of movement, sound, etc.)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>So, velocity poses challenges of its own: while a system can handle (store, analyze) say 100Gb of data in a given time (day or month), it might not be able to do it in say, a single second. Big data refers to the problems and solutions raised by the velocity of data.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_a_4th_strong_v_strong_can_be_added_for_veracity">A 4th <strong>V</strong> can be added, for Veracity</h4>
+<div class="paragraph">
+<p>Veracity relates to trustworthiness and compliance: is the data authentic? Has it been corrupted at any step of its processing?</p>
+</div>
+<div class="paragraph">
+<p>We will devote a session of this course to data compliance, which is a broad topic covering data privacy, cybersecurity, and the societal impacts of data.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://fr.pinterest.com/seinecle/data-compliance/">You can start reading the documents for this course here</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_what_is_the_minimum_size_to_count_as_big_data_it_s_all_relative">3. What is the minimum size to count as "big data"? It&#8217;s all relative</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There is no "threshold" or "minimum size" of a dataset where "data" would turn from "small data" to "big data".</p>
+</div>
+<div class="paragraph">
+<p>It is more of a <strong>relative</strong> notion: it is big data if current IT systems struggle to cope with the datasets.</p>
+</div>
+<div class="paragraph">
+<p>(see <a href="https://en.wikipedia.org/wiki/Big_data">Wikipedia definition</a> developing on this.)</p>
+</div>
+<div class="paragraph">
+<p>"Big data" is a relative notion&#8230;&#8203; how so?</p>
+</div>
+<div class="sect3">
+<h4 id="_1_relative_to_time">1. relative to time</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>what was considered "big data" in the early 2000s would be considered "small data" today, because we have better storage and computing power today.</p>
+</li>
+<li>
+<p>this is a never ending race: as IT systems improve to deal with "current big data", data gets generated in still larger volumes, which calls for new progress / innovations to handle it.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_relative_to_the_industry">2. relative to the industry</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>what is considered "big data" by non tech SMEs (small and medium-sized entreprises) can be considered trivial to handle by tech companies.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_not_just_about_size">3. not just about size</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>the difficulty for an IT system to cope with a dataset can be related to the size (try analyzing 2 Tb of data on your laptop&#8230;&#8203;), <strong>but also</strong> related to the content of the data.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For example the analysis of customer reviews in dozens of languages is harder than the analysis of the same number of reviews in just one language.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>So the general rule is: the less the data is structured, the harder it is to use it, even if it&#8217;s small in size (this relates to the "V" of variety seen above).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_no_correlation_between_size_and_value">4. no correlation between size and value</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Big data is often called <a href="https://hbr.org/2012/11/data-humans-and-the-new-oil">"the new oil"</a>, as if it would flow like oil and would power engines "on demand".</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Actually, big data is <strong>created</strong>: it needs work, conception and design choices to even exist (what do I collect? how do I store it? what structure do I give to it?). The human intervention in creating data determines largely whether data will be of value later.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Example: Imagine customers can write online reviews of your products. These reviews are data.
+But if you store these reviews without an indication of who has authored the review (maybe because reviews can be posted without login oneself), then the reviews become much less valuable.
+Simple design decisions about how the data is collected, stored and structured have a huge impact on the value of the data.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>So, in reaction to large, unstructured and badly curated datasets with low value at the end, a notion of "smart data" is sometimes put forward: data which can be small in size but which is well curated and annotated, enhancing its value (see also <a href="https://www.quora.com/After-Big-Data-Smart-Data-is-a-trend-in-2013-So-what-is-Smart-Data-Have-any-clear-definition">here</a>).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_5_as_an_expression_big_data_is_evolving">5. as an expression, "big data" is evolving</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>It is interesting to note that "hot" expressions, like "big data", tend to wear out fast. They are too hyped, used in all circumstances, become vague and over sold.
+For big data, we observe that it is peaking in 2017, while new terms appear:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe> </p>
+</div>
+<div class="paragraph">
+<p>What are the differences between these terms?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>"Big data" is by now a generic term</p>
+</li>
+<li>
+<p>"Machine learning" puts the focus on the scientific and software engineering capabilities enabling to do something useful with the data (predict, categorize, score&#8230;&#8203;)</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>"Artificial intelligence" puts the emphasis on human-like possibilities afforded by machine learning. Often used interchangeably with machine learning.</p>
+</li>
+<li>
+<p>And "data science"? This is a broad term encompassing machine learning, statistics, &#8230;&#8203; and any analytical methods to work with data and interpret it. Often used interchangeably with machine learning. "Data scientist" is a common job description in the field.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_where_did_big_data_come_from">4. Where did big data come from?</h2>
+<div class="sectionbody">
+<div class="sect3">
+<h4 id="_1_data_got_generated_in_bigger_volumes_because_of_the_digitalization_of_the_economy">1. Data got generated in bigger volumes because of the digitalization of the economy</h4>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/Movie-theater-vs-Netflix.png" alt="Movie theater vs Netflix">
+</div>
+<div class="title">Figure 5. Movie theater vs Netflix</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_computers_became_more_powerful">2. Computers became more powerful</h4>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/Moore's-law.png" alt="Moore's law">
+</div>
+<div class="title">Figure 6. Moore&#8217;s law</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_storing_data_became_cheaper_every_year">3. Storing data became cheaper every year</h4>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/Decreasing-costs-of-data-storage.png" alt="Decreasing costs of data storage">
+</div>
+<div class="title">Figure 7. Decreasing costs of data storage</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_the_mindset_changed_as_to_what_counts_as_data">4. The mindset changed as to what "counts" as data</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Unstructured (see above for definition of "unstructured") textual data was usually not stored: it takes a lot space, and software to query it was not sufficiently developped.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Network data (also known as graphs) (who is friend with whom, who likes the same things as whom, etc.) was usually neglected as "not true observation", and hard to query. Social networks like Facebook made a lot to make businesses aware of the value of graphs (especially <a href="https://en.wikipedia.org/wiki/Social_graph">social graphs</a>).</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Geographical data has democratized: specific (and expensive) databases existed for a long time to store and query "place data" (regions, distances, proximity info&#8230;&#8203;) but easy-to-use solutions have multiplied recently.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_5_with_open_source_software_the_rate_of_innovation_accelerated">5. With open source software, the rate of innovation accelerated</h4>
+<div class="paragraph">
+<p>In the late 1990s, a rapid shift in the habits of software developers kicked in: they tended to use more and more open source software, and to release their software as open source.
+Until then, most of the software was "closed source": you buy a software <strong>without the possibility</strong> to reuse / modify / augment its source code. Just use it as is.</p>
+</div>
+<div class="paragraph">
+<p>Open source software made it easy to get access to software built by others and use it to develop new things. Today, all the most popular software in machine learning are free and open source.</p>
+</div>
+<div class="paragraph">
+<p>See the Wikipedia article for a developed history of open source software: <a href="https://en.wikipedia.org/wiki/History_of_free_and_open-source_software" class="bare">https://en.wikipedia.org/wiki/History_of_free_and_open-source_software</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_hype_kicked_in">6. Hype kicked in</h4>
+<div class="paragraph">
+<p>The <a href="http://www.gartner.com/technology/research/methodologies/hype-cycle.jsp">Gartner hype cycle</a> is a tool measuring the maturity of a technology, differentiating expectations from actual returns:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/Gartner-Hype-Cycle-for-2014.png" alt="Gartner Hype Cycle for 2014">
+</div>
+<div class="title">Figure 8. Gartner Hype Cycle for 2014</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>This graph shows the pattern that all technologies follow along their lifetime:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>at the beginning (left of the graph), an invention or discovery is made in a research lab, somewhere. Some news reporting is done about it, but with not much noise.</p>
+</li>
+<li>
+<p>then, the technology starts picking the interest of journalists, consultant, professors, industries&#8230;&#8203; expectations grow about the possibilities and promises of the tech. "With it we will be able to [insert amazing thing here]"</p>
+</li>
+<li>
+<p>the top of the bump is the "peak of inflated expectations". All techs tend to be hyped and even over hyped. This means the tech is expected to deliver more than it surely will, in actuality. People get overdrawn.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>then follows the "Trough of Disillusionment". Doubt sets in. People realize the tech is not as powerful, easy, cheap or quick to implement as it first seemed. Newspapers start reporting depressing news about the tech, some bad buzz spreads.</p>
+</li>
+<li>
+<p>then: slope of Enlightenment. Heads get colder, expectations get in line with what the tech can actually deliver. Markets stabilize and consolidate: some firms close and key actors continue to grow.</p>
+</li>
+<li>
+<p>then: plateau of productivity. The tech is now mainstream.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>(all technology can "die" - fall into disuse - before reaching the right side of the graph of course).</p>
+</div>
+<div class="paragraph">
+<p>In 2014, big data was near the top of the curve: it was getting a lot of attention but its practical use in 5 to 10 years were still uncertain. There were "great expectations" about its future, and these expectations drive investment, research and business in big data.</p>
+</div>
+<div class="paragraph">
+<p>In 2017, "big data" is still on top of hyped technologies, but is broken down in "deep learning" and "machine learning". Note also the "Artificial General Intelligence" category:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/Gartner-Hype-Cycle-for-2017.png" alt="Gartner Hype Cycle for 2017">
+</div>
+<div class="title">Figure 9. Gartner Hype Cycle for 2017</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_big_data_transforms_industries_and_has_become_an_industry_in_itself">6. Big data transforms industries, and has become an industry in itself</h4>
+<div class="paragraph">
+<p>Firms active in "Big data" divide in many subdomains: the industry to manage the IT infrastructure for big data, the consulting firms, software providers, industry-specific applications, etc&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p>&#8594; the field is huge.</p>
+</div>
+<div class="paragraph">
+<p>Matt Turck, <a href="https://twitter.com/mattturck">VC at FirstMarkCap</a>, creates every year a sheet to visualize the main firms active in these subdomains.
+This is the 2017 version:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/Matt-Turck-FirstMark-2017-Big-Data-Landscape.png" alt="Matt Turck FirstMark 2017 Big Data Landscape">
+</div>
+<div class="title">Figure 10. Big data landscape for 2017</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>You can find a high res version of this pic, an Excel sheet version, and a very interesting comment <a href="https://mattturck.com/bigdata2017/">all here</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_what_is_the_future_of_big_data">5. What is the future of big data?</h2>
+<div class="sectionbody">
+<div class="sect3">
+<h4 id="_1_more_data_is_coming">1. More data is coming</h4>
+<div class="paragraph">
+<p>The Internet of things (IoT) designates the extension of Internet to objects, not just web pages and emails (<a href="https://seinecle.github.io/IoT4Entrepreneurs/">see here for details</a>).</p>
+</div>
+<div class="paragraph">
+<p>These connected objects are used to <strong>do</strong> things (display stuff on screen, pilote robots, etc.) but also very much to <strong>collect data</strong> in their environments (through sensors).</p>
+</div>
+<div class="paragraph">
+<p>The development of connected objects will lead to a tremendous increase in the volume of data collected.</p>
+</div>
+<div class="paragraph">
+<p>We have a session devoted to IoT later in this course. You can already starting reading the documents for this session:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://fr.pinterest.com/seinecle/internet-of-things/">Internet of things</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_discussions_about_big_data_will_fuse_with_ai">2. Discussions about big data will fuse with AI</h4>
+<div class="paragraph">
+<p>Enthusiasm, disappointment, bad buzz worries, debates, promises&#8230;&#8203; the discourse about AI will grow. AI is fed on data, so the future of big data will intersect with what AI becomes.</p>
+</div>
+<div class="paragraph">
+<p>We have a session devoted to data science / machine learning / AI later in this course. You can already start reading the documents for this course:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://fr.pinterest.com/seinecle/what-is-data-science/">What is data science?</a></p>
+</li>
+<li>
+<p><a href="https://fr.pinterest.com/seinecle/ai-applications-in-business/">AI applications in business</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_regulatory_frameworks_will_grow_in_complexity">3. Regulatory frameworks will grow in complexity</h4>
+<div class="paragraph">
+<p>Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic stability in the age of robots and AI in the workplace.</p>
+</div>
+<div class="paragraph">
+<p>Public regulations at the national and international levels are trying to catch up with these challenges. As technology evolves quickly, we can anticipate that societal impacts of big data will take center stage.</p>
+</div>
+<div class="paragraph">
+<p>We have a session devoted to data compliance in this course. You can already start reading the documents for this course:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://fr.pinterest.com/seinecle/data-compliance/">Data compliance</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -711,9 +1071,9 @@ a book &lt;2&gt;
 <p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
-        var sc_project = 11304288;
+        var sc_project = 11411204;
         var sc_invisible = 1;
-        var sc_security = "4ace8383";
+        var sc_security = "7b86ca26";
         var scJsHost = (("https:" == document.location.protocol) ?
             "https://secure." : "http://www.");
         document.write("<sc" + "ript type='text/javascript' src='" +
@@ -723,26 +1083,17 @@ a book &lt;2&gt;
     <noscript><div class="statcounter"><a title="site stats"
     href="http://statcounter.com/" target="_blank"><img
     class="statcounter"
-    src="//c.statcounter.com/11304288/0/4ace8383/1/" alt="site
+    src="//c.statcounter.com/11411204/0/7b86ca26/1/" alt="site
     stats"></a></div></noscript>
     <!-- End of StatCounter Code for Default Guide --></p>
 </div>
 </div>
 </div>
 </div>
-<div id="footnotes">
-<hr>
-<div class="footnote" id="_footnote_1">
-<a href="#_footnoteref_1">1</a>. <a href="http://www.etymonline.com/index.php?term=data" class="bare">http://www.etymonline.com/index.php?term=data</a>
-</div>
-<div class="footnote" id="_footnote_2">
-<a href="#_footnoteref_2">2</a>. <a href="http://www.etymonline.com/index.php?term=data" class="bare">http://www.etymonline.com/index.php?term=data</a>
-</div>
-</div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2017-07-31 17:45:51 CEST
+Last updated 2017-09-01 14:58:58 CEST
 </div>
 </div>
 </body>

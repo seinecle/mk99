@@ -193,6 +193,7 @@ image:russian_dolls.jpg[Data sizes]
 |20 Pb = Google Maps in 2013
 |===
 
+==  !
 
 ==  The end
 ==  !
@@ -200,9 +201,9 @@ image:russian_dolls.jpg[Data sizes]
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
-        var sc_project = 11304288;
+        var sc_project = 11411204;
         var sc_invisible = 1;
-        var sc_security = "11304288";
+        var sc_security = "11411204";
         var scJsHost = (("https:" == document.location.protocol) ?
             "https://secure." : "http://www.");
         document.write("<sc" + "ript type='text/javascript' src='" +
@@ -212,6 +213,6 @@ pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <noscript><div class="statcounter"><a title="site stats"
     href="http://statcounter.com/" target="_blank"><img
     class="statcounter"
-    src="//c.statcounter.com/11304288/0/11304288/1/" alt="site
+    src="//c.statcounter.com/11411204/0/11411204/1/" alt="site
     stats"></a></div></noscript>
     <!-- End of StatCounter Code for Default Guide -->]
