@@ -351,7 +351,7 @@ We have a session devoted to data science / machine learning / AI later in this 
 ==== 3. Regulatory frameworks will grow in complexity
 
 ==  !
-Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic stability in the age of robots and AI in the workplace.
+Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic (un)stability in the age of robots and AI in the workplace.
 
 ==  !
 Public regulations at the national and international levels are trying to catch up with these challenges. As technology evolves quickly, we can anticipate that societal impacts of big data will take center stage.
@@ -361,10 +361,19 @@ We have a session devoted to data compliance in this course. You can already sta
 
 - https://fr.pinterest.com/seinecle/data-compliance/[Data compliance]
 
+==  !
+
 ==  The end
 ==  !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+
+image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: http://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;

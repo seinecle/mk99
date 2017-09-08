@@ -174,6 +174,8 @@ For big data, we observe that it is peaking in 2017, while new terms appear:
 //ST: !
 pass:[<iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe> ]
 
+image::gtrends.png[align="center", title="Google searches for big data, machine learning and AI"]
+{nbsp} +
 
 //ST: !
 
@@ -347,7 +349,7 @@ We have a session devoted to data science / machine learning / AI later in this 
 ==== 3. Regulatory frameworks will grow in complexity
 
 //ST: !
-Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic stability in the age of robots and AI in the workplace.
+Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic (un)stability in the age of robots and AI in the workplace.
 
 //ST: !
 Public regulations at the national and international levels are trying to catch up with these challenges. As technology evolves quickly, we can anticipate that societal impacts of big data will take center stage.
@@ -357,8 +359,17 @@ We have a session devoted to data compliance in this course. You can already sta
 
 - https://fr.pinterest.com/seinecle/data-compliance/[Data compliance]
 
+//ST: !
+
 == The end
 //ST: The end
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+
+image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: http://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]

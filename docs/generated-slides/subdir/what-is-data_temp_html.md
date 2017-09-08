@@ -1,6 +1,6 @@
 = What is data?
 Clément Levallois <levallois@em-lyon.com>
-2017-31-17
+2017-31-07
 
 last modified: {docdate}
 
@@ -206,6 +206,13 @@ image:russian_dolls.jpg[Data sizes]
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+
+image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: http://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;

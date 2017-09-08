@@ -54,17 +54,18 @@ This is a bit less intuitive. "Variety" means here that data is increasingly uns
 
 //ST: !
 
-*Structured data*:
+*A - Structured data*:
 
 phonebooks, accounting books, governmental statistics... anything that can be represented as well organized tables of numbers and short pieces of text with the expected format, size, and conventions of writing.
 
-image::book.png[align="center", title="Facebook post by Dan Ariely in 2013"]
+image::book.png[align="center", title="A book of accounts showing structured data"]
 {nbsp} +
 
 //ST: !
-*Unstructured data*:
+*B - Unstructured data*:
 
 datasets made of "unruly" items: text of any length, without proper categorization, encoded in different formats, including possibly pictures, sound, geographical coordinates and what not...
+
 //ST: !
 
 image::unstructured-data.png[align="center", title="Structured vs unstructured data"]
@@ -104,6 +105,7 @@ https://fr.pinterest.com/seinecle/data-compliance/[You can start reading the doc
 
 == 3. What is the minimum size to count as "big data"? It's all relative
 //ST: 3. What is the minimum size to count as "big data"? It's all relative
+//ST: !
 
 There is no "threshold" or "minimum size" of a dataset where "data" would turn from "small data" to "big data".
 
@@ -113,8 +115,9 @@ It is more of a *relative* notion: it is big data if current IT systems struggle
 
 //ST: !
 "Big data" is a relative notion... how so?
+//ST: !
 
-==== 1. relative to time.
+==== 1. relative to time
 //ST: !
 
 *  what was considered "big data" in the early 2000s would be considered "small data" today, because we have better storage and computing power today.
@@ -122,7 +125,7 @@ It is more of a *relative* notion: it is big data if current IT systems struggle
 
 //ST: !
 [start=2]
-==== 2. relative to the industry.
+==== 2. relative to the industry
 //ST: !
 
 * what is considered "big data" by non tech SMEs (small and medium-sized entreprises) can be considered trivial to handle by tech companies.
@@ -133,8 +136,12 @@ It is more of a *relative* notion: it is big data if current IT systems struggle
 //ST: !
 
 * the difficulty for an IT system to cope with a dataset can be related to the size (try analyzing 2 Tb of data on your laptop...), *but also* related to the content of the data.
-* For example the analysis of customer reviews in dozens of languages is hard for current IT systems.
-* General rule: the less the data is structured, the harder it is to use it, even if it's small in size (this relates to the "V" of variety seen above).
+
+//ST: !
+* For example the analysis of customer reviews in dozens of languages is harder than the analysis of the same number of reviews in just one language.
+
+//ST: !
+* So the general rule is: the less the data is structured, the harder it is to use it, even if it's small in size (this relates to the "V" of variety seen above).
 
 //ST: !
 [start=4]
@@ -154,7 +161,7 @@ But if you store these reviews without an indication of who has authored the rev
 Simple design decisions about how the data is collected, stored and structured have a huge impact on the value of the data.
 
 //ST: !
-So, in reaction to large, unstructured and badly currated datasets with low value at the end, a notion of "smart data" is sometimes put forward: data which can be small in size but which is well curated and annotated, enhancing its value (see also https://www.quora.com/After-Big-Data-Smart-Data-is-a-trend-in-2013-So-what-is-Smart-Data-Have-any-clear-definition[here]).
+So, in reaction to large, unstructured and badly curated datasets with low value at the end, a notion of "smart data" is sometimes put forward: data which can be small in size but which is well curated and annotated, enhancing its value (see also https://www.quora.com/After-Big-Data-Smart-Data-is-a-trend-in-2013-So-what-is-Smart-Data-Have-any-clear-definition[here]).
 
 //ST: !
 [start=5]
@@ -164,8 +171,7 @@ So, in reaction to large, unstructured and badly currated datasets with low valu
 * It is interesting to note that "hot" expressions, like "big data", tend to wear out fast. They are too hyped, used in all circumstances, become vague and over sold.
 For big data, we observe that it is peaking in 2017, while new terms appear:
 
-//ST: Google searches for "big data", "machine learning" and "artificial intelligence", 2007 - 2017
-
+//ST: !
 
 image::gtrends.png[align="center", title="Google searches for big data, machine learning and AI"]
 {nbsp} +
@@ -174,19 +180,19 @@ image::gtrends.png[align="center", title="Google searches for big data, machine 
 
 What are the differences between these terms?
 
-* "Big data" puts the focus on the volume.
+* "Big data" is by now a generic term
 
 * "Machine learning" puts the focus on the scientific and software engineering capabilities enabling to do something useful with the data (predict, categorize, score...)
 
 //ST: !
 
-
 * "Artificial intelligence" puts the emphasis on human-like possibilities afforded by machine learning. Often used interchangeably with machine learning.
 
-* And "data science"? Thi is a broad term encompassing machine learning, statistics, ... and any analytical methods to work with data and interpret it. Often used interchangeably with machine learning. "Data scientist" is a common job description in the field.
+* And "data science"? This is a broad term encompassing machine learning, statistics, ... and any analytical methods to work with data and interpret it. Often used interchangeably with machine learning. "Data scientist" is a common job description in the field.
 
 == 4. Where did big data come from?
 //ST: 4. Where did big data come from?
+//ST: !
 
 [start=1]
 ==== 1. Data got generated in bigger volumes because of the digitalization of the economy
@@ -217,8 +223,12 @@ image::Decreasing-costs-of-data-storage.png[align=center, title="Decreasing cost
 ==== 4. The mindset changed as to what "counts" as data
 //ST: !
 
-* Unstructured (see above for definiton of "unstructured") textual data was usually not stored: it takes a lot space, and software to query it was not sufficiently developped.
-* Network data (also know as graphs) (who is friend with whom, who likes the same things as whom, etc.) was usually neglected as "not true observation", and hard to query. Social networks like Facebook made a lot to make businesses aware of the value of graphs (especially https://en.wikipedia.org/wiki/Social_graph[social graphs]).
+* Unstructured (see above for definition of "unstructured") textual data was usually not stored: it takes a lot space, and software to query it was not sufficiently developped.
+
+//ST: !
+* Network data (also known as graphs) (who is friend with whom, who likes the same things as whom, etc.) was usually neglected as "not true observation", and hard to query. Social networks like Facebook made a lot to make businesses aware of the value of graphs (especially https://en.wikipedia.org/wiki/Social_graph[social graphs]).
+
+//ST: !
 * Geographical data has democratized: specific (and expensive) databases existed for a long time to store and query "place data" (regions, distances, proximity info...) but easy-to-use solutions have multiplied recently.
 
 
@@ -250,7 +260,7 @@ image::Gartner-Hype-Cycle-for-2014.png[align=center, title="Gartner Hype Cycle f
 
 //ST: !
 
-The bumpy curve on the graph shows the following: all technologies follow a similar pattern along their lifetime:
+This graph shows the pattern that all technologies follow along their lifetime:
 
 //ST: !
 
@@ -273,6 +283,7 @@ In 2014, big data was near the top of the curve: it was getting a lot of attenti
 //ST: !
 
 In 2017, "big data" is still on top of hyped technologies, but is broken down in "deep learning" and "machine learning". Note also the "Artificial General Intelligence" category:
+
 //ST: !
 
 image::Gartner-Hype-Cycle-for-2017.png[align=center, title="Gartner Hype Cycle for 2017"]
@@ -284,12 +295,15 @@ image::Gartner-Hype-Cycle-for-2017.png[align=center, title="Gartner Hype Cycle f
 ==== 6. Big data transforms industries, and has become an industry in itself
 //ST: !
 
-Firms active in "Big data" divide in many subdomains: the industry to manage the IT infrastructure for big data, the consulting firms, software providers, industry-specific applications, etc. the field is huge.
+Firms active in "Big data" divide in many subdomains: the industry to manage the IT infrastructure for big data, the consulting firms, software providers, industry-specific applications, etc...
 
+-> the field is huge.
+
+//ST: !
 Matt Turck, https://twitter.com/mattturck[VC at FirstMarkCap], creates every year a sheet to visualize the main firms active in these subdomains.
 This is the 2017 version:
-//ST: !
 
+//ST: !
 image::Matt-Turck-FirstMark-2017-Big-Data-Landscape.png[align=center, title="Big data landscape for 2017"]
 {nbsp} +
 
@@ -299,6 +313,7 @@ You can find a high res version of this pic, an Excel sheet version, and a very 
 
 == 5. What is the future of big data?
 //ST: 5. What is the future of big data?
+//ST: !
 
 [start=1]
 ==== 1. More data is coming
@@ -321,9 +336,9 @@ We have a session devoted to IoT later in this course. You can already starting 
 ==== 2. Discussions about big data will fuse with AI
 //ST: !
 Enthusiasm, disappointment, bad buzz worries, debates, promises... the discourse about AI will grow. AI is fed on data, so the future of big data will intersect with what AI becomes.
-//ST: !
 
-Wwe have a session devoted to data science / machine learning / AI later in this course. You can already start reading the documents for this course:
+//ST: !
+We have a session devoted to data science / machine learning / AI later in this course. You can already start reading the documents for this course:
 
 - https://fr.pinterest.com/seinecle/what-is-data-science/[What is data science?]
 - https://fr.pinterest.com/seinecle/ai-applications-in-business/[AI applications in business]
@@ -331,19 +346,29 @@ Wwe have a session devoted to data science / machine learning / AI later in this
 //ST: !
 [start=3]
 ==== 3. Regulatory frameworks will grow in complexity
-//ST: !
-Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic stability in the age of robots and AI in the workplace.
-//ST: !
 
+//ST: !
+Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic (un)stability in the age of robots and AI in the workplace.
+
+//ST: !
 Public regulations at the national and international levels are trying to catch up with these challenges. As technology evolves quickly, we can anticipate that societal impacts of big data will take center stage.
-//ST: !
 
+//ST: !
 We have a session devoted to data compliance in this course. You can already start reading the documents for this course:
 
 - https://fr.pinterest.com/seinecle/data-compliance/[Data compliance]
+
+//ST: !
 
 == The end
 //ST: The end
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+
+image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: http://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
