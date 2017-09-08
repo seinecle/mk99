@@ -76,11 +76,10 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 
 
 
-==  3 take aways from the examples
+==  1. Three take aways from the examples
 ==  !
 
-=== 1. Think about data in a broad sense
-==  1. Think about data in a broad sense
+==== a. Think about data in a broad sense
 ==  !
 
 Data is not just text and figures. You should train in thinking about data in a broader sense:
@@ -91,8 +90,7 @@ Data is not just text and figures. You should train in thinking about data in a 
 - preferences, emotional states... are data
 - etc. There is no definitive list, you should train yourself looking at buisness situations and think: "where is the data?"
 
-=== 2. metadata is data, too
-==  2. metadata is data, too
+==== b. metadata is data, too
 ==  !
 
 Metadata: this is some data describing some other data.
@@ -114,8 +112,7 @@ a book <2>
 
 image:metadata.png["The trouble with metadata"]
 
-=== 3. zoom in, zoom out
-==  3. zoom in, zoom out
+==== c. zoom in, zoom out
 ==  !
 
 We should remember considering that a data point can be itself a collection of data points:
@@ -125,7 +122,8 @@ We should remember considering that a data point can be itself a collection of d
 
 So it is a good habit to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)
 
-==  Some essential vocabulary to discuss data
+==  2. Some essential vocabulary to discuss data
+
 ==  !
 
 image:tweet.png[width="500" align="center"]
@@ -141,12 +139,12 @@ image:tweet.png[width="500" align="center"]
 - The tweet is stored as a picture (png file) on my hard disk. "png" is the *file format*. The data is *persisted* as a file on disk (could have been stored in a database instead).
 
 
-==  data presented as a table
+==== Data presented as a table
 ==  !
 
 image:https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQYmkow/pub?w=1346&h=657[table]
 
-==  data and size
+==  3. data and size
 ==  !
 
 image:russian_dolls.jpg[Data sizes]

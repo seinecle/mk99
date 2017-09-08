@@ -105,6 +105,7 @@ We will devote a session of this course to data compliance, which is a broad top
 https://fr.pinterest.com/seinecle/data-compliance/[You can start reading the documents for this course here]
 
 ==  3. What is the minimum size to count as "big data"? It's all relative
+
 ==  !
 
 There is no "threshold" or "minimum size" of a dataset where "data" would turn from "small data" to "big data".
@@ -114,7 +115,9 @@ It is more of a *relative* notion: it is big data if current IT systems struggle
 (see https://en.wikipedia.org/wiki/Big_data[Wikipedia definition] developing on this.)
 
 ==  !
+
 "Big data" is a relative notion... how so?
+
 ==  !
 
 ==== 1. relative to time
@@ -268,11 +271,14 @@ This graph shows the pattern that all technologies follow along their lifetime:
 
 - at the beginning (left of the graph), an invention or discovery is made in a research lab, somewhere. Some news reporting is done about it, but with not much noise.
 - then, the technology starts picking the interest of journalists, consultant, professors, industries... expectations grow about the possibilities and promises of the tech. "With it we will be able to [insert amazing thing here]"
-- the top of the bump is the "peak of inflated expectations". All techs tend to be hyped and even over hyped. This means the tech is expected to deliver more than it surely will, in actuality. People get overdrawn.
 
 ==  !
 
+- the top of the bump is the "peak of inflated expectations". All techs tend to be hyped and even over hyped. This means the tech is expected to deliver more than it surely will, in actuality. People get overdrawn.
 - then follows the "Trough of Disillusionment". Doubt sets in. People realize the tech is not as powerful, easy, cheap or quick to implement as it first seemed. Newspapers start reporting depressing news about the tech, some bad buzz spreads.
+
+==  !
+
 - then: slope of Enlightenment. Heads get colder, expectations get in line with what the tech can actually deliver. Markets stabilize and consolidate: some firms close and key actors continue to grow.
 - then: plateau of productivity. The tech is now mainstream.
 
