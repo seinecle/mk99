@@ -94,6 +94,7 @@ Data is not just text and figures. You should train in thinking about data in a 
 - etc. There is no definitive list, you should train yourself looking at buisness situations and think: "where is the data?"
 
 //ST: !
+
 ==== b. metadata is data, too
 //ST: !
 
@@ -117,6 +118,7 @@ a book <2>
 image:metadata.png["The trouble with metadata"]
 
 //ST: !
+
 ==== c. zoom in, zoom out
 //ST: !
 
