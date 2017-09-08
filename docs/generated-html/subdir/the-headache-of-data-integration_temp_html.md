@@ -69,15 +69,15 @@ Take away: Data is fragmented by nature. It comes from different sources and pre
 
 (if you are interested, data scientists actually have whole books on the subject of wrangling with the mess of different data sources)
 
-image::https://covers.oreillystatic.com/images/0636920032861/lrg.jpg[align="center", title="Data wrangling"]
+image::wrangling.jpg[align="center", title="Data wrangling"]
 {nbsp} +
 
 //ST: !
 
 == 2. Sources of fragmentation
-//ST: Sources of fragmentation
+//ST: 2. Sources of fragmentation
 
-=== 1. Channels keep diversifying
+==== a. Channels keep diversifying
 
 Point of sale, print, TV, radio, outdoor posters, mobile apps, mobile sites, emails, SMS, APIs, social networks, search engines, e-commerce platforms, e-commerce websites, blogs, content channels, …
 
@@ -85,7 +85,7 @@ Point of sale, print, TV, radio, outdoor posters, mobile apps, mobile sites, ema
 
 //ST: !
 
-=== 2. Connections between these channels intensify and complexify
+==== b. Connections between these channels intensify and complexify
 
 - Social TV is TV delivered with Internet services,
 
@@ -105,7 +105,7 @@ It is even more difficult to explore causality (which action on which channel ca
 
 //ST: !
 
-=== 3. Underlying technologies fragment and keep evolving, across channels
+==== c. Underlying technologies fragment and keep evolving, across channels
 
 //ST: !
 
@@ -138,7 +138,7 @@ This illustrates that to just count visits to a web page (something which should
 
 //ST: !
 
-=== 3. In the meantime, customers have growing expectations about the quality of service
+==== d. In the meantime, customers have growing expectations about the quality of service
 
 //ST: !
 
@@ -153,24 +153,26 @@ Customers increasingly expect:
 
 //ST: !
 
-=== 4. Example: A French bank going through the 2010s
+==== e. Example: A French bank going through the 2010s
 
 //ST: !
 
-image::Before:-a-couple-of-data-sources-across-a-few-channels.png[align="center", title="Before: a couple of data sources across a few channels"]
+image::Before---a-couple-of-data-sources-across-a-few-channels.png[align="center", title="Before - a couple of data sources across a few channels"]
 {nbsp} +
 
 //ST: !
 
-image::Now:-many-data-sources-across-a-variety-of-channels.png[align="center", title="Now: many data sources across a variety of channels"]
+image::Now---many-data-sources-across-a-variety-of-channels.png[align="center", title="Now - many data sources across a variety of channels"]
 {nbsp} +
 
 //ST: !
 
-//ST: !
 
-=== 5. Tools for data integration: DMPs and more
+== 3. Tools for data integration: DMPs and more
+//ST: 3. Tools for data integration: DMPs and more
 
+
+==== a. Data Management Platform (DMP)
 In 2015/2016 a new acronym started to trend: "DMP", standing for *"Data Management Platform"*.
 
 Basically a DMP is an information system dedicated to solving the issues of data integration:
@@ -190,7 +192,13 @@ Basically a DMP is an information system dedicated to solving the issues of data
 - it provides security and analytics capabilities on the data
 - it makes this data available for execution by other software.
 
+
+//ST: !
+==== b. Data Management Platform (DMP)
+
 DMPs are relatively new. They integrate with 3 other information systems in the firm:
+
+//ST: !
 
 - CRM (Customer Relationship Management)
 ** This is the software *gathering* data related to customers and sales. It is a major source of *input data* for a DMP.

@@ -196,7 +196,7 @@ Basically a DMP is an information system dedicated to solving the issues of data
 
 
 ==  !
-==== b. Data Management Platform (DMP)
+==== b. DMP in relation to other information systems
 
 DMPs are relatively new. They integrate with 3 other information systems in the firm:
 
