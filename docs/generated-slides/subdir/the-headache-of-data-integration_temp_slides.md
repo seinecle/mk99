@@ -22,7 +22,9 @@ image::EMLyon_logo_corp.png[width="242", align="center"]
 Find the reading list for this session on Pinterest:
 https://fr.pinterest.com/seinecle/what-is-the-cloud/
 
-==  Data: you don't get in on tap
+==  1. Data: you don't get in on tap
+
+==  !
 
 A naive vision of data would get that it's all fluid. Don't we talk about "data streams"?
 Working with data would be as simple as opening a tap and "getting customer data", for instance.
@@ -78,7 +80,11 @@ image::wrangling.jpg[align="center", title="Data wrangling"]
 
 ==  2. Sources of fragmentation
 
+==  !
+
 ==== a. Channels keep diversifying
+
+==  !
 
 Point of sale, print, TV, radio, outdoor posters, mobile apps, mobile sites, emails, SMS, APIs, social networks, search engines, e-commerce platforms, e-commerce websites, blogs, content channels, …
 
@@ -87,6 +93,8 @@ Point of sale, print, TV, radio, outdoor posters, mobile apps, mobile sites, ema
 ==  !
 
 ==== b. Connections between these channels intensify and complexify
+
+==  !
 
 - Social TV is TV delivered with Internet services,
 
@@ -175,6 +183,9 @@ image::Now---many-data-sources-across-a-variety-of-channels.png[align="center", 
 
 
 ==== a. Data Management Platform (DMP)
+
+==  !
+
 In 2015/2016 a new acronym started to trend: "DMP", standing for *"Data Management Platform"*.
 
 Basically a DMP is an information system dedicated to solving the issues of data integration:
@@ -197,6 +208,8 @@ Basically a DMP is an information system dedicated to solving the issues of data
 
 ==  !
 ==== b. DMP in relation to other information systems
+
+==  !
 
 DMPs are relatively new. They integrate with 3 other information systems in the firm:
 

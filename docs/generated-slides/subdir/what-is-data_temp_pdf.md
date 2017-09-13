@@ -78,12 +78,11 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 
 
 
-== 3 take aways from the examples
-//ST: 3 take aways from the examples
+== 1. Three take aways from the examples
+//ST: 1. Three take aways from the examples
 //ST: !
 
-=== 1. Think about data in a broad sense
-//ST: 1. Think about data in a broad sense
+==== a. Think about data in a broad sense
 //ST: !
 
 Data is not just text and figures. You should train in thinking about data in a broader sense:
@@ -94,8 +93,9 @@ Data is not just text and figures. You should train in thinking about data in a 
 - preferences, emotional states... are data
 - etc. There is no definitive list, you should train yourself looking at buisness situations and think: "where is the data?"
 
-=== 2. metadata is data, too
-//ST: 2. metadata is data, too
+//ST: !
+
+==== b. metadata is data, too
 //ST: !
 
 Metadata: this is some data describing some other data.
@@ -117,8 +117,9 @@ a book <2>
 
 image:metadata.png["The trouble with metadata"]
 
-=== 3. zoom in, zoom out
-//ST: 3. zoom in, zoom out
+//ST: !
+
+==== c. zoom in, zoom out
 //ST: !
 
 We should remember considering that a data point can be itself a collection of data points:
@@ -128,8 +129,9 @@ We should remember considering that a data point can be itself a collection of d
 
 So it is a good habit to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)
 
-== Some essential vocabulary to discuss data
-//ST: Some essential vocabulary to discuss data
+== 2. Some essential vocabulary to discuss data
+//ST: 2. Some essential vocabulary to discuss data
+
 //ST: !
 
 image:tweet.png[width="500" align="center"]
@@ -138,21 +140,25 @@ image:tweet.png[width="500" align="center"]
 
 - This is a digital *medium* (because it's on screen as opposed to analogic, if we had printed the pic on paper)
 - The *type* of the data is textual + image
-- The text is *formatted* in plain text (meaning, no special formatting), as opposed to more structured data-interchange formats (https://codingislove.com/json-tutorial-indepth/[check json or xml]).
+
 //ST: !
+
+- The text is *formatted* in plain text (meaning, no special formatting), as opposed to more structured data-interchange formats (https://codingislove.com/json-tutorial-indepth/[check json or xml]).
 - The *encoding* of the text is UTF-8. Encoding has to do with the issue: how to represent alphabets and signs from different languages in text? (not even mentioning emojis?). UTF-8 is an encoding which is one of the most universal.
+
+//ST: !
+
 - The tweet is part of a list of tweets. The list represents the *data structure* of my dataset, it is the way my data is organized. There are many alternative data structures: arrays, sets, dics, maps...
 - The tweet is stored as a picture (png file) on my hard disk. "png" is the *file format*. The data is *persisted* as a file on disk (could have been stored in a database instead).
 
 
-== Data presented as a table
-//ST: data presented as a table
+==== Data presented as a table
 //ST: !
 
 image:https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQYmkow/pub?w=1346&h=657[table]
 
-== Finally: data and size
-//ST: data and size
+== 3. Finally: data and size
+//ST: 3. data and size
 //ST: !
 
 image:russian_dolls.jpg[Data sizes]
@@ -198,8 +204,6 @@ image:russian_dolls.jpg[Data sizes]
 |1 petabyte (Pb)
 |20 Pb = Google Maps in 2013
 |===
-
-//ST: !
 
 == The end
 //ST: The end

@@ -19,14 +19,12 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 //ST: !
 
-== Reading list
-Find the reading list for this session on Pinterest:
-https://fr.pinterest.com/seinecle/what-is-the-cloud/
-
 == 1. Note on the terminology: what is a server?
 //ST: 1. Note on the terminology: what is a server?
 
 For this topic, you need to know what a "server" is. A server is simply a computer stripped of everything unessential (screen, mouse, graphic card, sound card, keyboard)...
+
+//ST: !
 
 To illustrate: when Google is calculating what the best results are for your search "what are cheap and delicious restaurants in Lyon", this calculation must be done on a computer, right?
 
@@ -38,7 +36,8 @@ image::desktop.jpg[align="center",title="A desktop computer"]
 {nbsp} +
 
 //ST: !
-The reason is, we don't need a screen, mouse, desktop, and not even the big box containing the computer itself. They take too much space, consume energy, and there is no need for them.
+The reason is, we don't need a screen, mouse, desktop, and not even the big box containing the computer itself.
+They take too much space, consume energy, and there is no need for them.
 
 So when all the unecessary parts are removed, the computer looks like this, and is called a "server":
 
@@ -50,7 +49,11 @@ image::server.jpg[align="center",title="A server"]
 source: https://www.oracle.com/servers/sparc/s7-2/index.html
 
 //ST: !
-Take a look at the shape: rectangular and very slim. This makes it easy to stack up servers one on the other. Because for Google and other companies crunching data for their business, a lot of servers are needed, so gaining on space is a real issue.
+Take a look at the shape: rectangular and very slim.
+This makes it easy to stack up servers one on the other.
+Because for Google and other companies crunching data for their business, a lot of servers are needed, so gaining on space is a real issue.
+
+//ST: !
 
 When many servers are piled up together and put in a big tall box, this is called a *rack* of servers, and look like this:
 
@@ -63,6 +66,8 @@ image::rack.jpg[align="center",title="A rack of servers"]
 
 When all the racks of servers are put in the same room, this is called a "data center" and looks like this:
 
+//ST: !
+
 image::datacenter.jpg[align="center",title="A data center"]
 {nbsp} +
 
@@ -70,7 +75,7 @@ image::datacenter.jpg[align="center",title="A data center"]
 
 Look at this video showing a tour of a data center at Google:
 
-video::https://www.youtube.com/watch?v=XZmGGAbHqa0[align="center"]
+video::XZmGGAbHqa0[youtube]
 
 //ST: !
 Usually, until 2005 roughly, companies had two options:
@@ -82,6 +87,8 @@ Then the "cloud" changed this.
 
 == 2. The cloud
 //ST: 2. The cloud
+
+//ST: !
 
 The term "cloud" was made popular by Amazon with their service “Amazon Elastic Compute Cloud” (Amazon EC2) launched in 2006.
 
@@ -103,10 +110,13 @@ This service was new in many ways:
 
 Let's compare a situation with or without the cloud:
 
+//ST: !
+
 [width="100%"]
 |=======
 |*Without the cloud* |*With the cloud*
 |You make a market study for which server to buy
+
 
 Get the approval by your finance department to buy it (that’s a fixed asset!)
 
@@ -134,7 +144,10 @@ Opex are not inherently a better or cheaper option than a capex, but they are ea
 See http://gevaperry.typepad.com/main/2009/01/accounting-for-clouds-stop-saying-capex-vs-opex.html[this blog post], especially the critical comments below the post, to continue this discussion.
 
 == 3. IaaS, PaaS, Saas ... ??
-//ST: 2. IaaS, PaaS, Saas ... ??
+//ST: 3. IaaS, PaaS, Saas ... ??
+
+//ST: !
+
 
 What a company can do with the cloud?
 
