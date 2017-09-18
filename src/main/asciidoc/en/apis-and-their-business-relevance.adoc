@@ -136,7 +136,7 @@ b) SalesForce created a PaaS to host apps that could plug to the SalesForce CRM 
 This platform is called https://www.salesforce.com/products/platform/products/force/[Force.com] and external developers can put their apps there, as long as they are compatible with the SalesForce API.
 
 //ST:!
-SalesForce takes a commission on the sales made by these third party apps hosted on Force.com, but more importantly, the platform creates an *ecosystem* of apps and developers around the SalesForce products which makes it hard for a custmer company to switch to a different product.
+SalesForce takes a commission on the sales made by these third party apps hosted on Force.com, but more importantly, the platform creates an *ecosystem* of apps and developers around the SalesForce products which makes it hard for a customer company to switch to a different product.
 
 //ST:!
 ==== 2. APIs *accelerated* software innovation

@@ -341,7 +341,7 @@ We have a session devoted to IoT later in this course. You can already starting 
 [start=2]
 ==== 2. Discussions about big data will fuse with AI
 //ST: !
-Enthusiasm, disappointment, bad buzz worries, debates, promises... the discourse about AI will grow. AI is fed on data, so the future of big data will intersect with what AI becomes.
+Enthusiasm, disappointment, bad buzz, worries, debates, promises... the discourse about AI will grow. AI is fed on data, so the future of big data will intersect with what AI becomes.
 
 //ST: !
 We have a session devoted to data science / machine learning / AI later in this course. You can already start reading the documents for this course:

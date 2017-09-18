@@ -1,4 +1,4 @@
-= What an API?
+= APIs and their business relevance
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 
@@ -161,6 +161,11 @@ The data is on a server of SNCF. Then SNCF adds https://data.sncf.com/api/en[an 
 
 //ST:!
 Entrepreneurs and programmers in general will be able to access the data via the API and use it, possibly to create new services based on this train information.
+
+== 4. The ecosystem of APIs
+//ST: 4. The ecosystem of APIs
+//ST: !
+
 
 //ST:!
 ==== 1. A wealth of APIs

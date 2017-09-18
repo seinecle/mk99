@@ -172,7 +172,7 @@ The cloud is used to provide building blocks of a service: to manage a messengin
 
 The cloud is used to host a full software accessible "on demand" through the browser: like Google Drive, https://www.d2l.com/products/learning-environment/[Brightspace] or https://www.salesforce.com/fr/?ir=1[SalesForce].
 
-==  2. Private or public cloud? Hybrid cloud?
+==  4. Private or public cloud? Hybrid cloud?
 
 - Amazon EC2 is an example of a *public cloud*: it is publicly accessible to any customer. Of course, this does not mean that every customer can see what the others are doing on the cloud! Each customer have their private spaces on the cloud.
 
