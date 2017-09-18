@@ -86,7 +86,7 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .insert .insert{color:#080}
 .CodeRay .delete .delete{color:#800}
 .CodeRay .change .change{color:#66f}
-.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.5.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.5.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>APIs and their business relevance</h1><div class="preamble"><div class="paragraph"><p>last modified: 2017-09-14</p></div>
+.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.5.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.5.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>APIs and their business relevance</h1><div class="preamble"><div class="paragraph"><p>last modified: 2017-09-18</p></div>
 <div class="imageblock stretch" style="text-align: center"><img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></div><p class="author"><small>Clément Levallois</small></p></section>
 <section id="__escape_or_o_to_see_all_sides_f11_for_full_screen_s_for_speaker_notes"><h2>'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes</h2></section>
 <section id="_1_definition_of_api"><h2>1. Definition of API</h2></section>
@@ -113,19 +113,23 @@ Manufacturers, retailers, banks, &#8230;&#8203; they need to exchange informatio
 <section><div class="paragraph"><p>Instead, exchanging data via EDI consisted in using complex electronic tools (like the fax but even more complicated) because:</p></div></section>
 <section><div class="ulist"><ul><li><p>each industry has its own protocol to exchange data (one protocol for logistics, one for payments, one for this or that retailer chain, etc.)</p></li><li><p>you need a dedicated device or software for each EDI protocol, and these are not given for free</p></li></ul></div></section>
 <section><div class="ulist"><ul><li><p>EDI protocols can vary from one country to another</p></li><li><p>EDI protocols are controlled by industry associations which do not adopt innovation quickly</p></li></ul></div></section>
-<section><div class="paragraph"><p>So EDI is fragmented, complicated to implement, slow to evolve and not cheap.</p></div>
-<div class="paragraph"><p>EDI still exists, especially in large B2B industries like transportation (<a href="http://cerasis.com/2014/12/11/edi-in-transportation/">check here</a>), but it lost in popularity in the wider economy because&#8230;&#8203;  APIs have arrived.</p></div></section>
+<section><div class="paragraph"><p>and finally, EDI protocols created "closed systems": a company A can connect to company B via an EDI only if the two have a pre-agreement to use this EDI.</p></div></section>
+<section><div class="paragraph"><p>So EDIs are fragmented, complicated to implement, slow to evolve, not cheap and restricts the communication to a "club" of partners who agreed to use it.</p></div>
+<div class="paragraph"><p>EDIs still exist, especially in large B2B industries like transportation (<a href="http://cerasis.com/2014/12/11/edi-in-transportation/">check here</a>), but it lost in popularity in the wider economy because&#8230;&#8203;  APIs have arrived.</p></div></section>
 <section><div class="paragraph"><p>In the late 1990s and early 2000s, Internet and the World Wide Web expanded a lot.
 More and more servers in different parts of the world needed to be interfaced with each other to exchange data.</p></div></section>
 <section><div class="paragraph"><p>It became increasingly convenient to define simple and universal conventions that everyone could learn and follow to standardize these exchanges, for free and easily.
 That&#8217;s what web APIs (API for short) do.</p></div></section>
 <section><div class="paragraph"><p>Unlike EDI, APIs drop any industry-specific concern. APIs are just a convention to send and receive data, without any saying on the content of the data.
 The data sent and received can be invoices, webpages, train schedules&#8230;&#8203;</p></div></section>
+<section><div class="paragraph"><p>Contrary to EDIs, a company creating an API can choose to leave its access open (remember that EDIs need the two parties to have a pre-established agreement).</p></div>
+<div class="paragraph"><p>So that a potential client interested in using the API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.</p></div></section>
+<section><div class="paragraph"><p>(Saying that APIs are open does not mean an absence of security: communication through APIs can easily be identified and crypted, as needed).</p></div></section>
 <section><div class="paragraph"><p>Another difference between APIs and EDIs is that APIs use the Web to transfer data, using the same route as the webpages you load in your browsers. This is why APIs are called "web services", or "web APIs".</p></div>
 <div class="paragraph"><p>Two popular API conventions emerged and competed for popularity:</p></div></section>
 <section><div class="ulist"><ul><li><p>SOAP (<a href="https://en.wikipedia.org/wiki/SOAP">Simple Object Access Protocol</a>)</p></li><li><p>REST (<a href="https://en.wikipedia.org/wiki/Representational_state_transfer">Representational State Transfer</a>)</p></li></ul></div></section>
 <section><div class="paragraph"><p>REST became ultimately the most widely adopted, because it uses the same simple principles that webpages use to be transferred over the Internet (the "http" protocol that you see in web page addresses).
-This is why APIs are often called "REST APIs"</p></div></section>
+This is why APIs are often called <a href="https://www.youtube.com/watch?v=7YcW25PHnAA">"REST APIs"</a>.</p></div></section>
 <section><div class="paragraph"><p>In 2000-2010, it became increasingly easy and natural to adopt the REST convention to make one&#8217;s software and data available to another computer.
 This simple evolution to ease interoperability had <strong>immense effects</strong>:</p></div></section>
 <section id="_3_business_consequences_of_apis"><h2>3. Business consequences of APIs</h2></section>

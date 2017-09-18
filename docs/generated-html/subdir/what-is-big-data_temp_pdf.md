@@ -176,6 +176,7 @@ For big data, we observe that it is peaking in 2017, while new terms appear:
 
 //ST: !
 
+
 image::gtrends.png[align="center", title="Google searches for big data, machine learning and AI"]
 {nbsp} +
 

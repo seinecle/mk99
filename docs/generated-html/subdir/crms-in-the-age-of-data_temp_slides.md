@@ -100,17 +100,80 @@ Using printed material prohibits the customization to the personal needs of the 
 
 This decreases the efficiency of direct mail campaigns.
 
-==  The transformation, 2000-2010
+==  3. The digital transformation, 2006-2015
 
-Changes occurring in the past decade have transformed the landscape of CRMs. We should realize that for example, until 2006 only half of US households had Internet broadband access in their home:
+Changes occurring in the past decade have transformed the landscape of the customer relationship. We should realize that for
 
+==  !
+==== a) Until 2006 only half of US and EU households, and 10% of the Chinese population, had Internet broadband access at home:
+
+==  !
 ++++
 <iframe src="http://www.pewinternet.org/chart/home-broadband-use/iframe/" id="pew17070" scrolling="no" width="100%" height="100px" frameborder="0"></iframe>
 
 <script type='text/javascript'id='pew-iframe'>(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='http://www.pewinternet.org/wp-content/plugins/pew-scripts/js/iframeResizer.min.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;try{iFrameResize([],'iframe#pew17070')}catch(e){}};var embedder=document.getElementById('pew-iframe');embedder.parentNode.insertBefore(s,embedder)}if(window.attachEvent)window.attachEvent('onload',async_load);else window.addEventListener('load',async_load,false)})();</script>
 ++++
 
-Community Management is not optional
+
+==  !
+
+[.stretch]
+image::eu-broadband.png[align="center", title="Households with internet access and with broadband connection EU-28, 2007-2016"]
+
+
+source: http://ec.europa.eu/eurostat/statistics-explained/index.php/E-commerce_statistics_for_individuals[Eurostat]
+
+==  !
+
+[.stretch]
+image::china-internet.png[align="center", title="China Internet Users, 2000-2016"]
+
+
+source: http://www.internetlivestats.com/internet-users/china/[Internetlivestats.com]
+
+
+==  !
+==== b) Smartphones as we know them appeared just in 2007
+
+==  !
+[.stretch]
+image::first-iphone.jpg[align="center", title="Steve Jobs presenting the iPhone in 2007"]
+
+
+==  !
+==== c) Until 2009 social media was just taking off
+
+==  !
+++++
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Kh6Sf0XDOZf1-FU4VznSydrxIRm3NRJfJHIq4KYKGV2_TAtbqoI634NSu9SR0LYk3UihYLvrlHhs/pubchart?oid=412747728&amp;format=interactive"></iframe>
+++++
+
+
+==  !
+==== d) Online retail is growing at a steady pace
+
+==  !
+Together, Alibaba and Amazon have tripled customers in 5 years, nearing 900 million customers in 2017:
+
+==  !
+[.stretch]
+image::alibaba-users.png[align="center",title="Active consumers on Alibaba, 2012-2017"]
+
+
+==  !
+[.stretch]
+image::amazon-users.png[align="center",title="Active consumers on Amazon, 2012-2016"]
+
+
+
+==  3. Result of this digital transformation: the customer relationship and CRMs have evolved
+
+
+==  !
+- Community Management is not optional
+
+- Community Management is not optional
+
 Data-driven and also curated by editors, customer service specialists and evangelists
 
 Interactions have become personal and 2-ways

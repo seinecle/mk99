@@ -77,9 +77,14 @@ Instead, exchanging data via EDI consisted in using complex electronic tools (li
 - EDI protocols are controlled by industry associations which do not adopt innovation quickly
 
 ==  !
-So EDI is fragmented, complicated to implement, slow to evolve and not cheap.
+and finally, EDI protocols created "closed systems": a company A can connect to company B via an EDI only if the two have a pre-agreement to use this EDI.
 
-EDI still exists, especially in large B2B industries like transportation (http://cerasis.com/2014/12/11/edi-in-transportation/[check here]), but it lost in popularity in the wider economy because...  APIs have arrived.
+
+
+==  !
+So EDIs are fragmented, complicated to implement, slow to evolve, not cheap and restricts the communication to a "club" of partners who agreed to use it.
+
+EDIs still exist, especially in large B2B industries like transportation (http://cerasis.com/2014/12/11/edi-in-transportation/[check here]), but it lost in popularity in the wider economy because...  APIs have arrived.
 
 
 ==  !
@@ -96,6 +101,16 @@ Unlike EDI, APIs drop any industry-specific concern. APIs are just a convention 
 The data sent and received can be invoices, webpages, train schedules...
 
 ==  !
+Contrary to EDIs, a company creating an API can choose to leave its access open (remember that EDIs need the two parties to have a pre-established agreement).
+
+So that a potential client interested in using the API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.
+
+==  !
+
+(Saying that APIs are open does not mean an absence of security: communication through APIs can easily be identified and crypted, as needed).
+
+
+==  !
 Another difference between APIs and EDIs is that APIs use the Web to transfer data, using the same route as the webpages you load in your browsers. This is why APIs are called "web services", or "web APIs".
 
 Two popular API conventions emerged and competed for popularity:
@@ -106,7 +121,7 @@ Two popular API conventions emerged and competed for popularity:
 
 ==  !
 REST became ultimately the most widely adopted, because it uses the same simple principles that webpages use to be transferred over the Internet (the "http" protocol that you see in web page addresses).
-This is why APIs are often called "REST APIs"
+This is why APIs are often called https://www.youtube.com/watch?v=7YcW25PHnAA["REST APIs"].
 
 ==  !
 In 2000-2010, it became increasingly easy and natural to adopt the REST convention to make one's software and data available to another computer.
@@ -133,7 +148,7 @@ b) SalesForce created a PaaS to host apps that could plug to the SalesForce CRM 
 This platform is called https://www.salesforce.com/products/platform/products/force/[Force.com] and external developers can put their apps there, as long as they are compatible with the SalesForce API.
 
 == !
-SalesForce takes a commission on the sales made by these third party apps hosted on Force.com, but more importantly, the platform creates an *ecosystem* of apps and developers around the SalesForce products which makes it hard for a custmer company to switch to a different product.
+SalesForce takes a commission on the sales made by these third party apps hosted on Force.com, but more importantly, the platform creates an *ecosystem* of apps and developers around the SalesForce products which makes it hard for a customer company to switch to a different product.
 
 == !
 ==== 2. APIs *accelerated* software innovation

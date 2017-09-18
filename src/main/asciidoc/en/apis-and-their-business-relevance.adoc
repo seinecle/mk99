@@ -79,9 +79,14 @@ Instead, exchanging data via EDI consisted in using complex electronic tools (li
 - EDI protocols are controlled by industry associations which do not adopt innovation quickly
 
 //ST: !
-So EDI is fragmented, complicated to implement, slow to evolve and not cheap.
+and finally, EDI protocols created "closed systems": a company A can connect to company B via an EDI only if the two have a pre-agreement to use this EDI.
 
-EDI still exists, especially in large B2B industries like transportation (http://cerasis.com/2014/12/11/edi-in-transportation/[check here]), but it lost in popularity in the wider economy because...  APIs have arrived.
+
+
+//ST: !
+So EDIs are fragmented, complicated to implement, slow to evolve, not cheap and restricts the communication to a "club" of partners who agreed to use it.
+
+EDIs still exist, especially in large B2B industries like transportation (http://cerasis.com/2014/12/11/edi-in-transportation/[check here]), but it lost in popularity in the wider economy because...  APIs have arrived.
 
 
 //ST: !
@@ -98,6 +103,16 @@ Unlike EDI, APIs drop any industry-specific concern. APIs are just a convention 
 The data sent and received can be invoices, webpages, train schedules...
 
 //ST: !
+Contrary to EDIs, a company creating an API can choose to leave its access open (remember that EDIs need the two parties to have a pre-established agreement).
+
+So that a potential client interested in using the API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.
+
+//ST: !
+
+(Saying that APIs are open does not mean an absence of security: communication through APIs can easily be identified and crypted, as needed).
+
+
+//ST: !
 Another difference between APIs and EDIs is that APIs use the Web to transfer data, using the same route as the webpages you load in your browsers. This is why APIs are called "web services", or "web APIs".
 
 Two popular API conventions emerged and competed for popularity:
@@ -108,7 +123,7 @@ Two popular API conventions emerged and competed for popularity:
 
 //ST: !
 REST became ultimately the most widely adopted, because it uses the same simple principles that webpages use to be transferred over the Internet (the "http" protocol that you see in web page addresses).
-This is why APIs are often called "REST APIs"
+This is why APIs are often called https://www.youtube.com/watch?v=7YcW25PHnAA["REST APIs"].
 
 //ST: !
 In 2000-2010, it became increasingly easy and natural to adopt the REST convention to make one's software and data available to another computer.

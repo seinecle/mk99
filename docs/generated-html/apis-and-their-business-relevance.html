@@ -544,7 +544,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2017-09-14</p>
+<p>last modified: 2017-09-18</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -637,10 +637,13 @@ Manufacturers, retailers, banks, &#8230;&#8203; they need to exchange informatio
 </ul>
 </div>
 <div class="paragraph">
-<p>So EDI is fragmented, complicated to implement, slow to evolve and not cheap.</p>
+<p>and finally, EDI protocols created "closed systems": a company A can connect to company B via an EDI only if the two have a pre-agreement to use this EDI.</p>
 </div>
 <div class="paragraph">
-<p>EDI still exists, especially in large B2B industries like transportation (<a href="http://cerasis.com/2014/12/11/edi-in-transportation/">check here</a>), but it lost in popularity in the wider economy because&#8230;&#8203;  APIs have arrived.</p>
+<p>So EDIs are fragmented, complicated to implement, slow to evolve, not cheap and restricts the communication to a "club" of partners who agreed to use it.</p>
+</div>
+<div class="paragraph">
+<p>EDIs still exist, especially in large B2B industries like transportation (<a href="http://cerasis.com/2014/12/11/edi-in-transportation/">check here</a>), but it lost in popularity in the wider economy because&#8230;&#8203;  APIs have arrived.</p>
 </div>
 <div class="paragraph">
 <p>In the late 1990s and early 2000s, Internet and the World Wide Web expanded a lot.
@@ -653,6 +656,15 @@ That&#8217;s what web APIs (API for short) do.</p>
 <div class="paragraph">
 <p>Unlike EDI, APIs drop any industry-specific concern. APIs are just a convention to send and receive data, without any saying on the content of the data.
 The data sent and received can be invoices, webpages, train schedules&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p>Contrary to EDIs, a company creating an API can choose to leave its access open (remember that EDIs need the two parties to have a pre-established agreement).</p>
+</div>
+<div class="paragraph">
+<p>So that a potential client interested in using the API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.</p>
+</div>
+<div class="paragraph">
+<p>(Saying that APIs are open does not mean an absence of security: communication through APIs can easily be identified and crypted, as needed).</p>
 </div>
 <div class="paragraph">
 <p>Another difference between APIs and EDIs is that APIs use the Web to transfer data, using the same route as the webpages you load in your browsers. This is why APIs are called "web services", or "web APIs".</p>
@@ -672,7 +684,7 @@ The data sent and received can be invoices, webpages, train schedules&#8230;&#82
 </div>
 <div class="paragraph">
 <p>REST became ultimately the most widely adopted, because it uses the same simple principles that webpages use to be transferred over the Internet (the "http" protocol that you see in web page addresses).
-This is why APIs are often called "REST APIs"</p>
+This is why APIs are often called <a href="https://www.youtube.com/watch?v=7YcW25PHnAA">"REST APIs"</a>.</p>
 </div>
 <div class="paragraph">
 <p>In 2000-2010, it became increasingly easy and natural to adopt the REST convention to make one&#8217;s software and data available to another computer.
@@ -816,7 +828,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2017-09-14 15:34:30 CEST
+Last updated 2017-09-18 10:56:57 CEST
 </div>
 </div>
 </body>
