@@ -35,7 +35,7 @@ Recording and publishing the interview will create a public outcome that you can
 
 
 == 2. Forming groups
-//ST: 2. Forming grpups
+//ST: 2. Forming groups
 
 //ST:!
 
@@ -146,7 +146,7 @@ If you feel the interviewee stays too long on an answer, try orienting the conve
 See the syllabus for the deadline to publish the podcast. Grading is as follows:
 
 //ST:!
-- 33% of the grade on the quality of the questions (showing the interviewe has a good knowledge of the topic, and helping the expert discuss interesting topics)
+- 33% of the grade on the quality of the questions (showing the interviewer has a good knowledge of the topic, and helping the expert discuss interesting topics)
 - 33% of the grade on the conduct of the interview (good intro, good management of the time, no blanks...)
 - 33% of the grade on the quality of the podcast (sound of the interviewer and interviewee)
 
@@ -154,40 +154,38 @@ See the syllabus for the deadline to publish the podcast. Grading is as follows:
 //ST: 4. FAQs
 
 //ST:!
-
 *Can the podcast be in French?*
 
 - Yes, the podcast can be in French or English.
 
-//ST!
+//ST:!
 *Can I use my smartphone to record the interview?*
 
 - Yes, as long as it records good audio. Test it. You could do video as well with your smartphone. Just check the quality.
 
-//ST!
+//ST:!
 *I have found this person... is she an expert?*
 
 - An expert can be young or not, from a big company or not, famous or not.
 This is a person who, through its current or past activities, can demonstrate a very good knowledge of the topic she is discussing.
 
-//ST!
+//ST:!
 *I am not sure this topic is what you expect*
 
 - Choose a topic related to one of the topics discussed in this course. Send me an email or meet me during office hours to validate it.
 
-
-//ST!
+//ST:!
 *Can I interview several experts at the same time?*
 
 - Yes. You might meet a pair of co-founders, or a team of data scientists... it is up to you to keep an orderly interview, which can be harder (multiple voices...). But it can be definitely interesting!
 
-//ST!
+//ST:!
 *We are two or three in our group. Should we all talk and ask questions in the podcast?*
 
 - All members of the group should participate in preparing the podcast. One person can conduct the interview.
 If you listen to http://datastori.es/[this podcast], you will see that interviews by 2 persons can work very well.
 
-//ST!
+//ST:!
 Do you have another question? Send it at levallois@em-lyon.com
 
 == The end

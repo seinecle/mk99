@@ -42,10 +42,10 @@ My research interests:
 //ST: 2. What this course is for
 //ST: !
 
-- For business students, bring them a *culture* of data and related technologies.
+- For business students, to bring you a *culture* of data and related technologies.
 
 //ST: !
-- For engineering students, bring them a *culture* of how tech is applied in a business context
+- For engineering students, to bring you a *culture* of how tech is applied in a business context
 
 //ST: !
 The goal is not to turn you into data scientists - we now have plenty of courses for that!
@@ -97,6 +97,18 @@ Brighspace is where you should look for the info. It will point you to:
 Use the office hours
 
 - I am available every Tuesday morning after class, and at other times by appointment
+
+
+
+== 5. Let's discuss key aspects of the content of the lecture for today
+//ST: 5. Let's discuss key aspects of the content of the lecture for today
+//ST: !
+
+- The 3Vs
+- "Information is interpretation, data is a given". Do you agree?
+- What is unstructured data and why does it matter?
+- Could you explain what a "hybrid cloud" is?
+- What does it mean to say "relationships are data, too"?
 
 == The end
 //ST: The end

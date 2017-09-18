@@ -100,8 +100,8 @@ Using printed material prohibits the customization to the personal needs of the 
 
 This decreases the efficiency of direct mail campaigns.
 
-== 2. The transformation, 2006-2015
-//ST: The transformation, 2006-2015
+== 3. The digital transformation, 2006-2015
+//ST: 3. The digital transformation, 2006-2015
 
 Changes occurring in the past decade have transformed the landscape of the customer relationship. We should realize that for
 
@@ -159,8 +159,9 @@ image::amazon-users.png[align="center",title="Active consumers on Amazon, 2012-2
 {nbsp} +
 
 
-//ST: !
-==== e) Impact of these changes on customer relationships
+== 3. Result of this digital transformation: the customer relationship and CRMs have evolved
+//ST: 3. Result of this digital transformation: the customer relationship and CRMs have evolved
+
 
 //ST: !
 - Community Management is not optional

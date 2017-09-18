@@ -20,10 +20,12 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 == 1. General goal
 //ST: 1. General goal
 
-The goal for this group project is to make you go and meet experts in one of the many topics covered by big data.
+//ST:!
+
+The goal for this group project is to make you go and meet experts in one of the many topics discussed in this course.
 
 //ST:!
-Preparing the interview, you will get to learn the topic more in depth.
+Preparing the interview, you will get to learn the topic you choose more in depth.
 
 //ST:!
 Meeting the expert, discussing with her, and learning about her environment (company, colleagues, ...), you will understand better what "doing big data" means in practice.
@@ -33,7 +35,9 @@ Recording and publishing the interview will create a public outcome that you can
 
 
 == 2. Forming groups
-//ST: 2. Forming grpups
+//ST: 2. Forming groups
+
+//ST:!
 
 Groups can have 1 to 3 members.
 
@@ -43,6 +47,8 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vQyYDZRdbjPv6TOK0SEbM0Qw4MVXmAxR
 == 3. What should each group do
 //ST: 3. What should each group do
 
+//ST:!
+
 a. pick a topic
 b. find an expert to interview
 c. prepare the interview
@@ -51,15 +57,12 @@ e. post the interview online
 
 //ST:!
 ==== a) pick a topic
-//ST: a) pick a topic
-//ST:!
-
-If you are from a business education background, try picking a topic with a technical dimension.
-And vice and versa: engineers by training should choose a business-y topic.
 
 //ST:!
 
 *Send me an email or meet me during office hours to validate the topic you choose.*
+
+*Write the topic you choose https://docs.google.com/spreadsheets/d/e/2PACX-1vQyYDZRdbjPv6TOK0SEbM0Qw4MVXmAxR-xoT9yQv-hGnRs2BTzavTTV6Y2LCEb5kUQIunjwvdQw_6sY/pubhtml[in the spreadsheet] where you formed groups (see above)*
 
 
 //ST:!
@@ -78,7 +81,7 @@ Examples of business-y topics:
 
 //ST:!
 ==== b) find an expert to interview
-//ST: b) find an expert to interview
+
 //ST:!
 
 Through your personal networks, the emlyon alumni network, ... you can find an expert able to give you a bit of time to answer questions.
@@ -93,7 +96,7 @@ If that's the case, triple check that this person has access to a good microphon
 
 //ST:!
 ==== c) prepare the interview
-//ST: c) prepare the interview
+
 //ST:!
 
 Preparing the interview is essential.
@@ -110,7 +113,7 @@ You can share your questions with the expert before the interview, to make sure 
 
 //ST:!
 ==== d) record the interview
-//ST: d) record the interview
+
 //ST:!
 
 The interview itself has a couple of keypoints:
@@ -129,58 +132,60 @@ If you feel the interviewee stays too long on an answer, try orienting the conve
 
 //ST:!
 ==== e) publish the interview
-//ST: e) publish the interview
+
 //ST:!
 
-- Send the audio file at levallois@em-lyon.com. Use https://wetransfer.com/[WeTransfer] if need.
+- Send the audio file at levallois@em-lyon.com. Use https://wetransfer.com/[WeTransfer] if needed.
 - Create an account on Soundcloud and publish it there. If you chose a video podcast, you can upload it on Youtube or an equivalent service.
 
 == 3. Evaluation and grading
 //ST: 3. Evaluation and grading
 
+//ST:!
+
 See the syllabus for the deadline to publish the podcast. Grading is as follows:
 
 //ST:!
-- 33% of the grade on the quality of the questions (showing the interviewe has a good knowledge of the topic, and helping the expert discuss interesting topics)
+- 33% of the grade on the quality of the questions (showing the interviewer has a good knowledge of the topic, and helping the expert discuss interesting topics)
 - 33% of the grade on the conduct of the interview (good intro, good management of the time, no blanks...)
 - 33% of the grade on the quality of the podcast (sound of the interviewer and interviewee)
 
 == 4. FAQs
 //ST: 4. FAQs
 
+//ST:!
 *Can the podcast be in French?*
 
 - Yes, the podcast can be in French or English.
 
-//ST!
+//ST:!
 *Can I use my smartphone to record the interview?*
 
 - Yes, as long as it records good audio. Test it. You could do video as well with your smartphone. Just check the quality.
 
-//ST!
+//ST:!
 *I have found this person... is she an expert?*
 
 - An expert can be young or not, from a big company or not, famous or not.
 This is a person who, through its current or past activities, can demonstrate a very good knowledge of the topic she is discussing.
 
-//ST!
+//ST:!
 *I am not sure this topic is what you expect*
 
 - Choose a topic related to one of the topics discussed in this course. Send me an email or meet me during office hours to validate it.
 
-
-//ST!
+//ST:!
 *Can I interview several experts at the same time?*
 
 - Yes. You might meet a pair of co-founders, or a team of data scientists... it is up to you to keep an orderly interview, which can be harder (multiple voices...). But it can be definitely interesting!
 
-//ST!
+//ST:!
 *We are two or three in our group. Should we all talk and ask questions in the podcast?*
 
 - All members of the group should participate in preparing the podcast. One person can conduct the interview.
 If you listen to http://datastori.es/[this podcast], you will see that interviews by 2 persons can work very well.
 
-//ST!
+//ST:!
 Do you have another question? Send it at levallois@em-lyon.com
 
 == The end
