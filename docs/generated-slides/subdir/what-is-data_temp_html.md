@@ -25,13 +25,16 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 The English term "data" (1654) originates from “datum”, a Latin word for "a given".footnote:[http://www.etymonline.com/index.php?term=data]
 "Data" is a single factual, a single entity, a single point of matter.
 
+//ST: !
 Using the word "data" to mean "transmittable and storable computer information" was first done in 1946.
 The expression "data processing" was first used in 1954.footnote:[http://www.etymonline.com/index.php?term=data]
 
+//ST: !
 =====
 Thoughts: the etymology suggests that data is "a given". Can you question this?
 =====
 
+//ST: !
 Data represents either a single entity, or a collection of such entitities ("data points").
 We can speak also of datasets instead of data (so a dataset is a collection of data points).
 
@@ -89,6 +92,8 @@ Data is not just text and figures. You should train in thinking about data in a 
 
 - pictures are data
 - language is data (including slang, lip movements, etc.)
+
+//ST: !
 - relations are data (you know individual A, you know individual B, but the relationship between A and B is data as well)
 - preferences, emotional states... are data
 - etc. There is no definitive list, you should train yourself looking at buisness situations and think: "where is the data?"
