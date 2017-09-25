@@ -8,7 +8,6 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -59,6 +58,8 @@ This course is:
 - if you don't follow these other courses, then "Big data for business" gives you an overview which makes a big difference when applying to jobs in biz x tech.
 
 -> Which jobs?
+
+//ST: !
 
 image::hbr-ai.png[align="center", title="HBR special issue, July 2017"]
 {nbsp} +
@@ -126,8 +127,6 @@ Need help? Passionate about data science and want to contribute? Use the office 
 
 //ST: !
 - I am available every Tuesday morning after class, and at other times by appointment at levallois@em-lyon.com
-
-
 
 
 == 5. Let's discuss key aspects of the content of the lecture for today

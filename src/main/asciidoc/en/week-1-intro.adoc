@@ -60,6 +60,8 @@ This course is:
 
 -> Which jobs?
 
+//ST: !
+
 image::hbr-ai.png[align="center", title="HBR special issue, July 2017"]
 
 //ST: !
@@ -125,8 +127,6 @@ Need help? Passionate about data science and want to contribute? Use the office 
 
 //ST: !
 - I am available every Tuesday morning after class, and at other times by appointment at levallois@em-lyon.com
-
-
 
 
 == 5. Let's discuss key aspects of the content of the lecture for today
