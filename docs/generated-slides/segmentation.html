@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="Clément Levallois" /><title>Segmentation: between marketing and data science</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.5.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.5.0/css/theme/white.css" id="theme" /><style>/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+/*pre.CodeRay {background-color:#f7f7f8;}*/
+.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
+.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
+table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
+table.CodeRay td{vertical-align: top;line-height:1.45}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
+table.CodeRay td.code{padding:0 0 0 .5em}
+table.CodeRay td.code>pre{padding:0}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.5.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.5.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>Segmentation</h1><h2>between marketing and data science</h2><div class="preamble"><div class="paragraph"><p>last modified: 2017-09-25</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></div><p class="author"><small>Clément Levallois</small></p></section>
+<section id="__escape_or_o_to_see_all_sides_f11_for_full_screen_s_for_speaker_notes"><h2>'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes</h2></section>
+<section id="_1_the_role_of_segmentation_in_marketing"><h2>1. The role of segmentation in marketing</h2></section>
+<section><h3>a. The need for a market fit</h3></section>
+<section><div class="paragraph"><p>How to market the right product to the right people?</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/A-product-cannot-fit-everybody's-expectations.png" alt="A product cannot fit everybody's expectations" width="title=" height="A product cannot fit everybody's expectations"" /></div></section>
+<section><div class="paragraph"><p>A product cannot have every feature: adding a new feature can conflict with existing features or just hurt the need for simplicity.</p></div></section>
+<section><div class="paragraph"><p>Customers have diverging expectations: what is preferred by one customer is considered a nuisance by another.</p></div></section>
+<section><div class="paragraph"><p>Firms have limited resources: they cannot create and sell every variety of a product with every feature. They must allocate their scarce resources in the best way possible.</p></div></section>
+<section><div class="paragraph"><p>A <strong>market fit</strong> is achieved when there is an alignment between the product, the customers needs and the firms capabilities to deliver.</p></div>
+<div class="paragraph"><p>How to achieve a market fit?</p></div></section>
+<section><div class="paragraph"><p>This question is a classic field of study in marketing, and is called "market research". A market fit can be explored and found with the "STP" approach:</p></div></section>
+<section><h3>b. Segmentation and STP</h3></section>
+<section><div class="paragraph"><p>STP stands for: <strong>Segmentation → Targeting → Positioning</strong></p></div>
+<div class="paragraph"><p>This a strategy to arrive at a market fit.</p></div>
+<div class="paragraph"><p>Once defined, this strategy will be implemented following a <strong>marketing plan</strong> (for example, following the famous <a href="http://www.smartinsights.com/digital-marketing-strategy/customer-segmentation-targeting/segmentation-targeting-and-positioning/">"4Ps"</a>).</p></div></section>
+<section><div class="paragraph"><p>Let&#8217;s have a closer look at the "STP":</p></div></section>
+<section><div class="ulist"><ul><li><p>SEGMENTATION</p></li></ul></div>
+<div class="paragraph"><p>First, cut the crowd into segments of customers with similar characteristics / expectations / needs</p></div></section>
+<section><div class="ulist"><ul><li><p>TARGETING</p></li></ul></div>
+<div class="paragraph"><p>Then, evaluate each segment, and select the most attractive one.</p></div></section>
+<section><div class="ulist"><ul><li><p>POSITIONING</p></li></ul></div>
+<div class="paragraph"><p>Creating an offer (a value proposition) corresponding to the segment we target</p></div></section>
+<section><div class="paragraph"><p>"Segmenting a market" is the first step of this STP strategy.</p></div>
+<div class="paragraph"><p>It is the key operation where the "anonymous crowd of potential buyers" is analyzed and cut into distinct groups which can be interested in the same kind of product or service.</p></div></section>
+<section id="_2_how_to_proceed_to_segment_in_practice"><h2>2. How to proceed to segment, in practice?</h2></section>
+<section><h3>a. Quantitative vs qualitative methods</h3></section>
+<section><div class="paragraph"><p>Qualitative and quantitative methods can be used for segmentation.</p></div></section>
+<section><div class="paragraph"><p>Qualitative methods include surveys, ethnographic observation (online or offline), literature reviews on socio cultural trends, text analysis, interviews, focus groups, and more.</p></div></section>
+<section><div class="paragraph"><p>The point of these qualitative methods is to identify typical <strong>usages</strong> and <strong>attitudes</strong> towards the product (aka, <strong>use cases</strong>) among potential customers.
+Each of these use cases is a potential segment to address.</p></div></section>
+<section><div class="paragraph"><p>Qualitative methods are strong at <strong>identifying</strong> segments, and also strong at <strong>understanding</strong> and <strong>explaining</strong> them: we understand better <strong>why</strong> people make their choices.</p></div></section>
+<section><div class="paragraph"><p>Qualitative methods are not strong at evaluating the <strong>size</strong> and at <strong>generalizing</strong> beyond the circumstances of the observations made.</p></div></section>
+<section><div class="paragraph"><p>In comparison, quantitative methods are relatively stronger at <strong>measuring</strong>, <strong>comparing</strong> and <strong>generalizing</strong>.</p></div></section>
+<section><div class="paragraph"><p>Quantitative methods put numbers on things, allowing for an estimation of absolute and relative mangitudes: is this segment a large one? The largest?</p></div></section>
+<section><div class="paragraph"><p>And contrary to qualitative methods, quantitative methods are good at projecting a small sample to a larger situation, all while measuring by how much we can be off - that&#8217;s what statistics do.</p></div></section>
+<section><div class="paragraph"><p>But let&#8217;s not forget about 2 relative weaknesses of quantitative studies compared to qualitative ones:</p></div></section>
+<section><div class="ulist"><ul><li><p>correlations are easy to find, <strong>causality</strong> is harder to prove.</p></li><li><p><strong>explanations</strong> (causality + motives &#8594; the why?? question) are also hard to establish.</p></li></ul></div>
+<div class="paragraph"><p>&#8594; we detail <strong>some</strong> of these quantitative methods below.</p></div></section>
+<section><h3>b. Methods for segmentation in data science: "clustering"</h3></section>
+<section><div class="paragraph"><p>(we use "data science methods" here, but that&#8217;s very close to "machine learning techniques")</p></div></section>
+<section><div class="paragraph"><p>Many overviews of ML techniques tend to have a special category for "clustering techniques" (<a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/">1</a>, <a href="https://www.pinterest.fr/pin/440367669799815280/">2</a>, <a href="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/02/17090804/microsoft-machine-learning-algorithm-cheat-sheet-v6.pdf">3</a>).</p></div>
+<div class="paragraph"><p>For example at the bottom right of this chart:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/ds_techniques_cheatsheet_1.png" alt="ds techniques cheatsheet 1" height="100%" /></div><div class="title">Figure 1. data science techniques grouped in families</div>
+<div class="paragraph"><p>source: <a href="https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/">machinelearningmastery.com</a></p></div></section>
+<section><div class="paragraph"><p>Clustering means "finding groups" in the data. This is analogous to "segmenting" in marketing. So the clustering techniques from machine learning can be used for segmentation.</p></div></section>
+<section><div class="paragraph"><p>Does it mean that the other methods shown on the chart above are useless for segmentation?</p></div>
+<div class="paragraph"><p>&#8594; <strong>NO</strong></p></div></section>
+<section><div class="paragraph"><p>For example, Principal Component Analysis (PCA) is classified in the chart as a technique for "dimensionality reduction" (we&#8217;ll explain this term in an other course), even if it has been used for a long time in marketing (and elsewhere) to segment a dataset (see a great example and tutorial <a href="http://www.business-science.io/business/2016/09/04/CustomerSegmentationPt2.html">here</a>).</p></div></section>
+<section><h3>c. Two classic clustering methods: k-means and hierarchical clustering</h3></section>
+<section><div class="admonitionblock important"><table><tr><td class="icon"><div class="title">Important</div></td><td class="content">just to remind you that the goal of this course is to make you familiar and knowledgeable about <strong>what it means to do data science in a business context</strong>, not to turn you in data scientists. Knowing the general principles of k-means and hierarchical clustering is useful if you want to work productively as a business person with data scientists.</td></tr></table></div></section>
+<section><div class="paragraph"><p>The general approach for clustering is:</p></div></section>
+<section><div class="olist arabic"><ol class="arabic"><li><p>Get data</p></li></ol></div>
+<div class="paragraph"><p>For example, data on car drivers from consumer panel providing info on their demographics, tastes in car size and design, and pricing preferences</p></div></section>
+<section><div class="olist arabic"><ol class="arabic" start="2"><li><p>Develop measures of association</p></li></ol></div>
+<div class="paragraph"><p>This means creating a measure of “which customer is similar to which” in terms of their features</p></div></section>
+<section><div class="paragraph"><p>For example, families with young children will be roughly similar in terms of demographics, needs and budget.</p></div></section>
+<section><div class="olist arabic"><ol class="arabic" start="3"><li><p>Deal with outliers</p></li></ol></div>
+<div class="paragraph"><p>Removing car drivers that have extreme values? (the one car driver that needs a race car, etc.)</p></div></section>
+<section><div class="olist arabic"><ol class="arabic" start="4"><li><p>Form segments</p></li></ol></div>
+<div class="paragraph"><p>Use analytical techniques to create groups of car drivers based on their associations. Also called “clusters” or “communities”.</p></div></section>
+<section><div class="olist arabic"><ol class="arabic" start="5"><li><p>Profile segments and interpret results</p></li></ol></div>
+<div class="paragraph"><p>Groups have now been found automatically. Identify what these groups mean and how they show a path for action.</p></div></section>
+<section><h3>d. hierarchical clustering</h3></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/Hierarchical-clustering.png" alt="Hierarchical clustering" width="title=" height="Hierarchical clustering"" /></div></section>
+<section><h3>e. k-means clustering</h3></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/k-means-clustering.png" alt="k means clustering" width="title=" height="k-means clustering"" /></div></section>
+<section><h3>f. clustering using community detection - via network analysis</h3></section>
+<section><div class="paragraph"><p>This last example of a clustering technique is a bit fancy - not usually represented in ML cheatsheets.</p></div>
+<div class="paragraph"><p>See the lesson on "Network analysis and text mining" for an example of how it can be practised in <a href="http://www.gephi.org">Gephi</a>.</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/community-detection.png" alt="community detection" width="title=" height="community detection"" /></div></section>
+<section><div class="paragraph"><p>This clustering example is particularly interesting because the number of clusters found in the dataset is not specified in advance: it "emerges" through the analysis.</p></div>
+<div class="paragraph"><p>(contrary to k-means where the number of clusters is set by the analyst: it is the "k" parameter).</p></div></section>
+<section id="_3_last_notes_clustering_useful_beyond_segmenting_in_marketing"><h2>3. Last notes: clustering, useful beyond segmenting in marketing</h2></section>
+<section><div class="paragraph"><p>&#8594; It reveals groups, relations between groups</p></div>
+<div class="paragraph"><p>&#8594; With the network approach, it can even point to the position of single individuals in each group (are they central? Do they bridge to other segments?)</p></div>
+<div class="paragraph"><p>&#8594; Useful for operational marketing (ex: email campaigns), not just strategic product launch!</p></div></section>
+<section id="_the_end"><h2>The end</h2></section>
+<section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p></div>
+<div class="paragraph"><p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>
+This course is made by Clement Levallois.</p></div>
+<div class="paragraph"><p>Discover my other courses in data / tech for business: <a href="http://www.clementlevallois.net" class="bare">http://www.clementlevallois.net</a></p></div>
+<div class="paragraph"><p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 11411204;
+        var sc_invisible = 1;
+        var sc_security = "11411204";
+        var scJsHost = (("https:" == document.location.protocol) ?
+            "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript><div class="statcounter"><a title="site stats"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="//c.statcounter.com/11411204/0/11411204/1/" alt="site
+    stats"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide --></p></div></section></div></div><script src="reveal.js-3.5.0/lib/js/head.min.js"></script><script src="reveal.js-3.5.0/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+Reveal.initialize({
+  // Display controls in the bottom right corner
+  controls: true,
+  // Display a presentation progress bar
+  progress: true,
+  // Display the page number of the current slide
+  slideNumber: false,
+  // Push each slide change to the browser history
+  history: false,
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+  // Enable the slide overview mode
+  overview: true,
+  // Vertical centering of slides
+  center: true,
+  // Enables touch navigation on devices with touch input
+  touch: true,
+  // Loop the presentation
+  loop: false,
+  // Change the presentation direction to be RTL
+  rtl: false,
+  // Turns fragments on and off globally
+  fragments: true,
+  // Flags if the presentation is running in an embedded mode,
+  // i.e. contained within a limited portion of the screen
+  embedded: false,
+  // Number of milliseconds between automatically proceeding to the
+  // next slide, disabled when set to 0, this value can be overwritten
+  // by using a data-autoslide attribute on your slides
+  autoSlide: 0,
+  // Stop auto-sliding after user input
+  autoSlideStoppable: true,
+  // Enable slide navigation via mouse wheel
+  mouseWheel: false,
+  // Hides the address bar on mobile devices
+  hideAddressBar: true,
+  // Opens links in an iframe preview overlay
+  previewLinks: false,
+  // Theme (e.g., beige, black, league, night, serif, simple, sky, solarized, white)
+  // NOTE setting the theme in the config no longer works in reveal.js 3.x
+  //theme: Reveal.getQueryHash().theme || 'white',
+  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
+  transition: Reveal.getQueryHash().transition || 'linear',
+  // Transition speed (e.g., default, fast, slow)
+  transitionSpeed: 'default',
+  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
+  backgroundTransition: 'fade',
+  // Number of slides away from the current that are visible
+  viewDistance: 3,
+  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
+  parallaxBackgroundImage: '',
+  // Parallax background size in CSS syntax (e.g., "2100px 900px")
+  parallaxBackgroundSize: '',
+
+  // The "normal" size of the presentation, aspect ratio will be preserved
+  // when the presentation is scaled to fit different resolutions. Can be
+  // specified using percentage units.
+  width: 960,
+  height: 700,
+
+  // Factor of the display size that should remain empty around the content
+  margin: 0.1,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  minScale: 0.2,
+  maxScale: 10.0,
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+      { src: 'reveal.js-3.5.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'reveal.js-3.5.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal.js-3.5.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'reveal.js-3.5.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal.js-3.5.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});</script></body></html>
