@@ -1,4 +1,4 @@
-= What is "the cloud"?
+= Big data for business: What is "the cloud"?
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 

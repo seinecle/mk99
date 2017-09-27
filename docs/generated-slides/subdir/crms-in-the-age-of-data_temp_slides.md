@@ -257,12 +257,25 @@ i. "personalization" is the extreme end: one different view for each different c
 ==  !
 ii. "personalization" has been blamed for reinforcing "bubbles" or "tribes" views of the world (http://pubsonline.informs.org/doi/pdf/10.1287/mnsc.2013.1808[paying version] of the paper, free version https://www.researchgate.net/profile/Kartik_Hosanagar/publication/228233814_Will_the_Global_Village_Fracture_Into_Tribes_Recommender_Systems_and_Their_Effects_on_Consumer_Fragmentation/links/0046352960e0b2e12c000000/Will-the-Global-Village-Fracture-Into-Tribes-Recommender-Systems-and-Their-Effects-on-Consumer-Fragmentation.pdf[here]).
 
-
 ==  !
 Content personalization is also blamed for favoring political polarization via an "echo chamber effect": social media tend to show me content I already agree with (paying version of the paper http://www.sciencedirect.com/science/article/pii/S0740624X16300375[here], free version https://www.academia.edu/24798528/Political_Polarization_on_Twitter_Implications_for_the_Use_of_Social_Media_in_Digital_Governments?auto=download[here]).
 
 ==  !
-iii. Personalizing the customer relationship, even when effective, is not inherently a good thing. It has been shown that the Coca-Cola #ShareaCoke campaign is effective at making more children choose a soda with a label to their name, over a healthy drink (paying version of the study http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract[here], free version not available).
+iii. Personalizing the customer relationship, even when effective, is not inherently a good thing. It has been shown that the http://www.coca-colacompany.com/stories/summer-of-sharing-share-a-coke-campaign-rolls-out-in-the-us[Coca-Cola #ShareaCoke campaign] is effective at making more children choose a soda with a label to their name, over a healthy drink (paying version of the study http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract[here], free version not available).
+
+==  !
+iv. Personalization through smart CRMs? Companies rated with the best customer service do personalization differently: with humans.
+
+==  !
+See how Zappos offers a great service to their customers:
+
+video::vApoQPISmvs[youtube]
+
+(https://www.youtube.com/watch?v=IwE1zb9fiVs[another impactful version here])
+
+==  !
+or see (in French) how https://medium.com/@djo/obsession-service-client-captain-train-cb0b91467fd9[Trainline makes its customers happy].
+
 
 ==  5. Todays's CRMs must be data-driven
 

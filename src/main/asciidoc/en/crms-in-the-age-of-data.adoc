@@ -1,4 +1,4 @@
-= CRMs in the age of data
+= Big data for business: CRMs in the age of data
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 
