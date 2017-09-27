@@ -50,6 +50,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
+
 |===
 
 |*The hard part*
@@ -82,6 +84,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
+
 |===
 
 |*The hard part*
@@ -97,6 +101,21 @@ Rather, these are essential building blocks for a strategy of value creation bas
 //ST: 1. CURATE
 //ST: !
 
+
+.Curate: the ones doing it
+|===
+
+|*The ones doing it*
+
+1. Clarivate Analytics curating metadata from scientific publishing image:clarivate-analytics.png[width="100"]
+
+2. Nielsen and IRI curating and selling retail data image:nielsen.jpg[width="100"] image:iri.jpg[width="100"]
+
+3. ImDB curating and selling movie data image:imdb.jpg[width="100"]
+
+|===
+
+//ST: !
 
 .Curate: the hard part
 |===
@@ -114,36 +133,9 @@ Rather, these are essential building blocks for a strategy of value creation bas
 |===
 
 
-.Curate: the ones doing it
-|===
-
-|*The ones doing it*
-
-1. Clarivate Analytics curating metadata from scientific publishing image:clarivate-analytics.png[width="100"]
-
-2. Nielsen and IRI curating and selling retail data image:nielsen.jpg[width="100"] image:iri.jpg[width="100"]
-
-3. ImDB curating and selling movie data image:imdb.jpg[width="100"]
-
-|===
-
-
-
 == 4. ENRICH
 //ST: 4. ENRICH
 //ST: !
-
-.Enrich: the hard part
-|===
-|*The hard part*
-
-1. Knowing which cocktail of data is valued by the market
-
-2. Limit replicability
-
-3. Establish legitimacy
-
-|===
 
 .Enrich: the ones doing it
 |===
@@ -156,8 +148,35 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
+
+.Enrich: the hard part
+|===
+
+1. Knowing which cocktail of data is valued by the market
+
+2. Limit replicability
+
+3. Establish legitimacy
+
+|===
+
+
 == 5. RANK / MATCH / COMPARE
 //ST: 5. RANK / MATCH / COMPARE
+//ST: !
+
+.Rank / Match / Compare: the ones doing it
+|===
+
+1. Search engines ranking results image:google.jpg[width="100"]
+
+2. Yelp, Tripadvisor, etc… which rank places image:tripadvisor.jpg[width="100"]
+
+3. Any system that needs to filter out best quality entities among a crowd of candidates
+
+|===
+
 //ST: !
 
 .Rank / Match / Compare: the hard part
@@ -171,20 +190,20 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
-.Rank / Match / Compare: the ones doing it
-|===
-
-1. Search engines ranking results image:google.jpg[width="100"]
-
-2. Yelp, Tripadvisor, etc… which rank places image:tripadvisor.jpg[width="100"]
-
-3. Any system that needs to filter out best quality entities among a crowd of candidates
-
-
-|===
 
 == 6. SEGMENT / CLASSIFY
 //ST: 5. SEGMENT / CLASSIFY
+//ST: !
+
+.Segment / classify: the ones doing it
+|===
+
+1. Tools for discovery / exploratory analysis by segmentation
+
+2. Diagnostic tools (spam or not? buy, hold or sell? healthy or not?) image:medimsight.png[width="100"]
+
+|===
+
 //ST: !
 
 .Segment / classify: the hard part
@@ -197,29 +216,10 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
-.Segment / classify: the ones doing it
-|===
-
-1. Tools for discovery / exploratory analysis by segmentation
-
-2. Diagnostic tools (spam or not? buy, hold or sell? healthy or not?) image:medimsight.png[width="100"]
-
-|===
-
 
 == 7. GENERATE (experimental!)
 //ST: 7. GENERATE (experimental!)
 //ST: !
-
-.Generate (experimental!): the hard part
-|===
-
-1. Should not create a failed product / false expectations
-
-2. Both classic (think of image:clippy.jpg[width="50"]) and frontier science: not sure where it’s going
-
-|===
-
 
 .Generate (experimental!): the ones doing it
 |===
@@ -234,6 +234,18 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
+
+.Generate (experimental!): the hard part
+|===
+
+1. Should not create a failed product / false expectations
+
+2. Both classic (think of image:clippy.jpg[width="50"]) and frontier science: not sure where it’s going
+
+|===
+
+//ST: !
 
 == Combos!
 //ST: Combos!

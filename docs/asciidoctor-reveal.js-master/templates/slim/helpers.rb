@@ -27,10 +27,6 @@ module Slim::Helpers
     end
   end
 
-  def to_boolean val
-    val && val != 'false' && val.to_s != '0' || false
-  end
-
 end
 
 # More custom functions can be added in another namespace if required

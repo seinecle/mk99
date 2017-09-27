@@ -1,4 +1,4 @@
-= CRMs in the age of data
+= Big data for business: CRMs in the age of data
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 
@@ -258,7 +258,7 @@ ii. "personalization" has been blamed for reinforcing "bubbles" or "tribes" view
 Content personalization is also blamed for favoring political polarization via an "echo chamber effect": social media tend to show me content I already agree with (paying version of the paper http://www.sciencedirect.com/science/article/pii/S0740624X16300375[here], free version https://www.academia.edu/24798528/Political_Polarization_on_Twitter_Implications_for_the_Use_of_Social_Media_in_Digital_Governments?auto=download[here]).
 
 //ST: !
-iii. Personalizing the customer relationship, even when effective, is not inherently a good thing. It has been shown that the Coca-Cola #ShareaCoke campaign is effective at making more children choose a soda with a label to their name, over a healthy drink (paying version of the study http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract[here], free version not available).
+iii. Personalizing the customer relationship, even when effective, is not inherently a good thing. It has been shown that the http://www.coca-colacompany.com/stories/summer-of-sharing-share-a-coke-campaign-rolls-out-in-the-us[Coca-Cola #ShareaCoke campaign] is effective at making more children choose a soda with a label to their name, over a healthy drink (paying version of the study http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract[here], free version not available).
 
 //ST: !
 iv. Personalization through smart CRMs? Companies rated with the best customer service do personalization differently: with humans.

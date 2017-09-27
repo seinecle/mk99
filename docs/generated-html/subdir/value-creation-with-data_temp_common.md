@@ -36,34 +36,9 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 .Predict
 |===
-| *The data you need* | *The hard part*
-
-|
-
-1. Domain specific historical data
-
-2. Data mashups
-
-3. Feedback mechanism on the accuracy
-
-|
-
-1. Collecting data ("cold start problem")
-
-2. Risk missing the long tail, algorithmic discrimination, stereotyping
-
-3. Neglect of novelty
 
 
-| *The people you need* | *The ones doing it*
-
-|
-
-1. Data scientists
-
-2. Domain specialists
-
-|
+|*The ones doing it*
 
 1. Predictive churn / default / ... (banks / telco)
 
@@ -75,37 +50,31 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
+
+|===
+
+|*The hard part*
+
+1. Collecting data ("cold start problem")
+
+2. Risk missing the long tail, algorithmic discrimination, stereotyping
+
+3. Neglect of novelty
+|===
+
+
+
+
 == 2. SUGGEST
 //ST: 1. SUGGEST
 //ST: !
 
 .Suggest
 |===
-| *The data you need* | *The hard part*
-
-|
-
-1. A rich dataset and / or historical data on past transactions
-
-2. A feedback mechanism providing data to improve on the suggestion procedure
-
-|
-
-1. Managing serendipity and bubble effects
-
-2. Finding the value proposition which goes beyond the simple “you purchased this, you’ll like that”
 
 
-
-| *The people you need* | *The ones doing it*
-
-|
-
-1. Data scientists
-
-2. Domain specialists for insights into the suggestion logic
-
-|
+|*The ones doing it*
 
 1. Amazon’s product recommendation system image:amazon.jpg[width="100"]
 
@@ -115,45 +84,28 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
+
+|===
+
+|*The hard part*
+
+1. Managing serendipity and bubble effects
+
+2. Finding the value proposition which goes beyond the simple “you purchased this, you’ll like that”
+
+|===
+
 
 == 3. CURATE
 //ST: 1. CURATE
 //ST: !
 
-.Curate
+
+.Curate: the ones doing it
 |===
-| *The data you need* | *The hard part*
 
-|
-
-1. Dirty (inaccuracies, missing values, bad formatting)
-
-2. Cheap but hard to collect
-
-3. Preferably unstructured
-
-|
-
-1. Slow progress
-
-2. Must maintain continuity
-
-3. Scaling up / right incentives for the workforce
-
-4. Quality control
-
-
-
-| *The people you need* | *The ones doing it*
-
-|
-
-Large workforce ("digital labor") to manually inspect the data
-
-Data scientists used to work with crowd sourced data.
-
-
-|
+|*The ones doing it*
 
 1. Clarivate Analytics curating metadata from scientific publishing image:clarivate-analytics.png[width="100"]
 
@@ -163,22 +115,43 @@ Data scientists used to work with crowd sourced data.
 
 |===
 
+//ST: !
+
+.Curate: the hard part
+|===
+
+|*The hard part*
+
+1. Slow progress
+
+2. Must maintain continuity
+
+3. Scaling up / right incentives for the workforce
+
+4. Quality control
+
+|===
+
 
 == 4. ENRICH
 //ST: 4. ENRICH
 //ST: !
 
-.Enrich
+.Enrich: the ones doing it
 |===
-| *The data you need* | *The hard part*
 
-|
+1. Selling methods and tools to enrich datasets image:watson.png[width="100"]
 
-1. Clean
+2. Selling aggregated indicators image:edf.jpg[width="100"]
 
-2. Diverse
+3. Selling credit scores
 
-|
+|===
+
+//ST: !
+
+.Enrich: the hard part
+|===
 
 1. Knowing which cocktail of data is valued by the market
 
@@ -186,67 +159,15 @@ Data scientists used to work with crowd sourced data.
 
 3. Establish legitimacy
 
-
-| *The people you need* | *The ones doing it*
-
-|
-
-1. Specialists of APIs / data mashups / data integration
-
-2. Possibly: specialists of linked data
-
-3. Domain specialists for market research
-
-
-|
-
-Selling methods and tools to enrich datasets image:watson.png[width="100"]
-
-Selling aggregated indicators image:edf.jpg[width="100"]
-
-Selling credit scores
-
 |===
+
 
 == 5. RANK / MATCH / COMPARE
 //ST: 5. RANK / MATCH / COMPARE
 //ST: !
 
-.Rank / Match / Compare
+.Rank / Match / Compare: the ones doing it
 |===
-| *The data you need* | *The hard part*
-
-|
-
-Lots of data:
-
-a. with many features
-
-b. large dispersion values
-
-c. in large volumes
-
-|
-
-1. Finding emergent, implicit attributes
-
-2. Insuring consistency of the ranking
-
-3. Avoid gaming of the system by the users
-
-
-| *The people you need* | *The ones doing it*
-
-|
-
-1. Data scientists
-
-2. Hacker mentality to imagine how unstructured data can contribute to ranking
-
-3. Domain specialists for quality control
-
-
-|
 
 1. Search engines ranking results image:google.jpg[width="100"]
 
@@ -256,45 +177,42 @@ c. in large volumes
 
 |===
 
+//ST: !
+
+.Rank / Match / Compare: the hard part
+|===
+
+1. Finding emergent, implicit attributes
+
+2. Insuring consistency of the ranking
+
+3. Avoid gaming of the system by the users
+
+|===
+
 
 == 6. SEGMENT / CLASSIFY
 //ST: 5. SEGMENT / CLASSIFY
 //ST: !
 
-.Segment / classify
+.Segment / classify: the ones doing it
 |===
-| *The data you need* | *The hard part*
-
-|
-
-1. Any dataset, the richer the better
-
-2. A feedback mechanism providing data to improve on the classification procedure
-
-|
-
-1. Evaluating the quality of the comparison
-
-2. Dealing with boundary cases
-
-3. Choosing between a supervised and unsupervised approach (how many categories?)
-
-
-| *The people you need* | *The ones doing it*
-
-|
-
-1. Data scientists
-
-2. Domain specialists for insights into the classification logic
-
-
-|
 
 1. Tools for discovery / exploratory analysis by segmentation
 
 2. Diagnostic tools (spam or not? buy, hold or sell? healthy or not?) image:medimsight.png[width="100"]
 
+|===
+
+//ST: !
+
+.Segment / classify: the hard part
+|===
+1. Evaluating the quality of the comparison
+
+2. Dealing with boundary cases
+
+3. Choosing between a supervised and unsupervised approach (how many categories?)
 
 |===
 
@@ -303,31 +221,8 @@ c. in large volumes
 //ST: 7. GENERATE (experimental!)
 //ST: !
 
-.Generate (experimental!)
+.Generate (experimental!): the ones doing it
 |===
-| *The data you need* | *The hard part*
-
-|
-
-1. Unstructured data is more challenging but more interesting (pictures, sound, natural language...)
-
-|
-
-1. Should not create a failed product / false expectations
-
-2. Both classic (think of image:clippy.jpg[width="50"]) and frontier science: not sure where it’s going
-
-
-| *The people you need* | *The ones doing it*
-
-|
-
-1. Data scientists + academics
-
-2. Excellent intrapreneurs to pilote this risky project
-
-
-|
 
 1. Intelligent BI image:aiden.png[witdth="100"]
 
@@ -337,8 +232,20 @@ c. in large volumes
 
 4. Image generation image:deepart.png[witdth="100"]
 
+|===
+
+//ST: !
+
+.Generate (experimental!): the hard part
+|===
+
+1. Should not create a failed product / false expectations
+
+2. Both classic (think of image:clippy.jpg[width="50"]) and frontier science: not sure where it’s going
 
 |===
+
+//ST: !
 
 == Combos!
 //ST: Combos!
