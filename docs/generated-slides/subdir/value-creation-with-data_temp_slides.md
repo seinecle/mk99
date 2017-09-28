@@ -1,4 +1,4 @@
-= Big data for business: Value creation with data
+= Value creation with data
 Clément Levallois <levallois@em-lyon.com>
 2017-09-10
 
@@ -9,10 +9,10 @@ last modified: {docdate}
 :revnumber: 1.0
 :example-caption!:
 
-:title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
+:title-logo-image: EMLyon_logo_corp.png[align="center"]
 
 [.stretch]
-image::EMLyon_logo_corp.png[width="242" align="center"]
+image::EMLyon_logo_corp.png[align="center"]
 
 
 ==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
@@ -30,13 +30,16 @@ Rather, these are essential building blocks for a strategy of value creation bas
 ====
 
 ==  1. PREDICT
+
+==  !
+[.stretch]
+image::prediction.jpg[align="center"]
+
+
 ==  !
 
-.Predict
+.Predict: The ones doing it
 |===
-
-
-|*The ones doing it*
 
 1. Predictive churn / default / ... (banks / telco)
 
@@ -48,9 +51,10 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
-|===
+==  !
 
-|*The hard part*
+.Predict: The hard part
+|===
 
 1. Collecting data ("cold start problem")
 
@@ -60,16 +64,17 @@ Rather, these are essential building blocks for a strategy of value creation bas
 |===
 
 
-
-
-==  1. SUGGEST
+==  2. SUGGEST
 ==  !
 
-.Suggest
+[.stretch]
+image::suggestion.jpg[align="center"]
+
+
+==  !
+.Suggest: The ones doing it
 |===
 
-
-|*The ones doing it*
 
 1. Amazon’s product recommendation system image:amazon.jpg[width="100"]
 
@@ -79,9 +84,10 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
-|===
+==  !
 
-|*The hard part*
+.Suggest: The hard part
+|===
 
 1. Managing serendipity and bubble effects
 
@@ -90,16 +96,19 @@ Rather, these are essential building blocks for a strategy of value creation bas
 |===
 
 
-==  1. CURATE
+==  3. CURATE
 ==  !
 
+[.stretch]
+image::curation.jpg[align="center"]
+
+
+==  !
 
 .Curate: the ones doing it
 |===
 
-|*The ones doing it*
-
-1. Clarivate Analytics curating metadata from scientific publishing image:clarivate-analytics.png[width="100"]
+1. Clarivate Analytics curating metadata from scientific publishing image:crv_logo_rgb_rev.png[width="100"]
 
 2. Nielsen and IRI curating and selling retail data image:nielsen.jpg[width="100"] image:iri.jpg[width="100"]
 
@@ -107,11 +116,10 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+==  !
 
 .Curate: the hard part
 |===
-
-|*The hard part*
 
 1. Slow progress
 
@@ -127,6 +135,12 @@ Rather, these are essential building blocks for a strategy of value creation bas
 ==  4. ENRICH
 ==  !
 
+[.stretch]
+image::enrich.jpg[align="center"]
+
+
+==  !
+
 .Enrich: the ones doing it
 |===
 
@@ -137,6 +151,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 3. Selling credit scores
 
 |===
+
+==  !
 
 .Enrich: the hard part
 |===
@@ -153,6 +169,12 @@ Rather, these are essential building blocks for a strategy of value creation bas
 ==  5. RANK / MATCH / COMPARE
 ==  !
 
+[.stretch]
+image::rank.jpg[align="center"]
+
+
+==  !
+
 .Rank / Match / Compare: the ones doing it
 |===
 
@@ -163,6 +185,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 3. Any system that needs to filter out best quality entities among a crowd of candidates
 
 |===
+
+==  !
 
 .Rank / Match / Compare: the hard part
 |===
@@ -176,7 +200,13 @@ Rather, these are essential building blocks for a strategy of value creation bas
 |===
 
 
-==  5. SEGMENT / CLASSIFY
+==  6. SEGMENT / CLASSIFY
+==  !
+
+[.stretch]
+image::muffin.jpg[align="center"]
+
+
 ==  !
 
 .Segment / classify: the ones doing it
@@ -188,8 +218,11 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+==  !
+
 .Segment / classify: the hard part
 |===
+
 1. Evaluating the quality of the comparison
 
 2. Dealing with boundary cases
@@ -202,6 +235,11 @@ Rather, these are essential building blocks for a strategy of value creation bas
 ==  7. GENERATE (experimental!)
 ==  !
 
+[.stretch]
+image::generate.jpg[align="center"]
+
+
+==  !
 .Generate (experimental!): the ones doing it
 |===
 
@@ -215,6 +253,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+==  !
+
 .Generate (experimental!): the hard part
 |===
 
@@ -224,9 +264,9 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+==  !
 
 ==  Combos!
-==  !
 
 ==  !
 [.stretch]
@@ -235,17 +275,17 @@ image::Combinations.png[align="center", "title="Combinations"]
 
 
 
-==  The end
 ==  !
 
-Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+- levallois@em-lyon.com
 
-image:round_portrait_mini_150.png[align="center", role="right"]
-This course is made by Clement Levallois.
+- get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+==  !
 
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+[.stretch]
+image::EMLyon_logo_corp.png[align="center"]
+
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;

@@ -34,11 +34,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 //ST: 1. PREDICT
 //ST: !
 
-.Predict
+.Predict: The ones doing it
 |===
-
-
-|*The ones doing it*
 
 1. Predictive churn / default / ... (banks / telco)
 
@@ -50,9 +47,10 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
-|===
+//ST: !
 
-|*The hard part*
+.Predict: The hard part
+|===
 
 1. Collecting data ("cold start problem")
 
@@ -62,17 +60,13 @@ Rather, these are essential building blocks for a strategy of value creation bas
 |===
 
 
-
-
 == 2. SUGGEST
-//ST: 1. SUGGEST
+//ST: 2. SUGGEST
 //ST: !
 
-.Suggest
+.Suggest: The ones doing it
 |===
 
-
-|*The ones doing it*
 
 1. Amazon’s product recommendation system image:amazon.jpg[width="100"]
 
@@ -82,9 +76,10 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
-|===
+//ST: !
 
-|*The hard part*
+.Suggest: The hard part
+|===
 
 1. Managing serendipity and bubble effects
 
@@ -94,14 +89,11 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 
 == 3. CURATE
-//ST: 1. CURATE
+//ST: 3. CURATE
 //ST: !
-
 
 .Curate: the ones doing it
 |===
-
-|*The ones doing it*
 
 1. Clarivate Analytics curating metadata from scientific publishing image:clarivate-analytics.png[width="100"]
 
@@ -111,11 +103,10 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
 
 .Curate: the hard part
 |===
-
-|*The hard part*
 
 1. Slow progress
 
@@ -142,6 +133,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 3. Selling credit scores
 
 |===
+
+//ST: !
 
 .Enrich: the hard part
 |===
@@ -170,6 +163,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
+
 .Rank / Match / Compare: the hard part
 |===
 
@@ -183,7 +178,7 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 
 == 6. SEGMENT / CLASSIFY
-//ST: 5. SEGMENT / CLASSIFY
+//ST: 6. SEGMENT / CLASSIFY
 //ST: !
 
 .Segment / classify: the ones doing it
@@ -195,8 +190,11 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
+
 .Segment / classify: the hard part
 |===
+
 1. Evaluating the quality of the comparison
 
 2. Dealing with boundary cases
@@ -223,6 +221,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
+
 .Generate (experimental!): the hard part
 |===
 
@@ -232,6 +232,7 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 |===
 
+//ST: !
 
 == Combos!
 //ST: Combos!

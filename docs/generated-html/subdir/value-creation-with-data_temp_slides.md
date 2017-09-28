@@ -30,13 +30,16 @@ Rather, these are essential building blocks for a strategy of value creation bas
 ====
 
 ==  1. PREDICT
+
+==  !
+[.stretch]
+image::prediction.jpg[align="center"]
+
+
 ==  !
 
-.Predict
+.Predict: The ones doing it
 |===
-
-
-|*The ones doing it*
 
 1. Predictive churn / default / ... (banks / telco)
 
@@ -50,9 +53,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 ==  !
 
+.Predict: The hard part
 |===
-
-|*The hard part*
 
 1. Collecting data ("cold start problem")
 
@@ -62,16 +64,17 @@ Rather, these are essential building blocks for a strategy of value creation bas
 |===
 
 
-
-
-==  1. SUGGEST
+==  2. SUGGEST
 ==  !
 
-.Suggest
+[.stretch]
+image::suggestion.jpg[align="center"]
+
+
+==  !
+.Suggest: The ones doing it
 |===
 
-
-|*The ones doing it*
 
 1. Amazon’s product recommendation system image:amazon.jpg[width="100"]
 
@@ -83,9 +86,8 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 ==  !
 
+.Suggest: The hard part
 |===
-
-|*The hard part*
 
 1. Managing serendipity and bubble effects
 
@@ -94,16 +96,19 @@ Rather, these are essential building blocks for a strategy of value creation bas
 |===
 
 
-==  1. CURATE
+==  3. CURATE
 ==  !
 
+[.stretch]
+image::curation.jpg[align="center"]
+
+
+==  !
 
 .Curate: the ones doing it
 |===
 
-|*The ones doing it*
-
-1. Clarivate Analytics curating metadata from scientific publishing image:clarivate-analytics.png[width="100"]
+1. Clarivate Analytics curating metadata from scientific publishing image:crv_logo_rgb_rev.png[width="100"]
 
 2. Nielsen and IRI curating and selling retail data image:nielsen.jpg[width="100"] image:iri.jpg[width="100"]
 
@@ -115,8 +120,6 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 .Curate: the hard part
 |===
-
-|*The hard part*
 
 1. Slow progress
 
@@ -130,6 +133,12 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 
 ==  4. ENRICH
+==  !
+
+[.stretch]
+image::enrich.jpg[align="center"]
+
+
 ==  !
 
 .Enrich: the ones doing it
@@ -160,6 +169,12 @@ Rather, these are essential building blocks for a strategy of value creation bas
 ==  5. RANK / MATCH / COMPARE
 ==  !
 
+[.stretch]
+image::rank.jpg[align="center"]
+
+
+==  !
+
 .Rank / Match / Compare: the ones doing it
 |===
 
@@ -185,7 +200,13 @@ Rather, these are essential building blocks for a strategy of value creation bas
 |===
 
 
-==  5. SEGMENT / CLASSIFY
+==  6. SEGMENT / CLASSIFY
+==  !
+
+[.stretch]
+image::muffin.jpg[align="center"]
+
+
 ==  !
 
 .Segment / classify: the ones doing it
@@ -201,6 +222,7 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 .Segment / classify: the hard part
 |===
+
 1. Evaluating the quality of the comparison
 
 2. Dealing with boundary cases
@@ -213,6 +235,11 @@ Rather, these are essential building blocks for a strategy of value creation bas
 ==  7. GENERATE (experimental!)
 ==  !
 
+[.stretch]
+image::generate.jpg[align="center"]
+
+
+==  !
 .Generate (experimental!): the ones doing it
 |===
 
