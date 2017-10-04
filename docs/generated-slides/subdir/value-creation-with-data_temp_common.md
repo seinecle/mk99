@@ -8,6 +8,7 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
+:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[align="center"]
 
@@ -283,5 +284,10 @@ image::Combinations.png[align="center", "title="Combinations"]
 
 //ST: !
 
+<<<<<<< HEAD
 image::EMLyon_logo_corp.png[align="center"]
 {nbsp} +
+=======
+image::EMLyon_logo_corp.png[width="500", align="center"]
+{nbsp} +
+>>>>>>> 3b36f4c232e158ebc47e10caac470168fdc5fa4b

@@ -1,0 +1,78 @@
+= Big data for business: Week 2 - CRMs and segmentation
+Clément Levallois <levallois@em-lyon.com>
+2017-10-03
+
+last modified: {docdate}
+
+:icons!:
+:iconsfont:   font-awesome
+:revnumber: 1.0
+:example-caption!:
+:sourcedir: ../../../main/java
+
+:title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
+
+image::EMLyon_logo_corp.png[width="242" align="center"]
+{nbsp} +
+
+//ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
+
+
+== 1. Welcome!
+//ST: Welcome!
+//ST: !
+
+== 2. Clarifications
+//ST: Clarifications
+
+//ST: !
+Register your groups in the spreadsheet - address is in the group project description on Brightspace.
+
+//ST: !
+On finding a topic / interviewee:
+
+- write it in the spreadsheet
+- don't start late!
+- doubts? Problems? Email me, visit during office hours (Tuesday mornings) or by appointment.
+
+//ST: !
+Quizzes: there is no "auto-grading".
+
+As written in the syllabus, I will compute the grade by sampling 3 quizzes out of the 9 you'll take.
+
+
+== 2. Let's discuss key aspects of the content of the lecture for today
+//ST: 2. Let's discuss key aspects of the content of the lecture for today
+
+//ST: !
+1. on CRMs:
+
+- you must be aware of the challenges and opportunities of data driven crms
+
+(in particular, you should understand how a DMP and a CRMs are distinct but overlap)
+
+*and*
+
+- not fall in the trap of thinking bigger software / data scientists will solve a marketing problem.
+
+//ST: !
+2. on segmentation:
+
+- you must be able to use "clustering" in a conversation in marketing analytics.
+
+- you must understand the principles of k-means and hierarchical clustering
+
+
+
+== The end
+//ST: The end
+//ST: !
+
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+
+image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: http://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]

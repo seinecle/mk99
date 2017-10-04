@@ -283,9 +283,15 @@ image::Combinations.png[align="center", "title="Combinations"]
 
 ==  !
 
+<<<<<<< HEAD
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
 
+=======
+[.stretch]
+image::EMLyon_logo_corp.png[width="500", align="center"]
+
+>>>>>>> 3b36f4c232e158ebc47e10caac470168fdc5fa4b
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;

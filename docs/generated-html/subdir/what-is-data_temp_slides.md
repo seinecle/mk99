@@ -156,7 +156,9 @@ image:tweet.png[width="500" align="center"]
 ==== Data presented as a table
 ==  !
 
-image:https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQYmkow/pub?w=1346&h=657[table]
+[.stretch]
+image::table.png[table]
+
 
 ==  3. data and size
 ==  !

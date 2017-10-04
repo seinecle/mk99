@@ -1,4 +1,4 @@
-= Big data for business: Value creation with data
+= Value creation with data
 Clément Levallois <levallois@em-lyon.com>
 2017-09-10
 
@@ -10,9 +10,9 @@ last modified: {docdate}
 :example-caption!:
 :sourcedir: ../../../main/java
 
-:title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
+:title-logo-image: EMLyon_logo_corp.png[align="center"]
 
-image::EMLyon_logo_corp.png[width="242" align="center"]
+image::EMLyon_logo_corp.png[align="center"]
 {nbsp} +
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
@@ -269,7 +269,6 @@ image::generate.jpg[align="center"]
 
 == Combos!
 //ST: Combos!
-//ST: !
 
 //ST: !
 image::Combinations.png[align="center", "title="Combinations"]
@@ -277,18 +276,21 @@ image::Combinations.png[align="center", "title="Combinations"]
 
 
 
-== The end
-//ST: The end
 //ST: !
 
-Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+- levallois@em-lyon.com
 
-image:round_portrait_mini_150.png[align="center", role="right"]
-This course is made by Clement Levallois.
+- get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+//ST: !
 
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+<<<<<<< HEAD
+image::EMLyon_logo_corp.png[align="center"]
+{nbsp} +
+=======
+image::EMLyon_logo_corp.png[width="500", align="center"]
+{nbsp} +
+>>>>>>> 3b36f4c232e158ebc47e10caac470168fdc5fa4b
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;

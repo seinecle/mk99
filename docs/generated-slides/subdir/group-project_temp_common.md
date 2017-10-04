@@ -8,6 +8,7 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
+:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -40,7 +41,7 @@ Recording and publishing the interview will create a public outcome that you can
 
 Groups can have 1 to 3 members.
 
-https://docs.google.com/spreadsheets/d/e/2PACX-1vQyYDZRdbjPv6TOK0SEbM0Qw4MVXmAxR-xoT9yQv-hGnRs2BTzavTTV6Y2LCEb5kUQIunjwvdQw_6sY/pubhtml[Register members of your group here].
+https://docs.google.com/spreadsheets/d/1Ba5eQfyMb1AjKH_sOEzdo7dMmzM9tPlrr-KXM3tWnko/edit?usp=sharing[Register members of your group here].
 
 
 == 3. What should each group do

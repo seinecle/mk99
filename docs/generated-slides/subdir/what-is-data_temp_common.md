@@ -8,6 +8,7 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
+:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -159,7 +160,8 @@ image:tweet.png[width="500" align="center"]
 ==== Data presented as a table
 //ST: !
 
-image:https://docs.google.com/drawings/d/1kqlIcDJTph9DEeQRSLWx9uT8-P1Cu-GlAkZ4MQYmkow/pub?w=1346&h=657[table]
+image::table.png[table]
+{nbsp} +
 
 == 3. Finally: data and size
 //ST: 3. data and size

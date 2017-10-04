@@ -1,4 +1,4 @@
-= Big data for business: Value creation with data
+= Value creation with data
 Clément Levallois <levallois@em-lyon.com>
 2017-09-10
 
@@ -10,9 +10,9 @@ last modified: {docdate}
 :example-caption!:
 :sourcedir: ../../../main/java
 
-:title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
+:title-logo-image: EMLyon_logo_corp.png[align="center"]
 
-image::EMLyon_logo_corp.png[width="242" align="center"]
+image::EMLyon_logo_corp.png[align="center"]
 {nbsp} +
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
@@ -32,6 +32,11 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 == 1. PREDICT
 //ST: 1. PREDICT
+
+//ST: !
+image::prediction.jpg[align="center"]
+{nbsp} +
+
 //ST: !
 
 .Predict: The ones doing it
@@ -64,6 +69,10 @@ Rather, these are essential building blocks for a strategy of value creation bas
 //ST: 2. SUGGEST
 //ST: !
 
+image::suggestion.jpg[align="center"]
+{nbsp} +
+
+//ST: !
 .Suggest: The ones doing it
 |===
 
@@ -92,10 +101,15 @@ Rather, these are essential building blocks for a strategy of value creation bas
 //ST: 3. CURATE
 //ST: !
 
+image::curation.jpg[align="center"]
+{nbsp} +
+
+//ST: !
+
 .Curate: the ones doing it
 |===
 
-1. Clarivate Analytics curating metadata from scientific publishing image:clarivate-analytics.png[width="100"]
+1. Clarivate Analytics curating metadata from scientific publishing image:crv_logo_rgb_rev.png[width="100"]
 
 2. Nielsen and IRI curating and selling retail data image:nielsen.jpg[width="100"] image:iri.jpg[width="100"]
 
@@ -121,6 +135,11 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 == 4. ENRICH
 //ST: 4. ENRICH
+//ST: !
+
+image::enrich.jpg[align="center"]
+{nbsp} +
+
 //ST: !
 
 .Enrich: the ones doing it
@@ -152,6 +171,11 @@ Rather, these are essential building blocks for a strategy of value creation bas
 //ST: 5. RANK / MATCH / COMPARE
 //ST: !
 
+image::rank.jpg[align="center"]
+{nbsp} +
+
+//ST: !
+
 .Rank / Match / Compare: the ones doing it
 |===
 
@@ -181,6 +205,11 @@ Rather, these are essential building blocks for a strategy of value creation bas
 //ST: 6. SEGMENT / CLASSIFY
 //ST: !
 
+image::muffin.jpg[align="center"]
+{nbsp} +
+
+//ST: !
+
 .Segment / classify: the ones doing it
 |===
 
@@ -208,6 +237,10 @@ Rather, these are essential building blocks for a strategy of value creation bas
 //ST: 7. GENERATE (experimental!)
 //ST: !
 
+image::generate.jpg[align="center"]
+{nbsp} +
+
+//ST: !
 .Generate (experimental!): the ones doing it
 |===
 
@@ -236,7 +269,6 @@ Rather, these are essential building blocks for a strategy of value creation bas
 
 == Combos!
 //ST: Combos!
-//ST: !
 
 //ST: !
 image::Combinations.png[align="center", "title="Combinations"]
@@ -244,18 +276,21 @@ image::Combinations.png[align="center", "title="Combinations"]
 
 
 
-== The end
-//ST: The end
 //ST: !
 
-Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+- levallois@em-lyon.com
 
-image:round_portrait_mini_150.png[align="center", role="right"]
-This course is made by Clement Levallois.
+- get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+//ST: !
 
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+<<<<<<< HEAD
+image::EMLyon_logo_corp.png[align="center"]
+{nbsp} +
+=======
+image::EMLyon_logo_corp.png[width="500", align="center"]
+{nbsp} +
+>>>>>>> 3b36f4c232e158ebc47e10caac470168fdc5fa4b
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;
