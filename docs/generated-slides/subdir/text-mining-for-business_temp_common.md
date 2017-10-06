@@ -71,6 +71,9 @@ The list above is to convey that "text" is virtually everywhere, and as obvious 
 ==== a. Sentiment analysis
 
 //ST: !
+Sentiment analysis, also called opinion mining or sentiment detection.
+
+//ST: !
 Is this piece of text of a positive or negative tone? This type of text mining is useful to filter a large number of documents and retain only those that need action (eg, addressing negative comments).
 
 Companies are typically interested in sentiment analysis in conjuction with topic modeling: they need to identify which *topic* elates negative sentiments.
