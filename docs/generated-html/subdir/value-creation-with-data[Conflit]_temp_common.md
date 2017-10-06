@@ -271,9 +271,9 @@ image::generate.jpg[align="center"]
 //ST: Combos!
 
 //ST: !
-
-image::data-driven-value-creation.png[align="center", title="Combinations"]
+image::Combinations.png[align="center", "title="Combinations"]
 {nbsp} +
+
 
 
 //ST: !
