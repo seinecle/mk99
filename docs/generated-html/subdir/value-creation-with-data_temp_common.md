@@ -1,4 +1,4 @@
-= Value creation with data
+= 7 roads to data-driven value creation
 Clément Levallois <levallois@em-lyon.com>
 2017-09-10
 
@@ -18,11 +18,10 @@ image::EMLyon_logo_corp.png[align="center"]
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 
-== Seven roads to data-driven value creation
-//ST: Seven roads to data-driven value creation
+== 7 roads to data-driven value creation
+//ST: 7 roads to data-driven value creation
 //ST: !
 
-//ST: !
 [IMPORTANT]
 ====
 Not a closed list, not a recipe!
@@ -38,8 +37,9 @@ image::prediction.jpg[align="center"]
 {nbsp} +
 
 //ST: !
+==== Prediction: The ones doing it
 
-.Predict: The ones doing it
+//ST: !
 |===
 
 1. Predictive churn / default / ... (banks / telco)
@@ -53,11 +53,13 @@ image::prediction.jpg[align="center"]
 |===
 
 //ST: !
+==== Prediction: the hard part
 
-.Predict: The hard part
+//ST: !
+
 |===
 
-1. Collecting data ("cold start problem")
+1. Collecting data (https://indatalabs.com/blog/data-science/cold-start-problem-in-recommender-systems[cold start problem])
 
 2. Risk missing the long tail, algorithmic discrimination, stereotyping
 
@@ -73,7 +75,9 @@ image::suggestion.jpg[align="center"]
 {nbsp} +
 
 //ST: !
-.Suggest: The ones doing it
+==== Suggestion: The ones doing it
+
+//ST: !
 |===
 
 
@@ -86,11 +90,12 @@ image::suggestion.jpg[align="center"]
 |===
 
 //ST: !
+==== Suggestion: the hard part
 
-.Suggest: The hard part
+//ST: !
 |===
 
-1. Managing serendipity and bubble effects
+1. The https://indatalabs.com/blog/data-science/cold-start-problem-in-recommender-systems[cold start problem], managing serendipity (see review: https://doi.org/10.1016/j.knosys.2016.08.014[paying version], free version not available) and "filter bubble" effects (review: https://doi.org/10.1145/2566486.2568012[paying version], http://wwwconference.org/proceedings/www2014/proceedings/p677.pdf[free version here]).
 
 2. Finding the value proposition which goes beyond the simple “you purchased this, you’ll like that”
 
@@ -105,8 +110,9 @@ image::curation.jpg[align="center"]
 {nbsp} +
 
 //ST: !
+==== Curation: The ones doing it
 
-.Curate: the ones doing it
+//ST: !
 |===
 
 1. Clarivate Analytics curating metadata from scientific publishing image:crv_logo_rgb_rev.png[width="100"]
@@ -118,15 +124,16 @@ image::curation.jpg[align="center"]
 |===
 
 //ST: !
+==== Curation: the hard part
 
-.Curate: the hard part
+//ST: !
 |===
 
-1. Slow progress
+1. Slow progress: curation needs human labor to insure high accuracy, it does not scale the way a computerized process would.
 
-2. Must maintain continuity
+2. Must maintain continuity: missing a single year or month hurts the value of the overall dataset disproportionally.
 
-3. Scaling up / right incentives for the workforce
+3. Scaling up / right incentives for the workforce: the workforce doing the curation should be paid fairly, which is https://www.wired.com/story/amazons-turker-crowd-has-had-enough/[not the case yet].
 
 4. Quality control
 
@@ -141,8 +148,9 @@ image::enrich.jpg[align="center"]
 {nbsp} +
 
 //ST: !
+==== Enrichment: The ones doing it
 
-.Enrich: the ones doing it
+//ST: !
 |===
 
 1. Selling methods and tools to enrich datasets image:watson.png[width="100"]
@@ -154,8 +162,9 @@ image::enrich.jpg[align="center"]
 |===
 
 //ST: !
+==== Enrichment: the hard part
 
-.Enrich: the hard part
+//ST: !
 |===
 
 1. Knowing which cocktail of data is valued by the market
@@ -175,8 +184,9 @@ image::rank.jpg[align="center"]
 {nbsp} +
 
 //ST: !
+==== Ranking / matching / comparing: The ones doing it
 
-.Rank / Match / Compare: the ones doing it
+//ST: !
 |===
 
 1. Search engines ranking results image:google.jpg[width="100"]
@@ -188,15 +198,16 @@ image::rank.jpg[align="center"]
 |===
 
 //ST: !
+==== Ranking / matching / comparing: the hard part
 
-.Rank / Match / Compare: the hard part
+//ST: !
 |===
 
-1. Finding emergent, implicit attributes
+1. Finding emergent, implicit attributes (imagine: if you rank things based on just one public feature: not interesting nor valuable)
 
-2. Insuring consistency of the ranking
+2. Insuring consistency of the ranking (many rankings are less straightforward than they appear)
 
-3. Avoid gaming of the system by the users
+3. Avoid gaming of the system by the users (for instance, http://www.nytimes.com/2011/02/13/business/13search.html[companies try to play Google's ranking of search results at their advantage])
 
 |===
 
@@ -209,8 +220,9 @@ image::muffin.jpg[align="center"]
 {nbsp} +
 
 //ST: !
+==== Generating: The ones doing it
 
-.Segment / classify: the ones doing it
+//ST: !
 |===
 
 1. Tools for discovery / exploratory analysis by segmentation
@@ -220,43 +232,53 @@ image::muffin.jpg[align="center"]
 |===
 
 //ST: !
+==== Segmenting / classifying: the hard part
 
-.Segment / classify: the hard part
+//ST: !
 |===
 
 1. Evaluating the quality of the comparison
 
 2. Dealing with boundary cases
 
-3. Choosing between a supervised and unsupervised approach (how many categories?)
+3. Choosing between a pre-determined number of segments (like in the k-means) or letting the number of segments emerge
 
 |===
 
 
-== 7. GENERATE (experimental!)
-//ST: 7. GENERATE (experimental!)
+== 7. GENERATE / SYNTHETIZE(experimental!)
+//ST: 7. GENERATE / SYNTHETIZE (experimental!)
 //ST: !
 
 image::generate.jpg[align="center"]
 {nbsp} +
 
 //ST: !
-.Generate (experimental!): the ones doing it
-|===
+==== Generating: The ones doing it
 
-1. Intelligent BI image:aiden.png[witdth="100"]
-
-2. wit.ai, the chatbot by FB image:wit.png[witdth="100"]
-
-3. Virtual assistants image:cx.jpg[witdth="100"]
-
-4. Image generation image:deepart.png[witdth="100"]
-
-|===
+//ST: !
+(click on the logos to get to the relevant web page)
 
 //ST: !
 
-.Generate (experimental!): the hard part
+
+|===
+
+1. Intelligent BI https://www.aiden.ai/[image:aiden.png[witdth="100"]]
+
+2. wit.ai, the chatbot by FB https://wit.ai/[image:wit.png[witdth="100"]]
+
+3. Virtual assistants https://www.cxcompany.com/digitalcx/[image:cx.jpg[witdth="100"]]
+
+4. Image generation https://deepart.io/[image:deepart.png[witdth="100"]]
+
+5. Close-to-real-life speech synthesis https://deepmind.com/blog/wavenet-generative-model-raw-audio/[image:google.jpg[witdth="100"]]
+|===
+
+//ST: !
+==== Generating: the hard part
+
+//ST: !
 |===
 
 1. Should not create a failed product / false expectations
@@ -271,23 +293,20 @@ image::generate.jpg[align="center"]
 //ST: Combos!
 
 //ST: !
-image::Combinations.png[align="center", "title="Combinations"]
+
+image::data-driven-value-creation.png[align="center", title="Combinations"]
 {nbsp} +
 
 
-
+== The end
+//ST: The end
 //ST: !
 
-- levallois@em-lyon.com
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-- get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
 
-//ST: !
+Discover my other courses in data / tech for business: http://www.clementlevallois.net
 
-<<<<<<< HEAD
-image::EMLyon_logo_corp.png[align="center"]
-{nbsp} +
-=======
-image::EMLyon_logo_corp.png[width="500", align="center"]
-{nbsp} +
->>>>>>> 3b36f4c232e158ebc47e10caac470168fdc5fa4b
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]

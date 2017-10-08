@@ -61,7 +61,7 @@ A "corpus" is a collection of documents. The plural form exists: corpora. So dat
 The list above is to convey that "text" is virtually everywhere, and as obvious as it seems we should not forget about this diversity of sources.
 
 
-==  2. What can be done with text mining?
+==  3. What can be done with text mining?
 
 ==  !
 [start=1]
@@ -122,7 +122,7 @@ See Google translate but also the https://www.skype.com/en/features/skype-transl
 Shortening a text while keeping its core message intact. See https://arxiv.org/abs/1707.02268[this reference] for a short, technical review.
 
 
-==  3. Ok, amaze me
+==  4. Ok, amaze me
 
 ==  !
 [start=1]
@@ -156,7 +156,7 @@ Visit this page and try writing a sentence with a negative or positive emotion /
 http://nlp.stanford.edu:8080/sentiment/rntnDemo.html
 
 
-==  4. Frontier of text mining: what works, what is hard, what does not work.
+==  5. Frontier of text mining: what works, what is hard, what does not work.
 
 ==  !
 ==== a. What works: Profiling of individuals on psycho / political / social dimensions
@@ -198,7 +198,7 @@ by Pla and Hurtado (2014)].
 http://www.pnas.org/content/110/15/5802.abstract[“Private traits and attributes are predictable from digital records of human behavior”
 by Kosinski et al. (2013)].
 
-??ST: !
+==  !
 See this article in the New York Times examining the role of https://cambridgeanalytica.org/[Cambridge Analytica] in profiling voters at the service of Donal Trump's campaign in 2016:
 
 https://www.nytimes.com/2017/03/06/us/politics/cambridge-analytica.html
@@ -212,7 +212,7 @@ These text mining techniques get even more precise when mixed  with network anal
 ==== b. Printed form (or even pdf) is hard
 
 ==  !
-Printed text is typically harder and slower to analyze, because it needs to be scanned first (the technical term is "https://en.wikipedia.org/wiki/Optical_character_recognition[OCR]"). The process of OCR introduces errors.
+Printed text is typically harder and slower to analyze, because it needs to be scanned first (the technical term is https://en.wikipedia.org/wiki/Optical_character_recognition[OCR]). The process of OCR introduces errors.
 
 Check http://www.digitalhumanities.org/dhq/vol/8/1/000168/000168.html[this paper in the Digital Humanities Quarterly] for a deeper look into this issue, in the context of historical research.
 
@@ -272,7 +272,7 @@ Yet, mining text to produce new "reasoning" in general situations by machines ha
 
 This topic (reasoning beyond special tasks) is discussed further in the presentation on artificical intelligence.
 
-==  5. Basic operations in text mining - essential vocabulary
+==  6. Basic operations in text mining - essential vocabulary
 
 ==  !
 [start=1]
@@ -330,7 +330,7 @@ This can reveal interesting things about frequent expressions used in the text.
 ==  !
 A good example of how useful n-grams can be: visit the Ngram Viewer by Google: https://books.google.com/ngrams
 
-==  6. Types of use of text mining for business
+==  7. Types of use of text mining for business
 
 ==  !
 Three types of use:

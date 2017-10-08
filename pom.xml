@@ -235,7 +235,6 @@
                                             <className>net.clementlevallois.asciidoc.extensions.PdfPreProcessor</className>
                                         </extension>
                                     </extensions>
-
                                 </configuration>
                             </execution>
                             <execution>

@@ -198,7 +198,7 @@ by Pla and Hurtado (2014)].
 http://www.pnas.org/content/110/15/5802.abstract[“Private traits and attributes are predictable from digital records of human behavior”
 by Kosinski et al. (2013)].
 
-??ST: !
+==  !
 See this article in the New York Times examining the role of https://cambridgeanalytica.org/[Cambridge Analytica] in profiling voters at the service of Donal Trump's campaign in 2016:
 
 https://www.nytimes.com/2017/03/06/us/politics/cambridge-analytica.html
@@ -212,7 +212,7 @@ These text mining techniques get even more precise when mixed  with network anal
 ==== b. Printed form (or even pdf) is hard
 
 ==  !
-Printed text is typically harder and slower to analyze, because it needs to be scanned first (the technical term is "https://en.wikipedia.org/wiki/Optical_character_recognition[OCR]"). The process of OCR introduces errors.
+Printed text is typically harder and slower to analyze, because it needs to be scanned first (the technical term is https://en.wikipedia.org/wiki/Optical_character_recognition[OCR]). The process of OCR introduces errors.
 
 Check http://www.digitalhumanities.org/dhq/vol/8/1/000168/000168.html[this paper in the Digital Humanities Quarterly] for a deeper look into this issue, in the context of historical research.
 
