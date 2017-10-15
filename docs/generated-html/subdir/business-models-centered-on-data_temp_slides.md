@@ -64,7 +64,8 @@ image::targeted-ads.jpg[align="center"]
 ==  !
 This is the business model of Google and Facebook, as well as many free services offered online.
 
-Users of these services offer their data (likes, emails, social connections, comments, navigation history, etc.). This allows the serive to sell this qualified audience to ad providers.
+Users of these services offer their data (likes, emails, social connections, comments, navigation history, etc.).
+This allows the service to sell this qualified audience to ad providers.
 
 ==  !
 These figures from 2015 show that a very large part of Google's revenues come from advertisement:

@@ -1,0 +1,51 @@
+= Big data for business: Week 5 - Value creation with data
+Clément Levallois <levallois@em-lyon.com>
+2017-10-03
+
+last modified: {docdate}
+
+:icons!:
+:iconsfont:   font-awesome
+:revnumber: 1.0
+:example-caption!:
+ifndef::imagesdir[:imagesdir: ../images]
+ifndef::sourcedir[:sourcedir: ../../../main/java]
+
+:title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
+
+image::EMLyon_logo_corp.png[width="242" align="center"]
+
+//ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
+
+
+
+== 1. Must read
+//ST: 1. Must read
+
+//ST: !
+One great book giving method and perspective to organize the creation of business models: Business Model Generation
+
+//ST: !
+A book focusing more on the entrepreneurial side of value creation, giving methods to shape value proposals and iterate on them: The Lean Startup (Links to an external site.) (available at the Learning Hub) + companion website (Links to an external site.).
+
+//ST: !
+A book focusing on the concept of value proposition: how to define the core value creation of our business?
+
+-> https://strategyzer.com/books/value-proposition-design (by the team who created "Business Model Generation")
+
+//ST: !
++ Blue Ocean
+
+
+== The end
+//ST: The end
+//ST: !
+
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+
+image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: http://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
