@@ -27,9 +27,9 @@ Segmentation helps refine the picture from a mass of data to meaningful subgroup
 Why not go down to extreme segmentation: segments the size of an individual?
 
 //ST: !
-Major websites do it (Amazon, Yahoo!, Netflix, etc.)
-Ads providers do it (Facebook)
-News feed do it (Prismatic, Pulse)
+- Major websites do it (Amazon, Yahoo!, Netflix, etc.)
+- Ads providers do it (Facebook)
+- News feed do it (Prismatic, Pulse)
 
 //ST: !
 Advantages: pinpoint accuracy and relevance
@@ -43,7 +43,7 @@ image::amazon-personalization.png[align="center", title="How is an Amazon page (
 //ST: 2. Beyond behavior: tracking individual bodies
 
 //ST: !
-image::The-relation-between-connected-objects-and-personalization.png[aling="center",title="The relation between connected objects and personalization"]
+image::The-relation-between-connected-objects-and-personalization.png[align="center",title="The relation between connected objects and personalization"]
 {nbsp} +
 
 //ST: !
@@ -67,11 +67,11 @@ A list of bodily aspects being measured with examples:
 |==========================
 
 //ST: !
-.Gesture
+.Gestures
 [cols="a,a,a,a,a",options="header"]
 |==========================
-|Bodily Measurement       |Device         |Company              |Product     |Picture
-|Gesture                  |Arm band       |Thalmic Labs         |Myo         |image::myo.png[align="center",width=120]
+|Bodily Measurement       |Device         |Company              |Product                            |Picture
+|Gestures                  |Arm band       |Thalmic Labs         |https://www.myo.com/[Myo]          |image::myo.png[align="center",width=120]
 |==========================
 
 //ST: !
@@ -126,7 +126,7 @@ video::7V8jrdH5tAQ[youtube]
 |==========================
 
 //ST: !
-image::agt-2.png[align="center", title="source: https://www.agtinternational.com/wp-content/uploads/2014/10/AGT_AAG_MegaEvent-02Oct2014-2.pdf]
+image::agt-2.png[align="center", title="source: https://www.agtinternational.com/wp-content/uploads/2014/10/AGT_AAG_MegaEvent-02Oct2014-2.pdf"]
 {nbsp} +
 
 == 3. The case of Nicholas Felton: constant data monitoring
@@ -194,7 +194,10 @@ Content personalization is also blamed for favoring political polarization via a
 It has been shown that the http://www.coca-colacompany.com/stories/summer-of-sharing-share-a-coke-campaign-rolls-out-in-the-us[Coca-Cola #ShareaCoke campaign] is effective at making more children choose a soda with a label to their name, over a healthy drink (paying version of the study http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract[here], free version not available).
 
 //ST: !
-==== c. Personalization through technology? Companies rated with the best customer service do personalization differently: with humans.
+==== c. Does personalization always need technology?
+
+//ST: !
+Companies rated with the best customer service do personalization differently: with humans.
 
 //ST: !
 See how Zappos offers a great service to their customers:

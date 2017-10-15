@@ -508,8 +508,10 @@ Three key aspects for ad buying and selling:
 
 //ST: !
 - It became programmatic: ad space and ad inventories are bought and sold through automated market places (through https://digiday.com/media/wtf-supply-side-platform/[SSP], http://adage.com/lookbook/article/dsp/demand-side-platforms-work/299456/[DSP] and http://adage.com/lookbook/article/ad-exchange/needed-ad-exchanges-work/298394/[Ad exchanges]).
+
 //ST: !
 - Ads are displayed across many channels (with https://en.wikipedia.org/wiki/Site_retargeting[retargeting])
+
 //ST: !
 - Ads are personalized (started with Search Engine Advertising showing ads matching search queries, then cookies, then browser fingerprinting (see https://panopticlick.eff.org/[here]) and https://www.theguardian.com/technology/2017/jul/03/facebook-track-browsing-history-california-lawsuit[other techniques])
 
@@ -536,7 +538,7 @@ Distribution channels:
 //ST: !
 Multiplication of distribution channels
 
--> it becomes increasingly hard to record customers actions (is this customer in my shop the same that clicked on this web page 2 minutes ago?): "click and collect" for example, one example of the broader trend called "https://www.seo.com/blog/phygital-marketing-where-the-physical-and-digital-worlds-converge/[phygital marketing]".
+-> it becomes increasingly hard to record customers actions (is this customer in my shop the same that clicked on this web page 2 minutes ago?): "click and collect" for example, one example of the broader trend called " https://www.seo.com/blog/phygital-marketing-where-the-physical-and-digital-worlds-converge/[phygital marketing] ".
 
 //ST: !
 Note how traditional CRMs are unequipped to command and control this variety of distribution channels.
@@ -624,7 +626,9 @@ To get such a CRM to run in an organization, the right resources must be gathere
 a. Adequate software:
 
 - the CRM itself - recent enough that it can plug and play with a DMP and a large variety of data sources.
-- a Data Management Platform (*DMP*) as well. The DMP is the software specializing in receiving data streams from a variety of sources and in a variety of formats, and reconciling them (see the lecture on Data Integration).
+- a Data Management Platform (*DMP*) as well. The DMP is the software specializing in receiving data streams from a variety of sources and in a variety of formats, and reconciling them.
+
+//ST: !
 - a Data Lake to store and query data.
 - software bricks for additional analysis, as needed. For example, Dataiku's https://www.dataiku.com/learn/[DSS platform].
 
@@ -825,26 +829,13 @@ Groups have now been found automatically. Identify what these groups mean and ho
 ==== d. hierarchical clustering
 
 //ST: !
-ifndef::backend-pdf[]
-image::https://docs.google.com/drawings/d/e/2PACX-1vQ9VEXDP8D3qSHecUI8plwx_wcVXuAmEQqrsf33JQ6EF91Tft6UpiUAwkBpJT9_40rOSjZ2558HR2jq/pub?w=1438&h=743[align="center", "title="Hierarchical clustering"]
-endif::[]
-
-ifdef::backend-pdf[]
-image::hierarchical-clustering.png[align="center", title="Hierarchical clustering"]
-endif::[]
-
+image::https://docs.google.com/drawings/d/e/2PACX-1vQ9VEXDP8D3qSHecUI8plwx_wcVXuAmEQqrsf33JQ6EF91Tft6UpiUAwkBpJT9_40rOSjZ2558HR2jq/pub?w=1438&h=743[align="center", title="Hierarchical clustering"]
 
 //ST: !
 ==== e. k-means clustering
 
 //ST: !
-ifndef::backend-pdf[]
-image::https://docs.google.com/drawings/d/e/2PACX-1vTRwfYNc8vPo08Hw8c_Dd4dKWl6uymNynyC6tuJPBhNy2Pu_PFM4tujzk5TNEtDHFPXebLrCGaNIGGQ/pub?w=1432&h=826[align="center", "title="k-means clustering"]
-endif::[]
-
-ifdef::backend-pdf[]
-image::k-means.png[align="center", title="k-means clustering"]
-endif::[]
+image::https://docs.google.com/drawings/d/e/2PACX-1vTRwfYNc8vPo08Hw8c_Dd4dKWl6uymNynyC6tuJPBhNy2Pu_PFM4tujzk5TNEtDHFPXebLrCGaNIGGQ/pub?w=1432&h=826[align="center", title="k-means clustering"]
 
 //ST: !
 ==== f. clustering using community detection - via network analysis
@@ -855,13 +846,7 @@ This last example of a clustering technique is a bit fancy - not usually represe
 See the lesson on "Network analysis and text mining" for an example of how it can be practised in http://www.gephi.org[Gephi].
 
 //ST: !
-ifndef::backend-pdf[]
-image::https://docs.google.com/drawings/d/e/2PACX-1vR3nC5mWBmq06PhFGKMtKTG0dwqTrEm4UqndP167VeTMeA7e2IPNq8D231uwdOQuL4_r-lR9V72GLCf/pub?w=1427&h=781[align="center", "title="community detection"]
-endif::[]
-
-ifdef::backend-pdf[]
-image::community-detection.png[align="center", title="community detection"]
-endif::[]
+image::https://docs.google.com/drawings/d/e/2PACX-1vR3nC5mWBmq06PhFGKMtKTG0dwqTrEm4UqndP167VeTMeA7e2IPNq8D231uwdOQuL4_r-lR9V72GLCf/pub?w=1427&h=781[align="center", title="community detection"]
 
 //ST: !
 This clustering example is particularly interesting because the number of clusters found in the dataset is not specified in advance: it "emerges" through the analysis.

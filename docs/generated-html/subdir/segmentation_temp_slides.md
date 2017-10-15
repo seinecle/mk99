@@ -28,8 +28,7 @@ How to market the right product to the right people?
 
 ==  !
 [.stretch]
-image::A-product-cannot-fit-everybody's-expectations.png[align="center", "title="A product cannot fit everybody's expectations"]
-
+image::A-product-cannot-fit-everybody's-expectations.png[align="center", title="A product cannot fit everybody's expectations"]
 
 
 ==  !
@@ -198,9 +197,7 @@ Groups have now been found automatically. Identify what these groups mean and ho
 
 ==  !
 [.stretch]
-image::Hierarchical-clustering.png[align="center", "title="Hierarchical clustering"]
-
-
+image::Hierarchical-clustering.png[align="center", title="Hierarchical clustering"]
 
 
 ==  !
@@ -208,8 +205,7 @@ image::Hierarchical-clustering.png[align="center", "title="Hierarchical clusteri
 
 ==  !
 [.stretch]
-image::k-means-clustering.png[align="center", "title="k-means clustering"]
-
+image::k-means-clustering.png[align="center", title="k-means clustering"]
 
 
 ==  !
@@ -222,8 +218,7 @@ See the lesson on "Network analysis and text mining" for an example of how it ca
 
 ==  !
 [.stretch]
-image::community-detection.png[align="center", "title="community detection"]
-
+image::community-detection.png[align="center", title="community detection"]
 
 
 ==  !

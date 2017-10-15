@@ -519,8 +519,10 @@ Three key aspects for ad buying and selling:
 
 ==  !
 - It became programmatic: ad space and ad inventories are bought and sold through automated market places (through https://digiday.com/media/wtf-supply-side-platform/[SSP], http://adage.com/lookbook/article/dsp/demand-side-platforms-work/299456/[DSP] and http://adage.com/lookbook/article/ad-exchange/needed-ad-exchanges-work/298394/[Ad exchanges]).
+
 ==  !
 - Ads are displayed across many channels (with https://en.wikipedia.org/wiki/Site_retargeting[retargeting])
+
 ==  !
 - Ads are personalized (started with Search Engine Advertising showing ads matching search queries, then cookies, then browser fingerprinting (see https://panopticlick.eff.org/[here]) and https://www.theguardian.com/technology/2017/jul/03/facebook-track-browsing-history-california-lawsuit[other techniques])
 
@@ -546,7 +548,7 @@ Distribution channels:
 ==  !
 Multiplication of distribution channels
 
--> it becomes increasingly hard to record customers actions (is this customer in my shop the same that clicked on this web page 2 minutes ago?): "click and collect" for example, one example of the broader trend called "https://www.seo.com/blog/phygital-marketing-where-the-physical-and-digital-worlds-converge/[phygital marketing]".
+-> it becomes increasingly hard to record customers actions (is this customer in my shop the same that clicked on this web page 2 minutes ago?): "click and collect" for example, one example of the broader trend called " https://www.seo.com/blog/phygital-marketing-where-the-physical-and-digital-worlds-converge/[phygital marketing] ".
 
 ==  !
 Note how traditional CRMs are unequipped to command and control this variety of distribution channels.
@@ -633,7 +635,9 @@ To get such a CRM to run in an organization, the right resources must be gathere
 a. Adequate software:
 
 - the CRM itself - recent enough that it can plug and play with a DMP and a large variety of data sources.
-- a Data Management Platform (*DMP*) as well. The DMP is the software specializing in receiving data streams from a variety of sources and in a variety of formats, and reconciling them (see the lecture on Data Integration).
+- a Data Management Platform (*DMP*) as well. The DMP is the software specializing in receiving data streams from a variety of sources and in a variety of formats, and reconciling them.
+
+==  !
 - a Data Lake to store and query data.
 - software bricks for additional analysis, as needed. For example, Dataiku's https://www.dataiku.com/learn/[DSS platform].
 
@@ -832,9 +836,7 @@ Groups have now been found automatically. Identify what these groups mean and ho
 
 ==  !
 [.stretch]
-image::Hierarchical-clustering.png[align="center", "title="Hierarchical clustering"]
-
-
+image::Hierarchical-clustering.png[align="center", title="Hierarchical clustering"]
 
 
 ==  !
@@ -842,8 +844,7 @@ image::Hierarchical-clustering.png[align="center", "title="Hierarchical clusteri
 
 ==  !
 [.stretch]
-image::k-means-clustering.png[align="center", "title="k-means clustering"]
-
+image::k-means-clustering.png[align="center", title="k-means clustering"]
 
 
 ==  !
@@ -856,8 +857,7 @@ See the lesson on "Network analysis and text mining" for an example of how it ca
 
 ==  !
 [.stretch]
-image::community-detection.png[align="center", "title="community detection"]
-
+image::community-detection.png[align="center", title="community detection"]
 
 
 ==  !

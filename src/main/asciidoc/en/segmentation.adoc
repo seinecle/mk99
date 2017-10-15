@@ -28,13 +28,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 How to market the right product to the right people?
 
 //ST: !
-ifndef::backend-pdf[]
-image::https://docs.google.com/drawings/d/e/2PACX-1vQ8jLaDyH0xOOdI3W1GFqii9ReVezqtqA5BNpfvuXg7TTl9Qk1vbCqpqraNU8SwTg8FeQPB4l1ng6wQ/pub?w=1370&h=612[align="center", "title="A product cannot fit everybody's expectations"]
-endif::[]
-
-ifdef::backend-pdf[]
-image::crowd.png[align="center", title="A product cannot meet everybody's expectations"]
-endif::[]
+image::https://docs.google.com/drawings/d/e/2PACX-1vQ8jLaDyH0xOOdI3W1GFqii9ReVezqtqA5BNpfvuXg7TTl9Qk1vbCqpqraNU8SwTg8FeQPB4l1ng6wQ/pub?w=1370&h=612[align="center", title="A product cannot fit everybody's expectations"]
 
 //ST: !
 A product cannot have every feature: adding a new feature can conflict with existing features or just hurt the need for simplicity.
@@ -200,26 +194,13 @@ Groups have now been found automatically. Identify what these groups mean and ho
 ==== d. hierarchical clustering
 
 //ST: !
-ifndef::backend-pdf[]
-image::https://docs.google.com/drawings/d/e/2PACX-1vQ9VEXDP8D3qSHecUI8plwx_wcVXuAmEQqrsf33JQ6EF91Tft6UpiUAwkBpJT9_40rOSjZ2558HR2jq/pub?w=1438&h=743[align="center", "title="Hierarchical clustering"]
-endif::[]
-
-ifdef::backend-pdf[]
-image::hierarchical-clustering.png[align="center", title="Hierarchical clustering"]
-endif::[]
-
+image::https://docs.google.com/drawings/d/e/2PACX-1vQ9VEXDP8D3qSHecUI8plwx_wcVXuAmEQqrsf33JQ6EF91Tft6UpiUAwkBpJT9_40rOSjZ2558HR2jq/pub?w=1438&h=743[align="center", title="Hierarchical clustering"]
 
 //ST: !
 ==== e. k-means clustering
 
 //ST: !
-ifndef::backend-pdf[]
-image::https://docs.google.com/drawings/d/e/2PACX-1vTRwfYNc8vPo08Hw8c_Dd4dKWl6uymNynyC6tuJPBhNy2Pu_PFM4tujzk5TNEtDHFPXebLrCGaNIGGQ/pub?w=1432&h=826[align="center", "title="k-means clustering"]
-endif::[]
-
-ifdef::backend-pdf[]
-image::k-means.png[align="center", title="k-means clustering"]
-endif::[]
+image::https://docs.google.com/drawings/d/e/2PACX-1vTRwfYNc8vPo08Hw8c_Dd4dKWl6uymNynyC6tuJPBhNy2Pu_PFM4tujzk5TNEtDHFPXebLrCGaNIGGQ/pub?w=1432&h=826[align="center", title="k-means clustering"]
 
 //ST: !
 ==== f. clustering using community detection - via network analysis
@@ -230,13 +211,7 @@ This last example of a clustering technique is a bit fancy - not usually represe
 See the lesson on "Network analysis and text mining" for an example of how it can be practised in http://www.gephi.org[Gephi].
 
 //ST: !
-ifndef::backend-pdf[]
-image::https://docs.google.com/drawings/d/e/2PACX-1vR3nC5mWBmq06PhFGKMtKTG0dwqTrEm4UqndP167VeTMeA7e2IPNq8D231uwdOQuL4_r-lR9V72GLCf/pub?w=1427&h=781[align="center", "title="community detection"]
-endif::[]
-
-ifdef::backend-pdf[]
-image::community-detection.png[align="center", title="community detection"]
-endif::[]
+image::https://docs.google.com/drawings/d/e/2PACX-1vR3nC5mWBmq06PhFGKMtKTG0dwqTrEm4UqndP167VeTMeA7e2IPNq8D231uwdOQuL4_r-lR9V72GLCf/pub?w=1427&h=781[align="center", title="community detection"]
 
 //ST: !
 This clustering example is particularly interesting because the number of clusters found in the dataset is not specified in advance: it "emerges" through the analysis.

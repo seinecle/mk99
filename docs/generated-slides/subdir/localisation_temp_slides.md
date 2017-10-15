@@ -106,7 +106,7 @@ video::vVX-PrBRtTY[youtube]
 ==  !
 ==== b. Example: how to explore the real estate market in the Netherlands
 
-
+==  !
 - Every single building of the Netherlands on a map
 - Colored by year of construction
 - With role (retail or housing?) and surface highlighted
@@ -120,7 +120,7 @@ http://code.waag.org/buildings/[image:waag.png[align"center", title="Visual expl
 
 ==  !
 [.stretch]
-image::stamen.jpg[align="center"]
+image::stamen.jpg[align="center", title="Stamen Design"]
 
 
 - Agency based in San Francisco
@@ -156,9 +156,9 @@ image::table-example.png[align="center", title="A table with two entries"]
 
 
 ==  !
-A table can have millions of rows. How to retrieve information such as "get all customers leaving in Rotterdam"?
+A table can have millions of rows. How to retrieve information such as "get all customers living in Rotterdam"?
 
-"SQL" (Structured Query Language) is a system to express these kind of queries.
+"SQL" (Structured Query Language) is a system to express these kinds of queries.
 
 ==  !
 In the table shown above, a query written in SQL look in the "Address" column and inspect all the text to find if "Rotterdam" is present or not.
@@ -176,7 +176,6 @@ So how to store geospatial data in a way that makes it easy to retrieve?
 ==  !
 
 
-==  !
 1. SQL solutions
 
 Even if SQL does not perform well on geospatial data "out of the box", extra modules have been developed to deal with it.
@@ -188,6 +187,7 @@ Microsoft SQL server since 2008:
 - Possible to use complex queries on these objects
 
 ==  !
+[start=2]
 2. NoSQL solutions
 
 Since ~ 2005, new types of databases have been developed, which don't follow a table structure in order to facilitate the query of special kinds of data, like geospatial data or network data.
