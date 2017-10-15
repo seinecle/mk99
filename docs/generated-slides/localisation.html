@@ -121,40 +121,40 @@ table.CodeRay td.code>pre{padding:0}
 <section><div class="ulist"><ul><li><p>The visual metaphor of the map is widely understood</p></li><li><p>Makes exploration easy: all visible at once, while zoom allows for details as well</p></li><li><p>Multiple information cues (colors, symbols, shapes, layers, etc.)</p></li></ul></div></section>
 <section><div class="ulist"><ul><li><p>Keep in mind: maps are always <strong>political</strong></p></li><li><p>Watch this extract from the TV series "The West Wing“, Season 2, Episode 16:</p></li></ul></div></section>
 <section><div class="videoblock stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/vVX-PrBRtTY?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
-<section><h3>b. Example: how to explore the real estate market in the Netherlands</h3><div class="ulist"><ul><li><p>Every single building of the Netherlands on a map</p></li><li><p>Colored by year of construction</p></li><li><p>With role (retail or housing?) and surface highlighted</p></li><li><p>Zoomable and draggable</p></li></ul></div></section>
+<section><h3>b. Example: how to explore the real estate market in the Netherlands</h3></section>
+<section><div class="ulist"><ul><li><p>Every single building of the Netherlands on a map</p></li><li><p>Colored by year of construction</p></li><li><p>With role (retail or housing?) and surface highlighted</p></li><li><p>Zoomable and draggable</p></li></ul></div></section>
 <section><div class="paragraph"><p><a href="http://code.waag.org/buildings/"><span class="image"><img src="images/waag.png" alt="align"center"" title="Visual exploration of real estate in NL" /></span></a></p></div></section>
 <section><h3>c. Key resources to work with maps</h3></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/stamen.jpg" alt="stamen" height="100%" /></div>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/stamen.jpg" alt="stamen" height="100%" /></div><div class="title">Figure 2. Stamen Design</div>
 <div class="ulist"><ul><li><p>Agency based in San Francisco</p></li><li><p>Famous for cutting research in map design</p></li></ul></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/mapbox.png" alt="mapbox" height="100%" /></div><div class="title">Figure 2. MapBox</div>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/mapbox.png" alt="mapbox" height="100%" /></div><div class="title">Figure 3. MapBox</div>
 <div class="ulist"><ul><li><p>Mapbox.com</p></li><li><p>SaaS to create interactive maps in web pages and mobile apps.</p></li></ul></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/openstreetmap.png" alt="openstreetmap" height="100%" /></div><div class="title">Figure 3. Openstreetmap</div>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/openstreetmap.png" alt="openstreetmap" height="100%" /></div><div class="title">Figure 4. Openstreetmap</div>
 <div class="ulist"><ul><li><p>OpenStreetMap</p></li><li><p>A crowd sourced open source map of the world. Available through API.</p></li></ul></div></section>
 <section id="_3_how_to_represent_space_in_data_format"><h2>3. How to represent “space” in data format?</h2></section>
 <section><h3>a. The specifity of geospatial data</h3></section>
 <section><div class="paragraph"><p>Data is traditionally stored in tables in relational databases, taking this form:</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="images/table-example.png" alt="table example" height="100%" /></div><div class="title">Figure 4. A table with two entries</div></section>
-<section><div class="paragraph"><p>A table can have millions of rows. How to retrieve information such as "get all customers leaving in Rotterdam"?</p></div>
-<div class="paragraph"><p>"SQL" (Structured Query Language) is a system to express these kind of queries.</p></div></section>
+<div class="imageblock stretch" style="text-align: center"><img src="images/table-example.png" alt="table example" height="100%" /></div><div class="title">Figure 5. A table with two entries</div></section>
+<section><div class="paragraph"><p>A table can have millions of rows. How to retrieve information such as "get all customers living in Rotterdam"?</p></div>
+<div class="paragraph"><p>"SQL" (Structured Query Language) is a system to express these kinds of queries.</p></div></section>
 <section><div class="paragraph"><p>In the table shown above, a query written in SQL look in the "Address" column and inspect all the text to find if "Rotterdam" is present or not.</p></div></section>
 <section><div class="paragraph"><p>This is highly inefficient (slow), and more complex queries would not work.</p></div>
 <div class="paragraph"><p>For example, the table above could not be queried for "get all customers living in a 10 miles radius around Rotterdam".</p></div></section>
 <section><div class="paragraph"><p>So how to store geospatial data in a way that makes it easy to retrieve?</p></div></section>
 <section><h3>b. Solutions to store and retrieve geospatial data</h3></section>
-<section></section>
 <section><div class="olist arabic"><ol class="arabic"><li><p>SQL solutions</p></li></ol></div>
 <div class="paragraph"><p>Even if SQL does not perform well on geospatial data "out of the box", extra modules have been developed to deal with it.</p></div></section>
 <section><div class="paragraph"><p>Microsoft SQL server since 2008:</p></div>
 <div class="ulist"><ul><li><p>Possible to store and query “geometric” and “geographic” objects</p></li><li><p>Possible to use complex queries on these objects</p></li></ul></div></section>
-<section><div class="olist arabic"><ol class="arabic"><li><p>NoSQL solutions</p></li></ol></div>
+<section><div class="olist arabic"><ol class="arabic" start="2"><li><p>NoSQL solutions</p></li></ol></div>
 <div class="paragraph"><p>Since ~ 2005, new types of databases have been developed, which don&#8217;t follow a table structure in order to facilitate the query of special kinds of data, like geospatial data or network data.</p></div>
 <div class="paragraph"><p>These new databases are called "NoSQL databases"</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/carto.png" alt="carto" height="100%" /></div><div class="title">Figure 5. the Carto Platform</div>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/carto.png" alt="carto" height="100%" /></div><div class="title">Figure 6. the Carto Platform</div>
 <div class="paragraph"><p><a href="https://carto.com/">Carto (ex CartoDB)</a>: specializing in geospatial data + mapping.</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/neo4j.png" alt="neo4j" height="100%" /></div><div class="title">Figure 6. Neo4J, a database for networks</div>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/neo4j.png" alt="neo4j" height="100%" /></div><div class="title">Figure 7. Neo4J, a database for networks</div>
 <div class="paragraph"><p><a href="http://neo4j-contrib.github.io/spatial/">Neo4J Spatial</a> enables to mix the logics of networks with places in the data, so that you can make such queries on your data:</p></div>
 <div class="paragraph"><p>"Select all streets in the Municipality of NYC where at least 2 of my friends are walking right now."</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/topojson.png" alt="topojson" height="100%" /></div><div class="title">Figure 7. GeoJSon and TopoJSon are derivations of the json formats for geospatial data</div>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/topojson.png" alt="topojson" height="100%" /></div><div class="title">Figure 8. GeoJSon and TopoJSon are derivations of the json formats for geospatial data</div>
 <div class="paragraph"><p>GeoJSon and TopoJSon: 2 data formats to represent geometric and geographic data developed for Javascript applications – and beyond.</p></div></section>
 <section id="_4_two_friends_for_localization_personalization_and_real_time"><h2>4. Two friends for localization: personalization and real-time</h2></section>
 <section><div class="paragraph"><p>Knowing the person, its location, at a precise time unlocks meaningful push notifications</p></div></section>
@@ -176,7 +176,7 @@ table.CodeRay td.code>pre{padding:0}
 <section><div class="ulist"><ul><li><p>Data production</p></li></ul></div>
 <div class="paragraph"><p>Amazon Mechanical Turk is a service of data production through the hiring of a distributed crowd of workers. Tends to "erase distance".</p></div>
 <div class="paragraph"><p>Yet, the geographical distribution of workers on Amazon Mechanical Turk is far from even. The following figure is taken  <a href="http://aclweb.org/anthology/Q14-1007">from this study</a>:</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/amt-distribution.png" alt="amt distribution" height="100%" /></div><div class="title">Figure 8. Distribution of Amazon Mechanical Turk workers</div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/amt-distribution.png" alt="amt distribution" height="100%" /></div><div class="title">Figure 9. Distribution of Amazon Mechanical Turk workers</div></section>
 <section><h3>b. Distributed systems – the end of territories?</h3></section>
 <section><div class="paragraph"><p>The libertarian dream of the cypher-punks: individuals transact without consideration for their nationality, currency, legal system, political regime.</p></div></section>
 <section><div class="paragraph"><p>Organizations, banking, voting systems, … any aggregated human activity could emerge without reference to local territories or institutions. Just groups of individuals transacting voluntarily and securely, without a notion of place or distance.</p></div></section>

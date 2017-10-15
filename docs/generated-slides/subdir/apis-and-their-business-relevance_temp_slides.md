@@ -1,4 +1,4 @@
-= APIs and their business relevance
+= Big data for business: APIs and their business relevance
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 
