@@ -1,4 +1,4 @@
-= Data visualization: past, present and future
+= Data visualization: a viewpoint on its past, present and future
 Clément Levallois <levallois@em-lyon.com>
 v1.0, 2017-31-07
 
@@ -17,11 +17,12 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 ==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-==  !
+==  1. Where is data visualization going?
 
 ==  !
 by http://www.clementlevallois.net[Clement Levallois], http://www.ds3.inesc-id.pt/[DataStorm 2nd edition], Lisbon, July 15, 2015.
 
+==  !
 The nice thing about fields in computational science is that they evolve so quickly.
 Every 6 months or so, there is a new kid on the block in machine learning, mobile app development or text mining.
 
@@ -34,15 +35,17 @@ So I take the opportunity of this talk to reflect on data visualization, which i
 ==  !
 
 [IMPORTANT]
-====
+=====
 I am more an observer than a participant in this field.
 
 My view is the one of somebody who came to data visualization around 2009 through network visualizations with http://www.gephi.org[Gephi], getting my information mostly from the discussions, links and podcasts shared by data visualizers which I follow and interact with on Twitter.
-====
+=====
 
+==  !
 I feel that in the last 6 years, dataviz has evolved in significant ways: it emerged and crystalized into a distinct topic, lived happily through a golden age, and we are today somewhere else. Let's start with the beginning.
 
 
+==  2. Before dataviz
 
 ==  !
 Before dataviz, there was a couple of established fields of practice dealing with graphics and data. I'll mention 4 of them though there are surely important others:
@@ -50,7 +53,7 @@ Before dataviz, there was a couple of established fields of practice dealing wit
 infoviz, infographics, Business intelligence, and GIS.
 
 ==  !
-=== a. Infoviz
+==== a. Infoviz
 
 ==  !
 Infoviz is "information visualisation" and is the name of an academic field concerned with:
@@ -84,7 +87,7 @@ As illustrated by the figure above, and if I were to be a bit tough on infoviz, 
 
 
 ==  !
-=== b. Infographics
+==== b. Infographics
 
 ==  !
 You could say that infographics is a bit the contrary of infovis: communication agencies doing pretty much what they want to catch the attention of their readers, at the expense of truthfulness and reliability of the data they invoke.
@@ -104,7 +107,7 @@ Of course there are excellent infographics and Alberto Cairo, a professor and jo
 But my understanding is that it is not in the basic contract of infographics to have a one to one relation with data, there is a license to *illustrate* the data. The reader must trust the source of the infographics much more than in information visualisation: depending on whether this is an established newspaper with a good graphics team or a communication agency doing quick and dirty work, infographics can be trusted or badly misleading.
 
 ==  !
-=== c. Business intelligence is still another crowd
+==== c. Business intelligence is still another crowd
 
 ==  !
 [.stretch]
@@ -118,7 +121,7 @@ The mission is basically to do "excel-level" visualizations in terms of reportin
 Nothing fancy usually there: bar charts, pie charts (often in 3D as in the illustration above, which is wrong), line charts and progress bars assembled in dashboards, sold by companies more versed in the business side of things than graphical design.
 
 ==  !
-=== d. And GIS.
+==== d. And GIS.
 
 ==  !
 [.stretch]
@@ -134,7 +137,7 @@ This is after all their business to draw maps, which is geolocalized data.
 It could be that this long tradition was also a curse: because they developed these desktop software that were widely used in the 1990s, the 2000s and still today, they were entrenched in technologies that could not be easily adapted when web technologies opened up richer, more engaging ways to draw maps and to project overlays of data on them.
 
 ==  !
-=== e. The scene composed by infovis, infographics, BI and GIS
+==== e. The scene composed by infovis, infographics, BI and GIS
 
 ==  !
 So the scene is the following: scientists in the field of "information visualisation" in their corner being the guardians of the temple of "proper visualisations", but they have a hard time finding an audience for these graphics.
@@ -148,7 +151,7 @@ At one of the two other corners, we have business intelligence which is a bit sc
 ==  !
 And GIS which works with data in a way which is universally understood and judged relevant (maps), but with a degree of innovation of this field which remains quite low.
 
-==  !
+==  3. The emergence of dataviz
 
 ==  !
 Something happened around 2008 and 2009, which changed this statu quo.
@@ -191,7 +194,7 @@ It caused many newcomers to try their hands at these new tools, free from the ha
 These newcomers who created dataviz had a different way to look at things, a different tooling, and different ways to function as a group.  This community is remarkable in several aspects:
 
 ==  !
-=== a. Individuals possessing an unusually broad mix of skills:
+==== a. Individuals possessing an unusually broad mix of skills:
 
 ==  !
 Coding skills for the preparation of the data (Python or R for example), skills in javascript and other scripting language for visual design (ActionScript, Processing), a knowledge of the rules of design and a feel for esthetics, and creativity.
@@ -209,7 +212,7 @@ image::mta.jpg[align="center", width="500"]
 (by Alexander Chen, a Creative Director at Google Creative Lab)
 
 ==  !
-=== b. Twitter based communication around the "#dataviz" hashtag
+==== b. Twitter based communication around the "#dataviz" hashtag
 
 ==  !
 In this community, people evaluate each other's works, shared their latest realization chat about past and upcoming conferences but more importantly exhchange info about new frameworks and resources.
@@ -223,7 +226,7 @@ image::dataviz-communities.jpg[align="center"]
 (live url: http://neoformix.com/2012/DataVisFieldSubGroups.html)
 
 ==  !
-=== c. A tight knit group across the US and Europe.
+==== c. A tight knit group across the US and Europe.
 
 ==  !
 I identify (this is a non exclusive list of course) http://moebio.com/[Santiago Ortiz], http://www.jeromecukier.net/[Jerome Cukier], http://blog.blprnt.com/[Jer Thorp], http://driven-by-data.net/[Gregor Aisch], http://tulpinteractive.com/[Jan Willem Tulp], http://ghostweather.com/[Lynn Cherny], http://flowingdata.com/about-nathan/[Nathan Yau] from Flowing Data, https://about.me/krees[Kim Rees] from Periscopic, http://truth-and-beauty.net/[Moritz Stefaner], with a couple of established academics like http://fellinlovewithdata.com/[Enrico Bertini], http://alignedleft.com/[Scott Murray], http://policyviz.com/[Jon Schwabish], http://www.thefunctionalart.com/[Alberto Cairo], and in relation with teams at the Guardian and the NYT, and http://www.visualisingdata.com/about/[Andy Kirk] at VisualisingData as an evangelist and instructor.
@@ -243,10 +246,10 @@ image::dataviz-group.jpg[align="center"]
 (live url: http://neoformix.com/2012/DataVisField1000_Group2.pdf)
 
 ==  !
-=== d. A couple of emblematic projects
+==== d. A couple of emblematic projects
 
 ==  !
-==== i. OECD Better Life Index by Moritz Stefaner et al
+===== i. OECD Better Life Index by Moritz Stefaner et al
 
 ==  !
 Not infovis, not infographics, just dataviz: simplicity, interaction, access to the data.
@@ -260,7 +263,7 @@ image::oecd-better-life-index.jpg[align="center"]
 (live url: http://www.oecdbetterlifeindex.org/)
 
 ==  !
-==== ii. The "Ghost Counties" visualization by Jan Willem Tulp
+===== ii. The "Ghost Counties" visualization by Jan Willem Tulp
 
 ==  !
 It shows that a marriage is possible between creativity and esthetics on one hand, and cold hard data on the other hand (foreclosures per county in the US).
@@ -274,7 +277,7 @@ image::ghost-counties-screenshot.jpg[align="center"]
 (live url, needs Internet Explorer and the Java plugin: http://www.janwillemtulp.com/eyeo/)
 
 ==  !
-==== iii. U.S. Gun Deaths by Periscopic
+===== iii. U.S. Gun Deaths by Periscopic
 
 ==  !
 It illustrates the power of tory telling (through the intro), granularity of the data, and impact.
@@ -294,10 +297,10 @@ The emergence of data visualisation as a set of practice and professionals was c
 "Data visualization" became positioned as one powerful lever to extract value from datasets: it possesses both the rigor needed to report objectively on key data features, that you'd find otherwise in information visualisation, and the power to be engaging with the domain specialists or the managers in charge of finding insights in the data.
 
 ==  !
-=== e. Two aspects where data visualization epitomizes its value: maps and networks.
+==== e. Two aspects where data visualization epitomizes its value: maps and networks.
 
 ==  !
-==== i. Maps
+===== i. Maps
 
 ==  !
 Visualization of geolocalized data and of network data has of course a long history before the birth of data visualization: many software integrated mapping functions from Geographical Information Systems, and network analysis packages also had visualization add-ons.
@@ -323,7 +326,7 @@ This interactive map by Stamen is quite different from your usual GIS mapping!
 What this kind of map brings is: interaction, custom-made design, and most of all enhanced **engagement** with the viewers.
 
 ==  !
-==== ii. Networks
+===== ii. Networks
 
 ==  !
 In terms of networks, a pre-dataviz typical network would look like:
@@ -359,10 +362,10 @@ This type of visualization is different because:
 -> it will encourage curiosity, exploration, and just increase 10 folds the time spent on it by the viewers.
 
 ==  !
-=== f. If we were looking for 2 defining traits of dataviz
+==== f. If we were looking for 2 defining traits of dataviz
 
 ==  !
-==== i. Data is for the viewer to see and play with
+===== i. Data is for the viewer to see and play with
 
 ==  !
 There is the assumption that the visualization should not provide you with flat and unverifiable conclusions: it should show the data in a transparent, verifiable form.
@@ -377,7 +380,7 @@ This represents a fundamental break with infographics, which can hide the underl
 It is also a break with infovis, where data is indeed there but you might not be enticed to engage with it.
 
 ==  !
-==== ii. Custom made, creative act
+===== ii. Custom made, creative act
 
 ==  !
 Because we are in the browser there is no click and point solutions for the visualization of the data.
@@ -400,7 +403,7 @@ image::formatted/windmap.jpg[align="center", width="500"]
 
 (live url for a worldwide version: http://earth.nullschool.net/)
 
-==  !
+==  4. 2014-2015: The stabilization of dataviz
 
 ==  !
 Anyhow, industrialization in dataviz came in rapidly, with Tableau becoming the leader for general purpose viz, dashboards reinvented themselves in dataviz-style with Bime, Qlik, Palantir to name a few.
@@ -473,7 +476,7 @@ So that's not bad news: dataviz is now mainstream and well established, people a
 ==  !
 But I miss a bit the excitement of the previous years when you had one framework or one big personal project published per month, and when you had all these big shots chatting on Twitter about the upcoming developments for dataviz.
 
-==  !
+==  5. 2015 onwards: where is dataviz going?
 
 ==  !
 So... where is dataviz going?
@@ -518,7 +521,8 @@ This path, and similar paths followed by others, suggest that:
 - Interaction is richer than we are used to. When we leave the "screen" environment (desktop or mobile), interactions with the user become more diverse. Not just the hand and the click of the mouse, but the whole body. Not one individual facing an object, but possibly a crowd, possibly moving, possibly gesturing.
 
 ==  !
-- And "data" is in the process of getting an even larger meaning. I mean, I was happy to move from a tabular notion of data to playing with "unstructured text": like wow, that opens wild possibilities! But when you move away from the screen and start connecting to a variety of objects and sensors, and with a variety of people, data takes still other forms: real time measurements from the external physical environment, from the internal (body) environment, from local or distant social interactions as they unfold, all while staying connected to the APIs we are already familiar with... the mix can be bring impactful results.
+- And "data" is in the process of getting an even larger meaning.
+When you move away from the screen and start connecting to a variety of objects and sensors, and with a variety of people, data takes still other forms: real time measurements from the external physical environment, from the internal (body) environment, from local or distant social interactions as they unfold, all while staying connected to the APIs we are already familiar with... the mix can be bring impactful results.
 
 ==  !
 So, if visualizing data from the Twitter API was the cliché of #dataviz in 2010 - 2015, the next cliché could be the instantaneous 3D printing of data generated from the connected objects and bodies in a home or a workspace.
