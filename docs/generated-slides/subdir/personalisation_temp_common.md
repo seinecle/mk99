@@ -123,6 +123,7 @@ video::7V8jrdH5tAQ[youtube]
 |==========================
 |Bodily Measurement       |Device             |Company                  |Product                          |Picture
 |Behavior in public areas |Multiple devices   |AGT International        |https://www.agtinternational.com/analytics/iot-analytics/crowd-analytics/[Mega Events Management Solution]  |image::agt.png[align="center",width=120]
+|Pedestrian traffic       |Cameras            |https://placemeter.com[Placemeter]                         |Placemeter                       |video::rpjJHoJixYA[align="center"]
 |==========================
 
 //ST: !

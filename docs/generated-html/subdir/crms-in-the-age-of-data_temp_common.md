@@ -112,10 +112,13 @@ We should realize that:
 //ST: !
 ==== a) Until 2006 only half of US and EU households, and 10% of the Chinese population, had Internet broadband access at home:
 
+//ST: !
+++++
+<iframe src="http://www.pewinternet.org/chart/home-broadband-use/iframe/" id="pew17070" scrolling="no" width="100%" height="100px" frameborder="0"></iframe>
 
+<script type='text/javascript'id='pew-iframe'>(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='http://www.pewinternet.org/wp-content/plugins/pew-scripts/js/iframeResizer.min.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;try{iFrameResize([],'iframe=pew17070')}catch(e){}};var embedder=document.getElementById('pew-iframe');embedder.parentNode.insertBefore(s,embedder)}if(window.attachEvent)window.attachEvent('onload',async_load);else window.addEventListener('load',async_load,false)})();</script>
+++++
 
-image::broadband.png[align="center", title="Home broadband use in the US"]
-{nbsp} +
 
 //ST: !
 
@@ -143,9 +146,10 @@ image::first-iphone.jpg[align="center", title="Steve Jobs presenting the iPhone 
 ==== c) Until 2009 social media was just taking off
 
 //ST: !
+++++
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Kh6Sf0XDOZf1-FU4VznSydrxIRm3NRJfJHIq4KYKGV2_TAtbqoI634NSu9SR0LYk3UihYLvrlHhs/pubchart?oid=412747728&amp;format=interactive"></iframe>
+++++
 
-image::growth-sm.png[align="center", title="Growth of social media usage, 2004-2017"]
-{nbsp} +
 
 //ST: !
 ==== d) Online retail is growing at a steady pace
@@ -256,7 +260,7 @@ ii. "personalization" has been blamed for reinforcing "bubbles" or "tribes" view
 Content personalization is also blamed for favoring political polarization via an "echo chamber effect": social media tend to show me content I already agree with (paying version of the paper http://www.sciencedirect.com/science/article/pii/S0740624X16300375[here], free version https://www.academia.edu/24798528/Political_Polarization_on_Twitter_Implications_for_the_Use_of_Social_Media_in_Digital_Governments?auto=download[here]).
 
 //ST: !
-iii. Personalizing the customer relationship, even when effective, is not inherently a good thing. It has been shown that the http://www.coca-colacompany.com/stories/summer-of-sharing-share-a-coke-campaign-rolls-out-in-the-us[Coca-Cola #ShareaCoke campaign] is effective at making more children choose a soda with a label to their name, over a healthy drink (paying version of the study http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract[here], free version not available).
+iii. Personalizing the customer relationship, even when effective, is not inherently a good thing. It has been shown that the http://www.coca-colacompany.com/stories/summer-of-sharing-share-a-coke-campaign-rolls-out-in-the-us[Coca-Cola =ShareaCoke campaign] is effective at making more children choose a soda with a label to their name, over a healthy drink (paying version of the study http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract[here], free version not available).
 
 //ST: !
 iv. Personalization through smart CRMs? Companies rated with the best customer service do personalization differently: with humans.

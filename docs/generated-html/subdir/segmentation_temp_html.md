@@ -28,9 +28,8 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 How to market the right product to the right people?
 
 //ST: !
-image::A-product-cannot-fit-everybody's-expectations.png[align="center", "title="A product cannot fit everybody's expectations"]
+image::A-product-cannot-fit-everybody's-expectations.png[align="center", title="A product cannot fit everybody's expectations"]
 {nbsp} +
-
 
 //ST: !
 A product cannot have every feature: adding a new feature can conflict with existing features or just hurt the need for simplicity.
@@ -197,18 +196,15 @@ Groups have now been found automatically. Identify what these groups mean and ho
 ==== d. hierarchical clustering
 
 //ST: !
-image::Hierarchical-clustering.png[align="center", "title="Hierarchical clustering"]
+image::Hierarchical-clustering.png[align="center", title="Hierarchical clustering"]
 {nbsp} +
-
-
 
 //ST: !
 ==== e. k-means clustering
 
 //ST: !
-image::k-means-clustering.png[align="center", "title="k-means clustering"]
+image::k-means-clustering.png[align="center", title="k-means clustering"]
 {nbsp} +
-
 
 //ST: !
 ==== f. clustering using community detection - via network analysis
@@ -219,9 +215,8 @@ This last example of a clustering technique is a bit fancy - not usually represe
 See the lesson on "Network analysis and text mining" for an example of how it can be practised in http://www.gephi.org[Gephi].
 
 //ST: !
-image::community-detection.png[align="center", "title="community detection"]
+image::community-detection.png[align="center", title="community detection"]
 {nbsp} +
-
 
 //ST: !
 This clustering example is particularly interesting because the number of clusters found in the dataset is not specified in advance: it "emerges" through the analysis.

@@ -144,7 +144,7 @@ image::curation.jpg[align="center"]
 //ST: 4. ENRICH
 //ST: !
 
-image::enrich.jpg[align="center"]
+image::enrich.jpg[align="center",width="500"]
 {nbsp} +
 
 //ST: !
@@ -180,7 +180,7 @@ image::enrich.jpg[align="center"]
 //ST: 5. RANK / MATCH / COMPARE
 //ST: !
 
-image::rank.jpg[align="center"]
+image::rank.jpg[align="center",width="500"]
 {nbsp} +
 
 //ST: !
@@ -216,11 +216,11 @@ image::rank.jpg[align="center"]
 //ST: 6. SEGMENT / CLASSIFY
 //ST: !
 
-image::muffin.jpg[align="center"]
+image::muffin.jpg[align="center",width="500"]
 {nbsp} +
 
 //ST: !
-==== Generating: The ones doing it
+==== Segmenting / classifying: The ones doing it
 
 //ST: !
 |===
@@ -261,19 +261,32 @@ image::generate.jpg[align="center"]
 
 //ST: !
 
+[cols="a"]
+|===
+
+|1. Intelligent BI https://www.aiden.ai/[image:aiden.png[width="100"]]
+
+|2. wit.ai, the chatbot by FB https://wit.ai/[image:wit.png[width="100"]]
+
+|3. Virtual assistants https://www.cxcompany.com/digitalcx/[image:cx.jpg[width="100"]]
+
+|4. Image generation https://deepart.io/[image:deepart.png[width="100"]]
+
+|5. Close-to-real-life speech synthesis https://deepmind.com/blog/wavenet-generative-model-raw-audio/[image:google.jpg[width="100"]]
 
 |===
 
-1. Intelligent BI https://www.aiden.ai/[image:aiden.png[witdth="100"]]
-
-2. wit.ai, the chatbot by FB https://wit.ai/[image:wit.png[witdth="100"]]
-
-3. Virtual assistants https://www.cxcompany.com/digitalcx/[image:cx.jpg[witdth="100"]]
-
-4. Image generation https://deepart.io/[image:deepart.png[witdth="100"]]
-
-5. Close-to-real-life speech synthesis https://deepmind.com/blog/wavenet-generative-model-raw-audio/[image:google.jpg[witdth="100"]]
+[cols="a,a"]
 |===
+|6. Generating realistic car models from a few parameters: https://www.autodeskresearch.com/publications/exploring_generative_3d_shapes[image:autodesk.png[width="100", title="Autodesk"]]
+
+|===
+
+//ST: !
+A video on the generation of car models:
+
+//ST: !
+video::25xQs0Hs1z0[youtube]
 
 //ST: !
 ==== Generating: the hard part

@@ -58,9 +58,28 @@ image::fb-aware.png[align"center", title="Facebook Local Awareness Ad Feature"]
 ==  !
 video::-YE90ygswoU[youtube]
 
+==  !
+==== b. Example - Placemeter
 
 ==  !
-==== b. Example - Data @GrandLyon
+[.stretch]
+image::placemeter.png[align"center", title="Placemeter analyzes pedestrian traffic through video"]
+
+
+==  !
+“Using computer vision to analyze real life activity”:
+
+- Cameras placed in public places (possibly at the windows of private households)
+- Video is treated on the device attached to the camera, not saved.
+- measures pedestrian traffic in front of stores to provide "main street analytics"
+
+-> https://www.placemeter.com/
+
+==  !
+video::irydHrRdpkY[youtube]
+
+==  !
+==== c. Example - Data @GrandLyon
 
 ==  !
 https://data.grandlyon.com/[

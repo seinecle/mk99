@@ -28,8 +28,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 How to market the right product to the right people?
 
 //ST: !
-
-image::crowd.png[align="center", title="A product cannot meet everybody's expectations"]
+image::A-product-cannot-fit-everybody's-expectations.png[align="center", title="A product cannot fit everybody's expectations"]
 {nbsp} +
 
 //ST: !
@@ -197,17 +196,14 @@ Groups have now been found automatically. Identify what these groups mean and ho
 ==== d. hierarchical clustering
 
 //ST: !
-
-image::hierarchical-clustering.png[align="center", title="Hierarchical clustering"]
+image::Hierarchical-clustering.png[align="center", title="Hierarchical clustering"]
 {nbsp} +
-
 
 //ST: !
 ==== e. k-means clustering
 
 //ST: !
-
-image::k-means.png[align="center", title="k-means clustering"]
+image::k-means-clustering.png[align="center", title="k-means clustering"]
 {nbsp} +
 
 //ST: !
@@ -219,7 +215,6 @@ This last example of a clustering technique is a bit fancy - not usually represe
 See the lesson on "Network analysis and text mining" for an example of how it can be practised in http://www.gephi.org[Gephi].
 
 //ST: !
-
 image::community-detection.png[align="center", title="community detection"]
 {nbsp} +
 

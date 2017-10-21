@@ -180,7 +180,7 @@
                                     <outputDirectory>${basedir}/docs/generated-slides</outputDirectory>
                                     <backend>revealjs</backend>
                                     <templateDir>${basedir}/docs/asciidoctor-reveal.js-${asciidoctor-revealjs.version}/templates/slim</templateDir>
-                                    <sourceHighlighter>coderay</sourceHighlighter>
+                                    <sourceHighlighter>rouge</sourceHighlighter>
                                     <attributes>
                                  
                                         As we are downloading reveal.js in runtime, it sits in a nonstandard folder `reveal.js-${revealjs.version}`
@@ -219,7 +219,7 @@
                                 <configuration>
                                     <outputDirectory>${basedir}/docs/generated-pdf</outputDirectory>
                                     <backend>pdf</backend>
-                                    <sourceHighlighter>coderay</sourceHighlighter>
+                                    <sourceHighlighter>rouge</sourceHighlighter>
                                     <attributes>
                                         <path>${basedir}</path>                                
                                         <icons>font</icons>
@@ -246,7 +246,7 @@
                                 <configuration>
                                     <outputDirectory>${basedir}/docs/generated-html</outputDirectory>
                                     <backend>html</backend>
-                                    <sourceHighlighter>coderay</sourceHighlighter>
+                                    <sourceHighlighter>rouge</sourceHighlighter>
                                     <extensions>
                                         <extension>
                                             <className>net.clementlevallois.asciidoc.extensions.CommonPreProcessor</className>
@@ -401,7 +401,7 @@
                                     <!--<backend>pdf</backend>-->
                                     <backend>docbook</backend>
                                     <doctype>book</doctype>
-                                    <sourceHighlighter>coderay</sourceHighlighter>
+                                    <sourceHighlighter>rouge</sourceHighlighter>
                                     <attributes>
                                         <path>${basedir}</path>                                
                                         <icons>font</icons>
