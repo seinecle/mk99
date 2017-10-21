@@ -312,9 +312,9 @@ video::25xQs0Hs1z0[youtube]
 //ST: Combos!
 
 //ST: !
-
-image::data-driven-value-creation.png[align="center", title="Combinations"]
+image::Combinations.png[align="center", "title="Combinations"]
 {nbsp} +
+
 
 
 == The end

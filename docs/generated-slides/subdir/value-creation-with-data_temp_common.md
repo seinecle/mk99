@@ -264,26 +264,32 @@ image::generate.jpg[align="center"]
 [cols="a"]
 |===
 
-|1. Intelligent BI https://www.aiden.ai/[image:aiden.png[width="100"]]
+|[start=1]
+1. Intelligent BI with https://www.aiden.ai/[Aiden] image:aiden.png[width="100"]
 
-|2. wit.ai, the chatbot by FB https://wit.ai/[image:wit.png[width="100"]]
+|[start=2]
+2. https://wit.ai/[wit.ai], the chatbot by FB image:wit.png[width="100"]
 
-|3. Virtual assistants https://www.cxcompany.com/digitalcx/[image:cx.jpg[width="100"]]
+|[start=3]
+3. https://www.cxcompany.com/digitalcx/[Virtual assistants] image:cx.jpg[width="100"]
 
-|4. Image generation https://deepart.io/[image:deepart.png[width="100"]]
+|[start=4]
+4. https://deepart.io/[Image generation] image:deepart.png[width="100"]
 
-|5. Close-to-real-life speech synthesis https://deepmind.com/blog/wavenet-generative-model-raw-audio/[image:google.jpg[width="100"]]
+|[start=5]
+5. Close-to-real-life https://deepmind.com/blog/wavenet-generative-model-raw-audio/[speech synthesis] image:google.jpg[width="100"]
 
 |===
 
-[cols="a,a"]
+[cols="a"]
 |===
-|6. Generating realistic car models from a few parameters: https://www.autodeskresearch.com/publications/exploring_generative_3d_shapes[image:autodesk.png[width="100", title="Autodesk"]]
+|[start=6]
+6. Generating realistic car models from a few parameters by https://www.autodeskresearch.com/publications/exploring_generative_3d_shapes[Autodesk]: image:autodesk.png[width="100", title="Autodesk"]
 
 |===
 
 //ST: !
-A video on the generation of car models:
+A video on the generation of car models by Autodesk:
 
 //ST: !
 video::25xQs0Hs1z0[youtube]

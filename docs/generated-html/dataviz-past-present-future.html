@@ -497,10 +497,22 @@ Every 6 months or so, there is a new kid on the block in machine learning, mobil
 <div class="paragraph">
 <p>So I take the opportunity of this talk to reflect on data visualization, which is such a young field. I&#8217;d like to explore how data visualization has evolved, why there was a need for it to emerge, where it stands today, and I will try to imagine where it will evolve in the coming years.</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>Some warnings.
-I am more an observer than a participant in this field.
-My view is the one of somebody who came to data visualization around 2009 through network visualizations with Gephi, getting my information mostly from the discussions, links and podcasts shared by data visualizers which I follow and interact with on Twitter. These are personal views and I&#8217;d be happy to see them (productively) challenged.</p>
+<p>I am more an observer than a participant in this field.</p>
+</div>
+<div class="paragraph">
+<p>My view is the one of somebody who came to data visualization around 2009 through network visualizations with <a href="http://www.gephi.org">Gephi</a>, getting my information mostly from the discussions, links and podcasts shared by data visualizers which I follow and interact with on Twitter.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>I feel that in the last 6 years, dataviz has evolved in significant ways: it emerged and crystalized into a distinct topic, lived happily through a golden age, and we are today somewhere else. Let&#8217;s start with the beginning.</p>
@@ -511,13 +523,15 @@ My view is the one of somebody who came to data visualization around 2009 throug
 <h2 id="_2_before_dataviz">2. Before dataviz</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Before dataviz, there was a couple of established fields of practice dealing with graphics and data. I&#8217;ll mention 4 of them though there are surely important others:
-infoviz, infographics, Business intelligence, and GIS.</p>
+<p>Before dataviz, there was a couple of established fields of practice dealing with graphics and data. I&#8217;ll mention 4 of them though there are surely important others:</p>
+</div>
+<div class="paragraph">
+<p>infoviz, infographics, Business intelligence, and GIS.</p>
 </div>
 <div class="sect2">
 <h3 id="_a_infoviz">a. Infoviz</h3>
 <div class="paragraph">
-<p>Infoviz is "information visualisation" and is the name of an academic field concerned with</p>
+<p>Infoviz is "information visualisation" and is the name of an academic field concerned with:</p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -529,10 +543,20 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 </div>
 <div class="paragraph">
-<p>The strength of this field is that it is a test bench for many assumptions you&#8217;d have on how visualizations can be effective, in terms of "reinforcing human cognition".
-How do colors work?
-What about different scales?
-What is the performance of users at solving given problems when reading graph represented as a matrix, versus graphs represented as networks? Should longitudinal data be presented as time slices or animated movies for best understanding?</p>
+<p>The strength of this field is that it is a test bench for many assumptions you&#8217;d have on how visualizations can be effective, in terms of "reinforcing human cognition":</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>How do colors work?</p>
+</li>
+<li>
+<p>What about different scales?</p>
+</li>
+<li>
+<p>What is the performance of users at solving given problems when reading graph represented as a matrix, versus graphs represented as networks? Should longitudinal data be presented as time slices or animated movies for best understanding?</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>Research in information visualization is concerned with providing solid, empirical answers to these important questions.</p>
@@ -546,7 +570,7 @@ What is the performance of users at solving given problems when reading graph re
 <p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>The issue is, this emphasis on hypothesis testing can be detrimental to the advancing on the bigger picture: creating visualizations that are <strong>engaging their audience</strong>, widely adopted and used in a world so full of information (or call it noise) that attention by individuals is becoming the scarcest of resources.</p>
+<p>The issue is, this emphasis on hypothesis testing can be detrimental to the advancing on another fundamental goal: creating visualizations that are <strong>engaging to their audience</strong>, widely adopted and used in a world so full of information (or call it noise) that attention by individuals is becoming the scarcest of resources.</p>
 </div>
 <div class="paragraph">
 <p>As illustrated by the figure above, and if I were to be a bit tough on infoviz, I&#8217;d say you need a PhD to get it: the interfaces they design are not engaging enough, not implemented on the platforms that viewers are now using, and the information displayed hardly enhances human cognition for laymen like me.</p>
@@ -603,9 +627,13 @@ What is the performance of users at solving given problems when reading graph re
 <p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>Geographical Information Systems (GIS) may have a claim for the longest tradition in visualizing data.
-This is after all their business to draw maps, which is geolocalized data.
-It could be that this long tradition was also a curse: because they developed these desktop software that were widely used in the 1990s, the 2000s and still today, they were entrenched in technologies that could not be easily adapted when web technologies opened up richer, more engaging ways to draw maps and to project overlays of data on them.</p>
+<p>Geographical Information Systems (GIS) may have a claim for the longest tradition in visualizing data.</p>
+</div>
+<div class="paragraph">
+<p>This is after all their business to draw maps, which is geolocalized data.</p>
+</div>
+<div class="paragraph">
+<p>It could be that this long tradition was also a curse: because they developed these desktop software that were widely used in the 1990s, the 2000s and still today, they were entrenched in technologies that could not be easily adapted when web technologies opened up richer, more engaging ways to draw maps and to project overlays of data on them.</p>
 </div>
 </div>
 <div class="sect2">
@@ -617,7 +645,7 @@ It could be that this long tradition was also a curse: because they developed th
 <p>Infographics in the opposite corner, who have access to crowds of readers everyday in the pages of newspapers and marketing brochures, but with a sense that they don&#8217;t really show the data - they editorialize it a lot, for good or bad.</p>
 </div>
 <div class="paragraph">
-<p>And at the two other corners, we have business intelligence which is a bit scorned upon because of the simplicity of their graphics which does not do justice to the richness of the data, but envied because they have access to relevant, pricey, impactful data.</p>
+<p>At one of the two other corners, we have business intelligence which is a bit scorned upon because of the simplicity of their graphics which does not do justice to the richness of the data, but envied because they have access to relevant, pricey, impactful data.</p>
 </div>
 <div class="paragraph">
 <p>And GIS which works with data in a way which is universally understood and judged relevant (maps), but with a degree of innovation of this field which remains quite low.</p>
@@ -629,7 +657,7 @@ It could be that this long tradition was also a curse: because they developed th
 <h2 id="_3_the_emergence_of_dataviz">3. The emergence of dataviz</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Something happened around 2008 and 2009, which changed this statu quo:</p>
+<p>Something happened around 2008 and 2009, which changed this statu quo.</p>
 </div>
 <div class="paragraph">
 <p>A number of javascript charting and drawing libraries were released:</p>
@@ -654,7 +682,7 @@ It could be that this long tradition was also a curse: because they developed th
 </ul>
 </div>
 <div class="paragraph">
-<p>Together with the take off of mobiles phones without the Flash and Java plugins (remember: the iPhone was released in 2007), the decreasing popularity of the Java plugin even on desktop browsers, you see in 3 years a large technological shift: unification of visualization frameworks on the web using javascript.</p>
+<p>Together with the take off of mobiles phones without the Flash and Java plugins (remember: the iPhone was released in 2007 and did not support Flash), the decreasing popularity of the Java plugin even on desktop browsers, you see in 3 years a large technological shift: unification of visualization frameworks on the web using javascript.</p>
 </div>
 <div class="paragraph">
 <p>The web becomes increasingly a platform in itself (more popular than releasing desktop software), with the release of Google Chrome in 2008 - Javascript and CSS become much less broken than when Internet Explorer was dominant.</p>
@@ -743,12 +771,10 @@ It could be that this long tradition was also a curse: because they developed th
 </div>
 <div class="sect2">
 <h3 id="_d_a_couple_of_emblematic_projects">d. A couple of emblematic projects</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>OECD Better Life Index by Moritz Stefaner et al: not infovis, not infographics, just dataviz: simplicity, interaction, access to the data.</p>
-</li>
-</ul>
+<div class="sect3">
+<h4 id="_i_oecd_better_life_index_by_moritz_stefaner_et_al">i. OECD Better Life Index by Moritz Stefaner et al</h4>
+<div class="paragraph">
+<p>Not infovis, not infographics, just dataviz: simplicity, interaction, access to the data.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -756,15 +782,16 @@ It could be that this long tradition was also a curse: because they developed th
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br>
-(live url: <a href="http://www.oecdbetterlifeindex.org/" class="bare">http://www.oecdbetterlifeindex.org/</a>)</p>
+<p>&#160;<br></p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>the "Ghost Counties" visualization by Jan Willem Tulp, 2011: shows creativity and engagement.</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>(live url: <a href="http://www.oecdbetterlifeindex.org/" class="bare">http://www.oecdbetterlifeindex.org/</a>)</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ii_the_ghost_counties_visualization_by_jan_willem_tulp">ii. The "Ghost Counties" visualization by Jan Willem Tulp</h4>
+<div class="paragraph">
+<p>It shows that a marriage is possible between creativity and esthetics on one hand, and cold hard data on the other hand (foreclosures per county in the US).</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -777,12 +804,11 @@ It could be that this long tradition was also a curse: because they developed th
 <div class="paragraph">
 <p>(live url, needs Internet Explorer and the Java plugin: <a href="http://www.janwillemtulp.com/eyeo/" class="bare">http://www.janwillemtulp.com/eyeo/</a>)</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>U.S. Gun Deaths by Periscopic, <a href="http://guns.periscopic.com/?year=2013" class="bare">http://guns.periscopic.com/?year=2013</a>: story telling, granularity of the data, impact.</p>
-</li>
-</ul>
+</div>
+<div class="sect3">
+<h4 id="_iii_u_s_gun_deaths_by_periscopic">iii. U.S. Gun Deaths by Periscopic</h4>
+<div class="paragraph">
+<p>It illustrates the power of tory telling (through the intro), granularity of the data, and impact.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -802,8 +828,11 @@ It could be that this long tradition was also a curse: because they developed th
 <p>"Data visualization" became positioned as one powerful lever to extract value from datasets: it possesses both the rigor needed to report objectively on key data features, that you&#8217;d find otherwise in information visualisation, and the power to be engaging with the domain specialists or the managers in charge of finding insights in the data.</p>
 </div>
 </div>
+</div>
 <div class="sect2">
 <h3 id="_e_two_aspects_where_data_visualization_epitomizes_its_value_maps_and_networks">e. Two aspects where data visualization epitomizes its value: maps and networks.</h3>
+<div class="sect3">
+<h4 id="_i_maps">i. Maps</h4>
 <div class="paragraph">
 <p>Visualization of geolocalized data and of network data has of course a long history before the birth of data visualization: many software integrated mapping functions from Geographical Information Systems, and network analysis packages also had visualization add-ons.</p>
 </div>
@@ -825,9 +854,14 @@ It could be that this long tradition was also a curse: because they developed th
 <p>(live url: <a href="http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500" class="bare">http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500</a>)</p>
 </div>
 <div class="paragraph">
-<p>Not your usual GIS mapping!
-What this kind of map brings is: interaction, accessibility, and most of all enhanced <strong>engagement</strong> with the viewers.</p>
+<p>This interactive map by Stamen is quite different from your usual GIS mapping!</p>
 </div>
+<div class="paragraph">
+<p>What this kind of map brings is: interaction, custom-made design, and most of all enhanced <strong>engagement</strong> with the viewers.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ii_networks">ii. Networks</h4>
 <div class="paragraph">
 <p>In terms of networks, a pre-dataviz typical network would look like:</p>
 </div>
@@ -854,11 +888,31 @@ What this kind of map brings is: interaction, accessibility, and most of all enh
 <p>(live url: <a href="http://bl.ocks.org/mbostock/1062288" class="bare">http://bl.ocks.org/mbostock/1062288</a>)</p>
 </div>
 <div class="paragraph">
-<p>This type of visualization means you can explore the viz, not just stare at it.
-You can share it - just paste the url.
-It can be developed and modified by a large pool of developers because it is written in javascript, which is the common language of web development.
-There is a strong sense of esthetics and natural feeling using it.
-It will encourage curiosity, exploration, and just increase 10 folds the time spent on it by the viewers.</p>
+<p>This type of visualization is different because:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>you can explore the viz, not just stare at it.</p>
+</li>
+<li>
+<p>you can share it - just paste the url.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>it can be developed and modified by a large pool of developers because it is written in javascript, which is the common language of web development.</p>
+</li>
+<li>
+<p>there is a strong sense of esthetics and natural feeling using it.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#8594; it will encourage curiosity, exploration, and just increase 10 folds the time spent on it by the viewers.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -866,23 +920,31 @@ It will encourage curiosity, exploration, and just increase 10 folds the time sp
 <div class="sect3">
 <h4 id="_i_data_is_for_the_viewer_to_see_and_play_with">i. Data is for the viewer to see and play with</h4>
 <div class="paragraph">
-<p>There is the assumption that the visualization should not provide you with flat and unverifiable conclusions: it should show the data in a transparent, verifiable form.
-Of course there is a narrative and an editorialization of how the data is presented, <strong>but</strong> it always remains possible for the viewer to challenge this editorial view because the data is here for anyone to explore and interact with.</p>
+<p>There is the assumption that the visualization should not provide you with flat and unverifiable conclusions: it should show the data in a transparent, verifiable form.</p>
 </div>
 <div class="paragraph">
-<p>This represents a fundamental break with infographics, which can hide the underlying data by design, or show it with strong bias by carelessness and still be "OK" by pre-dataviz standards.
-It is also a break with infovis, where data is indeed there but you might not be enticed to engage with it.</p>
+<p>Of course there is a narrative and an editorialization of how the data is presented, <strong>but</strong> it always remains possible for the viewer to challenge this editorial view because the data is here for anyone to explore and interact with.</p>
+</div>
+<div class="paragraph">
+<p>This represents a fundamental break with infographics, which can hide the underlying data by design, or show it with strong bias by carelessness and still be "OK" by pre-dataviz standards.</p>
+</div>
+<div class="paragraph">
+<p>It is also a break with infovis, where data is indeed there but you might not be enticed to engage with it.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_ii_custom_made_creative_act">ii. Custom made, creative act</h4>
 <div class="paragraph">
-<p>Because we are in the browser there is no click and point solutions for the visualization of the data.
-This departs strongly from GIS where "custom" maps could be done by selecting options in a menu, and also a big change from dashboards in business intelligence where you could drag and drop charts to build a visualization.</p>
+<p>Because we are in the browser there is no click and point solutions for the visualization of the data.</p>
 </div>
 <div class="paragraph">
-<p>The sense of esthetics and the particularity of the datasets makes of each dataviz a craftwork.
-One of the best examples is this one by Hint.fm:</p>
+<p>This departs strongly from GIS where "custom" maps could be done by selecting options in a menu, and also a big change from dashboards in business intelligence where you could drag and drop charts to build a visualization.</p>
+</div>
+<div class="paragraph">
+<p>The sense of esthetics and the particularity of the datasets makes of each dataviz a craftwork.</p>
+</div>
+<div class="paragraph">
+<p>One of the best examples of a creative and simple design is this one by Hint.fm:</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -970,19 +1032,27 @@ One of the best examples is this one by Hint.fm:</p>
 <p>(live url: <a href="https://www.youtube.com/watch?v=YFrmQDCpgxs" class="bare">https://www.youtube.com/watch?v=YFrmQDCpgxs</a> - the panel is with Ben Fry).</p>
 </div>
 <div class="paragraph">
-<p>So until 2012 and 2013 I&#8217;d say that we were in the golden age of #dataviz in terms of discoveries and charting new paths: excited comments on new productions by the NYT, debates around the goals of #dataviz: is it a way to tell stories? To open new worlds? To educate?
-New connections made with new comers, new agencies, people meeting for the first time in conferences after exchanging on Twitter for years, new positions, big clients&#8230;&#8203;</p>
+<p>So until 2012 and 2013 I&#8217;d say that we were in the golden age of #dataviz in terms of discoveries and charting new paths: excited comments on new productions by the NYT, debates around the goals of #dataviz: is it a way to tell stories? To open new worlds? To educate?</p>
 </div>
 <div class="paragraph">
-<p>And in 2015, things seem to have stabilized and normalized.
-The energy has changed.
+<p>New connections made with new comers, new agencies, people meeting for the first time in conferences after exchanging on Twitter for years, new positions, big clients&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p>And in 2015, things seem to have stabilized and normalized.</p>
+</div>
+<div class="paragraph">
+<p>The energy has changed.
 The conversation on Twitter has slowed down a lot.
-The sense of being pioneers has eroded, because time has passed and because we have indeed tried and explored many low hanging fruits.
-Many individuals are now engaged in more industrial, long term projects.</p>
+The sense of being pioneers has eroded, because time has passed and because we have indeed tried and explored many low hanging fruits.</p>
 </div>
 <div class="paragraph">
-<p>So that&#8217;s not bad news: dataviz is now mainstream and well established, people are less obliged to enter free competitions and work on long personal projects at weekends and nights to get their name out, that&#8217;s good.
-But I miss a bit the excitement of the previous years when you had one framework or one big personal project published per month, and when you had all these big shots chatting on Twitter about the upcoming developments for dataviz.</p>
+<p>Many individuals are now engaged in more industrial, long term projects.</p>
+</div>
+<div class="paragraph">
+<p>So that&#8217;s not bad news: dataviz is now mainstream and well established, people are less obliged to enter free competitions and work on long personal projects at weekends and nights to get their name out, that&#8217;s good.</p>
+</div>
+<div class="paragraph">
+<p>But I miss a bit the excitement of the previous years when you had one framework or one big personal project published per month, and when you had all these big shots chatting on Twitter about the upcoming developments for dataviz.</p>
 </div>
 </div>
 </div>
@@ -991,13 +1061,17 @@ But I miss a bit the excitement of the previous years when you had one framework
 <div class="sectionbody">
 <div class="paragraph">
 <p>So&#8230;&#8203; where is dataviz going?
-As I said, you have this first exciting phase that passed, and we are now in a stage where processes for the creation of dataviz are more industrialized, commodified, stabilized.
-This means that innovation will find other places to erupt.
+As I said, you have this first exciting phase that passed, and we are now in a stage where processes for the creation of dataviz are more industrialized, commodified, stabilized.</p>
+</div>
+<div class="paragraph">
+<p>This means that innovation will find other places to erupt.
 Why? Because the landscape of technologies keeps changing, and creative minds will seize the opportunity to play and explore these opportunities in places where no "client" is yet waiting for them.</p>
 </div>
 <div class="paragraph">
-<p>To illustrate possible paths, I like to give the example of the career of <a href="http://www.seb.ly">Seb Lee-Delisle</a>, who defined himself as a creative coder and now as a digital artist.
-I follow his work on Twitter since about 2009.
+<p>To illustrate possible paths, I like to give the example of the career of <a href="http://www.seb.ly">Seb Lee-Delisle</a>, who defined himself as a creative coder and now as a digital artist.</p>
+</div>
+<div class="paragraph">
+<p>I follow his work on Twitter since about 2009.
 He is not at the heart of the "dataviz" network and does not define himself in regards to this label, but you&#8217;d find him on Jeff Clark&#8217;s map of dataviz in 2012 nonetheless (see map above).</p>
 </div>
 <div class="ulist">
@@ -1005,18 +1079,38 @@ He is not at the heart of the "dataviz" network and does not define himself in r
 <li>
 <p>he was using Adobe Flash as one of his main technologies until 2009, contributing to <a href="http://helloenjoy.com/project/papervision3d/">PaperVision3D</a>, a framework to build 3D games and animations in the Flash Player.</p>
 </li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>He plays a bit with <a href="http://seb.ly/2009/12/electroserver-flex-simple-chat/">Adobe Flex</a> in 2009,</p>
 </li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>in 2010,Flash is definitely behind so he moves to HTML5 technologies, using and teaching <a href="http://seb.ly/2011/02/html5-canvas-3d-particles-uniform-distribution/">animated graphics in HTML5 + Javascript</a></p>
 </li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>in 2012, he does the lunar trail project: <a href="http://seb.ly/work/lunar-trails/" class="bare">http://seb.ly/work/lunar-trails/</a></p>
 </li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>in 2013, he does pixelpyros: <a href="http://pixelpyros.org/" class="bare">http://pixelpyros.org/</a></p>
 </li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>in in 2014/2015, he launches workshops on "Stuff that talk to the Internets": <a href="http://seb.ly/st4i-stuff-that-talks-to-the-interwebs/" class="bare">http://seb.ly/st4i-stuff-that-talks-to-the-interwebs/</a></p>
 </li>
@@ -1030,9 +1124,17 @@ He is not at the heart of the "dataviz" network and does not define himself in r
 <li>
 <p>The computer screen and even the screen of the mobile phone is becoming less hegemonic as the medium where data can be visualized. Objects, sculptures, buildings, furniture&#8230;&#8203; this is the next frontier to be explored. Not just mapping data on a flat surface, but maybe even actual construction of data objects (see <a href="http://www.nand.io/visualisation/emoto-installation">this</a> for a nice example by Moritz Stefaner).</p>
 </li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Interaction is richer than we are used to. When we leave the "screen" environment (desktop or mobile), interactions with the user become more diverse. Not just the hand and the click of the mouse, but the whole body. Not one individual facing an object, but possibly a crowd, possibly moving, possibly gesturing.</p>
 </li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>And "data" is in the process of getting an even larger meaning. I mean, I was happy to move from a tabular notion of data to playing with "unstructured text": like wow, that opens wild possibilities! But when you move away from the screen and start connecting to a variety of objects and sensors, and with a variety of people, data takes still other forms: real time measurements from the external physical environment, from the internal (body) environment, from local or distant social interactions as they unfold, all while staying connected to the APIs we are already familiar with&#8230;&#8203; the mix can be bring impactful results.</p>
 </li>
@@ -1042,7 +1144,10 @@ He is not at the heart of the "dataviz" network and does not define himself in r
 <p>So, if visualizing data from the Twitter API was the cliché of #dataviz in 2010 - 2015, the next cliché could be the instantaneous 3D printing of data generated from the connected objects and bodies in a home or a workspace.</p>
 </div>
 <div class="paragraph">
-<p><strong>This is just my vision for dataviz, I&#8217;d be happy to discuss it with you now!  Thank you!</strong></p>
+<p>This is just my vision for dataviz, I&#8217;d be happy to discuss it with you now!</p>
+</div>
+<div class="paragraph">
+<p><strong>Thank you!</strong></p>
 </div>
 </div>
 </div>
@@ -1085,7 +1190,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2017-10-21 12:44:47 CEST
+Last updated 2017-10-21 17:45:54 CEST
 </div>
 </div>
 </body>
