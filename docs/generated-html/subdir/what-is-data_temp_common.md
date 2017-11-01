@@ -1,4 +1,4 @@
-= Big data for business: What is data?
+= What is data?
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 
@@ -17,9 +17,8 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-
-== Definition of data
-//ST: Definition of data
+== 1. Definition of data
+//ST: 1. Definition of data
 //ST: !
 
 The English term "data" (1654) originates from “datum”, a Latin word for "a given".footnote:[http://www.etymonline.com/index.php?term=data]
@@ -38,8 +37,8 @@ Thoughts: the etymology suggests that data is "a given". Can you question this?
 Data represents either a single entity, or a collection of such entitities ("data points").
 We can speak also of datasets instead of data (so a dataset is a collection of data points).
 
-== Examples!
-//ST: Examples!
+== 2. Examples!
+//ST: 2. Examples!
 //ST: !
 
 
@@ -81,8 +80,8 @@ We can speak also of datasets instead of data (so a dataset is a collection of d
 
 
 
-== 1. Three take aways from the examples
-//ST: 1. Three take aways from the examples
+== 3. Three take aways from the examples
+//ST: 3. Three take aways from the examples
 //ST: !
 
 ==== a. Think about data in a broad sense
@@ -123,7 +122,6 @@ a book <2>
 image:metadata.png["The trouble with metadata"]
 
 //ST: !
-
 ==== c. zoom in, zoom out
 //ST: !
 
@@ -134,37 +132,73 @@ We should remember considering that a data point can be itself a collection of d
 
 So it is a good habit to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)
 
-== 2. Some essential vocabulary to discuss data
-//ST: 2. Some essential vocabulary to discuss data
+== 4. Some essential vocabulary to discuss data
+//ST: 4. Some essential vocabulary to discuss data
+
+//ST: !
+==== a. Formats, types, encoding
+//ST: !
+
 
 //ST: !
 
 image:tweet.png[width="500" align="center"]
 
 //ST: !
-
 - This is a digital *medium* (because it's on screen as opposed to analogic, if we had printed the pic on paper)
 - The *type* of the data is textual + image
 
 //ST: !
-
 - The text is *formatted* in plain text (meaning, no special formatting), as opposed to more structured data-interchange formats (https://codingislove.com/json-tutorial-indepth/[check json or xml]).
 - The *encoding* of the text is UTF-8. Encoding has to do with the issue: how to represent alphabets and signs from different languages in text? (not even mentioning emojis?). UTF-8 is an encoding which is one of the most universal.
 
 //ST: !
-
 - The tweet is part of a list of tweets. The list represents the *data structure* of my dataset, it is the way my data is organized. There are many alternative data structures: arrays, sets, dics, maps...
 - The tweet is stored as a picture (png file) on my hard disk. "png" is the *file format*. The data is *persisted* as a file on disk (could have been stored in a database instead).
 
 
-==== Data presented as a table
+//ST: !
+==== b. Data presented as a table
 //ST: !
 
 image::table.png[table]
 {nbsp} +
 
-== 3. Finally: data and size
-//ST: 3. data and size
+//ST: !
+==== c. Data according to who owns it
+
+//ST: !
+- First party data: the data generated through the activities of your own organization.
+Your organization own it, which does not mean that consent from users is not required, when it comes to personal data.
+
+//ST: !
+- Second party data: the data accessed through partnerships.
+Without being the generator nor the owner of this data, partners make it available to you through an agreement.
+
+//ST: !
+- Third party data: the data acquired via purchase
+This data is acquired through a market transaction. Its uses still comes with conditions, especially for personal data.
+
+//ST: !
+==== d. Data: "sociodemo" or "behavior"?
+
+//ST: !
+- Sociodemogaphic or "sociodemio" data refers to information about individuals, describing fundamental attributes of their social identity: age, gender, place of residence, occupation, marital status and number of kids.
+
+//ST: !
+- Behavior data refers to any digital trace left by the individual in the course of it life: clicks on web pages, likes on Facebook, purchase transactions, comments posted on Tripadvisor...
+
+//ST: !
+Sociodemo data is typically well structured or easy to structure. It has a long history of collection and analysis, basically since census exists.
+
+//ST: !
+Behavior data allows to go further than sociodemo data: each individual can be characterized by its acts and tastes, well beyond what an age or marital status could define.
+
+But behavior data is typically not well structured and harder to collect.
+
+
+== 5. Finally: data and size
+//ST: 5. data and size
 //ST: !
 
 image:russian_dolls.jpg[Data sizes]

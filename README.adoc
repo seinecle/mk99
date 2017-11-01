@@ -6,7 +6,7 @@ Clément Levallois <levallois@em-lyon.com>
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../../main/java]
 
-Big data for business is a course given to emlyon business school students by Clement Levallois.
+IoT for Entrepreneurs is a course given to emlyon business school students by Clement Levallois.
 
 Looking for the website of the course? There -> https://seinecle.github.io/mk99/
 

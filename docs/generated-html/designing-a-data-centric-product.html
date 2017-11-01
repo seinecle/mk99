@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
+<meta name="author" content="Clément Levallois">
+<title>Building a data-centric product: the 4D methodology</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+/* Remove comment around @import statement below when using as a custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.spread{width:100%}
+p.lead,.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{font-size:1.21875em;line-height:1.6}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:none}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #ddddd8;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite:before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media only screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7;font-weight:bold}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
+.clearfix:after,.float-group:after{clear:both}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button:before,b.button:after{position:relative;top:-1px;font-weight:400}
+b.button:before{content:"[";padding:0 3px 0 2px}
+b.button:after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header:before,#header:after,#content:before,#content:after,#footnotes:before,#footnotes:after,#footer:before,#footer:after{content:" ";display:table}
+#header:after,#content:after,#footnotes:after,#footer:after{clear:both}
+#content{margin-top:1.25em}
+#content:before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #ddddd8}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #ddddd8;padding-bottom:8px}
+#header .details{border-bottom:1px solid #ddddd8;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span:before{content:"\00a0\2013\00a0"}
+#header .details br+span.author:before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark:before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber:after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #ddddd8;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #efefed;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media only screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}
+@media only screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+.sect1{padding-bottom:.625em}
+@media only screen and (min-width:768px){.sect1{padding-bottom:1.25em}}
+.sect1+.sect1{border-top:1px solid #efefed}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor:before,h2>a.anchor:before,h3>a.anchor:before,#toctitle>a.anchor:before,.sidebarblock>.content>.title>a.anchor:before,h4>a.anchor:before,h5>a.anchor:before,h6>a.anchor:before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock>caption.title{white-space:nowrap;overflow:visible;max-width:0}
+.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>.paragraph:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:initial}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #ddddd8;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.8125em}
+.literalblock pre.nowrap,.literalblock pre[class].nowrap,.listingblock pre.nowrap,.listingblock pre[class].nowrap{overflow-x:auto;white-space:pre;word-wrap:normal}
+@media only screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media only screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]:before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
+.listingblock:hover code[data-lang]:before{display:block}
+.listingblock.terminal pre .command:before{content:attr(data-prompt);padding-right:.5em;color:#999}
+.listingblock.terminal pre .command:not([data-prompt]):before{content:"$"}
+table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
+table.pyhltable td.code{padding-left:.75em;padding-right:0}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #ddddd8}
+pre.pygments .lineno{display:inline-block;margin-right:.25em}
+table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock blockquote p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote:before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.5em;margin-right:.5ex;text-align:right}
+.quoteblock .quoteblock{margin-left:0;margin-right:0;padding:.5em 0;border-left:3px solid rgba(0,0,0,.6)}
+.quoteblock .quoteblock blockquote{padding:0 0 0 .75em}
+.quoteblock .quoteblock blockquote:before{display:none}
+.verseblock{margin:0 1em 1.25em 1em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract{margin:0 0 1.25em 0;display:block}
+.quoteblock.abstract blockquote,.quoteblock.abstract blockquote p{text-align:left;word-spacing:0}
+.quoteblock.abstract blockquote:before,.quoteblock.abstract blockquote p:first-of-type:before{display:none}
+table.tableblock{max-width:100%;border-collapse:separate}
+table.tableblock td>.paragraph:last-child p>p:last-child,table.tableblock th>p:last-child,table.tableblock td>p:last-child{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px 0}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot{border-width:1px 0}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+td>div.verse{white-space:pre}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{margin:0 auto .625em auto;margin-left:-1.375em;margin-right:0;padding:0;list-style:none;overflow:hidden}
+ul.inline>li{list-style:none;float:left;margin-left:1.375em;display:block}
+ul.inline>li>*{display:block}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist>table tr>td:first-of-type{padding:.4em .75em 0 .75em;line-height:1;vertical-align:top}
+.colist>table tr>td:first-of-type img{max-width:initial}
+.colist>table tr>td:last-of-type{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left,.imageblock[style*="float: left"]{margin:.25em .625em 1.25em 0}
+.imageblock.right,.imageblock[style*="float: right"]{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em 0;border-width:1px 0 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;text-indent:-1.05em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background-color:#00fafa}
+.black{color:#000}
+.black-background{background-color:#000}
+.blue{color:#0000bf}
+.blue-background{background-color:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background-color:#fa00fa}
+.gray{color:#606060}
+.gray-background{background-color:#7d7d7d}
+.green{color:#006000}
+.green-background{background-color:#007d00}
+.lime{color:#00bf00}
+.lime-background{background-color:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background-color:#7d0000}
+.navy{color:#000060}
+.navy-background{background-color:#00007d}
+.olive{color:#606000}
+.olive-background{background-color:#7d7d00}
+.purple{color:#600060}
+.purple-background{background-color:#7d007d}
+.red{color:#bf0000}
+.red-background{background-color:#fa0000}
+.silver{color:#909090}
+.silver-background{background-color:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background-color:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background-color:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background-color:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note:before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip:before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning:before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution:before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important:before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background-color:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]:after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@media print{@page{margin:1.25cm .75cm}
+*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare):after,a[href^="https:"]:not(.bare):after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]:after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #ddddd8!important;padding-bottom:0!important}
+.sect1{padding-bottom:0!important}
+.sect1+.sect1{border:0!important}
+#header>h1:first-child{margin-top:1.25rem}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em 0}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span:before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]:before{display:block}
+#footer{background:none!important;padding:0 .9375em}
+#footer-text{color:rgba(0,0,0,.6)!important;font-size:.9em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article">
+<div id="header">
+<h1>Building a data-centric product: the 4D methodology</h1>
+<div class="details">
+<span id="author" class="author">Clément Levallois</span><br>
+<span id="email" class="email"><a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a></span><br>
+<span id="revnumber">version 1.0,</span>
+<span id="revdate">2017-31-07</span>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_1_the_method">1. The method</a></li>
+<li><a href="#_2_before_dataviz">2. Before dataviz</a>
+<ul class="sectlevel3">
+<li><a href="#_a_infoviz">a. Infoviz</a></li>
+<li><a href="#_b_infographics">b. Infographics</a></li>
+<li><a href="#_c_business_intelligence_is_still_another_crowd">c. Business intelligence is still another crowd</a></li>
+<li><a href="#_d_and_gis">d. And GIS.</a></li>
+<li><a href="#_e_the_scene_composed_by_infovis_infographics_bi_and_gis">e. The scene composed by infovis, infographics, BI and GIS</a></li>
+</ul>
+</li>
+<li><a href="#_3_the_emergence_of_dataviz">3. The emergence of dataviz</a>
+<ul class="sectlevel3">
+<li><a href="#_a_individuals_possessing_an_unusually_broad_mix_of_skills">a. Individuals possessing an unusually broad mix of skills:</a></li>
+<li><a href="#_b_twitter_based_communication_around_the_dataviz_hashtag">b. Twitter based communication around the "#dataviz" hashtag</a></li>
+<li><a href="#_c_a_tight_knit_group_across_the_us_and_europe">c. A tight knit group across the US and Europe.</a></li>
+<li><a href="#_d_a_couple_of_emblematic_projects">d. A couple of emblematic projects</a></li>
+<li><a href="#_e_two_aspects_where_data_visualization_epitomizes_its_value_maps_and_networks">e. Two aspects where data visualization epitomizes its value: maps and networks.</a></li>
+<li><a href="#_f_if_we_were_looking_for_2_defining_traits_of_dataviz">f. If we were looking for 2 defining traits of dataviz</a></li>
+</ul>
+</li>
+<li><a href="#_4_2014_2015_the_stabilization_of_dataviz">4. 2014-2015: The stabilization of dataviz</a></li>
+<li><a href="#_5_2015_onwards_where_is_dataviz_going">5. 2015 onwards: where is dataviz going?</a></li>
+<li><a href="#_the_end">The end</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>last modified: 2017-10-22</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Data: Diagnostic, Design, Delivery</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_the_method">1. The method</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The 4D method is the product of years of experience teaching at emlyon business school about "data for business" to a variety of participants.</p>
+</div>
+<div class="paragraph">
+<p>Managers need to acquire a "data literacy", which is the ability to understand what role "data" can play in a business context. This is what my course <a href="http://seinecle.github.io/mk99">Big data for business</a> offers.</p>
+</div>
+<div class="paragraph">
+<p>But once they grasp these fundamentals, managers also need a roadmap to kick-start and ship data-centric projects.</p>
+</div>
+<div class="paragraph">
+<p>The basic issue many of them face is: "Data is the new oil, I am in charge of delivering on this promise. Where do I start?"</p>
+</div>
+<div class="paragraph">
+<p>The 4D methodology is a roadmap to conduct data-centric projects of value creation: design of new products and services based on a smart use of data.</p>
+</div>
+<div class="paragraph">
+<p>It offers a down-to-earth process which can be applied in different industries. In 4 steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Data</p>
+</li>
+<li>
+<p>Diagnosis</p>
+</li>
+<li>
+<p>Design</p>
+</li>
+<li>
+<p>Delivery</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Each of these steps comes with a canvas to layout the situation, a check-list of questions to be solved, a theater view of people&#8217;s resources involved and a map of actions to take.</p>
+</div>
+<div class="paragraph">
+<p>The nice thing about fields in computational science is that they evolve so quickly.
+Every 6 months or so, there is a new kid on the block in machine learning, mobile app development or text mining.</p>
+</div>
+<div class="paragraph">
+<p>This makes it hard to stay at the forefront of these fields, and sometimes we might even loose perspective as to the meaning and goals of what was the field we formed an interest in, just a couple of years back.</p>
+</div>
+<div class="paragraph">
+<p>So I take the opportunity of this talk to reflect on data visualization, which is such a young field. I&#8217;d like to explore how data visualization has evolved, why there was a need for it to emerge, where it stands today, and I will try to imagine where it will evolve in the coming years.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>I am more an observer than a participant in this field.</p>
+</div>
+<div class="paragraph">
+<p>My view is the one of somebody who came to data visualization around 2009 through network visualizations with <a href="http://www.gephi.org">Gephi</a>, getting my information mostly from the discussions, links and podcasts shared by data visualizers which I follow and interact with on Twitter.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>I feel that in the last 6 years, dataviz has evolved in significant ways: it emerged and crystalized into a distinct topic, lived happily through a golden age, and we are today somewhere else. Let&#8217;s start with the beginning.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_before_dataviz">2. Before dataviz</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before dataviz, there was a couple of established fields of practice dealing with graphics and data. I&#8217;ll mention 4 of them though there are surely important others:</p>
+</div>
+<div class="paragraph">
+<p>infoviz, infographics, Business intelligence, and GIS.</p>
+</div>
+<div class="sect3">
+<h4 id="_a_infoviz">a. Infoviz</h4>
+<div class="paragraph">
+<p>Infoviz is "information visualisation" and is the name of an academic field concerned with:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+the study of (interactive) visual representations of abstract data to reinforce human cognition.
+</blockquote>
+<div class="attribution">
+&#8212; Wikipedia entry "Information visualization"<br>
+<cite>https://en.wikipedia.org/wiki/Information_visualization</cite>
+</div>
+</div>
+<div class="paragraph">
+<p>The strength of this field is that it is a test bench for many assumptions you&#8217;d have on how visualizations can be effective, in terms of "reinforcing human cognition":</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>How do colors work?</p>
+</li>
+<li>
+<p>What about different scales?</p>
+</li>
+<li>
+<p>What is the performance of users at solving given problems when reading graph represented as a matrix, versus graphs represented as networks? Should longitudinal data be presented as time slices or animated movies for best understanding?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Research in information visualization is concerned with providing solid, empirical answers to these important questions.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/example-infovis.jpg" alt="example infovis">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>The issue is, this emphasis on hypothesis testing can be detrimental to the advancing on another fundamental goal: creating visualizations that are <strong>engaging to their audience</strong>, widely adopted and used in a world so full of information (or call it noise) that attention by individuals is becoming the scarcest of resources.</p>
+</div>
+<div class="paragraph">
+<p>As illustrated by the figure above, and if I were to be a bit tough on infoviz, I&#8217;d say you need a PhD to get it: the interfaces they design are not engaging enough, not implemented on the platforms that viewers are now using, and the information displayed hardly enhances human cognition for laymen like me.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_b_infographics">b. Infographics</h4>
+<div class="paragraph">
+<p>You could say that infographics is a bit the contrary of infovis: communication agencies doing pretty much what they want to catch the attention of their readers, at the expense of truthfulness and reliability of the data they invoke.</p>
+</div>
+<div class="paragraph">
+<p>The example below shows how colorful and catchy an infographics can be, and yet completely ineffective at conveying information.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/example-infographics.png" alt="example infographics" width="400">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Of course there are excellent infographics and Alberto Cairo, a professor and journalist by trade, reminds us in his book <a href="http://www.thefunctionalart.com/">The Functional Art</a> that carefully executed infographics are an excellent way to convey complex information in a limited amount of space.</p>
+</div>
+<div class="paragraph">
+<p>But my understanding is that it is not in the basic contract of infographics to have a one to one relation with data, there is a license to <strong>illustrate</strong> the data. The reader must trust the source of the infographics much more than in information visualisation: depending on whether this is an established newspaper with a good graphics team or a communication agency doing quick and dirty work, infographics can be trusted or badly misleading.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_c_business_intelligence_is_still_another_crowd">c. Business intelligence is still another crowd</h4>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/example-bi.png" alt="example bi">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>The mission is basically to do "excel-level" visualizations in terms of reporting and monitoring business data.</p>
+</div>
+<div class="paragraph">
+<p>Nothing fancy usually there: bar charts, pie charts (often in 3D as in the illustration above, which is wrong), line charts and progress bars assembled in dashboards, sold by companies more versed in the business side of things than graphical design.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_d_and_gis">d. And GIS.</h4>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/formatted/gis.jpg" alt="gis">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Geographical Information Systems (GIS) may have a claim for the longest tradition in visualizing data.</p>
+</div>
+<div class="paragraph">
+<p>This is after all their business to draw maps, which is geolocalized data.</p>
+</div>
+<div class="paragraph">
+<p>It could be that this long tradition was also a curse: because they developed these desktop software that were widely used in the 1990s, the 2000s and still today, they were entrenched in technologies that could not be easily adapted when web technologies opened up richer, more engaging ways to draw maps and to project overlays of data on them.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_e_the_scene_composed_by_infovis_infographics_bi_and_gis">e. The scene composed by infovis, infographics, BI and GIS</h4>
+<div class="paragraph">
+<p>So the scene is the following: scientists in the field of "information visualisation" in their corner being the guardians of the temple of "proper visualisations", but they have a hard time finding an audience for these graphics.</p>
+</div>
+<div class="paragraph">
+<p>Infographics in the opposite corner, who have access to crowds of readers everyday in the pages of newspapers and marketing brochures, but with a sense that they don&#8217;t really show the data - they editorialize it a lot, for good or bad.</p>
+</div>
+<div class="paragraph">
+<p>At one of the two other corners, we have business intelligence which is a bit scorned upon because of the simplicity of their graphics which does not do justice to the richness of the data, but envied because they have access to relevant, pricey, impactful data.</p>
+</div>
+<div class="paragraph">
+<p>And GIS which works with data in a way which is universally understood and judged relevant (maps), but with a degree of innovation of this field which remains quite low.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_the_emergence_of_dataviz">3. The emergence of dataviz</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Something happened around 2008 and 2009, which changed this statu quo.</p>
+</div>
+<div class="paragraph">
+<p>A number of javascript charting and drawing libraries were released:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://dmitrybaranovskiy.github.io/raphael/">RaphaelJS</a> (08/08/08)</p>
+</li>
+<li>
+<p>the <a href="http://philogb.github.io/jit/">Javascript Infovis Toolkit</a> (2009)</p>
+</li>
+<li>
+<p><a href="http://mbostock.github.io/protovis/">Protovis</a> (2009)</p>
+</li>
+<li>
+<p><a href="http://processingjs.org/">Processing.js</a> (2010)</p>
+</li>
+<li>
+<p>and <a href="http://d3js.org/">D3</a> (2011), by now the most successful framework for dataviz with web technologies.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Together with the take off of mobiles phones without the Flash and Java plugins (remember: the iPhone was released in 2007 and did not support Flash), the decreasing popularity of the Java plugin even on desktop browsers, you see in 3 years a large technological shift: unification of visualization frameworks on the web using javascript.</p>
+</div>
+<div class="paragraph">
+<p>The web becomes increasingly a platform in itself (more popular than releasing desktop software), with the release of Google Chrome in 2008 - Javascript and CSS become much less broken than when Internet Explorer was dominant.</p>
+</div>
+<div class="paragraph">
+<p>For what impact?</p>
+</div>
+<div class="paragraph">
+<p>It shuffled the cards: with Java came a very rigid way to conceive interfaces: windows, menus and even the fonts had a Java look and feel in the browser.</p>
+</div>
+<div class="paragraph">
+<p>With Flash, you had a strong history of interaction and design skills, but you could use Flash without coding, so that designs made with Flash could remain pretty much disconnected from the datasets they represented.</p>
+</div>
+<div class="paragraph">
+<p>All that became thrown into the melting pot of Javascript where everybody had to unlearn their framework and learn on a virgin land.</p>
+</div>
+<div class="paragraph">
+<p>Data visualization was not the natural offspring of one of the 4 fields I mentioned, it emerged outside of them.</p>
+</div>
+<div class="paragraph">
+<p>It caused many newcomers to try their hands at these new tools, free from the habits and conventions of the 4 fields we have seen.</p>
+</div>
+<div class="paragraph">
+<p>These newcomers who created dataviz had a different way to look at things, a different tooling, and different ways to function as a group.  This community is remarkable in several aspects:</p>
+</div>
+<div class="sect3">
+<h4 id="_a_individuals_possessing_an_unusually_broad_mix_of_skills">a. Individuals possessing an unusually broad mix of skills:</h4>
+<div class="paragraph">
+<p>Coding skills for the preparation of the data (Python or R for example), skills in javascript and other scripting language for visual design (ActionScript, Processing), a knowledge of the rules of design and a feel for esthetics, and creativity.</p>
+</div>
+<div class="paragraph">
+<p>That is what you need to create this:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/mta.jpg" alt="mta" width="500">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="http://www.mta.me" class="bare">http://www.mta.me</a>)
+(by Alexander Chen, a Creative Director at Google Creative Lab)</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_b_twitter_based_communication_around_the_dataviz_hashtag">b. Twitter based communication around the "#dataviz" hashtag</h4>
+<div class="paragraph">
+<p>In this community, people evaluate each other&#8217;s works, shared their latest realization chat about past and upcoming conferences but more importantly exhchange info about new frameworks and resources.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dataviz-communities.jpg" alt="dataviz communities">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="http://neoformix.com/2012/DataVisFieldSubGroups.html" class="bare">http://neoformix.com/2012/DataVisFieldSubGroups.html</a>)</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_c_a_tight_knit_group_across_the_us_and_europe">c. A tight knit group across the US and Europe.</h4>
+<div class="paragraph">
+<p>I identify (this is a non exclusive list of course) <a href="http://moebio.com/">Santiago Ortiz</a>, <a href="http://www.jeromecukier.net/">Jerome Cukier</a>, <a href="http://blog.blprnt.com/">Jer Thorp</a>, <a href="http://driven-by-data.net/">Gregor Aisch</a>, <a href="http://tulpinteractive.com/">Jan Willem Tulp</a>, <a href="http://ghostweather.com/">Lynn Cherny</a>, <a href="http://flowingdata.com/about-nathan/">Nathan Yau</a> from Flowing Data, <a href="https://about.me/krees">Kim Rees</a> from Periscopic, <a href="http://truth-and-beauty.net/">Moritz Stefaner</a>, with a couple of established academics like <a href="http://fellinlovewithdata.com/">Enrico Bertini</a>, <a href="http://alignedleft.com/">Scott Murray</a>, <a href="http://policyviz.com/">Jon Schwabish</a>, <a href="http://www.thefunctionalart.com/">Alberto Cairo</a>, and in relation with teams at the Guardian and the NYT, and <a href="http://www.visualisingdata.com/about/">Andy Kirk</a> at VisualisingData as an evangelist and instructor.</p>
+</div>
+<div class="paragraph">
+<p>They were particularly active in spreading news about dataviz and sharing their critical insights which contributed shaping boundaries for the field.</p>
+</div>
+<div class="paragraph">
+<p>This is a personal and of course biased observation, a systematic investigation reveals a different picture (see above, and below, which is a zoom on the group where I think we would find most people self identifying as dataviz specialists):</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/dataviz-group.jpg" alt="dataviz group">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="http://neoformix.com/2012/DataVisField1000_Group2.pdf" class="bare">http://neoformix.com/2012/DataVisField1000_Group2.pdf</a>)</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_d_a_couple_of_emblematic_projects">d. A couple of emblematic projects</h4>
+<div class="sect4">
+<h5 id="_i_oecd_better_life_index_by_moritz_stefaner_et_al">i. OECD Better Life Index by Moritz Stefaner et al</h5>
+<div class="paragraph">
+<p>Not infovis, not infographics, just dataviz: simplicity, interaction, access to the data.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/oecd-better-life-index.jpg" alt="oecd better life index">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="http://www.oecdbetterlifeindex.org/" class="bare">http://www.oecdbetterlifeindex.org/</a>)</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_ii_the_ghost_counties_visualization_by_jan_willem_tulp">ii. The "Ghost Counties" visualization by Jan Willem Tulp</h5>
+<div class="paragraph">
+<p>It shows that a marriage is possible between creativity and esthetics on one hand, and cold hard data on the other hand (foreclosures per county in the US).</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/ghost-counties-screenshot.jpg" alt="ghost counties screenshot">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url, needs Internet Explorer and the Java plugin: <a href="http://www.janwillemtulp.com/eyeo/" class="bare">http://www.janwillemtulp.com/eyeo/</a>)</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_iii_u_s_gun_deaths_by_periscopic">iii. U.S. Gun Deaths by Periscopic</h5>
+<div class="paragraph">
+<p>It illustrates the power of tory telling (through the intro), granularity of the data, and impact.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/gun-deaths.jpg" alt="gun deaths" width="500">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="http://guns.periscopic.com/?year=2013" class="bare">http://guns.periscopic.com/?year=2013</a>)</p>
+</div>
+<div class="paragraph">
+<p>The emergence of data visualisation as a set of practice and professionals was coinciding with the surge in the new importance of data as a driver of value for business.</p>
+</div>
+<div class="paragraph">
+<p>"Data visualization" became positioned as one powerful lever to extract value from datasets: it possesses both the rigor needed to report objectively on key data features, that you&#8217;d find otherwise in information visualisation, and the power to be engaging with the domain specialists or the managers in charge of finding insights in the data.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_e_two_aspects_where_data_visualization_epitomizes_its_value_maps_and_networks">e. Two aspects where data visualization epitomizes its value: maps and networks.</h4>
+<div class="sect4">
+<h5 id="_i_maps">i. Maps</h5>
+<div class="paragraph">
+<p>Visualization of geolocalized data and of network data has of course a long history before the birth of data visualization: many software integrated mapping functions from Geographical Information Systems, and network analysis packages also had visualization add-ons.</p>
+</div>
+<div class="paragraph">
+<p>What data visualization brought was impactful visualizations making engagement with data just stronger, more powerful.</p>
+</div>
+<div class="paragraph">
+<p>Stamen, an agency with strong ties in the data visualization community, does this kind of maps:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/stamen-viz.jpg" alt="stamen viz" width="500">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500" class="bare">http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500</a>)</p>
+</div>
+<div class="paragraph">
+<p>This interactive map by Stamen is quite different from your usual GIS mapping!</p>
+</div>
+<div class="paragraph">
+<p>What this kind of map brings is: interaction, custom-made design, and most of all enhanced <strong>engagement</strong> with the viewers.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_ii_networks">ii. Networks</h5>
+<div class="paragraph">
+<p>In terms of networks, a pre-dataviz typical network would look like:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/formatted/ucinet.jpg" alt="ucinet" width="500">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Dataviz brought interaction, web-based interactions:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/d3-force-layout.jpg" alt="d3 force layout" width="500">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="http://bl.ocks.org/mbostock/1062288" class="bare">http://bl.ocks.org/mbostock/1062288</a>)</p>
+</div>
+<div class="paragraph">
+<p>This type of visualization is different because:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>you can explore the viz, not just stare at it.</p>
+</li>
+<li>
+<p>you can share it - just paste the url.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>it can be developed and modified by a large pool of developers because it is written in javascript, which is the common language of web development.</p>
+</li>
+<li>
+<p>there is a strong sense of esthetics and natural feeling using it.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#8594; it will encourage curiosity, exploration, and just increase 10 folds the time spent on it by the viewers.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_f_if_we_were_looking_for_2_defining_traits_of_dataviz">f. If we were looking for 2 defining traits of dataviz</h4>
+<div class="sect4">
+<h5 id="_i_data_is_for_the_viewer_to_see_and_play_with">i. Data is for the viewer to see and play with</h5>
+<div class="paragraph">
+<p>There is the assumption that the visualization should not provide you with flat and unverifiable conclusions: it should show the data in a transparent, verifiable form.</p>
+</div>
+<div class="paragraph">
+<p>Of course there is a narrative and an editorialization of how the data is presented, <strong>but</strong> it always remains possible for the viewer to challenge this editorial view because the data is here for anyone to explore and interact with.</p>
+</div>
+<div class="paragraph">
+<p>This represents a fundamental break with infographics, which can hide the underlying data by design, or show it with strong bias by carelessness and still be "OK" by pre-dataviz standards.</p>
+</div>
+<div class="paragraph">
+<p>It is also a break with infovis, where data is indeed there but you might not be enticed to engage with it.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_ii_custom_made_creative_act">ii. Custom made, creative act</h5>
+<div class="paragraph">
+<p>Because we are in the browser there is no click and point solutions for the visualization of the data.</p>
+</div>
+<div class="paragraph">
+<p>This departs strongly from GIS where "custom" maps could be done by selecting options in a menu, and also a big change from dashboards in business intelligence where you could drag and drop charts to build a visualization.</p>
+</div>
+<div class="paragraph">
+<p>The sense of esthetics and the particularity of the datasets makes of each dataviz a craftwork.</p>
+</div>
+<div class="paragraph">
+<p>One of the best examples of a creative and simple design is this one by Hint.fm:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/formatted/windmap.jpg" alt="windmap" width="500">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="http://hint.fm/wind/" class="bare">http://hint.fm/wind/</a>)</p>
+</div>
+<div class="paragraph">
+<p>(live url for a worldwide version: <a href="http://earth.nullschool.net/" class="bare">http://earth.nullschool.net/</a>)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_2014_2015_the_stabilization_of_dataviz">4. 2014-2015: The stabilization of dataviz</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Anyhow, industrialization in dataviz came in rapidly, with Tableau becoming the leader for general purpose viz, dashboards reinvented themselves in dataviz-style with Bime, Qlik, Palantir to name a few.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/logos-bi.png" alt="logos bi" width="500">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Dataviz became integrated into the business discourse on big data: the Harvard Business Review features in 2012 a blog section on data visualization where Jer Thorp contributed to set perspectives straight on data,</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/jer-thorp.jpg" alt="jer thorp">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="https://hbr.org/2012/11/data-humans-and-the-new-oil/" class="bare">https://hbr.org/2012/11/data-humans-and-the-new-oil/</a>)</p>
+</div>
+<div class="paragraph">
+<p>Nielsen, the leader of market data and market research, worked on its corporate identity to include data visualization, with data-driven visuals custom made by Jan Willem Tulp:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/nielsen-viz.jpg" alt="nielsen viz">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Since 2012 or so, General Electric partners with Fathom, the agency founded by Ben Fry (co-creator of Processing!) to build visualizations relative to their corporate identity, with some impressive realizations:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/formatted/ge.jpg" alt="ge">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="http://visualization.geblogs.com/visualization/powering/" class="bare">http://visualization.geblogs.com/visualization/powering/</a>)</p>
+</div>
+<div class="paragraph">
+<p>And in 2015, you know dataviz has fully stabilized when you see a panel on dataviz with Chelsea Clinton:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images/formatted/chelsea.jpg" alt="chelsea">
+</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>(live url: <a href="https://www.youtube.com/watch?v=YFrmQDCpgxs" class="bare">https://www.youtube.com/watch?v=YFrmQDCpgxs</a> - the panel is with Ben Fry).</p>
+</div>
+<div class="paragraph">
+<p>So until 2012 and 2013 I&#8217;d say that we were in the golden age of #dataviz in terms of discoveries and charting new paths: excited comments on new productions by the NYT, debates around the goals of #dataviz: is it a way to tell stories? To open new worlds? To educate?</p>
+</div>
+<div class="paragraph">
+<p>New connections made with new comers, new agencies, people meeting for the first time in conferences after exchanging on Twitter for years, new positions, big clients&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p>And in 2015, things seem to have stabilized and normalized.</p>
+</div>
+<div class="paragraph">
+<p>The energy has changed.
+The conversation on Twitter has slowed down a lot.
+The sense of being pioneers has eroded, because time has passed and because we have indeed tried and explored many low hanging fruits.</p>
+</div>
+<div class="paragraph">
+<p>Many individuals are now engaged in more industrial, long term projects.</p>
+</div>
+<div class="paragraph">
+<p>So that&#8217;s not bad news: dataviz is now mainstream and well established, people are less obliged to enter free competitions and work on long personal projects at weekends and nights to get their name out, that&#8217;s good.</p>
+</div>
+<div class="paragraph">
+<p>But I miss a bit the excitement of the previous years when you had one framework or one big personal project published per month, and when you had all these big shots chatting on Twitter about the upcoming developments for dataviz.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_2015_onwards_where_is_dataviz_going">5. 2015 onwards: where is dataviz going?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>So&#8230;&#8203; where is dataviz going?
+As I said, you have this first exciting phase that passed, and we are now in a stage where processes for the creation of dataviz are more industrialized, commodified, stabilized.</p>
+</div>
+<div class="paragraph">
+<p>This means that innovation will find other places to erupt.
+Why? Because the landscape of technologies keeps changing, and creative minds will seize the opportunity to play and explore these opportunities in places where no "client" is yet waiting for them.</p>
+</div>
+<div class="paragraph">
+<p>To illustrate possible paths, I like to give the example of the career of <a href="http://www.seb.ly">Seb Lee-Delisle</a>, who defined himself as a creative coder and now as a digital artist.</p>
+</div>
+<div class="paragraph">
+<p>I follow his work on Twitter since about 2009.
+He is not at the heart of the "dataviz" network and does not define himself in regards to this label, but you&#8217;d find him on Jeff Clark&#8217;s map of dataviz in 2012 nonetheless (see map above).</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>he was using Adobe Flash as one of his main technologies until 2009, contributing to <a href="http://helloenjoy.com/project/papervision3d/">PaperVision3D</a>, a framework to build 3D games and animations in the Flash Player.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>He plays a bit with <a href="http://seb.ly/2009/12/electroserver-flex-simple-chat/">Adobe Flex</a> in 2009,</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>in 2010,Flash is definitely behind so he moves to HTML5 technologies, using and teaching <a href="http://seb.ly/2011/02/html5-canvas-3d-particles-uniform-distribution/">animated graphics in HTML5 + Javascript</a></p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>in 2012, he does the lunar trail project: <a href="http://seb.ly/work/lunar-trails/" class="bare">http://seb.ly/work/lunar-trails/</a></p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>in 2013, he does pixelpyros: <a href="http://pixelpyros.org/" class="bare">http://pixelpyros.org/</a></p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>in in 2014/2015, he launches workshops on "Stuff that talk to the Internets": <a href="http://seb.ly/st4i-stuff-that-talks-to-the-interwebs/" class="bare">http://seb.ly/st4i-stuff-that-talks-to-the-interwebs/</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This path, and similar paths followed by others, suggest that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The computer screen and even the screen of the mobile phone is becoming less hegemonic as the medium where data can be visualized. Objects, sculptures, buildings, furniture&#8230;&#8203; this is the next frontier to be explored. Not just mapping data on a flat surface, but maybe even actual construction of data objects (see <a href="http://www.nand.io/visualisation/emoto-installation">this</a> for a nice example by Moritz Stefaner).</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Interaction is richer than we are used to. When we leave the "screen" environment (desktop or mobile), interactions with the user become more diverse. Not just the hand and the click of the mouse, but the whole body. Not one individual facing an object, but possibly a crowd, possibly moving, possibly gesturing.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>And "data" is in the process of getting an even larger meaning.
+When you move away from the screen and start connecting to a variety of objects and sensors, and with a variety of people, data takes still other forms: real time measurements from the external physical environment, from the internal (body) environment, from local or distant social interactions as they unfold, all while staying connected to the APIs we are already familiar with&#8230;&#8203; the mix can be bring impactful results.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>So, if visualizing data from the Twitter API was the cliché of #dataviz in 2010 - 2015, the next cliché could be the instantaneous 3D printing of data generated from the connected objects and bodies in a home or a workspace.</p>
+</div>
+<div class="paragraph">
+<p>This is just my vision for dataviz, I&#8217;d be happy to discuss it with you now!</p>
+</div>
+<div class="paragraph">
+<p><strong>Thank you!</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_end">The end</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
+This course is made by Clement Levallois.</p>
+</div>
+<div class="paragraph">
+<p>Discover my other courses in data / tech for business: <a href="http://www.clementlevallois.net" class="bare">http://www.clementlevallois.net</a></p>
+</div>
+<div class="paragraph">
+<p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 11411204;
+        var sc_invisible = 1;
+        var sc_security = "7b86ca26";
+        var scJsHost = (("https:" == document.location.protocol) ?
+            "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript><div class="statcounter"><a title="site stats"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="//c.statcounter.com/11411204/0/7b86ca26/1/" alt="site
+    stats"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide --></p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 1.0<br>
+Last updated 2017-10-22 20:58:37 CEST
+</div>
+</div>
+</body>
+</html>

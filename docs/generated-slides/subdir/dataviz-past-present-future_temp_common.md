@@ -1,4 +1,4 @@
-= Data visualization: past, present and future
+= Data visualization: a viewpoint on its past, present and future
 Clément Levallois <levallois@em-lyon.com>
 v1.0, 2017-31-07
 
@@ -18,6 +18,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 == 1. Where is data visualization going?
+//ST: 1. Where is data visualization going?
 
 //ST: !
 by http://www.clementlevallois.net[Clement Levallois], http://www.ds3.inesc-id.pt/[DataStorm 2nd edition], Lisbon, July 15, 2015.
@@ -46,6 +47,7 @@ I feel that in the last 6 years, dataviz has evolved in significant ways: it eme
 
 
 == 2. Before dataviz
+//ST: 2. Before dataviz
 
 //ST: !
 Before dataviz, there was a couple of established fields of practice dealing with graphics and data. I'll mention 4 of them though there are surely important others:
@@ -148,6 +150,7 @@ At one of the two other corners, we have business intelligence which is a bit sc
 And GIS which works with data in a way which is universally understood and judged relevant (maps), but with a degree of innovation of this field which remains quite low.
 
 == 3. The emergence of dataviz
+//ST: 3. The emergence of dataviz
 
 //ST: !
 Something happened around 2008 and 2009, which changed this statu quo.
@@ -390,6 +393,7 @@ image::formatted/windmap.jpg[align="center", width="500"]
 (live url for a worldwide version: http://earth.nullschool.net/)
 
 == 4. 2014-2015: The stabilization of dataviz
+//ST: 4. 2014-2015: The stabilization of dataviz
 
 //ST: !
 Anyhow, industrialization in dataviz came in rapidly, with Tableau becoming the leader for general purpose viz, dashboards reinvented themselves in dataviz-style with Bime, Qlik, Palantir to name a few.
@@ -458,6 +462,7 @@ So that's not bad news: dataviz is now mainstream and well established, people a
 But I miss a bit the excitement of the previous years when you had one framework or one big personal project published per month, and when you had all these big shots chatting on Twitter about the upcoming developments for dataviz.
 
 == 5. 2015 onwards: where is dataviz going?
+//ST: 5. 2015 onwards: where is dataviz going?
 
 //ST: !
 So... where is dataviz going?
