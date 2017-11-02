@@ -1,6 +1,6 @@
-= Big data for business: What is data?
+= Segmentation: between marketing and data science
 Clément Levallois <levallois@em-lyon.com>
-2017-31-07
+2017-20-08
 
 last modified: {docdate}
 
@@ -18,194 +18,223 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 ==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 
-==  Definition of data
-==  !
-
-The English term "data" (1654) originates from “datum”, a Latin word for "a given".footnote:[http://www.etymonline.com/index.php?term=data]
-"Data" is a single factual, a single entity, a single point of matter.
+==  1. The role of segmentation in marketing
 
 ==  !
-Using the word "data" to mean "transmittable and storable computer information" was first done in 1946.
-The expression "data processing" was first used in 1954.footnote:[http://www.etymonline.com/index.php?term=data]
+==== a. The need for a market fit
 
 ==  !
-=====
-Thoughts: the etymology suggests that data is "a given". Can you question this?
-=====
+How to market the right product to the right people?
 
 ==  !
-Data represents either a single entity, or a collection of such entitities ("data points").
-We can speak also of datasets instead of data (so a dataset is a collection of data points).
-
-==  Examples!
-==  !
-
-
-|===
-|||
-
-|A date
-|A color
-|A grade
-
-|A relation of friendship
-|A sound
-|A hearbeat
-
-|A user input
-|A duration
-|A curriculum vitae
-
-|===
-
-==  !
-
-
-|===
-|||
-
-|A picture
-|A longitude and latitude
-|A price
-
-|A number of friends
-|A temperature
-|A list of favorite movies
-
-|etc...
-|etc...
-|etc...
-|===
-
-
-
-==  1. Three take aways from the examples
-==  !
-
-==== a. Think about data in a broad sense
-==  !
-
-Data is not just text and figures. You should train in thinking about data in a broader sense:
-
-- pictures are data
-- language is data (including slang, lip movements, etc.)
-
-==  !
-- relations are data (you know individual A, you know individual B, but the relationship between A and B is data as well)
-- preferences, emotional states... are data
-- etc. There is no definitive list, you should train yourself looking at buisness situations and think: "where is the data?"
-
-==  !
-
-==== b. metadata is data, too
-==  !
-
-Metadata: this is some data describing some other data.
-
-Example:
-----
-The bibliographical reference <1>
-describing
-a book <2>
-----
-<1> the metadata
-<2> the data
-
-==  !
-
--> Data without metadata can be worthless (imagine a library without a library catalogue)
-
--> Metadata can be informative in its own right, as shown with the NSA scandal: footnote:[http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata]
-
-image:metadata.png["The trouble with metadata"]
-
-==  !
-
-==== c. zoom in, zoom out
-==  !
-
-We should remember considering that a data point can be itself a collection of data points:
-
-- a person walking into a building is a data point.
-- however this person is itself a collection of data points: location data + network relations + subscriber status to services + etc.
-
-So it is a good habit to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)
-
-==  2. Some essential vocabulary to discuss data
-
-==  !
-
-image:tweet.png[width="500" align="center"]
-
-==  !
-
-- This is a digital *medium* (because it's on screen as opposed to analogic, if we had printed the pic on paper)
-- The *type* of the data is textual + image
-
-==  !
-
-- The text is *formatted* in plain text (meaning, no special formatting), as opposed to more structured data-interchange formats (https://codingislove.com/json-tutorial-indepth/[check json or xml]).
-- The *encoding* of the text is UTF-8. Encoding has to do with the issue: how to represent alphabets and signs from different languages in text? (not even mentioning emojis?). UTF-8 is an encoding which is one of the most universal.
-
-==  !
-
-- The tweet is part of a list of tweets. The list represents the *data structure* of my dataset, it is the way my data is organized. There are many alternative data structures: arrays, sets, dics, maps...
-- The tweet is stored as a picture (png file) on my hard disk. "png" is the *file format*. The data is *persisted* as a file on disk (could have been stored in a database instead).
-
-
-==== Data presented as a table
-==  !
-
 [.stretch]
-image::table.png[table]
+image::A-product-cannot-fit-everybody's-expectations.png[align="center", title="A product cannot fit everybody's expectations"]
 
-
-==  3. data and size
-==  !
-
-image:russian_dolls.jpg[Data sizes]
 
 ==  !
-
-
-|===
-|||
-
-|1 bit
-|
-|can store a binary value (yes / no, true / false...)
-
-
-|8 bits
-|1 byte (or octet)
-|can store a single character
-
-|~ 1,000 bytes
-|1 kilobyte (kb)
-|Can store a paragraph of text
-
-|~ 1 million bytes
-|1 megabyte (Mb)
-|Can store a low res picture.
-|===
+A product cannot have every feature: adding a new feature can conflict with existing features or just hurt the need for simplicity.
 
 ==  !
+Customers have diverging expectations: what is preferred by one customer is considered a nuisance by another.
 
-|===
-|||
+==  !
+Firms have limited resources: they cannot create and sell every variety of a product with every feature. They must allocate their scarce resources in the best way possible.
 
-|~ 1 billion bytes
-|1 gigabyte (Gb)
-|Can store a movie
+==  !
+A *market fit* is achieved when there is an alignment between the product, the customers needs and the firms capabilities to deliver.
 
-|~ 1 trillion bytes
-|1 terabyte (Tb)
-|Can store 1,000 movies. Size of commercial hard drives in 2017 is 2 Tb.
+How to achieve a market fit?
 
-|~ 1,000 trillion bytes
-|1 petabyte (Pb)
-|20 Pb = Google Maps in 2013
-|===
+==  !
+This question is a classic field of study in marketing, and is called "market research". A market fit can be explored and found with the "STP" approach:
+
+==  !
+==== b. Segmentation and STP
+
+==  !
+STP stands for: *Segmentation → Targeting → Positioning*
+
+This a strategy to arrive at a market fit.
+
+Once defined, this strategy will be implemented following a *marketing plan* (for example, following the famous http://www.smartinsights.com/digital-marketing-strategy/customer-segmentation-targeting/segmentation-targeting-and-positioning/["4Ps"]).
+
+==  !
+Let's have a closer look at the "STP":
+
+==  !
+- SEGMENTATION
+
+First, cut the crowd into segments of customers with similar characteristics / expectations / needs
+
+==  !
+- TARGETING
+
+Then, evaluate each segment, and select the most attractive one.
+
+==  !
+- POSITIONING
+
+Creating an offer (a value proposition) corresponding to the segment we target
+
+==  !
+"Segmenting a market" is the first step of this STP strategy.
+
+It is the key operation where the "anonymous crowd of potential buyers" is analyzed and cut into distinct groups which can be interested in the same kind of product or service.
+
+==  2. How to proceed to segment, in practice?
+
+==  !
+==== a. Quantitative vs qualitative methods
+
+==  !
+Qualitative and quantitative methods can be used for segmentation.
+
+==  !
+Qualitative methods include surveys, ethnographic observation (online or offline), literature reviews on socio cultural trends, text analysis, interviews, focus groups, and more.
+
+==  !
+The point of these qualitative methods is to identify typical *usages* and *attitudes* towards the product (aka, *use cases*) among potential customers.
+Each of these use cases is a potential segment to address.
+
+==  !
+Qualitative methods are strong at *identifying* segments, and also strong at *understanding* and *explaining* them: we understand better *why* people make their choices.
+
+==  !
+Qualitative methods are not strong at evaluating the *size* and at *generalizing* beyond the circumstances of the observations made.
+
+==  !
+In comparison, quantitative methods are relatively stronger at *measuring*, *comparing* and *generalizing*.
+
+==  !
+Quantitative methods put numbers on things, allowing for an estimation of absolute and relative mangitudes: is this segment a large one? The largest?
+
+==  !
+And contrary to qualitative methods, quantitative methods are good at projecting a small sample to a larger situation, all while measuring by how much we can be off - that's what statistics do.
+
+==  !
+But let's not forget about 2 relative weaknesses of quantitative studies compared to qualitative ones:
+
+==  !
+- correlations are easy to find, *causality* is harder to prove.
+- *explanations* (causality + motives -> the why?? question) are also hard to establish.
+
+-> we detail *some* of these quantitative methods below.
+
+
+==  !
+==== b. Methods for segmentation in data science: "clustering"
+
+==  !
+(we use "data science methods" here, but that's very close to "machine learning techniques")
+
+==  !
+Many overviews of ML techniques tend to have a special category for "clustering techniques" (http://scikit-learn.org/stable/tutorial/machine_learning_map/[1], https://www.pinterest.fr/pin/440367669799815280/[2], https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/02/17090804/microsoft-machine-learning-algorithm-cheat-sheet-v6.pdf[3]).
+
+For example at the bottom right of this chart:
+
+==  !
+[.stretch]
+image::ds_techniques_cheatsheet_1.png[align="center", title="data science techniques grouped in families"]
+
+
+source: https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/[machinelearningmastery.com]
+
+==  !
+Clustering means "finding groups" in the data. This is analogous to "segmenting" in marketing. So the clustering techniques from machine learning can be used for segmentation.
+
+==  !
+Does it mean that the other methods shown on the chart above are useless for segmentation?
+
+-> *NO*
+
+==  !
+For example, Principal Component Analysis (PCA) is classified in the chart as a technique for "dimensionality reduction" (we'll explain this term in an other course), even if it has been used for a long time in marketing (and elsewhere) to segment a dataset (see a great example and tutorial http://www.business-science.io/business/2016/09/04/CustomerSegmentationPt2.html[here]).
+
+==  !
+==== c. Two classic clustering methods: k-means and hierarchical clustering
+
+==  !
+IMPORTANT: just to remind you that the goal of this course is to make you familiar and knowledgeable about *what it means to do data science in a business context*, not to turn you in data scientists. Knowing the general principles of k-means and hierarchical clustering is useful if you want to work productively as a business person with data scientists.
+
+==  !
+The general approach for clustering is:
+
+==  !
+1. Get data
+
+For example, data on car drivers from consumer panel providing info on their demographics, tastes in car size and design, and pricing preferences
+
+==  !
+[start =2]
+2. Develop measures of association
+
+This means creating a measure of “which customer is similar to which” in terms of their features
+
+==  !
+For example, families with young children will be roughly similar in terms of demographics, needs and budget.
+
+==  !
+[start =3]
+3. Deal with outliers
+
+Removing car drivers that have extreme values? (the one car driver that needs a race car, etc.)
+
+==  !
+[start =4]
+4. Form segments
+
+Use analytical techniques to create groups of car drivers based on their associations. Also called “clusters” or “communities”.
+
+==  !
+[start =5]
+5. Profile segments and interpret results
+
+Groups have now been found automatically. Identify what these groups mean and how they show a path for action.
+
+
+==  !
+==== d. hierarchical clustering
+
+==  !
+[.stretch]
+image::Hierarchical-clustering.png[align="center", title="Hierarchical clustering"]
+
+
+==  !
+==== e. k-means clustering
+
+==  !
+[.stretch]
+image::k-means-clustering.png[align="center", title="k-means clustering"]
+
+
+==  !
+==== f. clustering using community detection - via network analysis
+
+==  !
+This last example of a clustering technique is a bit fancy - not usually represented in ML cheatsheets.
+
+See the lesson on "Network analysis and text mining" for an example of how it can be practised in http://www.gephi.org[Gephi].
+
+==  !
+[.stretch]
+image::community-detection.png[align="center", title="community detection"]
+
+
+==  !
+This clustering example is particularly interesting because the number of clusters found in the dataset is not specified in advance: it "emerges" through the analysis.
+
+(contrary to k-means where the number of clusters is set by the analyst: it is the "k" parameter).
+
+==  3. Last notes: clustering, useful beyond segmenting in marketing
+
+==  !
+-> It reveals groups, relations between groups
+
+-> With the network approach, it can even point to the position of single individuals in each group (are they central? Do they bridge to other segments?)
+
+-> Useful for operational marketing (ex: email campaigns), not just strategic product launch!
+
 
 ==  The end
 ==  !

@@ -21,7 +21,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 //ST: 1. Where is data visualization going?
 
 //ST: !
-by http://www.clementlevallois.net[Clement Levallois], http://www.ds3.inesc-id.pt/[DataStorm 2nd edition], Lisbon, July 15, 2015.
+by http://www.clementlevallois.net[Clement Levallois], adapted from a presentation made at http://www.ds3.inesc-id.pt/[DataStorm 2nd edition], Lisbon, July 15, 2015.
 
 //ST: !
 The nice thing about fields in computational science is that they evolve so quickly.

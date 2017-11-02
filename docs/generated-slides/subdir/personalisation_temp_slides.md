@@ -123,12 +123,23 @@ video::7V8jrdH5tAQ[youtube]
 |==========================
 |Bodily Measurement       |Device             |Company                  |Product                          |Picture
 |Behavior in public areas |Multiple devices   |AGT International        |https://www.agtinternational.com/analytics/iot-analytics/crowd-analytics/[Mega Events Management Solution]  |image::agt.png[align="center",width=120]
-|Pedestrian traffic       |Cameras            |https://placemeter.com[Placemeter]                         |Placemeter                       |video::rpjJHoJixYA[align="center"]
+|Pedestrian traffic       |Cameras            |https://placemeter.com[Placemeter]                         |Placemeter                       |
 |==========================
+
+==  !
+A description of how AGT monitors large audiences in public events (click on the pic for the full document):
 
 ==  !
 [.stretch]
 image::agt-2.png[align="center", title="source: https://www.agtinternational.com/wp-content/uploads/2014/10/AGT_AAG_MegaEvent-02Oct2014-2.pdf"]
+
+
+
+==  !
+Video showing how Placemeter monitors pedestrian traffic:
+
+==  !
+video::rpjJHoJixYA[youtube]
 
 
 // 3. The case of Nicholas Felton: constant data monitoring
