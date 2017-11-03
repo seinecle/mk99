@@ -1,0 +1,2 @@
+[1102/082205.084:ERROR:file_io_win.cc(246)] SetEndOfFile: L’opération demandée n’a pu s’accomplir sur un fichier ayant une section mappée utilisateur ouverte. (0x4C8)
+[1102/082205.090:ERROR:file_io_win.cc(246)] SetEndOfFile: L’opération demandée n’a pu s’accomplir sur un fichier ayant une section mappée utilisateur ouverte. (0x4C8)
