@@ -218,7 +218,7 @@ This clustering example is particularly interesting because the number of cluste
 
 (contrary to k-means where the number of clusters is set by the analyst: it is the "k" parameter).
 
-== 3. Last notes: clustering, useful beyond segmenting in marketing
+== 3. Last notes: clustering, useful beyond segmentation in marketing
 //ST: 3. Last notes: clustering, useful beyond segmenting in marketing
 
 //ST: !

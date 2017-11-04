@@ -1,4 +1,4 @@
-= Big data for business: What is big data?
+= What is big data?
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 
