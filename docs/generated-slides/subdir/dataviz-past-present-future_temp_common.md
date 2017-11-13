@@ -413,14 +413,14 @@ image::jer-thorp.jpg[align="center"]
 (live url: https://hbr.org/2012/11/data-humans-and-the-new-oil/)
 
 //ST: !
-Nielsen, the leader of market data and market research, worked on its corporate identity to include data visualization, with data-driven visuals custom made by Jan Willem Tulp:
+http://www.nielsen.com[Nielsen], the leader of market data and market research, worked on its corporate identity to include data visualization, with data-driven visuals custom made by Jan Willem Tulp:
 
 //ST: !
 image::nielsen-viz.jpg[align="center"]
 {nbsp} +
 
 //ST: !
-Since 2012 or so, General Electric partners with Fathom, the agency founded by Ben Fry (co-creator of Processing!) to build visualizations relative to their corporate identity, with some impressive realizations:
+Since 2012 or so, https://www.ge.com/[General Electric] partners with https://fathom.info/[Fathom], the agency founded by Ben Fry (co-creator of Processing!) to build visualizations relative to their corporate identity, with some impressive realizations:
 
 //ST: !
 image::formatted/ge.jpg[align="center"]

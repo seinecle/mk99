@@ -33,9 +33,10 @@ A basic method in statistics is to compute a regression line to identify a trend
 To illustrate, we take some data about marketing budgets and sales figures in the corresponding period:
 
 //ST: !
+++++
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8dKfwxvgz3ALH8Y1FzxWk9lZtiVBlQdZYUrKJqRXNqBFRjKIP3LUvv29QSIBbGx2-ray5nK8cALMH/pubchart?oid=1075418595&format=interactive"></iframe>
+++++
 
-image::regression-line.png[align="center", title="A linear regression"]
-{nbsp} +
 
 //ST: !
 "Regular statistics" enables, among other things:

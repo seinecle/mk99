@@ -1,4 +1,4 @@
-= Big data for business: CRMs in the age of data
+= Customer Relationship Management (CRM): their transformation in the age of data
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 
@@ -112,6 +112,7 @@ We should realize that:
 //ST: !
 ==== a) Until 2006 only half of US and EU households, and 10% of the Chinese population, had Internet broadband access at home:
 
+//ST: !
 
 
 image::broadband.png[align="center", title="Home broadband use in the US"]
