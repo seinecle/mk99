@@ -187,7 +187,7 @@ video::oVfHeWTKjag[youtube]
 
 //ST: !
 [start=2]
-2. legislation by political authorities to protect the public interest, especially via an obligation for transparency, in the face of more personal data being collected, for a larger variety of purposes. See our lesson on the topic here.
+2. legislation by political authorities to protect the public interest, especially via an obligation for transparency, in the face of more personal data being collected, for a larger variety of purposes. See our related lecture on the GDPR.
 
 //ST: !
 [start=3]

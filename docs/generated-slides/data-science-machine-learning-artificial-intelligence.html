@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="Clément Levallois" /><title>Machine learning, data science, and artificial intelligence</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.5.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.5.0/css/theme/white.css" id="theme" /><link href="reveal.js-3.5.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.5.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>Machine learning, data science, and artificial intelligence</h1><div class="preamble"><div class="paragraph"><p>last modified: 2017-11-04</p></div>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="Clément Levallois" /><title>Machine learning, data science and artificial intelligence</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.5.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.5.0/css/theme/white.css" id="theme" /><link href="reveal.js-3.5.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.5.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>Machine learning, data science and artificial intelligence</h1><div class="preamble"><div class="paragraph"><p>last modified: 2017-11-17</p></div>
 <div class="imageblock stretch" style="text-align: center"><img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></div><p class="author"><small>Clément Levallois</small></p></section>
 <section id="_escape_or_o_to_see_all_sides_f11_for_full_screen_s_for_speaker_notes"><h2>'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes</h2></section>
 <section id="_1_explaining_machine_learning_in_simple_terms"><h2>1. Explaining machine learning in simple terms</h2></section>
@@ -18,16 +18,36 @@
 <section><div class="paragraph"><p>&#8594; their goal is to find the exact mathematical expression defining the situation at hand, under rigorous conditions</p></div></section>
 <section><div class="paragraph"><p>&#8594; a key approach is <strong>inference</strong>: by defining a <strong>sample of the data</strong> of just the correct size, we can reach conclusions which are valid for the entire dataset.</p></div></section>
 <section><div class="olist arabic"><ol class="arabic" start="2"><li><p>have no training in computer science / software engineering</p></li></ol></div>
-<div class="paragraph"><p>&#8594; they neglect how hard it can be to to run their models on computers, in terms of calculations to perform.
-&#8594; since they focus on <strong>sampling</strong> the data, they are not concerned with handling entire datasets with related IT issues.</p></div></section>
+<div class="paragraph"><p>&#8594; they neglect how hard it can be to to run their models on computers, in terms of calculations to perform.</p></div>
+<div class="paragraph"><p>&#8594; since they focus on <strong>sampling</strong> the data, they are not concerned with handling entire datasets with related IT issues.</p></div></section>
 <section><div class="paragraph"><p>Machine learning does similar things to statistics, but in a slightly different way:</p></div>
-<div class="ulist"><ul><li><p>there is an emphasis on getting the prediction right, not caring for identifying the underlying mathematical model</p></li><li><p>the prediction needs to be achievable in the time available, with the computing resources available</p></li><li><p>the data of interest is in a format / in a volume which is not commonly handled by regular statistics package (eg: images, Terabytes)</p></li></ul></div></section>
-<section><div class="paragraph"><p>Machine learning is advanced by scientists who are typically:</p></div>
-<div class="ulist"><ul><li><p>highly skilled in mathematics</p></li><li><p>able to work with computer scientists, to take their constraints into account</p></li><li><p>working in environments (industry, military, &#8230;&#8203;) where the operational aspects of the problem are key determinants (unstructured data, limits on computing resources)</p></li></ul></div></section>
+<div class="ulist"><ul><li><p>there is an emphasis on getting the prediction right, not caring for identifying the underlying mathematical model</p></li><li><p>the prediction needs to be achievable in the time available, with the computing resources available</p></li><li><p>the data of interest is in a format / in a volume which is not commonly handled by regular statistics package (eg: images, observations with hundreds of features)</p></li></ul></div></section>
+<section><div class="paragraph"><p>Machine learning is advanced by scientists who are typically:</p></div></section>
+<section><div class="olist arabic"><ol class="arabic" start="1"><li><p>highly skilled in statistics (the "classic" statistics we have seen above)</p></li></ol></div></section>
+<section><div class="olist arabic"><ol class="arabic" start="2"><li><p>with a training or exeprience in computer science, familiar with working with unstructured / big data</p></li></ol></div></section>
+<section><div class="olist arabic"><ol class="arabic" start="3"><li><p>working in environments (industry, military, &#8230;&#8203;) where the operational aspects of the problem are key determinants (unstructured data, limits on computing resources)</p></li></ol></div></section>
+<section><div class="paragraph"><p>Machine learning puts a premium on techniques which are "computationally adequate":</p></div></section>
+<section><div class="ulist"><ul><li><p>which need the minimum / the simplest algebric operations to run: the best technique is worthless if it&#8217;s too long or expensive to compute.</p></li><li><p>which can be run in such a way that multiple computers work in parallel (simultaneously) to solve it.</p></li></ul></div></section>
 <section><div class="paragraph"><p>(footnote: so machine learning, in my opinion, shares the spirit of "getting things done" as was <a href="https://en.wikipedia.org/wiki/Operations_research#Second_World_War">operations research in  the early days</a>)</p></div></section>
-<section><div class="paragraph"><p>How does machine learning works, if it does not rely on modelling / sampling the data?</p></div>
-<div class="paragraph"><p>With 3 families of tricks:</p></div></section>
-<section><h3>b. The <strong>unsupervised</strong> learning approach</h3></section>
+<section><div class="paragraph"><p>The pursuit of improved models in traditional statistics is not immune to the notion of computational efficiency - it does count as a desirable property - but in machine learning this is largely a pre-requisite.</p></div></section>
+<section><h3>b. An illustration: the case of GPUs</h3></section>
+<section><div class="paragraph"><p>A key illustration of the difference between statistics and machine learning can be provided with the use of graphic cards.</p></div></section>
+<section><div class="paragraph"><p>Graphic cards are these electronic boards full of chips found inside a computer, which are used for the display of images and videos on computer screens:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/gpu.jpg" alt="gpu" width="300" /></div><div class="title">Figure 1. A graphic card sold by NVidia, a leading manufacturer</div></section>
+<section><div class="paragraph"><p>In the 1990s, video gaming developed a lot from arcades to desktop computers. Game developers created computer games showing more and more complex scenes and animations. (see <a href="https://youtu.be/3UTdxI2IEp0">an evolution of graphics</a>, and <a href="https://www.youtube.com/watch?v=Rywkv7PCYDM">advanced graphics games in 2017</a>).</p></div></section>
+<section><div class="paragraph"><p>These video games need powerful video cards (aka <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPUs</a>) to render complex scenes in full details - with calculations on light effects and animations <strong>made in real time</strong>.</p></div></section>
+<section><div class="paragraph"><p>This pushed for the development of ever more powerful GPUs. Their characteristics is that they can compute simple operations to change pixel colors, <strong>for each of the millions of pixels of the screen in parallel</strong>, so that the next frame of the picture can be rendered in milliseconds.</p></div></section>
+<section><div class="paragraph"><p>Millions of simple operations run in parallel for the price of a GPU (a couple of hundreds of dollars), not the price of dozens of computers running in parallel (can be dozens of thousands of dollars)? This is interesting for computations on big data!</p></div></section>
+<section><div class="paragraph"><p>If a statistical problem for prediction can be broken down into simple operations which can be run on a GPU, then a large dataset can be analyzed in seconds or minutes on a laptop, instead of  cluster of computers.</p></div></section>
+<section><div class="paragraph"><p>To illustrate the difference in speed between a mathematical operation run without / with a GPU:</p></div></section>
+<section><div class="videoblock"><iframe width="500" height="400" src="https://www.youtube.com/embed/-P28LKWTzrI?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="paragraph"><p>The issue is: to use a GPU for calculations, you need to conceptualize the problem at hand as one that can be:</p></div>
+<div class="ulist"><ul><li><p>broken into a very large series</p></li><li><p>of very simple operations (basically, sums or multiplications, nothing complex like square roots or polynomials)</p></li><li><p>which can run independently from each other.</p></li></ul></div></section>
+<section><div class="paragraph"><p>Machine learning tyically pays attention to this dimension of the problem right from the design phase of models and techniques, where statistics would typically not consider the issue, or only downstream: not at the design phase but at the implementation phase.</p></div></section>
+<section><div class="paragraph"><p>Now that we have seen how statistics and machine learning differ in their approach, we still need to understand how does machine learning get good results, if it does not rely on modelling / sampling the data like statistics does?</p></div>
+<div class="paragraph"><p>Machine learning can be categorized in 3 families of tricks:</p></div></section>
+<section id="_2_three_families_of_machine_learning"><h2>2. Three families of machine learning</h2></section>
+<section><h3>a. The <strong>unsupervised</strong> learning approach</h3></section>
 <section><div class="paragraph"><p>This designates all the methods which take a fresh dataset and find interesting patterns in it, <strong>without training on previous, similar datasets</strong>.</p></div></section>
 <section><div class="paragraph"><p>The analogy is with a person doing a task for the first time:</p></div>
 <div class="paragraph"><p>&#8594; she learns a new thing by applying clever heuristics, without having been training on the task before.</p></div></section>
@@ -40,8 +60,8 @@
 <section><div class="ulist"><ul><li><p>on a computer, assign randomly the 100 guests to the 10 tables.</p></li></ul></div></section>
 <section><div class="ulist"><ul><li><p>for each table:</p><div class="ulist"><ul><li><p>measure the degree of similarity of tastes for the table</p></li><li><p>exchange the sit of 1 person at this table, with the sit of a person at a different table.</p></li><li><p>measure again the degree of similarity for the table: if it improves, keep the new sits, if not, revert to before the exchange</p></li></ul></div></li></ul></div>
 <div class="paragraph"><p>And repeat for all tables, many times, until no exchange of sits improves the similarity. When this stage is achieved, we say the model has "<strong>converged</strong>".</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/kmeans.jpg" alt="kmeans" height="100%" /></div><div class="title">Figure 1. K-means, an unsupervised learning approach</div></section>
-<section><h3>c. The <strong>supervised</strong> learning approach</h3></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/kmeans.jpg" alt="kmeans" width="300" /></div><div class="title">Figure 2. K-means, an unsupervised learning approach</div></section>
+<section><h3>b. The <strong>supervised</strong> learning approach</h3></section>
 <section><div class="paragraph"><p>Take 50,000 or more observations, or data points, like:</p></div>
 <div class="paragraph"><p>**an image of a cat, with the caption "cat"</p></div>
 <div class="paragraph"><p>**an image of a dog, with the caption "dog"</p></div>
@@ -55,51 +75,64 @@
 <section><div class="ulist"><ul><li><p>After looping through 50,000 pictures the parameters have hopefully adjusted and fine tuned. This was the <strong>training of the model</strong>.</p></li></ul></div></section>
 <section><div class="paragraph"><p>Now, when you get new pictures (the <strong>fresh set</strong>), applying the trained model should output a correct prediction ("cat" or "dog").</p></div></section>
 <section><div class="paragraph"><p>Supervised learning is currently the most popular family of machine learning.</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/kmeans.jpg" alt="kmeans" height="100%" /></div><div class="title">Figure 2. A hard test case for supervised learning</div></section>
-<section><div class="videoblock stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/4HCE1P-m1l8?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/muffin.jpg" alt="muffin" width="400" /></div><div class="title">Figure 3. A hard test case for supervised learning</div></section>
 <section><div class="paragraph"><p>It is called <strong>supervised</strong> learning because the learning is very much constrained / supervised by the intensive training performed:</p></div>
 <div class="paragraph"><p>&#8594; there is limited or no "unsupervised discovery" of novelty.</p></div></section>
-<section><div class="paragraph"><p>Important take away on the supervised approach: <strong>collecting <em>large</em> datasets for training is key</strong></p></div>
-<div class="paragraph"><p>Without these data, no supervised learning.</p></div></section>
-<section><h3>d. The <strong>reinforcement</strong> learning approach</h3></section>
-<section><div class="paragraph"><p>Take the case of a video game like Super Mario Bros. Goal of the task: collecting gold coins and completing the game.</p></div>
-<div class="ulist"><ul><li><p>Starting point: Mario Bros is standing at the beginning of the game, doing nothing.</p></li><li><p>Randomness is introduced: try something ("move right")</p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p>The game ends (Mario moved right, gets hit by a ennemy)</p></li><li><p>This negative result is stored somewhere (walking close to an ennemy = not good)</p></li><li><p>Game starts over</p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p>Randomness is introduced: try something different ("move right and make random jumps")</p></li><li><p>The game ends (Mario moved right, jumped above the ennemy, collected gold coins with the jump, then got hit by a nasty cloud or fire when jumping)</p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p>This new negative result is stored somewhere (walking close to an ennemy = not good, jumps near fire = not good, jumps = more gold coins)</p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p>Game starts over</p></li><li><p>Etc&#8230;&#8203;</p></li></ul></div>
-<div class="paragraph"><p>Note: reinforcement is both positive ("jumps help collect gold coins") and negative ("walking straight to an ennemy ends the game")</p></div></section>
-<section><div class="videoblock stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/qv6UVOQ0F44?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="videoblock"><iframe width="500" height="400" src="https://www.youtube.com/embed/4HCE1P-m1l8?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="paragraph"><p>Important take away on the supervised approach:</p></div>
+<div class="ulist"><ul><li><p><strong>collecting <em>large</em> datasets for training is key</strong>. Without these data, no supervised learning.</p></li><li><p>supervised learning is not good at analyzing situations entirely different from what is in the training set.</p></li></ul></div></section>
+<section><h3>c. The <strong>reinforcement</strong> learning approach</h3></section>
+<section><div class="paragraph"><p>To understand reinforcement learning in an intuitive sense, we can think of how animals can learn quickly by <strong>ignoring</strong> undesirable behavior and rewarding desirable behavior.</p></div>
+<div class="paragraph"><p>This is easy and takes just seconds. The following video shows B.F. Skinner, main figure in psychology in the 1950s-1970s:</p></div></section>
+<section><div class="videoblock"><iframe width="500" height="400" src="https://www.youtube.com/embed/TtfQlkGwE2U?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="paragraph"><p>Footnote: how does this apply to learning in humans? On the topic of learning and decision making, I warmly recommend <a href="https://global.oup.com/academic/product/foundations-of-neuroeconomic-analysis-9780199744251?cc=us&amp;lang=en&amp;">this book by Paul Glimcher</a>, professor of neuroscience, psychology and economics at NYU:</p></div>
+<div class="paragraph"><p>(this is a very hard book to read as it covers three disciplines in depth. The biological mechanisms of decision making it describes can be inspiring to design new computanional approaches.)</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/glimcher.jpg" alt="glimcher" width="250" /></div><div class="title">Figure 4. Foundations of Neuroeconomics, Paul Glimcher, 2010</div></section>
+<section><div class="paragraph"><p>Besides pigeons, reinforcement learning can be applied to any kind of "expert agents".</p></div>
+<div class="paragraph"><p>Take the case of a video game like Super Mario Bros:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/mario.jpg" alt="mario" height="100%" /></div><div class="title">Figure 5. Mario Bros, a popular video game</div></section>
+<section><div class="paragraph"><p>Struture of the game / the task:</p></div>
+<div class="ulist"><ul><li><p>Goal of the task: Mario should collect gold coins and complete the game by reaching the far right of the screen.</p></li><li><p>Negative outcome to be avoided: Mario getting killed by ennemies or falling in holes.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Starting point: Mario Bros is standing at the beginning of the game, doing nothing.</p></li><li><p>Possible actions: move right, jump, stand &amp; do nothing, shoot ahead.</p></li></ul></div></section>
+<section><div class="paragraph"><p>Reinforcement learning works by:</p></div>
+<div class="olist arabic"><ol class="arabic"><li><p>Making Mario do a new random action ("try something"), for example: "move right"</p></li><li><p>The game ends (Mario moved right, gets hit by a ennemy)</p></li></ol></div></section>
+<section><div class="olist arabic"><ol class="arabic" start="3"><li><p>This result is stored somewhere:</p><div class="ulist"><ul><li><p>move right = good (progress towards the goal of the game)</p></li><li><p>walking close to an ennemy and getting hit by it = bad</p></li></ul></div></li></ol></div></section>
+<section><div class="olist arabic"><ol class="arabic" start="4"><li><p>Game starts over (back to step 1) with a a combination of</p><div class="ulist"><ul><li><p>continue doing actions recorded as positive</p></li><li><p>try something new (jump, shoot?) when close to a situation associated with a negative outcome</p></li></ul></div></li></ol></div></section>
+<section><div class="paragraph"><p>After looping from 1. to 4. thousands of times, Mario completes the game, without any human player:</p></div></section>
+<section><div class="videoblock"><iframe width="500" height="400" src="https://www.youtube.com/embed/qv6UVOQ0F44?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
 <section><div class="paragraph"><p>Reinforcement learning is perceived as corresponding to an important side of human learning / human intelligence (goal oriented, "trial and error").</p></div></section>
-<section><div class="paragraph"><p>These 3 families are called together <strong>machine learning</strong> because:</p></div></section>
-<section><div class="ulist"><ul><li><p>the follow a looping process which is, really, an algorithm made to run on a computer, not a mathematical formula</p></li></ul></div>
-<div class="paragraph"><p>&#8594; a series of instructions ("do this, then that&#8230;&#8203;") repeated quickly over and over again, which computers are good at performing.</p></div></section>
-<section><div class="ulist"><ul><li><p>the solution is not found by applying a mathematical model, but emerges through a <strong>learning process</strong>:</p></li></ul></div>
-<div class="paragraph"><p>&#8594; the coefficients get better and better at each loop of the algorithm.</p></div></section>
-<section id="_2_machine_learning_and_data_science"><h2>2. Machine Learning and Data Science</h2></section>
-<section><div class="paragraph"><p>Machine learning is a step in the longer chain of steps of data science.</p></div>
-<div class="paragraph"><p>"Doing data science" is very much discovering knowledge in data.</p></div></section>
+<section><h3>d. When is machine learning useful?</h3></section>
+<section><div class="paragraph"><p>Using machine learning can be a waste of resource, when well known statistics could be easily applied.</p></div></section>
+<section><div class="paragraph"><p>Hints that "classic" statistical modelling (maybe as simple as a linear regression) should be enough:</p></div></section>
+<section><div class="ulist"><ul><li><p>The dataset is not large (below 50k observations), supervised learning is not going to work</p></li><li><p>The data is perfectly structured (tabular data)</p></li><li><p>The data points have few features</p></li></ul></div></section>
+<section><div class="paragraph"><p>Cases when "classic" statistics modelling is <strong>necessary</strong>:</p></div>
+<div class="ulist"><ul><li><p>The question is about the relative contribution of independent variables to the determination of an outcome</p></li></ul></div></section>
+<section id="_3_machine_learning_and_data_science"><h2>3. Machine Learning and Data Science</h2></section>
+<section><div class="paragraph"><p>Machine learning is a step in the longer chain of steps of data science.</p></div></section>
 <section><div class="paragraph"><p>The process was formalized as <a href="https://en.wikipedia.org/wiki/Data_mining#Process">kdd</a>: "Knowledge Discovery in Databases":</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/kdd.jpg" alt="kdd" height="100%" /></div><div class="title">Figure 3. KDD - knowledge discovery in databases</div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/kdd.png" alt="kdd" width="500" /></div><div class="title">Figure 6. KDD - knowledge discovery in databases</div></section>
+<section><div class="paragraph"><p>More recent representations of the steps in data processing have been suggested, making room for the role of data visualization (see the lecture on the topic):</p></div>
+<div class="paragraph"><p>&#8594; see <a href="https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400">the version by Ben Fry</a> (<a href="http://benfry.com/phd/">source</a>) and this one by Moritz Stefaner:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/stefaner.png" alt="stefaner" width="500" /></div><div class="title">Figure 7. data visualization workflow by Moritz Stefaner</div>
+<div class="paragraph"><p>(<a href="http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html">source</a>)</p></div></section>
 <section><div class="paragraph"><p>Machine learning is one of the techniques (along with traditional statistics) that intervenes at the step of "Data mining".</p></div></section>
 <section><div class="paragraph"><p>What makes data scientists important is that the steps of this kdd are highly interdependent.</p></div></section>
 <section><div class="paragraph"><p>You need indviduals or teams who are not just versed in data mining:</p></div>
 <div class="paragraph"><p>&#8594; because the shape of the data at the collection stage has a huge influence on the kind of techniques, and the kind of software, that can be used to discover knowledge.</p></div></section>
 <section><div class="paragraph"><p>The skills of a data scientist are often represented as the meeting of three separate domains:</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/conway.png" alt="conway" height="100%" /></div><div class="title">Figure 4. The Venn diagram of what is a data scientist</div>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/conway.png" alt="conway" height="100%" /></div><div class="title">Figure 8. The Venn diagram of what is a data scientist</div>
 <div class="paragraph"><p>source: <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram" class="bare">http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram</a></p></div></section>
-<section id="_3_artificial_intelligence"><h2>3. Artificial intelligence</h2></section>
+<section id="_4_artificial_intelligence"><h2>4. Artificial intelligence</h2></section>
 <section><h3>a. Weak vs Strong AI</h3></section>
-<section><div class="paragraph"><p>We are currently at the stage of "weak AI", not being sure if "strong AI" will emerge.</p></div></section>
-<section><div class="paragraph"><p>Weak AI designates computer programs able to perform better than humans at complex tasks with a narrow focus (playing chess)</p></div></section>
-<section><div class="paragraph"><p>Weak AI is typically the results of applying machine learning techniques seen above.</p></div></section>
+<section><div class="paragraph"><p>Weak AI designates computer programs able to outperform humans at complex tasks with a narrow focus (playing chess)</p></div></section>
+<section><div class="paragraph"><p>Weak AI is typically the result of applying expert systems or machine learning techniques seen above.</p></div></section>
 <section><div class="paragraph"><p>Strong AI is an intelligence that would be general in scope, able to set its own goal, and conscious of itself. Nothing is close to that yet.</p></div></section>
-<section><div class="paragraph"><p>So AI is a synonymous with machine learning at the moment.</p></div></section>
-<section><h3>a. Two videos to understand AI further</h3></section>
+<section><div class="paragraph"><p>So AI is a synonymous with weak AI at the moment.</p></div></section>
+<section><h3>b. Two videos to understand AI further</h3></section>
 <section><div class="paragraph"><p>Laurent Alexandre on the social and economic stakes of AI (in French):</p></div></section>
-<section><div class="videoblock stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/rJowm24piM4?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="videoblock"><iframe width="500" height="400" src="https://www.youtube.com/embed/rJowm24piM4?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
 <section><div class="paragraph"><p>John Launchbury, the Director of DARPA&#8217;s Information Innovation Office (I2O) in 2017:</p></div></section>
-<section><div class="videoblock stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/-O01G3tSYpU?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="videoblock"><iframe width="500" height="400" src="https://www.youtube.com/embed/-O01G3tSYpU?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
 <section id="_the_end"><h2>The end</h2></section>
 <section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p></div>
 <div class="paragraph"><p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>
