@@ -6,7 +6,6 @@ v1.0, 2017-31-07
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-:sourcedir: ../../../main/java
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
 last modified: {docdate}

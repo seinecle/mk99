@@ -65,6 +65,9 @@ These receipts, invoices... can be printed and mailed (this solution still exist
 With informatics developing in the 1970s and 1980s, a new system emerged: the exchange of information via computers: https://en.wikipedia.org/wiki/Electronic_data_interchange[Electronic Data Interchange] (EDI)
 
 //ST: !
+==== a. EDI: Electronic Data Interchange
+
+//ST: !
 EDI is not an exchange of file attachments in emails or via a file transfer on a website, because emails and websites did not exist yet! (emails and the Web were adopted by firms in the late 1990s).
 
 //ST: !
@@ -81,41 +84,62 @@ Instead, exchanging data via EDI consisted in using complex electronic tools (li
 //ST: !
 and finally, EDI protocols created "closed systems": a company A can connect to company B via an EDI only if the two have a pre-agreement to use this EDI.
 
-
-
 //ST: !
 So EDIs are fragmented, complicated to implement, slow to evolve, not cheap and restricts the communication to a "club" of partners who agreed to use it.
 
 EDIs still exist, especially in large B2B industries like transportation (http://cerasis.com/2014/12/11/edi-in-transportation/[check here]), but it lost in popularity in the wider economy because...  APIs have arrived.
 
+//ST: !
+==== b. The emergence of web APIs
 
 //ST: !
 In the late 1990s and early 2000s, Internet and the World Wide Web expanded a lot.
+
 More and more servers in different parts of the world needed to be interfaced with each other to exchange data.
 
-
-//ST: !
 It became increasingly convenient to define simple and universal conventions that everyone could learn and follow to standardize these exchanges, for free and easily.
-That's what web APIs (API for short) do.
-
-//ST: !
-Unlike EDI, APIs drop any industry-specific concern. APIs are just a convention to send and receive data, without any saying on the content of the data.
-The data sent and received can be invoices, webpages, train schedules...
-
-//ST: !
-Contrary to EDIs, a company creating an API can choose to leave its access open (remember that EDIs need the two parties to have a pre-established agreement).
-
-So that a potential client interested in using the API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.
-
 //ST: !
 
-(Saying that APIs are open does not mean an absence of security: communication through APIs can easily be identified and crypted, as needed).
+//ST: !
+That's what *web APIs* do. They are also often called:
 
+- "*API*" for short
+- "*web services*"
+- "*REST* API" (see below for that last one).
 
 //ST: !
-Another difference between APIs and EDIs is that APIs use the Web to transfer data, using the same route as the webpages you load in your browsers. This is why APIs are called "web services", or "web APIs".
+A web API extends the logic of the APIs we have seen in the beginning of this document, to software communicating via the web.
 
-Two popular API conventions emerged and competed for popularity:
+//ST: !
+To recall, an API is a convention followed when writing a software, making this software available to other software.
+
+//ST: !
+NOTE:: Example: the API of Microsoft PowerpPoint enables the import of Excel tables in pptx documents, because the API of Powerpoint plugs to the API of Excel. In this example Excel and Powerpoint are suposed to be installed on the same computer of course!
+
+//ST: !
+*Web* APIs are APIs which enable two pieces of software to communicate, via Internet. *They don't need to be installed on the same computer.*
+
+//ST: !
+==== c. The benefits of a web API compared to an EDI
+
+//ST: !
+Unlike EDI, web APIs drop any industry-specific concern. Web APIs are just a convention to send and receive data over the Internet, without any saying on the content of the data.
+
+The data sent and received can be invoices, webpages, train schedules, audio, video... whatever.
+
+//ST: !
+Contrary to EDIs, a company creating a web API can choose to leave its access open (remember that EDIs need the two parties to have a pre-established agreement).
+
+So that a potential client interested in using the web API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.
+
+//ST: !
+WARNING:: Saying that APIs are open does not mean an absence of security: communication through APIs can easily be identified and encrypted, as needed.
+
+//ST: !
+==== d. REST API?
+
+//ST: !
+Two popular web API conventions emerged in the 1990s and competed for popularity:
 
 //ST: !
 - SOAP (https://en.wikipedia.org/wiki/SOAP[Simple Object Access Protocol])
@@ -131,22 +155,21 @@ This simple evolution to ease interoperability had *immense effects*:
 
 == 3. Business consequences of APIs
 //ST: 3. Business consequences of APIs
-//ST: !
 
-==== 1. APIs *opened* software to the world.
+//ST: !
+==== a. APIs *opened* software to the world
 
 //ST:!
-
 An API transforms a closed software into something that can be plugged to anything other computer or object, as long as it is connected to the Internet.
 
 //ST:!
 Fo instance, APIs were a key factor of success for https://en.wikipedia.org/wiki/Salesforce.com[SalesForce] in the early 2000s. SalesForce, created in 1999, has a revenue of US$8.39 billion in 2017:
 
 //ST:!
-a) SalesForce developed a CRM as a SaaS where features of the CRM were *exposed as APIs* (meaning, these features could be plugged to external apps via the REST protocol).
+- SalesForce developed a CRM as a SaaS where features of the CRM were *exposed as APIs* (meaning, these features could be plugged to external apps via the REST protocol).
 
 //ST:!
-b) SalesForce created a PaaS to host apps that could plug to the SalesForce CRM via the APIs developed by SalesForce.
+- SalesForce created a PaaS to host apps that could plug to the SalesForce CRM via the APIs developed by SalesForce.
 
 This platform is called https://www.salesforce.com/products/platform/products/force/[Force.com] and external developers can put their apps there, as long as they are compatible with the SalesForce API.
 
@@ -154,14 +177,14 @@ This platform is called https://www.salesforce.com/products/platform/products/fo
 SalesForce takes a commission on the sales made by these third party apps hosted on Force.com, but more importantly, the platform creates an *ecosystem* of apps and developers around the SalesForce products which makes it hard for a customer company to switch to a different product.
 
 //ST:!
-==== 2. APIs *accelerated* software innovation
+==== b. APIs *accelerated* software innovation
 
 //ST:!
 
 Thanks to API it became easy to add software blocks together and create new apps, even if the app developers where from different countries, industries, or big and small. https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9[Check this amazing story].
 
 //ST:!
-==== 3. APIs *opened* data
+==== c. APIs *opened* data
 
 //ST:!
 Companies and public organization own many datasets of great business interest.
@@ -179,11 +202,9 @@ Entrepreneurs and programmers in general will be able to access the data via the
 
 == 4. The ecosystem of APIs
 //ST: 4. The ecosystem of APIs
-//ST: !
-
 
 //ST:!
-==== 1. A wealth of APIs
+==== a. A wealth of APIs
 
 //ST:!
 To discover new APIs, or to make your APIs easier to discover, the most well known place is the website "Programmable Web": https://www.programmableweb.com/
@@ -196,7 +217,7 @@ Still, many APIs are not listed on this website, and a google search for "info I
 
 
 //ST:!
-==== 2. APIs: a business world of its own
+==== b. APIs: a business world of its own
 
 //ST:!
 APIs have become central to the economy. As a result, a large number of services associated to APIs have developed to cater for all the needs of companies that use them.
@@ -213,7 +234,7 @@ image::api-landscape-2017.jpg[align="center", title="The API landscape in 2017"]
 //ST: !
 [FINAL NOTE]
 ====
-As business students, you have roles to play in the API economy. Engineers develop the technical part of the APIs (the code itself), but you have the expertise to develop the business aspects of this kind of product. In your job search, don't hesitate to query job postings with "API" in it, you will probably find positions where you'd apply successfully!
+As managers, you have roles to play in the API economy. Engineers develop the technical part of the APIs (the code itself), but you have the expertise to develop the business aspects of this kind of product. In your job search, don't hesitate to query job postings with "API" in it, you will probably find positions where you'd apply successfully!
 ====
 
 == The end

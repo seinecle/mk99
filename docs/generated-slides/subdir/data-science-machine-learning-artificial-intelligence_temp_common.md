@@ -8,7 +8,6 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -130,7 +129,7 @@ These video games need powerful video cards (aka https://en.wikipedia.org/wiki/G
 This pushed for the development of ever more powerful GPUs. Their characteristics is that they can compute simple operations to change pixel colors, *for each of the millions of pixels of the screen in parallel*, so that the next frame of the picture can be rendered in milliseconds.
 
 //ST: !
-Millions of simple operations run in parallel for the price of a GPU (hundreds of dollars), not the price of hundreds of computers running in parallel? This is interesting for computations on big data!
+Millions of simple operations run in parallel for the price of a GPU (a couple of hundreds of dollars), not the price of dozens of computers running in parallel (can be dozens of thousands of dollars)? This is interesting for computations on big data!
 
 //ST: !
 If a statistical problem for prediction can be broken down into simple operations which can be run on a GPU, then a large dataset can be analyzed in seconds or minutes on a laptop, instead of  cluster of computers.
@@ -142,17 +141,17 @@ To illustrate the difference in speed between a mathematical operation run witho
 video::-P28LKWTzrI[youtube, width= 500, height=400]
 
 //ST: !
-The issue is: to use a GPU for calculations, you need to conceptualize the problem under hand as one that can be:
+The issue is: to use a GPU for calculations, you need to conceptualize the problem at hand as one that can be:
 
 - broken into a very large series
 - of very simple operations (basically, sums or multiplications, nothing complex like square roots or polynomials)
 - which can run independently from each other.
 
 //ST: !
-Machine learning tyically pays attention to this dimension of the problem right from the design phase of models and techniques, where statistics would typically not consider the issue, or only downstream: not at the design phase but at the implemetation phase.
+Machine learning tyically pays attention to this dimension of the problem right from the design phase of models and techniques, where statistics would typically not consider the issue, or only downstream: not at the design phase but at the implementation phase.
 
 //ST: !
-Now that we have seen how statistics and machine learning differ in their approach, we still need to understand how does machine learning gets good results, if it does not rely on modelling / sampling the data like statistics does?
+Now that we have seen how statistics and machine learning differ in their approach, we still need to understand how does machine learning get good results, if it does not rely on modelling / sampling the data like statistics does?
 
 
 Machine learning can be categorized in 3 families of tricks:

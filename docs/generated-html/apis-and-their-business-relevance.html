@@ -439,18 +439,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_1_definition_of_api">1. Definition of API</a></li>
-<li><a href="#_2_the_origin_of_apis">2. The origin of APIs</a></li>
+<li><a href="#_2_the_origin_of_apis">2. The origin of APIs</a>
+<ul class="sectlevel3">
+<li><a href="#_a_edi_electronic_data_interchange">a. EDI: Electronic Data Interchange</a></li>
+<li><a href="#_b_the_emergence_of_web_apis">b. The emergence of web APIs</a></li>
+<li><a href="#_c_the_benefits_of_a_web_api_compared_to_an_edi">c. The benefits of a web API compared to an EDI</a></li>
+<li><a href="#_d_rest_api">d. REST API?</a></li>
+</ul>
+</li>
 <li><a href="#_3_business_consequences_of_apis">3. Business consequences of APIs</a>
 <ul class="sectlevel3">
-<li><a href="#_1_apis_strong_opened_strong_software_to_the_world">1. APIs <strong>opened</strong> software to the world.</a></li>
-<li><a href="#_2_apis_strong_accelerated_strong_software_innovation">2. APIs <strong>accelerated</strong> software innovation</a></li>
-<li><a href="#_3_apis_strong_opened_strong_data">3. APIs <strong>opened</strong> data</a></li>
+<li><a href="#_a_apis_strong_opened_strong_software_to_the_world">a. APIs <strong>opened</strong> software to the world</a></li>
+<li><a href="#_b_apis_strong_accelerated_strong_software_innovation">b. APIs <strong>accelerated</strong> software innovation</a></li>
+<li><a href="#_c_apis_strong_opened_strong_data">c. APIs <strong>opened</strong> data</a></li>
 </ul>
 </li>
 <li><a href="#_4_the_ecosystem_of_apis">4. The ecosystem of APIs</a>
 <ul class="sectlevel3">
-<li><a href="#_1_a_wealth_of_apis">1. A wealth of APIs</a></li>
-<li><a href="#_2_apis_a_business_world_of_its_own">2. APIs: a business world of its own</a></li>
+<li><a href="#_a_a_wealth_of_apis">a. A wealth of APIs</a></li>
+<li><a href="#_b_apis_a_business_world_of_its_own">b. APIs: a business world of its own</a></li>
 </ul>
 </li>
 <li><a href="#_the_end">The end</a></li>
@@ -461,7 +468,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2017-11-03</p>
+<p>last modified: 2017-11-27</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -527,6 +534,8 @@ Manufacturers, retailers, banks, &#8230;&#8203; they need to exchange informatio
 <div class="paragraph">
 <p>With informatics developing in the 1970s and 1980s, a new system emerged: the exchange of information via computers: <a href="https://en.wikipedia.org/wiki/Electronic_data_interchange">Electronic Data Interchange</a> (EDI)</p>
 </div>
+<div class="sect3">
+<h4 id="_a_edi_electronic_data_interchange">a. EDI: Electronic Data Interchange</h4>
 <div class="paragraph">
 <p>EDI is not an exchange of file attachments in emails or via a file transfer on a website, because emails and websites did not exist yet! (emails and the Web were adopted by firms in the late 1990s).</p>
 </div>
@@ -562,32 +571,79 @@ Manufacturers, retailers, banks, &#8230;&#8203; they need to exchange informatio
 <div class="paragraph">
 <p>EDIs still exist, especially in large B2B industries like transportation (<a href="http://cerasis.com/2014/12/11/edi-in-transportation/">check here</a>), but it lost in popularity in the wider economy because&#8230;&#8203;  APIs have arrived.</p>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_b_the_emergence_of_web_apis">b. The emergence of web APIs</h4>
 <div class="paragraph">
-<p>In the late 1990s and early 2000s, Internet and the World Wide Web expanded a lot.
-More and more servers in different parts of the world needed to be interfaced with each other to exchange data.</p>
+<p>In the late 1990s and early 2000s, Internet and the World Wide Web expanded a lot.</p>
 </div>
 <div class="paragraph">
-<p>It became increasingly convenient to define simple and universal conventions that everyone could learn and follow to standardize these exchanges, for free and easily.
-That&#8217;s what web APIs (API for short) do.</p>
+<p>More and more servers in different parts of the world needed to be interfaced with each other to exchange data.</p>
 </div>
 <div class="paragraph">
-<p>Unlike EDI, APIs drop any industry-specific concern. APIs are just a convention to send and receive data, without any saying on the content of the data.
-The data sent and received can be invoices, webpages, train schedules&#8230;&#8203;</p>
+<p>It became increasingly convenient to define simple and universal conventions that everyone could learn and follow to standardize these exchanges, for free and easily.</p>
 </div>
 <div class="paragraph">
-<p>Contrary to EDIs, a company creating an API can choose to leave its access open (remember that EDIs need the two parties to have a pre-established agreement).</p>
+<p>That&#8217;s what <strong>web APIs</strong> do. They are also often called:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>"<strong>API</strong>" for short</p>
+</li>
+<li>
+<p>"<strong>web services</strong>"</p>
+</li>
+<li>
+<p>"<strong>REST</strong> API" (see below for that last one).</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>So that a potential client interested in using the API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.</p>
+<p>A web API extends the logic of the APIs we have seen in the beginning of this document, to software communicating via the web.</p>
 </div>
 <div class="paragraph">
-<p>(Saying that APIs are open does not mean an absence of security: communication through APIs can easily be identified and crypted, as needed).</p>
+<p>To recall, an API is a convention followed when writing a software, making this software available to other software.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NOTE</dt>
+<dd>
+<p>Example: the API of Microsoft PowerpPoint enables the import of Excel tables in pptx documents, because the API of Powerpoint plugs to the API of Excel. In this example Excel and Powerpoint are suposed to be installed on the same computer of course!</p>
+</dd>
+</dl>
 </div>
 <div class="paragraph">
-<p>Another difference between APIs and EDIs is that APIs use the Web to transfer data, using the same route as the webpages you load in your browsers. This is why APIs are called "web services", or "web APIs".</p>
+<p><strong>Web</strong> APIs are APIs which enable two pieces of software to communicate, via Internet. <strong>They don&#8217;t need to be installed on the same computer.</strong></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_c_the_benefits_of_a_web_api_compared_to_an_edi">c. The benefits of a web API compared to an EDI</h4>
+<div class="paragraph">
+<p>Unlike EDI, web APIs drop any industry-specific concern. Web APIs are just a convention to send and receive data over the Internet, without any saying on the content of the data.</p>
 </div>
 <div class="paragraph">
-<p>Two popular API conventions emerged and competed for popularity:</p>
+<p>The data sent and received can be invoices, webpages, train schedules, audio, video&#8230;&#8203; whatever.</p>
+</div>
+<div class="paragraph">
+<p>Contrary to EDIs, a company creating a web API can choose to leave its access open (remember that EDIs need the two parties to have a pre-established agreement).</p>
+</div>
+<div class="paragraph">
+<p>So that a potential client interested in using the web API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">WARNING</dt>
+<dd>
+<p>Saying that APIs are open does not mean an absence of security: communication through APIs can easily be identified and encrypted, as needed.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_d_rest_api">d. REST API?</h4>
+<div class="paragraph">
+<p>Two popular web API conventions emerged in the 1990s and competed for popularity:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -609,22 +665,31 @@ This simple evolution to ease interoperability had <strong>immense effects</stro
 </div>
 </div>
 </div>
+</div>
 <div class="sect1">
 <h2 id="_3_business_consequences_of_apis">3. Business consequences of APIs</h2>
 <div class="sectionbody">
 <div class="sect3">
-<h4 id="_1_apis_strong_opened_strong_software_to_the_world">1. APIs <strong>opened</strong> software to the world.</h4>
+<h4 id="_a_apis_strong_opened_strong_software_to_the_world">a. APIs <strong>opened</strong> software to the world</h4>
 <div class="paragraph">
 <p>An API transforms a closed software into something that can be plugged to anything other computer or object, as long as it is connected to the Internet.</p>
 </div>
 <div class="paragraph">
 <p>Fo instance, APIs were a key factor of success for <a href="https://en.wikipedia.org/wiki/Salesforce.com">SalesForce</a> in the early 2000s. SalesForce, created in 1999, has a revenue of US$8.39 billion in 2017:</p>
 </div>
-<div class="paragraph">
-<p>a) SalesForce developed a CRM as a SaaS where features of the CRM were <strong>exposed as APIs</strong> (meaning, these features could be plugged to external apps via the REST protocol).</p>
+<div class="ulist">
+<ul>
+<li>
+<p>SalesForce developed a CRM as a SaaS where features of the CRM were <strong>exposed as APIs</strong> (meaning, these features could be plugged to external apps via the REST protocol).</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>b) SalesForce created a PaaS to host apps that could plug to the SalesForce CRM via the APIs developed by SalesForce.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>SalesForce created a PaaS to host apps that could plug to the SalesForce CRM via the APIs developed by SalesForce.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>This platform is called <a href="https://www.salesforce.com/products/platform/products/force/">Force.com</a> and external developers can put their apps there, as long as they are compatible with the SalesForce API.</p>
@@ -634,13 +699,13 @@ This simple evolution to ease interoperability had <strong>immense effects</stro
 </div>
 </div>
 <div class="sect3">
-<h4 id="_2_apis_strong_accelerated_strong_software_innovation">2. APIs <strong>accelerated</strong> software innovation</h4>
+<h4 id="_b_apis_strong_accelerated_strong_software_innovation">b. APIs <strong>accelerated</strong> software innovation</h4>
 <div class="paragraph">
 <p>Thanks to API it became easy to add software blocks together and create new apps, even if the app developers where from different countries, industries, or big and small. <a href="https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9">Check this amazing story</a>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_3_apis_strong_opened_strong_data">3. APIs <strong>opened</strong> data</h4>
+<h4 id="_c_apis_strong_opened_strong_data">c. APIs <strong>opened</strong> data</h4>
 <div class="paragraph">
 <p>Companies and public organization own many datasets of great business interest.
 The use of these datasets can be free (for small projects and NGOs) or monetized if the user is an entreprise.</p>
@@ -664,7 +729,7 @@ The use of these datasets can be free (for small projects and NGOs) or monetized
 <h2 id="_4_the_ecosystem_of_apis">4. The ecosystem of APIs</h2>
 <div class="sectionbody">
 <div class="sect3">
-<h4 id="_1_a_wealth_of_apis">1. A wealth of APIs</h4>
+<h4 id="_a_a_wealth_of_apis">a. A wealth of APIs</h4>
 <div class="paragraph">
 <p>To discover new APIs, or to make your APIs easier to discover, the most well known place is the website "Programmable Web": <a href="https://www.programmableweb.com/" class="bare">https://www.programmableweb.com/</a></p>
 </div>
@@ -676,7 +741,7 @@ The use of these datasets can be free (for small projects and NGOs) or monetized
 </div>
 </div>
 <div class="sect3">
-<h4 id="_2_apis_a_business_world_of_its_own">2. APIs: a business world of its own</h4>
+<h4 id="_b_apis_a_business_world_of_its_own">b. APIs: a business world of its own</h4>
 <div class="paragraph">
 <p>APIs have become central to the economy. As a result, a large number of services associated to APIs have developed to cater for all the needs of companies that use them.</p>
 </div>
@@ -699,7 +764,7 @@ Here is the 2017 landscape of the main companies active in the API industry:</p>
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
-<p>As business students, you have roles to play in the API economy. Engineers develop the technical part of the APIs (the code itself), but you have the expertise to develop the business aspects of this kind of product. In your job search, don&#8217;t hesitate to query job postings with "API" in it, you will probably find positions where you&#8217;d apply successfully!</p>
+<p>As managers, you have roles to play in the API economy. Engineers develop the technical part of the APIs (the code itself), but you have the expertise to develop the business aspects of this kind of product. In your job search, don&#8217;t hesitate to query job postings with "API" in it, you will probably find positions where you&#8217;d apply successfully!</p>
 </div>
 </div>
 </div>
@@ -745,7 +810,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2017-11-03 17:38:55 CET
+Last updated 2017-11-27 07:13:12 CET
 </div>
 </div>
 </body>
