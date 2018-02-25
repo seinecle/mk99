@@ -1,0 +1,59 @@
+= Week 5 - Value creation with data
+== 1. Must read
+
+==== Business Model Generation
+
+One great book giving method and perspective to organize the creation of business models: Business Model Generation
+
+-> https://strategyzer.com/books/business-model-generation
+
+image::bmc.png[align="center"]
+{nbsp} +
+
+==== The Lean Startup
+
+A book focusing on the entrepreneurial process of value creation.
+
+Introduces the notions of "MVP" and "pivoting"
+
+-> http://theleanstartup.com/
+
+image::lean-startup.jpg[align="center"]
+{nbsp} +
+
+==== Value Proposition Design
+
+A book focusing on the concept of value proposition: how to define the core value creation of our business?
+
+-> https://strategyzer.com/books/value-proposition-design
+
+image::value-proposition-design.png[align="center"]
+{nbsp} +
+
+
+==== Blue Ocean Strategy
+
+A book giving a method and a push for the creation of entirely new markets / value propositions
+
+image::blue-ocean.jpg[align="center"]
+{nbsp} +
+
+== 2. Today
+
+Design a data centric value proposition for a gym center.
+
+1. How can I provide a service of value to the customers of the gym club, using data in a central way?
+
+2. Describe the avatar of your customer
+
+3. Use the Value Proposition Design map to create a value proposition
+
+
+What you should do:
+
+1. Work alone or in groups on designing an avatar and a value proposition
+2. Upload a pic of your avatar and value proposition on a public place / public link
+3. Prepare a 5 minutes pitch
+
+
+<<<

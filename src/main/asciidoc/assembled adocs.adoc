@@ -1,0 +1,45 @@
+= CODAPPS: Essentials of data for managers
+Clément Levallois <levallois@em-lyon.com>
+:revnumber: 1.0 
+:revdate: 30-12-2017
+last modified: {docdate}
+:icons!:
+:iconsfont:   font-awesome
+:revnumber: 1.0
+:example-caption!:
+ifndef::imagesdir[:imagesdir: ../images]
+
+
+include::book chapters/what-is-data.adoc[]
+
+include::book chapters/what-is-big-data.adoc[]
+
+include::book chapters/what-is-the-cloud.adoc[]
+
+include::book chapters/the-headache-of-data-integration.adoc[]
+
+include::book chapters/apis-and-their-business-relevance.adoc[]
+
+include::book chapters/crms-in-the-age-of-data.adoc[]
+
+include::book chapters/segmentation.adoc[]
+
+include::book chapters/network-analysis-for-business.adoc[]
+
+include::book chapters/text-mining-for-business.adoc[]
+
+include::book chapters/value-creation-with-data.adoc[]
+
+include::book chapters/business-models-centered-on-data.adoc[]
+
+include::book chapters/localisation.adoc[]
+
+include::book chapters/personalisation.adoc[]
+
+include::book chapters/dataviz-past-present-future.adoc[]
+
+include::book chapters/data-privacy.adoc[]
+
+include::book chapters/GDPR.adoc[]
+
+include::book chapters/data-science-machine-learning-artificial-intelligence.adoc[]

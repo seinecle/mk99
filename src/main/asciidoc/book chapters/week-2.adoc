@@ -1,0 +1,22 @@
+= Week 2 - data integration and APIs
+== 1. Welcome!
+
+
+== 2. Let's discuss key aspects of the content of the lecture for today
+
+- Integrating different *data streams*: it is a technical challenge and it can create value by itself
+
+- New challenge for data integration: being compliant and transparent (we'll go more in details in a later session)
+
+
+
+- A note on the technical vocabulary used by data scientists visiting this course
+
+- What is a *DMP*? Difference with a "*data lake*" and "CRM"?
+
+- "SalesForce have a rich ecosystem and that's because they understood the value of APIs before their competitors"
+
+- On the difference between EDIs an APIs: a matter of IT culture
+
+
+<<<
