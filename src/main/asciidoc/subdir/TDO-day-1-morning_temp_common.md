@@ -8,7 +8,6 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -53,21 +52,21 @@ En un mot: les innovations autour de la donnée sont aux sources ou accélèrent
 //ST: 2. Programme
 
 //ST: !
-==== Jour 1
+=== Jour 1
 //ST: !
 
 - Matin: notions fondamentales: data, big data, apis.
 - Après-midi: focus sur l'Internet des Objets (IoT): au croisement de l'objet et de la donnée
 
 //ST: !
-==== Jour 2
+=== Jour 2
 //ST: !
 
 - Matin: l'exemple du CRM "disrupté". Présentations sur aspects technos et techs
 - Après-midi: visite d'entreprise qui vit sa TDO.
 
 //ST: !
-==== Jour 3
+=== Jour 3
 //ST: !
 
 - Matin: de la data à l'IA, débuts du travail sur projets
@@ -122,6 +121,7 @@ Format:
 image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+.twitter.com/seinecle[@seinecle]

@@ -29,7 +29,6 @@ An API is the way to make software programs “easy to plug and share” with ot
 Ok so... APIs are a cable? A computer? A USB connection? No.
 
 //ST: !
-
 An API is simply a group of rules (you can also call it a convention, or an agreement...) which programmers follow when writing the part of their code which is in charge of communicating with other software.
 
 These rules are then published (on a webpage for example), so that anyone who needs to connect to the program can learn what rules to follow.
@@ -52,8 +51,8 @@ Let's do a bit of history:
 
 == 2. The origin of APIs
 //ST: 2. The origin of APIs
-//ST: !
 
+//ST: !
 Companies which need to exchange data is nothing new.
 Manufacturers, retailers, banks, ... they need to exchange information at regular interval.
 
@@ -114,10 +113,10 @@ A web API extends the logic of the APIs we have seen in the beginning of this do
 To recall, an API is a convention followed when writing a software, making this software available to other software.
 
 //ST: !
-NOTE:: Example: the API of Microsoft PowerpPoint enables the import of Excel tables in pptx documents, because the API of Powerpoint plugs to the API of Excel. In this example Excel and Powerpoint are suposed to be installed on the same computer of course!
+NOTE:: Example: the API of Microsoft PowerPoint enables the import of Excel tables in pptx documents, because the API of Powerpoint plugs to the API of Excel. In this example Excel and Powerpoint are suposed to be installed on the same computer of course!
 
 //ST: !
-*Web* APIs are APIs which enable two pieces of software to communicate, using the web (the same "http" technology we see in our web browsers). *They don't need to be installed on the same computer.*
+*Web* APIs are APIs which enable two pieces of software to communicate, via Internet. *They don't need to be installed on the same computer.*
 
 //ST: !
 ==== c. The benefits of a web API compared to an EDI
@@ -163,7 +162,7 @@ This simple evolution to ease interoperability had *immense effects*:
 An API transforms a closed software into something that can be plugged to anything other computer or object, as long as it is connected to the Internet.
 
 //ST:!
-Fo instance, APIs were a key factor of success for https://en.wikipedia.org/wiki/Salesforce.com[SalesForce] in the early 2000s. SalesForce, created in 1999, has a revenue of US$8.39 billion in 2017:
+For instance, APIs were a key factor of success for https://en.wikipedia.org/wiki/Salesforce.com[SalesForce] in the early 2000s. SalesForce, created in 1999, has a revenue of US$8.39 billion in 2017:
 
 //ST:!
 - SalesForce developed a CRM as a SaaS where features of the CRM were *exposed as APIs* (meaning, these features could be plugged to external apps via the REST protocol).

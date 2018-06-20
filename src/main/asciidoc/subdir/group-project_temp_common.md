@@ -8,7 +8,6 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -56,7 +55,7 @@ d. record the interview
 e. post the interview online
 
 //ST:!
-==== a) pick a topic
+=== a) pick a topic
 
 //ST:!
 
@@ -80,7 +79,7 @@ Examples of business-y topics:
 - AI for the care of the elderly: hype or near future?
 
 //ST:!
-==== b) find an expert to interview
+=== b) find an expert to interview
 
 //ST:!
 
@@ -95,7 +94,7 @@ The expert does not need to be based in France, as long as you can interview thi
 If that's the case, triple check that this person has access to a good microphone: long distance interviews with an horrible audio don't make a podcast!
 
 //ST:!
-==== c) prepare the interview
+=== c) prepare the interview
 
 //ST:!
 
@@ -112,7 +111,7 @@ To achieve this, before the interview you must:
 You can share your questions with the expert before the interview, to make sure they see what you expect from them in terms of knowledge domain and degree of precision.
 
 //ST:!
-==== d) record the interview
+=== d) record the interview
 
 //ST:!
 
@@ -131,7 +130,7 @@ Start with questions where the expert introduces herself: name, position, organi
 If you feel the interviewee stays too long on an answer, try orienting the conversation to the next question - as fluidly as you can!
 
 //ST:!
-==== e) publish the interview
+=== e) publish the interview
 
 //ST:!
 
@@ -196,6 +195,7 @@ Find references for this lesson, and other lessons, https://seinecle.github.io/m
 image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+ww.twitter.com/seinecle[@seinecle]

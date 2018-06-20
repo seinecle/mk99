@@ -8,6 +8,7 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
+:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -170,8 +171,9 @@ For big data, we observe that it is peaking in 2017, while new terms appear:
 
 //ST: !
 
-pass:[<iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe> ]
 
+image::gtrends.png[align="center", title="Google searches for big data, machine learning and AI"]
+{nbsp} +
 
 //ST: !
 
@@ -448,13 +450,10 @@ We should realize that:
 //ST: !
 ==== a) Until 2006 only half of US and EU households, and 10% of the Chinese population, had Internet broadband access at home:
 
-//ST: !
-++++
-<iframe src="http://www.pewinternet.org/chart/home-broadband-use/iframe/" id="pew17070" scrolling="no" width="100%" height="100px" frameborder="0"></iframe>
 
-<script type='text/javascript'id='pew-iframe'>(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='http://www.pewinternet.org/wp-content/plugins/pew-scripts/js/iframeResizer.min.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;try{iFrameResize([],'iframe#pew17070')}catch(e){}};var embedder=document.getElementById('pew-iframe');embedder.parentNode.insertBefore(s,embedder)}if(window.attachEvent)window.attachEvent('onload',async_load);else window.addEventListener('load',async_load,false)})();</script>
-++++
 
+image::broadband.png[align="center", title="Home broadband use in the US"]
+{nbsp} +
 
 //ST: !
 
@@ -482,10 +481,9 @@ image::first-iphone.jpg[align="center", title="Steve Jobs presenting the iPhone 
 ==== c) Until 2009 social media was just taking off
 
 //ST: !
-++++
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Kh6Sf0XDOZf1-FU4VznSydrxIRm3NRJfJHIq4KYKGV2_TAtbqoI634NSu9SR0LYk3UihYLvrlHhs/pubchart?oid=412747728&amp;format=interactive"></iframe>
-++++
 
+image::growth-sm.png[align="center", title="Growth of social media usage, 2004-2017"]
+{nbsp} +
 
 //ST: !
 ==== d) Online retail is growing at a steady pace

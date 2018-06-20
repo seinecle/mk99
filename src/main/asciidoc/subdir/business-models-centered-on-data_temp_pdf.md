@@ -15,23 +15,17 @@ last modified: {docdate}
 image::EMLyon_logo_corp.png[align="center"]
 {nbsp} +
 
-//ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
-
-
-== 3 families of business models centered on data
-//ST: 3 families of business models centered on data
-//ST: !
-
-[IMPORTANT]
-====
 Not a closed list, not a recipe!
 
 Rather, a helpful toolkit for brainstorming on data for business
 
+(((business model, data centric)))
+
 ====
 
 == 1. COLLECTING DATA FOR RESALE
-//ST: 1. COLLECTING DATA FOR RESALE
+
+This is the "((data broker))" business model.
 
 //ST: !
 image::spices.jpg[align="center"]
@@ -55,8 +49,7 @@ image::spices.jpg[align="center"]
 //ST: !
 - ImDB Inc. collecting data through http://imdb.com[imdb.com] & selling data through http://pro.imdb.com[pro.imdb.com] to various stakeholders of the entertainment industry. image:imdbpro.png[width="100"]
 
-== 2. COLLECTING DATA, SELLING TARGETED ADS
-//ST: 2. COLLECTING DATA, SELLING TARGETED ADS
+== 2. COLLECTING DATA, SELLING ((TARGETED ADS))
 
 //ST: !
 image::targeted-ads.jpg[align="center"]
@@ -84,13 +77,8 @@ image::facebook-revenues.png[align="center",title="Facebook revenues as of 2016"
 
 
 == 3. COLLECTING DATA, SELLING PRODUCTS and SERVICES
-//ST: 3. COLLECTING DATA, SELLING PRODUCTS and SERVICES
-
-image::internet-of-sh.jpg[align="center","Data powered products and services"]
-{nbsp} +
-
 //ST: !
-==== a. business model entirely centered on the product or service enabled by the data
+=== a. business model entirely centered on the product or service enabled by the data
 
 //ST: !
 - https://health.nokia.com/us/en/[Nokia Health Mate]: Devices which make bodily meausrements (sleep, weight, pulse, steps, etc.) to deliver a service: monitoring your health and well being, with suggestions and nudges to improve it.
@@ -112,7 +100,7 @@ image::nest.jpeg[align="center",title="Nest thermostats collect data from their 
 This is the reason why car makers and tech companies acknowledge that a car is now defined by its software more than by its mechanical parts (not sure about the origin of this quote, but Elon Musk was cited saying something similar about the Tesla Model S http://www.latimes.com/business/autos/la-fi-hy-musk-computer-on-wheels-20150319-story.html[in March 2015])
 
 //ST: !
-==== b. products and services where the data-enabled featured is a "nice to have", not core to the value proposition
+=== b. products and services where the data-enabled featured is a "nice to have", not core to the value proposition
 
 //ST: !
 - ABN AMRO (Dutch bank) helps customers benchmark their expenses against similar, average households.
@@ -129,7 +117,17 @@ image::klm-meet-and-seat.jpg[align="center", title="KLM adds a nice-to-have with
 
 
 == The end
-//ST: The end
+//ST: !
+
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+
+image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].

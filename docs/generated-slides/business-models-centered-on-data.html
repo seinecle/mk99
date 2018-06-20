@@ -1,44 +1,156 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="Clément Levallois" /><title>3 families of business models centered on data</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.5.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.5.0/css/theme/white.css" id="theme" /><link href="reveal.js-3.5.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.5.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>3 families of business models centered on data</h1><div class="preamble"><div class="paragraph"><p>last modified: 2017-10-08</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" height="100%" /></div></div><p class="author"><small>Clément Levallois</small></p></section>
-<section id="_escape_or_o_to_see_all_sides_f11_for_full_screen_s_for_speaker_notes"><h2>'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes</h2></section>
-<section id="_3_families_of_business_models_centered_on_data"><h2>3 families of business models centered on data</h2></section>
-<section><div class="admonitionblock important"><table><tr><td class="icon"><div class="title"></div></td><td class="content"><div class="paragraph"><p>Not a closed list, not a recipe!</p></div>
-<div class="paragraph"><p>Rather, a helpful toolkit for brainstorming on data for business</p></div></td></tr></table></div></section>
-<section id="_1_collecting_data_for_resale"><h2>1. COLLECTING DATA FOR RESALE</h2></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/spices.jpg" alt="spices" height="100%" /></div></section>
-<section><div class="ulist"><ul><li><p>Thomson Reuters collecting &amp; selling data from finance, scientific research, medicine and news. <span class="image"><img src="images/thomson-reuters.png" alt="thomson reuters" width="100" /></span></p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p>Nielsen collecting &amp; selling market data <span class="image"><img src="images/nielsen.jpg" alt="nielsen" width="100" /></span></p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p>Twitter collecting &amp; selling tweets through its own branch (<a href="https://developer.twitter.com/en/enterprise">GNIP</a>) or partners (<a href="http://datasift.com/">DataSift</a>) <span class="image"><img src="images/twitter.jpg" alt="twitter" width="100" /></span></p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p><a href="http://www.meteofrance.com/accueil">Meteo France</a> or <a href="http://www.theweathercompany.com/">The Weather Company</a> (purchased by IBM) collecting &amp; selling meterological data <span class="image"><img src="images/meteo-france.jpg" alt="meteo france" width="100" /></span> <span class="image"><img src="images/weather.jpg" alt="weather" width="100" /></span></p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p><a href="https://datavenue.orange.com/flux-vision">Datavenue</a>, a business service by Orange (French Telecom company) collecting &amp; selling info to cities and companies about car traffic and flows of tourists in public places (museums…) based on the (anomymized) geolocalisation of mobile phones. <span class="image"><img src="images/orange.png" alt="orange" width="100" /></span></p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p>ImDB Inc. collecting data through <a href="http://imdb.com">imdb.com</a> &amp; selling data through <a href="http://pro.imdb.com">pro.imdb.com</a> to various stakeholders of the entertainment industry. <span class="image"><img src="images/imdbpro.png" alt="imdbpro" width="100" /></span></p></li></ul></div></section>
-<section id="_2_collecting_data_selling_targeted_ads"><h2>2. COLLECTING DATA, SELLING TARGETED ADS</h2></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/targeted-ads.jpg" alt="targeted ads" height="100%" /></div></section>
-<section><div class="paragraph"><p>This is the business model of Google and Facebook, as well as many free services offered online.</p></div>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="Clément Levallois" /><title>3 families of business models centered on data</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.6.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.6.0/css/theme/white.css" id="theme" /><style>/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+/*pre.CodeRay {background-color:#f7f7f8;}*/
+.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
+.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
+table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
+table.CodeRay td{vertical-align: top;line-height:1.45}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
+table.CodeRay td.code{padding:0 0 0 .5em}
+table.CodeRay td.code>pre{padding:0}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>3 families of business models centered on data</h1><div class="preamble"><div class="paragraph"><p>last modified: 2018-05-10</p></div></div><p class="author"><small>Clément Levallois</small></p></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" height="100%" /></div></section>
+<section><div class="paragraph"><p>Not a closed list, not a recipe!</p></div>
+<div class="paragraph"><p>Rather, a helpful toolkit for brainstorming on data for business</p></div>
+<div class="paragraph"><p></p></div>
+<div class="exampleblock"><div class="content"><div class="paragraph"><p>== 1. COLLECTING DATA FOR RESALE
+== !</p></div>
+<div class="paragraph"><p>This is the "data broker" business model.</p></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/spices.jpg" alt="spices" height="100%" /></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="ulist"><ul><li><p>Thomson Reuters collecting &amp; selling data from finance, scientific research, medicine and news. <span class="image"><img src="images/thomson-reuters.png" alt="thomson reuters" width="100" /></span></p></li></ul></div>
+<div class="ulist"><ul><li><p>Nielsen collecting &amp; selling market data <span class="image"><img src="images/nielsen.jpg" alt="nielsen" width="100" /></span></p></li></ul></div>
+<div class="ulist"><ul><li><p>Twitter collecting &amp; selling tweets through its own branch (<a href="https://developer.twitter.com/en/enterprise">GNIP</a>) or partners (<a href="http://datasift.com/">DataSift</a>) <span class="image"><img src="images/twitter.jpg" alt="twitter" width="100" /></span></p></li></ul></div>
+<div class="ulist"><ul><li><p><a href="http://www.meteofrance.com/accueil">Meteo France</a> or <a href="http://www.theweathercompany.com/">The Weather Company</a> (purchased by IBM) collecting &amp; selling meterological data <span class="image"><img src="images/meteo-france.jpg" alt="meteo france" width="100" /></span> <span class="image"><img src="images/weather.jpg" alt="weather" width="100" /></span></p></li></ul></div>
+<div class="ulist"><ul><li><p><a href="https://datavenue.orange.com/flux-vision">Datavenue</a>, a business service by Orange (French Telecom company) collecting &amp; selling info to cities and companies about car traffic and flows of tourists in public places (museums…) based on the (anomymized) geolocalisation of mobile phones. <span class="image"><img src="images/orange.png" alt="orange" width="100" /></span></p></li></ul></div>
+<div class="ulist"><ul><li><p>ImDB Inc. collecting data through <a href="http://imdb.com">imdb.com</a> &amp; selling data through <a href="http://pro.imdb.com">pro.imdb.com</a> to various stakeholders of the entertainment industry. <span class="image"><img src="images/imdbpro.png" alt="imdbpro" width="100" /></span></p></li></ul></div>
+<div class="paragraph"><p>== 2. COLLECTING DATA, SELLING TARGETED ADS
+== !</p></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/targeted-ads.jpg" alt="targeted ads" height="100%" /></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="paragraph"><p>This is the business model of Google and Facebook, as well as many free services offered online.</p></div>
 <div class="paragraph"><p>Users of these services offer their data (likes, emails, social connections, comments, navigation history, etc.).
-This allows the service to sell this qualified audience to ad providers.</p></div></section>
-<section><div class="paragraph"><p>These figures from 2015 show that a very large part of Google&#8217;s revenues come from advertisement:</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/google-revenues.png" alt="google revenues" height="100%" /></div><div class="title">Figure 1. Google revenues as of 2015</div></section>
-<section><div class="paragraph"><p>Same for Facebook, which makes most of its $7 billion revenues out of ads, based on the data they collect from Facebook users:</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/facebook-revenues.png" alt="facebook revenues" height="100%" /></div><div class="title">Figure 2. Facebook revenues as of 2016</div></section>
-<section id="_3_collecting_data_selling_products_and_services"><h2>3. COLLECTING DATA, SELLING PRODUCTS and SERVICES</h2><div class="imageblock stretch" style="text-align: center"><img src="images/internet-of-sh.jpg" alt="internet of sh" width="Data powered products and services" /></div></section>
-<section><h3>a. business model entirely centered on the product or service enabled by the data</h3></section>
-<section><div class="ulist"><ul><li><p><a href="https://health.nokia.com/us/en/">Nokia Health Mate</a>: Devices which make bodily meausrements (sleep, weight, pulse, steps, etc.) to deliver a service: monitoring your health and well being, with suggestions and nudges to improve it.</p></li></ul></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/nokia-health.jpg" alt="nokia health" height="100%" /></div><div class="title">Figure 3. Nokia products collecting data to deliver services</div></section>
-<section><div class="ulist"><ul><li><p><a href="https://nest.com/thermostats/nest-learning-thermostat/overview/">Nest thermostat</a>: a device which collects data about your home and your domestic habits to regulate your energy consumption and improve your well being at home (modulating temperature according to your preferences, without your explicit intervention).</p></li></ul></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/nest.jpeg" alt="nest" height="100%" /></div><div class="title">Figure 4. Nest thermostats collect data from their surroundings and users to deliver services</div></section>
-<section><div class="ulist"><ul><li><p>Autonomous cars. The service provided by these cars (driving safely and comfortably from one place to another, without a driver) is based on the continuous collection and analysis of various data streams.</p></li></ul></div>
-<div class="paragraph"><p>This is the reason why car makers and tech companies acknowledge that a car is now defined by its software more than by its mechanical parts (not sure about the origin of this quote, but Elon Musk was cited saying something similar about the Tesla Model S <a href="http://www.latimes.com/business/autos/la-fi-hy-musk-computer-on-wheels-20150319-story.html">in March 2015</a>)</p></div></section>
-<section><h3>b. products and services where the data-enabled featured is a "nice to have", not core to the value proposition</h3></section>
-<section><div class="ulist"><ul><li><p>ABN AMRO (Dutch bank) helps customers benchmark their expenses against similar, average households.</p></li></ul></div>
-<div class="imageblock stretch" style="text-align: center"><img src="images/abn-amro.jpg" alt="abn amro" height="100%" /></div></section>
-<section><div class="ulist"><ul><li><p><a href="https://www.klm.com/travel/us_en/prepare_for_travel/on_board/your_seat_on_board/meet_and_seat.htm">KLM Meet &amp; Sit</a>: connect to Facebook or LinkedIn to choose a sit next to somebody you’d like to meet.</p></li></ul></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/klm-meet-and-seat.jpg" alt="klm meet and seat" height="100%" /></div><div class="title">Figure 5. KLM adds a nice-to-have with a matching service based on customer profiles</div></section>
-<section id="_the_end"><h2>The end</h2></section>
-<section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p></div>
+This allows the service to sell this qualified audience to ad providers.</p></div>
+<div class="paragraph"><p>These figures from 2015 show that a very large part of Google&#8217;s revenues come from advertisement:</p></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/google-revenues.png" alt="google revenues" height="100%" /></div><div class="title">Figure 1. Google revenues as of 2015</div>
+<div class="paragraph"><p>== !</p></div>
+<div class="paragraph"><p>Same for Facebook, which makes most of its $7 billion revenues out of ads, based on the data they collect from Facebook users:</p></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/facebook-revenues.png" alt="facebook revenues" height="100%" /></div><div class="title">Figure 2. Facebook revenues as of 2016</div>
+<div class="paragraph"><p>== !</p></div>
+<div class="paragraph"><p>== 3. COLLECTING DATA, SELLING PRODUCTS and SERVICES
+== !
+== !
+==== a. business model entirely centered on the product or service enabled by the data
+== !</p></div>
+<div class="ulist"><ul><li><p><a href="https://health.nokia.com/us/en/">Nokia Health Mate</a>: Devices which make bodily meausrements (sleep, weight, pulse, steps, etc.) to deliver a service: monitoring your health and well being, with suggestions and nudges to improve it.</p></li></ul></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/nokia-health.jpg" alt="nokia health" height="100%" /></div><div class="title">Figure 3. Nokia products collecting data to deliver services</div>
+<div class="paragraph"><p>== !</p></div>
+<div class="ulist"><ul><li><p><a href="https://nest.com/thermostats/nest-learning-thermostat/overview/">Nest thermostat</a>: a device which collects data about your home and your domestic habits to regulate your energy consumption and improve your well being at home (modulating temperature according to your preferences, without your explicit intervention).</p></li></ul></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/nest.jpeg" alt="nest" height="100%" /></div><div class="title">Figure 4. Nest thermostats collect data from their surroundings and users to deliver services</div>
+<div class="paragraph"><p>== !</p></div>
+<div class="ulist"><ul><li><p>Autonomous cars. The service provided by these cars (driving safely and comfortably from one place to another, without a driver) is based on the continuous collection and analysis of various data streams.</p></li></ul></div>
+<div class="paragraph"><p>This is the reason why car makers and tech companies acknowledge that a car is now defined by its software more than by its mechanical parts (not sure about the origin of this quote, but Elon Musk was cited saying something similar about the Tesla Model S <a href="http://www.latimes.com/business/autos/la-fi-hy-musk-computer-on-wheels-20150319-story.html">in March 2015</a>)</p></div>
+<div class="paragraph"><p>== !
+==== b. products and services where the data-enabled featured is a "nice to have", not core to the value proposition
+== !</p></div>
+<div class="ulist"><ul><li><p>ABN AMRO (Dutch bank) helps customers benchmark their expenses against similar, average households.</p></li></ul></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/abn-amro.jpg" alt="abn amro" height="100%" /></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="ulist"><ul><li><p><a href="https://www.klm.com/travel/us_en/prepare_for_travel/on_board/your_seat_on_board/meet_and_seat.htm">KLM Meet &amp; Sit</a>: connect to Facebook or LinkedIn to choose a sit next to somebody you’d like to meet.</p></li></ul></div>
+<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/klm-meet-and-seat.jpg" alt="klm meet and seat" height="100%" /></div><div class="title">Figure 5. KLM adds a nice-to-have with a matching service based on customer profiles</div>
+<div class="paragraph"><p>== !</p></div>
+<div class="paragraph"><p>== The end
+== !</p></div>
+<div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p></div>
 <div class="paragraph"><p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>
 This course is made by Clement Levallois.</p></div>
-<div class="paragraph"><p>Discover my other courses in data / tech for business: <a href="http://www.clementlevallois.net" class="bare">http://www.clementlevallois.net</a></p></div>
+<div class="paragraph"><p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p></div>
 <div class="paragraph"><p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
@@ -56,7 +168,7 @@ This course is made by Clement Levallois.</p></div>
     class="statcounter"
     src="//c.statcounter.com/11411204/0/11411204/1/" alt="site
     stats"></a></div></noscript>
-    <!-- End of StatCounter Code for Default Guide --></p></div></section></div></div><script src="reveal.js-3.5.0/lib/js/head.min.js"></script><script src="reveal.js-3.5.0/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+    <!-- End of StatCounter Code for Default Guide --></p></div></div></div></section></div></div><script src="reveal.js-3.6.0/lib/js/head.min.js"></script><script src="reveal.js-3.6.0/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
 Reveal.initialize({
   // Display controls in the bottom right corner
   controls: true,
@@ -126,11 +238,11 @@ Reveal.initialize({
 
   // Optional libraries used to extend on reveal.js
   dependencies: [
-      { src: 'reveal.js-3.5.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: 'reveal.js-3.5.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'reveal.js-3.5.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal.js-3.6.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'reveal.js-3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal.js-3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
       
-      { src: 'reveal.js-3.5.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'reveal.js-3.5.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+      { src: 'reveal.js-3.6.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal.js-3.6.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
   ]
 });</script></body></html>

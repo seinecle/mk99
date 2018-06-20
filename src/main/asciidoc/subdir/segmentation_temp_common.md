@@ -8,7 +8,6 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -19,10 +18,9 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 
 == 1. The role of segmentation in marketing
-//ST: 1. The role of segmentation in marketing
 
 //ST: !
-==== a. The need for a market fit
+=== a. The need for a market fit
 
 //ST: !
 How to market the right product to the right people?
@@ -49,7 +47,7 @@ How to achieve a market fit?
 This question is a classic field of study in marketing, and is called "market research". A market fit can be explored and found with the "STP" approach:
 
 //ST: !
-==== b. Segmentation and STP
+=== b. Segmentation and STP
 
 //ST: !
 STP stands for: *Segmentation → Targeting → Positioning*
@@ -82,10 +80,9 @@ Creating an offer (a value proposition) corresponding to the segment we target
 It is the key operation where the "anonymous crowd of potential buyers" is analyzed and cut into distinct groups which can be interested in the same kind of product or service.
 
 == 2. How to segment, in practice?
-//ST: 2. How to proceed to segment, in practice?
 
 //ST: !
-==== a. Quantitative vs qualitative methods
+=== a. Quantitative vs qualitative methods
 
 //ST: !
 Qualitative and quantitative methods can be used for segmentation.
@@ -123,7 +120,7 @@ But let's not forget about 2 relative weaknesses of quantitative studies compare
 
 
 //ST: !
-==== b. Methods for segmentation in data science: "clustering"
+=== b. Methods for segmentation in data science: "clustering"
 
 //ST: !
 (we use "data science methods" here, but that's very close to "machine learning techniques")
@@ -151,7 +148,7 @@ Does it mean that the other methods shown on the chart above are useless for seg
 For example, Principal Component Analysis (PCA) is classified in the chart as a technique for "dimensionality reduction" (we'll explain this term in an other course), even if it has been used for a long time in marketing (and elsewhere) to segment a dataset (see a great example and tutorial http://www.business-science.io/business/2016/09/04/CustomerSegmentationPt2.html[here]).
 
 //ST: !
-==== c. Two classic clustering methods: k-means and hierarchical clustering
+=== c. Two classic clustering methods: k-means and hierarchical clustering
 
 //ST: !
 IMPORTANT: just to remind you that the goal of this course is to make you familiar and knowledgeable about *what it means to do data science in a business context*, not to turn you in data scientists. Knowing the general principles of k-means and hierarchical clustering is useful if you want to work productively as a business person with data scientists.
@@ -193,21 +190,21 @@ Groups have now been found automatically. Identify what these groups mean and ho
 
 
 //ST: !
-==== d. hierarchical clustering
+=== d. hierarchical clustering
 
 //ST: !
 image::Hierarchical-clustering.png[align="center", title="Hierarchical clustering"]
 {nbsp} +
 
 //ST: !
-==== e. k-means clustering
+=== e. k-means clustering
 
 //ST: !
 image::k-means-clustering.png[align="center", title="k-means clustering"]
 {nbsp} +
 
 //ST: !
-==== f. clustering using community detection - via network analysis
+=== f. clustering using community detection - via network analysis
 
 //ST: !
 This last example of a clustering technique is a bit fancy - not usually represented in ML cheatsheets.
@@ -224,7 +221,6 @@ This clustering example is particularly interesting because the number of cluste
 (contrary to k-means where the number of clusters is set by the analyst: it is the "k" parameter).
 
 == 3. Last notes: clustering, useful beyond segmentation in marketing
-//ST: 3. Last notes: clustering, useful beyond segmenting in marketing
 
 //ST: !
 -> It reveals groups, relations between groups
@@ -235,12 +231,17 @@ This clustering example is particularly interesting because the number of cluste
 
 
 == The end
-//ST: The end
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+ role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: http://www.clementlevallois.net

@@ -1,6 +1,6 @@
-= What is data?
+= La donnée, un concept à multiples facettes
 Clément Levallois <levallois@em-lyon.com>
-2017-31-07
+2018-06-17
 
 last modified: {docdate}
 
@@ -12,249 +12,236 @@ last modified: {docdate}
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
+== !
 [.stretch]
 image::EMLyon_logo_corp.png[width="242" align="center"]
+== !
 
-{nbsp} +
 
-==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-==  1. Definition of data
-==  !
+== 1. Définition des données
+== !
+Le terme anglais "data" (1654) provient de http://www.etymonline.com/index.php?term=data["datum ", un mot latin pour "un fait, une observation de la nature"].
+"Données" est un seul fait, une seule entité, un seul point de la réalité.
+// +
+Le mot "données" signifiant "informations informatiques transmissibles et stockables" a été utilisé pour la première fois dans ce sens en 1946 en anglais.
+L'expression "traitement de données" a été utilisée pour la première fois en 1954, toujours en anglais.
 
-The English term "data" (1654) originates from “datum”, a Latin word for "a given".footnote:[http://www.etymonline.com/index.php?term=data]
-"Data" is a single factual, a single entity, a single point of matter.
+// +
+[TIP]
+====
+Réflexion: l'étymologie suggère que les données sont "un fait naturel". Pouvez-vous remettre cela en question?
+====
 
-==  !
-Using the word "data" to mean "transmittable and storable computer information" was first done in 1946.
-The expression "data processing" was first used in 1954.footnote:[http://www.etymonline.com/index.php?term=data]
+// +
+Les données représentent soit une entité unique, soit une collection de telles entités ("jeu de données").
+Nous pouvons aussi parler d'ensembles de données  (un ensemble de données, ou jeu de données est donc une collection de points de données).
 
-==  !
-=====
-Thoughts: the etymology suggests that data is "a given". Can you question this?
-=====
+== 2. La variété des ensembles de données
+== !
+|===
+|||
 
-==  !
-Data represents either a single entity, or a collection of such entitities ("data points").
-We can speak also of datasets instead of data (so a dataset is a collection of data points).
+|Une date
+|Une couleur
+|Une note
 
-==  2. Examples!
-==  !
+|Une relation d'amitié
+|Un son
+|Un battement de coeur
 
+|Un commentaire d'utilisateur
+|Une durée
+|Un curriculum vitae
+
+|===
+
+// +
 
 |===
 |||
 
-|A date
-|A color
-|A grade
+|Une image
+| Une longitude et une latitude
+|Un prix
 
-|A relation of friendship
-|A sound
-|A hearbeat
+|Un certain nombre d'amis
+|Une température
+|Une liste de films préférés
 
-|A user input
-|A duration
-|A curriculum vitae
-
+| etc ...
+| etc ...
+| etc ...
 |===
 
-==  !
+// +
+Ces exemples illustrent trois principes:
 
+== !
+==== a. Pensez aux données au sens large
+== !
+Les données ne sont pas seulement numériques, ni "ce qui se trouve dans mes feuilles de calcul". Vous devriez vous entraîner à penser aux données dans un sens plus large:
 
-|===
-|||
+// +
+- Les images sont des données
+- la langue est donnée (y compris l'argot, les mouvements de lèvre, etc.)
 
-|A picture
-|A longitude and latitude
-|A price
+// +
+- les relations sont des données: l'individu A est connu, l'individu B est connu, *mais la relation entre A et B est aussi une donnée*
+- les préférences, les états émotionnels ... sont des données
+- etc. Il n'y a pas de liste définitive, vous devez vous entraîner à regarder les situations d'affaires et penser: "où sont les données ?"
 
-|A number of friends
-|A temperature
-|A list of favorite movies
-
-|etc...
-|etc...
-|etc...
-|===
-
-
-
-==  3. Three take aways from the examples
-==  !
-
-==== a. Think about data in a broad sense
-==  !
-
-Data is not just text and figures. You should train in thinking about data in a broader sense:
-
-- pictures are data
-- language is data (including slang, lip movements, etc.)
-
-==  !
-- relations are data (you know individual A, you know individual B, but the relationship between A and B is data as well)
-- preferences, emotional states... are data
-- etc. There is no definitive list, you should train yourself looking at buisness situations and think: "where is the data?"
-
-==  !
-
-==== b. metadata is data, too
-==  !
-
-Metadata: this is some data describing some other data.
-
-Example:
+== !
+==== b. les métadonnées sont aussi des données
+== !
+Les métadonnées sont des données décrivant d'autres données.
+// +
+Exemple:
 ----
-The bibliographical reference <1>
-describing
-a book <2>
+La référence bibliographique <1>
+décrivant
+un livre <2>
 ----
-<1> the metadata
-<2> the data
+<1> les métadonnées
+<2> les données
 
-==  !
+// +
+- Les données sans ((métadonnées)) peuvent être sans valeur (imaginez une bibliothèque sans catalogue de bibliothèque)
+- Les métadonnées peuvent être informatives en soi, comme le montre le scandale ((NSA)) (lire cet article du New Yorker à propos de http://www.newyorker.com/news/news-desk/whats-the-matter -with-metadata[NSA et métadonnées]).
 
--> Data without metadata can be worthless (imagine a library without a library catalogue)
-
--> Metadata can be informative in its own right, as shown with the NSA scandal: footnote:[http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata]
-
-image:metadata.png["The trouble with metadata"]
-
-==  !
-==== c. zoom in, zoom out
-==  !
-
-We should remember considering that a data point can be itself a collection of data points:
-
-- a person walking into a building is a data point.
-- however this person is itself a collection of data points: location data + network relations + subscriber status to services + etc.
-
-So it is a good habit to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)
-
-==  4. Some essential vocabulary to discuss data
-
-==  !
-==== a. Formats, types, encoding
-==  !
+== !
+[.stretch]
+image::metadata.png[align="center", title = "Le problème avec les métadonnées"]
+== !
 
 
-==  !
+==== c. Zoom avant, zoom arrière
+== !
+Nous devrions nous rappeler de considérer qu'un point de données peut être lui-même une collection de points de données:
 
-image:tweet.png[width="500" align="center"]
+- Une personne entrant dans un bâtiment est un point de données.
+- cependant cette personne est elle-même une collection de points de donnée : données de localisation + réseau de relations + statut d'abonné à tel service + etc.
 
-==  !
-- This is a digital *medium* (because it's on screen as opposed to analogic, if we had printed the pic on paper)
-- The *type* of the data is textual + image
+C'est un bon réflexe de se demander si un point de données peut en fait être "dégroupé" (se désagréger en plus petits points de données / mesures)
 
-==  !
-- The text is *formatted* in plain text (meaning, no special formatting), as opposed to more structured data-interchange formats (https://codingislove.com/json-tutorial-indepth/[check json or xml]).
-- The *encoding* of the text is UTF-8. Encoding has to do with the issue: how to represent alphabets and signs from different languages in text? (not even mentioning emojis?). UTF-8 is an encoding which is one of the most universal.
-
-==  !
-- The tweet is part of a list of tweets. The list represents the *data structure* of my dataset, it is the way my data is organized. There are many alternative data structures: arrays, sets, dics, maps...
-- The tweet is stored as a picture (png file) on my hard disk. "png" is the *file format*. The data is *persisted* as a file on disk (could have been stored in a database instead).
-
-
-==  !
-==== b. Data presented as a table
-==  !
+== 3. Comment décrire les ensembles de données
+== !
+==== a. Formats, types, codage
+== !
 
 [.stretch]
-image::table.png[table]
-
-{nbsp} +
-
-==  !
-==== c. Data according to who owns it
-
-==  !
-- First party data: the data generated through the activities of your own organization.
-Your organization own it, which does not mean that consent from users is not required, when it comes to personal data.
-
-==  !
-- Second party data: the data accessed through partnerships.
-Without being the generator nor the owner of this data, partners make it available to you through an agreement.
-
-==  !
-- Third party data: the data acquired via purchase
-This data is acquired through a market transaction. Its uses still comes with conditions, especially for personal data.
-
-==  !
-==== d. Data: "sociodemo" or "behavior"?
-
-==  !
-- Sociodemogaphic or "sociodemio" data refers to information about individuals, describing fundamental attributes of their social identity: age, gender, place of residence, occupation, marital status and number of kids.
-
-==  !
-- Behavior data refers to any digital trace left by the individual in the course of it life: clicks on web pages, likes on Facebook, purchase transactions, comments posted on Tripadvisor...
-
-==  !
-Sociodemo data is typically well structured or easy to structure. It has a long history of collection and analysis, basically since census exists.
-
-==  !
-Behavior data allows to go further than sociodemo data: each individual can be characterized by its acts and tastes, well beyond what an age or marital status could define.
-
-But behavior data is typically not well structured and harder to collect.
+image::tweet.png[align = "center", book = "garder"]
+== !
 
 
-==  5. data and size
-==  !
+- Il s'agit d'un support *numérique* (parce qu'il est à l'écran par opposition à l'analogique, si nous avions imprimé l'image sur papier)
+- Le *type* des données est textuel + image
+// +
+- Le texte est formaté en *texte brut* (ce qui signifie, pas de formatage spécial), par opposition aux *formats d'échange de données* qui sont des marques de mise en forme ajoutées au texte pour faciliter sa lisibilité par un logiciel (https://codingislove.com/json-tutorial-indepth/[csv, json et xml]).
+// +
+- L'*encodage* (((data, encoding))) du texte est UTF-8 (un des encodages issus de la norme Unicode). L'encodage traite de la question : comment représenter les alphabets, les signes (par exemple: emojis) et les symboles, de différentes langues, dans le texte? UTF-8 est un encodage qui est l'un des plus universels.
+// +
+- Le tweet fait partie d'une liste de tweets. La liste représente la *structure de données* (((données, structure))) de l'ensemble de données, c'est la façon dont les données sont organisées. Il existe de nombreuses structures de données alternatives: tableaux, ensembles, "dics", "maps" ...
+// +
+- Le tweet est stocké sous forme d'image (fichier png) sur le disque dur. "png" est le *format de fichier*. Les données sont *persistées* en tant que fichier sur le disque (elles auraient pu être stockées dans une base de données à la place).
 
-image:russian_dolls.jpg[Data sizes]
+== !
+==== b. Données tabulaires
+== !
+*Les données tabulaires* (((données, tabulaires))) sont un moyen courant de gérer les ensembles de données, en les organisant en lignes et en colonnes :
 
-==  !
+== !
+[.stretch]
+image::table.png[pdfwidth = "100%", align = "center", title = "données tabulaires", book = "keep"]
+== !
+
+
+==== c. Données "first party", "second party" et "third party"
+== !
+- *First party data* (((données, "first party data"))): les données générées par les activités de votre propre organisation.
+Votre organisation en est propriétaire, ce qui ne signifie pas que le consentement des utilisateurs n'est pas requis en ce qui concerne les données personnelles.
+// +
+- *Second party data* (((données, "second party data"))): les données accessibles via des partenariats.
+Sans être le générateur ni le propriétaire de ces données, les partenaires le mettent à votre disposition dans le cadre d'un accord.
+// +
+- * Données tierces ou "third party data"* (((données, "third party data"))): les données acquises par un achat.
+Ces données sont acquises via une transaction de marché. Ses utilisations s'accompagnent toujours de conditions, notamment pour les données personnelles.
+
+== !
+==== d. Données sociodémo vs données de comportement
+== !
+- Les données sociodémogaphiques ou *sociodémo* ((données, sociodémo))) se réfèrent aux informations sur les individus, décrivant les attributs fondamentaux de leur identité sociale: âge, sexe, lieu de résidence, profession, statut matrimonial et nombre d'enfants.
+// +
+- *Les données de comportement ou "behavior data"* (((données, behavior data))) se réfèrent à toute trace numérique laissée par l'individu au cours de sa vie : clics sur des pages web, likes sur Facebook, transactions d'achat, commentaires postés sur Tripadvisor ...
+
+// +
+Les données sociodémographiques sont généralement bien structurées ou faciles à structurer.
+Elles ont une longue histoire de collecte et d'analyse, essentiellement depuis que le recensement existe.
+Les données de comportement permettent de profiler les individus beaucoup plus précisément que les données sociodémographiques seules : les individus peuvent être caractérisés par leurs actes et leurs goûts, bien au-delà de ce qu'un âge ou un état matrimonial pourrait définir.
+// +
+Comment les données de comportement peuvent-elles "battre" les données sociodémo, en terme de précision?
+Il est difficile de prédire avec une grande précision l'orientation politique, religieuse ou sexuelle d'un individu en fonction de son code postal, de son sexe et de son âge. http://www.pnas.org/content/110/15/5802[Une équipe de recherche a pu évaluer ces attributs personnels avec une grande précision basée sur les likes que les individus font sur les pages et les messages Facebook.] L'orientation politique (précision de 85%), l'orientation sexuelle (précision de 75% à 88%) et l'orientation religieuse (exactitude de 82%) peuvent être déterminées pour les personnes ayant fait en moyenne 170 likes.
+
+// +
+Mais les données comportementales ne sont généralement pas bien structurées, ce qui les rend plus coûteux à collecter, en terme de solution technologique, que de collecter des données sociodémographiques. La puissance et l'exactitude de la prédiction que procurent les données comportementales signifient également que les individus devraient être protégés contre l'invasion possible de leur vie privée. Il existe de grandes différences entre les pays en ce qui concerne les cadres juridiques protégeant les droits des individus. Nous en discutons dans le chapitre sur la confidentialité des données et le GDPR.
+
+== 4. Données et taille
+== !
+
+[.stretch]
+image::russian_dolls.jpg[align = "center", title = "Volumes de données"]
+== !
 
 
 |===
 |||
 
-|1 bit
+| 1 bit
 |
-|can store a binary value (yes / no, true / false...)
+| peut stocker une valeur binaire (oui / non, vrai / faux ...)
 
 
-|8 bits
-|1 byte (or octet)
-|can store a single character
+| 8 bits
+| 1 octet (ou octet)
+| peut stocker un seul caractère
 
-|~ 1,000 bytes
-|1 kilobyte (kb)
-|Can store a paragraph of text
+| ~ 1,000 octets
+| 1 kilooctet (kb)
+| Peut stocker un paragraphe de texte
 
-|~ 1 million bytes
-|1 megabyte (Mb)
-|Can store a low res picture.
+| ~ 1 million d'octets
+| 1 mégaoctet (Mb)
+| Peut stocker une photo basse résolution.
 |===
 
-==  !
+// +
 
 |===
 |||
 
-|~ 1 billion bytes
-|1 gigabyte (Gb)
-|Can store a movie
+| ~ 1 milliard d'octets
+| 1 gigaoctet (Go)
+| Peut stocker un film
 
-|~ 1 trillion bytes
-|1 terabyte (Tb)
-|Can store 1,000 movies. Size of commercial hard drives in 2017 is 2 Tb.
+| ~ 1 billion d'octets
+| 1 téraoctet (Tb)
+| Peut stocker 1 000 films. La taille des disques durs commerciaux en 2017 est de 2 To.
 
-|~ 1,000 trillion bytes
-|1 petabyte (Pb)
-|20 Pb = Google Maps in 2013
+| ~ 1000 trillions d'octets
+1 pétaoctet (Pb)
+| 20 Pb = Google Maps en 2013
 |===
 
-==  The end
-==  !
-
-Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+== Pour aller plus loin
+== !
+Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
-This course is made by Clement Levallois.
+Clement Levallois
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+Découvrez mes autres cours et projets : https://www.clementlevallois.net
 
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;

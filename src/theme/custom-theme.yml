@@ -24,7 +24,7 @@ font:
 page:
   background_color: ffffff
   layout: portrait
-  margin: [0.5in, 0.67in, 0.67in, 0.67in]
+  margin: [0.8in, 0.6in, 0.8in, 0.6in]
   # margin_inner and margin_outer keys are used for recto/verso print margins when media=prepress
   margin_inner: 0.75in
   margin_outer: 0.59in
@@ -94,7 +94,7 @@ heading:
   margin_top: $vertical_rhythm * 0.4
   margin_bottom: $vertical_rhythm * 0.9
 title_page:
-  background_image: photo.JPG
+  #background_image: photo.JPG
   align: right
   logo:
     top: 10%
@@ -187,7 +187,7 @@ example:
   padding: [$vertical_rhythm, $horizontal_rhythm, 0, $horizontal_rhythm]
 image:
   align: center
-  width: 80%
+  width: 60%
 prose:
   margin_top: $block_margin_top
   margin_bottom: $block_margin_bottom
@@ -236,7 +236,7 @@ toc:
   dot_leader:
     #content: ". "
     font_color: a9a9a9
-    #levels: 2 3
+    levels: 2 3 4
 # NOTE in addition to footer, header is also supported
 footer:
   font_size: $base_font_size_small

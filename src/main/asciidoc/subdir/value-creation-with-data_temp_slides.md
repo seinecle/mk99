@@ -1,4 +1,4 @@
-= 7 roads to data-driven value creation
+= Seven roads to data-driven value creation
 Clément Levallois <levallois@em-lyon.com>
 2017-09-10
 
@@ -11,320 +11,299 @@ last modified: {docdate}
 
 :title-logo-image: EMLyon_logo_corp.png[align="center"]
 
+== !
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
+== !
 
 
-==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
+//ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-
-==  7 roads to data-driven value creation
-==  !
-
-[IMPORTANT]
+[TIP]
 ====
 Not a closed list, not a recipe!
-
 Rather, these are essential building blocks for a strategy of value creation based on data.
 ====
 
-==  1. PREDICT
+== 1. Predict
+== !
 
-==  !
+//ST: !
+== !
 [.stretch]
-image::prediction.jpg[align="center"]
+image::prediction.jpg[pdfwidth="25%", align="center"]
+== !
 
 
-==  !
-==== Prediction: The ones doing it
+//ST: !
+== !
+==== Examples of companies
+== !
 
-==  !
-|===
+//ST: !
+1. Predicting crime image:predpol.png[pdfwidth="100", width="100", book="keep"]
 
-1. Predictive churn / default / ... (banks / telco)
+2. Predicting deals image:tilkee.png[pdfwidth="100", width="100", book="keep"]
 
-2. Predicting crime image:predpol.png[width="100"]
+3. Predictive maintenance image:cat.jpg[pdfwidth="100", width="100", book="keep"]
 
-3. Predicting deals image:tilkee.png[width="100"]
+//ST: !
+== !
+==== Obstacles and difficulties
+== !
 
-4. Predictive maintenance image:cat.jpg[width="100"]
+//ST: !
+1. The https://indatalabs.com/blog/data-science/cold-start-problem-in-recommender-systems[((cold start problem))]
 
-|===
-
-==  !
-==== Prediction: the hard part
-
-==  !
-
-|===
-
-1. Collecting data (https://indatalabs.com/blog/data-science/cold-start-problem-in-recommender-systems[cold start problem])
-
-2. Risk missing the long tail, algorithmic discrimination, stereotyping
+2. Risk missing the ((long tail)), ((algorithmic discrimination)), ((stereotyping))
 
 3. Neglect of novelty
-|===
 
 
-==  2. SUGGEST
-==  !
+== 2. Suggest
+== !
 
+//ST: !
+== !
 [.stretch]
-image::suggestion.jpg[align="center"]
+image::suggestion.jpg[pdfwidth="25%", align="center"]
+== !
 
 
-==  !
-==== Suggestion: The ones doing it
+//ST: !
+== !
+==== Examples of companies
+== !
 
-==  !
-|===
+//ST: !
+1. Amazon’s product recommendation system image:amazon.jpg[pdfwidth="100", width="100", book="keep"]
 
+2. Google’s “Related searches…” image:google.jpg[pdfwidth="100", width="100", book="keep"]
 
-1. Amazon’s product recommendation system image:amazon.jpg[width="100"]
+3. Retailer’s personalized recommendations image:auchan.jpg[pdfwidth="100", width="100", book="keep"]
 
-2. Google’s “Related searches…” image:google.jpg[width="100"]
+//ST: !
+== !
+==== Obstacles and difficulties
+== !
 
-3. Retailer’s personalized recommendations image:auchan.jpg[width="100"]
+//ST: !
+1. The ((cold start problem)), managing https://doi.org/10.1016/j.knosys.2016.08.014[((serendipity))] and http://wwwconference.org/proceedings/www2014/proceedings/p677.pdf[((filter bubble effects))].
 
-|===
-
-==  !
-==== Suggestion: the hard part
-
-==  !
-|===
-
-1. The https://indatalabs.com/blog/data-science/cold-start-problem-in-recommender-systems[cold start problem], managing serendipity (see review: https://doi.org/10.1016/j.knosys.2016.08.014[paying version], free version not available) and "filter bubble" effects (review: https://doi.org/10.1145/2566486.2568012[paying version], http://wwwconference.org/proceedings/www2014/proceedings/p677.pdf[free version here]).
-
-2. Finding the value proposition which goes beyond the simple “you purchased this, you’ll like that”
-
-|===
+2. Finding the ((value proposition)) which goes beyond the simple “you purchased this, you’ll like that”
 
 
-==  3. CURATE
-==  !
+== 3. Curate
+== !
 
+//ST: !
+== !
 [.stretch]
-image::curation.jpg[align="center"]
+image::curation.jpg[pdfwidth="25%", align="center"]
+== !
 
 
-==  !
-==== Curation: The ones doing it
+//ST: !
+== !
+==== Examples of companies
+== !
 
-==  !
-|===
+(((data, data curation)))
 
-1. Clarivate Analytics curating metadata from scientific publishing image:crv_logo_rgb_rev.png[width="100"]
+//ST: !
+1. ((Clarivate Analytics)) curating metadata from scientific publishing image:crv_logo_rgb_rev.png[pdfwidth="100", width="100", book="keep"]
 
-2. Nielsen and IRI curating and selling retail data image:nielsen.jpg[width="100"] image:iri.jpg[width="100"]
+2. Nielsen and IRI curating and selling retail data image:nielsen.jpg[width="100"] image:iri.jpg[pdfwidth="100", width="100", book="keep"]
 
-3. ImDB curating and selling movie data image:imdb.jpg[width="100"]
+3. ImDB curating and selling movie data image:imdb.jpg[pdfwidth="100", width="100", book="keep"]
 
-|===
+//ST: !
+== !
+==== Obstacles and difficulties
+== !
 
-==  !
-==== Curation: the hard part
+//ST: !
+1. Slow progress: curation needs ((human labor)) to insure high accuracy, it does not scale the way a computerized process would.
 
-==  !
-|===
+2. Must maintain continuity: missing a single year or month hurts the value of the overall dataset.
 
-1. Slow progress: curation needs human labor to insure high accuracy, it does not scale the way a computerized process would.
-
-2. Must maintain continuity: missing a single year or month hurts the value of the overall dataset disproportionally.
-
-3. Scaling up / right incentives for the workforce: the workforce doing the curation should be paid fairly, which is https://www.wired.com/story/amazons-turker-crowd-has-had-enough/[not the case yet].
+3. Scaling up / right incentives for the workforce: https://www.wired.com/story/amazons-turker-crowd-has-had-enough/[the workforce doing the digital labor of curation should be paid fairly], which is not the case yet.
 
 4. Quality control
 
-|===
 
+== 4. Enrich
+== !
 
-==  4. ENRICH
-==  !
-
+//ST: !
+== !
 [.stretch]
-image::enrich.jpg[align="center",width="500"]
+image::enrich.jpg[pdfwidth="25%", align="center",width="500"]
+== !
 
 
-==  !
-==== Enrichment: The ones doing it
+//ST: !
+== !
+==== Examples of companies
+== !
 
-==  !
-|===
+//ST: !
+1. Selling methods and tools to enrich datasets image:watson.png[pdfwidth="100", width="100", book="keep"]
 
-1. Selling methods and tools to enrich datasets image:watson.png[width="100"]
-
-2. Selling aggregated indicators image:edf.jpg[width="100"]
+2. Selling aggregated indicators image:edf.jpg[pdfwidth="100", width="100", book="keep"]
 
 3. Selling credit scores
 
-|===
+//ST: !
+== !
+==== Obstacles and difficulties
+== !
 
-==  !
-==== Enrichment: the hard part
-
-==  !
-|===
-
+//ST: !
 1. Knowing which cocktail of data is valued by the market
 
-2. Limit replicability
+2. Limit duplicability
 
 3. Establish legitimacy
 
-|===
+== 5. Rank / match / compare
+== !
 
-
-==  5. RANK / MATCH / COMPARE
-==  !
-
+//ST: !
+== !
 [.stretch]
-image::rank.jpg[align="center",width="500"]
+image::rank.jpg[pdfwidth="25%", align="center",width="500"]
+== !
 
 
-==  !
-==== Ranking / matching / comparing: The ones doing it
+//ST: !
+== !
+==== Examples of companies
+== !
 
-==  !
-|===
+//ST: !
+1. Search engines ranking results image:google.jpg[pdfwidth="100", width="100", book="keep"]
 
-1. Search engines ranking results image:google.jpg[width="100"]
-
-2. Yelp, Tripadvisor, etc… which rank places image:tripadvisor.jpg[width="100"]
+2. Yelp, Tripadvisor, etc… which rank places image:tripadvisor.jpg[pdfwidth="100", width="100", book="keep"]
 
 3. Any system that needs to filter out best quality entities among a crowd of candidates
 
-|===
+//ST: !
+== !
+==== Obstacles and difficulties
+== !
 
-==  !
-==== Ranking / matching / comparing: the hard part
-
-==  !
-|===
-
+//ST: !
 1. Finding emergent, implicit attributes (imagine: if you rank things based on just one public feature: not interesting nor valuable)
 
 2. Insuring consistency of the ranking (many rankings are less straightforward than they appear)
 
 3. Avoid gaming of the system by the users (for instance, http://www.nytimes.com/2011/02/13/business/13search.html[companies try to play Google's ranking of search results at their advantage])
 
-|===
+== 6. Segment / classify
+== !
+//ST: !
 
-
-==  6. SEGMENT / CLASSIFY
-==  !
-
+== !
 [.stretch]
-image::muffin.jpg[align="center",width="500"]
+image::muffin.jpg[pdfwidth="25%", align="center",width="500"]
+== !
 
 
-==  !
-==== Segmenting / classifying: The ones doing it
+//ST: !
+== !
+==== Examples of companies
+== !
 
-==  !
-|===
+//ST: !
+1. Tools for discovery / exploratory analysis by ((segmentation))
 
-1. Tools for discovery / exploratory analysis by segmentation
+2. Diagnostic tools (spam or not? buy, hold or sell? healthy or not?) image:medimsight.png[pdfwidth="100", width="100", book="keep"]
 
-2. Diagnostic tools (spam or not? buy, hold or sell? healthy or not?) image:medimsight.png[width="100"]
+//ST: !
+== !
+==== Obstacles and difficulties
+== !
 
-|===
-
-==  !
-==== Segmenting / classifying: the hard part
-
-==  !
-|===
-
+//ST: !
 1. Evaluating the quality of the comparison
 
 2. Dealing with boundary cases
 
 3. Choosing between a pre-determined number of segments (like in the k-means) or letting the number of segments emerge
 
-|===
+== 7. Generate / synthesize (experimental!)
+== !
+//ST: !
 
-
-==  7. GENERATE / SYNTHETIZE (experimental!)
-==  !
-
+== !
 [.stretch]
-image::generate.jpg[align="center"]
+image::generate.jpg[pdfwidth="25%", align="center"]
+== !
 
 
-==  !
-==== Generating: The ones doing it
+//ST: !
+== !
+==== Examples of companies
+== !
 
-==  !
-(click on the logos to get to the relevant web page)
+//ST: !
+1. Intelligent BI with https://www.aiden.ai/[Aiden] image:aiden.png[pdfwidth="100", width="100", book="keep"]
 
-==  !
+2. https://wit.ai/[wit.ai], the ((chatbot)) by FB image:wit.png[pdfwidth="100", width="100", book="keep"]
 
-[cols="a"]
-|===
+//ST: !
+3. https://www.cxcompany.com/digitalcx/[Virtual assistants] image:cx.jpg[pdfwidth="100", width="100", book="keep"]
 
-|[start=1]
-1. Intelligent BI with https://www.aiden.ai/[Aiden] image:aiden.png[width="100"]
+4. https://deepart.io/[Image generation] image:deepart.png[pdfwidth="100", width="100", book="keep"] (((image generation)))
 
-|[start=2]
-2. https://wit.ai/[wit.ai], the chatbot by FB image:wit.png[width="100"]
+//ST: !
+5. Close-to-real-life https://deepmind.com/blog/wavenet-generative-model-raw-audio/[((speech synthesis))] image:google.jpg[pdfwidth="100", width="100", book="keep"]
 
-|[start=3]
-3. https://www.cxcompany.com/digitalcx/[Virtual assistants] image:cx.jpg[width="100"]
+6. Generating realistic car models from a few parameters by https://www.autodeskresearch.com/publications/exploring_generative_3d_shapes[Autodesk]: image:autodesk.png[pdfwidth="100", width="100", title="Autodesk", book="keep"]
 
-|[start=4]
-4. https://deepart.io/[Image generation] image:deepart.png[width="100"]
-
-|[start=5]
-5. Close-to-real-life https://deepmind.com/blog/wavenet-generative-model-raw-audio/[speech synthesis] image:google.jpg[width="100"]
-
-|===
-
-[cols="a"]
-|===
-|[start=6]
-6. Generating realistic car models from a few parameters by https://www.autodeskresearch.com/publications/exploring_generative_3d_shapes[Autodesk]: image:autodesk.png[width="100", title="Autodesk"]
-
-|===
-
-==  !
+//ST: !
 A video on the generation of car models by Autodesk:
 
-==  !
+== !
+[.stretch]
 video::25xQs0Hs1z0[youtube]
+== !
 
-==  !
-==== Generating: the hard part
+//ST: !
+== !
+==== Obstacles and difficulties
+== !
 
-==  !
-|===
-
+//ST: !
 1. Should not create a failed product / false expectations
 
-2. Both classic (think of image:clippy.jpg[width="50"]) and frontier science: not sure where it’s going
+2. Both classic (think of image:clippy.jpg[pdfwidth="50", width="50", book="keep"]) and frontier science: not sure where it’s going
 
-|===
 
-==  !
+//ST: !
+== Combos
+== !
 
-==  Combos!
-
-==  !
+//ST: !
+== !
 [.stretch]
 image::Combinations.png[align="center", "title="Combinations"]
+== !
 
 
 
 
-==  The end
-==  !
+== The end
+== !
+//ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
 pass:[    <!-- Start of StatCounter Code for Default Guide -->

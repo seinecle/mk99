@@ -8,6 +8,7 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
+:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[align="center"]
 
@@ -311,9 +312,9 @@ video::25xQs0Hs1z0[youtube]
 //ST: Combos!
 
 //ST: !
-image::Combinations.png[align="center", "title="Combinations"]
-{nbsp} +
 
+image::data-driven-value-creation.png[align="center", title="Combinations"]
+{nbsp} +
 
 
 == The end

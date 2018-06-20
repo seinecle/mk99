@@ -8,7 +8,6 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -19,14 +18,13 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 
 == 1. Definition of CRM
-//ST: 1. Definition of CRM
 
-CRM: acronym for "Customer Relationship Management"
+((CRM)): acronym for "Customer Relationship Management"
 
 A CRM is a software used to manage the commercial relationship between a company and its clients.
 
 //ST: !
-A CRM is part of the *information system* (IS) of the firm. The information system designates all software, human resources and procedures devoted to keep track of all info necessary to the business of the firm - from sales to production, etc.
+A CRM is part of the *((information system))* (IS) of the firm. The information system designates all software, human resources and procedures devoted to keep track of all info necessary to the business of the firm - from sales to production, etc.
 
 //ST: !
 
@@ -39,7 +37,7 @@ image::How-a-CRM-integrates-in-the-information-system-of-a-firm.png[align="cente
 
 //ST: !
 
-Large companies often integrate these different blocks into an *ERP* ("Enterprise Resource Planning"), which is an even larger software able to plug different parts together.
+Large companies often integrate these different blocks into an *((ERP))* ("Enterprise Resource Planning"), which is an even larger software able to plug different parts together.
 
 //ST: !
 
@@ -48,8 +46,6 @@ The role of CRMs is evolving, and in this lecture *we make the case that "big da
 To illustrate, we will compare (and caricature a bit) a CRM from 2000 with a CRM of today:
 
 == 2. CRMs - before
-//ST: 2. CRMs - before
-
 //ST: !
 The name of the CRM - Customer *Relationship* Management suggests a kind of rich, personalized and human touch.
 
@@ -68,13 +64,13 @@ We must imagine the CRM software as a tool which *supported the management of sa
 - recording the VAT ("Value-added tax") collected through sales, which is a legal obligation for tax declaration purposes.
 
 //ST: !
-Do you see the customer being catered for in the functions described above? No? Me neither.
+Do you see the customer being catered for in the functions described above? Not really.
 
 //ST: !
-The customer was not completely forgotten: CRM are used to run loyalty programs and campaigns:
+The customer was not completely forgotten: CRM are used to run ((loyalty programs)) and campaigns:
 
 //ST: !
-==== a) loyalty programs
+=== a. loyalty programs
 
 //ST: !
 Loyalty programs afford discounts and special offers to its members.
@@ -94,7 +90,7 @@ source: http://www.sciencedirect.com/science/article/pii/S016781160600084X[Leenh
 Loyalty programs create extra value for the customer as well through the discounts and special offers they bring. But they tend to be limited in their personalization: typically, every customer can enjoy the same offers, even if many of them are irrelevant (discounts on diapers when you don't have a child etc.).
 
 //ST: !
-==== b) Direct mails and coupons
+=== b. Direct mails and coupons
 
 //ST: !
 Customers registered in a CRM with their postal address (after joining a loyalty program) can be sent promotional material and coupons.
@@ -103,20 +99,22 @@ Using printed material prohibits the customization to the personal needs of the 
 
 This decreases the efficiency of direct mail campaigns.
 
-== 3. The digital transformation, 2006-2015
-//ST: 3. The digital transformation, 2006-2015
+== 3. The ((digital transformation)) of society, 2006-2015
 
 Changes occurring in the past decade have transformed the landscape of the customer relationship.
 We should realize that:
 
 //ST: !
-==== a) Until 2006 only half of US and EU households, and 10% of the Chinese population, had Internet broadband access at home:
+=== a. Until 2006 only half of US and EU households, and 10% of the Chinese population, had ((Internet)) broadband access at home:
 
 //ST: !
+++++
+<iframe src="http://www.pewinternet.org/chart/home-broadband-use/iframe/" id="pew17070" scrolling="no" width="100%" height="100px" frameborder="0"></iframe>
+++++
 
+<script type='text/javascript'id='pew-iframe'>(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='http://www.pewinternet.org/wp-content/plugins/pew-scripts/js/iframeResizer.min.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;try{iFrameResize([],'iframe=pew17070')}catch(e){}};var embedder=document.getElementById('pew-iframe');embedder.parentNode.insertBefore(s,embedder)}if(window.attachEvent)window.attachEvent('onload',async_load);else window.addEventListener('load',async_load,false)})();</script>
+++++
 
-image::broadband.png[align="center", title="Home broadband use in the US"]
-{nbsp} +
 
 //ST: !
 
@@ -134,22 +132,23 @@ source: http://www.internetlivestats.com/internet-users/china/[Internetlivestats
 
 
 //ST: !
-==== b) Smartphones as we know them appeared just in 2007
+=== b. ((Smartphones)) as we know them appeared just in 2007
 
 //ST: !
 image::first-iphone.jpg[align="center", title="Steve Jobs presenting the iPhone in 2007"]
 {nbsp} +
 
 //ST: !
-==== c) Until 2009 social media was just taking off
+=== c. Until 2009 ((social media)) was just taking off
 
 //ST: !
+++++
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Kh6Sf0XDOZf1-FU4VznSydrxIRm3NRJfJHIq4KYKGV2_TAtbqoI634NSu9SR0LYk3UihYLvrlHhs/pubchart?oid=412747728&amp;format=interactive"></iframe>
+++++
 
-image::growth-sm.png[align="center", title="Growth of social media usage, 2004-2017"]
-{nbsp} +
 
 //ST: !
-==== d) Online retail is growing at a steady pace
+=== d. ((Online retail)) is growing at a steady pace
 
 //ST: !
 Together, Alibaba and Amazon have tripled customers in 5 years, nearing 900 million customers in 2017:
@@ -163,13 +162,13 @@ image::amazon-users.png[align="center",title="Active consumers on Amazon, 2012-2
 {nbsp} +
 
 //ST: !
-==== e) The technoloy for ad campaigns has transformed
+=== e. The technology for ad campaigns has transformed
 
 //ST: !
 Three key aspects for ad buying and selling:
 
 //ST: !
-- It became programmatic: ad space and ad inventories are bought and sold through automated market places (through https://digiday.com/media/wtf-supply-side-platform/[SSP], http://adage.com/lookbook/article/dsp/demand-side-platforms-work/299456/[DSP] and http://adage.com/lookbook/article/ad-exchange/needed-ad-exchanges-work/298394/[Ad exchanges]).
+- It became ((programmatic)): ad space and ad inventories are bought and sold through automated market places (through https://digiday.com/media/wtf-supply-side-platform/[SSP], http://adage.com/lookbook/article/dsp/demand-side-platforms-work/299456/[DSP] and http://adage.com/lookbook/article/ad-exchange/needed-ad-exchanges-work/298394/[Ad exchanges]).
 
 //ST: !
 - Ads are displayed across many channels (with https://en.wikipedia.org/wiki/Site_retargeting[retargeting])
@@ -179,10 +178,9 @@ Three key aspects for ad buying and selling:
 
 
 == 4. Consequence of this digital transformation: the customer relationship and CRMs have evolved
-//ST: 4. Consequence of this digital transformation: the customer relationship and CRMs have evolved
 
 //ST: !
-==== a) CRMs must handle multiple channels (distribution and communication)
+=== a. CRMs must handle multiple channels (distribution and communication)
 
 //ST: !
 Distribution and communication channels have multiplied and fragmented, and each have their different rules for content generation, data streams and communication modes.
@@ -214,7 +212,7 @@ From brick and mortar + call centers + sms + emails to ...
 
 
 //ST: !
-==== b) CRMs must handle complex communication patterns, not just "push campaigns"
+=== b. CRMs must handle complex communication patterns, not just "push campaigns"
 
 //ST: !
 Communication used to be mainly "outbound" (company pushing campaigns to customers) and occasionally inbound (customers calling or emailing back).
@@ -228,7 +226,7 @@ Three evolutions:
 - The high cost of pushing content through ads incentivizes firms to develop inbound communication - this is https://www.hubspot.com/inbound-marketing["inbound marketing"].
 
 //ST: !
-==== c) CRMs must accomodate multiple, fragmented touchpoints
+=== c. CRMs must accomodate multiple, fragmented touchpoints
 //ST: !
 
 - TV, radio, outdoor advertising, in store and outdoor displays: it continues
@@ -236,7 +234,7 @@ Three evolutions:
 - desktops, tablets, social TVs, but also... watches? cars? homes?
 
 //ST: !
-==== d) CRMs must handle personalized content
+=== d. CRMs must handle personalized content
 
 //ST: !
 - The expectations of customers have elevated: if your company has a Facebook page, it should not just display a catalogue. It should engage (converse) with customers.
@@ -246,9 +244,9 @@ Three evolutions:
 Several remarks on personalization:
 
 //ST: !
-i. "personalization" is the extreme end: one different view for each different customer or prospect.
+i. "((personalization))" is the extreme end: one different view for each different customer or prospect.
 
-*Micro-segmentation* is the step just before: identifying very precise, tiny segments in the population of customers and prospects.
+*((Micro-segmentation))* is the step just before: identifying very precise, tiny segments in the population of customers and prospects.
 
 //ST: !
 ii. "personalization" has been blamed for reinforcing "bubbles" or "tribes" views of the world (http://pubsonline.informs.org/doi/pdf/10.1287/mnsc.2013.1808[paying version] of the paper, free version https://www.researchgate.net/profile/Kartik_Hosanagar/publication/228233814_Will_the_Global_Village_Fracture_Into_Tribes_Recommender_Systems_and_Their_Effects_on_Consumer_Fragmentation/links/0046352960e0b2e12c000000/Will-the-Global-Village-Fracture-Into-Tribes-Recommender-Systems-and-Their-Effects-on-Consumer-Fragmentation.pdf[here]).
@@ -274,7 +272,6 @@ or see (in French) how https://medium.com/@djo/obsession-service-client-captain-
 
 
 == 5. Todays's CRMs must be data-driven
-//ST: 5. Todays's CRMs must be data-driven
 
 //ST: !
 Explaining the expression "data-driven CRMs":
@@ -299,18 +296,17 @@ b. Adequate human resources:
 
 - product managers with a tech culture (you), able to design and deploy a marketing strategy in a data intensive environment.
 - data scientists who will implement the strategy.
-- IT engineers to run the pumblery of the software.
+- IT engineers to run the software.
 
 //ST: !
 [start  = 3]
-c. Adequate organizational culture:
+c. Adequate ((organizational culture)):
 
 - This is probably the hardest part: making the top management, and the rest of the organization pay attention and believe in the possibilities afforded by these new way to manage customer relationships.
 - The organization needs to invest and devote enough operational resources to stop doing "business as usual" and develop a data-driven CRM.
 
 
 == The end
-//ST: The end
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
@@ -318,6 +314,6 @@ Find references for this lesson, and other lessons, https://seinecle.github.io/m
 image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]

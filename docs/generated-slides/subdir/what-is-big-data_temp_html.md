@@ -1,11 +1,11 @@
-= What is big data?
+= Définition du big data
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 
 last modified: {docdate}
 
 :icons!:
-:iconsfont:   font-awesome
+:iconsfont: font-awesome
 :revnumber: 1.0
 :example-caption!:
 :sourcedir: ../../../main/java
@@ -17,367 +17,214 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-//ST: !
 
-== Reading list
-Find the reading list for this session on Pinterest:
-https://fr.pinterest.com/seinecle/what-is-data-what-is-big-data/
+== 1. Le Big data est difficile à définir
 
-== 1. Big data is a mess
-//ST: 1. Big data is a mess
-
-image::ariely.png[align="center", title="Facebook post by Dan Ariely in 2013"]
+image::ariely.png [align = "center", title = "Message de Facebook de Dan Ariely en 2013", book = "keep"]
 {nbsp} +
 
-//ST: !
+Blagues à part, la définition du big data demande un peu de précision. Apportons une certaine clarté.
 
-Jokes aside, defining big data and what it covers needs a bit of precision. Let's bring some clarity.
+== 2. Les 3 V
 
-== 2. The 3 V
-//ST: 2. The 3 V
+Les big data sont généralement décrites avec le "((3 Vs))":
 
-Big data is usually described with the "3 Vs":
+=== *V* pour le volume
+La taille des jeux de données disponibles aujourd'hui est stupéfiante (ex: ((Facebook)) avait 250 milliards de photos en 2016).
+// +
+Les volumes de données augmentent à un rythme *accéléré*. Selon des sources, https://www.sciencedaily.com/releases/2013/05/130522085217.htm[90% de toutes les données dans le monde a été généré au cours des deux dernières années] (déclaration de 2013) ou dit différemment , https://appdevelopermagazine.com/4773/2016/12/23/more-data-will-be-created-in-2017-than-the-previous-5,000-years-of-humanity-/[plus de données être créé en 2017 que dans les 5000 ans de l'histoire de l'humanité].
 
-//ST: !
-==== *V* for Volume
-//ST: !
+=== *V* pour Variety
+"Variété" fait référence au fait que les données "non structurées" sont considérées comme de plus en plus utiles, alors qu'avant le big data, seules les données structurées valaient la peine d'être stockées et exploitées. Cela appelle à expliquer plus en détail la distinction entre données non structurées et structurées.
 
-The size of datasets available today is staggering (ex: Facebook had 250 billion pics in 2016).
+(((données, structurées vs non structurées)))
 
-We should also note that the volumes of data are increasing at an *accelerating rate*. According to sources, https://www.sciencedaily.com/releases/2013/05/130522085217.htm["90% of all the data in the world has been generated over the last two years"] (statement from 2013) or said differently, https://appdevelopermagazine.com/4773/2016/12/23/more-data-will-be-created-in-2017-than-the-previous-5,000-years-of-humanity-/["More data will be created in 2017 than the previous 5,000 years of humanity"]
+==== A - Données structurées
+*Données structurées* (((données structurées))) se réfère à des données formatées et organisées selon un ensemble de règles bien défini, ce qui les rend *lisibles par une machine*. Par exemple, les codes postaux sont un ensemble de données structuré car ils suivent une convention précise concernant le nombre de lettres et de chiffres qui les composent, ce qui facilite l'identification et leur « lecture » par un lecteur optique et un logiciel. Pareil avec les plaques d'immatriculation, les numéros de sécurité sociale ... Mais ce sont des exemples simples.
 
-//ST: !
-==== *V* for Variety
-//ST: !
+// +
+Qu'en est-il, par exemple, d'un formulaire d'impôt? Si chaque champ du formulaire est bien défini, alors les données collectées à travers le formulaire peuvent être dites « structurées ». En revanche, une forme où l'utilisateur peut écrire du texte libre (pensez à un commentaire sur un article de blog, ou un espace vide où les utilisateurs peuvent écrire un commentaire) produit des données non structurées : données qui ne suivent pas une convention spéciale pour leur taille et leur contenu. C'est généralement beaucoup plus difficile à traiter par le logiciel, donc à analyser.
 
-This is a bit less intuitive. "Variety" means here that data is increasingly unstructured and messy, and this is an important characteristic of the "big data" phenomenon. To carictature a bit, try to picture a shift from A to B:
+// +
+Pour résumer, pensez aux données structurées comme à tout ce qui peut être représenté comme des tableaux de nombres bien organisés et de petits textes avec le format, la taille et les conventions d'écriture attendues: annuaires, livres comptables, statistiques gouvernementales ...
 
-//ST: !
-
-*A - Structured data*:
-
-phonebooks, accounting books, governmental statistics... anything that can be represented as well organized tables of numbers and short pieces of text with the expected format, size, and conventions of writing.
-
-image::book.png[align="center", title="A book of accounts showing structured data"]
+image::book.png[align = "center", title = "Un livre de comptes montrant des données structurées", book = "keep"]
 {nbsp} +
 
-//ST: !
-*B - Unstructured data*:
+==== B - Données non structurées
+*Données non structurées* (((données non structurées))) se réfère à des ensembles d'éléments "indisciplinés": texte de n'importe quelle longueur, sans catégorisation appropriée, codé dans différents formats, y compris éventuellement des images, du son, des coordonnées géographiques...
 
-datasets made of "unruly" items: text of any length, without proper categorization, encoded in different formats, including possibly pictures, sound, geographical coordinates and what not...
+// +
+Ces ensembles de données sont beaucoup plus difficiles à traiter et à analyser, car ils sont pleins d'exceptions et de différences. Mais ils sont porteurs d'informations généralement riches: texte libre, informations enregistrées "dans la nature" ...
 
-//ST: !
-
-image::unstructured-data.png[align="center", title="Structured vs unstructured data"]
+image::unstructured-data.png[align = "center", title = "Données structurées vs données non structurées", book = "keep"]
 {nbsp} +
 
-//ST: !
-==== *V* for Velocity
-//ST: !
+=== *V* pour Velocity
+En un mot, http://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/[la vitesse de création et de communication des données s'accélère] :
+// +
+- Facebook héberge 250 milliards de photos? Il reçoit 900 millions de photos supplémentaires *par jour*
+- Examiner les tweets peut être fait automatiquement (avec des ordinateurs). Si vous voulez vous connecter à Twitter pour recevoir des tweets en temps réel pendant qu'ils sont tweetés, préparez-vous à recevoir plus de 500 millions de tweets *par jour*. Twitter appelle ce service le http://support.gnip.com/apis/firehose/["Twitter firehose"], qui reflète la vélocité du flux de tweets.
 
-In a nutshell, the speed of creation and communication of data is accelerating (http://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/[examples taken from here]):
-
-//ST: !
-
-- Facebook hosts 250 billion pics? It receives 900 million more pictures *per day*
-- Examining tweets can be done automatically (with computers). If you want to connect to Twitter to receive tweets in real time as they are tweeted, be prepared to receive in excess of 500 million tweets *per day*. Twitter calls this service the http://support.gnip.com/apis/firehose/["firehose"], which reflects the velocity of the stream of tweets.
-
-//ST: !
-image::firehose.jpg[align="center", title="The Twitter Firehose"]
+image::firehose.jpg[align = "center", title = "Le firehose de Twitter"]
 {nbsp} +
-//ST: !
 
-- Sensor data is bound to increase speed as well. While pictures, tweets, individual records... are single item data sent at intervals, more and more sensors can send data *in a continuous stream* (measures of movement, sound, etc.)
+- *Les données de capteur* (((données de capteur)) sont également susceptibles d'augmenter la vitesse. Alors que les images, les tweets, les enregistrements individuels ... sont des données mono-élément envoyées à intervalles réguliers, de plus en plus de capteurs peuvent envoyer des données *en flux continu* (mesures de mouvement, son, etc.)
 
-//ST: !
+// +
+Ainsi, la vitesse pose des défis qui lui sont propres : alors qu'un système peut gérer (stocker, analyser) 100 Go de données dans un temps donné (jour ou mois), il peut ne pas être capable de le faire en une seconde. Le big data fait référence aux problèmes et aux solutions que soulève la vitesse des données.
 
-So, velocity poses challenges of its own: while a system can handle (store, analyze) say 100Gb of data in a given time (day or month), it might not be able to do it in say, a single second. Big data refers to the problems and solutions raised by the velocity of data.
+=== Un 4ème *V* peut être ajouté, pour Véracité ou Valeur
+La véracité concerne la fiabilité et la conformité : les données sont-elles authentiques? Ont-elles été corrompues à n'importe quelle étape de leur traitement? Est-ce conforme aux réglementations locales et internationales?
 
-//ST: !
-==== A 4th *V* can be added, for Veracity
-//ST: !
+== 3. Quelle est la taille minimale à considérer comme "Big Data"? Tout est relatif
+Il n'y a pas de «seuil» ou de «taille minimale» d'un ensemble de données où les données passeraient de «petites données» à «grandes données». Il s'agit plutôt d'une notion *relative* : ce sont des données massives si les systèmes informatiques actuels ont du mal à gérer les jeux de données qu'elles doivent traiter. "Big data" est donc une notion relative.
 
-Veracity relates to trustworthiness and compliance: is the data authentic? Has it been corrupted at any step of its processing?
+=== a. relative au temps
 
-We will devote a session of this course to data compliance, which is a broad topic covering data privacy, cybersecurity, and the societal impacts of data.
+* Ce qui était considéré comme «Big Data» au début des années 2000 serait considéré comme « ((Small Data)) » aujourd'hui, car nous avons une meilleure puissance de stockage et de calcul.
+// +
+* C'est une course sans fin : à mesure que les systèmes informatiques s'améliorent pour faire face aux « big data actuels », les données sont générées dans des volumes encore plus importants, ce qui nécessite de nouveaux progrès / innovations pour les gérer.
 
-https://fr.pinterest.com/seinecle/data-compliance/[You can start reading the documents for this course here]
+=== b. par rapport à l'industrie
+* Ce qui est considéré comme « big data » par les PME non technologiques (petites et moyennes entreprises) peut être considéré comme insignifiant par les entreprises technologiques.
 
-== 3. What is the minimum size to count as "big data"? It's all relative
-//ST: 3. What is the minimum size to count as "big data"? It's all relative
+=== c. pas seulement sur la taille
+* la difficulté pour un système informatique de faire face à un ensemble de données peut être liée à la taille (essayez d'analyser 2 Tb de données sur votre ordinateur portable ...), *mais aussi* liées au contenu des données.
+// +
+* Par exemple, l'analyse des avis clients dans des dizaines de langues est plus difficile que l'analyse du même nombre de commentaires dans une seule langue.
+// +
+* Donc, la règle générale est la suivante : moins les données sont structurées, plus elles sont difficiles à utiliser, même si elles sont de petite taille (cela concerne le « V » de la variété vu plus haut).
 
-//ST: !
+=== d. pas de corrélation entre la taille et la valeur
+* https://hbr.org/2012/11/data-humans-and-the-new-oil["Les big data sont souvent appelées le nouvel or noir"], comme si elles elles coulaient comme du pétrole et qu'on pouvait en servir à la pompe, tout simplement.
+// +
+* En fait, le big data est *créé* : il faut du travail, un effort de conception et des choix à faire pour que les données viennent à exister (que dois-je collecter, comment le stocker, quelle structure lui donner?). L'intervention humaine dans la création de données détermine en grande partie si les données seront utiles plus tard.
+// +
+* Exemple: Imaginons que des clients puissent écrire des critiques en ligne de vos produits. Ces avis sont des données.
+Mais si si ces avis sont stockés sans indiquer qui est l'auteur de la critique (peut-être parce que les avis peuvent être publiés sans se connecter), les avis deviennent beaucoup moins utiles.
 
-There is no "threshold" or "minimum size" of a dataset where "data" would turn from "small data" to "big data".
+// +
+Les décisions de conception simples sur la façon dont les données sont collectées, stockées et structurées ont un impact énorme sur la valeur des données.
+// +
+Ainsi, en réaction à des ensembles de données volumineux, non structurés et mal organisés et de faible valeur, on avance parfois la notion de https://www.quora.com/After-Big-Data-Smart-Data-is-a-trend-in-2013-So-what-is-Smart-Data-Have-any-clear-definition[« données intelligentes » ((smart data)) : des données de petite taille mais bien organisées et annotées, qui en valorisent la valeur].
 
-It is more of a *relative* notion: it is big data if current IT systems struggle to cope with the datasets.
+== 4. D'où vient le big data?
+=== a. La numérisation de l'économie a généré de nouveaux volumes de données
 
-(see https://en.wikipedia.org/wiki/Big_data[Wikipedia definition] developing on this.)
+image::.png[align = "center", title = "Cinéma vs Netflix", book = "keep"]
+{nbsp} +
 
-//ST: !
+=== b. Les ordinateurs sont devenus plus puissants
 
-"Big data" is a relative notion... how so?
+image::.png[align = "center", title = "La loi de Moore", book="keep"]
+{nbsp} +
 
-//ST: !
+=== c. Le stockage des données est devenu moins cher chaque année
+image::.png[align="center", title = "Réduction des coûts de stockage des données" , book="keep"]
+{nbsp} +
 
-==== 1. relative to time
-//ST: !
+=== d. L'état d'esprit a changé sur ce qui "compte" comme données
+* Les données non structurées (voir ci-dessus pour la définition de "non structuré") n'étaient généralement pas stockées : cela prend beaucoup de place, et les logiciels pour les interroger n'étaient pas suffisamment développés.
+// +
+// +
+* Les données de réseau (également appelées "graphs") (qui est un ami avec qui, qui aime les mêmes choses que qui, etc.) étaient généralement négligées car difficiles à interroger. Les réseaux sociaux comme Facebook ont ​​fait beaucoup pour sensibiliser les entreprises à la valeur des graphs (en particulier les https://en.wikipedia.org/wiki/Social_graph[((graphs sociaux))]). https://neo4j.com/[((Neo4J))] ou http://titan.thinkaurelius.com/[Titan] sont des fournisseurs de bases de données spécialisés dans le stockage et l'analyse de données réseau.
+* Les données géographiques se sont démocratisées : des bases de données spécifiques (et coûteuses) ont longtemps existé pour stocker et interroger des "données de lieu" (régions, distances, informations de proximité ...) mais des solutions simples à utiliser se sont récemment multipliées, comme https://carto.com/[Carto].
 
-*  what was considered "big data" in the early 2000s would be considered "small data" today, because we have better storage and computing power today.
-* this is a never ending race: as IT systems improve to deal with "current big data", data gets generated in still larger volumes, which calls for new progress / innovations to handle it.
+=== e. Le logiciel open source accélère l'innovation
 
-//ST: !
-[start=2]
-==== 2. relative to the industry
-//ST: !
+À la fin des années 1990, les développeurs de logiciels ont rapidement changé d'habitudes : ils avaient tendance à utiliser de plus en plus de logiciels libres et à publier leurs logiciels en tant que logiciels libres.
+Jusque-là, la plupart des logiciels étaient "à source fermée": vous achetez un logiciel *sans possibilité* de réutiliser / modifier / augmenter son code source. Vous ne pouvez que l'utiliser tel quel.
+// +
+* L'open source (((open source))) facilite l'accès aux logiciels construits par d'autres, il est possible d'utiliser ces logiciels libres pour développer de nouvelles choses. Après plusieurs décennies, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[le logiciel open source s'est banalisé].
 
-* what is considered "big data" by non tech SMEs (small and medium-sized entreprises) can be considered trivial to handle by tech companies.
+=== f. Les promesses et attentes exagérées sur le big data
 
-//ST: !
-[start=3]
-==== 3. not just about size
-//ST: !
+Le http://www.gartner.com/technology/research/methodologies/hype-cycle.jsp[((Gartner hype cycle))] est un outil qui mesure la maturité d'une technologie, en différenciant les attentes des rendements réels:
 
-* the difficulty for an IT system to cope with a dataset can be related to the size (try analyzing 2 Tb of data on your laptop...), *but also* related to the content of the data.
+image::.png[align = "center", title = "Cycle Gartner Hype pour 2014", book = "keep"]
+{nbsp} +
 
-//ST: !
-* For example the analysis of customer reviews in dozens of languages is harder than the analysis of the same number of reviews in just one language.
+Ce graphique montre le modèle que toutes les technologies suivent au cours de leur vie:
 
-//ST: !
-* So the general rule is: the less the data is structured, the harder it is to use it, even if it's small in size (this relates to the "V" of variety seen above).
+// +
+- au début (à gauche du graphique), une invention ou découverte est faite dans un laboratoire de recherche, quelque part. Des reportages sont faits à ce sujet, mais cela fait peu de bruit.
+// +
+- alors, la technologie commence à capter l'intérêt des journalistes, des consultants, des professeurs, des industriels ... les attentes grandissent quant aux possibilités et aux promesses de la technologie. "Avec cela nous pourrons [insérer quelque chose d'étonnant ici]"
+// +
+- le sommet de la courbe est le «pic des attentes gonflées». Toutes les techniques et innovations ont tendance à être exagérées dans leur promesses, et même surexagérées. Cela signifie que la technologie devrait fournir plus qu'elle ne le fera sûrement, en réalité. Les gens se sont emballés.
+// +
+- Puis suit le "creux de la désillusion". Le doute s'installe. Les gens se rendent compte que la technologie n'est pas aussi puissante, facile, bon marché ou rapide à mettre en œuvre qu'elle semblait au premier abord. Les journaux commencent à rapporter des nouvelles déprimantes sur la technologie, et quelques mauvaises rumeurs.
+// +
+- enfin: la pente des lumières. Les têtes se refroidissent, les attentes s'alignent sur ce que la technologie peut réellement fournir. Les marchés se stabilisent et se consolident : certaines entreprises ferment et des acteurs clés continuent de se développer.
+- alors: plateau de productivité. La technologie est maintenant normalisée, elle est utilisée de façon courante pour des usages précis.
 
-//ST: !
-[start=4]
-==== 4. no correlation between size and value
-//ST: !
+// +
+[NOTE]
+====
+Toute technologie peut «mourir» - tomber en désuétude - avant d'atteindre le côté droit du graphique bien sûr.
+====
 
-* Big data is often called https://hbr.org/2012/11/data-humans-and-the-new-oil["the new oil"], as if it would flow like oil and would power engines "on demand".
+// +
+En 2014, les big data étaient proches du sommet de la courbe: elles retenaient beaucoup d'attention mais leur utilisation pratique en 5 à 10 ans était encore incertaine. Il y avait de « grandes attentes » quant à leur avenir, et ces attentes stimulent l'investissement, la recherche et les affaires dans le Big Data.
+// +
+En 2017, le «big data» est toujours au top des technologies hype, mais se décompose en «deep learning» et en «machine learning». Notez également la catégorie "Intelligence artificielle générale":
 
-//ST: !
+image::.png[align = "center", title = "Gartner Hype Cycle pour 2017 ", book =" keep "]
+{nbsp} +
 
-* Actually, big data is *created*: it needs work, conception and design choices to even exist (what do I collect? how do I store it? what structure do I give to it?). The human intervention in creating data determines largely whether data will be of value later.
+=== g. Le Big Data transforme les industries et est devenu une industrie en soi
+Les entreprises actives dans les «Big data» se divisent en plusieurs sous-domaines: l'industrie de la gestion de l'infrastructure informatique pour les big data, les cabinets de conseil, les fournisseurs de logiciels, les applications métiers, etc ...
+// +
+https://twitter.com/mattturck[Matt Turck, VC chez FirstMarkCap], crée chaque année une feuille pour visualiser les principales entreprises actives dans ces sous-domaines. Ceci est la version 2017:
 
-//ST: !
+<<<<
 
-* Example: Imagine customers can write online reviews of your products. These reviews are data.
-But if you store these reviews without an indication of who has authored the review (maybe because reviews can be posted without login oneself), then the reviews become much less valuable.
-Simple design decisions about how the data is collected, stored and structured have a huge impact on the value of the data.
+image::C:\Users\levallois\Google Drive\open\mk99\docs\src\main\asciidoc\images/Matt-Turck-FirstMark-2017-Big-Data-Landscape_panorama.png[pdfwidth = "100%", align = "center", title = "Paysage de données pour 2017", book = "keep"]
+{nbsp} +
 
-//ST: !
-So, in reaction to large, unstructured and badly curated datasets with low value at the end, a notion of "smart data" is sometimes put forward: data which can be small in size but which is well curated and annotated, enhancing its value (see also https://www.quora.com/After-Big-Data-Smart-Data-is-a-trend-in-2013-So-what-is-Smart-Data-Have-any-clear-definition[here]).
+Vous trouverez une https://mattturck.com/bigdata2017/[version haute résolution de ce panorama Big data], une version Excel et un commentaire très intéressant sur ce site : https://mattturck.com/bigdata2017/
 
-//ST: !
-[start=5]
-==== 5. as an expression, "big data" is evolving
-//ST: !
+== 5. Quel est l'avenir du Big Data?
+=== a. Plus de données arrivent
+L'*Internet des objets* (((IoT - Internet des objets))) désigne l' https://seinecle.github.io/IoT4Entrepreneurs/[extension d'Internet aux objets, au-delà des pages web ou des emails].
+// +
+L' *IoT * (((IoT - Internet des objets))) est utilisé pour *faire* des choses (affichage d'informations à l'écran, robots pilotes, etc.) mais aussi beaucoup pour *collecter des données* dans leurs environnements, via des capteurs.
+// +
+Ainsi, le développement des *objets connectés* (((IoT - Internet des objets))) conduira à une augmentation considérable du volume de données collectées.
 
-* It is interesting to note that "hot" expressions, like "big data", tend to wear out fast. They are too hyped, used in all circumstances, become vague and over sold.
-For big data, we observe that it is peaking in 2017, while new terms appear:
+=== b. Les cadres réglementaires vont augmenter en complexité
+Les impacts sociétaux du big data et de l'IA ne sont pas banals, allant de la discrimination raciale, financière et médicale à des fuites géantes de données, ou au déséquilibre économique à l'ère des robots et de l'IA sur le lieu de travail.
+// +
+Les réglementations publiques aux niveaux national et international tentent de rattraper ces défis.
+À mesure que la technologie évolue rapidement, nous pouvons anticiper que les impacts sociétaux des big data occuperont une place centrale.
 
-//ST: !
+=== c. en tant qu'expression, "big data" évolue
+* Il est intéressant de noter que les expressions "à la mode", comme "big data", ont tendance à s'user rapidement. Elles sont sur-utilisées, mentionnées en toutes circonstances, deviennent vagues et trop vendues.
+Pour les données volumineuses, nous observons qu'on atteint un sommet en 2017, alors que de nouveaux termes apparaissent:
 
 pass:[<iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe> ]
 
-
-//ST: !
-
-What are the differences between these terms?
-
-* "Big data" is by now a generic term
-
-* "Machine learning" puts the focus on the scientific and software engineering capabilities enabling to do something useful with the data (predict, categorize, score...)
-
-//ST: !
-
-* "Artificial intelligence" puts the emphasis on human-like possibilities afforded by machine learning. Often used interchangeably with machine learning.
-
-* And "data science"? This is a broad term encompassing machine learning, statistics, ... and any analytical methods to work with data and interpret it. Often used interchangeably with machine learning. "Data scientist" is a common job description in the field.
-
-== 4. Where did big data come from?
-//ST: 4. Where did big data come from?
-//ST: !
-
-[start=1]
-==== 1. Data got generated in bigger volumes because of the digitalization of the economy
-//ST: !
-
-image::Movie-theater-vs-Netflix.png[align=center, title="Movie theater vs Netflix"]
-{nbsp} +
-
-//ST: !
-[start=2]
-==== 2. Computers became more powerful
-//ST: !
-
-image::Moore's-law.png[align=center, title="Moore's law"]
-{nbsp} +
-
-
-//ST: !
-[start=3]
-==== 3. Storing data became cheaper every year
-//ST: !
-
-image::Decreasing-costs-of-data-storage.png[align=center, title="Decreasing costs of data storage"]
-{nbsp} +
-
-//ST: !
-[start=4]
-==== 4. The mindset changed as to what "counts" as data
-//ST: !
-
-* Unstructured (see above for definition of "unstructured") textual data was usually not stored: it takes a lot space, and software to query it was not sufficiently developped.
-
-//ST: !
-* Network data (also known as graphs) (who is friend with whom, who likes the same things as whom, etc.) was usually neglected as "not true observation", and hard to query. Social networks like Facebook made a lot to make businesses aware of the value of graphs (especially https://en.wikipedia.org/wiki/Social_graph[social graphs]).
-
-//ST: !
-* Geographical data has democratized: specific (and expensive) databases existed for a long time to store and query "place data" (regions, distances, proximity info...) but easy-to-use solutions have multiplied recently.
-
-
-//ST: !
-[start=5]
-==== 5. With open source software, the rate of innovation accelerated
-//ST: !
-
-In the late 1990s, a rapid shift in the habits of software developers kicked in: they tended to use more and more open source software, and to release their software as open source.
-Until then, most of the software was "closed source": you buy a software *without the possibility* to reuse / modify / augment its source code. Just use it as is.
-
-//ST: !
-
-Open source software made it easy to get access to software built by others and use it to develop new things. Today, all the most popular software in machine learning are free and open source.
-
-See the Wikipedia article for a developed history of open source software: https://en.wikipedia.org/wiki/History_of_free_and_open-source_software
-
-//ST: !
-[start=6]
-==== 6. Hype kicked in
-//ST: !
-
-The http://www.gartner.com/technology/research/methodologies/hype-cycle.jsp[Gartner hype cycle] is a tool measuring the maturity of a technology, differentiating expectations from actual returns:
-
-//ST: !
-
-image::Gartner-Hype-Cycle-for-2014.png[align=center, title="Gartner Hype Cycle for 2014"]
-{nbsp} +
-
-//ST: !
-
-This graph shows the pattern that all technologies follow along their lifetime:
-
-//ST: !
-
-- at the beginning (left of the graph), an invention or discovery is made in a research lab, somewhere. Some news reporting is done about it, but with not much noise.
-- then, the technology starts picking the interest of journalists, consultant, professors, industries... expectations grow about the possibilities and promises of the tech. "With it we will be able to [insert amazing thing here]"
-
-//ST: !
-
-- the top of the bump is the "peak of inflated expectations". All techs tend to be hyped and even over hyped. This means the tech is expected to deliver more than it surely will, in actuality. People get overdrawn.
-- then follows the "Trough of Disillusionment". Doubt sets in. People realize the tech is not as powerful, easy, cheap or quick to implement as it first seemed. Newspapers start reporting depressing news about the tech, some bad buzz spreads.
-
-//ST: !
-
-- then: slope of Enlightenment. Heads get colder, expectations get in line with what the tech can actually deliver. Markets stabilize and consolidate: some firms close and key actors continue to grow.
-- then: plateau of productivity. The tech is now mainstream.
-
-//ST: !
-(all technology can "die" - fall into disuse - before reaching the right side of the graph of course).
-
-In 2014, big data was near the top of the curve: it was getting a lot of attention but its practical use in 5 to 10 years were still uncertain. There were "great expectations" about its future, and these expectations drive investment, research and business in big data.
-
-
-//ST: !
-
-In 2017, "big data" is still on top of hyped technologies, but is broken down in "deep learning" and "machine learning". Note also the "Artificial General Intelligence" category:
-
-//ST: !
-
-image::Gartner-Hype-Cycle-for-2017.png[align=center, title="Gartner Hype Cycle for 2017"]
-{nbsp} +
-
-
-//ST: !
-[start=7]
-==== 6. Big data transforms industries, and has become an industry in itself
-//ST: !
-
-Firms active in "Big data" divide in many subdomains: the industry to manage the IT infrastructure for big data, the consulting firms, software providers, industry-specific applications, etc...
-
--> the field is huge.
-
-//ST: !
-Matt Turck, https://twitter.com/mattturck[VC at FirstMarkCap], creates every year a sheet to visualize the main firms active in these subdomains.
-This is the 2017 version:
-
-//ST: !
-image::Matt-Turck-FirstMark-2017-Big-Data-Landscape.png[align=center, title="Big data landscape for 2017"]
-{nbsp} +
-
-//ST: !
-
-You can find a high res version of this pic, an Excel sheet version, and a very interesting comment https://mattturck.com/bigdata2017/[all here].
-
-== 5. What is the future of big data?
-//ST: 5. What is the future of big data?
-//ST: !
-
-[start=1]
-==== 1. More data is coming
-//ST: !
-
-The Internet of things (IoT) designates the extension of Internet to objects, not just web pages and emails (https://seinecle.github.io/IoT4Entrepreneurs/[see here for details]).
-
-//ST: !
-
-These connected objects are used to *do* things (display stuff on screen, pilote robots, etc.) but also very much to *collect data* in their environments (through sensors).
-
-The development of connected objects will lead to a tremendous increase in the volume of data collected.
-
-We have a session devoted to IoT later in this course. You can already starting reading the documents for this session:
-
-- https://fr.pinterest.com/seinecle/internet-of-things/[Internet of things]
-
-//ST: !
-[start=2]
-==== 2. Discussions about big data will fuse with AI
-//ST: !
-Enthusiasm, disappointment, bad buzz, worries, debates, promises... the discourse about AI will grow. AI is fed on data, so the future of big data will intersect with what AI becomes.
-
-//ST: !
-We have a session devoted to data science / machine learning / AI later in this course. You can already start reading the documents for this course:
-
-- https://fr.pinterest.com/seinecle/what-is-data-science/[What is data science?]
-- https://fr.pinterest.com/seinecle/ai-applications-in-business/[AI applications in business]
-
-//ST: !
-[start=3]
-==== 3. Regulatory frameworks will grow in complexity
-
-//ST: !
-Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic (un)stability in the age of robots and AI in the workplace.
-
-//ST: !
-Public regulations at the national and international levels are trying to catch up with these challenges. As technology evolves quickly, we can anticipate that societal impacts of big data will take center stage.
-
-//ST: !
-We have a session devoted to data compliance in this course. You can already start reading the documents for this course:
-
-- https://fr.pinterest.com/seinecle/data-compliance/[Data compliance]
-
-//ST: !
-
-== The end
-//ST: The end
-//ST: !
-
-Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+//+
+
+Quelles sont les différences entre ces termes?
+
+* "Big Data" est maintenant un terme générique.
+* *Machine learning* (((apprentissage automatique))) met l'accent sur les capacités de génie scientifique et logiciel permettant de faire quelque chose d'utile avec les données (prédire, catégoriser, marquer ...)
+// +
+* *Intelligence artificielle* (((intelligence artificielle))) met l'accent sur les possibilités "quasi-humaines" offertes par l'apprentissage automatique. Le terme est souvent utilisé de manière interchangeable avec l'apprentissage automatique. L'intelligence artificielle est alimentée par des données, de sorte que l'avenir des big data se recoupe avec ce que deviendra l'IA.
+// +
+* Et * data science * (((data science)))? C'est un terme général englobant l'apprentissage automatique, les statistiques et de nombreuses méthodes analytiques pour travailler avec les données et les interpréter. Souvent utilisé de manière interchangeable avec l'apprentissage automatique. *Data scientist* (((data scientist))) est une description d'emploi devenue commune, y compris en français.
+
+== Pour aller plus loin
+Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
-This course is made by Clement Levallois.
+Clement Levallois
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+Découvrez mes autres cours et projets : https://www.clementlevallois.net
 
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;

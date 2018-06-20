@@ -8,6 +8,7 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
+:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[align="center"]
 
@@ -156,10 +157,8 @@ Tufeckci does not argue that Google, Facebook or the likes inherently have anti-
 - some past experiments on voting in the US, and current developments on electronic surveillance in China, show that the power of these technologies has already consequences in the real world.
 
 //ST: !
-++++
-<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/zeynep_tufekci_we_re_building_a_dystopia_just_to_make_people_click_on_ads" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
-++++
 
+https://www.ted.com/talks/zeynep_tufekci_we_re_building_a_dystopia_just_to_make_people_click_on_ads[link to the TEDx conference by Zeynep Tufekci]
 {empty} +
 
 

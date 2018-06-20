@@ -8,6 +8,7 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
+:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -53,25 +54,20 @@ This makes it easy to stack up servers one on the other.
 Because for Google and other companies crunching data for their business, a lot of servers are needed, so gaining on space is a real issue.
 
 //ST: !
-
 When many servers are piled up together and put in a big tall box, this is called a *rack* of servers, and look like this:
 
 //ST: !
-
 image::rack.jpg[align="center",title="A rack of servers"]
 {nbsp} +
 
 //ST: !
-
 When all the racks of servers are put in the same room, this is called a "data center" and looks like this:
 
 //ST: !
-
 image::datacenter.jpg[align="center",title="A data center"]
 {nbsp} +
 
 //ST: !
-
 Look at this video showing a tour of a data center at Google:
 
 video::XZmGGAbHqa0[youtube]
@@ -88,25 +84,21 @@ Then the "cloud" changed this.
 //ST: 2. The cloud
 
 //ST: !
-
 The term "cloud" was made popular by Amazon with their service “Amazon Elastic Compute Cloud” (Amazon EC2) launched in 2006.
 
 This service was new in many ways:
 
 //ST: !
-
 - you can rent servers owned by Amazon, at a distance, when you need them, for a duration that you choose.
 
 - there is an emphasis on ease of use: no need to know the technical details of these servers (how they are plugged, how they are configured…)
 
 //ST: !
-
 - you are just given a login + password and you can start using these servers for your needs.
 
 - it's "elastic": if you need more servers, or more powerful servers, it's just possible. No need for signing a new contract or to evaluate whether Amazon has the capacity... it's dimensioned to be possible.
 
 //ST: !
-
 Let's compare a situation with or without the cloud:
 
 //ST: !
@@ -128,6 +120,7 @@ Maintain it (security, etc.)
 When the job is over: what do you do with your server? That’s a sunk cost.
 
 If the job happens to need more computing capacity than your server offers: you are stuck with your too-small-server!
+
 |On https://aws.amazon.com/ec2/?nc1=h_ls[Amazon’ EC2 website], you click to choose a server among those on offer: it is *on demand*
 
 You run your job on it. Costs are metered precisely.

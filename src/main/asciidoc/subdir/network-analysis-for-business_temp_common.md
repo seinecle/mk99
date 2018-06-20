@@ -8,7 +8,6 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -19,7 +18,6 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 
 == 1. Definitions
-//ST: 1. Definitions
 
 //ST: !
 A network is a dataset made of entities [underline]#and their relations#
@@ -31,7 +29,7 @@ image::network-1.png[align="center", title="This is a network"]
 {nbsp} +
 
 //ST: !
-==== a. Social networks
+=== a. ((Social networks))
 
 //ST: !
 As users, we are very familiar with one type of networks - social networks:
@@ -52,7 +50,7 @@ image::colored-network.png[align="center", title="source: http://www.minanacheva
 
 
 //ST: !
-==== b. Other networks
+=== b. Other networks
 
 //ST: !
 It is important to realize that networks cover more than relations between humans:
@@ -70,7 +68,7 @@ image::ingredients-network.png[align="center", title="source: http://arxiv.org/a
 
 //ST: !
 Semantic networks are another broad category of networks.
-The method is the same: we need to find a way to "relate" wors in a text, then we get a network.
+The method is the same: we need to find a way to "relate" words in a text, then we get a network.
 
 //ST: !
 The general idea is the same as in cooking recipes: 2 terms of a text will be connected in the network if they frequently appeared in same paragraphs.
@@ -81,7 +79,7 @@ image::editorials.png[align="center", title="source: http://www.nature.com/natur
 {nbsp} +
 
 //ST: !
-==== c. How big can networks be?
+=== c. How big can networks be?
 
 //ST: !
 With a surge in computing power in the age of big data, and the adequate NOSQL databases (such as https://neo4j.com/[Neo4J] or http://orientdb.com/orientdb/[OrientDB]), we can deal with huge networks:
@@ -104,17 +102,16 @@ image::swedish.png[align="center", title="source: http://twittercensus.se/graph2
 
 
 //ST: !
-==== d. How to discuss networks? Some vocabulary
+=== d. How to discuss networks? Some vocabulary
 
 //ST: !
 image::Terminology.png[align="center",title="Terminology"]
 {nbsp} +
 
 == 2. Networks: what use for business?
-//ST: 2. Networks: what use for business?
 
 //ST: !
-==== a. Segmentation
+=== a. ((Segmentation))
 //ST: !
 
 If a network is made of entities and their relations, then a segment is a subgroup of entities in the network, which has some cohesion or something in common.
@@ -132,14 +129,14 @@ image::segmentation-with-community-detection-in-networks.png[align="center", tit
 {nbsp} +
 
 //ST: !
-==== b. Finding key players
+=== b. Finding key players
 //ST: !
 
 image::Key-players-visualized-by-resizing-nodes.png[align="center", title="Key players visualized by resizing nodes"]
 {nbsp} +
 
 //ST: !
-==== c. Understanding how information spreads
+=== c. Understanding how information spreads
 
 //ST: !
 A data science company created "Where does my tweet go", which traces how a given tweet spreads through retweets.
@@ -154,7 +151,7 @@ image::WDMTG-by-MFGLabs.png[align="center", title="WDMTG by MFGLabs"]
 
 
 //ST: !
-==== d. Identifying patterns - for fraud detection, control or intelligence.
+=== d. Identifying patterns - for ((fraud detection)), control or intelligence.
 
 //ST: !
 In the following video, we see participants in the money market (short term loans between banks) in Europe.
@@ -176,10 +173,6 @@ video::KBIZoUikfwo[youtube]
 
 
 == 3. To go further
-//ST: To go further
-
-//ST: !
-(if viewing from a screen you can click on the covers to get to the Amazon page)
 
 //ST: !
 image:golbeck.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Web-Jennifer-Golbeck/dp/0124055311]
@@ -189,7 +182,7 @@ image:barabasi.jpg[width=150,link=https://www.amazon.com/Network-Science-Albert-
 
 
 //ST: !
-You can also visit my tutorials on Gephi, the leading software to visualize large graphs:
+You can also visit my tutorials on ((Gephi)), the leading software to visualize large graphs:
 
 https://seinecle.github.io/gephi-tutorials/
 
@@ -201,6 +194,11 @@ Find references for this lesson, and other lessons, https://seinecle.github.io/m
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+e is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: http://www.clementlevallois.net
 

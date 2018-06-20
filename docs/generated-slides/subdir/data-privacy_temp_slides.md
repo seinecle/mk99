@@ -1,6 +1,6 @@
-= Essential notions on privacy and data protection
+= Notions essentielles sur la vie privée et la protection des données personnelles
 Clément Levallois <levallois@em-lyon.com>
-2017-11-01
+2018-06-20
 
 last modified: {docdate}
 
@@ -11,200 +11,196 @@ last modified: {docdate}
 
 :title-logo-image: EMLyon_logo_corp.png[align="center"]
 
+== !
 [.stretch]
 image::EMLyon_logo_corp.png[align="center"]
+== !
 
 
-==  'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
+//ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 
-==  1. Privacy: just one aspect of data protection
+== 1. Confidentialité: un des aspects de la protection des données
+== !
 
-==  !
+// +
+== !
 [.stretch]
-image::Defining-data-protection.png[align=center, title="Defining data protection"]
+image::.png[align = "center", title = "Plusiuers définitions possibles à la protection des données", book = " keep"]
+== !
 
 
-==  2. When is personal information considered "data"?
+== 2. Quand les informations personnelles sont-elles considérées comme des "données"?
+== !
 
-==  !
-At the most basic level, anything could count as "data" with possibly a personal character to it, including comments written about somebody in a personal notbook.
+// +
+Au niveau le plus basique, n'importe quoi pourrait compter comme "données" avec peut-être un caractère personnel, y compris les commentaires écrits sur quelqu'un dans un cahier personnel.
 
-In practice, "data" starts to to be considered as such when:
+En pratique, les "données" commencent à être considérées comme telles lorsque:
 
-==  !
-This is information capable of being processed *automatically*
+// +
+- C'est une information susceptible d'être traitée *automatiquement*
+-> Par exemple : données sur les ordinateurs
+// +
+- Ou des *information structurées* qui peut être utilisée pour faciliter la récupération d'informations précises sur des individus spécifiques
+-> Indice: documents papier, systèmes de classement, bases de données
 
--> Hint: data on computers, not unstructured written notes
+== 3. Les données personnelles sont importantes en raison du droite à la vie privée
+== !
 
-==  !
-*Or* infomation intended to be processed automatically
+https://www.cnil.fr/fr/definition/donnee-personnelle[Définition des données personnelles]:
 
--> Hint: paper records to be fed in a computer (eg, via scanning), not any pile of paper on your desk.
-
-==  !
-Or *structured information* that can be used to facilitate the retrieval of specific information on specific individuals
-
--> Hint: paper records, filing systems, databases
-
-==  3. Personal data matters because of privacy
-
-==  !
-[quote, CNIL (French Independent Administrative Authority),https://www.cnil.fr/en/personal-data-definition]
+// +
+[citation, CNIL (Autorité administrative indépendante française)]
 ____
-Personal data are any anonymous data that can be double checked to identify a specific individual (e.g. fingerprints, DNA, or information such as “the son of the doctor living at 11 Belleville St. in Montpellier does not perform well at school”).
+Toute information identifiant directement ou indirectement une personne physique (ex. nom, no d’immatriculation, no de téléphone, photographie, date de naissance, commune de résidence, empreinte digitale...).
 ____
 
-==  !
-Personal data is data that an individual has the right to keep private. *How and why is privacy an issue*?
+// +
+Les données personnelles sont des données qu'une personne a le droit de garder privées. *Comment et pourquoi la vie privée est-elle une question importante*?
+// +
+La vie privée est mentionnée à l'article 12 de la http://www.un.org/fr/universal-declaration-human-rights/index.html[Déclaration universelle des droits de l'homme de 1948]:
 
-==  !
-Privacy is mentioned in the Article 12 of the http://www.un.org/en/universal-declaration-human-rights/index.html[1948 Universal Declaration of Human Rights]:
-
-==  !
-[quote,Universal Declaration of Human Rights]
+// +
+[citation, Déclaration universelle des droits de l'homme]
 ____
-No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honor and reputation. Everyone has the right to the protection of the law against such interference or attacks.
-____
-
-==  !
-This article from the Declaration is found in similar forms in most of the conventions on human rights in the world.
-
-==  !
-This right to privacy enables individuals to define their identity in relation to the world, by giving each individual the power to control what to keep for themselves, and what to reveal / share with the world.
-
-==  !
-In 2005, a report on https://books.google.fr/books?id=yeVRrrJw-zAC&pg=PA1&dq=right+to+privacy+tel+aviv&hl=en&ei=T0IhTaWhEI-msQOizMWZCg&sa=X&oi=book_result&ct=result&redir_esc=y#v=onepage&q=right%20to%20privacy%20tel%20aviv&f=false[Privacy in the Digital Environment] by the Haifa Center of Law & Technology develops:
-
-==  !
-____
-The right to privacy is our right to keep a domain around us, which includes all those things that are part of us, such as our body, home, property, thoughts, feelings, secrets and identity.
+Nul ne peut être soumis à une ingérence arbitraire dans sa vie privée, sa famille, son domicile ou sa correspondance, ni à des atteintes à son honneur et à sa réputation. Toute personne a droit à la protection de la loi contre de telles ingérences ou attaques.
 ____
 
-==  !
+// +
+Cet article de la Déclaration se retrouve sous des formes similaires dans la plupart des conventions sur les droits de l'homme dans le monde.
+// +
+Ce *droit à la vie privée* (((vie privée, droit à la))) permet aux individus de définir leur identité par rapport au monde, en donnant à chacun le pouvoir de contrôler ce qu'il préfère garder pour développer sa vie intérieure, et ce qu'il choisit de révéler le monde. Construire sa propre image, et l'image qu'on présente au monde : c'est construire son identité, et c'est qu'une vie privée contribue à maintenir.
+
+// +
+En 2005, un rapport sur https://books.google.fr/books?id=yeVRrrJw-zAC&pg=PA1&dq=right+to+privacy+tel+aviv&hl=en&ei=T0IhTaWhEI-msQOizMWZCg&sa=X&oi=book_result&ct=result&redir_esc=y#v=onepage&q=right%20to%20privacy%20tel%20aviv&f=false[Vie privée dans l'environnement numérique, par le Centre de droit et de technologie de Haïfa] :
+
+// +
 ____
-The right to privacy gives us the ability to choose which parts in this domain can be accessed by others, and to control the extent, manner and timing of the use of those parts we choose to disclose.
+Le droit à la vie privée est notre droit de garder un domaine autour de nous, qui comprend toutes les choses qui font partie de nous, comme notre corps, notre maison, nos biens, nos pensées, nos sentiments, nos secrets et notre identité.
 ____
 
-==  !
-In addition to shaping an individual's own personal sphere and identity, privacy also underpins the development of a relation between the individual and the society she is part of:
+// +
+____
+Le droit à la vie privée nous donne la possibilité de choisir quelles parties de ce domaine peuvent être consultées par d'autres, et de contrôler l'étendue, la manière et le moment de l'utilisation des parties que nous choisissons de divulguer.
+____
 
-==  !
--> when an individual's privacy is secured, they don't have to fear that their personal opinions and activities (as simple as reading a newspaper) will endanger them as citizens.
+// +
+En plus de façonner la sphère personnelle et l'identité d'un individu, la vie privée est également à la base du développement d'une relation entre l'individu et la société dont il fait partie:
 
--> this gives liberty to individuals to develop political expressions which do not necessarily conform with the power structure in place. This would be much harder if everyone's political opinions could not be kept private.
+// +
+-> lorsque la vie privée d'une personne est protégée, elle n'a pas à craindre que ses opinions personnelles et ses activités (aussi simples que la lecture d'un journal) les mettent en danger en tant que citoyens.
 
-==  4. Evolution of privacy
+-> ceci donne la liberté aux individus de développer des expressions politiques qui ne sont pas nécessairement conformes à la structure de pouvoir en place. Ce serait beaucoup plus difficile si les opinions politiques de tout le monde ne pouvaient pas rester privées.
 
-==  !
-Privacy is a social norm which transforms as societies evolve. Since the 2000s, a couple of tendencies can be identified:
 
-==  !
-- increasing tracking of the digital traces left by individuals by companies which use these traces for ad targeting and data reselling
+== 4. Évolution de la vie privée
+== !
 
-==  !
-- increasing state surveillance through digital means, against security threats and unspecified goals.
+// +
+La vie privée est une norme sociale qui se transforme à mesure que les sociétés évoluent. Depuis les années 2000, quelques tendances peuvent être identifiées:
 
-==  !
-- broader public acceptance of new forms of violations to privacy.
+// +
+- il y a une augmentation du suivi des traces numériques laissées par les individus par les entreprises qui utilisent ces traces pour le ciblage publicitaire et la revente de données.
+// +
+- augmentation de la ((surveillance d'état)) par des moyens numériques, contre des menaces de sécurité et des buts non spécifiés.
+// +
+- acceptation croissante par le public de nouvelles formes de violation de la vie privée.
 
-For example, https://en.wikipedia.org/wiki/Reality_television[TV shows] where participants are filmed 24/24 and where they reveal their (real or supposed) intimacy, dates back only from the late 1990s.
+Par exemple, la https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9r%C3%A9alit%C3%A9[téléréalité, qui montre des participants filmés 24/24], et qui révèle leur intimité (réelle ou supposée), ne date que de la fin des années 1990.
 
-[link=http://www.imdb.com/title/tt0120382/]
+[link = http: //www.imdb.com/title/tt0120382/]
+== !
 [.stretch]
-image::truman.jpg[align=center, title="The Truman Show, 1998"]
+image::truman.jpg[align = "center", title = "Le Truman SHow - film de 1998", livre = "book"]
+== !
 
 
-==  5. Privacy of the consumer and privacy of citizens: the relations between the two
+== 5. Vie privée du consommateur et vie privée des citoyens: les relations entre les deux
+== !
 
-//ST]: !
-Thanks to whistleblowers like https://en.wikipedia.org/wiki/Edward_Snowden[Edward Snowden], the extent of privacy breaches by governmental agencies is now better known:
+Grâce aux lanceurs d'alerte comme https://en.wikipedia.org/wiki/Edward_Snowden[Edward Snowden], ((("Snowden, Edward"))) un ancien consultant pour la National Security Agency - NSA, l'ampleur des violations de la vie privée par les agences gouvernementales sont maintenant mieux connues.
+// +
+Ce trailer de "CitizenFour" donne une idée des dangers auxquels sont confrontés les lanceurs d'alerte lorsqu'ils révèlent comment les agences gouvernementales espionnent leurs citoyens :
 
-==  !
-video::108771171[vimeo]
+== !
+[.stretch]
+video::xHuPkbP2NSo[youtube]
+== !
 
-==  !
-Journalists, academics, activists and NGOs such as the https://www.eff.org/[Electronic Frontier Foundation] make the case that:
+Des journalistes, des universitaires, des militants et des ONG tels que la https://www.eff.org/[Electronic Frontier Foundation] font valoir que:
 
-- consumers are insufficently aware and sensitive of how much information is captured in the normal conduct of their lives, just by using mobile phones and apps, web browsing, and increasingly in public places.
+- les consommateurs ne sont pas suffisamment conscients et sensibles à la quantité d'informations captées dans la conduite normale de leur vie, simplement en utilisant des téléphones mobiles et des applications, la navigation sur le Web et, de plus en plus, dans des lieux publics.
+// +
+- les citoyens sont insuffisamment conscients et sensibles à la violation de leur vie privée par les agences de sécurité de leur propre pays de résidence, et par d'autres pays.
+// +
+Beaucoup de citoyens considèrent que s'ils ne violent pas la loi, ils n'ont «rien à cacher».
+// +
+De même, les consommateurs pourraient trouver que négocier leurs données privées contre un service gratuit et certaines publicités ciblées, est une bonne affaire.
+// +
+La sociologue de la technologie http://technosociology.org/[Zeynep Tufekci] va plus loin:
 
-- citizens are insufficently aware and sensitive of the breach of their privacy by security agencies of their own country of residence, and by other countries.
+// +
+Selon elle, outre la surveillance et la perte de vie privée, des entreprises comme Google et Facebook développent un business model basé sur le ciblage publicitaire par l'analyse de données personnelles, et conçoivent une architecture de persuasion *utilisable / détournable* à des fins politiques.
 
-==  !
-Many citizens consider that if they don't break the law, then they have "nothing to hide".
+// +
+*Tufekci* ((("Tufekci, Zeynep"))) ne fait pas valoir que Google, Facebook ou les goûts ont intrinsèquement des fins antidémocratiques, mais que:
 
-==  !
-Similarly, consumers might find that bargaining their private data against a free service and some targeted ads, is a good deal.
+// +
+- ils développent une architecture de l'information qui a le potentiel de façonner les opinions des foules,
+- Ils le font sans transparence
+// +
+- quelques expériences passées sur le vote aux Etats-Unis, et les développements actuels sur la ((surveillance électronique)) en ((Chine)), montrent que la puissance de ces technologies a déjà des conséquences dans le monde réel:
 
+// +
+== !
+[.stretch]
+video::iFTWM7HV2UI[youtube]
+== !
+// +
 
-==  !
-Sociologist of technology http://technosociology.org/[Zeynep Tufekci] goes further:
+== 6. Conclusion: la protection des données dans les affaires, plus qu'une obligation réglementaire
+== !
+La collecte et le traitement des données à caractère personnel par les entreprises ont une grande portée et ne doivent pas être considérés uniquement du point de vue juridique par les entreprises.
+// +
+Le sujet engage la https://en.wikipedia.org/wiki/Corporate_social_responsibility[Responsabilité sociale de l'entreprise].
+// +
+La nature du *business model* (((business model, basé sur le profilage du consommateur))) - elle-même, profilant les consommateurs de la manière la plus spécifique - a des conséquences profondes sur la société.
 
-==  !
-Her argument is that besides "surveillance" and "lack of privacy", companies like Google and Facebook developing a business model based on ad targeting by analytics on personal data, design a *persuasion architecture* which can be used / highjacked for political purposes.
+// +
+Quelles seront les prochaines étapes? Plusieurs tendances peuvent être identifiées:
 
-==  !
-Tufeckci does not argue that Google, Facebook or the likes inherently have anti-democratic purposes, but that:
+// +
+1. Certaines voix s'interrogent sur le business model qui consiste à servir des publicités ciblées basées sur des données personnelles. Ce modèle est-il aussi efficace que la valorisation boursière de Facebook le suggère? https://digiday.com/media/ft-warns-advertisers-discovering-high-levels-of-domain-spoofing/[ L'étendue de la fraude dans les publicités numériques], est difficile à mesurer, comme le montre la vidéo ci-dessous:
 
-==  !
-- they develop of an information architecture which has the potential to shape opinions of crowds,
-- they do so without transparency
-
-==  !
-- some past experiments on voting in the US, and current developments on electronic surveillance in China, show that the power of these technologies has already consequences in the real world.
-
-==  !
-++++
-<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/lang/en/zeynep_tufekci_we_re_building_a_dystopia_just_to_make_people_click_on_ads" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
-++++
-
-{empty} +
-
-
-==  6. Conclusion: data protection in business, more than an regulatory obligation
-
-==  !
-The collection and treatment of personnal data by businesses has far reaching implication, and should not be considered merely from a legal standpoint by firms.
-
-==  !
-The topic engages the https://en.wikipedia.org/wiki/Corporate_social_responsibility[Corporate social responsibility] of the firm.
-
-==  !
-The nature of the business model itself - profiling consumers in the most specific way - has profound consequences on the design of the environment surrounding individuals.
-
-==  !
-What are the next steps? Several trends can be identified:
-
-==  !
-1. some voices question the business model: are personalized ads based on personal data as effective as the market valuation of Facebook suggests? How much is just scam? Some voices warn against the extent of the fraud, as the video below shows (see also https://digiday.com/media/ft-warns-advertisers-discovering-high-levels-of-domain-spoofing/[here], or https://digiday.com/media/ft-warns-advertisers-discovering-high-levels-of-domain-spoofing/[here]):
-
-==  !
+== !
+[.stretch]
 video::oVfHeWTKjag[youtube]
+== !
 
-==  !
-[start=2]
-2. legislation by political authorities to protect the public interest, especially via an obligation for transparency, in the face of more personal data being collected, for a larger variety of purposes. See our related lecture on the GDPR.
+// +
+[début = 2]
+2. Des situations contrastées en terme de cadre législatif visant à à protéger la vie privée, en particulier par le biais d'une obligation de transparence face à la collecte de plus de données personnelles. L'Europe renforce ce cadre avec la RGPD (voir https://www.pinterest.fr/seinecle/gdpr/en-fran%C3%A7ais/[une sélection d'articles sur le sujet de la RGPD]), la Chine met au contraire en place un système de surveillance des individus très puissant (voir https://www.pinterest.fr/seinecle/china-data-science-ai/en-fran%C3%A7ais/[une sélection d'articles sur la Chine])
+// +
+[début = 3]
+3. Un approfondissement du modèle actuel avec plus de données personnelles collectées, dans les espaces privés (maisons) et le comportement dans les lieux publics (gestion des foules dans les rues, les stades, etc.). Ainsi, Echo d'Amazon, le HomePod d'Apple et Google Home ont fait une percée chez les consommateurs. Ces équipements renforcent la captation de données à caractère personnelle :
 
-==  !
-[start=3]
-3. a deepening of the current model with more personal data being collected, in private spaces (homes) and behavior in relation to the public (crowd management in streets, stadiums, etc.):
-
+== !
 [.stretch]
-image::amazon-echo.jpg[align="center",title= "Echo Alexa, a home assistant collecting personal data"]
+image::amazon-echo.jpg[align = "center", title = "Echo Alexa", livre = "book"]
+== !
 
 
-
-==  The end
-==  !
-
-Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+== Pour aller plus loin
+== !
+Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
-This course is made by Clement Levallois.
+Clement Levallois
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+Découvrez mes autres cours et projets : https://www.clementlevallois.net
 
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;
