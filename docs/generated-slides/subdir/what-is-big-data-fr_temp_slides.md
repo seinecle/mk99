@@ -24,7 +24,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 == !
 
 [.stretch]
-image::ariely.png [align = "center", title = "Message de Facebook de Dan Ariely en 2013", book = "keep"]
+image::ariely.png [align = "center", title="Message de Facebook de Dan Ariely en 2013", book = "keep"]
 == !
 
 
@@ -64,7 +64,7 @@ Pour résumer, pensez aux données structurées comme à tout ce qui peut être 
 
 == !
 [.stretch]
-image::book.png[align = "center", title = "Un livre de comptes montrant des données structurées", book = "keep"]
+image::book.png[align = "center", title="Un livre de comptes montrant des données structurées", book = "keep"]
 == !
 
 
@@ -78,7 +78,7 @@ Ces ensembles de données sont beaucoup plus difficiles à traiter et à analyse
 
 == !
 [.stretch]
-image::unstructured-data.png[align = "center", title = "Données structurées vs données non structurées", book = "keep"]
+image::unstructured-data.png[align = "center", title="Données structurées vs données non structurées", book = "keep"]
 == !
 
 
@@ -92,7 +92,7 @@ En un mot, http://www.zdnet.com/article/volume-velocity-and-variety-understandin
 
 == !
 [.stretch]
-image::firehose.jpg[align = "center", title = "Le firehose de Twitter"]
+image::firehose.jpg[align = "center", title="Le firehose de Twitter"]
 == !
 
 
@@ -161,7 +161,7 @@ Ainsi, en réaction à des ensembles de données volumineux, non structurés et 
 == !
 
 [.stretch]
-image::.png[align = "center", title = "Cinéma vs Netflix", book = "keep"]
+image::Cinéma-vs-Netflix.png[align = "center", title="Cinéma vs Netflix", book = "keep"]
 == !
 
 
@@ -169,14 +169,14 @@ image::.png[align = "center", title = "Cinéma vs Netflix", book = "keep"]
 == !
 
 [.stretch]
-image::.png[align = "center", title = "La loi de Moore", book="keep"]
+image::La-loi-de-Moore.png[align = "center", title="La loi de Moore", book="keep"]
 == !
 
 
 ==== c. Le stockage des données est devenu moins cher chaque année
 == !
 [.stretch]
-image::.png[align="center", title = "Réduction des coûts de stockage des données" , book="keep"]
+image::Réduction-des-coûts-de-stockage-des-données-.png[align="center", title="Réduction des coûts de stockage des données" , book="keep"]
 == !
 
 
@@ -208,7 +208,7 @@ Le http://www.gartner.com/technology/research/methodologies/hype-cycle.jsp[((Gar
 
 == !
 [.stretch]
-image::.png[align = "center", title = "Cycle Gartner Hype pour 2014", book = "keep"]
+image::Cycle-Gartner-Hype-pour-2014.png[align = "center", title="Cycle Gartner Hype pour 2014", book = "keep"]
 == !
 
 
@@ -247,7 +247,7 @@ En 2017, le «big data» est toujours au top des technologies hype, mais se déc
 
 == !
 [.stretch]
-image::.png[align = "center", title = "Gartner Hype Cycle pour 2017 ", book =" keep "]
+image::Gartner-Hype-Cycle-pour-2017-.png[align = "center", title="Gartner Hype Cycle pour 2017 ", book =" keep "]
 == !
 
 
@@ -262,7 +262,7 @@ https://twitter.com/mattturck[Matt Turck, VC chez FirstMarkCap], crée chaque an
 
 == !
 [.stretch]
-image::Matt-Turck-FirstMark-2017-Big-Data-Landscape_panorama.png[pdfwidth = "100%", align = "center", title = "Paysage de données pour 2017", book = "keep"]
+image::Matt-Turck-FirstMark-2017-Big-Data-Landscape_panorama.png[pdfwidth = "100%", align = "center", title="Paysage de données pour 2017", book = "keep"]
 == !
 
 

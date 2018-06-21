@@ -39,6 +39,8 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 ++++
 
 
+== !
+
 
 == !
 Les "statistiques régulières" permettent, entre autres :

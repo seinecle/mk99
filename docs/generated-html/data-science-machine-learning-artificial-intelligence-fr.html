@@ -538,7 +538,7 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#_2_trois_familles_d_apprentissage_automatique">2. Trois familles d&#8217;apprentissage automatique</a>
 <ul class="sectlevel2">
 <li><a href="#_a_l_apprentissage_non_supervisé">a. L&#8217;apprentissage non supervisé</a></li>
-<li><a href="#_b_l_approche_d_apprentissage_supervisée">b. L&#8217;approche d&#8217;apprentissage * supervisée *</a></li>
+<li><a href="#_b_l_approche_d_apprentissage_strong_supervisé_strong">b. L&#8217;approche d&#8217;apprentissage  <strong>supervisé</strong></a></li>
 <li><a href="#_c_l_approche_de_l_apprentissage_par_strong_renforcement_strong_reinforcement_learning">c. L&#8217;approche de l&#8217;apprentissage par <strong>renforcement</strong> (reinforcement learning)</a></li>
 <li><a href="#_d_quand_l_apprentissage_automatique_est_il_utile">d. Quand l&#8217;apprentissage automatique est-il utile?</a></li>
 </ul>
@@ -796,7 +796,7 @@ L&#8217;apprentissage automatique ou machine learning prête généralement atte
 </div>
 </div>
 <div class="sect2">
-<h3 id="_b_l_approche_d_apprentissage_supervisée">b. L&#8217;approche d&#8217;apprentissage * supervisée *</h3>
+<h3 id="_b_l_approche_d_apprentissage_strong_supervisé_strong">b. L&#8217;approche d&#8217;apprentissage  <strong>supervisé</strong></h3>
 <div class="paragraph">
 <p>L'<strong>Apprentissage supervisé</strong>  est l&#8217;approche consistant à calibrer un modèle basé sur l&#8217;histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
 Prenons l&#8217;exemple suivant : comment faire pour qu&#8217;un ordinateur "devine" si une image représente un chat ou un chien? Pour cela, en approche supervisée, nous allons commencer par récolter 50000 images ou plus de chats et de chiens, avec leurs légendes associées, comme ceci:</p>
@@ -880,23 +880,18 @@ Prenons l&#8217;exemple suivant : comment faire pour qu&#8217;un ordinateur "dev
 <p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>C&#8217;est ce qu&#8217;on appelle l&#8217;apprentissage <strong>supervisé</strong> car l&#8217;apprentissage est guidé, dirigé, encadré par des exemples passés.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe src="https://www.youtube.com/embed/4HCE1P-m1l8?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
+<p>C&#8217;est donc ce qu&#8217;on appelle l&#8217;apprentissage <strong>supervisé</strong> car l&#8217;apprentissage est guidé, dirigé, encadré par des exemples passés.</p>
 </div>
 <div class="paragraph">
-<p>Il est important de retenir que :</p>
+<p>Deux limites à retenir sur l&#8217;apprentissage supervisé :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>La collecte de grands ensembles de données pour la phase d&#8217;entraînement est clé</strong>. Sans ces données, pas d&#8217;apprentissage supervisé.</p>
+<p>pour l&#8217;apprentissage supervisé soit possible, <strong>il est nécessaire de disposer de grands ensembles de données pour la phase d&#8217;entraînement</strong>. Sans ces données, pas d&#8217;apprentissage supervisé.</p>
 </li>
 <li>
-<p>l&#8217;apprentissage supervisé ne permet pas d&#8217;analyser des situations entièrement différentes de ce qui est représenté dans le jeu de données sur lequel l&#8217;apprentissage a été entrainé. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.</p>
+<p>l&#8217;apprentissage supervisé <strong>ne permet pas d&#8217;analyser des situations entièrement différentes de ce qui est représenté dans le jeu de données sur lequel l&#8217;apprentissage a été entrainé</strong>. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.</p>
 </li>
 </ul>
 </div>
@@ -1075,13 +1070,11 @@ Le processus du traitement et de l&#8217;analyse des données a été formalisé
 <div class="sect2">
 <h3 id="_a_faible_vs_forte_ia_intelligence_artificielle_faible_vs_forte_ai">a. Faible vs forte IA intelligence artificielle, faible vs forte AI</h3>
 <div class="paragraph">
-<p><strong>IA faible</strong>  désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).</p>
+<p><strong>IA faible</strong>  désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).
+L&#8217;IA faible est généralement le résultat de l&#8217;application de systèmes experts ou des techniques d&#8217;apprentissage machine vues ci-dessus.</p>
 </div>
 <div class="paragraph">
-<p>L&#8217;IA faible est généralement le résultat de l&#8217;application de systèmes experts ou des techniques d&#8217;apprentissage machine vues ci-dessus.</p>
-</div>
-<div class="paragraph">
-<p>*IA forte"  est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d&#8217;elle-même. Rien ne s&#8217;approche de ça.</p>
+<p><strong>IA forte</strong>  est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d&#8217;elle-même. Rien ne s&#8217;approche de ça.</p>
 </div>
 <div class="paragraph">
 <p><strong>Donc l&#8217;IA est synonyme d&#8217;IA faible pour le moment, et couvre les trois familles de machine learning vues ci-dessus.</strong></p>
@@ -1128,7 +1121,7 @@ Clement Levallois</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-06-21 00:00:31 CEST
+Last updated 2018-06-21 08:45:41 CEST
 </div>
 </div>
 </body>

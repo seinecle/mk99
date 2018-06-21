@@ -20,7 +20,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 == 1. Le Big data est difficile à définir
 
-image::ariely.png [align = "center", title = "Message de Facebook de Dan Ariely en 2013", book = "keep"]
+image::ariely.png [align = "center", title="Message de Facebook de Dan Ariely en 2013", book = "keep"]
 {nbsp} +
 
 Blagues à part, la définition du big data demande un peu de précision. Apportons une certaine clarté.
@@ -48,7 +48,7 @@ Qu'en est-il, par exemple, d'un formulaire d'impôt? Si chaque champ du formulai
 // +
 Pour résumer, pensez aux données structurées comme à tout ce qui peut être représenté comme des tableaux de nombres bien organisés et de petits textes avec le format, la taille et les conventions d'écriture attendues: annuaires, livres comptables, statistiques gouvernementales ...
 
-image::book.png[align = "center", title = "Un livre de comptes montrant des données structurées", book = "keep"]
+image::book.png[align = "center", title="Un livre de comptes montrant des données structurées", book = "keep"]
 {nbsp} +
 
 ==== B - Données non structurées
@@ -57,7 +57,7 @@ image::book.png[align = "center", title = "Un livre de comptes montrant des donn
 // +
 Ces ensembles de données sont beaucoup plus difficiles à traiter et à analyser, car ils sont pleins d'exceptions et de différences. Mais ils sont porteurs d'informations généralement riches: texte libre, informations enregistrées "dans la nature" ...
 
-image::unstructured-data.png[align = "center", title = "Données structurées vs données non structurées", book = "keep"]
+image::unstructured-data.png[align = "center", title="Données structurées vs données non structurées", book = "keep"]
 {nbsp} +
 
 === *V* pour Velocity
@@ -66,7 +66,7 @@ En un mot, http://www.zdnet.com/article/volume-velocity-and-variety-understandin
 - Facebook héberge 250 milliards de photos? Il reçoit 900 millions de photos supplémentaires *par jour*
 - Examiner les tweets peut être fait automatiquement (avec des ordinateurs). Si vous voulez vous connecter à Twitter pour recevoir des tweets en temps réel pendant qu'ils sont tweetés, préparez-vous à recevoir plus de 500 millions de tweets *par jour*. Twitter appelle ce service le http://support.gnip.com/apis/firehose/["Twitter firehose"], qui reflète la vélocité du flux de tweets.
 
-image::firehose.jpg[align = "center", title = "Le firehose de Twitter"]
+image::firehose.jpg[align = "center", title="Le firehose de Twitter"]
 {nbsp} +
 
 - *Les données de capteur* (((données de capteur)) sont également susceptibles d'augmenter la vitesse. Alors que les images, les tweets, les enregistrements individuels ... sont des données mono-élément envoyées à intervalles réguliers, de plus en plus de capteurs peuvent envoyer des données *en flux continu* (mesures de mouvement, son, etc.)
@@ -112,16 +112,16 @@ Ainsi, en réaction à des ensembles de données volumineux, non structurés et 
 == 4. D'où vient le big data?
 === a. La numérisation de l'économie a généré de nouveaux volumes de données
 
-image::.png[align = "center", title = "Cinéma vs Netflix", book = "keep"]
+image::Cinéma-vs-Netflix.png[align = "center", title="Cinéma vs Netflix", book = "keep"]
 {nbsp} +
 
 === b. Les ordinateurs sont devenus plus puissants
 
-image::.png[align = "center", title = "La loi de Moore", book="keep"]
+image::La-loi-de-Moore.png[align = "center", title="La loi de Moore", book="keep"]
 {nbsp} +
 
 === c. Le stockage des données est devenu moins cher chaque année
-image::.png[align="center", title = "Réduction des coûts de stockage des données" , book="keep"]
+image::Réduction-des-coûts-de-stockage-des-données-.png[align="center", title="Réduction des coûts de stockage des données" , book="keep"]
 {nbsp} +
 
 === d. L'état d'esprit a changé sur ce qui "compte" comme données
@@ -142,7 +142,7 @@ Jusque-là, la plupart des logiciels étaient "à source fermée": vous achetez 
 
 Le http://www.gartner.com/technology/research/methodologies/hype-cycle.jsp[((Gartner hype cycle))] est un outil qui mesure la maturité d'une technologie, en différenciant les attentes des rendements réels:
 
-image::.png[align = "center", title = "Cycle Gartner Hype pour 2014", book = "keep"]
+image::Cycle-Gartner-Hype-pour-2014.png[align = "center", title="Cycle Gartner Hype pour 2014", book = "keep"]
 {nbsp} +
 
 Ce graphique montre le modèle que toutes les technologies suivent au cours de leur vie:
@@ -170,7 +170,7 @@ En 2014, les big data étaient proches du sommet de la courbe: elles retenaient 
 // +
 En 2017, le «big data» est toujours au top des technologies hype, mais se décompose en «deep learning» et en «machine learning». Notez également la catégorie "Intelligence artificielle générale":
 
-image::.png[align = "center", title = "Gartner Hype Cycle pour 2017 ", book =" keep "]
+image::Gartner-Hype-Cycle-pour-2017-.png[align = "center", title="Gartner Hype Cycle pour 2017 ", book =" keep "]
 {nbsp} +
 
 === g. Le Big Data transforme les industries et est devenu une industrie en soi
@@ -180,7 +180,7 @@ https://twitter.com/mattturck[Matt Turck, VC chez FirstMarkCap], crée chaque an
 
 <<<<
 
-image::Matt-Turck-FirstMark-2017-Big-Data-Landscape_panorama.png[pdfwidth = "100%", align = "center", title = "Paysage de données pour 2017", book = "keep"]
+image::Matt-Turck-FirstMark-2017-Big-Data-Landscape_panorama.png[pdfwidth = "100%", align = "center", title="Paysage de données pour 2017", book = "keep"]
 {nbsp} +
 
 Vous trouverez une https://mattturck.com/bigdata2017/[version haute résolution de ce panorama Big data], une version Excel et un commentaire très intéressant sur ce site : https://mattturck.com/bigdata2017/

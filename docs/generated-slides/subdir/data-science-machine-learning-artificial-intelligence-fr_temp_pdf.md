@@ -29,6 +29,7 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 
 // +
 
+// +
 image::regression-line.png[pdfwidth="100%", align="center", title="A linear regression", book="keep"]
 {nbsp} +
 

@@ -32,6 +32,7 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8dKfwxvgz3ALH8Y1FzxWk9lZtiVBlQdZYUrKJqRXNqBFRjKIP3LUvv29QSIBbGx2-ray5nK8cALMH/pubchart?oid=1075418595&format=interactive"></iframe>
 ++++
 
+// +
 
 // +
 Les "statistiques régulières" permettent, entre autres :

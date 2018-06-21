@@ -179,7 +179,7 @@ Cette approche permet d'identifier des groupes de personnes qui ont des points c
 image::kmeans.jpg[pdfwidth = "60%", align = "center", title = "K-means, une approche d'apprentissage non supervisée", width = 300]
 {nbsp} +
 
-=== b. L'approche d'apprentissage * supervisée *
+=== b. L'approche d'apprentissage  *supervisé*
 L'*Apprentissage supervisé* (((apprentissage machine, apprentissage supervisé))) est l'approche consistant à calibrer un modèle basé sur l'histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
 // +
 Prenons l'exemple suivant : comment faire pour qu'un ordinateur "devine" si une image représente un chat ou un chien? Pour cela, en approche supervisée, nous allons commencer par récolter 50000 images ou plus de chats et de chiens, avec leurs légendes associées, comme ceci:
@@ -234,16 +234,14 @@ image::muffin.jpg[pdfwidth = "60%", align = "center", title = "Un cas de test di
 {nbsp} +
 
 // +
-C'est ce qu'on appelle l'apprentissage *supervisé* car l'apprentissage est guidé, dirigé, encadré par des exemples passés.
+C'est donc ce qu'on appelle l'apprentissage *supervisé* car l'apprentissage est guidé, dirigé, encadré par des exemples passés.
 
 // +
-video::4HCE1P-m1l8[youtube, largeur = 500, hauteur = 400]
+Deux limites à retenir sur l'apprentissage supervisé :
 
 // +
-Il est important de retenir que :
-
-- *La collecte de grands ensembles de données pour la phase d'entraînement est clé*. Sans ces données, pas d'apprentissage supervisé.
-- l'apprentissage supervisé ne permet pas d'analyser des situations entièrement différentes de ce qui est représenté dans le jeu de données sur lequel l'apprentissage a été entrainé. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.
+- pour l'apprentissage supervisé soit possible, *il est nécessaire de disposer de grands ensembles de données pour la phase d'entraînement*. Sans ces données, pas d'apprentissage supervisé.
+- l'apprentissage supervisé *ne permet pas d'analyser des situations entièrement différentes de ce qui est représenté dans le jeu de données sur lequel l'apprentissage a été entrainé*. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.
 
 
 // +
@@ -346,12 +344,10 @@ image::conway.png[pdfwidth = "40%", align = "center", title = "http://drewconway
 == 4. Intelligence artificielle
 === a. Faible vs forte IA intelligence artificielle, faible vs forte AI
 *IA faible* (((intelligence artificielle, faible))) désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).
-
-// +
 L'IA faible est généralement le résultat de l'application de systèmes experts ou des techniques d'apprentissage machine vues ci-dessus.
 
 // +
-*IA forte" (((intelligence artificielle, forte))) est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d'elle-même. Rien ne s'approche de ça.
+*IA forte* (((intelligence artificielle, forte))) est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d'elle-même. Rien ne s'approche de ça.
 
 // +
 *Donc l'IA est synonyme d'IA faible pour le moment, et couvre les trois familles de machine learning vues ci-dessus.*
