@@ -98,7 +98,7 @@ un livre <2>
 
 // +
 - Les données sans ((métadonnées)) peuvent être sans valeur (imaginez une bibliothèque sans catalogue de bibliothèque)
-- Les métadonnées peuvent être informatives en soi, comme le montre le scandale ((NSA)) (lire cet article du New Yorker à propos de http://www.newyorker.com/news/news-desk/whats-the-matter -with-metadata[NSA et métadonnées]).
+- Les métadonnées peuvent être informatives en soi, comme le montre le scandale ((NSA)) (lire cet article du New Yorker à propos de la http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata[NSA et des métadonnées]).
 
 image::metadata.png[align="center", title = "Le problème avec les métadonnées"]
 
@@ -138,7 +138,7 @@ Votre organisation en est propriétaire, ce qui ne signifie pas que le consentem
 - *Second party data* (((données, "second party data"))): les données accessibles via des partenariats.
 Sans être le générateur ni le propriétaire de ces données, les partenaires le mettent à votre disposition dans le cadre d'un accord.
 // +
-- * Données tierces ou "third party data"* (((données, "third party data"))): les données acquises par un achat.
+- *Données tierces ou "third party data"* (((données, "third party data"))): les données acquises par un achat.
 Ces données sont acquises via une transaction de marché. Ses utilisations s'accompagnent toujours de conditions, notamment pour les données personnelles.
 
 === d. Données sociodémo vs données de comportement

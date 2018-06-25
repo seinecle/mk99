@@ -314,6 +314,7 @@ La Chine a plutôt des textes législatifs sectoriels, tels que le règlement su
 == !
 L'Etat chinois développe des initiatives telles que https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_cr%C3%A9dit_social[le Système de Crédit social] qui reposent sur un système de surveillance de masse, en opposition à la libre maîtrise pour un individu de ses données personnelles.
 
+== !
 ==== d. Législation pour la protection des données personnelles dans d'autres pays
 == !
 

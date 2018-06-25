@@ -30,7 +30,10 @@ Big data is usually described with the "((3 Vs))":
 
 === *V* for Volume
 The size of datasets available today is staggering (ex: ((Facebook)) had 250 billion pics in 2016).
-//+
+We produce a phenomenal amount of data in the course of our daily lives (to the point of sometimes missing an experience not mediated by technology - as this grandmother understood it)
+
+image::grandma.png[align = "center", title="We collect data at every moment of our life - or not", book = "keep"]
+
 The volumes of data are increasing at an *accelerating rate*. According to sources, https://www.sciencedaily.com/releases/2013/05/130522085217.htm[90% of all the data in the world has been generated over the last two years] (statement from 2013) or said differently, https://appdevelopermagazine.com/4773/2016/12/23/more-data-will-be-created-in-2017-than-the-previous-5,000-years-of-humanity-/[more data will be created in 2017 than the previous 5,000 years of humanity].
 
 === *V* for Variety

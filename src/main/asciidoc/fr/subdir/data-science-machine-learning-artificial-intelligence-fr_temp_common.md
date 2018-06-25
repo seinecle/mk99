@@ -67,7 +67,7 @@ Les "statistiques régulières" sont le domaine de travail de scientifiques qui:
 -> puisqu'ils se concentrent sur *l'échantillonnage* des données, ils ne sont pas concernés par le traitement de jeux de données entiers avec des problèmes informatiques connexes.
 
 // +
-Le *Machine learning* (((machine learning))) fait des choses similaires à la statistique, mais d'une manière légèrement différente:
+Le *Machine learning* ou (((machine learning))) fait des choses similaires à la statistique, mais d'une manière légèrement différente:
 
 - on met l'accent sur la bonne prédiction, sans se soucier d'identifier le modèle mathématique sous-jacent
 - la prévision doit être réalisable dans le temps disponible, avec les ressources informatiques disponibles
@@ -125,10 +125,8 @@ Si un problème statistique de prédiction peut être décomposé en opérations
 // +
 Pour illustrer la différence de vitesse entre une opération mathématique exécutée sans ou avec un *GPU* (((GPU - cartes graphiques))):
 
-// +
-vidéo::-P28LKWTzrI[youtube, width = 500, height = 400]
+video::-P28LKWTzrI[youtube, width = 500, height = 400]
 
-// +
 Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez conceptualiser le problème comme un qui peut être :
 // +
 - décomposé en une très grande série
@@ -175,7 +173,6 @@ Une solution possible au problème peut être apportée en utilisant une approch
 // +
 Cette approche permet d'identifier des groupes de personnes qui ont des points communs. C'est évidemment d'une grande utilité pour organiser des données, depuis une segmentation de clientèle ou de prospects, jusqu'à une classification de produits en catégories à des fins d'évaluation ou de gestion de portefeuille.
 
-// +
 image::kmeans.jpg[pdfwidth = "60%", align = "center", title = "K-means, une approche d'apprentissage non supervisée", width = 300]
 {nbsp} +
 
@@ -195,8 +192,8 @@ Prenons l'exemple suivant : comment faire pour qu'un ordinateur "devine" si une 
 etc....
 
 // +
-- Ces 50000 images et leur légende s'appelle le _trainin set_. (((apprentissage automatique, training set))).
-- Ceci est aussi appelé un ensemble de données *libellées* (((apprentissage automatique, ensemble de données libellées))), ce qui signifie que nous avons une étiquette décrivant chacune des observations (en anglais : _labelled set_).
+- Ces 50000 images et leur légende s'appelle le _training set_. (((apprentissage automatique, training set))).
+- Ceci est aussi appelé un ensemble de données *annotées* (((apprentissage automatique, ensemble de données libellées))), ce qui signifie que nous avons une étiquette décrivant chacune des observations (en anglais : _labelled set_).
 
 // +
 [TIP]
@@ -205,7 +202,7 @@ Dans un jeu de données libellé, d'où viennent les étiquettes?
 
 - les étiquettes peuvent être fournies par les utilisateurs d'un service. Par exemple, les photos sur Instagram légendées par des hashtags sont exactement cela: une image avec une étiquette. L'étiquetage est fait par les utilisateurs d'Instagram affichant les photos et en écrivant les hashtags ci-dessous. Instagram est un service gratuit, mais les jeu de données libellées qu'il crée sont d'une grande valeur pour une entreprise comme Instagram (et pour Facebook, qui a racheté Instagram).
 
-- ils peuvent être produits par des travailleurs humains (((data science et travail humain))). En pratique, les humains sont payés quelques centimes par image qu'ils doivent étiqueter (est-ce un chat? Est-ce un chien? Etc.). Une grande industrie et un marché du travail associé se développent pour effectuer une variété de tâches de ce genre. Une main-d'œuvre croissante fournit leur ((travail numérique)) aux entreprises qui ont besoin de *l'étiquetage des données* (((données, étiquetage des données)) ou de *nettoyer, classer ou qualifier les données*. Voir le travail de http://www.casilli.fr/about/[Antonio Casilli] ((("Casilli, Antonio"))) sur ces sujets.
+- ils peuvent être produits par des travailleurs humains (((data science et travail humain))). En pratique, les humains sont payés quelques centimes par image qu'ils doivent étiqueter (est-ce un chat? Est-ce un chien? Etc.). Une grande industrie et un marché du travail associé se développent pour effectuer une variété de tâches de ce genre. Une main-d'œuvre croissante fournit leur ((travail numérique)) aux entreprises qui ont besoin de *l'annotation des données* (((données, annotation des données)) ou de *nettoyer, classer ou qualifier les données*. Voir le travail de http://www.casilli.fr/about/[Antonio Casilli] ((("Casilli, Antonio"))) sur ces sujets.
 ====
 
 // +
@@ -229,7 +226,6 @@ Maintenant, lorsque vous présentez une nouvelle image au logiciel que vous vene
 // +
 L'apprentissage supervisé est actuellement la famille d'apprentissage automatique la plus populaire et obtient d'excellents résultats notamment en reconnaissance d'image, même si certains cas restent difficiles à résoudre:
 
-// +
 image::muffin.jpg[pdfwidth = "60%", align = "center", title = "Un cas de test difficile pour l'apprentissage supervisé", width = 400, book = "keep"]
 {nbsp} +
 
@@ -237,33 +233,30 @@ image::muffin.jpg[pdfwidth = "60%", align = "center", title = "Un cas de test di
 C'est donc ce qu'on appelle l'apprentissage *supervisé* car l'apprentissage est guidé, dirigé, encadré par des exemples passés.
 
 // +
-Deux limites à retenir sur l'apprentissage supervisé :
+Trois conditions à retenir sur l'apprentissage supervisé :
 
 // +
 - pour l'apprentissage supervisé soit possible, *il est nécessaire de disposer de grands ensembles de données pour la phase d'entraînement*. Sans ces données, pas d'apprentissage supervisé.
-- l'apprentissage supervisé *ne permet pas d'analyser des situations entièrement différentes de ce qui est représenté dans le jeu de données sur lequel l'apprentissage a été entrainé*. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.
+- l'apprentissage supervisé *permet d'analyser des situations similaires à celles représentées dans le jeu de données sur lequel l'apprentissage a été entrainé*. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.
+- les données d'apprentissage doivent être spécifiques. Si l'on souhaite apprendre à un algo à reconnaître un chihuhua, le training set doit être fait de chihuahuas - plutôt que des chiens de toutes races.
 
+Ce dernier point est explicité par Maryne Cotty-Eslous, fondatrice de Lucine:
 
-// +
+video::tL7ojiOTQho?t=16m31s[youtube,start=971]
+
 === c. L'approche de l'apprentissage par *renforcement* (reinforcement learning)
 Pour comprendre l'apprentissage par renforcement ((apprentissage automatique, apprentissage par renforcement))), nous pouvons penser intuitivement comment les animaux peuvent apprendre rapidement en *ignorant* les comportements indésirables et en *récompensant* les comportements souhaitables.
 
 C'est facile et ne prend que quelques secondes. La vidéo suivante montre B.F. Skinner, figure centrale de la psychologie comportemenale dans les années 1950-1970, qui fait faire un tour sur lui-même à un pigeon simplement en récompensant le fait de tourner par des graines :
 
-// +
 video::TtfQlkGwE2U[youtube, largeur = 500, hauteur = 400]
 
-// +
 Outre les pigeons, l'apprentissage par renforcement peut être appliqué à tout type d' "agents experts".
-
 Prenons le cas d'un jeu vidéo comme Super Mario Bros:
 
-// +
 image::mario.jpg[pdfwidth = "60%", align = "center", title = "Mario Bros, un jeu vidéo populaire"]
 {nbsp} +
 
-
-// +
 Structure du jeu / de la tâche:
 
 - But de la tâche: Mario doit collecter des pièces d'or et compléter le jeu en atteignant l'extrême droite de l'écran.
@@ -291,10 +284,8 @@ L'apprentissage par renforcement fonctionne de la manière suivante :
 // +
 Après avoir bouclé de 1. à 4. des milliers de fois, et enregistré à chaque fois des combinaisons d'actions favorables à répéter, et défavorables à éviter, Mario finit par arriver au bout du jeu, sans qu'aucun joueur humain ne tienne les commandes :
 
-// +
 video::iakFfOmanJU[youtube, width = 500, height = 400]
 
-// +
 L'apprentissage par renforcement est perçu comme correspondant à un aspect important de l'apprentissage humain / de l'intelligence humaine (axé sur les buts, «essai et erreur»).
 
 
@@ -317,11 +308,9 @@ Cas où la modélisation des statistiques "classiques" est *nécessaire*:
 L'apprentissage automatique est une seule étape dans la longue chaîne du traitement et de l'analyse des données.
 Le processus du traitement et de l'analyse des données a été formalisé dans les années 1980 sous le nom de "data mining", "exploration des données", "fouille de données," ou https://en.wikipedia.org/wiki/Data_mining#Process[((kdd: Knowledge Discovery in Databases))].
 
-// +
 image::kdd.png[align = "center", title = "KDD - découverte des connaissances dans les bases de données", width = 500, book = "keep"]
 {nbsp} +
 
-// +
 Des représentations plus récentes des étapes du traitement des données ont été suggérées, laissant place au rôle de la ((visualisation de données)) :
 
 -> voir https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400[le processus de conception de l'information par Ben Fry] ((("Fry, Ben"))) et ce workflow de  http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html[visualisation des données par Moritz Stefaner] ((("Stefaner, Moritz"))) :
@@ -336,7 +325,6 @@ L'apprentissage automatique est l'une des techniques (avec les statistiques trad
 // +
 Les compétences d'une équipe de (data scientist) sont souvent représentées comme la réunion de trois domaines distincts :
 
-// +
 image::conway.png[pdfwidth = "40%", align = "center", title = "http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram[The Diagramme de Venn de la science des données par Drew Conway", book =" keep "]
 {nbsp} +
 

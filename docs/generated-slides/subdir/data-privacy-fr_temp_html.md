@@ -21,7 +21,7 @@ image::EMLyon_logo_corp.png[align="center"]
 == 1. Confidentialité: un des aspects de la protection des données
 
 // +
-image::.png[align = "center", title = "Plusiuers définitions possibles à la protection des données", book = " keep"]
+image::Plusieurs-définitions-possibles-à-la-protection-des-données.png[align ="center",title="Plusieurs définitions possibles à la protection des données",book=" keep"]
 {nbsp} +
 
 == 2. Quand les informations personnelles sont-elles considérées comme des "données"?

@@ -31,7 +31,12 @@ Les big data sont généralement décrites avec le "((3 Vs))":
 
 === *V* pour le volume
 La taille des jeux de données disponibles aujourd'hui est stupéfiante (ex: ((Facebook)) avait 250 milliards de photos en 2016).
-// +
+
+Nous produisons une quantité phénomènale de données dans le cours de notre vie quotidienne (au point de parfois manquer une expérience non médiatisée par la technologie - comme cette grand-mère l'a compris)
+
+image::grandma.png[align = "center", title="Nous collectons des données à chaque instant - ou pas", book = "keep"]
+{nbsp} +
+
 Les volumes de données augmentent à un rythme *accéléré*. Selon des sources, https://www.sciencedaily.com/releases/2013/05/130522085217.htm[90% de toutes les données dans le monde a été généré au cours des deux dernières années] (déclaration de 2013) ou dit différemment , https://appdevelopermagazine.com/4773/2016/12/23/more-data-will-be-created-in-2017-than-the-previous-5,000-years-of-humanity-/[plus de données être créé en 2017 que dans les 5000 ans de l'histoire de l'humanité].
 
 === *V* pour Variety
@@ -136,7 +141,7 @@ image::Réduction-des-coûts-de-stockage-des-données.png[align="center", title=
 À la fin des années 1990, les développeurs de logiciels ont rapidement changé d'habitudes : ils avaient tendance à utiliser de plus en plus de logiciels libres et à publier leurs logiciels en tant que logiciels libres.
 Jusque-là, la plupart des logiciels étaient "à source fermée": vous achetez un logiciel *sans possibilité* de réutiliser / modifier / augmenter son code source. Vous ne pouvez que l'utiliser tel quel.
 // +
-* L'open source (((open source))) facilite l'accès aux logiciels construits par d'autres, il est possible d'utiliser ces logiciels libres pour développer de nouvelles choses. Après plusieurs décennies, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[le logiciel open source s'est banalisé].
+L'open source (((open source))) facilite l'accès aux logiciels construits par d'autres, il est possible d'utiliser ces logiciels libres pour développer de nouvelles choses. Après plusieurs décennies, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[le logiciel open source s'est banalisé].
 
 === f. Les promesses et attentes exagérées sur le big data
 
@@ -189,7 +194,7 @@ Vous trouverez une https://mattturck.com/bigdata2017/[version haute résolution 
 === a. Plus de données arrivent
 L'*Internet des objets* (((IoT - Internet des objets))) désigne l' https://seinecle.github.io/IoT4Entrepreneurs/[extension d'Internet aux objets, au-delà des pages web ou des emails].
 // +
-L' *IoT * (((IoT - Internet des objets))) est utilisé pour *faire* des choses (affichage d'informations à l'écran, robots pilotes, etc.) mais aussi beaucoup pour *collecter des données* dans leurs environnements, via des capteurs.
+L' *IoT* (((IoT - Internet des objets))) est utilisé pour *faire* des choses (affichage d'informations à l'écran, robots pilotes, etc.) mais aussi beaucoup pour *collecter des données* dans leurs environnements, via des capteurs.
 // +
 Ainsi, le développement des *objets connectés* (((IoT - Internet des objets))) conduira à une augmentation considérable du volume de données collectées.
 
@@ -203,6 +208,7 @@ Les réglementations publiques aux niveaux national et international tentent de 
 * Il est intéressant de noter que les expressions "à la mode", comme "big data", ont tendance à s'user rapidement. Elles sont sur-utilisées, mentionnées en toutes circonstances, deviennent vagues et trop vendues.
 Pour les données volumineuses, nous observons qu'on atteint un sommet en 2017, alors que de nouveaux termes apparaissent:
 
+//+
 pass:[<iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe> ]
 
 //+

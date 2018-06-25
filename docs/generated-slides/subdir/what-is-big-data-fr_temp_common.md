@@ -20,10 +20,10 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 == 1. Le Big data est difficile à définir
 
-image::ariely.png [align = "center", title="Message de Facebook de Dan Ariely en 2013", book = "keep"]
+image::ariely.png[align = "center", title="Message de Facebook de Dan Ariely en 2013", book = "keep"]
 {nbsp} +
 
-Blagues à part, la définition du big data demande un peu de précision. Apportons une certaine clarté.
+Ironie à part, le big data demande effectivement un travail de définition. Apportons une certaine clarté.
 
 == 2. Les 3 V
 
@@ -121,14 +121,14 @@ image::La-loi-de-Moore.png[align = "center", title="La loi de Moore", book="keep
 {nbsp} +
 
 === c. Le stockage des données est devenu moins cher chaque année
-image::Réduction-des-coûts-de-stockage-des-données-.png[align="center", title="Réduction des coûts de stockage des données" , book="keep"]
+image::Réduction-des-coûts-de-stockage-des-données.png[align="center", title="Réduction des coûts de stockage des données" , book="keep"]
 {nbsp} +
 
 === d. L'état d'esprit a changé sur ce qui "compte" comme données
 * Les données non structurées (voir ci-dessus pour la définition de "non structuré") n'étaient généralement pas stockées : cela prend beaucoup de place, et les logiciels pour les interroger n'étaient pas suffisamment développés.
 // +
-// +
 * Les données de réseau (également appelées "graphs") (qui est un ami avec qui, qui aime les mêmes choses que qui, etc.) étaient généralement négligées car difficiles à interroger. Les réseaux sociaux comme Facebook ont ​​fait beaucoup pour sensibiliser les entreprises à la valeur des graphs (en particulier les https://en.wikipedia.org/wiki/Social_graph[((graphs sociaux))]). https://neo4j.com/[((Neo4J))] ou http://titan.thinkaurelius.com/[Titan] sont des fournisseurs de bases de données spécialisés dans le stockage et l'analyse de données réseau.
+// +
 * Les données géographiques se sont démocratisées : des bases de données spécifiques (et coûteuses) ont longtemps existé pour stocker et interroger des "données de lieu" (régions, distances, informations de proximité ...) mais des solutions simples à utiliser se sont récemment multipliées, comme https://carto.com/[Carto].
 
 === e. Le logiciel open source accélère l'innovation
@@ -136,7 +136,7 @@ image::Réduction-des-coûts-de-stockage-des-données-.png[align="center", title
 À la fin des années 1990, les développeurs de logiciels ont rapidement changé d'habitudes : ils avaient tendance à utiliser de plus en plus de logiciels libres et à publier leurs logiciels en tant que logiciels libres.
 Jusque-là, la plupart des logiciels étaient "à source fermée": vous achetez un logiciel *sans possibilité* de réutiliser / modifier / augmenter son code source. Vous ne pouvez que l'utiliser tel quel.
 // +
-* L'open source (((open source))) facilite l'accès aux logiciels construits par d'autres, il est possible d'utiliser ces logiciels libres pour développer de nouvelles choses. Après plusieurs décennies, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[le logiciel open source s'est banalisé].
+L'open source (((open source))) facilite l'accès aux logiciels construits par d'autres, il est possible d'utiliser ces logiciels libres pour développer de nouvelles choses. Après plusieurs décennies, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[le logiciel open source s'est banalisé].
 
 === f. Les promesses et attentes exagérées sur le big data
 
@@ -170,7 +170,7 @@ En 2014, les big data étaient proches du sommet de la courbe: elles retenaient 
 // +
 En 2017, le «big data» est toujours au top des technologies hype, mais se décompose en «deep learning» et en «machine learning». Notez également la catégorie "Intelligence artificielle générale":
 
-image::Gartner-Hype-Cycle-pour-2017-.png[align = "center", title="Gartner Hype Cycle pour 2017 ", book =" keep "]
+image::Gartner-Hype-Cycle-pour-2017.png[align = "center", title="Gartner Hype Cycle pour 2017 ", book =" keep "]
 {nbsp} +
 
 === g. Le Big Data transforme les industries et est devenu une industrie en soi
@@ -189,7 +189,7 @@ Vous trouverez une https://mattturck.com/bigdata2017/[version haute résolution 
 === a. Plus de données arrivent
 L'*Internet des objets* (((IoT - Internet des objets))) désigne l' https://seinecle.github.io/IoT4Entrepreneurs/[extension d'Internet aux objets, au-delà des pages web ou des emails].
 // +
-L' *IoT * (((IoT - Internet des objets))) est utilisé pour *faire* des choses (affichage d'informations à l'écran, robots pilotes, etc.) mais aussi beaucoup pour *collecter des données* dans leurs environnements, via des capteurs.
+L' *IoT* (((IoT - Internet des objets))) est utilisé pour *faire* des choses (affichage d'informations à l'écran, robots pilotes, etc.) mais aussi beaucoup pour *collecter des données* dans leurs environnements, via des capteurs.
 // +
 Ainsi, le développement des *objets connectés* (((IoT - Internet des objets))) conduira à une augmentation considérable du volume de données collectées.
 
@@ -203,6 +203,7 @@ Les réglementations publiques aux niveaux national et international tentent de 
 * Il est intéressant de noter que les expressions "à la mode", comme "big data", ont tendance à s'user rapidement. Elles sont sur-utilisées, mentionnées en toutes circonstances, deviennent vagues et trop vendues.
 Pour les données volumineuses, nous observons qu'on atteint un sommet en 2017, alors que de nouveaux termes apparaissent:
 
+//+
 pass:[<iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe> ]
 
 //+
@@ -214,7 +215,7 @@ Quelles sont les différences entre ces termes?
 // +
 * *Intelligence artificielle* (((intelligence artificielle))) met l'accent sur les possibilités "quasi-humaines" offertes par l'apprentissage automatique. Le terme est souvent utilisé de manière interchangeable avec l'apprentissage automatique. L'intelligence artificielle est alimentée par des données, de sorte que l'avenir des big data se recoupe avec ce que deviendra l'IA.
 // +
-* Et * data science * (((data science)))? C'est un terme général englobant l'apprentissage automatique, les statistiques et de nombreuses méthodes analytiques pour travailler avec les données et les interpréter. Souvent utilisé de manière interchangeable avec l'apprentissage automatique. *Data scientist* (((data scientist))) est une description d'emploi devenue commune, y compris en français.
+* Et *data science* (((data science)))? C'est un terme général englobant l'apprentissage automatique, les statistiques et de nombreuses méthodes analytiques pour travailler avec les données et les interpréter. Souvent utilisé de manière interchangeable avec l'apprentissage automatique. *Data scientist* (((data scientist))) est une description d'emploi devenue commune, y compris en français.
 
 == Pour aller plus loin
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
@@ -225,3 +226,4 @@ Clement Levallois
 Découvrez mes autres cours et projets : https://www.clementlevallois.net
 
 Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
+

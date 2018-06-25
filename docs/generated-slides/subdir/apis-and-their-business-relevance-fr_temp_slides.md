@@ -21,7 +21,8 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 == 1. Définition de l'API
 == !
-API: acronyme de *Application Programming Interface* (((API, définition))). Une ((API)) est le moyen de rendre les logiciels "faciles à brancher et à partager" avec d'autres programmes.
+API: acronyme de *Application Programming Interface*. Une ((API)) est le moyen de rendre les logiciels "faciles à brancher et à partager" avec d'autres programmes.
+ (((API, définition)))
 
 == !
 Une API est simplement un groupe de règles (que l'on peut aussi appeler une convention, ou un accord ...) que les programmeurs suivent lorsqu'ils écrivent la partie de leur code qui est en charge de communiquer avec d'autres logiciels.

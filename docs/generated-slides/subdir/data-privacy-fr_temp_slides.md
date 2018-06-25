@@ -26,7 +26,7 @@ image::EMLyon_logo_corp.png[align="center"]
 
 == !
 [.stretch]
-image::.png[align = "center", title = "Plusiuers définitions possibles à la protection des données", book = " keep"]
+image::Plusieurs-définitions-possibles-à-la-protection-des-données.png[align ="center",title="Plusieurs définitions possibles à la protection des données",book=" keep"]
 == !
 
 

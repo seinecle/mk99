@@ -162,12 +162,11 @@ Si un problème statistique de prédiction peut être décomposé en opérations
 == !
 Pour illustrer la différence de vitesse entre une opération mathématique exécutée sans ou avec un *GPU* (((GPU - cartes graphiques))):
 
-
 == !
-vidéo::-P28LKWTzrI[youtube, width = 500, height = 400]
-
-
+[.stretch]
+video::-P28LKWTzrI[youtube, width = 500, height = 400]
 == !
+
 Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez conceptualiser le problème comme un qui peut être :
 
 == !
@@ -228,14 +227,13 @@ Une solution possible au problème peut être apportée en utilisant une approch
 == !
 Cette approche permet d'identifier des groupes de personnes qui ont des points communs. C'est évidemment d'une grande utilité pour organiser des données, depuis une segmentation de clientèle ou de prospects, jusqu'à une classification de produits en catégories à des fins d'évaluation ou de gestion de portefeuille.
 
-
 == !
 [.stretch]
 image::kmeans.jpg[pdfwidth = "60%", align = "center", title = "K-means, une approche d'apprentissage non supervisée", width = 300]
 == !
 
 
-==== b. L'approche d'apprentissage * supervisée *
+==== b. L'approche d'apprentissage  *supervisé*
 == !
 L'*Apprentissage supervisé* (((apprentissage machine, apprentissage supervisé))) est l'approche consistant à calibrer un modèle basé sur l'histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
 
@@ -305,20 +303,16 @@ image::muffin.jpg[pdfwidth = "60%", align = "center", title = "Un cas de test di
 
 
 == !
-C'est ce qu'on appelle l'apprentissage *supervisé* car l'apprentissage est guidé, dirigé, encadré par des exemples passés.
+C'est donc ce qu'on appelle l'apprentissage *supervisé* car l'apprentissage est guidé, dirigé, encadré par des exemples passés.
 
 
 == !
-[.stretch]
-video::4HCE1P-m1l8[youtube, largeur = 500, hauteur = 400]
-== !
+Trois conditions à retenir sur l'apprentissage supervisé :
 
 
 == !
-Il est important de retenir que :
-
-- *La collecte de grands ensembles de données pour la phase d'entraînement est clé*. Sans ces données, pas d'apprentissage supervisé.
-- l'apprentissage supervisé ne permet pas d'analyser des situations entièrement différentes de ce qui est représenté dans le jeu de données sur lequel l'apprentissage a été entrainé. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.
+- pour l'apprentissage supervisé soit possible, *il est nécessaire de disposer de grands ensembles de données pour la phase d'entraînement*. Sans ces données, pas d'apprentissage supervisé.
+- l'apprentissage supervisé *ne permet pas d'analyser des situations entièrement différentes de ce qui est représenté dans le jeu de données sur lequel l'apprentissage a été entrainé*. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.
 
 
 
@@ -460,14 +454,11 @@ image::conway.png[pdfwidth = "40%", align = "center", title = "http://drewconway
 ==== a. Faible vs forte IA intelligence artificielle, faible vs forte AI
 == !
 *IA faible* (((intelligence artificielle, faible))) désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).
-
-
-== !
 L'IA faible est généralement le résultat de l'application de systèmes experts ou des techniques d'apprentissage machine vues ci-dessus.
 
 
 == !
-*IA forte" (((intelligence artificielle, forte))) est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d'elle-même. Rien ne s'approche de ça.
+*IA forte* (((intelligence artificielle, forte))) est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d'elle-même. Rien ne s'approche de ça.
 
 
 == !
