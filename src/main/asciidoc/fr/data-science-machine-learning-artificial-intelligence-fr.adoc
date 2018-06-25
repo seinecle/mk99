@@ -132,6 +132,7 @@ Pour illustrer la différence de vitesse entre une opération mathématique exé
 video::-P28LKWTzrI[youtube, width = 500, height = 400]
 
 Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez conceptualiser le problème comme un qui peut être :
+
 // +
 - décomposé en une très grande série
 - d'opérations très simples (fondamentalement, des sommes ou des multiplications, rien de complexe comme des racines carrées ou des polynômes)

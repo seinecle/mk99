@@ -165,7 +165,6 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 
 <<<<
 
-//+
 image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui", book="keep"]
 
 == Pour aller plus loin

@@ -19,13 +19,11 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 
 == 1. Le Big data est difficile à définir
-
 image::ariely.png[align = "center", title="Message de Facebook de Dan Ariely en 2013", book = "keep"]
 
 Ironie à part, le big data demande effectivement un travail de définition. Apportons une certaine clarté.
 
 == 2. Les 3 V
-
 Les big data sont généralement décrites avec le "((3 Vs))":
 
 === *V* pour le volume
@@ -45,7 +43,10 @@ Les volumes de données augmentent à un rythme *accéléré*. Selon des sources
 *Données structurées* (((données structurées))) se réfère à des données formatées et organisées selon un ensemble de règles bien défini, ce qui les rend *lisibles par une machine*. Par exemple, les codes postaux sont un ensemble de données structuré car ils suivent une convention précise concernant le nombre de lettres et de chiffres qui les composent, ce qui facilite l'identification et leur « lecture » par un lecteur optique et un logiciel. Pareil avec les plaques d'immatriculation, les numéros de sécurité sociale ... Mais ce sont des exemples simples.
 
 // +
-Qu'en est-il, par exemple, d'un formulaire d'impôt? Si chaque champ du formulaire est bien défini, alors les données collectées à travers le formulaire peuvent être dites « structurées ». En revanche, une forme où l'utilisateur peut écrire du texte libre (pensez à un commentaire sur un article de blog, ou un espace vide où les utilisateurs peuvent écrire un commentaire) produit des données non structurées : données qui ne suivent pas une convention spéciale pour leur taille et leur contenu. C'est généralement beaucoup plus difficile à traiter par le logiciel, donc à analyser.
+Qu'en est-il, par exemple, d'un formulaire d'impôt? Si chaque champ du formulaire est bien défini, alors les données collectées à travers le formulaire peuvent être dites « structurées ».
+// +
+En revanche, une forme où l'utilisateur peut écrire du texte libre (pensez à un commentaire sur un article de blog, ou un espace vide où les utilisateurs peuvent écrire un commentaire) produit des données non structurées : données qui ne suivent pas une convention spéciale pour leur taille et leur contenu.
+C'est généralement beaucoup plus difficile à traiter par le logiciel, donc à analyser.
 
 // +
 Pour résumer, pensez aux données structurées comme à tout ce qui peut être représenté comme des tableaux de nombres bien organisés et de petits textes avec le format, la taille et les conventions d'écriture attendues: annuaires, livres comptables, statistiques gouvernementales ...
@@ -56,7 +57,8 @@ image::book.png[align = "center", title="Un livre de comptes montrant des donné
 *Données non structurées* (((données non structurées))) se réfère à des ensembles d'éléments "indisciplinés": texte de n'importe quelle longueur, sans catégorisation appropriée, codé dans différents formats, y compris éventuellement des images, du son, des coordonnées géographiques...
 
 // +
-Ces ensembles de données sont beaucoup plus difficiles à traiter et à analyser, car ils sont pleins d'exceptions et de différences. Mais ils sont porteurs d'informations généralement riches: texte libre, informations enregistrées "dans la nature" ...
+Ces ensembles de données sont beaucoup plus difficiles à traiter et à analyser, car ils sont pleins d'exceptions et de différences.
+Mais ils sont porteurs d'informations généralement riches: texte libre, informations enregistrées "dans la nature" ...
 
 image::unstructured-data.png[align = "center", title="Données structurées vs données non structurées", book = "keep"]
 
@@ -121,6 +123,7 @@ image::https://docs.google.com/drawings/d/e/2PACX-1vSH02P_ShpoDfUQBzE2AxHvg6W2FC
 image::https://docs.google.com/drawings/d/e/2PACX-1vRzSlhst7wf_9MYiyiKkQlqfxMt9VGPl-ezHTDM-Oi2MRRVmJYkFqs0otxUQYYSRKPY2WHSHaXsrXpU/pub?w=1440&h=1080[align="center", title="Réduction des coûts de stockage des données" , book="keep"]
 
 === d. L'état d'esprit a changé sur ce qui "compte" comme données
+
 * Les données non structurées (voir ci-dessus pour la définition de "non structuré") n'étaient généralement pas stockées : cela prend beaucoup de place, et les logiciels pour les interroger n'étaient pas suffisamment développés.
 // +
 * Les données de réseau (également appelées "graphs") (qui est un ami avec qui, qui aime les mêmes choses que qui, etc.) étaient généralement négligées car difficiles à interroger. Les réseaux sociaux comme Facebook ont ​​fait beaucoup pour sensibiliser les entreprises à la valeur des graphs (en particulier les https://en.wikipedia.org/wiki/Social_graph[((graphs sociaux))]). https://neo4j.com/[((Neo4J))] ou http://titan.thinkaurelius.com/[Titan] sont des fournisseurs de bases de données spécialisés dans le stockage et l'analyse de données réseau.

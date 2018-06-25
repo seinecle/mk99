@@ -122,7 +122,6 @@ Le cloud est utilisé pour héberger un logiciel complet accessible "à la deman
 Des exemples populaires sont Google Drive, https://www.d2l.com/products/learning-environment/[Brightspace] ou https://www.salesforce.com/fr/?ir=1[((SalesForce))].
 
 == 4. Cloud privé ou public? cloud hybride?
-
 - Amazon EC2 (((Amazon, EC2))) est un exemple de *cloud public* (((cloud, cloud public))): il est accessible publiquement à tout client. Bien sûr, cela ne signifie pas que chaque client peut voir ce que les autres font sur le cloud! Chaque client a ses espaces privés sur le cloud.
 - De nombreuses entreprises ont des exigences de sécurité qui les empêchent d'accéder aux clouds publics.
 Ils ont besoin de leurs serveurs sur place.
