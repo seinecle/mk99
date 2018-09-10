@@ -226,7 +226,9 @@
                                 </goals>
                                 <configuration>
                                     <sourceDirectory>${source.directory}</sourceDirectory>
-                                    <imagesDir>${image.directory}</imagesDir>                                    
+<!--                                    for pdf output the image Dir should be the default one, not ../images as defines for html and slides output!-->
+<!--so I leave this line commented out as a reminder what not to do-->
+                                    <!--<imagesDir>${image.directory}</imagesDir>-->                                    
                                     <sourceDocumentName>${doc.to.process.full.path}</sourceDocumentName>                                    
                                     <outputDirectory>${basedir}/docs/generated-pdf</outputDirectory>
                                     <backend>pdf</backend>

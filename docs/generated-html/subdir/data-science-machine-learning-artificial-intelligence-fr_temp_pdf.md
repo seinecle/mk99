@@ -127,6 +127,7 @@ Pour illustrer la différence de vitesse entre une opération mathématique exé
 video::-P28LKWTzrI[youtube, width = 500, height = 400]
 
 Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez conceptualiser le problème comme un qui peut être :
+
 // +
 - décomposé en une très grande série
 - d'opérations très simples (fondamentalement, des sommes ou des multiplications, rien de complexe comme des racines carrées ou des polynômes)
@@ -236,15 +237,18 @@ Trois conditions à retenir sur l'apprentissage supervisé :
 
 // +
 - pour l'apprentissage supervisé soit possible, *il est nécessaire de disposer de grands ensembles de données pour la phase d'entraînement*. Sans ces données, pas d'apprentissage supervisé.
+// +
 - l'apprentissage supervisé *permet d'analyser des situations similaires à celles représentées dans le jeu de données sur lequel l'apprentissage a été entrainé*. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.
+// +
 - les données d'apprentissage doivent être spécifiques. Si l'on souhaite apprendre à un algo à reconnaître un chihuhua, le training set doit être fait de chihuahuas - plutôt que des chiens de toutes races.
 
-Ce dernier point est explicité par Maryne Cotty-Eslous, fondatrice de Lucine:
+// +
+Ce dernier point est explicité par Maryne Cotty-Eslous, fondatrice de https://projet-lucine.com/#/[Lucine, une app de reconnaissance et d'analyse de la douleur]:
 
 video::tL7ojiOTQho?t=16m31s[youtube,start=971]
 
 === c. L'approche de l'apprentissage par *renforcement* (reinforcement learning)
-Pour comprendre l'apprentissage par renforcement ((apprentissage automatique, apprentissage par renforcement))), nous pouvons penser intuitivement comment les animaux peuvent apprendre rapidement en *ignorant* les comportements indésirables et en *récompensant* les comportements souhaitables.
+Pour comprendre l'apprentissage par renforcement (((apprentissage automatique, apprentissage par renforcement))), nous pouvons penser intuitivement comment les animaux peuvent apprendre rapidement en *ignorant* les comportements indésirables et en *récompensant* les comportements souhaitables.
 
 C'est facile et ne prend que quelques secondes. La vidéo suivante montre B.F. Skinner, figure centrale de la psychologie comportemenale dans les années 1950-1970, qui fait faire un tour sur lui-même à un pigeon simplement en récompensant le fait de tourner par des graines :
 
@@ -324,7 +328,7 @@ L'apprentissage automatique est l'une des techniques (avec les statistiques trad
 // +
 Les compétences d'une équipe de (data scientist) sont souvent représentées comme la réunion de trois domaines distincts :
 
-image::conway.png[pdfwidth = "40%", align = "center", title = "http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram[The Diagramme de Venn de la science des données par Drew Conway", book =" keep "]
+image::conway.png[The Diagramme de Venn de la science des données par Drew Conway", book =" keep "][pdfwidth = "40%", align = "center", title = "http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
 {nbsp} +
 
 
@@ -342,7 +346,8 @@ L'IA faible est généralement le résultat de l'application de systèmes expert
 == Pour aller plus loin
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

@@ -19,12 +19,7 @@ image::EMLyon_logo_corp.png[width="242", align="center"]
 
 //ST: !
 
-== Reading list
-Find the reading list for this session on Pinterest:
-https://fr.pinterest.com/seinecle/what-is-the-cloud/
-
 == 1. Data: you don't get in on tap
-//ST: 1. Data: you don't get in on tap
 
 //ST: !
 
@@ -38,7 +33,7 @@ image::tap.jpg[align="center", title="Data streams, as fluid as water on tap?"]
 
 //ST: !
 
-Actually, data is more like a complex patchwork: many different pieces which must be stiched together - and this is hard.
+Actually, data is more like a complex patchwork: many different pieces which must be stitched together - and this is hard.
 
 //ST: !
 
@@ -53,7 +48,7 @@ It is not a given. Instead, this is a design made of multiple primary data sourc
 
 //ST: !
 
-image::Multiple-sources-of-customer-data.png[align="center", title="Multiple sources of customer data"]
+image::Multiple-sources-of-customer-data.png[align="center", title="Multiple sources of customer data", book="keep"]
 {nbsp} +
 
 //ST: !
@@ -69,7 +64,7 @@ Take away: Data is fragmented by nature. It comes from different sources and pre
 
 //ST: !
 
-(if you are interested, data scientists actually have whole books on the subject of wrangling with the mess of different data sources)
+Data scientists actually have entire books devoted to the subject of wrangling with the complexity of integrating different data sources.
 
 image::wrangling.jpg[align="center", title="Data wrangling"]
 {nbsp} +
@@ -77,11 +72,10 @@ image::wrangling.jpg[align="center", title="Data wrangling"]
 //ST: !
 
 == 2. Sources of fragmentation
-//ST: 2. Sources of fragmentation
 
 //ST: !
 
-==== a. Channels keep diversifying
+=== a. Channels keep diversifying
 
 //ST: !
 
@@ -91,7 +85,7 @@ Point of sale, print, TV, radio, outdoor posters, mobile apps, mobile sites, ema
 
 //ST: !
 
-==== b. Connections between these channels intensify and complexify
+=== b. Connections between these channels intensify and complexify
 
 //ST: !
 
@@ -113,7 +107,7 @@ It is even more difficult to explore causality (which action on which channel ca
 
 //ST: !
 
-==== c. Underlying technologies fragment and keep evolving, across channels
+=== c. Underlying technologies fragment and keep evolving, across channels
 
 //ST: !
 
@@ -134,59 +128,58 @@ http://google.com/amp/www.nyt.com
 
 and
 
-http://www.nyt.com/etc
+http://www.nyt.com
 
 -> It is important to count visits to these two urls as a visit *to the same page*.
 
 //ST: !
 
-In Sept 2017 major services of web data analytics were http://searchengineland.com/google-amp-cache-unified-users-analytics-282069[still struggling with this issue].
+In September 2017 major services of ((web analytics)) were still struggling with this  http://searchengineland.com/google-amp-cache-unified-users-analytics-282069[issue of page counts in web analytics].
 
 This illustrates that to just count visits to a web page (something which should be classic and robust) and integrate this data to a larger analysis, big issues can arise and be hard to fix even in 2017, because of the evolution of techs and standards.
 
 //ST: !
 
-==== d. In the meantime, customers have growing expectations about the quality of service
+=== d. In the meantime, customers have growing expectations about the quality of service
 
 //ST: !
 
-Difficulties posed by data integration do not slow or decrease customers expectations.
+Difficulties posed by data integration do not slow or decrease customer expectations.
 To the contrary, we see an elevation of expectations.
 Customers increasingly expect:
 
 - realtime contact
 - two-ways interaction (they want to be able to voice their opinion, and get a response)
-- seamless experience (no glitch, modern UI, consistence of the UX across channels)
+- seamless experience (no glitch, modern ((user interface)), consistence of the ((user experience)) across channels)
 - personalized experience (customization of the message they receive)
 
 //ST: !
 
-==== e. Example: A French bank going through the 2010s
+=== e. Example: A French bank going through the 2010s
 
 //ST: !
 
-image::Before---a-couple-of-data-sources-across-a-few-channels.png[align="center", title="Before - a couple of data sources across a few channels"]
+image::Before---a-couple-of-data-sources-across-a-few-channels.png[pdfwidth="80%", align="center", title="Before - a couple of data sources across a few channels", book="keep"]
 {nbsp} +
 
 //ST: !
 
-image::Now---many-data-sources-across-a-variety-of-channels.png[align="center", title="Now - many data sources across a variety of channels"]
+image::Now---many-data-sources-across-a-variety-of-channels.png[pdfwidth="80%", align="center", title="Now - many data sources across a variety of channels", book="keep"]
 {nbsp} +
 
 //ST: !
 
 
 == 3. Tools for data integration: DMPs and more
-//ST: 3. Tools for data integration: DMPs and more
 
 
-==== a. Data Management Platform (DMP)
+=== a. Data Management Platform (DMP)
 
 //ST: !
 
 In 2015/2016 a new acronym started to trend: "DMP", standing for *"Data Management Platform"*.
 
-Basically a DMP is an information system dedicated to solving the issues of data integration:
+Basically a *DMP* (((DMP - data management platform))) is an information system dedicated to solving the issues of data integration:
 
 //ST: !
 
@@ -205,40 +198,38 @@ Basically a DMP is an information system dedicated to solving the issues of data
 
 
 //ST: !
-==== b. DMP in relation to other information systems
+=== b. DMP in relation to other components of the information system
 
 //ST: !
-
-DMPs are relatively new. They integrate with 3 other information systems in the firm:
+*DMPs* (((DMP - data management platform))) are relatively new. They integrate with 3 other information systems in the firm:
 
 //ST: !
-
-- CRM (Customer Relationship Management)
+- CRM (((CRM - Customer Relationship Management)))
 ** This is the software *gathering* data related to customers and sales. It is a major source of *input data* for a DMP.
 
 //ST: !
-
-- ERP (Enterprise Resource Planning)
+- ERP (((ERP - Enterprise Resource Planning)))
 ** Large software synchronizing information systems from finance, sales, logistics and more. The CRM can be independent or part of the ERP.
 
 //ST: !
-
-- DSP (Demand Side Platform)
-** https://digiday.com/media/wtf-demand-side-platform/[piece of software automatizing ad buying]. So, the audiences identified in the DMP could be served corresponding ads automatically with a DSP.
-
+- DSP (((DSP - Demand Side Platform)))
+** https://digiday.com/media/wtf-demand-side-platform/[Piece of software automatizing ad buying]. The audiences identified in the DMP could be served corresponding ads with a DSP.
 
 //ST: !
-How can data circulate across these software and with the external world? The next lesson is devoted to APIs, another important concept.
+- Data lake (((data lake)))
+** Data lakes are databases specializing in storing large amounts of unstructured data. They respond to the need of "storing today, for future use". A data lake is not meant to be optimized for queries. They are meant to store everything we collect today, in the case this data will serve future usages. When this happens, data can be extracted from the data lake and put in a database, in a form which makes it convenient to query and analyze.
+
+//ST: !
+How can data circulate across these software and with the external world? The next chapter is devoted to APIs, another essential concept.
 
 == The end
-//ST: The end
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 This course is made by Clement Levallois.
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
