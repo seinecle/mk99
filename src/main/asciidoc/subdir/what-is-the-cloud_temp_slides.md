@@ -21,7 +21,6 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 == 1. Note on the terminology: what is a server?
 == !
-
 To understand the ((cloud)) precisely, We need first to have a clear vision of what a ((server)) is. A server is simply a computer stripped of everything unessential (screen, mouse, graphic card, sound card, keyboard)...
 
 == !
@@ -87,12 +86,21 @@ The term *cloud* (((cloud, definition))) was made popular by ((Amazon)) with the
 
 
 == !
-- it is not about renting or buying a particular piece of server anymore. Instead, the user *rents from Amazon a service* of "usage time of a type of server", characterized by a computing power, and a memory size, which you choose. In practice, to deliver this service, Amazon will be able to start 1 large server, or 2 small, or just allocate half of a huge shared server with another client: this is managed transparently for the client. *It is no longer the rental of a "machine" that is billed but the time of use of a service.*
+- it is not about renting or buying a particular piece of server anymore.
+Instead, the user *rents from Amazon a service* of "usage time of a type of server", characterized by a computing power, and a memory size, which you choose.
+
+== !
+In practice, to deliver this service, Amazon will be able to start 1 large server, or 2 small, or just allocate half of a huge shared server with another client: this is managed transparently for the client.
+*It is no longer the rental of a "machine" that is billed but the time of use of a service.*
+
+== !
 - there is an emphasis on ease of use: no need to know the technical details of these servers (how they are plugged, how they are configured…)
 
 == !
 - you are just given a login + password and you can start using these servers for your needs.
-- it's *elastic*: if you need more servers, or more powerful servers, this change can be done instantly. No need for signing a new contract, or to worry about stopping the rental of one machine to switch to another. Amazon manages this transparently for you.
+- it is *elastic*: if you need more servers, or more powerful servers, this change can be done instantly.
+No need for signing a new contract, or to worry about stopping the rental of one machine to switch to another.
+Amazon manages this transparently for you.
 
 == !
 Let's compare a situation with or without the ((cloud)):
@@ -112,14 +120,25 @@ Install it and configure it
 
 Maintain it (security, etc.)
 
-When the job is over: what do you do with your server? That’s a sunk cost.
+|On https://aws.amazon.com/ec2/?nc1=h_ls[Amazon’ EC2 website], you click to choose a server among those on offer: it is *on demand*
+
+You run your job on it.
+Costs are metered precisely.
+
+No maintenance is needed: maintenance is the cloud provider's role, not yours.
+
+|=====
+
+
+== !
+[width="100%"]
+|=====
+|*Without the cloud* |*With the cloud*
+|When the job is over: what do you do with your server? That’s a sunk cost.
 
 If the job happens to need more computing capacity than your server offers: you are stuck with your too-small-server!
 
-|On https://aws.amazon.com/ec2/?nc1=h_ls[Amazon’ EC2 website], you click to choose a server among those on offer: it is *on demand*
-
-You run your job on it. Costs are metered precisely.
-
+|
 When your job is over, you stop the server with a click and pay the bill.
 
 If the job happens to need more computing capacity, you switch to a bigger server with a single click, or it can be done for you automatically: it is *elastic*.
@@ -134,7 +153,22 @@ See this blog post discussing  http://gevaperry.typepad.com/main/2009/01/account
 
 == 3. IaaS, PaaS, Saas
 == !
-What is the use of the cloud? Companies can use it to run elementary operations, up to more complex ones:
+What is the use of the cloud? Companies can externalize operations to the cloud, instead of running these operations on their premises, using their own resources.
+
+
+== !
+Which kind of operations can be externalized to the cloud?
+
+Companies can delegate just the basic IT infrastructure, or IT operations which are closer to the core of their business. These different degrees can be described with the *"pizza model"*:
+
+== !
+[.stretch]
+image::pizza-as-a-service.jpg[align="center",title="Pizza as a service",book="keep"]
+== !
+
+
+This schema illustrates that as a business, you can either run all operations by yourself ("made at home"), or delegate everything ("dining out").
+Each of these degrees of externalization has a name:
 
 
 == !
@@ -180,7 +214,8 @@ For example, operations which are not security sensitive and which need a capaci
 == !
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

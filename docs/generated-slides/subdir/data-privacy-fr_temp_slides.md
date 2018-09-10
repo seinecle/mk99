@@ -22,18 +22,12 @@ image::EMLyon_logo_corp.png[align="center"]
 
 == 1. Confidentialité: un des aspects de la protection des données
 == !
-
-
-== !
 [.stretch]
 image::Plusieurs-définitions-possibles-à-la-protection-des-données.png[align ="center",title="Plusieurs définitions possibles à la protection des données",book=" keep"]
 == !
 
 
 == 2. Quand les informations personnelles sont-elles considérées comme des "données"?
-== !
-
-
 == !
 Au niveau le plus basique, n'importe quoi pourrait compter comme "données" avec peut-être un caractère personnel, y compris les commentaires écrits sur quelqu'un dans un cahier personnel.
 
@@ -50,7 +44,6 @@ En pratique, les "données" commencent à être considérées comme telles lorsq
 
 == 3. Les données personnelles sont importantes en raison du droite à la vie privée
 == !
-
 https://www.cnil.fr/fr/definition/donnee-personnelle[Définition des données personnelles]:
 
 
@@ -110,9 +103,6 @@ En plus de façonner la sphère personnelle et l'identité d'un individu, la vie
 
 == 4. Évolution de la vie privée
 == !
-
-
-== !
 La vie privée est une norme sociale qui se transforme à mesure que les sociétés évoluent. Depuis les années 2000, quelques tendances peuvent être identifiées:
 
 
@@ -136,7 +126,6 @@ image::truman.jpg[align = "center", title = "Le Truman SHow - film de 1998", liv
 
 == 5. Vie privée du consommateur et vie privée des citoyens: les relations entre les deux
 == !
-
 Grâce aux lanceurs d'alerte comme https://en.wikipedia.org/wiki/Edward_Snowden[Edward Snowden], ((("Snowden, Edward"))) un ancien consultant pour la National Security Agency - NSA, l'ampleur des violations de la vie privée par les agences gouvernementales sont maintenant mieux connues.
 
 == !
@@ -179,12 +168,9 @@ Selon elle, outre la surveillance et la perte de vie privée, des entreprises co
 == !
 - quelques expériences passées sur le vote aux Etats-Unis, et les développements actuels sur la ((surveillance électronique)) en ((Chine)), montrent que la puissance de ces technologies a déjà des conséquences dans le monde réel:
 
-
 == !
 [.stretch]
 video::iFTWM7HV2UI[youtube]
-== !
-
 == !
 
 == 6. Conclusion: la protection des données dans les affaires, plus qu'une obligation réglementaire
@@ -212,12 +198,12 @@ video::oVfHeWTKjag[youtube]
 
 
 == !
-[début = 2]
+[start = 2]
 2. Des situations contrastées en terme de cadre législatif visant à à protéger la vie privée, en particulier par le biais d'une obligation de transparence face à la collecte de plus de données personnelles. L'Europe renforce ce cadre avec la RGPD (voir https://www.pinterest.fr/seinecle/gdpr/en-fran%C3%A7ais/[une sélection d'articles sur le sujet de la RGPD]), la Chine met au contraire en place un système de surveillance des individus très puissant (voir https://www.pinterest.fr/seinecle/china-data-science-ai/en-fran%C3%A7ais/[une sélection d'articles sur la Chine])
 
 == !
-[début = 3]
-3. Un approfondissement du modèle actuel avec plus de données personnelles collectées, dans les espaces privés (maisons) et le comportement dans les lieux publics (gestion des foules dans les rues, les stades, etc.). Ainsi, Echo d'Amazon, le HomePod d'Apple et Google Home ont fait une percée chez les consommateurs. Ces équipements renforcent la captation de données à caractère personnelle :
+[start = 3]
+3. Un approfondissement du modèle actuel avec plus de données personnelles collectées, dans les espaces privés (maisons) et le comportement dans les lieux publics (gestion des foules dans les rues, les stades, etc.). Ainsi, Echo d'Amazon, le HomePod d'Apple et Google Home ont fait une percée chez les consommateurs. Ces équipements renforcent la captation de données à caractère personnel :
 
 == !
 [.stretch]
@@ -229,7 +215,8 @@ image::amazon-echo.jpg[align = "center", title = "Echo Alexa", livre = "book"]
 == !
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

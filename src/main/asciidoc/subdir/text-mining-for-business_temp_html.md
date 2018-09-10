@@ -19,7 +19,6 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 
 == 1. Definitions
-//ST: 1. Definitions
 
 //ST: !
 "Text mining" refers to using computational methods to find interesting information in texts.
@@ -42,7 +41,6 @@ Some approaches to text mining put a heavy emphasis on grammatical notions (stru
 A "corpus" is a collection of documents. The plural form exists: corpora. So data scientists doing text mining refer to their "dataset" or "corpus".
 
 == 2. What kind of text?
-//ST: 2. What kind of text?
 
 //ST: !
 - Books
@@ -64,11 +62,10 @@ The list above is to convey that "text" is virtually everywhere, and as obvious 
 
 
 == 3. What can be done with text mining?
-//ST: 3. What can be done with text mining?
 
 //ST: !
 [start=1]
-==== a. Sentiment analysis
+=== a. Sentiment analysis
 
 //ST: !
 Sentiment analysis, also called opinion mining or sentiment detection.
@@ -82,7 +79,7 @@ For a review of methods for sentiment analysis, see https://arxiv.org/abs/1512.0
 
 //ST: !
 [start=2]
-==== b. Topic modeling / topic detection
+=== b. Topic modeling / topic detection
 
 //ST: !
 This type of tool aims at discovering the main topic or the multiple topics of a corpus. This is an essential function for:
@@ -99,7 +96,7 @@ This type of tool aims at discovering the main topic or the multiple topics of a
 
 //ST: !
 [start=3]
-==== c. Semantic disambiguation and Named Entity Recognition
+=== c. Semantic disambiguation and Named Entity Recognition
 
 //ST: !
 How can a software "understand" the difference between "Paris Hilton" and "Hilton Hotel, in Paris"?
@@ -112,25 +109,24 @@ Semantic disambiguation or "Word sense disambiguation" consists in finding the m
 
 //ST: !
 [start=4]
-==== d. Automated translation / live translation
+=== d. Automated translation / live translation
 
 //ST: !
 See Google translate but also the https://www.skype.com/en/features/skype-translator/[Skype Translator].
 
 //ST: !
 [start=5]
-==== e. Summarizing
+=== e. Summarizing
 
 //ST: !
 Shortening a text while keeping its core message intact. See https://arxiv.org/abs/1707.02268[this reference] for a short, technical review.
 
 
 == 4. Ok, amaze me
-//ST: 4. Ok, amaze me
 
 //ST: !
 [start=1]
-==== a. Named Entity Recognition
+=== a. Named Entity Recognition
 
 //ST: !
 A demo for Named Entity Recognition (the demo is for a service delivered as an API):
@@ -151,7 +147,7 @@ Then:
 
 //ST: !
 [start=2]
-==== b. A demo of sentiment analysis by a research team at Stanford:
+=== b. A demo of sentiment analysis by a research team at Stanford:
 
 //ST: !
 
@@ -161,10 +157,9 @@ http://nlp.stanford.edu:8080/sentiment/rntnDemo.html
 
 
 == 5. Frontier of text mining: what works, what is hard, what does not work.
-//ST: 5. Frontier of text mining: what works, what is hard, what does not work.
 
 //ST: !
-==== a. What works: Profiling of individuals on psycho / political / social dimensions
+=== a. What works: Profiling of individuals on psycho / political / social dimensions
 
 //ST: !
 The current state of text mining  makes it *easy* to profile individuals, based on the texts they write on social networks.
@@ -214,7 +209,7 @@ These text mining techniques get even more precise when mixed  with network anal
 
 //ST: !
 [start=2]
-==== b. Printed form (or even pdf) is hard
+=== b. Printed form (or even pdf) is hard
 
 //ST: !
 Printed text is typically harder and slower to analyze, because it needs to be scanned first (the technical term is https://en.wikipedia.org/wiki/Optical_character_recognition[OCR]). The process of OCR introduces errors.
@@ -226,7 +221,7 @@ And even when the text is in a digital form, it can be hard to use: extracting t
 
 //ST: !
 [start=3]
-==== c. Multilingual
+=== c. Multilingual
 
 //ST: !
 Many operations in text mining will break when the language changes.
@@ -237,7 +232,7 @@ This is just one of many examples. Text mining applications often break, are les
 
 //ST: !
 [start=4]
-==== d. Very informal / colloquial speech
+=== d. Very informal / colloquial speech
 
 //ST: !
 Text mining applications will have a relatively easy time on text published by Reuters news, because it is written in a formal style.
@@ -247,7 +242,7 @@ It will have a harder time on a Facebook message written by a teenager, peppered
 
 //ST: !
 [start=5]
-==== e. Detection of irony and sarcasm: progresses but not there yet
+=== e. Detection of irony and sarcasm: progresses but not there yet
 
 //ST: !
 This project tries to crack the challenge of detecting irony in short texts: https://deepmoji.mit.edu/
@@ -256,7 +251,7 @@ Not working perfectly. Irony is hard because it needs contextual knowledge to gu
 
 //ST: !
 [start=6]
-==== f. Robust translation
+=== f. Robust translation
 
 //ST: !
 Translation remains very imperfect.
@@ -264,7 +259,7 @@ Again, because the meaning of a sentence or paragraph is crafted from the terms 
 
 //ST: !
 [start=7]
-==== g. Reasoning beyond Q&As
+=== g. Reasoning beyond Q&As
 
 //ST: !
 IBM Watson is a software which beat human players at the TV Game "Geopardy" (and that was in __2011__)
@@ -278,11 +273,10 @@ Yet, mining text to produce new "reasoning" in general situations by machines ha
 This topic (reasoning beyond special tasks) is discussed further in the presentation on artificical intelligence.
 
 == 6. Basic operations in text mining - essential vocabulary
-//ST: 6. Basic operations in text mining - essential vocabulary
 
 //ST: !
 [start=1]
-==== a. Tokenization
+=== a. Tokenization
 
 //ST: !
 Tokenization is finding terms in a sentence. For example, "I am Dutch" is tokenized into "I", "am", "Dutch".
@@ -291,21 +285,21 @@ Trivial? Not so much. Try tokenizing a sentence in Mandarin!
 
 //ST: !
 [start=2]
-==== b. Stemming
+=== b. Stemming
 
 //ST: !
 With stemming, “liked” and “like” will be reduced to their stem “lik” to facilitate further operations
 
 //ST: !
 [start=3]
-==== c. Lemmatizing
+=== c. Lemmatizing
 
 //ST: !
 With lemmatizing, “liked”, “like” and “likes” will be grouped to count them as one basic semantic unit
 
 //ST: !
 [start=4]
-==== d. Part-of-Speech tagging (aka POS tagging)
+=== d. Part-of-Speech tagging (aka POS tagging)
 
 //ST: !
 POS detects the grammatical function of the terms used in a sentence, to facilitate translation or other tasks.
@@ -314,14 +308,14 @@ See for example http://nlp.stanford.edu:8080/sentiment/rntnDemo.html[the online 
 
 //ST: !
 [start=5]
-==== e. Bag-of-words model
+=== e. Bag-of-words model
 
 //ST: !
 “Starting the text analysis with a bag-of-words model” means just listing and counting all different words in the text, as a first approach.
 
 //ST: !
 [start=6]
-==== f. N-grams
+=== f. N-grams
 
 //ST: !
 The text “I am Dutch” is made of 3 words: I, am, Dutch.
@@ -337,7 +331,6 @@ This can reveal interesting things about frequent expressions used in the text.
 A good example of how useful n-grams can be: visit the Ngram Viewer by Google: https://books.google.com/ngrams
 
 == 7. Types of use of text mining for business
-//ST: 7. Types of use of text mining for business
 
 //ST: !
 Three types of use:
@@ -349,7 +342,7 @@ Three types of use:
 
 //ST: !
 [start=1]
-==== a. for market facing activities
+=== a. for market facing activities
 
 //ST: !
 - Refined scoring: propensity scores (including churn), scoring of prospects
@@ -358,7 +351,7 @@ Three types of use:
 
 //ST: !
 [start=2]
-==== b. for business management
+=== b. for business management
 
 //ST: !
 - Organizational mapping: getting a view of the organization through text flows.
@@ -370,7 +363,7 @@ Example: getting a view on the activity of a business school through a map of it
 
 //ST: !
 [start=3]
-==== c. for business development
+=== c. for business development
 
 //ST: !
 - Developing adjunct services:
@@ -387,15 +380,14 @@ Example: getting a view on the activity of a business school through a map of it
 
 
 == The end
-//ST: The end
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 This course is made by Clement Levallois.
 
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
 pass:[    <!-- Start of StatCounter Code for Default Guide -->

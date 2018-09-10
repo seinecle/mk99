@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.6.1">
 <meta name="author" content="Clément Levallois">
-<title>La donnée, un concept à multiples facettes</title>
+<title>Data, a concept with multiple layers</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -520,33 +520,34 @@ table.CodeRay td.code>pre{padding:0}
 </head>
 <body class="article">
 <div id="header">
-<h1>La donnée, un concept à multiples facettes</h1>
+<h1>Data, a concept with multiple layers</h1>
 <div class="details">
 <span id="author" class="author">Clément Levallois</span><br>
 <span id="email" class="email"><a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a></span><br>
-<span id="revdate">2018-06-17</span>
+<span id="revdate">2017-31-07</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_1_définition_des_données">1. Définition des données</a></li>
-<li><a href="#_2_la_variété_des_ensembles_de_données">2. La variété des ensembles de données</a>
+<li><a href="#_1_definition_of_data">1. Definition of data</a></li>
+<li><a href="#_2_the_variety_of_data_sets">2. The variety of data sets</a>
 <ul class="sectlevel2">
-<li><a href="#_a_pensez_aux_données_au_sens_large">a. Pensez aux données au sens large</a></li>
-<li><a href="#_b_les_métadonnées_sont_aussi_des_données">b. les métadonnées sont aussi des données</a></li>
-<li><a href="#_c_zoom_avant_zoom_arrière">c. Zoom avant, zoom arrière</a></li>
+<li><a href="#_a_think_about_data_in_a_broad_sense">a. Think about data in a broad sense</a></li>
+<li><a href="#_b_metadata_is_data_too">b. metadata is data, too</a></li>
+<li><a href="#_c_zoom_in_zoom_out">c. zoom in, zoom out</a></li>
+<li><a href="#_d_take_away_to_create_value_from_data_you_must_first_be_able_to_identify_what_data_is_and_where_it_is">d. Take away: to create value from data, you must first be able to identify what data is, and where it is.</a></li>
 </ul>
 </li>
-<li><a href="#_3_comment_décrire_les_ensembles_de_données">3. Comment décrire les ensembles de données</a>
+<li><a href="#_3_how_to_describe_datasets">3. How to describe datasets</a>
 <ul class="sectlevel2">
-<li><a href="#_a_formats_types_codage">a. Formats, types, codage</a></li>
-<li><a href="#_b_données_tabulaires">b. Données tabulaires</a></li>
-<li><a href="#_c_données_first_party_second_party_et_third_party">c. Données "first party", "second party" et "third party"</a></li>
-<li><a href="#_d_données_sociodémo_vs_données_de_comportement">d. Données sociodémo vs données de comportement</a></li>
+<li><a href="#_a_formats_types_encoding">a. Formats, types, encoding</a></li>
+<li><a href="#_b_tabular_data">b. Tabular data</a></li>
+<li><a href="#_c_first_party_second_party_and_third_party_data">c. First party, second party and third party data</a></li>
+<li><a href="#_d_sociodemo_data_vs_behavior_data">d. Sociodemo data vs behavior data</a></li>
 </ul>
 </li>
-<li><a href="#_4_données_et_taille">4. Données et taille</a></li>
-<li><a href="#_pour_aller_plus_loin">Pour aller plus loin</a></li>
+<li><a href="#_4_data_and_size">4. Data and size</a></li>
+<li><a href="#_the_end">The end</a></li>
 </ul>
 </div>
 </div>
@@ -554,11 +555,11 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-06-20</p>
+<p>last modified: 2018-09-10</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
+<img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
 </div>
 </div>
 <div class="paragraph">
@@ -567,13 +568,13 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 </div>
 <div class="sect1">
-<h2 id="_1_définition_des_données">1. Définition des données</h2>
+<h2 id="_1_definition_of_data">1. Definition of data</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Le terme anglais "data" (1654) provient de <a href="http://www.etymonline.com/index.php?term=data">"datum ", un mot latin pour "un fait, une observation de la nature"</a>.
-"Données" est un seul fait, une seule entité, un seul point de la réalité.
-Le mot "données" signifiant "informations informatiques transmissibles et stockables" a été utilisé pour la première fois dans ce sens en 1946 en anglais.
-L&#8217;expression "traitement de données" a été utilisée pour la première fois en 1954, toujours en anglais.</p>
+<p>The English term "data" (1654) originates from  <a href="http://www.etymonline.com/index.php?term=data">"datum", a Latin word for "a given"</a>.
+"Data" is a single factual, a single entity, a single point of matter.
+The word "data" to mean "transmittable and storable computer information" was first used in this sense in 1946.
+The expression "data processing" was first used in 1954.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -583,20 +584,20 @@ L&#8217;expression "traitement de données" a été utilisée pour la première 
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Réflexion: l&#8217;étymologie suggère que les données sont "un fait naturel". Pouvez-vous remettre cela en question?</p>
+<p>Thoughts: the etymology suggests that data is "a given". Can you question this?</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Les données représentent soit une entité unique, soit une collection de telles entités ("jeu de données").
-Nous pouvons aussi parler d&#8217;ensembles de données  (un ensemble de données, ou jeu de données est donc une collection de points de données).</p>
+<p>Data represents either a single entity, or a collection of such entities ("data points").
+We can speak also of datasets instead of data (so a dataset is a collection of data points).</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2_la_variété_des_ensembles_de_données">2. La variété des ensembles de données</h2>
+<h2 id="_2_the_variety_of_data_sets">2. The variety of data sets</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all spread">
 <colgroup>
@@ -613,19 +614,19 @@ Nous pouvons aussi parler d&#8217;ensembles de données  (un ensemble de donnée
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Une date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Une couleur</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Une note</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A color</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A grade</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Une relation d&#8217;amitié</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Un son</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Un battement de coeur</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A relation of friendship</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A sound</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A heartbeat</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Un commentaire d&#8217;utilisateur</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Une durée</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Un curriculum vitae</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A user input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A duration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A curriculum vitae</p></td>
 </tr>
 </tbody>
 </table>
@@ -644,128 +645,152 @@ Nous pouvons aussi parler d&#8217;ensembles de données  (un ensemble de donnée
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Une image</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Une longitude et une latitude</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Un prix</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A picture</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A longitude and latitude</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A price</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Un certain nombre d&#8217;amis</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Une température</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Une liste de films préférés</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A number of friends</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A temperature</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A list of favorite movies</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">etc &#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">etc &#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">etc &#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">etc&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">etc&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">etc&#8230;&#8203;</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Ces exemples illustrent trois principes:</p>
+<p>These examples are chosen on purpose to be varied and from unexpected places.
+They illustrate three principles:</p>
 </div>
 <div class="sect2">
-<h3 id="_a_pensez_aux_données_au_sens_large">a. Pensez aux données au sens large</h3>
+<h3 id="_a_think_about_data_in_a_broad_sense">a. Think about data in a broad sense</h3>
 <div class="paragraph">
-<p>Les données ne sont pas seulement numériques, ni "ce qui se trouve dans mes feuilles de calcul". Vous devriez vous entraîner à penser aux données dans un sens plus large:</p>
+<p>Data is not just numerical, neither is it "what sits in my spreadsheets". You should train in thinking about data in a broader sense:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Les images sont des données</p>
+<p>pictures are data</p>
 </li>
 <li>
-<p>la langue est donnée (y compris l&#8217;argot, les mouvements de lèvre, etc.)</p>
-</li>
-</ul>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>les relations sont des données: l&#8217;individu A est connu, l&#8217;individu B est connu, <strong>mais la relation entre A et B est aussi une donnée</strong></p>
+<p>language is data (including slang, lip movements, etc.)</p>
 </li>
 <li>
-<p>les préférences, les états émotionnels &#8230;&#8203; sont des données</p>
+<p>relations are data: individual A is known, individual B is known, <strong>but the relationship between A and B is data as well</strong></p>
 </li>
 <li>
-<p>etc. Il n&#8217;y a pas de liste définitive, vous devez vous entraîner à regarder les situations d&#8217;affaires et penser: "où sont les données ?"</p>
+<p>preferences, emotional states&#8230;&#8203; are data</p>
+</li>
+<li>
+<p>etc. There is no definitive list, you should train yourself looking at business situations and think: "where is the data?"</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_b_les_métadonnées_sont_aussi_des_données">b. les métadonnées sont aussi des données</h3>
+<h3 id="_b_metadata_is_data_too">b. metadata is data, too</h3>
 <div class="paragraph">
-<p>Les métadonnées sont des données décrivant d&#8217;autres données.
-Exemple:</p>
+<p>Metadata is a piece of data describing another data.
+Example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>La référence bibliographique <i class="conum" data-value="1"></i><b>(1)</b>
-décrivant
-un livre <i class="conum" data-value="2"></i><b>(2)</b></pre>
+<pre>The bibliographical reference <i class="conum" data-value="1"></i><b>(1)</b>
+describing
+a book <i class="conum" data-value="2"></i><b>(2)</b></pre>
 </div>
 </div>
 <div class="colist arabic">
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>les métadonnées</td>
+<td>the metadata</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>les données</td>
+<td>the data</td>
 </tr>
 </table>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Les données sans métadonnées peuvent être sans valeur (imaginez une bibliothèque sans catalogue de bibliothèque)</p>
+<p>Data without metadata can be worthless (imagine a library without a library catalogue)</p>
 </li>
 <li>
-<p>Les métadonnées peuvent être informatives en soi, comme le montre le scandale NSA (lire cet article du New Yorker à propos de <a href="http://www.newyorker.com/news/news-desk/whats-the-matter" class="bare">http://www.newyorker.com/news/news-desk/whats-the-matter</a> -with-metadata[NSA et métadonnées]).</p>
+<p>Metadata can be informative in its own right, as shown with the NSA scandal (read this article from the New Yorker about <a href="http://www.newyorker.com/news/news-desk/whats-the-matter-with-metadata">NSA and metadata</a>).</p>
 </li>
 </ul>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/metadata.png" alt="metadata">
+<img src="../images/metadata.png" alt="metadata">
 </div>
-<div class="title">Figure 1. Le problème avec les métadonnées</div>
+<div class="title">Figure 1. The trouble with metadata</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_c_zoom_avant_zoom_arrière">c. Zoom avant, zoom arrière</h3>
+<h3 id="_c_zoom_in_zoom_out">c. zoom in, zoom out</h3>
 <div class="paragraph">
-<p>Nous devrions nous rappeler de considérer qu&#8217;un point de données peut être lui-même une collection de points de données:</p>
+<p>We should remember considering that a data point can be itself a collection of data points:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Une personne entrant dans un bâtiment est un point de données.</p>
+<p>a person walking into a building is a data point.</p>
 </li>
 <li>
-<p>cependant cette personne est elle-même une collection de points de donnée : données de localisation + réseau de relations + statut d&#8217;abonné à tel service + etc.</p>
+<p>however this person is itself a collection of data points: location data + network relations + subscriber status to services + etc.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>C&#8217;est un bon réflexe de se demander si un point de données peut en fait être "dégroupé" (se désagréger en plus petits points de données / mesures)</p>
+<p>It is a good reflex to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_d_take_away_to_create_value_from_data_you_must_first_be_able_to_identify_what_data_is_and_where_it_is">d. Take away: to create value from data, you must first be able to identify what data is, and where it is.</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Organizations that don’t know what information they have or could acquire, are unable to leverage it as an asset.
+As one CIO for a large insurance company recently admitted to me: "It’s silly that someone around here has an inventory of our office furniture, but nobody in the company has an inventory of what data we have."</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Douglas Laney<br>
+<cite>Infonomics: How to Monetize</cite>
+</div>
+</div>
+<div class="paragraph">
+<p>Where is data located? An inventory must be made. From Douglas Laney&#8217;s <a href="https://www.amazon.com/Infonomics-Monetize-Information-Competitive-Advantage/dp/1138090387/ref=sr_1_1?ie=UTF8&amp;qid=1536573809&amp;sr=8-1&amp;keywords=infonomics">Infonomics</a>:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/infonomics_1.jpg" alt="infonomics 1">
+</div>
+<div class="title">Figure 2. Information Asset Inventory</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_3_comment_décrire_les_ensembles_de_données">3. Comment décrire les ensembles de données</h2>
+<h2 id="_3_how_to_describe_datasets">3. How to describe datasets</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_a_formats_types_codage">a. Formats, types, codage</h3>
+<h3 id="_a_formats_types_encoding">a. Formats, types, encoding</h3>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/tweet.png" alt="tweet">
+<img src="../images/tweet.png" alt="tweet">
 </div>
 </div>
 <div class="paragraph">
@@ -774,93 +799,93 @@ un livre <i class="conum" data-value="2"></i><b>(2)</b></pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Il s&#8217;agit d&#8217;un support <strong>numérique</strong> (parce qu&#8217;il est à l&#8217;écran par opposition à l&#8217;analogique, si nous avions imprimé l&#8217;image sur papier)</p>
+<p>This is a digital <strong>medium</strong> (because it&#8217;s on screen as opposed to analogical, if we had printed the pic on paper)</p>
 </li>
 <li>
-<p>Le <strong>type</strong> des données est textuel + image</p>
+<p>The <strong>type</strong> of the data is textual + image</p>
 </li>
 <li>
-<p>Le texte est formaté en <strong>texte brut</strong> (ce qui signifie, pas de formatage spécial), par opposition aux <strong>formats d&#8217;échange de données</strong> qui sont des marques de mise en forme ajoutées au texte pour faciliter sa lisibilité par un logiciel (<a href="https://codingislove.com/json-tutorial-indepth/">csv, json et xml</a>).</p>
+<p>The text is formatted in <strong>plain text</strong> (meaning, no special formatting), as opposed to <strong>data-interchange formats</strong> which are formatting marks added to the text to facilitate its readability by software (check <a href="https://codingislove.com/json-tutorial-indepth/">csv, json and xml</a>).</p>
 </li>
 <li>
-<p>L'<strong>encodage</strong>  du texte est UTF-8 (un des encodages issus de la norme Unicode). L&#8217;encodage traite de la question : comment représenter les alphabets, les signes (par exemple: emojis) et les symboles, de différentes langues, dans le texte? UTF-8 est un encodage qui est l&#8217;un des plus universels.</p>
+<p>The <strong>encoding</strong>  of the text is UTF-8 (one of encodings deriving from the Unicode standard). Encoding deals with the issue: how to represent alphabets, signs (for instance: emojis) and symbols, from different languages, in text? UTF-8 is an encoding which is one of the most universal.</p>
 </li>
 <li>
-<p>Le tweet fait partie d&#8217;une liste de tweets. La liste représente la <strong>structure de données</strong>  de l&#8217;ensemble de données, c&#8217;est la façon dont les données sont organisées. Il existe de nombreuses structures de données alternatives: tableaux, ensembles, "dics", "maps" &#8230;&#8203;</p>
+<p>The tweet is part of a list of tweets. The list represents the <strong>data structure</strong>  of the dataset, it is the way the data is organized. There are many alternative data structures: arrays, sets, dics, maps&#8230;&#8203;</p>
 </li>
 <li>
-<p>Le tweet est stocké sous forme d&#8217;image (fichier png) sur le disque dur. "png" est le <strong>format de fichier</strong>. Les données sont <strong>persistées</strong> en tant que fichier sur le disque (elles auraient pu être stockées dans une base de données à la place).</p>
+<p>The tweet is stored as a picture (png file) on the hard disk. "png" is the <strong>file format</strong>. The data is <strong>persisted</strong> as a file on disk (could have been stored in a database instead).</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_b_données_tabulaires">b. Données tabulaires</h3>
+<h3 id="_b_tabular_data">b. Tabular data</h3>
 <div class="paragraph">
-<p><strong>Les données tabulaires</strong>  sont un moyen courant de gérer les ensembles de données, en les organisant en lignes et en colonnes :</p>
+<p><strong>Tabular data</strong>  is a common way to handle datasets, by organizing it in lines and columns:</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/table.png" alt="table">
+<img src="../images/table.png" alt="table">
 </div>
-<div class="title">Figure 2. données tabulaires</div>
+<div class="title">Figure 3. tabular data</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_c_données_first_party_second_party_et_third_party">c. Données "first party", "second party" et "third party"</h3>
+<h3 id="_c_first_party_second_party_and_third_party_data">c. First party, second party and third party data</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>First party data</strong> : les données générées par les activités de votre propre organisation.
-Votre organisation en est propriétaire, ce qui ne signifie pas que le consentement des utilisateurs n&#8217;est pas requis en ce qui concerne les données personnelles.</p>
+<p><strong>First party data</strong> : the data generated through the activities of your own organization.
+Your organization own it, which does not mean that consent from users is not required, when it comes to personal data.</p>
 </li>
 <li>
-<p><strong>Second party data</strong> : les données accessibles via des partenariats.
-Sans être le générateur ni le propriétaire de ces données, les partenaires le mettent à votre disposition dans le cadre d&#8217;un accord.</p>
+<p><strong>Second party data</strong>  : the data accessed through partnerships.
+Without being the generator nor the owner of this data, partners make it available to you through an agreement.</p>
 </li>
 <li>
-<p>* Données tierces ou "third party data"* : les données acquises par un achat.
-Ces données sont acquises via une transaction de marché. Ses utilisations s&#8217;accompagnent toujours de conditions, notamment pour les données personnelles.</p>
+<p><strong>Third party data</strong> : the data acquired via purchase.
+This data is acquired through a market transaction. Its uses still comes with conditions, especially for personal data.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_d_données_sociodémo_vs_données_de_comportement">d. Données sociodémo vs données de comportement</h3>
+<h3 id="_d_sociodemo_data_vs_behavior_data">d. Sociodemo data vs behavior data</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Les données sociodémogaphiques ou <strong>sociodémo</strong> données, sociodémo) se réfèrent aux informations sur les individus, décrivant les attributs fondamentaux de leur identité sociale: âge, sexe, lieu de résidence, profession, statut matrimonial et nombre d&#8217;enfants.</p>
+<p>Sociodemogaphic or <strong>sociodemo</strong>  data refers to information about individuals, describing fundamental attributes of their social identity: age, gender, place of residence, occupation, marital status and number of kids.</p>
 </li>
 <li>
-<p><strong>Les données de comportement ou "behavior data"</strong>  se réfèrent à toute trace numérique laissée par l&#8217;individu au cours de sa vie : clics sur des pages web, likes sur Facebook, transactions d&#8217;achat, commentaires postés sur Tripadvisor &#8230;&#8203;</p>
+<p><strong>Behavior data</strong>  refers to any digital trace left by the individual in the course of it life: clicks on web pages, likes on Facebook, purchase transactions, comments posted on Tripadvisor&#8230;&#8203;</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Les données sociodémographiques sont généralement bien structurées ou faciles à structurer.
-Elles ont une longue histoire de collecte et d&#8217;analyse, essentiellement depuis que le recensement existe.
-Les données de comportement permettent de profiler les individus beaucoup plus précisément que les données sociodémographiques seules : les individus peuvent être caractérisés par leurs actes et leurs goûts, bien au-delà de ce qu&#8217;un âge ou un état matrimonial pourrait définir.
-Comment les données de comportement peuvent-elles "battre" les données sociodémo, en terme de précision?
-Il est difficile de prédire avec une grande précision l&#8217;orientation politique, religieuse ou sexuelle d&#8217;un individu en fonction de son code postal, de son sexe et de son âge. <a href="http://www.pnas.org/content/110/15/5802">Une équipe de recherche a pu évaluer ces attributs personnels avec une grande précision basée sur les likes que les individus font sur les pages et les messages Facebook.</a> L&#8217;orientation politique (précision de 85%), l&#8217;orientation sexuelle (précision de 75% à 88%) et l&#8217;orientation religieuse (exactitude de 82%) peuvent être déterminées pour les personnes ayant fait en moyenne 170 likes.</p>
+<p>Sociodemo data is typically well structured or easy to structure.
+It has a long history of collection and analysis, basically since census exists.
+Behavior data allows to profile individuals much more precisely than sociodemo data alone could do: individuals can be characterized by their acts and tastes, well beyond what an age or marital status could define.
+How can behavior data "beat" sociodemo data for precision?
+It is hard to predict with great accuracy the political, religious or sexual orientation of a given individual just based on their zip code, gender and age. <a href="http://www.pnas.org/content/110/15/5802">A research team could evaluate these personal attributes with great precision based on the likes individuals make on Facebook pages and posts</a>. Political orientation (85% accuracy), sexual orientation (75% to 88% accuracy) and religious orientation (82% accuracy) can be determined for persons who had made 170 likes on average.</p>
 </div>
 <div class="paragraph">
-<p>Mais les données comportementales ne sont généralement pas bien structurées, ce qui les rend plus coûteux à collecter, en terme de solution technologique, que de collecter des données sociodémographiques. La puissance et l&#8217;exactitude de la prédiction que procurent les données comportementales signifient également que les individus devraient être protégés contre l&#8217;invasion possible de leur vie privée. Il existe de grandes différences entre les pays en ce qui concerne les cadres juridiques protégeant les droits des individus. Nous en discutons dans le chapitre sur la confidentialité des données et le GDPR.</p>
+<p>But behavior data is typically not well structured, which makes it more costly to collect, in term of technological solution, than it costs to collect sociodemo data. The power and accuracy of prediction that behavior data affords also means that individuals should be protected against the possible invasion of their privacy. There are large differences between countries regarding the legal frameworks protecting individuals rights. We discuss this in the chapter on data privacy and the GDPR.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_4_données_et_taille">4. Données et taille</h2>
+<h2 id="_4_data_and_size">4. Data and size</h2>
 <div class="sectionbody">
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/russian_dolls.jpg" alt="russian dolls">
+<img src="../images/russian_dolls.jpg" alt="russian dolls">
 </div>
-<div class="title">Figure 3. Volumes de données</div>
+<div class="title">Figure 4. Volumes of data</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
@@ -882,22 +907,22 @@ Il est difficile de prédire avec une grande précision l&#8217;orientation poli
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1 bit</p></td>
 <td class="tableblock halign-left valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">peut stocker une valeur binaire (oui / non, vrai / faux &#8230;&#8203;)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">can store a binary value (yes / no, true / false&#8230;&#8203;)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8 bits</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 octet (ou octet)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">peut stocker un seul caractère</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 byte (or octet)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">can store a single character</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1,000 octets</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 kilooctet (kb)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Peut stocker un paragraphe de texte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1,000 bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 kilobyte (kb)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can store a paragraph of text</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1 million d&#8217;octets</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 mégaoctet (Mb)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Peut stocker une photo basse résolution.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1 million bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 megabyte (Mb)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can store a low res picture.</p></td>
 </tr>
 </tbody>
 </table>
@@ -916,34 +941,39 @@ Il est difficile de prédire avec une grande précision l&#8217;orientation poli
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1 milliard d&#8217;octets</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 gigaoctet (Go)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Peut stocker un film</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1 billion bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 gigabyte (Gb)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can store a movie</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1 billion d&#8217;octets</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 téraoctet (Tb)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Peut stocker 1 000 films. La taille des disques durs commerciaux en 2017 est de 2 To.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1 trillion bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 terabyte (Tb)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can store 1,000 movies. Size of commercial hard drives in 2017 is 2 Tb.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">~ 1,000 trillion bytes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 petabyte (Pb)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20 Pb = Google Maps in 2013</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_pour_aller_plus_loin">Pour aller plus loin</h2>
+<h2 id="_the_end">The end</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Retrouvez le site complet : <a href="https://seinecle.github.io/mk99/">here</a>.</p>
+<p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
-Clement Levallois</p>
+<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>[align="center", role="right"]
+This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
-<p>Découvrez mes autres cours et projets : <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
+<p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
 </div>
 <div class="paragraph">
-<p>Ou contactez-moi via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+<p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;
@@ -968,7 +998,7 @@ Clement Levallois</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-06-20 13:14:43 CEST
+Last updated 2018-09-10 12:17:04 CEST
 </div>
 </div>
 </body>

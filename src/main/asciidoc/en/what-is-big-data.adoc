@@ -26,7 +26,7 @@ Jokes aside, defining big data and what it covers needs a bit of precision. Let'
 
 == 2. The 3 V
 
-Big data is usually described with the "((3 Vs))":
+Big data is usually described with the https://blogs.gartner.com/doug-laney/files/2012/01/ad949-3D-Data-Management-Controlling-Data-Volume-Velocity-and-Variety.pdf[((3 Vs)), first proposed by Douglas Laney from Gartner in 2001]:
 
 === *V* for Volume
 The size of datasets available today is staggering (ex: ((Facebook)) had 250 billion pics in 2016).
@@ -42,10 +42,20 @@ The volumes of data are increasing at an *accelerating rate*. According to sourc
 (((data, structured vs unstructured)))
 
 ==== A - Structured data
-*Structured data* (((structured data))) refers to data which is formatted and organized according to a well defined set of rules, which makes it *machine readable*. For example, zip codes are a structured dataset because they follow a precise convention regarding the number of letters and digits composing them, making it easy for an optical reader and software to identify and "read" them. Same with license plates, social security numbers... But these are simple examples.
+*Structured data* (((structured data))) refers to data which is formatted and organized according to a well defined set of rules, which makes it *machine readable*.
+//+
+For example, zip codes are a structured dataset because they follow a precise convention regarding the number of letters and digits composing them, making it easy for an optical reader and software to identify and "read" them.
+Same with license plates, social security numbers... *these are examples of structured data*.
 
 //+
-What about, for instance, a tax form? If each field of the form is well defined, then the data collected through the form can be said to be "structured". By contrast, a form where the user can write free text (think of a comment on a blog post, or a blank space where users can write a feedback) produces unstructured data: data which does not follow a special convention for its size and content. This is typically much harder for software to process, hence to analyze.
+But these are simple examples.
+What about, for instance, a tax form?
+//+
+If each field of the form is well defined, then the data collected through the form can be said to be "structured".
+//+
+
+By contrast, a form where the user can write free text (think of a comment on a blog post, or a blank space where users can write a feedback) produces unstructured data: data which does not follow a special convention for its size and content.
+This is typically much harder for software to process, hence to analyze.
 
 //+
 To summarize, think of structured data as as anything that can be represented as well organized tables of numbers and short pieces of text with the expected format, size, and conventions of writing: phonebooks, accounting books, governmental statistics...
@@ -125,7 +135,7 @@ image::https://docs.google.com/drawings/d/e/2PACX-1vRzSlhst7wf_9MYiyiKkQlqfxMt9V
 //+
 * Network data (also known as graphs) (who is friend with whom, who likes the same things as whom, etc.) was usually neglected as "not true observation", and hard to query. Social networks like Facebook made a lot to make businesses aware of the value of graphs (especially https://en.wikipedia.org/wiki/Social_graph[social graphs]). https://neo4j.com/[((Neo4J))] or http://titan.thinkaurelius.com/[Titan] are database providers specialized in network data storage and analysis.
 //+
-* Geographical data has democratized: specific (and expensive) databases existed for a long time to store and query "place data" (regions, distances, proximity info...) but easy-to-use solutions have multiplied recently, such as https://carto.com/[Carto].
+* Geographical data has democratized: specific (and expensive) databases existed for a long time to store and query "place data" (regions, distances, proximity info...) but easy-to-use solutions have multiplied recently, such as https://carto.com/[Carto] or https://www.mapbox.com/[MapBox].
 
 === e. Open source software accelerated innovation
 
@@ -217,6 +227,7 @@ What are the differences between these terms?
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
+
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

@@ -86,8 +86,8 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .insert .insert{color:#080}
 .CodeRay .delete .delete{color:#800}
 .CodeRay .change .change{color:#66f}
-.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>APIs and their business relevance</h1><div class="preamble"><div class="paragraph"><p>last modified: 2018-06-20</p></div></div><p class="author"><small>Clément Levallois</small></p></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></section>
+.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>APIs and their business relevance</h1><div class="preamble"><div class="paragraph"><p>last modified: 2018-09-10</p></div></div><p class="author"><small>Clément Levallois</small></p></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></section>
 <section></section>
 <section id="_1_definition_of_api"><h2>1. Definition of API</h2></section>
 <section><div class="paragraph"><p>API: acronym for <strong>Application Programming Interface</strong> . An API is the way to make software programs “easy to plug and share” with other programs.</p></div></section>
@@ -121,7 +121,7 @@ More and more servers in different parts of the world needed to exchange data wi
 <section><h3>c. The benefits of a web API compared to an EDI</h3></section>
 <section><div class="paragraph"><p>Unlike an <strong>EDI</strong> , a web API drops any industry-specific concern. Web APIs are just a convention to send and receive data over the Internet, without any saying on the content of the data.</p></div></section>
 <section><div class="paragraph"><p>The data sent and received can be invoices, webpages, train schedules, audio, video&#8230;&#8203; whatever.
-Contrary to an EDI, a company creating a web API can choose to leave its access underline#open# (remember that EDIs need the two parties to have a pre-established agreement).</p></div></section>
+Contrary to an EDI, a company creating a web API can choose to leave its access <span class="underline">open</span> (remember that EDIs need the two parties to have a pre-established agreement).</p></div></section>
 <section><div class="paragraph"><p>So that a potential client interested in using the web API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.</p></div></section>
 <section><div class="admonitionblock warning"><table><tr><td class="icon"><div class="title"></div></td><td class="content"><div class="paragraph"><p>Saying that APIs are open does not mean an absence of security : communication through APIs can easily be identified and encrypted, as needed.</p></div></td></tr></table></div></section>
 <section><h3>d. REST API?</h3></section>
@@ -134,20 +134,33 @@ This simple evolution to ease interoperability had <strong>immense effects</stro
 <section id="_3_business_consequences_of_apis"><h2>3. Business consequences of APIs</h2></section>
 <section><h3>a. APIs <strong>opened</strong> software to the world</h3></section>
 <section><div class="paragraph"><p>An API transforms a closed software into something that can be plugged to anything other computer or object, as long as it is connected to the Internet.</p></div></section>
-<section><div class="paragraph"><p>For instance, APIs were a key factor of success for <a href="https://en.wikipedia.org/wiki/Salesforce.com">SalesForce</a> in the early 2000s. SalesForce, created in 1999, has a revenue of US$8.39 billion in 2017:</p></div>
-<div class="ulist"><ul><li><p>SalesForce developed a CRM as a SaaS where features of the CRM were <strong>exposed as APIs</strong> (meaning, these features could be plugged to external apps via the REST protocol).</p></li></ul></div></section>
+<section><div class="paragraph"><p>For instance, APIs were a key factor of success for <a href="https://en.wikipedia.org/wiki/Salesforce.com">SalesForce</a> in the early 2000s. SalesForce, created in 1999, has a revenue of US$8.39 billion in 2017:</p></div></section>
+<section><div class="ulist"><ul><li><p>SalesForce developed a CRM as a SaaS where features of the CRM were <strong>exposed as APIs</strong> (meaning, these features could be plugged to external apps via the REST protocol).</p></li></ul></div></section>
 <section><div class="ulist"><ul><li><p>SalesForce created a PaaS to host apps that could plug to the SalesForce CRM via the APIs developed by SalesForce. This platform is called <a href="https://www.salesforce.com/products/platform/products/force/">Force.com</a> and external developers can put their apps there, as long as they are compatible with the SalesForce API.</p></li></ul></div></section>
 <section><div class="paragraph"><p>SalesForce takes a commission on the sales made by these third party apps hosted on Force.com, but more importantly, the platform creates an <strong>ecosystem</strong> of apps and developers around the SalesForce products which makes it hard for a customer company to switch to a different product.</p></div></section>
 <section><h3>b. APIs <strong>accelerated</strong> software innovation</h3></section>
 <section><div class="paragraph"><p>Thanks to API it is now easier to add software blocks together and create new apps, even if these software blocks originate from different countries, industries, big and small.</p></div></section>
-<section><div class="paragraph"><p>As an extreme example: the Australian Victoria Police deployed a project for the recognition of stolen vehicles through the video recognition of licence plates on cars passing in the street (stolen vehicles get their license plates immediately recognized). This is a $86,000,000 project. An individual actually replicated this <a href="https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9">project with just 57 lines of code and a dashcam</a>. How so? Just because he could use existing software for licence plate recognition, available as an API, instead of re-developing this by himself.</p></div></section>
+<section><div class="paragraph"><p>As an extreme example:
+the Australian Victoria Police deployed a project for the recognition of stolen vehicles through the video recognition of licence plates on cars passing in the street (stolen vehicles get their license plates immediately recognized).
+This is a $86,000,000 project.
+An individual actually replicated this <a href="https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9">project with just 57 lines of code and a dashcam</a>.
+How so?
+Just because he could use existing software for licence plate recognition, available as an API, instead of re-developing this by himself.</p></div></section>
+<section><div class="paragraph"><p>Another example:
+<a href="https://twitter.com/levelsio/status/880241628580937728?lang=en">Peter Levels</a> demonstrated the potential of APIs by building a "Luggage delivery service" just with existing apps connected together via their APIs.
+Without a line of code:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/luggage-api.jpg" alt="luggage api" width="350" /></div><div class="title">Figure 1. Building a world wide luggage delivery service without code</div></section>
+<section><div class="paragraph"><p>This service is designed by organizing several sub-services, which coordinate by communicating via their APIs.</p></div></section>
+<section><div class="paragraph"><p>How does communication work? Who "orchestrates" these services? Peter uses <a href="https://zapier.com/">Zappier</a>, a service whose role is to make these APIs communicate with each other.
+Beyond these striking examples, the lessons to be learned are:</p></div></section>
+<section><div class="ulist"><ul><li><p>more and more services are available via API. Do not reinvent the wheel, just use the APIs.</p></li><li><p>coordinating multiple APIs allows you to create entirely new services (not just: "manage my emails by API")</p></li><li><p>services like <a href="https://zapier.com/">Zappier</a> allow coordination / communication between APIs, but it also favors <strong>automation</strong>.</p></li></ul></div></section>
 <section><h3>c. APIs <strong>opened</strong> data</h3></section>
 <section><div class="paragraph"><p>Companies and public organization own many datasets of great business interest.
 The use of these datasets can be free (for small projects and NGOs) or monetized if the user is an enterprise.</p></div></section>
 <section><div class="paragraph"><p>Without APIs, datasets can be made publicly available as docs (eg, Excel spreadsheets) to download but this is not practical (try downloading something like <code>all_train_schedules_2000_to_2017.xls</code> !).</p></div></section>
 <section><div class="paragraph"><p>Let&#8217;s take the example of a transportation company like French SNCF which finds it interesting to publish station names, train schedules, real time information on train traffic, etc. because it could be used by other companies to build new services : how can it do it?</p></div></section>
-<section><div class="ulist"><ul><li><p>The data is on a server of SNCF</p></li><li><p>SNCF adds <a href="https://data.sncf.com/api/en">an API and its documentation</a>, making the data available to developers able to <a href="https://youtu.be/7YcW25PHnAA">connect to APIs, which is a basic skill in software development</a>.</p></li><li><p>Entrepreneurs and programmers in general will be able to access the data via the API and use it, creating <a href="https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja">new services based on this train information</a>.</p></li></ul></div>
-<div class="paragraph"><p><strong>Open data</strong>  designates this movement to make datasets available to a broad audience, and web APIs have been a key technological ingredient in this movement.</p></div></section>
+<section><div class="ulist"><ul><li><p>The data is on a server of SNCF</p></li><li><p>SNCF adds <a href="https://data.sncf.com/api/en">an API and its documentation</a>, making the data available to developers able to <a href="https://youtu.be/7YcW25PHnAA">connect to APIs, which is a basic skill in software development</a>.</p></li><li><p>Entrepreneurs and programmers in general will be able to access the data via the API and use it, creating <a href="https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja">new services based on this train information</a>.</p></li></ul></div></section>
+<section><div class="paragraph"><p><strong>Open data</strong>  designates this movement to make datasets available to a broad audience, and web APIs have been a key technological ingredient in this movement.</p></div></section>
 <section id="_4_the_ecosystem_of_apis"><h2>4. The ecosystem of APIs</h2></section>
 <section><h3>a. A wealth of APIs</h3></section>
 <section><div class="paragraph"><p>To discover new APIs, or to make your APIs easier to discover, the most well known place is <a href="https://www.programmableweb.com/">the website "Programmable Web"</a> (see also <a href="http://apis.io/">apis.io</a>). Searching on this website, you will find  <a href="https://www.programmableweb.com/api/coca-cola-enterprises">APIs providing business services</a>, or   <a href="https://www.programmableweb.com/api/itsthisforthat">APIs of a fun and odd sort</a>.</p></div></section>
@@ -158,12 +171,12 @@ As a result, a large number of services associated to APIs have developed to cat
 <section><div class="ulist"><ul><li><p>how to create an API</p></li><li><p>how to manage the documentation of a large number of APIs</p></li><li><p>how to connect a wide variety of APIs</p></li><li><p>how to control and audit the security of APIs</p></li><li><p>how to monetize and API&#8230;&#8203;</p></li></ul></div></section>
 <section><div class="paragraph"><p>&#8594; Many large firms and startups now specialize in all these domains of activity. This is the <a href="https://twitter.com/medjawii?lang=en">landscape of the main companies active in the API industry</a>:</p></div>
 <div style="page-break-after: always;"></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="images/api-landscape-2017_panorama.jpg" alt="api landscape 2017 panorama" height="100%" /></div><div class="title">Figure 1. The API landscape in 2017 by Mehdi Medjaoui</div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/api-landscape-2017.jpg" alt="api landscape 2017" height="100%" /></div><div class="title">Figure 2. The API landscape in 2017 by Mehdi Medjaoui</div></section>
 <section></section>
 <section id="_the_end"><h2>The end</h2></section>
 <section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p></div>
-<div class="paragraph"><p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>
-This course is made by Clement Levallois.</p></div>
+<div class="paragraph"><p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>[align="center", role="right"]</p></div>
+<div class="paragraph"><p>This course is made by Clement Levallois.</p></div>
 <div class="paragraph"><p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p></div>
 <div class="paragraph"><p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
     <!-- Start of StatCounter Code for Default Guide -->

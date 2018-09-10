@@ -197,9 +197,11 @@ And repeat for all tables, many times, until no exchange of sits improves the si
 // +
 This approach makes it possible to identify groups of people who have common points.
 It is obviously very useful to organize the world around us in business, from a segmentation of customers or prospects, to a classification of products in categories for evaluation or portfolio management purposes.
-
 // +
-image::kmeans.jpg[pdfwidth="60%", align="center", title="K-means, an unsupervised learning approach", width= 300]
+There is a very large field of scientific research devoted to designing better clustering techniques suiting a variety of situations.
+One of the most popular of these techniques remains the"k-means", and was invented in the 1950s:
+
+image::kmeans.jpg[pdfwidth="60%", align="center", title="k-means clustering - an unsupervised learning approach", width="300"]
 
 === b. The *supervised* learning approach
 *Supervised learning* (((machine learning, supervised learning))) is the approach consisting in calibrating a model based on the history of past experiences in order to guess / predict a new occurrence of the same experience.

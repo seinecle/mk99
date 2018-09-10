@@ -219,10 +219,9 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 
 <<<<
 
-
 == !
 [.stretch]
-image::api-landscape-2017_panorama.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui", book="keep"]
+image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui", book="keep"]
 == !
 
 
@@ -230,7 +229,7 @@ image::api-landscape-2017_panorama.jpg[pdfwidth="90%", align="center", title="Th
 == !
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

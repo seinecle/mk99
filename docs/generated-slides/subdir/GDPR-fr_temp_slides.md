@@ -153,12 +153,8 @@ Les données sensibles (((données, données sensibles))) constituent une catég
 == !
 Une ((personne concernée)) est un être humain sur lequel des données personnelles sont collectées.
 
-
 == !
 ==== d. Responsable de traitement ("Data controller" en anglais)
-== !
-
-
 == !
 Un responsable de traitement ((("data controller, responsable de traitement"))) est une entité qui détermine les objectifs, les conditions et les moyens du traitement des données personnelles. Lorsque l'organisation est suffisamment grande, une position dédiée de "Responsable de traitement" peut être créée, sinon c'est le responsable légal de l'organisation.
 
@@ -183,7 +179,6 @@ Jusqu'en 2017, il a été considéré que le sous-traitant "exécute" simplement
 
 == 4. Quatre principes clés pour le traitement légitime des données personnelles
 == !
-
 ==== a. Consentement préalable
 == !
 Le ((consentement préalable)) est requis avant de recueillir des données personnelles en vue de leur traitement:
@@ -270,7 +265,6 @@ Les personnes concernées dans l'UE ont élargi leurs droits en matière de prot
 == !
 Les citoyens ont maintenant également le droit de questionner et remettre en cause les décisions qui les affectent sur une base purement algorithmique.
 
-
 == !
 ==== g. Confidentialité "by design"
 == !
@@ -284,7 +278,6 @@ Les Contrôleurs et processeurs dont le cœur de métier est le suivi régulier 
 
 == 6. Protection des données: un aperçu rapide en dehors de l'UE
 == !
-
 ==== a. ETATS-UNIS
 == !
 - Cadre sur la protection des données pour les données collectées / détenues par le gouvernement fédéral
@@ -303,8 +296,6 @@ IT Act de 2000 + http://www.wipo.int/wipolex/en/details.jsp?id=15063[Règlement 
 ==== c. Chine
 == !
 (((Chine)))
-
-== !
 En Chine, la protection des données n'est pas promulguée dans une seule loi, à l'exception de lois de portée plus large: le Comité permanent du Congrès national du peuple a promulgué une http://tinyurl.com/npcdecision[Décision concernant le renforcement de la protection de l'information sur les réseaux].
 
 == !
@@ -317,14 +308,14 @@ L'Etat chinois développe des initiatives telles que https://fr.wikipedia.org/wi
 == !
 ==== d. Législation pour la protection des données personnelles dans d'autres pays
 == !
-
 Pour avoir une https://uk.practicallaw.thomsonreuters.com/Browse/Home/International/DataProtectionGlobalGuide?__lrTS=20171113205355950&transitionType=Default&contextData=(sc.Default)&firstPage=true&bhcp=1[vue synthétique des lois sur la protection des données dans d'autres pays, visitez ce site Web par Thomson Reuters].
 
 == Pour aller plus loin
 == !
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

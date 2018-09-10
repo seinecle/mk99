@@ -22,7 +22,6 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 == 1. Le Big data est difficile à définir
 == !
-
 [.stretch]
 image::ariely.png[align = "center", title="Message de Facebook de Dan Ariely en 2013", book = "keep"]
 == !
@@ -32,15 +31,20 @@ Ironie à part, le big data demande effectivement un travail de définition. App
 
 == 2. Les 3 V
 == !
-
-Les big data sont généralement décrites avec le "((3 Vs))":
+Les big data sont généralement décrites avec le concept des https://blogs.gartner.com/doug-laney/files/2012/01/ad949-3D-Data-Management-Controlling-Data-Volume-Velocity-and-Variety.pdf[((3 Vs)), proposé dès 2001 par Douglas Laney, chez Gartner]:
 
 == !
 ==== *V* pour le volume
 == !
 La taille des jeux de données disponibles aujourd'hui est stupéfiante (ex: ((Facebook)) avait 250 milliards de photos en 2016).
+Nous produisons une quantité phénomènale de données dans le cours de notre vie quotidienne (au point de parfois manquer une expérience non médiatisée par la technologie - comme cette grand-mère l'a compris)
 
 == !
+[.stretch]
+image::grandma.png[align = "center", title="Nous collectons des données à chaque instant - ou pas", book = "keep"]
+== !
+
+
 Les volumes de données augmentent à un rythme *accéléré*. Selon des sources, https://www.sciencedaily.com/releases/2013/05/130522085217.htm[90% de toutes les données dans le monde a été généré au cours des deux dernières années] (déclaration de 2013) ou dit différemment , https://appdevelopermagazine.com/4773/2016/12/23/more-data-will-be-created-in-2017-than-the-previous-5,000-years-of-humanity-/[plus de données être créé en 2017 que dans les 5000 ans de l'histoire de l'humanité].
 
 == !
@@ -57,7 +61,12 @@ Les volumes de données augmentent à un rythme *accéléré*. Selon des sources
 
 
 == !
-Qu'en est-il, par exemple, d'un formulaire d'impôt? Si chaque champ du formulaire est bien défini, alors les données collectées à travers le formulaire peuvent être dites « structurées ». En revanche, une forme où l'utilisateur peut écrire du texte libre (pensez à un commentaire sur un article de blog, ou un espace vide où les utilisateurs peuvent écrire un commentaire) produit des données non structurées : données qui ne suivent pas une convention spéciale pour leur taille et leur contenu. C'est généralement beaucoup plus difficile à traiter par le logiciel, donc à analyser.
+Qu'en est-il, par exemple, d'un formulaire d'impôt?
+Si chaque champ du formulaire est bien défini, alors les données collectées à travers le formulaire peuvent être dites « structurées ».
+
+== !
+En revanche, une forme où l'utilisateur peut écrire du texte libre (pensez à un commentaire sur un article de blog, ou un espace vide où les utilisateurs peuvent écrire un commentaire) produit des données non structurées : données qui ne suivent pas une convention spéciale pour leur taille et leur contenu.
+C'est généralement beaucoup plus difficile à traiter par le logiciel, donc à analyser.
 
 
 == !
@@ -75,7 +84,8 @@ image::book.png[align = "center", title="Un livre de comptes montrant des donné
 
 
 == !
-Ces ensembles de données sont beaucoup plus difficiles à traiter et à analyser, car ils sont pleins d'exceptions et de différences. Mais ils sont porteurs d'informations généralement riches: texte libre, informations enregistrées "dans la nature" ...
+Ces ensembles de données sont beaucoup plus difficiles à traiter et à analyser, car ils sont pleins d'exceptions et de différences.
+Mais ils sont porteurs d'informations généralement riches: texte libre, informations enregistrées "dans la nature" ...
 
 == !
 [.stretch]
@@ -183,6 +193,7 @@ image::Réduction-des-coûts-de-stockage-des-données.png[align="center", title=
 
 ==== d. L'état d'esprit a changé sur ce qui "compte" comme données
 == !
+
 * Les données non structurées (voir ci-dessus pour la définition de "non structuré") n'étaient généralement pas stockées : cela prend beaucoup de place, et les logiciels pour les interroger n'étaient pas suffisamment développés.
 
 == !
@@ -263,7 +274,7 @@ https://twitter.com/mattturck[Matt Turck, VC chez FirstMarkCap], crée chaque an
 
 == !
 [.stretch]
-image::Matt-Turck-FirstMark-2017-Big-Data-Landscape_panorama.png[pdfwidth = "100%", align = "center", title="Paysage de données pour 2017", book = "keep"]
+image::Matt-Turck-FirstMark-2017-Big-Data-Landscape.png[pdfwidth = "100%", align = "center", title="Paysage de données pour 2017", book = "keep"]
 == !
 
 
@@ -296,6 +307,8 @@ Les réglementations publiques aux niveaux national et international tentent de 
 * Il est intéressant de noter que les expressions "à la mode", comme "big data", ont tendance à s'user rapidement. Elles sont sur-utilisées, mentionnées en toutes circonstances, deviennent vagues et trop vendues.
 Pour les données volumineuses, nous observons qu'on atteint un sommet en 2017, alors que de nouveaux termes apparaissent:
 
+
+== !
 pass:[<iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe> ]
 
 
@@ -316,7 +329,7 @@ Quelles sont les différences entre ces termes?
 == !
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

@@ -112,15 +112,25 @@ Installez-le et configurez-le
 
 Maintenez-le (sécurité, etc.)
 
+|Sur le site https://aws.amazon.com/ec2/?nc1=h_ls[Amazon 'EC2], vous cliquez pour choisir un type de serveur parmi ceux proposés : c'est *sur demande*
+
+Vous exécutez votre travail dessus.
+Les coûts sont mesurés avec précision.
+
+Pas de maintenance, pas de sécurité à gérer: tout cela est effectuté par le cloud provider.
+|=====
+
+
+
+== !
+[width = "100%"]
+|=====
+| *Sans le cloud* | *Avec le cloud*
 Quand le travail est terminé: que faites-vous avec votre serveur? C'est un coût irrécupérable.
 
 Si le travail nécessite plus de capacité de calcul que votre serveur ne l'offre: vous êtes coincé avec votre trop petit serveur!
 
-|Sur le site https://aws.amazon.com/ec2/?nc1=h_ls[Amazon 'EC2], vous cliquez pour choisir un type de serveur parmi ceux proposés : c'est *sur demande*
-
-Vous exécutez votre travail dessus. Les coûts sont mesurés avec précision.
-
-Lorsque votre travail est terminé, vous arrêtez le serveur avec un clic et payez la facture.
+|Lorsque votre travail est terminé, vous arrêtez le serveur avec un clic et payez la facture.
 
 Si le travail nécessite plus de capacité de calcul, vous passez à un serveur plus grand en un seul clic, ou vous pouvez le faire automatiquement: c'est *elastic*.
 | C'est un capex | C'est un opex
@@ -134,8 +144,23 @@ Voir cet article sur http://gevaperry.typepad.com/main/2009/01/accounting-for-cl
 
 == 3. IaaS, PaaS, Saas
 == !
-Quelle est l'utilisation du cloud? Les entreprises peuvent l'utiliser pour exécuter des opérations élémentaires, jusqu'à des opérations plus complexes:
+A quoi sert le cloud pour une entreprise? Les entreprises peuvent externaliser leurs opérations sur le cloud plutôt que de les exécuter chez elles, en utilisant leurs propres ressources.
 
+
+== !
+Quels types d'opérations peuvent être externalisés vers le cloud?
+
+Les entreprises peuvent ne déléguer que l'infrastructure informatique de base ou les opérations informatiques les plusau coeur de leurs activités.
+Ces différents degrés peuvent être décrits avec le *"modèle de pizza"*:
+
+== !
+[.stretch]
+image::pizza-a-service.jpg[align = "center", title = "Pizza as a service", book="keep"]
+== !
+
+
+Ce schéma montre qu'en tant qu'entreprise, vous pouvez soit exécuter toutes les opérations vous-même ("made at home"), soit tout déléguer ("diner au restaurant").
+Chacun de ces degrés d'externalisation a un nom:
 
 == !
 * *Infrastructure en tant que service* (Infrastucture as a Service, IaaS)
@@ -158,7 +183,6 @@ Des exemples populaires sont Google Drive, https://www.d2l.com/products/learning
 
 == 4. Cloud privé ou public? cloud hybride?
 == !
-
 - Amazon EC2 (((Amazon, EC2))) est un exemple de *cloud public* (((cloud, cloud public))): il est accessible publiquement à tout client. Bien sûr, cela ne signifie pas que chaque client peut voir ce que les autres font sur le cloud! Chaque client a ses espaces privés sur le cloud.
 - De nombreuses entreprises ont des exigences de sécurité qui les empêchent d'accéder aux clouds publics.
 Ils ont besoin de leurs serveurs sur place.
@@ -178,7 +202,8 @@ Par exemple, les opérations qui ne représentent pas un risque de sécurité et
 == !
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="Clément Levallois" /><title>Big data and marketing</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.5.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.5.0/css/theme/white.css" id="theme" /><link href="reveal.js-3.5.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.5.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>Big data and marketing</h1><div class="preamble"><div class="paragraph"><p>last modified: 2017-11-04</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></div><p class="author"><small>Clément Levallois</small></p></section>
+<section id="_escape_or_o_to_see_all_sides_f11_for_full_screen_s_for_speaker_notes"><h2>'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes</h2></section>
+<section id="_1_big_data_is_a_mess"><h2>1. Big data is a mess</h2><div class="imageblock stretch" style="text-align: center"><img src="images/ariely.png" alt="ariely" height="100%" /></div><div class="title">Figure 1. Facebook post by Dan Ariely in 2013</div></section>
+<section><div class="paragraph"><p>Jokes aside, defining big data and what it covers needs a bit of precision. Let&#8217;s bring some clarity.</p></div></section>
+<section id="_2_the_3_v"><h2>2. The 3 V</h2><div class="paragraph"><p>Big data is usually described with the "3 Vs":</p></div></section>
+<section><h3><strong>V</strong> for Volume</h3></section>
+<section><div class="paragraph"><p>The size of datasets available today is staggering (ex: Facebook had 250 billion pics in 2016).</p></div>
+<div class="paragraph"><p>We should also note that the volumes of data are increasing at an <strong>accelerating rate</strong>. According to sources, <a href="https://www.sciencedaily.com/releases/2013/05/130522085217.htm">"90% of all the data in the world has been generated over the last two years"</a> (statement from 2013) or said differently, <a href="https://appdevelopermagazine.com/4773/2016/12/23/more-data-will-be-created-in-2017-than-the-previous-5,000-years-of-humanity-/">"More data will be created in 2017 than the previous 5,000 years of humanity"</a></p></div></section>
+<section><h3><strong>V</strong> for Variety</h3></section>
+<section><div class="paragraph"><p>This is a bit less intuitive. "Variety" means here that data is increasingly unstructured and messy, and this is an important characteristic of the "big data" phenomenon. To carictature a bit, try to picture a shift from A to B:</p></div></section>
+<section><div class="paragraph"><p><strong>A - Structured data</strong>:</p></div>
+<div class="paragraph"><p>phonebooks, accounting books, governmental statistics&#8230;&#8203; anything that can be represented as well organized tables of numbers and short pieces of text with the expected format, size, and conventions of writing.</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/book.png" alt="book" height="100%" /></div><div class="title">Figure 2. A book of accounts showing structured data</div></section>
+<section><div class="paragraph"><p><strong>B - Unstructured data</strong>:</p></div>
+<div class="paragraph"><p>datasets made of "unruly" items: text of any length, without proper categorization, encoded in different formats, including possibly pictures, sound, geographical coordinates and what not&#8230;&#8203;</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/unstructured-data.png" alt="unstructured data" height="100%" /></div><div class="title">Figure 3. Structured vs unstructured data</div></section>
+<section><h3><strong>V</strong> for Velocity</h3></section>
+<section><div class="paragraph"><p>In a nutshell, the speed of creation and communication of data is accelerating (<a href="http://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/">examples taken from here</a>):</p></div></section>
+<section><div class="ulist"><ul><li><p>Facebook hosts 250 billion pics? It receives 900 million more pictures <strong>per day</strong></p></li><li><p>Examining tweets can be done automatically (with computers). If you want to connect to Twitter to receive tweets in real time as they are tweeted, be prepared to receive in excess of 500 million tweets <strong>per day</strong>. Twitter calls this service the <a href="http://support.gnip.com/apis/firehose/">"firehose"</a>, which reflects the velocity of the stream of tweets.</p></li></ul></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/firehose.jpg" alt="firehose" height="100%" /></div><div class="title">Figure 4. The Twitter Firehose</div></section>
+<section><div class="ulist"><ul><li><p>Sensor data is bound to increase speed as well. While pictures, tweets, individual records&#8230;&#8203; are single item data sent at intervals, more and more sensors can send data <strong>in a continuous stream</strong> (measures of movement, sound, etc.)</p></li></ul></div></section>
+<section><div class="paragraph"><p>So, velocity poses challenges of its own: while a system can handle (store, analyze) say 100Gb of data in a given time (day or month), it might not be able to do it in say, a single second. Big data refers to the problems and solutions raised by the velocity of data.</p></div></section>
+<section><h3>A 4th <strong>V</strong> can be added, for Veracity</h3></section>
+<section><div class="paragraph"><p>Veracity relates to trustworthiness and compliance: is the data authentic? Has it been corrupted at any step of its processing?</p></div>
+<div class="paragraph"><p>We will devote a session of this course to data compliance, which is a broad topic covering data privacy, cybersecurity, and the societal impacts of data.</p></div>
+<div class="paragraph"><p><a href="https://fr.pinterest.com/seinecle/data-compliance/">You can start reading the documents for this course here</a></p></div></section>
+<section id="_3_what_is_the_minimum_size_to_count_as_big_data_it_s_all_relative"><h2>3. What is the minimum size to count as "big data"? It&#8217;s all relative</h2></section>
+<section><div class="paragraph"><p>There is no "threshold" or "minimum size" of a dataset where "data" would turn from "small data" to "big data".</p></div>
+<div class="paragraph"><p>It is more of a <strong>relative</strong> notion: it is big data if current IT systems struggle to cope with the datasets.</p></div>
+<div class="paragraph"><p>(see <a href="https://en.wikipedia.org/wiki/Big_data">Wikipedia definition</a> developing on this.)</p></div></section>
+<section><div class="paragraph"><p>"Big data" is a relative notion&#8230;&#8203; how so?</p></div></section>
+<section><h3>1. relative to time</h3></section>
+<section><div class="ulist"><ul><li><p>what was considered "big data" in the early 2000s would be considered "small data" today, because we have better storage and computing power today.</p></li><li><p>this is a never ending race: as IT systems improve to deal with "current big data", data gets generated in still larger volumes, which calls for new progress / innovations to handle it.</p></li></ul></div></section>
+<section><h3>2. relative to the industry</h3></section>
+<section><div class="ulist"><ul><li><p>what is considered "big data" by non tech SMEs (small and medium-sized entreprises) can be considered trivial to handle by tech companies.</p></li></ul></div></section>
+<section><h3>3. not just about size</h3></section>
+<section><div class="ulist"><ul><li><p>the difficulty for an IT system to cope with a dataset can be related to the size (try analyzing 2 Tb of data on your laptop&#8230;&#8203;), <strong>but also</strong> related to the content of the data.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>For example the analysis of customer reviews in dozens of languages is harder than the analysis of the same number of reviews in just one language.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>So the general rule is: the less the data is structured, the harder it is to use it, even if it&#8217;s small in size (this relates to the "V" of variety seen above).</p></li></ul></div></section>
+<section><h3>4. no correlation between size and value</h3></section>
+<section><div class="ulist"><ul><li><p>Big data is often called <a href="https://hbr.org/2012/11/data-humans-and-the-new-oil">"the new oil"</a>, as if it would flow like oil and would power engines "on demand".</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Actually, big data is <strong>created</strong>: it needs work, conception and design choices to even exist (what do I collect? how do I store it? what structure do I give to it?). The human intervention in creating data determines largely whether data will be of value later.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Example: Imagine customers can write online reviews of your products. These reviews are data.
+But if you store these reviews without an indication of who has authored the review (maybe because reviews can be posted without login oneself), then the reviews become much less valuable.
+Simple design decisions about how the data is collected, stored and structured have a huge impact on the value of the data.</p></li></ul></div></section>
+<section><div class="paragraph"><p>So, in reaction to large, unstructured and badly curated datasets with low value at the end, a notion of "smart data" is sometimes put forward: data which can be small in size but which is well curated and annotated, enhancing its value (see also <a href="https://www.quora.com/After-Big-Data-Smart-Data-is-a-trend-in-2013-So-what-is-Smart-Data-Have-any-clear-definition">here</a>).</p></div></section>
+<section><h3>5. as an expression, "big data" is evolving</h3></section>
+<section><div class="ulist"><ul><li><p>It is interesting to note that "hot" expressions, like "big data", tend to wear out fast. They are too hyped, used in all circumstances, become vague and over sold.
+For big data, we observe that it is peaking in 2017, while new terms appear:</p></li></ul></div></section>
+<section><div class="paragraph"><p><iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe> </p></div></section>
+<section><div class="paragraph"><p>What are the differences between these terms?</p></div>
+<div class="ulist"><ul><li><p>"Big data" is by now a generic term</p></li><li><p>"Machine learning" puts the focus on the scientific and software engineering capabilities enabling to do something useful with the data (predict, categorize, score&#8230;&#8203;)</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>"Artificial intelligence" puts the emphasis on human-like possibilities afforded by machine learning. Often used interchangeably with machine learning.</p></li><li><p>And "data science"? This is a broad term encompassing machine learning, statistics, &#8230;&#8203; and any analytical methods to work with data and interpret it. Often used interchangeably with machine learning. "Data scientist" is a common job description in the field.</p></li></ul></div></section>
+<section id="_4_where_did_big_data_come_from"><h2>4. Where did big data come from?</h2></section>
+<section><h3>1. Data got generated in bigger volumes because of the digitalization of the economy</h3></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/Movie-theater-vs-Netflix.png" alt="Movie theater vs Netflix" height="100%" /></div><div class="title">Figure 5. Movie theater vs Netflix</div></section>
+<section><h3>2. Computers became more powerful</h3></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/Moore's-law.png" alt="Moore's law" height="100%" /></div><div class="title">Figure 6. Moore&#8217;s law</div></section>
+<section><h3>3. Storing data became cheaper every year</h3></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/Decreasing-costs-of-data-storage.png" alt="Decreasing costs of data storage" height="100%" /></div><div class="title">Figure 7. Decreasing costs of data storage</div></section>
+<section><h3>4. The mindset changed as to what "counts" as data</h3></section>
+<section><div class="ulist"><ul><li><p>Unstructured (see above for definition of "unstructured") textual data was usually not stored: it takes a lot space, and software to query it was not sufficiently developped.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Network data (also known as graphs) (who is friend with whom, who likes the same things as whom, etc.) was usually neglected as "not true observation", and hard to query. Social networks like Facebook made a lot to make businesses aware of the value of graphs (especially <a href="https://en.wikipedia.org/wiki/Social_graph">social graphs</a>).</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Geographical data has democratized: specific (and expensive) databases existed for a long time to store and query "place data" (regions, distances, proximity info&#8230;&#8203;) but easy-to-use solutions have multiplied recently.</p></li></ul></div></section>
+<section><h3>5. With open source software, the rate of innovation accelerated</h3></section>
+<section><div class="paragraph"><p>In the late 1990s, a rapid shift in the habits of software developers kicked in: they tended to use more and more open source software, and to release their software as open source.
+Until then, most of the software was "closed source": you buy a software <strong>without the possibility</strong> to reuse / modify / augment its source code. Just use it as is.</p></div></section>
+<section><div class="paragraph"><p>Open source software made it easy to get access to software built by others and use it to develop new things. Today, all the most popular software in machine learning are free and open source.</p></div>
+<div class="paragraph"><p>See the Wikipedia article for a developed history of open source software: <a href="https://en.wikipedia.org/wiki/History_of_free_and_open-source_software" class="bare">https://en.wikipedia.org/wiki/History_of_free_and_open-source_software</a></p></div></section>
+<section><h3>6. Hype kicked in</h3></section>
+<section><div class="paragraph"><p>The <a href="http://www.gartner.com/technology/research/methodologies/hype-cycle.jsp">Gartner hype cycle</a> is a tool measuring the maturity of a technology, differentiating expectations from actual returns:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/Gartner-Hype-Cycle-for-2014.png" alt="Gartner Hype Cycle for 2014" height="100%" /></div><div class="title">Figure 8. Gartner Hype Cycle for 2014</div></section>
+<section><div class="paragraph"><p>This graph shows the pattern that all technologies follow along their lifetime:</p></div></section>
+<section><div class="ulist"><ul><li><p>at the beginning (left of the graph), an invention or discovery is made in a research lab, somewhere. Some news reporting is done about it, but with not much noise.</p></li><li><p>then, the technology starts picking the interest of journalists, consultant, professors, industries&#8230;&#8203; expectations grow about the possibilities and promises of the tech. "With it we will be able to [insert amazing thing here]"</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>the top of the bump is the "peak of inflated expectations". All techs tend to be hyped and even over hyped. This means the tech is expected to deliver more than it surely will, in actuality. People get overdrawn.</p></li><li><p>then follows the "Trough of Disillusionment". Doubt sets in. People realize the tech is not as powerful, easy, cheap or quick to implement as it first seemed. Newspapers start reporting depressing news about the tech, some bad buzz spreads.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>then: slope of Enlightenment. Heads get colder, expectations get in line with what the tech can actually deliver. Markets stabilize and consolidate: some firms close and key actors continue to grow.</p></li><li><p>then: plateau of productivity. The tech is now mainstream.</p></li></ul></div></section>
+<section><div class="paragraph"><p>(all technology can "die" - fall into disuse - before reaching the right side of the graph of course).</p></div>
+<div class="paragraph"><p>In 2014, big data was near the top of the curve: it was getting a lot of attention but its practical use in 5 to 10 years were still uncertain. There were "great expectations" about its future, and these expectations drive investment, research and business in big data.</p></div></section>
+<section><div class="paragraph"><p>In 2017, "big data" is still on top of hyped technologies, but is broken down in "deep learning" and "machine learning". Note also the "Artificial General Intelligence" category:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/Gartner-Hype-Cycle-for-2017.png" alt="Gartner Hype Cycle for 2017" height="100%" /></div><div class="title">Figure 9. Gartner Hype Cycle for 2017</div></section>
+<section><h3>6. Big data transforms industries, and has become an industry in itself</h3></section>
+<section><div class="paragraph"><p>Firms active in "Big data" divide in many subdomains: the industry to manage the IT infrastructure for big data, the consulting firms, software providers, industry-specific applications, etc&#8230;&#8203;</p></div>
+<div class="paragraph"><p>&#8594; the field is huge.</p></div></section>
+<section><div class="paragraph"><p>Matt Turck, <a href="https://twitter.com/mattturck">VC at FirstMarkCap</a>, creates every year a sheet to visualize the main firms active in these subdomains.
+This is the 2017 version:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/Matt-Turck-FirstMark-2017-Big-Data-Landscape.png" alt="Matt Turck FirstMark 2017 Big Data Landscape" height="100%" /></div><div class="title">Figure 10. Big data landscape for 2017</div></section>
+<section><div class="paragraph"><p>You can find a high res version of this pic, an Excel sheet version, and a very interesting comment <a href="https://mattturck.com/bigdata2017/">all here</a>.</p></div></section>
+<section id="_5_what_is_the_future_of_big_data"><h2>5. What is the future of big data?</h2></section>
+<section><h3>1. More data is coming</h3></section>
+<section><div class="paragraph"><p>The Internet of things (IoT) designates the extension of Internet to objects, not just web pages and emails (<a href="https://seinecle.github.io/IoT4Entrepreneurs/">see here for details</a>).</p></div></section>
+<section><div class="paragraph"><p>These connected objects are used to <strong>do</strong> things (display stuff on screen, pilote robots, etc.) but also very much to <strong>collect data</strong> in their environments (through sensors).</p></div>
+<div class="paragraph"><p>The development of connected objects will lead to a tremendous increase in the volume of data collected.</p></div>
+<div class="paragraph"><p>We have a session devoted to IoT later in this course. You can already starting reading the documents for this session:</p></div>
+<div class="ulist"><ul><li><p><a href="https://fr.pinterest.com/seinecle/internet-of-things/">Internet of things</a></p></li></ul></div></section>
+<section><h3>2. Discussions about big data will fuse with AI</h3></section>
+<section><div class="paragraph"><p>Enthusiasm, disappointment, bad buzz, worries, debates, promises&#8230;&#8203; the discourse about AI will grow. AI is fed on data, so the future of big data will intersect with what AI becomes.</p></div></section>
+<section><div class="paragraph"><p>We have a session devoted to data science / machine learning / AI later in this course. You can already start reading the documents for this course:</p></div>
+<div class="ulist"><ul><li><p><a href="https://fr.pinterest.com/seinecle/what-is-data-science/">What is data science?</a></p></li><li><p><a href="https://fr.pinterest.com/seinecle/ai-applications-in-business/">AI applications in business</a></p></li></ul></div></section>
+<section><h3>3. Regulatory frameworks will grow in complexity</h3></section>
+<section><div class="paragraph"><p>Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic (un)stability in the age of robots and AI in the workplace.</p></div></section>
+<section><div class="paragraph"><p>Public regulations at the national and international levels are trying to catch up with these challenges. As technology evolves quickly, we can anticipate that societal impacts of big data will take center stage.</p></div></section>
+<section id="_6_definition_of_crm"><h2>6. Definition of CRM</h2><div class="paragraph"><p>CRM: acronym for "Customer Relationship Management"</p></div>
+<div class="paragraph"><p>A CRM is a software used to manage the commercial relationship between a company and its clients.</p></div></section>
+<section><div class="paragraph"><p>A CRM is part of the <strong>information system</strong> (IS) of the firm. The information system designates all software, human resources and procedures devoted to keep track of all info necessary to the business of the firm - from sales to production, etc.</p></div></section>
+<section><div class="paragraph"><p>The information system of a firm comprises many other blocks, besides the CRM:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/How-a-CRM-integrates-in-the-information-system-of-a-firm.png" alt="How a CRM integrates in the information system of a firm" height="100%" /></div><div class="title">Figure 11. How a CRM integrates in the information system of a firm</div></section>
+<section><div class="paragraph"><p>Large companies often integrate these different blocks into an <strong>ERP</strong> ("Enterprise Resource Planning"), which is an even larger software able to plug different parts together.</p></div></section>
+<section><div class="paragraph"><p>The role of CRMs is evolving, and in this lecture <strong>we make the case that "big data" has transformed CRMs radically</strong>.</p></div>
+<div class="paragraph"><p>To illustrate, we will compare (and caricature a bit) a CRM from 2000 with a CRM of today:</p></div></section>
+<section id="_7_crms_before"><h2>7. CRMs - before</h2></section>
+<section><div class="paragraph"><p>The name of the CRM - Customer <strong>Relationship</strong> Management suggests a kind of rich, personalized and human touch.</p></div>
+<div class="paragraph"><p>In practice, CRMs where used for more practical purposes:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/CRMs-before-the-data-revolution.png" alt="CRMs before the data revolution" height="100%" /></div><div class="title">Figure 12. CRMs before the data revolution</div></section>
+<section><div class="paragraph"><p>We must imagine the CRM software as a tool which <strong>supported the management of sales</strong>, performing these 3 essential functions:</p></div></section>
+<section><div class="ulist"><ul><li><p>measuring revenues, through the recording of sales transactions.</p></li><li><p>controlling the performance of the sales persons, by registering which cashier, which employee performed the sale, or at least at which location the sale took place.</p></li><li><p>recording the VAT ("Value-added tax") collected through sales, which is a legal obligation for tax declaration purposes.</p></li></ul></div></section>
+<section><div class="paragraph"><p>Do you see the customer being catered for in the functions described above? No? Me neither.</p></div></section>
+<section><div class="paragraph"><p>The customer was not completely forgotten: CRM are used to run loyalty programs and campaigns:</p></div></section>
+<section><h3>a) loyalty programs</h3></section>
+<section><div class="paragraph"><p>Loyalty programs afford discounts and special offers to its members.</p></div>
+<div class="paragraph"><p>They increase the share-of-wallet of the company implementing them: the amount of the customer&#8217;s total spending that a business captures in the products and services that it offers.</p></div></section>
+<section><div class="paragraph"><p>A study performed on the loyalty programs run by 7 major supermarket chains in the Netherlands has found that it increased revenues for the supermarket running it:</p></div></section>
+<section><div class="quoteblock"><blockquote>On average, a loyalty program enhances the net yearly revenues of a customer by € 163, but the effects vary between € 91 and € 236</blockquote></div>
+<div class="paragraph"><p>source: <a href="http://www.sciencedirect.com/science/article/pii/S016781160600084X">Leenheer et al. (2007)</a>.</p></div></section>
+<section><div class="paragraph"><p>Loyalty programs create extra value for the customer as well through the discounts and special offers they bring. But they tend to be limited in their personalization: typically, every customer can enjoy the same offers, even if many of them are irrelevant (discounts on diapers when you don&#8217;t have a child etc.).</p></div></section>
+<section><h3>b) Direct mails and coupons</h3></section>
+<section><div class="paragraph"><p>Customers registered in a CRM with their postal address (after joining a loyalty program) can be sent promotional material and coupons.</p></div>
+<div class="paragraph"><p>Using printed material prohibits the customization to the personal needs of the customers, since a printed catalogue is the same for every recipient.</p></div>
+<div class="paragraph"><p>This decreases the efficiency of direct mail campaigns.</p></div></section>
+<section id="_8_the_digital_transformation_2006_2015"><h2>8. The digital transformation, 2006-2015</h2><div class="paragraph"><p>Changes occurring in the past decade have transformed the landscape of the customer relationship.
+We should realize that:</p></div></section>
+<section><h3>a) Until 2006 only half of US and EU households, and 10% of the Chinese population, had Internet broadband access at home:</h3></section>
+<section><iframe src="http://www.pewinternet.org/chart/home-broadband-use/iframe/" id="pew17070" scrolling="no" width="100%" height="100px" frameborder="0"></iframe>
+
+<script type='text/javascript'id='pew-iframe'>(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='http://www.pewinternet.org/wp-content/plugins/pew-scripts/js/iframeResizer.min.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;try{iFrameResize([],'iframe#pew17070')}catch(e){}};var embedder=document.getElementById('pew-iframe');embedder.parentNode.insertBefore(s,embedder)}if(window.attachEvent)window.attachEvent('onload',async_load);else window.addEventListener('load',async_load,false)})();</script></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/eu-broadband.png" alt="eu broadband" height="100%" /></div><div class="title">Figure 13. Households with internet access and with broadband connection EU-28, 2007-2016</div>
+<div class="paragraph"><p>source: <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/E-commerce_statistics_for_individuals">Eurostat</a></p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/china-internet.png" alt="china internet" height="100%" /></div><div class="title">Figure 14. China Internet Users, 2000-2016</div>
+<div class="paragraph"><p>source: <a href="http://www.internetlivestats.com/internet-users/china/">Internetlivestats.com</a></p></div></section>
+<section><h3>b) Smartphones as we know them appeared just in 2007</h3></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/first-iphone.jpg" alt="first iphone" height="100%" /></div><div class="title">Figure 15. Steve Jobs presenting the iPhone in 2007</div></section>
+<section><h3>c) Until 2009 social media was just taking off</h3></section>
+<section><iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Kh6Sf0XDOZf1-FU4VznSydrxIRm3NRJfJHIq4KYKGV2_TAtbqoI634NSu9SR0LYk3UihYLvrlHhs/pubchart?oid=412747728&amp;format=interactive"></iframe></section>
+<section><h3>d) Online retail is growing at a steady pace</h3></section>
+<section><div class="paragraph"><p>Together, Alibaba and Amazon have tripled customers in 5 years, nearing 900 million customers in 2017:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/alibaba-users.png" alt="alibaba users" height="100%" /></div><div class="title">Figure 16. Active consumers on Alibaba, 2012-2017</div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="images/amazon-users.png" alt="amazon users" height="100%" /></div><div class="title">Figure 17. Active consumers on Amazon, 2012-2016</div></section>
+<section><h3>e) The technoloy for ad campaigns has transformed</h3></section>
+<section><div class="paragraph"><p>Three key aspects for ad buying and selling:</p></div></section>
+<section><div class="ulist"><ul><li><p>It became programmatic: ad space and ad inventories are bought and sold through automated market places (through <a href="https://digiday.com/media/wtf-supply-side-platform/">SSP</a>, <a href="http://adage.com/lookbook/article/dsp/demand-side-platforms-work/299456/">DSP</a> and <a href="http://adage.com/lookbook/article/ad-exchange/needed-ad-exchanges-work/298394/">Ad exchanges</a>).</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Ads are displayed across many channels (with <a href="https://en.wikipedia.org/wiki/Site_retargeting">retargeting</a>)</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Ads are personalized (started with Search Engine Advertising showing ads matching search queries, then cookies, then browser fingerprinting (see <a href="https://panopticlick.eff.org/">here</a>) and <a href="https://www.theguardian.com/technology/2017/jul/03/facebook-track-browsing-history-california-lawsuit">other techniques</a>)</p></li></ul></div></section>
+<section id="_9_consequence_of_this_digital_transformation_the_customer_relationship_and_crms_have_evolved"><h2>9. Consequence of this digital transformation: the customer relationship and CRMs have evolved</h2></section>
+<section><h3>a) CRMs must handle multiple channels (distribution and communication)</h3></section>
+<section><div class="paragraph"><p>Distribution and communication channels have multiplied and fragmented, and each have their different rules for content generation, data streams and communication modes.</p></div></section>
+<section><div class="paragraph"><p>Distribution channels:</p></div>
+<div class="ulist"><ul><li><p>retail stores (as usual)</p></li><li><p>ecommerce websites (since 2000s) and mobile apps (since 2010s)</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>third party platforms (such as Amazon and Alibaba, taking off since 2010s)</p></li><li><p>resellers becoming primary sellers (eg, <a href="http://leboncoin.fr">leboncoin.fr</a> or <a href="http://marktplaats.nl">marktplaats.nl</a> selling cars, housing and jobs) - since 2010s.</p></li></ul></div></section>
+<section><div class="paragraph"><p>Multiplication of distribution channels</p></div>
+<div class="paragraph"><p>&#8594; it becomes increasingly hard to record customers actions (is this customer in my shop the same that clicked on this web page 2 minutes ago?): "click and collect" for example, one example of the broader trend called " <a href="https://www.seo.com/blog/phygital-marketing-where-the-physical-and-digital-worlds-converge/">phygital marketing</a> ".</p></div></section>
+<section><div class="paragraph"><p>Note how traditional CRMs are unequipped to command and control this variety of distribution channels.</p></div></section>
+<section><div class="paragraph"><p>Communication channels:</p></div>
+<div class="paragraph"><p>From brick and mortar + call centers + sms + emails to &#8230;&#8203;</p></div>
+<div class="paragraph"><p>&#8594; Live chat in websites + Facebook + Twitter + Instagram</p></div></section>
+<section><h3>b) CRMs must handle complex communication patterns, not just "push campaigns"</h3></section>
+<section><div class="paragraph"><p>Communication used to be mainly "outbound" (company pushing campaigns to customers) and occasionally inbound (customers calling or emailing back).</p></div></section>
+<section><div class="paragraph"><p>Three evolutions:</p></div></section>
+<section><div class="ulist"><ul><li><p>customers expect their point of view to be heard, without being prompted for it.</p></li><li><p>cross customer conversation has spread (without the intervention of companies and brands)</p></li><li><p>The high cost of pushing content through ads incentivizes firms to develop inbound communication - this is <a href="https://www.hubspot.com/inbound-marketing">"inbound marketing"</a>.</p></li></ul></div></section>
+<section><h3>c) CRMs must accomodate multiple, fragmented touchpoints</h3></section>
+<section><div class="ulist"><ul><li><p>TV, radio, outdoor advertising, in store and outdoor displays: it continues</p></li><li><p>mobile phones: operating systems with constantly evolving techs and rules of play (<a href="http://fortune.com/2017/06/22/apple-app-store-removals/">1</a>, <a href="https://arstechnica.com/gadgets/2017/01/future-ios-release-will-soon-end-support-for-unmaintained-32-bit-apps/">2</a>)</p></li><li><p>desktops, tablets, social TVs, but also&#8230;&#8203; watches? cars? homes?</p></li></ul></div></section>
+<section><h3>d) CRMs must handle personalized content</h3></section>
+<section><div class="ulist"><ul><li><p>The expectations of customers have elevated: if your company has a Facebook page, it should not just display a catalogue. It should engage (converse) with customers.</p></li><li><p>Same with all steps of the customer journey: a CRM should adapt the product (or service) to the profile of the customer.</p></li></ul></div></section>
+<section><div class="paragraph"><p>Several remarks on personalization:</p></div></section>
+<section><div class="olist loweralpha"><ol class="loweralpha" type="a"><li><p>"personalization" is the extreme end: one different view for each different customer or prospect.</p></li></ol></div>
+<div class="paragraph"><p><strong>Micro-segmentation</strong> is the step just before: identifying very precise, tiny segments in the population of customers and prospects.</p></div></section>
+<section><div class="paragraph"><p>ii. "personalization" has been blamed for reinforcing "bubbles" or "tribes" views of the world (<a href="http://pubsonline.informs.org/doi/pdf/10.1287/mnsc.2013.1808">paying version</a> of the paper, free version <a href="https://www.researchgate.net/profile/Kartik_Hosanagar/publication/228233814_Will_the_Global_Village_Fracture_Into_Tribes_Recommender_Systems_and_Their_Effects_on_Consumer_Fragmentation/links/0046352960e0b2e12c000000/Will-the-Global-Village-Fracture-Into-Tribes-Recommender-Systems-and-Their-Effects-on-Consumer-Fragmentation.pdf">here</a>).</p></div></section>
+<section><div class="paragraph"><p>Content personalization is also blamed for favoring political polarization via an "echo chamber effect": social media tend to show me content I already agree with (paying version of the paper <a href="http://www.sciencedirect.com/science/article/pii/S0740624X16300375">here</a>, free version <a href="https://www.academia.edu/24798528/Political_Polarization_on_Twitter_Implications_for_the_Use_of_Social_Media_in_Digital_Governments?auto=download">here</a>).</p></div></section>
+<section><div class="paragraph"><p>iii. Personalizing the customer relationship, even when effective, is not inherently a good thing. It has been shown that the <a href="http://www.coca-colacompany.com/stories/summer-of-sharing-share-a-coke-campaign-rolls-out-in-the-us">Coca-Cola #ShareaCoke campaign</a> is effective at making more children choose a soda with a label to their name, over a healthy drink (paying version of the study <a href="http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract">here</a>, free version not available).</p></div></section>
+<section><div class="paragraph"><p>iv. Personalization through smart CRMs? Companies rated with the best customer service do personalization differently: with humans.</p></div></section>
+<section><div class="paragraph"><p>See how Zappos offers a great service to their customers:</p></div>
+<div class="videoblock stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/vApoQPISmvs?rel=0" frameborder="0" allowfullscreen=""></iframe></div>
+<div class="paragraph"><p>(<a href="https://www.youtube.com/watch?v=IwE1zb9fiVs">another impactful version here</a>)</p></div></section>
+<section><div class="paragraph"><p>or see (in French) how <a href="https://medium.com/@djo/obsession-service-client-captain-train-cb0b91467fd9">Trainline makes its customers happy</a>.</p></div></section>
+<section id="_10_todays_s_crms_must_be_data_driven"><h2>10. Todays&#8217;s CRMs must be data-driven</h2></section>
+<section><div class="paragraph"><p>Explaining the expression "data-driven CRMs":</p></div>
+<div class="paragraph"><p>&#8594; CRMs must turn from a system "supporting the firm&#8217;s administration needs" to a a system tuned to "plug, host, analyze and push actions from multiple data sources".</p></div></section>
+<section><div class="paragraph"><p>To get such a CRM to run in an organization, the right resources must be gathered:</p></div></section>
+<section><div class="olist loweralpha"><ol class="loweralpha" type="a"><li><p>Adequate software:</p><div class="ulist"><ul><li><p>the CRM itself - recent enough that it can plug and play with a DMP and a large variety of data sources.</p></li><li><p>a Data Management Platform (<strong>DMP</strong>) as well. The DMP is the software specializing in receiving data streams from a variety of sources and in a variety of formats, and reconciling them.</p></li></ul></div></li></ol></div></section>
+<section><div class="ulist"><ul><li><p>a Data Lake to store and query data.</p></li><li><p>software bricks for additional analysis, as needed. For example, Dataiku&#8217;s <a href="https://www.dataiku.com/learn/">DSS platform</a>.</p></li></ul></div></section>
+<section><div class="olist loweralpha"><ol class="loweralpha" start="2" type="a"><li><p>Adequate human resources:</p><div class="ulist"><ul><li><p>product managers with a tech culture (you), able to design and deploy a marketing strategy in a data intensive environment.</p></li><li><p>data scientists who will implement the strategy.</p></li><li><p>IT engineers to run the pumblery of the software.</p></li></ul></div></li></ol></div></section>
+<section><div class="olist loweralpha"><ol class="loweralpha" start="3" type="a"><li><p>Adequate organizational culture:</p><div class="ulist"><ul><li><p>This is probably the hardest part: making the top management, and the rest of the organization pay attention and believe in the possibilities afforded by these new way to manage customer relationships.</p></li><li><p>The organization needs to invest and devote enough operational resources to stop doing "business as usual" and develop a data-driven CRM.</p></li></ul></div></li></ol></div></section>
+<section id="_the_end"><h2>The end</h2></section>
+<section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p></div>
+<div class="paragraph"><p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>
+This course is made by Clement Levallois.</p></div>
+<div class="paragraph"><p>Discover my other courses in data / tech for business: <a href="http://www.clementlevallois.net" class="bare">http://www.clementlevallois.net</a></p></div>
+<div class="paragraph"><p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 11411204;
+        var sc_invisible = 1;
+        var sc_security = "11411204";
+        var scJsHost = (("https:" == document.location.protocol) ?
+            "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript><div class="statcounter"><a title="site stats"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="//c.statcounter.com/11411204/0/11411204/1/" alt="site
+    stats"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide --></p></div></section></div></div><script src="reveal.js-3.5.0/lib/js/head.min.js"></script><script src="reveal.js-3.5.0/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+Reveal.initialize({
+  // Display controls in the bottom right corner
+  controls: true,
+  // Display a presentation progress bar
+  progress: true,
+  // Display the page number of the current slide
+  slideNumber: false,
+  // Push each slide change to the browser history
+  history: false,
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+  // Enable the slide overview mode
+  overview: true,
+  // Vertical centering of slides
+  center: true,
+  // Enables touch navigation on devices with touch input
+  touch: true,
+  // Loop the presentation
+  loop: false,
+  // Change the presentation direction to be RTL
+  rtl: false,
+  // Turns fragments on and off globally
+  fragments: true,
+  // Flags if the presentation is running in an embedded mode,
+  // i.e. contained within a limited portion of the screen
+  embedded: false,
+  // Number of milliseconds between automatically proceeding to the
+  // next slide, disabled when set to 0, this value can be overwritten
+  // by using a data-autoslide attribute on your slides
+  autoSlide: 0,
+  // Stop auto-sliding after user input
+  autoSlideStoppable: true,
+  // Enable slide navigation via mouse wheel
+  mouseWheel: false,
+  // Hides the address bar on mobile devices
+  hideAddressBar: true,
+  // Opens links in an iframe preview overlay
+  previewLinks: false,
+  // Theme (e.g., beige, black, league, night, serif, simple, sky, solarized, white)
+  // NOTE setting the theme in the config no longer works in reveal.js 3.x
+  //theme: Reveal.getQueryHash().theme || 'white',
+  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
+  transition: Reveal.getQueryHash().transition || 'linear',
+  // Transition speed (e.g., default, fast, slow)
+  transitionSpeed: 'default',
+  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
+  backgroundTransition: 'fade',
+  // Number of slides away from the current that are visible
+  viewDistance: 3,
+  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
+  parallaxBackgroundImage: '',
+  // Parallax background size in CSS syntax (e.g., "2100px 900px")
+  parallaxBackgroundSize: '',
+
+  // The "normal" size of the presentation, aspect ratio will be preserved
+  // when the presentation is scaled to fit different resolutions. Can be
+  // specified using percentage units.
+  width: 960,
+  height: 700,
+
+  // Factor of the display size that should remain empty around the content
+  margin: 0.1,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  minScale: 0.2,
+  maxScale: 10.0,
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+      { src: 'reveal.js-3.5.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'reveal.js-3.5.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal.js-3.5.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'reveal.js-3.5.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal.js-3.5.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});</script></body></html>

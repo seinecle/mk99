@@ -541,7 +541,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-06-20</p>
+<p>last modified: 2018-09-10</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -675,17 +675,30 @@ Comparons une situation avec ou sans (cloud)) :</p>
 <p class="tableblock">Obtenez l&#8217;approbation de votre service financier pour l&#8217;acheter (c&#8217;est un actif fixe!)</p>
 <p class="tableblock">Attendez que le serveur soit expédié</p>
 <p class="tableblock">Installez-le et configurez-le</p>
-<p class="tableblock">Maintenez-le (sécurité, etc.)</p>
-<p class="tableblock">Quand le travail est terminé: que faites-vous avec votre serveur? C&#8217;est un coût irrécupérable.</p>
-<p class="tableblock">Si le travail nécessite plus de capacité de calcul que votre serveur ne l&#8217;offre: vous êtes coincé avec votre trop petit serveur!</p></td>
+<p class="tableblock">Maintenez-le (sécurité, etc.)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sur le site <a href="https://aws.amazon.com/ec2/?nc1=h_ls">Amazon 'EC2</a>, vous cliquez pour choisir un type de serveur parmi ceux proposés : c&#8217;est <strong>sur demande</strong></p>
-<p class="tableblock">Vous exécutez votre travail dessus. Les coûts sont mesurés avec précision.</p>
-<p class="tableblock">Lorsque votre travail est terminé, vous arrêtez le serveur avec un clic et payez la facture.</p>
-<p class="tableblock">Si le travail nécessite plus de capacité de calcul, vous passez à un serveur plus grand en un seul clic, ou vous pouvez le faire automatiquement: c&#8217;est <strong>elastic</strong>.</p></td>
+<p class="tableblock">Vous exécutez votre travail dessus.
+Les coûts sont mesurés avec précision.</p>
+<p class="tableblock">Pas de maintenance, pas de sécurité à gérer: tout cela est effectuté par le cloud provider.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Sans le cloud</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Avec le cloud</strong>
+Quand le travail est terminé: que faites-vous avec votre serveur? C&#8217;est un coût irrécupérable.</p>
+<p class="tableblock">Si le travail nécessite plus de capacité de calcul que votre serveur ne l&#8217;offre: vous êtes coincé avec votre trop petit serveur!</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lorsque votre travail est terminé, vous arrêtez le serveur avec un clic et payez la facture.</p>
+<p class="tableblock">Si le travail nécessite plus de capacité de calcul, vous passez à un serveur plus grand en un seul clic, ou vous pouvez le faire automatiquement: c&#8217;est <strong>elastic</strong>.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">C&#8217;est un capex</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">C&#8217;est un opex</p></td>
 </tr>
 </tbody>
 </table>
@@ -700,14 +713,28 @@ Voir cet article sur <a href="http://gevaperry.typepad.com/main/2009/01/accounti
 <h2 id="_3_iaas_paas_saas">3. IaaS, PaaS, Saas</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Quelle est l&#8217;utilisation du cloud? Les entreprises peuvent l&#8217;utiliser pour exécuter des opérations élémentaires, jusqu&#8217;à des opérations plus complexes:</p>
+<p>A quoi sert le cloud pour une entreprise? Les entreprises peuvent externaliser leurs opérations sur le cloud plutôt que de les exécuter chez elles, en utilisant leurs propres ressources.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Infrastructure en tant que service</strong> (Infrastucture as a Service, IaaS)</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Quels types d&#8217;opérations peuvent être externalisés vers le cloud?</p>
+</div>
+<div class="paragraph">
+<p>Les entreprises peuvent ne déléguer que l&#8217;infrastructure informatique de base ou les opérations informatiques les plusau coeur de leurs activités.
+Ces différents degrés peuvent être décrits avec le <strong>"modèle de pizza"</strong>:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/pizza-a-service.jpg" alt="pizza a service">
+</div>
+<div class="title">Figure 5. Pizza as a service</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Ce schéma montre qu&#8217;en tant qu&#8217;entreprise, vous pouvez soit exécuter toutes les opérations vous-même ("made at home"), soit tout déléguer ("diner au restaurant").
+Chacun de ces degrés d&#8217;externalisation a un nom:
+* <strong>Infrastructure en tant que service</strong> (Infrastucture as a Service, IaaS)</p>
 </div>
 <div class="paragraph">
 <p>Ici, le cloud est utilisé pour remplacer les besoins en infrastructure informatique locale de l&#8217;entreprise. Par exemple, au lieu de stocker ses données dans une base de donnée sur place, on loue un service de stockage de données sur le cloud, qui sera facturé précisément au temps d&#8217;utilisation, à la taille de données stockées, et au volume de données écrites ou transférées (comme il s&#8217;agit d&#8217;un service de base de données, ce type de IaaS peut être appelé un DBaaS: database as a service). </p>
@@ -768,8 +795,10 @@ Mais même privé, le cloud conserve les caractéristiques de base d&#8217;un cl
 <p>Retrouvez le site complet : <a href="https://seinecle.github.io/mk99/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
-Clement Levallois</p>
+<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>[align="center", role="right"]</p>
+</div>
+<div class="paragraph">
+<p>Clement Levallois</p>
 </div>
 <div class="paragraph">
 <p>Découvrez mes autres cours et projets : <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
@@ -800,7 +829,7 @@ Clement Levallois</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-06-20 13:14:38 CEST
+Last updated 2018-09-10 16:39:55 CEST
 </div>
 </div>
 </body>

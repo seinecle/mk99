@@ -131,6 +131,8 @@ Nous devrions nous rappeler de considérer qu'un point de données peut être lu
 - Une personne entrant dans un bâtiment est un point de données.
 - cependant cette personne est elle-même une collection de points de donnée : données de localisation + réseau de relations + statut d'abonné à tel service + etc.
 
+
+== !
 C'est un bon réflexe de se demander si un point de données peut en fait être "dégroupé" (se désagréger en plus petits points de données / mesures)
 
 == 3. Comment décrire les ensembles de données
@@ -202,7 +204,11 @@ Il est difficile de prédire avec une grande précision l'orientation politique,
 
 
 == !
-Mais les données comportementales ne sont généralement pas bien structurées, ce qui les rend plus coûteux à collecter, en terme de solution technologique, que de collecter des données sociodémographiques. La puissance et l'exactitude de la prédiction que procurent les données comportementales signifient également que les individus devraient être protégés contre l'invasion possible de leur vie privée. Il existe de grandes différences entre les pays en ce qui concerne les cadres juridiques protégeant les droits des individus. Nous en discutons dans le chapitre sur la confidentialité des données et le GDPR.
+Mais les données comportementales ne sont généralement pas bien structurées, ce qui les rend plus coûteux à collecter, en terme de solution technologique, que de collecter des données sociodémographiques.
+La puissance et l'exactitude de la prédiction que procurent les données comportementales signifient également que les individus devraient être protégés contre l'invasion possible de leur vie privée.
+
+== !
+Il existe de grandes différences entre les pays en ce qui concerne les cadres juridiques protégeant les droits des individus. Nous en discutons dans le chapitre sur la confidentialité des données et le GDPR.
 
 == 4. Données et taille
 == !
@@ -256,7 +262,8 @@ image::russian_dolls.jpg[align = "center", title = "Volumes de données"]
 == !
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

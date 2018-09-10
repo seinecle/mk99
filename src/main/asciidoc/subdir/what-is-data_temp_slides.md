@@ -133,7 +133,29 @@ We should remember considering that a data point can be itself a collection of d
 - a person walking into a building is a data point.
 - however this person is itself a collection of data points: location data + network relations + subscriber status to services + etc.
 
+
+== !
 It is a good reflex to wonder whether a data point can in fact be "unbundled" (spread into smaller data points / measurements)
+
+== !
+==== d. Take away: to create value from data, you must first be able to identify what data is, and where it is.
+== !
+
+[quote, Douglas Laney, Infonomics: How to Monetize, Manage, and Measure Information as an Asset for Competitive Advantage]
+____
+Organizations that don’t know what information they have or could acquire, are unable to leverage it as an asset.
+As one CIO for a large insurance company recently admitted to me: "It’s silly that someone around here has an inventory of our office furniture, but nobody in the company has an inventory of what data we have."
+____
+
+
+== !
+Where is data located? An inventory must be made. From Douglas Laney's https://www.amazon.com/Infonomics-Monetize-Information-Competitive-Advantage/dp/1138090387/ref=sr_1_1?ie=UTF8&qid=1536573809&sr=8-1&keywords=infonomics[Infonomics]:
+
+== !
+[.stretch]
+image::infonomics_1.jpg[pdfwidth="100%", align="center", title="Information Asset Inventory", book="keep"]
+== !
+
 
 == 3. How to describe datasets
 == !
@@ -258,7 +280,7 @@ image::russian_dolls.jpg[align="center",title="Volumes of data"]
 == !
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

@@ -22,36 +22,35 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 == 1. Definitions
 == !
-
-//ST: !
 A network is a dataset made of entities [underline]#and their relations#
 
 Scientists use the term "graph" to discuss networks.
 
-//ST: !
 == !
 [.stretch]
 image::network-1.png[align="center", title="This is a network"]
 == !
 
 
-//ST: !
-== !
-==== a. ((Social networks))
+==== a. Social networks
 == !
 
-//ST: !
+(((social network)))
+
+
+== !
 As users, we are very familiar with one type of networks - social networks:
 
-image:facebook.png[width=150]
-image:twitter.jpg[width=150]
-image:weibo.png[width=150]
-image:instagram.jpg[width=150]
-image:snapchat.png[width=150]
-image:wechat.jpg[width=150]
-image:linkedin.png[width=150]
+image:facebook.png[width=150][width=150]
+image:twitter.jpg[width=150][width=150]
+image:weibo.png[width=150][width=150]
+image:instagram.jpg[width=150][width=150]
+image:snapchat.png[width=150][width=150]
+image:wechat.jpg[width=150][width=150]
+image:linkedin.png[width=150][width=150]
 
-//ST: !
+
+== !
 .A social network, visualized
 [link=http://www.minanacheva.com/getting-visual-with-facebook-data/]
 == !
@@ -61,21 +60,16 @@ image::colored-network.png[align="center", title="source: http://www.minanacheva
 
 
 
-//ST: !
-== !
 ==== b. Other networks
 == !
-
-//ST: !
-It is important to realize that networks cover more than relations between humans:
-
-//ST: !
+It is important to realize that networks cover more than relations between humans.
 For example, it is possible to imagine a network made out of cooking recipes.
 2 ingredients are connected if they appear frequently in the same recipes.
 
 Scanning all recipes and their ingredients from a website of cooking recipes, this gives:
 
-//ST: !
+
+== !
 [link=http://arxiv.org/abs/1111.3919]
 == !
 [.stretch]
@@ -83,14 +77,16 @@ image::ingredients-network.png[align="center", title="source: http://arxiv.org/a
 == !
 
 
-//ST: !
+
+== !
 Semantic networks are another broad category of networks.
 The method is the same: we need to find a way to "relate" words in a text, then we get a network.
 
-//ST: !
+== !
 The general idea is the same as in cooking recipes: 2 terms of a text will be connected in the network if they frequently appeared in same paragraphs.
 
-//ST: !
+
+== !
 [link=http://www.nature.com/nature/journal/v463/n7278/full/463157a.html]
 == !
 [.stretch]
@@ -98,26 +94,25 @@ image::editorials.png[align="center", title="source: http://www.nature.com/natur
 == !
 
 
-//ST: !
-== !
 ==== c. How big can networks be?
 == !
-
-//ST: !
 With a surge in computing power in the age of big data, and the adequate NOSQL databases (such as https://neo4j.com/[Neo4J] or http://orientdb.com/orientdb/[OrientDB]), we can deal with huge networks:
 
-//ST: !
+
+== !
 For example, https://www.facebook.com/notes/facebook-data-science/anatomy-of-facebook/10150388519243859/[“The Anatomy of the Facebook Social Graph” (2011)]
 
 -> study of 721 million active Facebook users and the 69 billion (!) friendship links connecting them.
 
-//ST: !
+
+== !
 A limit is quickly reached in terms of visualization: it is hard to fit millions of nodes on a screen.
 In the next visualization, we can see a network of 90,000 Swedish speakers and their relations on Twitter. The view is very cluttered.
 
 (open the source for an interactive version)
 
-//ST: !
+
+== !
 [link=http://twittercensus.se/graph2015/]
 == !
 [.stretch]
@@ -126,12 +121,7 @@ image::swedish.png[align="center", title="source: http://twittercensus.se/graph2
 
 
 
-//ST: !
-== !
 ==== d. How to discuss networks? Some vocabulary
-== !
-
-//ST: !
 == !
 [.stretch]
 image::Terminology.png[align="center",title="Terminology"]
@@ -140,86 +130,71 @@ image::Terminology.png[align="center",title="Terminology"]
 
 == 2. Networks: what use for business?
 == !
-
-//ST: !
+==== a. Segmentation
 == !
-==== a. ((Segmentation))
-== !
-//ST: !
+(((segmentation)))
 
 If a network is made of entities and their relations, then a segment is a subgroup of entities in the network, which has some cohesion or something in common.
 
 This subgroup of nodes in the network is often called a "*community*".
 
-//ST: !
+
+== !
 Detecting communities in a network, also called "clustering", consists in finding nodes that have many connections in common.
 
-//ST: !
+
+== !
 This is a mathematical and algorithmic procedure, but it is very simple to understand visually:
 
-//ST: !
 == !
 [.stretch]
 image::segmentation-with-community-detection-in-networks.png[align="center", title="segmentation with community detection in networks"]
 == !
 
 
-//ST: !
-== !
 ==== b. Finding key players
 == !
-//ST: !
 
-== !
 [.stretch]
 image::Key-players-visualized-by-resizing-nodes.png[align="center", title="Key players visualized by resizing nodes"]
 == !
 
 
-//ST: !
-== !
 ==== c. Understanding how information spreads
 == !
 
-//ST: !
 A data science company created "Where does my tweet go", which traces how a given tweet spreads through retweets.
 
-//ST: !
-The service is now discontinued (Twitter data was too expensive to buy) but the mechanism can be explained:
+== !
+The service is now discontinued (Twitter datan was too expensive to buy) but the mechanism can be explained:
 
-//ST: !
-[link=https://mfglabs.com/works/where-does-my-tweet-go/]
+.https://mfglabs.com/works/where-does-my-tweet-go[WDMTG by MFGLabs]
 == !
 [.stretch]
-image::WDMTG-by-MFGLabs.png[align="center", title="WDMTG by MFGLabs"]
+image::Where-Does-my-Tweet-Go-by-MFGLabs.png[align="center", title="Where Does my Tweet Go by MFGLabs"]
 == !
 
 
 
-//ST: !
-== !
-==== d. Identifying patterns - for ((fraud detection)), control or intelligence.
+==== d. Identifying patterns - for fraud detection, control or intelligence.
 == !
 
-//ST: !
-In the following video, we see participants in the money market (short term loans between banks) in Europe.
+(((fraud detection)))
 
+
+== !
+In the following video, we see https://www.dnb.nl/en/binaries/Working%20Paper%20418_tcm47-305800.pdf[participants in the money market (short term loans between banks) in Europe].
+
+== !
 2 banks are connected if one lends to the other. The pattern of exchanges shifts through years - banks withdraw from the market.
 
-//ST: !
 == !
 [.stretch]
 video::YvauCrHGWYc[youtube]
 == !
 
-//ST: !
-(the full study is available here: https://www.dnb.nl/en/binaries/Working%20Paper%20418_tcm47-305800.pdf)
-
-
-//ST: !
 Another example: connecting seemingly unrelated measures of business performance with https://www.oracle.com/solutions/business-analytics/business-intelligence/index.html[Oracle BI] and https://linkurio.us/[Linkurious]:
 
-//ST: !
 == !
 [.stretch]
 video::KBIZoUikfwo[youtube]
@@ -228,15 +203,13 @@ video::KBIZoUikfwo[youtube]
 
 == 3. To go further
 == !
-
-//ST: !
-image:golbeck.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Web-Jennifer-Golbeck/dp/0124055311]
-image:nodexl.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Media-Networks-NodeXL/dp/0123822297]
-image:newman.jpg[widtht=150,link=https://www.amazon.com/Networks-Introduction-Mark-Newman/dp/0199206651]
-image:barabasi.jpg[width=150,link=https://www.amazon.com/Network-Science-Albert-L-e1szl-f3-Barab-e1si/dp/1107076269]
+image:golbeck.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Web-Jennifer-Golbeck/dp/0124055311][width=150,link=https://www.amazon.com/Analyzing-Social-Web-Jennifer-Golbeck/dp/0124055311]
+image:nodexl.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Media-Networks-NodeXL/dp/0123822297][width=150,link=https://www.amazon.com/Analyzing-Social-Media-Networks-NodeXL/dp/0123822297]
+image:newman.jpg[widtht=150,link=https://www.amazon.com/Networks-Introduction-Mark-Newman/dp/0199206651][widtht=150,link=https://www.amazon.com/Networks-Introduction-Mark-Newman/dp/0199206651]
+image:barabasi.jpg[width=150,link=https://www.amazon.com/Network-Science-Albert-L-e1szl-f3-Barab-e1si/dp/1107076269][width=150,link=https://www.amazon.com/Network-Science-Albert-L-e1szl-f3-Barab-e1si/dp/1107076269]
 
 
-//ST: !
+== !
 You can also visit my tutorials on ((Gephi)), the leading software to visualize large graphs:
 
 https://seinecle.github.io/gephi-tutorials/
@@ -244,11 +217,12 @@ https://seinecle.github.io/gephi-tutorials/
 == The end
 == !
 //ST: The end
-//ST: !
+
+== !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

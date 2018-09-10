@@ -426,6 +426,97 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .show-for-print{display:inherit!important}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+/*pre.CodeRay {background-color:#f7f7f8;}*/
+.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
+.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
+table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
+table.CodeRay td{vertical-align: top;line-height:1.45}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
+table.CodeRay td.code{padding:0 0 0 .5em}
+table.CodeRay td.code>pre{padding:0}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}
+</style>
 </head>
 <body class="article">
 <div id="header">
@@ -439,13 +530,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_1_the_role_of_segmentation_in_marketing">1. The role of segmentation in marketing</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_a_the_need_for_a_market_fit">a. The need for a market fit</a></li>
 <li><a href="#_b_segmentation_and_stp">b. Segmentation and STP</a></li>
 </ul>
 </li>
 <li><a href="#_2_how_to_segment_in_practice">2. How to segment, in practice?</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_a_quantitative_vs_qualitative_methods">a. Quantitative vs qualitative methods</a></li>
 <li><a href="#_b_methods_for_segmentation_in_data_science_clustering">b. Methods for segmentation in data science: "clustering"</a></li>
 <li><a href="#_c_two_classic_clustering_methods_k_means_and_hierarchical_clustering">c. Two classic clustering methods: k-means and hierarchical clustering</a></li>
@@ -463,11 +554,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2017-11-03</p>
+<p>last modified: 2018-07-02</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
+<img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
 </div>
 </div>
 <div class="paragraph">
@@ -478,14 +569,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_1_the_role_of_segmentation_in_marketing">1. The role of segmentation in marketing</h2>
 <div class="sectionbody">
-<div class="sect3">
-<h4 id="_a_the_need_for_a_market_fit">a. The need for a market fit</h4>
+<div class="sect2">
+<h3 id="_a_the_need_for_a_market_fit">a. The need for a market fit</h3>
 <div class="paragraph">
 <p>How to market the right product to the right people?</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/A-product-cannot-fit-everybody's-expectations.png" alt="A product cannot fit everybody's expectations">
+<img src="../images/A-product-cannot-fit-everybody's-expectations.png" alt="A product cannot fit everybody's expectations">
 </div>
 <div class="title">Figure 1. A product cannot fit everybody&#8217;s expectations</div>
 </div>
@@ -493,26 +584,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>A product cannot have every feature: adding a new feature can conflict with existing features or just hurt the need for simplicity.</p>
-</div>
-<div class="paragraph">
-<p>Customers have diverging expectations: what is preferred by one customer is considered a nuisance by another.</p>
-</div>
-<div class="paragraph">
-<p>Firms have limited resources: they cannot create and sell every variety of a product with every feature. They must allocate their scarce resources in the best way possible.</p>
+<p>A product cannot have every feature: adding a new feature can conflict with existing features or just hurt the need for simplicity.
+Customers have diverging expectations: what is preferred by one customer is considered a nuisance by another.
+Firms have limited resources: they cannot create and sell every variety of a product with every feature. They must allocate their scarce resources in the best way possible.</p>
 </div>
 <div class="paragraph">
 <p>A <strong>market fit</strong> is achieved when there is an alignment between the product, the customers needs and the firms capabilities to deliver.</p>
 </div>
 <div class="paragraph">
-<p>How to achieve a market fit?</p>
-</div>
-<div class="paragraph">
-<p>This question is a classic field of study in marketing, and is called "market research". A market fit can be explored and found with the "STP" approach:</p>
+<p>How to achieve a market fit?
+This question is a classic field of study in marketing, and is called "market research". A market fit can be explored and found with the "STP" approach:</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_b_segmentation_and_stp">b. Segmentation and STP</h4>
+<div class="sect2">
+<h3 id="_b_segmentation_and_stp">b. Segmentation and STP</h3>
 <div class="paragraph">
 <p>STP stands for: <strong>Segmentation → Targeting → Positioning</strong></p>
 </div>
@@ -520,43 +605,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>This a strategy to arrive at a market fit.</p>
 </div>
 <div class="paragraph">
-<p>Once defined, this strategy will be implemented following a <strong>marketing plan</strong> (for example, following the famous <a href="http://www.smartinsights.com/digital-marketing-strategy/customer-segmentation-targeting/segmentation-targeting-and-positioning/">"4Ps"</a>).</p>
-</div>
-<div class="paragraph">
-<p>Let&#8217;s have a closer look at the "STP":</p>
+<p>Once defined, this strategy will be implemented following a <strong>marketing plan</strong> (for example, following the famous <a href="http://www.smartinsights.com/digital-marketing-strategy/customer-segmentation-targeting/segmentation-targeting-and-positioning/">"4Ps"</a>).
+Let&#8217;s have a closer look at the "STP":</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>SEGMENTATION</p>
+<p>SEGMENTATION
+First, cut the crowd into segments of customers with similar characteristics / expectations / needs</p>
 </li>
-</ul>
-</div>
-<div class="paragraph">
-<p>First, cut the crowd into segments of customers with similar characteristics / expectations / needs</p>
-</div>
-<div class="ulist">
-<ul>
 <li>
-<p>TARGETING</p>
+<p>TARGETING
+Then, evaluate each segment, and select the most attractive one.</p>
 </li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Then, evaluate each segment, and select the most attractive one.</p>
-</div>
-<div class="ulist">
-<ul>
 <li>
-<p>POSITIONING</p>
+<p>POSITIONING
+Creating an offer (a value proposition) corresponding to the segment we target
+"Segmenting a market" is the first step of this STP strategy.</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>Creating an offer (a value proposition) corresponding to the segment we target</p>
-</div>
-<div class="paragraph">
-<p>"Segmenting a market" is the first step of this STP strategy.</p>
 </div>
 <div class="paragraph">
 <p>It is the key operation where the "anonymous crowd of potential buyers" is analyzed and cut into distinct groups which can be interested in the same kind of product or service.</p>
@@ -567,35 +634,29 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_2_how_to_segment_in_practice">2. How to segment, in practice?</h2>
 <div class="sectionbody">
-<div class="sect3">
-<h4 id="_a_quantitative_vs_qualitative_methods">a. Quantitative vs qualitative methods</h4>
+<div class="sect2">
+<h3 id="_a_quantitative_vs_qualitative_methods">a. Quantitative vs qualitative methods</h3>
 <div class="paragraph">
-<p>Qualitative and quantitative methods can be used for segmentation.</p>
-</div>
-<div class="paragraph">
-<p>Qualitative methods include surveys, ethnographic observation (online or offline), literature reviews on socio cultural trends, text analysis, interviews, focus groups, and more.</p>
-</div>
-<div class="paragraph">
-<p>The point of these qualitative methods is to identify typical <strong>usages</strong> and <strong>attitudes</strong> towards the product (aka, <strong>use cases</strong>) among potential customers.
+<p>Qualitative and quantitative methods can be used for segmentation.
+Qualitative methods include surveys, ethnographic observation (online or offline), literature reviews on socio cultural trends, text analysis, interviews, focus groups, and more.
+The point of these qualitative methods is to identify typical <strong>usages</strong> and <strong>attitudes</strong> towards the product (aka, <strong>use cases</strong>) among potential customers.
 Each of these use cases is a potential segment to address.</p>
 </div>
-<div class="paragraph">
+<div class="ulist">
+<ul>
+<li>
 <p>Qualitative methods are strong at <strong>identifying</strong> segments, and also strong at <strong>understanding</strong> and <strong>explaining</strong> them: we understand better <strong>why</strong> people make their choices.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Qualitative methods are not strong at evaluating the <strong>size</strong> and at <strong>generalizing</strong> beyond the circumstances of the observations made.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>In comparison, quantitative methods are relatively stronger at <strong>measuring</strong>, <strong>comparing</strong> and <strong>generalizing</strong>.</p>
-</div>
-<div class="paragraph">
-<p>Quantitative methods put numbers on things, allowing for an estimation of absolute and relative mangitudes: is this segment a large one? The largest?</p>
-</div>
-<div class="paragraph">
-<p>And contrary to qualitative methods, quantitative methods are good at projecting a small sample to a larger situation, all while measuring by how much we can be off - that&#8217;s what statistics do.</p>
-</div>
-<div class="paragraph">
-<p>But let&#8217;s not forget about 2 relative weaknesses of quantitative studies compared to qualitative ones:</p>
+<p>In comparison, quantitative methods are relatively stronger at <strong>measuring</strong>, <strong>comparing</strong> and <strong>generalizing</strong>.
+Quantitative methods put numbers on things, allowing for an estimation of absolute and relative mangitudes: is this segment a large one? The largest?
+And contrary to qualitative methods, quantitative methods are good at projecting a small sample to a larger situation, all while measuring by how much we can be off - that&#8217;s what statistics do.
+But let&#8217;s not forget about 2 relative weaknesses of quantitative studies compared to qualitative ones:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -611,44 +672,32 @@ Each of these use cases is a potential segment to address.</p>
 <p>&#8594; we detail <strong>some</strong> of these quantitative methods below.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_b_methods_for_segmentation_in_data_science_clustering">b. Methods for segmentation in data science: "clustering"</h4>
+<div class="sect2">
+<h3 id="_b_methods_for_segmentation_in_data_science_clustering">b. Methods for segmentation in data science: "clustering"</h3>
 <div class="paragraph">
-<p>(we use "data science methods" here, but that&#8217;s very close to "machine learning techniques")</p>
+<p>(we use "data science methods" here, but that&#8217;s very close to "machine learning techniques". See the chapter on AI, data science and machine learning)</p>
 </div>
 <div class="paragraph">
-<p>Many overviews of ML techniques tend to have a special category for "clustering techniques" (<a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/">1</a>, <a href="https://www.pinterest.fr/pin/440367669799815280/">2</a>, <a href="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/02/17090804/microsoft-machine-learning-algorithm-cheat-sheet-v6.pdf">3</a>).</p>
+<p>Many overviews of ML techniques tend to have a special category for "clustering techniques" (<a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/">overview of ML 1</a>, <a href="https://www.pinterest.fr/pin/440367669799815280/">overview of ML 2</a>, <a href="https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/02/17090804/microsoft-machine-learning-algorithm-cheat-sheet-v6.pdf">overview of ML 3</a>).</p>
 </div>
 <div class="paragraph">
 <p>For example at the bottom right of this chart:</p>
 </div>
-<div class="imageblock" style="text-align: center">
-<div class="content">
-<img src="images/ds_techniques_cheatsheet_1.png" alt="ds techniques cheatsheet 1">
-</div>
-<div class="title">Figure 2. data science techniques grouped in families</div>
+<div class="paragraph">
+<p>image::ds_techniques_cheatsheet_1.png[data science techniques grouped in families]"][align="center", title="https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/
+&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>Clustering means "finding groups" in the data. This is analogous to "segmenting" in marketing. So the clustering techniques from machine learning can be used for segmentation.
+Does it mean that the other methods shown on the chart above are useless for segmentation?</p>
 </div>
 <div class="paragraph">
-<p>source: <a href="https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/">machinelearningmastery.com</a></p>
-</div>
-<div class="paragraph">
-<p>Clustering means "finding groups" in the data. This is analogous to "segmenting" in marketing. So the clustering techniques from machine learning can be used for segmentation.</p>
-</div>
-<div class="paragraph">
-<p>Does it mean that the other methods shown on the chart above are useless for segmentation?</p>
-</div>
-<div class="paragraph">
-<p>&#8594; <strong>NO</strong></p>
-</div>
-<div class="paragraph">
-<p>For example, Principal Component Analysis (PCA) is classified in the chart as a technique for "dimensionality reduction" (we&#8217;ll explain this term in an other course), even if it has been used for a long time in marketing (and elsewhere) to segment a dataset (see a great example and tutorial <a href="http://www.business-science.io/business/2016/09/04/CustomerSegmentationPt2.html">here</a>).</p>
+<p>&#8594; <strong>NO</strong>
+For example, Principal Component Analysis (PCA) is classified in the chart as a technique for "dimensionality reduction" (we&#8217;ll explain this term in an other course), even if it has been used for a long time in marketing (and elsewhere) to segment a dataset (see a great example and tutorial <a href="http://www.business-science.io/business/2016/09/04/CustomerSegmentationPt2.html">here</a>).</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_c_two_classic_clustering_methods_k_means_and_hierarchical_clustering">c. Two classic clustering methods: k-means and hierarchical clustering</h4>
+<div class="sect2">
+<h3 id="_c_two_classic_clustering_methods_k_means_and_hierarchical_clustering">c. Two classic clustering methods: k-means and hierarchical clustering</h3>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -667,83 +716,55 @@ just to remind you that the goal of this course is to make you familiar and know
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Get data</p>
+<p>Get data
+For example, data on car drivers from consumer panel providing info on their demographics, tastes in car size and design, and pricing preferences</p>
 </li>
-</ol>
-</div>
-<div class="paragraph">
-<p>For example, data on car drivers from consumer panel providing info on their demographics, tastes in car size and design, and pricing preferences</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic" start="2">
 <li>
-<p>Develop measures of association</p>
+<p>Develop measures of association
+This means creating a measure of “which customer is similar to which” in terms of their features
+For example, families with young children will be roughly similar in terms of demographics, needs and budget.</p>
 </li>
-</ol>
-</div>
-<div class="paragraph">
-<p>This means creating a measure of “which customer is similar to which” in terms of their features</p>
-</div>
-<div class="paragraph">
-<p>For example, families with young children will be roughly similar in terms of demographics, needs and budget.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic" start="3">
 <li>
-<p>Deal with outliers</p>
+<p>Deal with outliers
+Removing car drivers that have extreme values? (the one car driver that needs a race car, etc.)</p>
 </li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Removing car drivers that have extreme values? (the one car driver that needs a race car, etc.)</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic" start="4">
 <li>
-<p>Form segments</p>
+<p>Form segments
+Use analytical techniques to create groups of car drivers based on their associations. Also called “clusters” or “communities”.</p>
 </li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Use analytical techniques to create groups of car drivers based on their associations. Also called “clusters” or “communities”.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic" start="5">
 <li>
-<p>Profile segments and interpret results</p>
+<p>Profile segments and interpret results
+Groups have now been found automatically. Identify what these groups mean and how they show a path for action.</p>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>Groups have now been found automatically. Identify what these groups mean and how they show a path for action.</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_d_hierarchical_clustering">d. hierarchical clustering</h4>
+<div class="sect2">
+<h3 id="_d_hierarchical_clustering">d. hierarchical clustering</h3>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/Hierarchical-clustering.png" alt="Hierarchical clustering">
+<img src="../images/Hierarchical-clustering.png" alt="Hierarchical clustering">
 </div>
-<div class="title">Figure 3. Hierarchical clustering</div>
+<div class="title">Figure 2. Hierarchical clustering</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_e_k_means_clustering">e. k-means clustering</h4>
+<div class="sect2">
+<h3 id="_e_k_means_clustering">e. k-means clustering</h3>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/k-means-clustering.png" alt="k means clustering">
+<img src="../images/--k-means-clustering--.png" alt="  k means clustering  ">
 </div>
-<div class="title">Figure 4. k-means clustering</div>
+<div class="title">Figure 3. k-means clustering</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_f_clustering_using_community_detection_via_network_analysis">f. clustering using community detection - via network analysis</h4>
+<div class="sect2">
+<h3 id="_f_clustering_using_community_detection_via_network_analysis">f. clustering using community detection - via network analysis</h3>
 <div class="paragraph">
 <p>This last example of a clustering technique is a bit fancy - not usually represented in ML cheatsheets.</p>
 </div>
@@ -752,9 +773,9 @@ just to remind you that the goal of this course is to make you familiar and know
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/community-detection.png" alt="community detection">
+<img src="../images/community-detection.png" alt="community detection">
 </div>
-<div class="title">Figure 5. community detection</div>
+<div class="title">Figure 4. community detection</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
@@ -789,11 +810,11 @@ just to remind you that the goal of this course is to make you familiar and know
 <p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
+<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>[align="center", role="right"]
 This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
-<p>Discover my other courses in data / tech for business: <a href="http://www.clementlevallois.net" class="bare">http://www.clementlevallois.net</a></p>
+<p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
 </div>
 <div class="paragraph">
 <p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
@@ -821,7 +842,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2017-11-03 17:38:50 CET
+Last updated 2018-07-02 17:37:13 CEST
 </div>
 </div>
 </body>

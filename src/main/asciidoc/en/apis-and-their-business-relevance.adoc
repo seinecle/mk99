@@ -85,7 +85,7 @@ A Web API is an API which enables two pieces of software to communicate, via Int
 Unlike an *EDI* (((API, difference with EDIs))), a web API drops any industry-specific concern. Web APIs are just a convention to send and receive data over the Internet, without any saying on the content of the data.
 //+
 The data sent and received can be invoices, webpages, train schedules, audio, video... whatever.
-Contrary to an EDI, a company creating a web API can choose to leave its access underline#open# (remember that EDIs need the two parties to have a pre-established agreement).
+Contrary to an EDI, a company creating a web API can choose to leave its access [underline]#open# (remember that EDIs need the two parties to have a pre-established agreement).
 //+
 So that a potential client interested in using the web API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.
 
@@ -114,7 +114,7 @@ This simple evolution to ease interoperability had *immense effects*:
 An API transforms a closed software into something that can be plugged to anything other computer or object, as long as it is connected to the Internet.
 //+
 For instance, APIs were a key factor of success for https://en.wikipedia.org/wiki/Salesforce.com[SalesForce] in the early 2000s. SalesForce, created in 1999, has a revenue of US$8.39 billion in 2017:
-
+//+
 - ((SalesForce)) developed a CRM as a SaaS where features of the CRM were *exposed as APIs* (meaning, these features could be plugged to external apps via the REST protocol).
 //+
 - SalesForce created a ((PaaS)) to host apps that could plug to the SalesForce CRM via the APIs developed by SalesForce. This platform is called https://www.salesforce.com/products/platform/products/force/[Force.com] and external developers can put their apps there, as long as they are compatible with the SalesForce API.
@@ -124,7 +124,28 @@ SalesForce takes a commission on the sales made by these third party apps hosted
 === b. APIs *accelerated* software innovation
 Thanks to API it is now easier to add software blocks together and create new apps, even if these software blocks originate from different countries, industries, big and small.
 //+
-As an extreme example: the Australian Victoria Police deployed a project for the recognition of stolen vehicles through the video recognition of licence plates on cars passing in the street (stolen vehicles get their license plates immediately recognized). This is a $86,000,000 project. An individual actually replicated this https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9[project with just 57 lines of code and a dashcam]. How so? Just because he could use existing software for licence plate recognition, available as an API, instead of re-developing this by himself.
+As an extreme example:
+the Australian Victoria Police deployed a project for the recognition of stolen vehicles through the video recognition of licence plates on cars passing in the street (stolen vehicles get their license plates immediately recognized).
+This is a $86,000,000 project.
+An individual actually replicated this https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9[project with just 57 lines of code and a dashcam].
+How so?
+Just because he could use existing software for licence plate recognition, available as an API, instead of re-developing this by himself.
+
+//+
+Another example:
+https://twitter.com/levelsio/status/880241628580937728?lang=en[Peter Levels] demonstrated the potential of APIs by building a "Luggage delivery service" just with existing apps connected together via their APIs.
+Without a line of code:
+
+image::luggage-api.jpg[align="center", title="Building a world wide luggage delivery service without code", pdfwidth="25%", width= 350, book="keep"]
+
+This service is designed by organizing several sub-services, which coordinate by communicating via their APIs.
+//+
+How does communication work? Who "orchestrates" these services? Peter uses https://zapier.com/[Zappier], a service whose role is to make these APIs communicate with each other.
+Beyond these striking examples, the lessons to be learned are:
+//+
+- more and more services are available via API. Do not reinvent the wheel, just use the APIs.
+- coordinating multiple APIs allows you to create entirely new services (not just: "manage my emails by API")
+- services like https://zapier.com/[Zappier] allow coordination / communication between APIs, but it also favors *automation*.
 
 === c. APIs *opened* data
 Companies and public organization own many datasets of great business interest.
@@ -138,7 +159,7 @@ Let's take the example of a transportation company like French SNCF which finds 
 - The data is on a server of SNCF
 - SNCF adds https://data.sncf.com/api/en[an API and its documentation], making the data available to developers able to https://youtu.be/7YcW25PHnAA[connect to APIs, which is a basic skill in software development].
 - Entrepreneurs and programmers in general will be able to access the data via the API and use it, creating https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja[new services based on this train information].
-
+//+
 *Open data* (((open data))) designates this movement to make datasets available to a broad audience, and web APIs have been a key technological ingredient in this movement.
 
 == 4. The ecosystem of APIs
@@ -173,6 +194,7 @@ image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API lan
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
+
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

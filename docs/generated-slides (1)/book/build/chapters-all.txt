@@ -1,0 +1,10 @@
+preface-volume-4.adoc
+what-is-data.adoc
+what-is-big-data.adoc
+what-is-the-cloud.adoc
+the-headache-of-data-integration.adoc
+apis-and-their-business-relevance.adoc
+data-privacy.adoc
+GDPR.adoc
+data-science-machine-learning-artificial-intelligence.adoc
+value-creation-with-data.adoc

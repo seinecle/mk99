@@ -1,0 +1,356 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="Clément Levallois" /><title>La visualisation des données: un regard sur son passé, son présent et son futur</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.6.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.6.0/css/theme/white.css" id="theme" /><style>/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+/*pre.CodeRay {background-color:#f7f7f8;}*/
+.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
+.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
+table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
+table.CodeRay td{vertical-align: top;line-height:1.45}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
+table.CodeRay td.code{padding:0 0 0 .5em}
+table.CodeRay td.code>pre{padding:0}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>La visualisation des données</h1><h2>un regard sur son passé, son présent et son futur</h2><div class="preamble"><div class="paragraph"><p>last modified: 2018-09-10</p></div></div><p class="author"><small>Clément Levallois</small></p></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></section>
+<section></section>
+<section id="_1_o_va_la_visualisation_des_donnes"><h2>1. Où va la visualisation des données?</h2></section>
+<section><div class="paragraph"><p>par <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a> [Clement Levallois], adapté d&#8217;une présentation faite à <a href="http://www.ds3.inesc-id.pt/">DataStorm 2ème édition</a>, Lisbonne, 15 juillet 2015.</p></div>
+<div class="paragraph"><p>La bonne chose à propos des champs en science computationnelle est qu&#8217;ils évoluent si vite.
+Tous les six mois environ, un nouveau venu arrive en apprentissage automatique, le développement d&#8217;applications mobiles ou l&#8217;exploration de texte.</p></div></section>
+<section><div class="paragraph"><p>Il est donc difficile de rester à l&#8217;avant-garde de ces domaines, et parfois nous pourrions même perdre de vue la signification et les objectifs de ce qui nous intéressait dans le domaine, il y a seulement quelques années.</p></div></section>
+<section><div class="paragraph"><p>Je profite donc de cette conférence pour réfléchir à la visualisation de données, qui est un domaine si jeune. J&#8217;aimerais explorer la façon dont la visualisation de données a évolué, pourquoi il fallait qu&#8217;elle émerge, où elle se situe aujourd&#8217;hui, et je vais essayer d&#8217;imaginer où elle évoluera dans les années à venir.</p></div></section>
+<section><div class="admonitionblock important"><table><tr><td class="icon"><div class="title"></div></td><td class="content"><div class="paragraph"><p>Je suis plus un observateur qu&#8217;un participant dans ce domaine.</p></div>
+<div class="paragraph"><p>Mon point de vue est celui de quelqu&#8217;un qui est venu à la visualisation de données vers 2009 grâce à des visualisations de réseau avec <a href="http://www.gephi.org">Gephi</a>, obtenant mes informations principalement des discussions, liens et podcasts partagés par les visualiseurs de données que je suis et avec qui j&#8217;interagis sur Twitter.</p></div></td></tr></table></div></section>
+<section><div class="paragraph"><p>Je sens qu&#8217;au cours des six dernières années, la <strong>dataviz</strong>  a évolué de manière significative: elle est apparue et a cristallisé en un sujet distinct, a vécu à travers un âge d&#8217;or, et nous sommes aujourd&#8217;hui ailleurs. Commençons par le début.</p></div></section>
+<section id="_2_avant_la_dataviz"><h2>2. Avant la dataviz</h2></section>
+<section><div class="paragraph"><p>Avant la dataviz, il y avait quelques champs de pratique établis traitant des graphiques et des données. Je mentionnerai 4 d&#8217;entre eux mais il y en a sûrement d&#8217;autres importants :</p></div>
+<div class="paragraph"><p>infoviz, infographie, Business intelligence, et SIG.</p></div></section>
+<section><h3>a. Infoviz</h3></section>
+<section><div class="paragraph"><p>Infoviz est la "visualisation d&#8217;information" et est le nom d&#8217;un domaine académique concerné par:</p></div></section>
+<section><div class="paragraph"><p>l&#8217;étude de représentations visuelles (interactives) de données abstraites pour renforcer la cognition humaine.</p></div></section>
+<section><div class="paragraph"><p>La force de ce domaine est qu&#8217;il est un banc d&#8217;essai pour de nombreuses hypothèses que vous auriez sur la façon dont les visualisations peuvent être efficaces, en termes de «renforcement de la cognition humaine»:</p></div></section>
+<section><div class="ulist"><ul><li><p>Comment fonctionnent les couleurs?</p></li><li><p>Qu&#8217;en est-il des différentes échelles?</p></li><li><p>Quelle est la performance des utilisateurs pour résoudre des problèmes donnés lors de la lecture du graphique représenté sous forme de matrice, par rapport aux graphiques représentés en tant que réseaux? Les données longitudinales doivent-elles être présentées sous forme de tranches de temps ou de films d&#8217;animation pour une meilleure compréhension?</p></li></ul></div></section>
+<section><div class="paragraph"><p>La recherche en visualisation d&#8217;information vise à fournir des réponses solides et empiriques à ces questions importantes.</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/example-infovis.jpg" alt="example infovis" height="100%" /></div></section>
+<section><div class="paragraph"><p>Le problème est que cette emphase sur les tests d&#8217;hypothèses peut être préjudiciable à l&#8217;avancement sur un autre objectif fondamental: créer des visualisations <strong>engageantes pour leur public</strong>, largement adoptées et utilisées dans un monde si plein d&#8217;informations (ou de bruit). Cette attention par les individus devient la plus rare des ressources.</p></div></section>
+<section><div class="paragraph"><p>Comme illustré par la figure ci-dessus, et si je devais être un peu dur vis à vis de l&#8217;infoviz, je dirais que vous avez besoin d&#8217;un doctorat pour la comprendre : les interfaces qu&#8217;ils conçoivent ne sont pas assez engageantes, pas implémentées sur les plateformes que nous utilisons et l&#8217;information affichée améliore à peine la cognition humaine pour les non-spécialistes.</p></div></section>
+<section><h3>b. Infographie</h3></section>
+<section><div class="paragraph"><p>On pourrait dire que l&#8217;infographie est un peu le contraire d&#8217;infovis: les agences de communication font à peu près ce qu&#8217;elles veulent pour attirer l&#8217;attention de leurs lecteurs, au détriment de la véracité et de la fiabilité des données qu&#8217;elles invoquent.</p></div></section>
+<section><div class="paragraph"><p>L&#8217;exemple ci-dessous montre à quel point une infographie peut être colorée et accrocheuse, mais totalement inefficace pour transmettre des informations.</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/exemple-infographics.png" alt="exemple infographics" height="100%" /></div></section>
+<section><div class="paragraph"><p>Bien sûr, il existe d&#8217;excellentes infographies et Alberto Cairo, professeur et journaliste de profession, nous rappelle dans son livre <a href="http://www.thefunctionalart.com/">The Functional Art</a> que l&#8217;infographie soigneusement réalisée est un excellent moyen de transmettre des informations complexes dans une quantité limitée d&#8217;espace.</p></div></section>
+<section><div class="paragraph"><p>Mais je crois comprendre que ce n&#8217;est pas dans le contrat de base de l&#8217;infographie d&#8217;avoir une relation univoque les données, il y a la permission d'<strong>illustrer</strong> les données.</p></div></section>
+<section><div class="paragraph"><p>Le lecteur doit faire davantage confiance au media qui publie l&#8217;infographie que dans le cas d&#8217;une infovis: selon qu&#8217;il s&#8217;agisse d&#8217;un journal établi avec une bonne équipe graphique ou d&#8217;une agence de communication faisant du travail rapide et baclé, on peut faire confiance aux infographies ou se faire induire en erreur.</p></div></section>
+<section><h3>c. Une autre communauté: la business intelligence</h3></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/example-bi.png" alt="example bi" height="100%" /></div></section>
+<section><div class="paragraph"><p>La mission en BI consiste essentiellement à réaliser des visualisations «au niveau excel» en termes de reporting et de suivi des données métiers.
+Rien d&#8217;extraordinaire ici: bar charts, camemberts (souvent en 3D comme dans l&#8217;illustration ci-dessus, ce qui est mauvais), graphiques linéaires et barres de progression assemblés dans des tableaux de bord, vendus par des entreprises plus expérimentées dans le développment logiciel qu&#8217;en graphisme.</p></div></section>
+<section><h3>d. Et GIS.</h3></section>
+<section><div class="dlist"><dl><dt class="hdlist1">image </dt><dd><p>formatée / gis.jpg [align = "center"]</p></dd></dl></div>
+<div class="paragraph"><p>Geographical Information Systems (GIS) peut avoir une réclamation pour la plus longue tradition dans la visualisation des données.
+C&#8217;est après tout leur travail pour dessiner des cartes, qui est données géolocalisées.</p></div></section>
+<section><div class="paragraph"><p>Il se pourrait que cette longue tradition fût aussi une malédiction: parce qu&#8217;ils ont développé ces logiciels de bureau largement utilisés dans les années 1990, les années 2000 et encore aujourd&#8217;hui, ils étaient ancrés dans des technologies qui ne pouvaient pas être facilement adaptées lorsque les technologies web devenaient plus riches. des façons plus attrayantes de dessiner des cartes et de projeter des superpositions de données sur celles-ci.</p></div></section>
+<section><h3>e. La scène composée par infovis, infographie, BI et SIG</h3></section>
+<section><div class="paragraph"><p>La scène est donc la suivante: les scientifiques dans le domaine de la "visualisation de l&#8217;information" dans leur coin étant les gardiens du temple des "visualisations correctes", mais ils ont du mal à trouver un public pour ces graphismes.</p></div>
+<div class="paragraph"><p>Infographie dans le coin opposé, qui ont accès à des foules de lecteurs tous les jours dans les pages de journaux et de brochures marketing, mais avec le sentiment qu&#8217;ils ne montrent pas vraiment les données - ils éditorialisent beaucoup, pour le meilleur ou pour le pire.</p></div></section>
+<section><div class="paragraph"><p>Dans l&#8217;un des deux autres domaines, nous avons une intelligence commerciale qui est un peu méprisée en raison de la simplicité de leurs graphiques qui ne rend pas justice à la richesse des données, mais enviée parce qu&#8217;ils ont accès à des données pertinentes, coûteuses et percutantes. .</p></div></section>
+<section><div class="paragraph"><p>Et SIG qui travaille avec des données d&#8217;une manière qui est universellement comprise et jugée pertinente (cartes), mais avec un degré d&#8217;innovation de ce domaine qui reste assez faible.</p></div></section>
+<section id="_3_l_mergence_de_dataviz"><h2>3. L&#8217;émergence de dataviz</h2></section>
+<section><div class="paragraph"><p>Quelque chose s&#8217;est passé autour de 2008 et 2009, ce qui a changé ce statu quo.</p></div></section>
+<section><div class="paragraph"><p>Un certain nombre de bibliothèques de graphiques et de dessins javascript ont été publiées:</p></div></section>
+<section><div class="ulist"><ul><li><p><a href="http://dmitrybaranovskiy.github.io/raphael/">RaphaelJS</a> (08/08/08)</p></li><li><p>le <a href="http://philogb.github.io/jit/">Javascript Infovis Toolkit</a> (2009)</p></li><li><p><a href="http://mbostock.github.io/protovis/">Protovis</a> (2009)</p></li><li><p><a href="http://processingjs.org/">Processing.js</a> (2010)</p></li><li><p>et <a href="http://d3js.org/">D3</a> (2011), désormais le framework le plus performant pour dataviz avec les technologies web.</p></li></ul></div></section>
+<section><div class="paragraph"><p>Avec le décollage des mobiles sans les plugins Flash et Java (rappelez-vous: l&#8217;iPhone était sorti en 2007 et ne supportait pas Flash), la popularité décroissante du plugin Java même sur les navigateurs de bureau, vous voyez en 3 ans un grand shift: unification des frameworks de visualisation sur le web en utilisant javascript.</p></div></section>
+<section><div class="paragraph"><p>Le web devient de plus en plus une plate-forme en soi (plus populaire que le lancement de logiciels de bureau), avec la sortie de Google Chrome en 2008 - Javascript et CSS deviennent beaucoup moins cassés que lorsque Internet Explorer était dominant.
+Pour quel impact?</p></div></section>
+<section><div class="paragraph"><p>Il a brouillé les cartes: avec Java est venu un moyen très rigide de concevoir des interfaces: les fenêtres, les menus et même les polices avaient un aspect Java dans le navigateur.</p></div></section>
+<section><div class="paragraph"><p>Avec Flash, vous aviez un solide historique d&#8217;interaction et de compétences en conception, mais vous pouviez utiliser Flash sans codage, de sorte que les conceptions créées avec Flash pouvaient rester assez déconnectées des jeux de données qu&#8217;elles représentaient.</p></div></section>
+<section><div class="paragraph"><p>Tout ce qui est devenu jeté dans le melting-pot de Javascript où tout le monde a dû désapprendre leur cadre et apprendre sur une terre vierge.</p></div></section>
+<section><div class="paragraph"><p>La visualisation des données n&#8217;était pas la progéniture naturelle de l&#8217;un des 4 champs que j&#8217;ai mentionnés, il est apparu en dehors d&#8217;eux.</p></div></section>
+<section><div class="paragraph"><p>Cela a amené de nombreux nouveaux venus à s&#8217;essayer à ces nouveaux outils, libérés des habitudes et des conventions des quatre domaines que nous avons vus.</p></div></section>
+<section><div class="paragraph"><p>Ces nouveaux venus qui ont créé dataviz avaient une manière différente de regarder les choses, un outil différent, et différentes façons de fonctionner en groupe. Cette communauté est remarquable à plusieurs égards:</p></div></section>
+<section><h3>a. Individuals possessing an unusually broad mix of skills:</h3></section>
+<section><div class="paragraph"><p>Coding skills for the preparation of the data (Python or R for example), skills in javascript and other scripting language for visual design (ActionScript, Processing), a knowledge of the rules of design and a feel for esthetics, and creativity.</p></div></section>
+<section><div class="paragraph"><p>That is what you need to create this:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/mta.jpg" alt="mta" width="500" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="http://www.mta.me" class="bare">http://www.mta.me</a>)
+(by Alexander Chen, a Creative Director at Google Creative Lab)</p></div></section>
+<section><h3>b. Twitter based communication around the "#dataviz" hashtag</h3></section>
+<section><div class="paragraph"><p>In this community, people evaluate each other&#8217;s works, shared their latest realization chat about past and upcoming conferences but more importantly exchange info about new frameworks and resources.</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/dataviz-communities.jpg" alt="dataviz communities" height="100%" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="http://neoformix.com/2012/DataVisFieldSubGroups.html" class="bare">http://neoformix.com/2012/DataVisFieldSubGroups.html</a>)</p></div></section>
+<section><h3>c. A tight knit group across the US and Europe.</h3></section>
+<section><div class="paragraph"><p>I identify (this is a non exclusive list of course) <a href="http://moebio.com/">Santiago Ortiz</a>, <a href="http://www.jeromecukier.net/">Jerome Cukier</a>, <a href="http://blog.blprnt.com/">Jer Thorp</a>, <a href="http://driven-by-data.net/">Gregor Aisch</a>, <a href="http://tulpinteractive.com/">Jan Willem Tulp</a>, <a href="http://ghostweather.com/">Lynn Cherny</a>, <a href="http://flowingdata.com/about-nathan/">Nathan Yau</a> from Flowing Data, <a href="https://about.me/krees">Kim Rees</a> from Periscopic, <a href="http://truth-and-beauty.net/">Moritz Stefaner</a>, with a couple of established academics like <a href="http://fellinlovewithdata.com/">Enrico Bertini</a>, <a href="http://alignedleft.com/">Scott Murray</a>, <a href="http://policyviz.com/">Jon Schwabish</a>, <a href="http://www.thefunctionalart.com/">Alberto Cairo</a>, and in relation with teams at the Guardian and the NYT, and <a href="http://www.visualisingdata.com/about/">Andy Kirk</a> at VisualisingData as an evangelist and instructor.</p></div></section>
+<section><div class="paragraph"><p>They were particularly active in spreading news about dataviz and sharing their critical insights which contributed shaping boundaries for the field.</p></div></section>
+<section><div class="paragraph"><p>This is a personal and of course biased observation, a systematic investigation reveals a different picture (see above, and below, which is a zoom on the group where I think we would find most people self identifying as dataviz specialists):</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/dataviz-group.jpg" alt="dataviz group" height="100%" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="http://neoformix.com/2012/DataVisField1000_Group2.pdf" class="bare">http://neoformix.com/2012/DataVisField1000_Group2.pdf</a>)</p></div></section>
+<section><h3>d. A couple of emblematic projects</h3></section>
+<section><h3>i. OECD Better Life Index by Moritz Stefaner et al</h3></section>
+<section><div class="paragraph"><p>Not infovis, not infographics, just dataviz: simplicity, interaction, access to the data.</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/oecd-better-life-index.jpg" alt="oecd better life index" height="100%" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="http://www.oecdbetterlifeindex.org/" class="bare">http://www.oecdbetterlifeindex.org/</a>)</p></div></section>
+<section><h3>ii. The "Ghost Counties" visualization by Jan Willem Tulp</h3></section>
+<section><div class="paragraph"><p>It shows that a marriage is possible between creativity and esthetics on one hand, and cold hard data on the other hand (foreclosures per county in the US).</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/ghost-counties-screenshot.jpg" alt="ghost counties screenshot" height="100%" /></div></section>
+<section><div class="paragraph"><p>(live url, needs Internet Explorer and the Java plugin: <a href="http://www.janwillemtulp.com/eyeo/" class="bare">http://www.janwillemtulp.com/eyeo/</a>)</p></div></section>
+<section><h3>iii. U.S. Gun Deaths by Periscopic</h3></section>
+<section><div class="paragraph"><p>It illustrates the power of story telling (through the intro), granularity of the data, and impact.</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/gun-deaths.jpg" alt="gun deaths" width="500" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="http://guns.periscopic.com/?year=2013" class="bare">http://guns.periscopic.com/?year=2013</a>)</p></div>
+<div class="paragraph"><p>The emergence of data visualisation as a set of practice and professionals was coinciding with the surge in the new importance of data as a driver of value for business.</p></div></section>
+<section><div class="paragraph"><p>"Data visualization" became positioned as one powerful lever to extract value from datasets: it possesses both the rigor needed to report objectively on key data features, that you&#8217;d find otherwise in information visualisation, and the power to be engaging with the domain specialists or the managers in charge of finding insights in the data.</p></div></section>
+<section><h3>e. Two aspects where data visualization epitomizes its value: maps and networks.</h3></section>
+<section><h3>i. Maps</h3></section>
+<section><div class="paragraph"><p>Visualization of geolocalized data and of network data has of course a long history before the birth of data visualization: many software integrated mapping functions from Geographical Information Systems, and network analysis packages also had visualization add-ons.</p></div></section>
+<section><div class="paragraph"><p>What data visualization brought was impactful visualizations making engagement with data just stronger, more powerful.</p></div></section>
+<section><div class="paragraph"><p>Stamen, an agency with strong ties in the data visualization community, does this kind of maps:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/stamen-viz.jpg" alt="stamen viz" width="500" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500" class="bare">http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500</a>)</p></div></section>
+<section><div class="paragraph"><p>This interactive map by Stamen is quite different from your usual GIS mapping!
+What this kind of map brings is: interaction, custom-made design, and most of all enhanced <strong>engagement</strong> with the viewers.</p></div></section>
+<section><h3>ii. Networks</h3></section>
+<section><div class="paragraph"><p>In terms of networks, a pre-dataviz typical network would look like:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/formatted/ucinet.jpg" alt="ucinet" width="500" /></div></section>
+<section><div class="paragraph"><p>Dataviz brought interaction, web-based interactions:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/d3-force-layout.jpg" alt="d3 force layout" width="500" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="http://bl.ocks.org/mbostock/1062288" class="bare">http://bl.ocks.org/mbostock/1062288</a>)</p></div>
+<div class="paragraph"><p>This type of visualization is different because:</p></div></section>
+<section><div class="ulist"><ul><li><p>you can explore the viz, not just stare at it.</p></li><li><p>you can share it - just paste the url.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>it can be developed and modified by a large pool of developers because it is written in javascript, which is the common language of web development.</p></li><li><p>there is a strong sense of aesthetics and natural feeling using it.</p></li></ul></div></section>
+<section><div class="paragraph"><p>&#8594; it will encourage curiosity, exploration, and just increase 10 folds the time spent on it by the viewers.</p></div></section>
+<section><h3>f. If we were looking for 2 defining traits of dataviz</h3></section>
+<section><h3>i. Data is for the viewer to see and play with</h3></section>
+<section><div class="paragraph"><p>There is the assumption that the visualization should not provide you with flat and unverifiable conclusions: it should show the data in a transparent, verifiable form.</p></div></section>
+<section><div class="paragraph"><p>Of course there is a narrative and an editorialization of how the data is presented, <strong>but</strong> it always remains possible for the viewer to challenge this editorial view because the data is here for anyone to explore and interact with.</p></div></section>
+<section><div class="paragraph"><p>This represents a fundamental break with infographics, which can hide the underlying data by design, or show it with strong bias by carelessness and still be "OK" by pre-dataviz standards.</p></div></section>
+<section><div class="paragraph"><p>It is also a break with infovis, where data is indeed there but you might not be enticed to engage with it.</p></div></section>
+<section><h3>ii. Custom made, creative act</h3></section>
+<section><div class="paragraph"><p>Because we are in the browser there is no click and point solutions for the visualization of the data.</p></div></section>
+<section><div class="paragraph"><p>This departs strongly from GIS where "custom" maps could be done by selecting options in a menu, and also a big change from dashboards in business intelligence where you could drag and drop charts to build a visualization.</p></div></section>
+<section><div class="paragraph"><p>The sense of esthetics and the particularity of the datasets makes of each dataviz a craftwork.</p></div></section>
+<section><div class="paragraph"><p>One of the best examples of a creative and simple design is this one by Hint.fm:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/formatted/windmap.jpg" alt="windmap" width="500" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="http://hint.fm/wind/" class="bare">http://hint.fm/wind/</a>)</p></div>
+<div class="paragraph"><p>(live url for a worldwide version: <a href="http://earth.nullschool.net/" class="bare">http://earth.nullschool.net/</a>)</p></div></section>
+<section id="_4_2014_2015_the_stabilization_of_dataviz"><h2>4. 2014-2015: The stabilization of dataviz</h2></section>
+<section><div class="paragraph"><p>Anyhow, industrialization in dataviz came in rapidly, with Tableau becoming the leader for general purpose viz, dashboards reinvented themselves in dataviz-style with Bime, Qlik, Palantir to name a few.</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/logos-bi.png" alt="logos bi" width="500" /></div></section>
+<section><div class="paragraph"><p>Dataviz became integrated into the business discourse on big data: the Harvard Business Review features in 2012 a blog section on data visualization where Jer Thorp  contributed to set perspectives straight on data,</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/jer-thorp.jpg" alt="jer thorp" height="100%" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="https://hbr.org/2012/11/data-humans-and-the-new-oil/" class="bare">https://hbr.org/2012/11/data-humans-and-the-new-oil/</a>)</p></div></section>
+<section><div class="paragraph"><p><a href="http://www.nielsen.com">Nielsen</a>, the leader of market data and market research, worked on its corporate identity to include data visualization, with data-driven visuals custom made by Jan Willem Tulp:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/nielsen-viz.jpg" alt="nielsen viz" height="100%" /></div></section>
+<section><div class="paragraph"><p>Since 2012 or so, <a href="https://www.ge.com/">General Electric</a> partners with <a href="https://fathom.info/">Fathom</a>, the agency founded by Ben Fry (co-creator of Processing!) to build visualizations relative to their corporate identity, with some impressive realizations:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/formatted/ge.jpg" alt="ge" height="100%" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="http://visualization.geblogs.com/visualization/powering/" class="bare">http://visualization.geblogs.com/visualization/powering/</a>)</p></div></section>
+<section><div class="paragraph"><p>And in 2015, you know dataviz has fully stabilized when you see a panel on dataviz with Chelsea Clinton:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/formatted/chelsea.jpg" alt="chelsea" height="100%" /></div></section>
+<section><div class="paragraph"><p>(live url: <a href="https://www.youtube.com/watch?v=YFrmQDCpgxs" class="bare">https://www.youtube.com/watch?v=YFrmQDCpgxs</a> - the panel is with Ben Fry).</p></div></section>
+<section><div class="paragraph"><p>So until 2012 and 2013 I&#8217;d say that we were in the golden age of #dataviz in terms of discoveries and charting new paths: excited comments on new productions by the NYT, debates around the goals of #dataviz: is it a way to tell stories? To open new worlds? To educate?</p></div></section>
+<section><div class="paragraph"><p>New connections made with new comers, new agencies, people meeting for the first time in conferences after exchanging on Twitter for years, new positions, big clients&#8230;&#8203;</p></div></section>
+<section><div class="paragraph"><p>And in 2015, things seem to have stabilized and normalized.</p></div></section>
+<section><div class="paragraph"><p>The energy has changed.
+The conversation on Twitter has slowed down a lot.
+The sense of being pioneers has eroded, because time has passed and because we have indeed tried and explored many low hanging fruits.</p></div></section>
+<section><div class="paragraph"><p>Many individuals are now engaged in more industrial, long term projects.</p></div>
+<div class="paragraph"><p>So that&#8217;s not bad news: dataviz is now mainstream and well established, people are less obliged to enter free competitions and work on long personal projects at weekends and nights to get their name out, that&#8217;s good.</p></div></section>
+<section><div class="paragraph"><p>But I miss a bit the excitement of the previous years when you had one framework or one big personal project published per month, and when you had all these big shots chatting on Twitter about the upcoming developments for dataviz.</p></div></section>
+<section id="_5_2015_onwards_where_is_dataviz_going"><h2>5. 2015 onwards: where is dataviz going?</h2></section>
+<section><div class="paragraph"><p>So&#8230;&#8203; where is dataviz going?
+As I said, you have this first exciting phase that passed, and we are now in a stage where processes for the creation of dataviz are more industrialized, commodified, stabilized.</p></div></section>
+<section><div class="paragraph"><p>This means that innovation will find other places to erupt.
+Why? Because the landscape of technologies keeps changing, and creative minds will seize the opportunity to play and explore these opportunities in places where no "client" is yet waiting for them.</p></div></section>
+<section><div class="paragraph"><p>To illustrate possible paths, I like to give the example of the career of <a href="http://www.seb.ly">Seb Lee-Delisle</a>, who defined himself as a creative coder and now as a digital artist.</p></div></section>
+<section><div class="paragraph"><p>I follow his work on Twitter since about 2009.
+He is not at the heart of the "dataviz" network and does not define himself in regards to this label, but you&#8217;d find him on Jeff Clark&#8217;s map of dataviz in 2012 nonetheless (see map above).</p></div></section>
+<section><div class="ulist"><ul><li><p>he was using Adobe Flash as one of his main technologies until 2009, contributing to <a href="http://helloenjoy.com/project/papervision3d/">PaperVision3D</a>, a framework to build 3D games and animations in the Flash Player.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>He plays a bit with <a href="http://seb.ly/2009/12/electroserver-flex-simple-chat/">Adobe Flex</a> in 2009,</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>in 2010,Flash is definitely behind so he moves to HTML5 technologies, using and teaching <a href="http://seb.ly/2011/02/html5-canvas-3d-particles-uniform-distribution/">animated graphics in HTML5 + Javascript</a></p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>in 2012, he does the lunar trail project: <a href="http://seb.ly/work/lunar-trails/" class="bare">http://seb.ly/work/lunar-trails/</a></p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>in 2013, he does pixelpyros: <a href="http://pixelpyros.org/" class="bare">http://pixelpyros.org/</a></p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>in in 2014/2015, he launches workshops on "Stuff that talk to the Internets": <a href="http://seb.ly/st4i-stuff-that-talks-to-the-interwebs/" class="bare">http://seb.ly/st4i-stuff-that-talks-to-the-interwebs/</a></p></li></ul></div></section>
+<section><div class="paragraph"><p>This path, and similar paths followed by others, suggest that:</p></div></section>
+<section><div class="ulist"><ul><li><p>The computer screen and even the screen of the mobile phone is becoming less hegemonic as the medium where data can be visualized. Objects, sculptures, buildings, furniture&#8230;&#8203; this is the next frontier to be explored. Not just mapping data on a flat surface, but maybe even <a href="http://www.nand.io/visualisation/emoto-installation">actual construction of data objects by Moritz Stefaner</a>.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Interaction is taking place in richer environments than we are used to (desktop or mobile), interactions with the user become more diverse. Not just the hand and the click of the mouse, but the whole body. Not one individual facing an object, but possibly a crowd, possibly moving, possibly gesturing.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>And "data" is in the process of getting an even larger meaning.
+When you move away from the screen and start connecting to a variety of objects and sensors, and with a variety of people, data takes still other forms: real time measurements from the external physical environment, from the internal (body) environment, from local or distant social interactions as they unfold, all while staying connected to the APIs we are already familiar with&#8230;&#8203; the mix can be bring impactful results.</p></li></ul></div></section>
+<section><div class="paragraph"><p>So, if visualizing data from the Twitter API was the cliché of #dataviz in 2010 - 2015, the next cliché could be the instantaneous 3D printing of data generated from the connected objects and bodies in a home or a workspace.</p></div></section>
+<section><div class="paragraph"><p>This is just my vision for dataviz, I&#8217;d be happy to discuss it with you now!</p></div>
+<div class="paragraph"><p><strong>Thank you!</strong></p></div></section>
+<section id="_the_end"><h2>The end</h2></section>
+<section></section>
+<section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p></div>
+<div class="paragraph"><p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>[align="center", role="right"]</p></div>
+<div class="paragraph"><p>This course is made by Clement Levallois.</p></div>
+<div class="paragraph"><p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p></div>
+<div class="paragraph"><p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 11411204;
+        var sc_invisible = 1;
+        var sc_security = "11411204";
+        var scJsHost = (("https:" == document.location.protocol) ?
+            "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript><div class="statcounter"><a title="site stats"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="//c.statcounter.com/11411204/0/11411204/1/" alt="site
+    stats"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide --></p></div></section></div></div><script src="reveal.js-3.6.0/lib/js/head.min.js"></script><script src="reveal.js-3.6.0/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+Reveal.initialize({
+  // Display controls in the bottom right corner
+  controls: true,
+  // Display a presentation progress bar
+  progress: true,
+  // Display the page number of the current slide
+  slideNumber: false,
+  // Push each slide change to the browser history
+  history: false,
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+  // Enable the slide overview mode
+  overview: true,
+  // Vertical centering of slides
+  center: true,
+  // Enables touch navigation on devices with touch input
+  touch: true,
+  // Loop the presentation
+  loop: false,
+  // Change the presentation direction to be RTL
+  rtl: false,
+  // Turns fragments on and off globally
+  fragments: true,
+  // Flags if the presentation is running in an embedded mode,
+  // i.e. contained within a limited portion of the screen
+  embedded: false,
+  // Number of milliseconds between automatically proceeding to the
+  // next slide, disabled when set to 0, this value can be overwritten
+  // by using a data-autoslide attribute on your slides
+  autoSlide: 0,
+  // Stop auto-sliding after user input
+  autoSlideStoppable: true,
+  // Enable slide navigation via mouse wheel
+  mouseWheel: false,
+  // Hides the address bar on mobile devices
+  hideAddressBar: true,
+  // Opens links in an iframe preview overlay
+  previewLinks: false,
+  // Theme (e.g., beige, black, league, night, serif, simple, sky, solarized, white)
+  // NOTE setting the theme in the config no longer works in reveal.js 3.x
+  //theme: Reveal.getQueryHash().theme || 'white',
+  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
+  transition: Reveal.getQueryHash().transition || 'linear',
+  // Transition speed (e.g., default, fast, slow)
+  transitionSpeed: 'default',
+  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
+  backgroundTransition: 'fade',
+  // Number of slides away from the current that are visible
+  viewDistance: 3,
+  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
+  parallaxBackgroundImage: '',
+  // Parallax background size in CSS syntax (e.g., "2100px 900px")
+  parallaxBackgroundSize: '',
+
+  // The "normal" size of the presentation, aspect ratio will be preserved
+  // when the presentation is scaled to fit different resolutions. Can be
+  // specified using percentage units.
+  width: 960,
+  height: 700,
+
+  // Factor of the display size that should remain empty around the content
+  margin: 0.1,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  minScale: 0.2,
+  maxScale: 10.0,
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+      { src: 'reveal.js-3.6.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'reveal.js-3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal.js-3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'reveal.js-3.6.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal.js-3.6.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});</script></body></html>

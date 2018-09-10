@@ -425,6 +425,97 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .show-for-print{display:inherit!important}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+/*pre.CodeRay {background-color:#f7f7f8;}*/
+.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
+.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
+table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
+table.CodeRay td{vertical-align: top;line-height:1.45}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
+table.CodeRay td.code{padding:0 0 0 .5em}
+table.CodeRay td.code>pre{padding:0}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}
+</style>
 </head>
 <body class="article">
 <div id="header">
@@ -433,28 +524,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_1_localization_brings_interesting_new_dimensions">1. Localization brings interesting new dimensions</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_a_example_facebook_local_awareness_feature">a. Example - Facebook Local Awareness Feature</a></li>
 <li><a href="#_b_example_placemeter">b. Example - Placemeter</a></li>
 <li><a href="#_c_example_data_grandlyon">c. Example - Data @GrandLyon</a></li>
 </ul>
 </li>
 <li><a href="#_2_the_visual_power_of_maps">2. The visual power of maps</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_a_map_useful_metaphors_with_a_political_dimension">a. Map: useful metaphors with a political dimension</a></li>
 <li><a href="#_b_example_how_to_explore_the_real_estate_market_in_the_netherlands">b. Example: how to explore the real estate market in the Netherlands</a></li>
 <li><a href="#_c_key_resources_to_work_with_maps">c. Key resources to work with maps</a></li>
 </ul>
 </li>
 <li><a href="#_3_how_to_represent_space_in_data_format">3. How to represent “space” in data format?</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_a_the_specifity_of_geospatial_data">a. The specifity of geospatial data</a></li>
 <li><a href="#_b_solutions_to_store_and_retrieve_geospatial_data">b. Solutions to store and retrieve geospatial data</a></li>
 </ul>
 </li>
 <li><a href="#_4_two_friends_for_localization_personalization_and_real_time">4. Two friends for localization: personalization and real-time</a></li>
 <li><a href="#_5_ending_with_a_provocation_challenging_the_usefulness_of_location">5. Ending with a provocation: Challenging the usefulness of location</a>
-<ul class="sectlevel3">
+<ul class="sectlevel2">
 <li><a href="#_a_localization_is_about_people_and_em_territories_em">a. Localization is about people and <em>territories</em></a></li>
 <li><a href="#_b_distributed_systems_the_end_of_territories">b. Distributed systems – the end of territories?</a></li>
 </ul>
@@ -471,11 +562,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 2017-31-07</p>
 </div>
 <div class="paragraph">
-<p>last modified: 2017-10-17</p>
+<p>last modified: 2018-07-02</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
+<img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
 </div>
 </div>
 <div class="paragraph">
@@ -504,11 +595,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>Structure: How are these agents and activities <strong>configured</strong> in space?</p>
 </div>
-<div class="sect3">
-<h4 id="_a_example_facebook_local_awareness_feature">a. Example - Facebook Local Awareness Feature</h4>
+<div class="sect2">
+<h3 id="_a_example_facebook_local_awareness_feature">a. Example - Facebook Local Awareness Feature</h3>
 <div class="imageblock">
 <div class="content">
-<img src="images/fb-aware.png" alt="align&quot;center&quot;">
+<img src="../images/fb-aware.png" alt="align&quot;center&quot;">
 </div>
 <div class="title">Figure 1. Facebook Local Awareness Ad Feature</div>
 </div>
@@ -537,11 +628,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_b_example_placemeter">b. Example - Placemeter</h4>
+<div class="sect2">
+<h3 id="_b_example_placemeter">b. Example - Placemeter</h3>
 <div class="imageblock">
 <div class="content">
-<img src="images/placemeter.png" alt="align&quot;center&quot;">
+<img src="../images/placemeter.png" alt="align&quot;center&quot;">
 </div>
 <div class="title">Figure 2. Placemeter analyzes pedestrian traffic through video</div>
 </div>
@@ -573,11 +664,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_c_example_data_grandlyon">c. Example - Data @GrandLyon</h4>
+<div class="sect2">
+<h3 id="_c_example_data_grandlyon">c. Example - Data @GrandLyon</h3>
 <div class="paragraph">
-<p><a href="https://data.grandlyon.com/">
-<span class="image"><img src="images/logo-smart-data-grand-lyon.png" alt="align&quot;center&quot;" title="Grand Lyon Data"></span></a></p>
+<p><span class="image"><img src="../images/logo-smart-data-grand-lyon.png" alt="align&quot;center&quot;" title=""https://data.grandlyon.com/[Grand Lyon Data"></span>"][align"center", title="https://data.grandlyon.com/</p>
 </div>
 <div class="paragraph">
 <p>An initiative by the city of Lyon</p>
@@ -592,11 +682,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Similar initiatives in large cities:</p>
 </div>
 <div class="paragraph">
-<p><a href="https://data.amsterdam.nl/"><span class="image"><img src="images/amsterdam.gif" alt="amsterdam" width="150"></span></a>
-<a href="https://www.beijingcitylab.com/"><span class="image"><img src="images/bjcitylab.jpg" alt="bjcitylab" width="150"></span></a>
-<a href="http://www.milanosmartcity.org/joomla/"><span class="image"><img src="images/milano.jpg" alt="milano" width="150"></span></a>
-<a href="http://smartcity.jakarta.go.id/"><span class="image"><img src="images/jakarta.png" alt="jakarta" width="150"></span></a>
-<a href="http://smartcityinnovationlab.com/"><span class="image"><img src="images/lisboa.png" alt="lisboa" width="150"></span></a></p>
+<p><a href="https://data.amsterdam.nl/"><span class="image"><img src="../images/amsterdam.gif" alt="amsterdam" width="150"></span></a>
+<a href="https://www.beijingcitylab.com/"><span class="image"><img src="../images/bjcitylab.jpg" alt="bjcitylab" width="150"></span></a>
+<a href="http://www.milanosmartcity.org/joomla/"><span class="image"><img src="../images/milano.jpg" alt="milano" width="150"></span></a>
+<a href="http://smartcity.jakarta.go.id/"><span class="image"><img src="../images/jakarta.png" alt="jakarta" width="150"></span></a>
+<a href="http://smartcityinnovationlab.com/"><span class="image"><img src="../images/lisboa.png" alt="lisboa" width="150"></span></a></p>
 </div>
 </div>
 </div>
@@ -604,8 +694,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_2_the_visual_power_of_maps">2. The visual power of maps</h2>
 <div class="sectionbody">
-<div class="sect3">
-<h4 id="_a_map_useful_metaphors_with_a_political_dimension">a. Map: useful metaphors with a political dimension</h4>
+<div class="sect2">
+<h3 id="_a_map_useful_metaphors_with_a_political_dimension">a. Map: useful metaphors with a political dimension</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -635,8 +725,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_b_example_how_to_explore_the_real_estate_market_in_the_netherlands">b. Example: how to explore the real estate market in the Netherlands</h4>
+<div class="sect2">
+<h3 id="_b_example_how_to_explore_the_real_estate_market_in_the_netherlands">b. Example: how to explore the real estate market in the Netherlands</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -654,14 +744,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p><a href="http://code.waag.org/buildings/"><span class="image"><img src="images/waag.png" alt="align&quot;center&quot;" title="Visual exploration of real estate in NL"></span></a></p>
+<p><a href="http://code.waag.org/buildings/"><span class="image"><img src="../images/waag.png" alt="align&quot;center&quot;" title="Visual exploration of real estate in NL"></span></a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_c_key_resources_to_work_with_maps">c. Key resources to work with maps</h4>
+<div class="sect2">
+<h3 id="_c_key_resources_to_work_with_maps">c. Key resources to work with maps</h3>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/stamen.jpg" alt="stamen">
+<img src="../images/stamen.jpg" alt="stamen">
 </div>
 <div class="title">Figure 3. Stamen Design</div>
 </div>
@@ -680,7 +770,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/mapbox.png" alt="mapbox">
+<img src="../images/mapbox.png" alt="mapbox">
 </div>
 <div class="title">Figure 4. MapBox</div>
 </div>
@@ -699,7 +789,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/openstreetmap.png" alt="openstreetmap">
+<img src="../images/openstreetmap.png" alt="openstreetmap">
 </div>
 <div class="title">Figure 5. Openstreetmap</div>
 </div>
@@ -722,14 +812,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_3_how_to_represent_space_in_data_format">3. How to represent “space” in data format?</h2>
 <div class="sectionbody">
-<div class="sect3">
-<h4 id="_a_the_specifity_of_geospatial_data">a. The specifity of geospatial data</h4>
+<div class="sect2">
+<h3 id="_a_the_specifity_of_geospatial_data">a. The specifity of geospatial data</h3>
 <div class="paragraph">
 <p>Data is traditionally stored in tables in relational databases, taking this form:</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/table-example.png" alt="table example">
+<img src="../images/table-example.png" alt="table example">
 </div>
 <div class="title">Figure 6. A table with two entries</div>
 </div>
@@ -755,8 +845,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>So how to store geospatial data in a way that makes it easy to retrieve?</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_b_solutions_to_store_and_retrieve_geospatial_data">b. Solutions to store and retrieve geospatial data</h4>
+<div class="sect2">
+<h3 id="_b_solutions_to_store_and_retrieve_geospatial_data">b. Solutions to store and retrieve geospatial data</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -783,7 +873,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="olist arabic">
 <ol class="arabic" start="2">
 <li>
-<p>NoSQL solutions</p>
+<p>NoSQL  solutions</p>
 </li>
 </ol>
 </div>
@@ -795,7 +885,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/carto.png" alt="carto">
+<img src="../images/carto.png" alt="carto">
 </div>
 <div class="title">Figure 7. the Carto Platform</div>
 </div>
@@ -807,7 +897,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/neo4j.png" alt="neo4j">
+<img src="../images/neo4j.png" alt="neo4j">
 </div>
 <div class="title">Figure 8. Neo4J, a database for networks</div>
 </div>
@@ -822,7 +912,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/topojson.png" alt="topojson">
+<img src="../images/topojson.png" alt="topojson">
 </div>
 <div class="title">Figure 9. GeoJSon and TopoJSon are derivations of the json formats for geospatial data</div>
 </div>
@@ -855,8 +945,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_5_ending_with_a_provocation_challenging_the_usefulness_of_location">5. Ending with a provocation: Challenging the usefulness of location</h2>
 <div class="sectionbody">
-<div class="sect3">
-<h4 id="_a_localization_is_about_people_and_em_territories_em">a. Localization is about people and <em>territories</em></h4>
+<div class="sect2">
+<h3 id="_a_localization_is_about_people_and_em_territories_em">a. Localization is about people and <em>territories</em></h3>
 <div class="ulist">
 <ul>
 <li>
@@ -880,10 +970,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>&#8594; representations with a supposedly universal and transparent coordinate system blinds us to this fact.</p>
 </div>
 <div class="paragraph">
-<p>This argument is made by Frederic Martel in his book "Smart": Internet does not flatten everything into one big model. There are several Internets with their geography, politics and sociology.</p>
+<p>This argument is made by Frederic Martel  in his book "Smart": Internet does not flatten everything into one big model. There are several Internets with their geography, politics and sociology.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&amp;field-keywords=smart+frederic+martel&amp;rh=i%3Aaps%2Ck%3Asmart+frederic+martel"><span class="image"><img src="images/smart.jpg" alt="smart" title="Smart by Frederic Martel"></span></a></p>
+<p><a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&amp;field-keywords=smart+frederic+martel&amp;rh=i%3Aaps%2Ck%3Asmart+frederic+martel"><span class="image"><img src="../images/smart.jpg" alt="smart" title="Smart by Frederic Martel"></span></a></p>
 </div>
 <div class="ulist">
 <ul>
@@ -910,14 +1000,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>Amazon Mechanical Turk is a service of data production through the hiring of a distributed crowd of workers. Tends to "erase distance".</p>
+<p><strong>Amazon Mechanical Turk</strong>  is a service of data production through the hiring of a distributed crowd of workers. Tends to "erase distance".</p>
 </div>
 <div class="paragraph">
 <p>Yet, the geographical distribution of workers on Amazon Mechanical Turk is far from even. The following figure is taken  <a href="http://aclweb.org/anthology/Q14-1007">from this study</a>:</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/amt-distribution.png" alt="amt distribution">
+<img src="../images/amt-distribution.png" alt="amt distribution">
 </div>
 <div class="title">Figure 10. Distribution of Amazon Mechanical Turk workers</div>
 </div>
@@ -925,8 +1015,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>&#160;<br></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_b_distributed_systems_the_end_of_territories">b. Distributed systems – the end of territories?</h4>
+<div class="sect2">
+<h3 id="_b_distributed_systems_the_end_of_territories">b. Distributed systems – the end of territories?</h3>
 <div class="paragraph">
 <p>The libertarian dream of the cypher-punks: individuals transact without consideration for their nationality, currency, legal system, political regime.</p>
 </div>
@@ -942,12 +1032,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Torrent: The exchange platform for numeric goods?</p>
 </li>
 <li>
-<p>Etherum: the platform where contracts are made and executed?</p>
+<p>Ethereum: the platform where contracts are made and executed?</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><a href="https://www.amazon.com/This-Machine-Kills-Secrets-Whistleblowers/dp/0142180491/ref=sr_1_1?ie=UTF8&amp;qid=1508079962&amp;sr=8-1&amp;keywords=this+machine+kills+secrets"><span class="image"><img src="images/cypherpunks.png" alt="cypherpunks" title="This machine kills secrets by Andy Greenberg"></span></a></p>
+<p><a href="https://www.amazon.com/This-Machine-Kills-Secrets-Whistleblowers/dp/0142180491/ref=sr_1_1?ie=UTF8&amp;qid=1508079962&amp;sr=8-1&amp;keywords=this+machine+kills+secrets"><span class="image"><img src="../images/cypherpunks.png" alt="cypherpunks" title="This machine kills secrets by Andy Greenberg"></span></a></p>
 </div>
 </div>
 </div>
@@ -959,11 +1049,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
+<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>[align="center", role="right"]
 This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
-<p>Discover my other courses in data / tech for business: <a href="http://www.clementlevallois.net" class="bare">http://www.clementlevallois.net</a></p>
+<p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
 </div>
 <div class="paragraph">
 <p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
@@ -991,7 +1081,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2017-10-17 07:38:50 CEST
+Last updated 2018-07-02 16:52:58 CEST
 </div>
 </div>
 </body>

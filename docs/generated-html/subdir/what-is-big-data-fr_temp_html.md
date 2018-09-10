@@ -19,19 +19,21 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 
 == 1. Le Big data est difficile à définir
-
 image::ariely.png[align = "center", title="Message de Facebook de Dan Ariely en 2013", book = "keep"]
 {nbsp} +
 
 Ironie à part, le big data demande effectivement un travail de définition. Apportons une certaine clarté.
 
 == 2. Les 3 V
-
-Les big data sont généralement décrites avec le "((3 Vs))":
+Les big data sont généralement décrites avec le concept des https://blogs.gartner.com/doug-laney/files/2012/01/ad949-3D-Data-Management-Controlling-Data-Volume-Velocity-and-Variety.pdf[((3 Vs)), proposé dès 2001 par Douglas Laney, chez Gartner]:
 
 === *V* pour le volume
 La taille des jeux de données disponibles aujourd'hui est stupéfiante (ex: ((Facebook)) avait 250 milliards de photos en 2016).
-// +
+Nous produisons une quantité phénomènale de données dans le cours de notre vie quotidienne (au point de parfois manquer une expérience non médiatisée par la technologie - comme cette grand-mère l'a compris)
+
+image::grandma.png[align = "center", title="Nous collectons des données à chaque instant - ou pas", book = "keep"]
+{nbsp} +
+
 Les volumes de données augmentent à un rythme *accéléré*. Selon des sources, https://www.sciencedaily.com/releases/2013/05/130522085217.htm[90% de toutes les données dans le monde a été généré au cours des deux dernières années] (déclaration de 2013) ou dit différemment , https://appdevelopermagazine.com/4773/2016/12/23/more-data-will-be-created-in-2017-than-the-previous-5,000-years-of-humanity-/[plus de données être créé en 2017 que dans les 5000 ans de l'histoire de l'humanité].
 
 === *V* pour Variety
@@ -43,7 +45,11 @@ Les volumes de données augmentent à un rythme *accéléré*. Selon des sources
 *Données structurées* (((données structurées))) se réfère à des données formatées et organisées selon un ensemble de règles bien défini, ce qui les rend *lisibles par une machine*. Par exemple, les codes postaux sont un ensemble de données structuré car ils suivent une convention précise concernant le nombre de lettres et de chiffres qui les composent, ce qui facilite l'identification et leur « lecture » par un lecteur optique et un logiciel. Pareil avec les plaques d'immatriculation, les numéros de sécurité sociale ... Mais ce sont des exemples simples.
 
 // +
-Qu'en est-il, par exemple, d'un formulaire d'impôt? Si chaque champ du formulaire est bien défini, alors les données collectées à travers le formulaire peuvent être dites « structurées ». En revanche, une forme où l'utilisateur peut écrire du texte libre (pensez à un commentaire sur un article de blog, ou un espace vide où les utilisateurs peuvent écrire un commentaire) produit des données non structurées : données qui ne suivent pas une convention spéciale pour leur taille et leur contenu. C'est généralement beaucoup plus difficile à traiter par le logiciel, donc à analyser.
+Qu'en est-il, par exemple, d'un formulaire d'impôt?
+Si chaque champ du formulaire est bien défini, alors les données collectées à travers le formulaire peuvent être dites « structurées ».
+// +
+En revanche, une forme où l'utilisateur peut écrire du texte libre (pensez à un commentaire sur un article de blog, ou un espace vide où les utilisateurs peuvent écrire un commentaire) produit des données non structurées : données qui ne suivent pas une convention spéciale pour leur taille et leur contenu.
+C'est généralement beaucoup plus difficile à traiter par le logiciel, donc à analyser.
 
 // +
 Pour résumer, pensez aux données structurées comme à tout ce qui peut être représenté comme des tableaux de nombres bien organisés et de petits textes avec le format, la taille et les conventions d'écriture attendues: annuaires, livres comptables, statistiques gouvernementales ...
@@ -55,7 +61,8 @@ image::book.png[align = "center", title="Un livre de comptes montrant des donné
 *Données non structurées* (((données non structurées))) se réfère à des ensembles d'éléments "indisciplinés": texte de n'importe quelle longueur, sans catégorisation appropriée, codé dans différents formats, y compris éventuellement des images, du son, des coordonnées géographiques...
 
 // +
-Ces ensembles de données sont beaucoup plus difficiles à traiter et à analyser, car ils sont pleins d'exceptions et de différences. Mais ils sont porteurs d'informations généralement riches: texte libre, informations enregistrées "dans la nature" ...
+Ces ensembles de données sont beaucoup plus difficiles à traiter et à analyser, car ils sont pleins d'exceptions et de différences.
+Mais ils sont porteurs d'informations généralement riches: texte libre, informations enregistrées "dans la nature" ...
 
 image::unstructured-data.png[align = "center", title="Données structurées vs données non structurées", book = "keep"]
 {nbsp} +
@@ -125,6 +132,7 @@ image::Réduction-des-coûts-de-stockage-des-données.png[align="center", title=
 {nbsp} +
 
 === d. L'état d'esprit a changé sur ce qui "compte" comme données
+
 * Les données non structurées (voir ci-dessus pour la définition de "non structuré") n'étaient généralement pas stockées : cela prend beaucoup de place, et les logiciels pour les interroger n'étaient pas suffisamment développés.
 // +
 * Les données de réseau (également appelées "graphs") (qui est un ami avec qui, qui aime les mêmes choses que qui, etc.) étaient généralement négligées car difficiles à interroger. Les réseaux sociaux comme Facebook ont ​​fait beaucoup pour sensibiliser les entreprises à la valeur des graphs (en particulier les https://en.wikipedia.org/wiki/Social_graph[((graphs sociaux))]). https://neo4j.com/[((Neo4J))] ou http://titan.thinkaurelius.com/[Titan] sont des fournisseurs de bases de données spécialisés dans le stockage et l'analyse de données réseau.
@@ -180,7 +188,7 @@ https://twitter.com/mattturck[Matt Turck, VC chez FirstMarkCap], crée chaque an
 
 <<<<
 
-image::Matt-Turck-FirstMark-2017-Big-Data-Landscape_panorama.png[pdfwidth = "100%", align = "center", title="Paysage de données pour 2017", book = "keep"]
+image::Matt-Turck-FirstMark-2017-Big-Data-Landscape.png[pdfwidth = "100%", align = "center", title="Paysage de données pour 2017", book = "keep"]
 {nbsp} +
 
 Vous trouverez une https://mattturck.com/bigdata2017/[version haute résolution de ce panorama Big data], une version Excel et un commentaire très intéressant sur ce site : https://mattturck.com/bigdata2017/
@@ -220,7 +228,7 @@ Quelles sont les différences entre ces termes?
 == Pour aller plus loin
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

@@ -286,6 +286,7 @@ image::dataviz-group.jpg[align="center"]
 == !
 
 //ST: !
+== !
 ==== i. OECD Better Life Index by Moritz Stefaner et al
 == !
 
@@ -303,6 +304,7 @@ image::oecd-better-life-index.jpg[align="center"]
 (live url: http://www.oecdbetterlifeindex.org/)
 
 //ST: !
+== !
 ==== ii. The "Ghost Counties" visualization by Jan Willem Tulp
 == !
 
@@ -320,6 +322,7 @@ image::ghost-counties-screenshot.jpg[align="center"]
 (live url, needs Internet Explorer and the Java plugin: http://www.janwillemtulp.com/eyeo/)
 
 //ST: !
+== !
 ==== iii. U.S. Gun Deaths by Periscopic
 == !
 
@@ -348,6 +351,7 @@ The emergence of data visualisation as a set of practice and professionals was c
 == !
 
 //ST: !
+== !
 ==== i. Maps
 == !
 
@@ -377,6 +381,7 @@ This interactive map by Stamen is quite different from your usual GIS mapping!
 What this kind of map brings is: interaction, custom-made design, and most of all enhanced **engagement** with the viewers.
 
 //ST: !
+== !
 ==== ii. Networks
 == !
 
@@ -423,6 +428,7 @@ This type of visualization is different because:
 == !
 
 //ST: !
+== !
 ==== i. Data is for the viewer to see and play with
 == !
 
@@ -439,6 +445,7 @@ This represents a fundamental break with infographics, which can hide the underl
 It is also a break with infovis, where data is indeed there but you might not be enticed to engage with it.
 
 //ST: !
+== !
 ==== ii. Custom made, creative act
 == !
 
@@ -613,7 +620,7 @@ This is just my vision for dataviz, I'd be happy to discuss it with you now!
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

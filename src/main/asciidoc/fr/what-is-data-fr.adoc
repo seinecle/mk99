@@ -208,6 +208,7 @@ image::russian_dolls.jpg[align = "center", title = "Volumes de données"]
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
+
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

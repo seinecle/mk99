@@ -27,11 +27,15 @@ Jokes aside, defining big data and what it covers needs a bit of precision. Let'
 
 == 2. The 3 V
 
-Big data is usually described with the "((3 Vs))":
+Big data is usually described with the https://blogs.gartner.com/doug-laney/files/2012/01/ad949-3D-Data-Management-Controlling-Data-Volume-Velocity-and-Variety.pdf[((3 Vs)), first proposed by Douglas Laney from Gartner in 2001]:
 
 === *V* for Volume
 The size of datasets available today is staggering (ex: ((Facebook)) had 250 billion pics in 2016).
-//+
+We produce a phenomenal amount of data in the course of our daily lives (to the point of sometimes missing an experience not mediated by technology - as this grandmother understood it)
+
+image::grandma.png[align = "center", title="We collect data at every moment of our life - or not", book = "keep"]
+{nbsp} +
+
 The volumes of data are increasing at an *accelerating rate*. According to sources, https://www.sciencedaily.com/releases/2013/05/130522085217.htm[90% of all the data in the world has been generated over the last two years] (statement from 2013) or said differently, https://appdevelopermagazine.com/4773/2016/12/23/more-data-will-be-created-in-2017-than-the-previous-5,000-years-of-humanity-/[more data will be created in 2017 than the previous 5,000 years of humanity].
 
 === *V* for Variety
@@ -40,10 +44,20 @@ The volumes of data are increasing at an *accelerating rate*. According to sourc
 (((data, structured vs unstructured)))
 
 ==== A - Structured data
-*Structured data* (((structured data))) refers to data which is formatted and organized according to a well defined set of rules, which makes it *machine readable*. For example, zip codes are a structured dataset because they follow a precise convention regarding the number of letters and digits composing them, making it easy for an optical reader and software to identify and "read" them. Same with license plates, social security numbers... But these are simple examples.
+*Structured data* (((structured data))) refers to data which is formatted and organized according to a well defined set of rules, which makes it *machine readable*.
+//+
+For example, zip codes are a structured dataset because they follow a precise convention regarding the number of letters and digits composing them, making it easy for an optical reader and software to identify and "read" them.
+Same with license plates, social security numbers... *these are examples of structured data*.
 
 //+
-What about, for instance, a tax form? If each field of the form is well defined, then the data collected through the form can be said to be "structured". By contrast, a form where the user can write free text (think of a comment on a blog post, or a blank space where users can write a feedback) produces unstructured data: data which does not follow a special convention for its size and content. This is typically much harder for software to process, hence to analyze.
+But these are simple examples.
+What about, for instance, a tax form?
+//+
+If each field of the form is well defined, then the data collected through the form can be said to be "structured".
+//+
+
+By contrast, a form where the user can write free text (think of a comment on a blog post, or a blank space where users can write a feedback) produces unstructured data: data which does not follow a special convention for its size and content.
+This is typically much harder for software to process, hence to analyze.
 
 //+
 To summarize, think of structured data as as anything that can be represented as well organized tables of numbers and short pieces of text with the expected format, size, and conventions of writing: phonebooks, accounting books, governmental statistics...
@@ -129,7 +143,7 @@ image::Decreasing-costs-of-data-storage.png[align="center", title="Decreasing co
 //+
 * Network data (also known as graphs) (who is friend with whom, who likes the same things as whom, etc.) was usually neglected as "not true observation", and hard to query. Social networks like Facebook made a lot to make businesses aware of the value of graphs (especially https://en.wikipedia.org/wiki/Social_graph[social graphs]). https://neo4j.com/[((Neo4J))] or http://titan.thinkaurelius.com/[Titan] are database providers specialized in network data storage and analysis.
 //+
-* Geographical data has democratized: specific (and expensive) databases existed for a long time to store and query "place data" (regions, distances, proximity info...) but easy-to-use solutions have multiplied recently, such as https://carto.com/[Carto].
+* Geographical data has democratized: specific (and expensive) databases existed for a long time to store and query "place data" (regions, distances, proximity info...) but easy-to-use solutions have multiplied recently, such as https://carto.com/[Carto] or https://www.mapbox.com/[MapBox].
 
 === e. Open source software accelerated innovation
 
@@ -151,7 +165,7 @@ This graph shows the pattern that all technologies follow along their lifetime:
 //+
 - then, the technology starts picking the interest of journalists, consultant, professors, industries... expectations grow about the possibilities and promises of the tech. "With it we will be able to [insert amazing thing here]"
 //+
-- the top of the bump is the "peak of inflated expectations". All techs tend to be hyped and even over hyped. This means the tech is expected to deliver more than it surely will, in actuality. People get overdrawn.
+- the top of the bump is the "peak of inflated expectations". All technics and innovation tend to be hyped and even over hyped. This means the tech is expected to deliver more than it surely will, in actuality. People get overdrawn.
 //+
 - then follows the "Trough of Disillusionment". Doubt sets in. People realize the tech is not as powerful, easy, cheap or quick to implement as it first seemed. Newspapers start reporting depressing news about the tech, some bad buzz spreads.
 //+
@@ -179,7 +193,7 @@ https://twitter.com/mattturck[Matt Turck, VC at FirstMarkCap], creates every yea
 
 <<<<
 
-image::C:\Users\levallois\Google Drive\open\mk99\docs\src\main\asciidoc\images/Matt-Turck-FirstMark-2017-Big-Data-Landscape_panorama.png[pdfwidth="100%", align="center", title="Big data landscape for 2017", book="keep"]
+image::Matt-Turck-FirstMark-2017-Big-Data-Landscape.png[pdfwidth="100%", align="center", title="Big data landscape for 2017", book="keep"]
 {nbsp} +
 
 You can find a https://mattturck.com/bigdata2017/[high res version of the Big data panorama], an Excel sheet version, and a very interesting comment on this website: https://mattturck.com/bigdata2017/
@@ -218,7 +232,8 @@ What are the differences between these terms?
 == The end
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

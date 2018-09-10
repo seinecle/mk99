@@ -24,7 +24,7 @@ image::ariely.png[align = "center", title="Message de Facebook de Dan Ariely en 
 Ironie à part, le big data demande effectivement un travail de définition. Apportons une certaine clarté.
 
 == 2. Les 3 V
-Les big data sont généralement décrites avec le "((3 Vs))":
+Les big data sont généralement décrites avec le concept des https://blogs.gartner.com/doug-laney/files/2012/01/ad949-3D-Data-Management-Controlling-Data-Volume-Velocity-and-Variety.pdf[((3 Vs)), proposé dès 2001 par Douglas Laney, chez Gartner]:
 
 === *V* pour le volume
 La taille des jeux de données disponibles aujourd'hui est stupéfiante (ex: ((Facebook)) avait 250 milliards de photos en 2016).
@@ -43,7 +43,8 @@ Les volumes de données augmentent à un rythme *accéléré*. Selon des sources
 *Données structurées* (((données structurées))) se réfère à des données formatées et organisées selon un ensemble de règles bien défini, ce qui les rend *lisibles par une machine*. Par exemple, les codes postaux sont un ensemble de données structuré car ils suivent une convention précise concernant le nombre de lettres et de chiffres qui les composent, ce qui facilite l'identification et leur « lecture » par un lecteur optique et un logiciel. Pareil avec les plaques d'immatriculation, les numéros de sécurité sociale ... Mais ce sont des exemples simples.
 
 // +
-Qu'en est-il, par exemple, d'un formulaire d'impôt? Si chaque champ du formulaire est bien défini, alors les données collectées à travers le formulaire peuvent être dites « structurées ».
+Qu'en est-il, par exemple, d'un formulaire d'impôt?
+Si chaque champ du formulaire est bien défini, alors les données collectées à travers le formulaire peuvent être dites « structurées ».
 // +
 En revanche, une forme où l'utilisateur peut écrire du texte libre (pensez à un commentaire sur un article de blog, ou un espace vide où les utilisateurs peuvent écrire un commentaire) produit des données non structurées : données qui ne suivent pas une convention spéciale pour leur taille et leur contenu.
 C'est généralement beaucoup plus difficile à traiter par le logiciel, donc à analyser.

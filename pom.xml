@@ -154,7 +154,7 @@
                             <attributes>
                                 <refresh-pics>${refresh.pics}</refresh-pics>
                                 <images-dir>${basedir}/src/main/asciidoc/images</images-dir>
-
+                                <path>${basedir}</path>                                
                                 <!-- Example below shows how to specify in this pom instead of System's PATH, the location of dot command of Graphviz, required by PlantUML libraries -->
                                 <!--Windows:-->
                                 <graphvizdot>C:\Program Files (x86)\Graphviz2.38\bin\dot.exe</graphvizdot>
@@ -198,6 +198,7 @@
                                         <revealjs_theme>white</revealjs_theme>
                                         <revealjs_transition>linear</revealjs_transition>
                                         <revealjs_maxscale>10.0</revealjs_maxscale>
+                                        <path>${basedir}</path>                                
                                         <project-version>${project.version}</project-version>
                                         <!--these 2 parameters come from the properties.txt file at the root of the project - see plugin above -->
                                         <!--they will be injected into the extensions which manage the html output formats-->
@@ -279,6 +280,7 @@
                                         <statcounter-security>${statcounter-security}</statcounter-security>
                                         <doc-to-process>${doc.to.process}</doc-to-process> 
                                         <refresh-pics>${refresh.pics}</refresh-pics>
+                                        <path>${basedir}</path>                                
                                     </attributes>
                                 </configuration>
                             </execution>
@@ -302,23 +304,6 @@
                                         </delete>
                                     </target>
                                 </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>net.clementlevallois</groupId>
-                        <artifactId>MojoPublishToMedium</artifactId>
-                        <version>1.0</version>
-                        <configuration>
-                            <fileName>${project.build.directory}\generated-html\${doc}</fileName>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>default-descriptor</id>
-                                <phase>process-resources</phase>
-                                <goals>
-                                    <goal>publishtomedium</goal>
-                                </goals>
                             </execution>
                         </executions>
                     </plugin>
@@ -444,6 +429,7 @@
                                 <!--Windows:-->
                                 <graphvizdot>C:\Program Files (x86)\Graphviz2.38\bin\dot.exe</graphvizdot>
                                 <imagesoutdir>${basedir}/src/main/asciidoc/images</imagesoutdir>
+                                <path>${basedir}</path>                                
                             
                                 <!-- *nix :
                                     <graphvizdot>/usr/local/bin/dot</graphvizdot>
