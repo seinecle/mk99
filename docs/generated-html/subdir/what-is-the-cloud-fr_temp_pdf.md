@@ -52,6 +52,7 @@ image::datacenter.jpg[pdfwidth = "40%", align = "center", title = "Un centre de 
 Pour avoir une idée de la façon dont "le cloud" est réellement un espace physique, regardez cette vidéo montrant une visite d'un centre de données chez Google :
 
 video::XZmGGAbHqa0[youtube]
+{nbsp} +
 
 Habituellement, jusqu'en 2005 à peu près, les entreprises avaient deux options:
 
@@ -121,7 +122,7 @@ A quoi sert le cloud pour une entreprise? Les entreprises peuvent externaliser l
 Quels types d'opérations peuvent être externalisés vers le cloud?
 
 Les entreprises peuvent ne déléguer que l'infrastructure informatique de base ou les opérations informatiques les plusau coeur de leurs activités.
-Ces différents degrés peuvent être décrits avec le *"modèle de pizza"*:
+Ces différents degrés peuvent être décrits avec le *"modèle de pizza"*  (source: https://www.linkedin.com/pulse/20140730172610-9679881-pizza-as-a-service/[source]):
 
 image::pizza-a-service.jpg[align = "center", title = "Pizza as a service", book="keep"]
 {nbsp} +

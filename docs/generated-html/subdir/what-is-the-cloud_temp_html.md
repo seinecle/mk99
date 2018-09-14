@@ -51,6 +51,7 @@ image::datacenter.jpg[pdfwidth= "40%",align="center",title="A data center", book
 To get a sens of how "the cloud" is actually a physical space, watch this video showing a tour of a data center at Google:
 
 video::XZmGGAbHqa0[youtube]
+{nbsp} +
 
 Usually, until 2005 roughly, companies had two options:
 
@@ -127,10 +128,11 @@ What is the use of the cloud? Companies can externalize operations to the cloud,
 //+
 Which kind of operations can be externalized to the cloud?
 
-Companies can delegate just the basic IT infrastructure, or IT operations which are closer to the core of their business. These different degrees can be described with the *"pizza model"*:
+Companies can delegate just the basic IT infrastructure, or IT operations which are closer to the core of their business. These different degrees can be described with the *"pizza model"* (source: https://www.linkedin.com/pulse/20140730172610-9679881-pizza-as-a-service/[source]):
 
 image::pizza-as-a-service.jpg[align="center",title="Pizza as a service",book="keep"]
 {nbsp} +
+
 
 This schema illustrates that as a business, you can either run all operations by yourself ("made at home"), or delegate everything ("dining out").
 Each of these degrees of externalization has a name:

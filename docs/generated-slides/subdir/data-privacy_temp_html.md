@@ -124,6 +124,7 @@ This trailer for "CitizenFour" gives a sense of the dangers whistleblowers face 
 
 // +
 video::108771171[vimeo]
+{nbsp} +
 
 // +
 Journalists, academics, activists and NGOs such as the https://www.eff.org/[Electronic Frontier Foundation] make the case that:
@@ -156,6 +157,7 @@ Her argument is that besides "surveillance" and "lack of privacy", companies lik
 - some past experiments on voting in the US, and current developments on electronic ((surveillance)) in ((China)), show that the power of these technologies has already consequences in the real world:
 
 video::iFTWM7HV2UI[youtube]
+{nbsp} +
 
 == 6. Conclusion: data protection in business, more than an regulatory obligation
 
@@ -176,6 +178,7 @@ What are the next steps? Several trends can be identified:
 
 // +
 video::oVfHeWTKjag[youtube]
+{nbsp} +
 
 // +
 [start=2]

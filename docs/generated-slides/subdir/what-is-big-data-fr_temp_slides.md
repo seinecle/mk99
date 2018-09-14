@@ -200,7 +200,8 @@ image::Réduction-des-coûts-de-stockage-des-données.png[align="center", title=
 * Les données de réseau (également appelées "graphs") (qui est un ami avec qui, qui aime les mêmes choses que qui, etc.) étaient généralement négligées car difficiles à interroger. Les réseaux sociaux comme Facebook ont ​​fait beaucoup pour sensibiliser les entreprises à la valeur des graphs (en particulier les https://en.wikipedia.org/wiki/Social_graph[((graphs sociaux))]). https://neo4j.com/[((Neo4J))] ou http://titan.thinkaurelius.com/[Titan] sont des fournisseurs de bases de données spécialisés dans le stockage et l'analyse de données réseau.
 
 == !
-* Les données géographiques se sont démocratisées : des bases de données spécifiques (et coûteuses) ont longtemps existé pour stocker et interroger des "données de lieu" (régions, distances, informations de proximité ...) mais des solutions simples à utiliser se sont récemment multipliées, comme https://carto.com/[Carto].
+* Les données géographiques se sont démocratisées : des bases de données spécifiques (et coûteuses) ont longtemps existé pour stocker et interroger des "données de lieu" (régions, distances, informations de proximité ...) mais des solutions simples à utiliser se sont récemment multipliées:
+-> voir https://carto.com/[Carto] ou https://www.mapbox.com/[MapBox].
 
 == !
 ==== e. Le logiciel open source accélère l'innovation

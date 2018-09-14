@@ -266,6 +266,7 @@ IBM Watson is a software which beat human players at the TV Game "Geopardy" (and
 
 //ST: !
 video::WFR3lOm_xhE[youtube]
+{nbsp} +
 
 //ST: !
 Yet, mining text to produce new "reasoning" in general situations by machines has not made much progresses yet.
@@ -390,7 +391,7 @@ This course is made by Clement Levallois.
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-sons, https://seinecle.github.io/mk99/[here].
+ps://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.

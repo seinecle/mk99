@@ -122,9 +122,24 @@ As one CIO for a large insurance company recently admitted to me: "It’s silly 
 ____
 
 //+
+[[data-inventory]]
 Where is data located? An inventory must be made. From Douglas Laney's https://www.amazon.com/Infonomics-Monetize-Information-Competitive-Advantage/dp/1138090387/ref=sr_1_1?ie=UTF8&qid=1536573809&sr=8-1&keywords=infonomics[Infonomics]:
 
-image::infonomics_1.jpg[pdfwidth="100%", align="center", title="Information Asset Inventory", book="keep"]
+image::infonomics_1.jpg[pdfwidth="80%", align="center", title="Information Asset Inventory", book="keep"]
+
+As highlighted in the quote above, not many companies put in place a "data management" to make sure data is known, listed of good quality and actionable.
+An interesting positive exception: Uber has put in place a "databook" storing the metadata about the datasets in the company:
+
+image::uber-databook.png[pdfwidth="80%", align="center", title="Databook by Uber: making medatada searchable and usable", book="keep"]
+
+//+
+Employees can search this database to discover and access the data they need.
+//+
+Another very important side effect of the databook is that it makes very clear and visible who is the "owner" of a given dataset.
+Defining data ownership an important cogwheel in the data governance of a firm.
+
+//+
+(a detailed blog post about Uber's databook is available https://eng.uber.com/databook/[here])
 
 == 3. How to describe datasets
 === a. Formats, types, encoding
@@ -220,6 +235,7 @@ image::russian_dolls.jpg[align="center",title="Volumes of data"]
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
+
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

@@ -48,6 +48,7 @@ image::fb-aware.png[align"center", title="Facebook Local Awareness Ad Feature"]
 -> https://www.facebook.com/business/learn/facebook-create-ad-reach-ads
 
 video::-YE90ygswoU[youtube]
+{nbsp} +
 
 === b. Example - Placemeter
 image::placemeter.png[align"center", title="Placemeter analyzes pedestrian traffic through video"]
@@ -62,6 +63,7 @@ image::placemeter.png[align"center", title="Placemeter analyzes pedestrian traff
 -> https://www.placemeter.com/
 
 video::irydHrRdpkY[youtube]
+{nbsp} +
 
 === c. Example - Data @GrandLyon
 image:logo-smart-data-grand-lyon.png[align"center", title="https://data.grandlyon.com/[Grand Lyon Data]"][align"center", title="https://data.grandlyon.com/
@@ -97,6 +99,7 @@ http://smartcityinnovationlab.com/[image:lisboa.png[width=150]]
 - Watch this extract from the TV series "The West Wing“, Season 2, Episode 16:
 
 video::vVX-PrBRtTY[youtube]
+{nbsp} +
 
 === b. Example: how to explore the real estate market in the Netherlands
 - Every single building of the Netherlands on a map
@@ -260,7 +263,7 @@ This course is made by Clement Levallois.
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-ls secrets by Andy Greenberg"]]
+g"]]
 
 == The end
 //ST: The end

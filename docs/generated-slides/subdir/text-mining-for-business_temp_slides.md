@@ -305,6 +305,7 @@ IBM Watson is a software which beat human players at the TV Game "Geopardy" (and
 video::WFR3lOm_xhE[youtube]
 == !
 
+
 //ST: !
 Yet, mining text to produce new "reasoning" in general situations by machines has not made much progresses yet.
 

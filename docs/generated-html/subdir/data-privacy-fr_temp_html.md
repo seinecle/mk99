@@ -103,6 +103,7 @@ Grâce aux lanceurs d'alerte comme https://en.wikipedia.org/wiki/Edward_Snowden[
 Ce trailer de "CitizenFour" donne une idée des dangers auxquels sont confrontés les lanceurs d'alerte lorsqu'ils révèlent comment les agences gouvernementales espionnent leurs citoyens :
 
 video::xHuPkbP2NSo[youtube]
+{nbsp} +
 
 Des journalistes, des universitaires, des militants et des ONG tels que la https://www.eff.org/[Electronic Frontier Foundation] font valoir que:
 
@@ -129,6 +130,7 @@ Selon elle, outre la surveillance et la perte de vie privée, des entreprises co
 - quelques expériences passées sur le vote aux Etats-Unis, et les développements actuels sur la ((surveillance électronique)) en ((Chine)), montrent que la puissance de ces technologies a déjà des conséquences dans le monde réel:
 
 video::iFTWM7HV2UI[youtube]
+{nbsp} +
 
 == 6. Conclusion: la protection des données dans les affaires, plus qu'une obligation réglementaire
 La collecte et le traitement des données à caractère personnel par les entreprises ont une grande portée et ne doivent pas être considérés uniquement du point de vue juridique par les entreprises.
@@ -144,6 +146,7 @@ Quelles seront les prochaines étapes? Plusieurs tendances peuvent être identif
 1. Certaines voix s'interrogent sur le business model qui consiste à servir des publicités ciblées basées sur des données personnelles. Ce modèle est-il aussi efficace que la valorisation boursière de Facebook le suggère? https://digiday.com/media/ft-warns-advertisers-discovering-high-levels-of-domain-spoofing/[ L'étendue de la fraude dans les publicités numériques], est difficile à mesurer, comme le montre la vidéo ci-dessous:
 
 video::oVfHeWTKjag[youtube]
+{nbsp} +
 
 // +
 [start = 2]

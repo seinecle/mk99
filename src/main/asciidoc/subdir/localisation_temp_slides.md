@@ -59,6 +59,7 @@ image::fb-aware.png[align"center", title="Facebook Local Awareness Ad Feature"]
 video::-YE90ygswoU[youtube]
 == !
 
+
 ==== b. Example - Placemeter
 == !
 [.stretch]
@@ -78,6 +79,7 @@ image::placemeter.png[align"center", title="Placemeter analyzes pedestrian traff
 [.stretch]
 video::irydHrRdpkY[youtube]
 == !
+
 
 ==== c. Example - Data @GrandLyon
 == !
@@ -119,6 +121,7 @@ http://smartcityinnovationlab.com/[image:lisboa.png[width=150]]
 [.stretch]
 video::vVX-PrBRtTY[youtube]
 == !
+
 
 ==== b. Example: how to explore the real estate market in the Netherlands
 == !

@@ -193,12 +193,14 @@ In the following video, we see https://www.dnb.nl/en/binaries/Working%20Paper%20
 video::YvauCrHGWYc[youtube]
 == !
 
+
 Another example: connecting seemingly unrelated measures of business performance with https://www.oracle.com/solutions/business-analytics/business-intelligence/index.html[Oracle BI] and https://linkurio.us/[Linkurious]:
 
 == !
 [.stretch]
 video::KBIZoUikfwo[youtube]
 == !
+
 
 
 == 3. To go further

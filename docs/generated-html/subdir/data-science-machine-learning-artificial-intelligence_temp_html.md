@@ -141,6 +141,7 @@ To illustrate the difference in speed between a mathematical operation run witho
 
 // +
 video::-P28LKWTzrI[youtube, width= 500, height=400]
+{nbsp} +
 
 // +
 The issue is: to use a GPU for calculations, you need to conceptualize the problem at hand as one that can be:
@@ -261,6 +262,7 @@ It is called *supervised* learning because the learning is very much constrained
 
 // +
 video::4HCE1P-m1l8[youtube, width=500, height=400]
+{nbsp} +
 
 // +
 Important take away on the supervised approach:
@@ -279,6 +281,7 @@ This is easy and takes just seconds. The following video shows B.F. Skinner, mai
 
 // +
 video::TtfQlkGwE2U[youtube, width=500, height=400]
+{nbsp} +
 
 // +
 Footnote: how does this apply to learning in humans? On the topic of learning and decision making, I warmly recommend https://global.oup.com/academic/product/foundations-of-neuroeconomic-analysis-9780199744251[Foundations of Neuroeconomic Analysis by Paul Glimcher], professor of neuroscience, psychology and economics at NYU:
@@ -337,6 +340,7 @@ After looping from 1. to 4. thousands of times, Mario completes the game, withou
 
 // +
 video::qv6UVOQ0F44[youtube, width=500, height=400]
+{nbsp} +
 
 // +
 Reinforcement learning is perceived as corresponding to an important side of human learning / human intelligence (goal oriented, "trial and error").
@@ -427,12 +431,14 @@ Laurent Alexandre ((("Alexandre, Laurent"))) on the social and economic stakes o
 
 // +
 video::rJowm24piM4[youtube, width= 500, height=400]
+{nbsp} +
 
 // +
 John Launchbury, Director of DARPA's (((DARPA))) Information Innovation Office (I2O) in 2017:
 
 // +
 video::-O01G3tSYpU[youtube, width= 500, height=400]
+{nbsp} +
 
 == The end
 // +

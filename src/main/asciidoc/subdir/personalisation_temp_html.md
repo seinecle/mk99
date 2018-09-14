@@ -108,6 +108,7 @@ A list of bodily aspects being measured with examples:
 |===============
 
 video::7V8jrdH5tAQ[youtube]
+{nbsp} +
 
 //+
 .Behavior in public places
@@ -127,6 +128,7 @@ image::agt-2.png[AGT services for crowd management]"][align="center", title="sou
 Video showing how Placemeter monitors pedestrian traffic:
 
 video::rpjJHoJixYA[youtube]
+{nbsp} +
 
 
 == 3. The case of *Nicholas Felton*: constant data monitoring
@@ -141,6 +143,7 @@ http://feltron.com/[Nicholas Felton] is a designer and data artist who produced 
 These reports synthesize his bodily data and social life, which he measures __constantly__ during the year. This practice (pushed to the extreme in this case) belongs to the https://en.wikipedia.org/wiki/Quantified_self[((quantified self))] movement.
 
 video::145332585[vimeo]
+{nbsp} +
 
 === b. Not just Feltron
 Insurance companies are interested in boosting individual health, using connected objects as monitoring devices
@@ -150,6 +153,7 @@ image:autodesk.jpg[align="center",title="http://www.forbes.com/sites/parmyolson/
 Companies are looking to provide a 360 degree solution to health and well being through constant monitoring:
 
 video::E9jq6XpZjGo[youtube]
+{nbsp} +
 
 Monitoring on health is also a B2B market to achieve "corporate welfare". See link:resources/corporate_wellness_smartdata_nokia.pdf[Nokia's brochure on the topic of health services].
 
@@ -179,6 +183,7 @@ Companies rated with the ((customer)) service do personalization differently: wi
 See how ((Zappos)) offers a great service to their customers:
 
 video::vApoQPISmvs[youtube]
+{nbsp} +
 
 (https://www.youtube.com/watch?v=IwE1zb9fiVs[another impactful version here])
 

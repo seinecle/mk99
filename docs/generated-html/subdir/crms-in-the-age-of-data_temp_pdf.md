@@ -214,6 +214,7 @@ iv. Personalization through smart CRMs? Companies rated with the best customer s
 See how Zappos offers a great service to their customers:
 
 video::vApoQPISmvs[youtube]
+{nbsp} +
 
 (another (https://www.youtube.com/watch?v=IwE1zb9fiVs[impactful talk by the CEO of Zappos] here).
 
@@ -264,7 +265,7 @@ This course is made by Clement Levallois.
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-ibilities afforded by these new way to manage customer relationships.
+ afforded by these new way to manage customer relationships.
 - The organization needs to invest and devote enough operational resources to stop doing "business as usual" and develop a data-driven CRM.
 
 

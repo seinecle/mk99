@@ -184,6 +184,7 @@ video::-P28LKWTzrI[youtube, width= 500, height=400]
 == !
 
 
+
 == !
 The issue is: to use a GPU for calculations, you need to conceptualize the problem at hand as one that can be:
 
@@ -336,6 +337,7 @@ video::4HCE1P-m1l8[youtube, width=500, height=400]
 == !
 
 
+
 == !
 Important take away on the supervised approach:
 
@@ -359,6 +361,7 @@ This is easy and takes just seconds. The following video shows B.F. Skinner, mai
 [.stretch]
 video::TtfQlkGwE2U[youtube, width=500, height=400]
 == !
+
 
 
 == !
@@ -435,6 +438,7 @@ After looping from 1. to 4. thousands of times, Mario completes the game, withou
 [.stretch]
 video::qv6UVOQ0F44[youtube, width=500, height=400]
 == !
+
 
 
 == !
@@ -564,6 +568,7 @@ video::rJowm24piM4[youtube, width= 500, height=400]
 == !
 
 
+
 == !
 John Launchbury, Director of DARPA's (((DARPA))) Information Innovation Office (I2O) in 2017:
 
@@ -572,6 +577,7 @@ John Launchbury, Director of DARPA's (((DARPA))) Information Innovation Office (
 [.stretch]
 video::-O01G3tSYpU[youtube, width= 500, height=400]
 == !
+
 
 == The end
 == !

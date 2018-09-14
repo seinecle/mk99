@@ -138,10 +138,12 @@ In the following video, we see https://www.dnb.nl/en/binaries/Working%20Paper%20
 2 banks are connected if one lends to the other. The pattern of exchanges shifts through years - banks withdraw from the market.
 
 video::YvauCrHGWYc[youtube]
+{nbsp} +
 
 Another example: connecting seemingly unrelated measures of business performance with https://www.oracle.com/solutions/business-analytics/business-intelligence/index.html[Oracle BI] and https://linkurio.us/[Linkurious]:
 
 video::KBIZoUikfwo[youtube]
+{nbsp} +
 
 
 == 3. To go further

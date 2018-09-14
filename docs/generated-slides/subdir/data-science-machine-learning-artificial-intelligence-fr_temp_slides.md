@@ -167,6 +167,7 @@ Pour illustrer la différence de vitesse entre une opération mathématique exé
 video::-P28LKWTzrI[youtube, width = 500, height = 400]
 == !
 
+
 Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez conceptualiser le problème comme un qui peut être :
 
 
@@ -328,6 +329,7 @@ Ce dernier point est explicité par Maryne Cotty-Eslous, fondatrice de https://p
 video::tL7ojiOTQho?t=16m31s[youtube,start=971]
 == !
 
+
 ==== c. L'approche de l'apprentissage par *renforcement* (reinforcement learning)
 == !
 Pour comprendre l'apprentissage par renforcement (((apprentissage automatique, apprentissage par renforcement))), nous pouvons penser intuitivement comment les animaux peuvent apprendre rapidement en *ignorant* les comportements indésirables et en *récompensant* les comportements souhaitables.
@@ -338,6 +340,7 @@ C'est facile et ne prend que quelques secondes. La vidéo suivante montre B.F. S
 [.stretch]
 video::TtfQlkGwE2U[youtube, largeur = 500, hauteur = 400]
 == !
+
 
 Outre les pigeons, l'apprentissage par renforcement peut être appliqué à tout type d' "agents experts".
 Prenons le cas d'un jeu vidéo comme Super Mario Bros:
@@ -384,6 +387,7 @@ Après avoir bouclé de 1. à 4. des milliers de fois, et enregistré à chaque 
 [.stretch]
 video::iakFfOmanJU[youtube, width = 500, height = 400]
 == !
+
 
 L'apprentissage par renforcement est perçu comme correspondant à un aspect important de l'apprentissage humain / de l'intelligence humaine (axé sur les buts, «essai et erreur»).
 

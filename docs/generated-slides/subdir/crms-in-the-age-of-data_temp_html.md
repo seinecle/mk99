@@ -218,6 +218,7 @@ iv. Personalization through smart CRMs? Companies rated with the best customer s
 See how Zappos offers a great service to their customers:
 
 video::vApoQPISmvs[youtube]
+{nbsp} +
 
 (another (https://www.youtube.com/watch?v=IwE1zb9fiVs[impactful talk by the CEO of Zappos] here).
 

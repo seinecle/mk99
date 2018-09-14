@@ -125,6 +125,7 @@ Si un problème statistique de prédiction peut être décomposé en opérations
 Pour illustrer la différence de vitesse entre une opération mathématique exécutée sans ou avec un *GPU* (((GPU - cartes graphiques))):
 
 video::-P28LKWTzrI[youtube, width = 500, height = 400]
+{nbsp} +
 
 Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez conceptualiser le problème comme un qui peut être :
 
@@ -246,6 +247,7 @@ Trois conditions à retenir sur l'apprentissage supervisé :
 Ce dernier point est explicité par Maryne Cotty-Eslous, fondatrice de https://projet-lucine.com/#/[Lucine, une app de reconnaissance et d'analyse de la douleur]:
 
 video::tL7ojiOTQho?t=16m31s[youtube,start=971]
+{nbsp} +
 
 === c. L'approche de l'apprentissage par *renforcement* (reinforcement learning)
 Pour comprendre l'apprentissage par renforcement (((apprentissage automatique, apprentissage par renforcement))), nous pouvons penser intuitivement comment les animaux peuvent apprendre rapidement en *ignorant* les comportements indésirables et en *récompensant* les comportements souhaitables.
@@ -253,6 +255,7 @@ Pour comprendre l'apprentissage par renforcement (((apprentissage automatique, a
 C'est facile et ne prend que quelques secondes. La vidéo suivante montre B.F. Skinner, figure centrale de la psychologie comportemenale dans les années 1950-1970, qui fait faire un tour sur lui-même à un pigeon simplement en récompensant le fait de tourner par des graines :
 
 video::TtfQlkGwE2U[youtube, largeur = 500, hauteur = 400]
+{nbsp} +
 
 Outre les pigeons, l'apprentissage par renforcement peut être appliqué à tout type d' "agents experts".
 Prenons le cas d'un jeu vidéo comme Super Mario Bros:
@@ -288,6 +291,7 @@ L'apprentissage par renforcement fonctionne de la manière suivante :
 Après avoir bouclé de 1. à 4. des milliers de fois, et enregistré à chaque fois des combinaisons d'actions favorables à répéter, et défavorables à éviter, Mario finit par arriver au bout du jeu, sans qu'aucun joueur humain ne tienne les commandes :
 
 video::iakFfOmanJU[youtube, width = 500, height = 400]
+{nbsp} +
 
 L'apprentissage par renforcement est perçu comme correspondant à un aspect important de l'apprentissage humain / de l'intelligence humaine (axé sur les buts, «essai et erreur»).
 

@@ -161,6 +161,7 @@ video::108771171[vimeo]
 == !
 
 
+
 == !
 Journalists, academics, activists and NGOs such as the https://www.eff.org/[Electronic Frontier Foundation] make the case that:
 
@@ -203,6 +204,7 @@ Her argument is that besides "surveillance" and "lack of privacy", companies lik
 video::iFTWM7HV2UI[youtube]
 == !
 
+
 == 6. Conclusion: data protection in business, more than an regulatory obligation
 == !
 
@@ -231,6 +233,7 @@ What are the next steps? Several trends can be identified:
 [.stretch]
 video::oVfHeWTKjag[youtube]
 == !
+
 
 
 == !

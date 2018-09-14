@@ -133,6 +133,7 @@ video::7V8jrdH5tAQ[youtube]
 == !
 
 
+
 == !
 .Behavior in public places
 [cols="a,a,a,a,a",options="header"]
@@ -160,6 +161,7 @@ video::rpjJHoJixYA[youtube]
 == !
 
 
+
 == 3. The case of *Nicholas Felton*: constant data monitoring
 == !
 ==== a. The Feltron reports
@@ -181,6 +183,7 @@ These reports synthesize his bodily data and social life, which he measures __co
 video::145332585[vimeo]
 == !
 
+
 ==== b. Not just Feltron
 == !
 Insurance companies are interested in boosting individual health, using connected objects as monitoring devices
@@ -193,6 +196,7 @@ Companies are looking to provide a 360 degree solution to health and well being 
 [.stretch]
 video::E9jq6XpZjGo[youtube]
 == !
+
 
 Monitoring on health is also a B2B market to achieve "corporate welfare". See link:resources/corporate_wellness_smartdata_nokia.pdf[Nokia's brochure on the topic of health services].
 
@@ -236,6 +240,7 @@ See how ((Zappos)) offers a great service to their customers:
 [.stretch]
 video::vApoQPISmvs[youtube]
 == !
+
 
 (https://www.youtube.com/watch?v=IwE1zb9fiVs[another impactful version here])
 

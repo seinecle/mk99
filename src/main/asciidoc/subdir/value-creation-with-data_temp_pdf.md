@@ -126,6 +126,7 @@ image::generate.jpg[pdfwidth="25%", align="center"]
 A video on the generation of car models by Autodesk:
 
 video::25xQs0Hs1z0[youtube]
+{nbsp} +
 
 === Obstacles and difficulties
 1. Should not create a failed product / false expectations
@@ -148,7 +149,7 @@ This course is made by Clement Levallois.
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+s for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.

@@ -136,6 +136,7 @@ Ce trailer de "CitizenFour" donne une idée des dangers auxquels sont confronté
 video::xHuPkbP2NSo[youtube]
 == !
 
+
 Des journalistes, des universitaires, des militants et des ONG tels que la https://www.eff.org/[Electronic Frontier Foundation] font valoir que:
 
 - les consommateurs ne sont pas suffisamment conscients et sensibles à la quantité d'informations captées dans la conduite normale de leur vie, simplement en utilisant des téléphones mobiles et des applications, la navigation sur le Web et, de plus en plus, dans des lieux publics.
@@ -173,6 +174,7 @@ Selon elle, outre la surveillance et la perte de vie privée, des entreprises co
 video::iFTWM7HV2UI[youtube]
 == !
 
+
 == 6. Conclusion: la protection des données dans les affaires, plus qu'une obligation réglementaire
 == !
 La collecte et le traitement des données à caractère personnel par les entreprises ont une grande portée et ne doivent pas être considérés uniquement du point de vue juridique par les entreprises.
@@ -195,6 +197,7 @@ Quelles seront les prochaines étapes? Plusieurs tendances peuvent être identif
 [.stretch]
 video::oVfHeWTKjag[youtube]
 == !
+
 
 
 == !

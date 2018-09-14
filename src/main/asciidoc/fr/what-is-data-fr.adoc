@@ -111,6 +111,34 @@ Nous devrions nous rappeler de considérer qu'un point de données peut être lu
 // +
 C'est un bon réflexe de se demander si un point de données peut en fait être "dégroupé" (se désagréger en plus petits points de données / mesures)
 
+=== d. Pour créer de la valeur à partir de données, vous devez d'abord pouvoir identifier les données et leur emplacement.
+
+[quote, Douglas Laney, Infonomics: How to Monetize, Manage, and Measure Information as an Asset for Competitive Advantage]
+____
+Les organisations qui ne connaissent pas les informations qu’elles peuvent ou pourraient acquérir ne sont pas en mesure d’en tirer parti.
+Comme l’a récemment reconnu un DSI d’une grande compagnie d’assurance: "Il est stupide que quelqu'un ici ait un inventaire de nos meubles de bureau, mais personne dans la société n’a un inventaire de nos données."
+____
+
+// +
+[[data-inventory]]
+Où se trouvent les données? Un inventaire doit être fait. Ce diagramme est tiré de https://www.amazon.com/Infonomics-Monetize-Information-Competitive-Advantage/dp/1138090387/ref=sr_1_1?ie=UTF8&qid=1536573809&sr=8-1&keywords=infonomics[Infonomics] de Douglas Laney:
+
+image::infonomics_1.jpg[pdfwidth = "80%", align = "center", title = "Inventaire des actifs informationnels", book = "keep"]
+
+Comme indiqué dans la citation ci-dessus, peu d’entreprises ont mis en place une "gestion des données" pour s’assurer que les données sont connues, répertoriées, de qualité et exploitables.
+Une exception positive intéressante: Uber a mis en place un "databook" stockant les métadonnées relatives aux jeux de données dans l'entreprise:
+
+image::uber-databook.png[pdfwidth = "80%", align = "center", title = "Databook par Uber: rendre consultable et utilisable medatada", book = "keep"]
+
+// +
+Les employés peuvent rechercher dans cette base de données pour découvrir et accéder aux données dont ils ont besoin.
+// +
+Un autre effet secondaire très important du databook est qu'il rend très clair et visible qui est le "propriétaire" d'un ensemble de données.
+Définir la propriété des données est un élément important de la gouvernance des données d’une entreprise.
+
+// +
+(un article de blog détaillé sur le databook d'Uber est disponible https://eng.uber.com/databook/[ici])
+
 == 3. Comment décrire les ensembles de données
 === a. Formats, types, codage
 

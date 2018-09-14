@@ -109,7 +109,38 @@ Nous devrions nous rappeler de considérer qu'un point de données peut être lu
 - Une personne entrant dans un bâtiment est un point de données.
 - cependant cette personne est elle-même une collection de points de donnée : données de localisation + réseau de relations + statut d'abonné à tel service + etc.
 
+// +
 C'est un bon réflexe de se demander si un point de données peut en fait être "dégroupé" (se désagréger en plus petits points de données / mesures)
+
+=== d. Pour créer de la valeur à partir de données, vous devez d'abord pouvoir identifier les données et leur emplacement.
+
+[quote, Douglas Laney, Infonomics: How to Monetize, Manage, and Measure Information as an Asset for Competitive Advantage]
+____
+Les organisations qui ne connaissent pas les informations qu’elles peuvent ou pourraient acquérir ne sont pas en mesure d’en tirer parti.
+Comme l’a récemment reconnu un DSI d’une grande compagnie d’assurance: "Il est stupide que quelqu'un ici ait un inventaire de nos meubles de bureau, mais personne dans la société n’a un inventaire de nos données."
+____
+
+// +
+[[data-inventory]]
+Où se trouvent les données? Un inventaire doit être fait. Ce diagramme est tiré de https://www.amazon.com/Infonomics-Monetize-Information-Competitive-Advantage/dp/1138090387/ref=sr_1_1?ie=UTF8&qid=1536573809&sr=8-1&keywords=infonomics[Infonomics] de Douglas Laney:
+
+image::infonomics_1.jpg[pdfwidth = "80%", align = "center", title = "Inventaire des actifs informationnels", book = "keep"]
+{nbsp} +
+
+Comme indiqué dans la citation ci-dessus, peu d’entreprises ont mis en place une "gestion des données" pour s’assurer que les données sont connues, répertoriées, de qualité et exploitables.
+Une exception positive intéressante: Uber a mis en place un "databook" stockant les métadonnées relatives aux jeux de données dans l'entreprise:
+
+image::uber-databook.png[pdfwidth = "80%", align = "center", title = "Databook par Uber: rendre consultable et utilisable medatada", book = "keep"]
+{nbsp} +
+
+// +
+Les employés peuvent rechercher dans cette base de données pour découvrir et accéder aux données dont ils ont besoin.
+// +
+Un autre effet secondaire très important du databook est qu'il rend très clair et visible qui est le "propriétaire" d'un ensemble de données.
+Définir la propriété des données est un élément important de la gouvernance des données d’une entreprise.
+
+// +
+(un article de blog détaillé sur le databook d'Uber est disponible https://eng.uber.com/databook/[ici])
 
 == 3. Comment décrire les ensembles de données
 === a. Formats, types, codage
@@ -158,7 +189,10 @@ Comment les données de comportement peuvent-elles "battre" les données sociod�
 Il est difficile de prédire avec une grande précision l'orientation politique, religieuse ou sexuelle d'un individu en fonction de son code postal, de son sexe et de son âge. http://www.pnas.org/content/110/15/5802[Une équipe de recherche a pu évaluer ces attributs personnels avec une grande précision basée sur les likes que les individus font sur les pages et les messages Facebook.] L'orientation politique (précision de 85%), l'orientation sexuelle (précision de 75% à 88%) et l'orientation religieuse (exactitude de 82%) peuvent être déterminées pour les personnes ayant fait en moyenne 170 likes.
 
 // +
-Mais les données comportementales ne sont généralement pas bien structurées, ce qui les rend plus coûteux à collecter, en terme de solution technologique, que de collecter des données sociodémographiques. La puissance et l'exactitude de la prédiction que procurent les données comportementales signifient également que les individus devraient être protégés contre l'invasion possible de leur vie privée. Il existe de grandes différences entre les pays en ce qui concerne les cadres juridiques protégeant les droits des individus. Nous en discutons dans le chapitre sur la confidentialité des données et le GDPR.
+Mais les données comportementales ne sont généralement pas bien structurées, ce qui les rend plus coûteux à collecter, en terme de solution technologique, que de collecter des données sociodémographiques.
+La puissance et l'exactitude de la prédiction que procurent les données comportementales signifient également que les individus devraient être protégés contre l'invasion possible de leur vie privée.
+// +
+Il existe de grandes différences entre les pays en ce qui concerne les cadres juridiques protégeant les droits des individus. Nous en discutons dans le chapitre sur la confidentialité des données et le GDPR.
 
 == 4. Données et taille
 
@@ -207,7 +241,8 @@ image::russian_dolls.jpg[align = "center", title = "Volumes de données"]
 == Pour aller plus loin
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net
