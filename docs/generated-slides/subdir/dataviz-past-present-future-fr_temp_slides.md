@@ -101,7 +101,7 @@ L'exemple ci-dessous montre à quel point une ((infographie)) peut être coloré
 
 == !
 [.stretch]
-image::exemple-infographics.png[align = "center", largeur = "400"]
+image::example-infographics.png[align = "center", largeur = "400"]
 == !
 
 
@@ -128,7 +128,7 @@ Rien d'extraordinaire ici : histogrammes, camemberts (souvent en 3D comme dans l
 ==== d. Et les SIG
 == !
 [.stretch]
-image::formated/gis.jpg[align = "center"]
+image::formatted/gis.jpg[align = "center"]
 == !
 
 
@@ -400,7 +400,7 @@ L'un des meilleurs exemples de conception simple et créative est celui de Hint.
 
 == !
 [.stretch]
-image::formated/windmap.jpg[align = "center", width = "500"]
+image::formatted/windmap.jpg[align = "center", width = "500"]
 == !
 
 
@@ -441,7 +441,11 @@ image::nielsen-viz.jpg[align = "center"]
 
 Depuis 2012 environ, https://www.ge.com/[General Electric] s'associe à https://fathom.info/[Fathom], l'agence créée par Ben Fry (co-créateur de Processing!) pour créer des visualisations en rapport à leur identité visuelle, avec quelques réalisations impressionnantes :
 
-image :: formated/ge.jpg[align = "center"]
+== !
+[.stretch]
+image::formatted/ge.jpg[align = "center"]
+== !
+
 
 (URL en direct: https://fathom.info/notebook/2124/)
 
@@ -451,7 +455,7 @@ Et en 2015, vous savez que la dataviz est complètement stabilisée lorsque vous
 
 == !
 [.stretch]
-image::formated/chelsea.jpg[align = "center"]
+image::formatted/chelsea.jpg[align = "center"]
 == !
 
 

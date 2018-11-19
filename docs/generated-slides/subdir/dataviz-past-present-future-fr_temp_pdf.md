@@ -77,7 +77,7 @@ On pourrait dire que l'infographie est un peu le contraire de l'infovis : les ag
 //+
 L'exemple ci-dessous montre à quel point une ((infographie)) peut être colorée et accrocheuse, mais totalement inefficace pour transmettre des informations.
 
-image::exemple-infographics.png[align = "center", largeur = "400"]
+image::example-infographics.png[align = "center", largeur = "400"]
 {nbsp} +
 
 Bien sûr, il existe d'excellentes infographies et Alberto Cairo, professeur et journaliste de profession, nous rappelle dans son livre http://www.thefunctionalart.com/[The Functional Art] que l'infographie soigneusement réalisée est un excellent moyen de transmettre des informations complexes dans une quantité limitée d'espace.
@@ -94,7 +94,7 @@ La mission en BI consiste essentiellement à réaliser des visualisations « au 
 Rien d'extraordinaire ici : histogrammes, camemberts (souvent en 3D comme dans l'illustration ci-dessus, ce qui est mauvais) et graphiques linéaires assemblés dans des tableaux de bord, vendus par des entreprises plus expérimentées dans le développement logiciel qu'en graphisme.
 
 === d. Et les SIG
-image::formated/gis.jpg[align = "center"]
+image::formatted/gis.jpg[align = "center"]
 {nbsp} +
 
 Les ((Système d'information Géolocalisés (SIG))) (GIS en anglais) peuvent prétendre détenir la plus longue tradition de visualisation des données.
@@ -283,7 +283,7 @@ Le sens de l'esthétique et la particularité des jeux de données font de chaqu
 // +
 L'un des meilleurs exemples de conception simple et créative est celui de Hint.fm:
 
-image::formated/windmap.jpg[align = "center", width = "500"]
+image::formatted/windmap.jpg[align = "center", width = "500"]
 {nbsp} +
 
 (version en ligne : http://hint.fm/wind/)
@@ -312,14 +312,15 @@ image::nielsen-viz.jpg[align = "center"]
 
 Depuis 2012 environ, https://www.ge.com/[General Electric] s'associe à https://fathom.info/[Fathom], l'agence créée par Ben Fry (co-créateur de Processing!) pour créer des visualisations en rapport à leur identité visuelle, avec quelques réalisations impressionnantes :
 
-image :: formated/ge.jpg[align = "center"]
+image::formatted/ge.jpg[align = "center"]
+{nbsp} +
 
 (URL en direct: https://fathom.info/notebook/2124/)
 
 // +
 Et en 2015, vous savez que la dataviz est complètement stabilisée lorsque vous voyez un panel avec Chelsea Clinton :
 
-image::formated/chelsea.jpg[align = "center"]
+image::formatted/chelsea.jpg[align = "center"]
 {nbsp} +
 
 (version en ligne : https://www.youtube.com/watch?v=YFrmQDCpgxs - le panel est avec Ben Fry).

@@ -50,8 +50,8 @@ infoviz, infographie, Business intelligence, et SIG.
 Infoviz est la "visualisation d'information" et est le nom d'un domaine académique concerné par:
 
 //+
-[citation, entrée Wikipedia "Information visualisation", https://en.wikipedia.org/wiki/Information_visualization]
-l'étude de représentations visuelles (interactives) de données abstraites pour renforcer la cognition humaine.
+[quote, entrée Wikipedia "Information visualisation", https://fr.wikipedia.org/wiki/Visualisation_d%27informations]
+L'étude de la représentation visuelle de données, principalement abstraites, sur une interface graphique
 
 //+
 La force de ce domaine est qu'il est un banc d'essai pour de nombreuses hypothèses que vous auriez sur la façon dont les visualisations peuvent être efficaces, en termes de «renforcement de la cognition humaine»:
