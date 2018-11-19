@@ -18,7 +18,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 == 1. Où va la visualisation des données?
-par https://www.clementlevallois.net [Clement Levallois], adapté d'une présentation faite à http://www.ds3.inesc-id.pt/[DataStorm 2ème édition], Lisbonne, 15 juillet 2015.
+par https://www.clementlevallois.net[Clement Levallois], adapté d'une présentation faite à http://www.ds3.inesc-id.pt/[DataStorm 2ème édition], Lisbonne, 15 juillet 2015.
 
 La bonne chose à propos des champs en science computationnelle est qu'ils évoluent si vite.
 Tous les six mois environ, un nouveau venu arrive en apprentissage automatique, le développement d'applications mobiles ou l'exploration de texte.
@@ -73,11 +73,11 @@ Comme illustré par la figure ci-dessus, et si je devais être un peu dur vis à
 
 
 === b. Infographie
-On pourrait dire que l'infographie est un peu le contraire d'infovis: les agences de communication font à peu près ce qu'elles veulent pour attirer l'attention de leurs lecteurs, au détriment de la véracité et de la fiabilité des données qu'elles invoquent.
+On pourrait dire que l'infographie est un peu le contraire de l'infovis : les agences de communication font à peu près ce qu'elles veulent pour attirer l'attention de leurs lecteurs, au détriment de la véracité et de la fiabilité des données qu'elles invoquent.
 //+
 L'exemple ci-dessous montre à quel point une ((infographie)) peut être colorée et accrocheuse, mais totalement inefficace pour transmettre des informations.
 
-image::exemple-infographics.png[align = "center", largeur = "400"]
+image::example-infographics.png[align = "center", largeur = "400"]
 {nbsp} +
 
 Bien sûr, il existe d'excellentes infographies et Alberto Cairo, professeur et journaliste de profession, nous rappelle dans son livre http://www.thefunctionalart.com/[The Functional Art] que l'infographie soigneusement réalisée est un excellent moyen de transmettre des informations complexes dans une quantité limitée d'espace.
@@ -90,16 +90,17 @@ Le lecteur doit faire davantage confiance au media qui publie l'infographie que 
 image::example-bi.png[align = "center"]
 {nbsp} +
 
-La mission en BI consiste essentiellement à réaliser des visualisations «au niveau excel» en termes de reporting et de suivi des données métiers.
-Rien d'extraordinaire ici: bar charts, camemberts (souvent en 3D comme dans l'illustration ci-dessus, ce qui est mauvais), graphiques linéaires et barres de progression assemblés dans des tableaux de bord, vendus par des entreprises plus expérimentées dans le développment logiciel qu'en graphisme.
+La mission en BI consiste essentiellement à réaliser des visualisations « au niveau excel » en termes de reporting et de suivi des données métiers.
+Rien d'extraordinaire ici : histogrammes, camemberts (souvent en 3D comme dans l'illustration ci-dessus, ce qui est mauvais) et graphiques linéaires assemblés dans des tableaux de bord, vendus par des entreprises plus expérimentées dans le développement logiciel qu'en graphisme.
 
-=== d. Et GIS.
-image :: formatée / gis.jpg [align = "center"]
+=== d. Et les SIG
+image::formatted/gis.jpg[align = "center"]
+{nbsp} +
 
-((Geographical Information Systems (GIS))) peut avoir une réclamation pour la plus longue tradition dans la visualisation des données.
-C'est après tout leur travail pour dessiner des cartes, qui est ((données géolocalisées)).
+Les ((Système d'information Géolocalisés (SIG))) (GIS en anglais) peuvent prétendre détenir la plus longue tradition de visualisation des données.
+C'est après tout leur fonction première de dessiner des cartes, à partir de ((données géolocalisées)).
 // +
-Il se pourrait que cette longue tradition fût aussi une malédiction: parce qu'ils ont développé ces logiciels de bureau largement utilisés dans les années 1990, les années 2000 et encore aujourd'hui, ils étaient ancrés dans des technologies qui ne pouvaient pas être facilement adaptées lorsque les technologies web devenaient plus riches. des façons plus attrayantes de dessiner des cartes et de projeter des superpositions de données sur celles-ci.
+Il se pourrait que cette longue tradition fût aussi un handicap : parce qu'ils ont développé ces logiciels de bureau largement utilisés dans les années 1990, les années 2000 et encore aujourd'hui, les cartographies géographiques étaient ancrées dans des technologies qui ne pouvaient pas être facilement adaptées lorsque les technologies web, plus riches, sont apparues.
 
 === e. La scène composée par infovis, infographie, BI et SIG
 La scène est donc la suivante: les scientifiques dans le domaine de la "visualisation de l'information" dans leur coin étant les gardiens du temple des "visualisations correctes", mais ils ont du mal à trouver un public pour ces graphismes.
@@ -149,248 +150,255 @@ Cela a amené de nombreux nouveaux venus à s'essayer à ces nouveaux outils, li
 // +
 Ces nouveaux venus qui ont créé ((dataviz)) avaient une manière différente de regarder les choses, un outil différent, et différentes façons de fonctionner en groupe. Cette communauté est remarquable à plusieurs égards:
 
-=== a. Individuals possessing an unusually broad mix of skills:
-Coding skills for the preparation of the data (Python or R for example), skills in javascript and other scripting language for visual design (ActionScript, Processing), a knowledge of the rules of design and a feel for esthetics, and creativity.
-//+
-That is what you need to create this:
+=== a. Des professionnels avec un éventail large de compétences
+Compétences en coding pour la préparation des données (Python ou R par exemple), en javascript et autres langages de script pour la conception visuelle (ActionScript, Processing), une connaissance des règles de la conception et un sens de l'esthétique et de la créativité.
 
-image::mta.jpg[align="center", width="500"]
+Toutes ces compétences sont nécessaires pour créer, par exemple, cette visualisation des trajets de métro à New York :
+
+image::mta.jpg[align ="center",width="500"]
 {nbsp} +
 
-(live url: http://www.mta.me)
-(by Alexander Chen, a Creative Director at Google Creative Lab)
+(URL : http://www.mta.me par Alexander Chen, directeur de la création chez Google Creative Lab)
 
-=== b. Twitter based communication around the "#dataviz" hashtag
-In this community, people evaluate each other's works, shared their latest realization chat about past and upcoming conferences but more importantly exchange info about new frameworks and resources.
+=== b. Une communauté basée sur Twitter autour du hashtag "#dataviz"
+Dans cette communauté, les gens évaluent les travaux de leurs collègues, partagent leurs dernières discussions sur les conférences passées et à venir, mais surtout échangent des informations sur les nouveaux développements techniques, données intéressantes et sources d'inspiration.
 
 image::dataviz-communities.jpg[align="center"]
 {nbsp} +
 
-(live url: http://neoformix.com/2012/DataVisFieldSubGroups.html)
+(version interactive: http://neoformix.com/2012/DataVisFieldSubGroups.html)
 
-=== c. A tight knit group across the US and Europe.
-I identify (this is a non exclusive list of course) http://moebio.com/[Santiago Ortiz], http://www.jeromecukier.net/[Jerome Cukier], http://blog.blprnt.com/[Jer Thorp], http://driven-by-data.net/[Gregor Aisch], http://tulpinteractive.com/[Jan Willem Tulp], http://ghostweather.com/[Lynn Cherny], http://flowingdata.com/about-nathan/[Nathan Yau] from Flowing Data, https://about.me/krees[Kim Rees] from Periscopic, http://truth-and-beauty.net/[Moritz Stefaner], with a couple of established academics like http://fellinlovewithdata.com/[Enrico Bertini], http://alignedleft.com/[Scott Murray], http://policyviz.com/[Jon Schwabish], http://www.thefunctionalart.com/[Alberto Cairo], and in relation with teams at the Guardian and the NYT, and http://www.visualisingdata.com/about/[Andy Kirk] at VisualisingData as an evangelist and instructor.
+=== c. Un groupe très soudé aux États-Unis et en Europe.
+J'identifie (il s'agit bien sûr d'une liste non exclusive) http://moebio.com/[Santiago Ortiz], http://www.jeromecukier.net/[Jerome Cukier], http://blog.blprnt.com/[Jer Thorp], http://driven-by-data.net/[Gregor Aisch], http://tulpinteractive.com/[Jan Willem Tulp], http://ghostweather.com/[Lynn Cherny], http://flowingdata.com/about-nathan/[Nathan Yau] de Flowing Data, https://about.me/krees[Kim Rees] de Periscopic, http://truth-and-beauty.net/[Moritz Stefaner ], avec quelques universitaires établis comme http://fellinlovewithdata.com/[Enrico Bertini], http://alignedleft.com/[Scott Murray], http://policyviz.com/[Jon Schwabish], http://www.thefunctionalart.com/[Alberto Cairo], et en relation avec les équipes du Guardian et du NYT, et http://www.visualisingdata.com/about/[Andy Kirk] à VisualisingData en tant qu'évangéliste et instructeur.
 
-//+
-They were particularly active in spreading news about dataviz and sharing their critical insights which contributed shaping boundaries for the field.
+// +
+Ils ont été particulièrement actifs dans la diffusion d'informations sur la dataviz. Le partage de leurs points de vue critiques a contribué à définir les limites du domaine.
 
-//+
-This is a personal and of course biased observation, a systematic investigation reveals a different picture (see above, and below, which is a zoom on the group where I think we would find most people self identifying as dataviz specialists):
+// +
+Ceci est une observation personnelle et bien sûr biaisée, une enquête systématique révèle une image différente (voir ci-dessus, et ci-dessous, un zoom sur le groupe où, selon moi, la plupart des gens s'identifieraient eux-mêmes en tant que spécialistes de dataviz):
 
 image::dataviz-group.jpg[align="center"]
 {nbsp} +
 
-(live url: http://neoformix.com/2012/DataVisField1000_Group2.pdf)
+(version en ligne: http://neoformix.com/2012/DataVisField1000_Group2.pdf)
 
-=== d. A couple of emblematic projects
+=== d. Quelques projets emblématiques
 
-==== i. OECD Better Life Index by Moritz Stefaner et al
-Not ((infovis)), not ((infographics)), just dataviz: simplicity, interaction, access to the data.
+==== i. Le "Better Life Insdex" de l'OCDE par Moritz Stefaner et al
+Pas de l'((infovis)), pas une ((infographie)), juste une dataviz: simplicité, interaction, accès aux données.
 
-image::oecd-better-life-index.jpg[align="center"]
+image::oecd-better-life-index.jpg[align = "center"]
 {nbsp} +
 
-(live url: http://www.oecdbetterlifeindex.org/)
+(version en ligne: http://www.oecdbetterlifeindex.org)
 
-==== ii. The "Ghost Counties" visualization by Jan Willem Tulp
-It shows that a marriage is possible between creativity and esthetics on one hand, and cold hard data on the other hand (foreclosures per county in the US).
+==== ii. La visualisation "Ghost Counties" de Jan Willem Tulp
+Tulp montre qu'un mariage est possible entre la créativité et l'esthétique, d'une part, et les données dures et froides, d'autre part (nombre d'expulsions de propriété par comté aux États-Unis).
 
-image::ghost-counties-screenshot.jpg[align="center"]
+image::ghost-counties-screenshot.jpg[align = "center"]
 {nbsp} +
 
-(live url, needs Internet Explorer and the Java plugin: http://www.janwillemtulp.com/eyeo/)
+(version en ligne, nécessite Internet Explorer et le plugin Java: http://www.janwillemtulp.com/eyeo/)
 
-==== iii. U.S. Gun Deaths by Periscopic
-It illustrates the power of story telling (through the intro), granularity of the data, and impact.
+==== iii. Décès par armes à feu, une visualisation de Periscopic aux États-Unis
+Cette dataviz illustre le pouvoir de la narration (à travers l'introduction), la granularité des données et l'impact.
 
-image::gun-deaths.jpg[align="center", width="500"]
+image::gun-deaths.jpg[align = "center", width = "500"]
 {nbsp} +
 
-(live url: http://guns.periscopic.com/?year=2013)
+(URL active: http://guns.periscopic.com/?year=2013)
 
-The emergence of data visualisation as a set of practice and professionals was coinciding with the surge in the new importance of data as a driver of value for business.
+L'émergence de la visualisation de données en tant qu'ensemble de praticiens et de professionnels coïncidait avec la montée en puissance de la nouvelle importance des données en tant que vecteur de valeur pour les entreprises.
 
-//+
-"Data visualization" became positioned as one powerful lever to extract value from datasets: it possesses both the rigor needed to report objectively on key data features, that you'd find otherwise in information visualisation, and the power to be engaging with the domain specialists or the managers in charge of finding insights in the data.
+// +
+La "visualisation de données" s'est positionnée comme un puissant levier pour extraire de la valeur des ensembles de données:
 
-=== e. Two aspects where data visualization epitomizes its value: maps and networks.
-==== i. Maps
-Visualization of geolocalized data and of network data has of course a long history before the birth of data visualization: many software integrated mapping functions from Geographical Information Systems, and network analysis packages also had visualization add-ons.
+- la dataviz possède la rigueur nécessaire pour rendre compte de manière quantifiée des caractéristiques de données clés (ce que l'on trouverait autrement dans l'infoviz)
+- la dataviz est suffisamment engageante pour permettre aux spécialistes du domaine de comprendre les enjeux du jeux de données représenté.
 
-//+
-What data visualization brought was impactful visualizations making engagement with data just stronger, more powerful.
+=== e. Deux aspects où la visualisation de données incarne sa valeur: les cartes et les réseaux.
+==== i. Les cartes
+La visualisation des données géolocalisées et des données de réseau a bien sûr une longue histoire avant la naissance de la visualisation de données: de nombreuses fonctions de cartographie intégrées au logiciels de SIG, ainsi que des progiciels d’analyse de réseau intégraient également des fonctions de visualisation.
 
-//+
-Stamen, an agency with strong ties in the data visualization community, does this kind of maps:
+// +
+Ce que la visualisation de données a apporté, c’est une visualisation percutante rendant l’engagement avec les données juste plus fort, plus puissant.
 
-image::stamen-viz.jpg[align="center", width="500"]
+// +
+Stamen, une agence étroitement liée à la communauté de la visualisation de données, réalise ce type de cartes:
+
+image::stamen-viz.jpg[align = "center", width = "500"]
 {nbsp} +
 
-(live url: http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500)
+(URL active: http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500)
 
-//+
-This interactive map by Stamen is quite different from your usual GIS mapping!
-What this kind of map brings is: interaction, custom-made design, and most of all enhanced **engagement** with the viewers.
+// +
+Cette carte interactive de Stamen est assez différente de votre cartographie SIG habituelle!
 
-==== ii. Networks
-In terms of networks, a pre-dataviz typical network would look like:
+Ce type de carte apporte: une interaction, une conception sur mesure et, surtout, un *engagement accru* avec l'utilisateur.
 
-image::formatted/ucinet.jpg[align="center", width="500"]
+==== ii. Les réseaux
+En termes de réseaux, un réseau typique pré-dataviz ressemblerait à ceci:
+
+image::formatted/ucinet.jpg[align ="center",width="500"]
 {nbsp} +
 
-Dataviz brought interaction, web-based interactions:
+La dataviz a apporté interaction, interactions Web:
 
-image::d3-force-layout.jpg[align="center", width="500"]
+image::d3-force-layout.jpg[align = "center", width = "500"]
 {nbsp} +
 
-(live url: http://bl.ocks.org/mbostock/1062288)
+(URL active: http://bl.ocks.org/mbostock/1062288)
 
-This type of visualization is different because:
+Ce type de visualisation est différent pour les raisons suivantes:
 
-//+
-- you can explore the viz, not just stare at it.
-- you can share it - just paste the url.
-//+
-- it can be developed and modified by a large pool of developers because it is written in javascript, which is the common language of web development.
-- there is a strong sense of aesthetics and natural feeling using it.
+- Vous pouvez explorer le viz, pas seulement le regarder.
+- vous pouvez le partager - il suffit de coller l'URL.
+// +
+- il peut être développé et modifié par un grand nombre de développeurs car il est écrit en javascript, langage commun du développement Web.
+- il y a un sens aigu de l'esthétique et un sentiment naturel de l'utiliser.
 
-//+
--> it will encourage curiosity, exploration, and just increase 10 folds the time spent on it by the viewers.
+// +
+-> cela encouragera la curiosité, l'exploration et augmentera de 10 fois le temps passé par l'utilisateur.
 
-=== f. If we were looking for 2 defining traits of dataviz
-==== i. Data is for the viewer to see and play with
-There is the assumption that the visualization should not provide you with flat and unverifiable conclusions: it should show the data in a transparent, verifiable form.
+=== f. Si nous recherchions 2 traits déterminants de dataviz
+==== i. L'utilisateur de la dataviz peut manipuler et accéder aux données qui lui sont présentées
+La visualisation ne doit pas vous fournir des conclusions "imposées" et invérifiables: elle devrait montrer les données sous une forme transparente et vous donner les moyens de vérifier par vous même.
 
-//+
-Of course there is a narrative and an editorialization of how the data is presented, **but** it always remains possible for the viewer to challenge this editorial view because the data is here for anyone to explore and interact with.
-//+
-This represents a fundamental break with infographics, which can hide the underlying data by design, or show it with strong bias by carelessness and still be "OK" by pre-dataviz standards.
-//+
-It is also a break with infovis, where data is indeed there but you might not be enticed to engage with it.
+// +
+Bien sûr, il y a une narration et une éditorialisation de la manière dont les données sont présentées, mais il reste toujours possible pour la personne qui regarde de contester cette vue éditoriale, car on peut explorer et interagir avec les données - et peut-être aboutir à des conclusions différentes.
+// +
+Cela représente une rupture fondamentale avec l'infographie, qui peut masquer les données sous-jacentes de par leur conception, ou les montrer avec un fort biais d'inattention, tout en restant "OK" selon les normes habituelles de ce type de représentations.
+// +
+La dataviz est aussi une rupture avec infovis, où les données sont bel et bien là mais vous n’êtes peut-être pas tentés de les explorer, car la présentatione est abscon.
 
-==== ii. Custom made, creative act
-Because we are in the browser there is no click and point solutions for the visualization of the data.
+==== ii. Fait sur mesure, acte créatif
+Parce que nous sommes dans le navigateur web, il n’existe aucune solution "click and point" pour la visualisation des données.
 
-//+
-This departs strongly from ((GIS)) where "custom" maps could be done by selecting options in a menu, and also a big change from dashboards in business intelligence where you could drag and drop charts to build a visualization.
+// +
+Cela diffère fortement des ((SIG)) où des cartes "personnalisées" pouvaient être créées en sélectionnant des options dans un menu, ainsi qu’un grand changement par rapport aux tableaux de bord de la veille stratégique, dans lesquels vous pouviez faire glisser des graphiques pour créer une visualisation.
 
-//+
-The sense of esthetics and the particularity of the datasets makes of each dataviz a craftwork.
+// +
+Le sens de l'esthétique et la particularité des jeux de données font de chaque dataviz un travail artisanal.
 
-//+
-One of the best examples of a creative and simple design is this one by Hint.fm:
+// +
+L'un des meilleurs exemples de conception simple et créative est celui de Hint.fm:
 
-image::formatted/windmap.jpg[align="center", width="500"]
+image::formatted/windmap.jpg[align = "center", width = "500"]
 {nbsp} +
 
-(live url: http://hint.fm/wind/)
+(version en ligne : http://hint.fm/wind/)
 
-(live url for a worldwide version: http://earth.nullschool.net/)
+(une version mondiale de cette visualisation : http://earth.nullschool.net/)
 
-== 4. 2014-2015: The stabilization of dataviz
-Anyhow, industrialization in dataviz came in rapidly, with Tableau becoming the leader for general purpose viz, dashboards reinvented themselves in dataviz-style with Bime, Qlik, Palantir to name a few.
+== 4. 2014-2015: La stabilisation de la dataviz
+Quoi qu'il en soit, l'industrialisation de la dataviz est arrivée rapidement, Tableau étant devenu le leader des tableaux de bord (ou "dashboards").
+Les dashboards se sont réinventés à la manière de la dataviz, avec notamment Bime, Qlik, Palantir, PowerBi.
 
-image::logos-bi.png[align="center", width="500"]
+image::logos-bi.png[align = "center", width = "500"]
 {nbsp} +
 
-Dataviz became integrated into the business discourse on big data: the Harvard Business Review features in 2012 a blog section on data visualization where Jer Thorp ((("Thorp, Jer"))) contributed to set perspectives straight on data,
+La dataviz a été intégrée au discours commercial sur le Big Data: le Harvard Business Review propose en 2012 une section de blog sur la visualisation de données dans laquelle Jer Thorp (("Thorp, Jer")) a contribué à définir des perspectives claires en matière de données :
 
-image::jer-thorp.jpg[align="center"]
+image::jer-thorp.jpg[align = "center"]
 {nbsp} +
 
-(live url: https://hbr.org/2012/11/data-humans-and-the-new-oil/)
+(version en ligne: https://hbr.org/2012/11/data-humans-and-the-new-oil/)
 
-//+
-http://www.nielsen.com[((Nielsen))], the leader of market data and market research, worked on its corporate identity to include data visualization, with data-driven visuals custom made by Jan Willem Tulp:
+// +
+https://www.nielsen.com/fr/fr.html[((Nielsen))], le leader des données et études de marché, a travaillé sur son identité visuelle pour inclure la visualisation de données, avec des visuels pilotés par les données, conçus par Jan Willem Tulp :
 
-image::nielsen-viz.jpg[align="center"]
+image::nielsen-viz.jpg[align = "center"]
 {nbsp} +
 
-Since 2012 or so, https://www.ge.com/[General Electric] partners with https://fathom.info/[Fathom], the agency founded by Ben Fry (co-creator of Processing!) to build visualizations relative to their corporate identity, with some impressive realizations:
+Depuis 2012 environ, https://www.ge.com/[General Electric] s'associe à https://fathom.info/[Fathom], l'agence créée par Ben Fry (co-créateur de Processing!) pour créer des visualisations en rapport à leur identité visuelle, avec quelques réalisations impressionnantes :
 
-image::formatted/ge.jpg[align="center"]
+image::formatted/ge.jpg[align = "center"]
 {nbsp} +
 
-(live url: http://visualization.geblogs.com/visualization/powering/)
+(URL en direct: https://fathom.info/notebook/2124/)
 
-//+
-And in 2015, you know dataviz has fully stabilized when you see a panel on dataviz with Chelsea Clinton:
+// +
+Et en 2015, vous savez que la dataviz est complètement stabilisée lorsque vous voyez un panel avec Chelsea Clinton :
 
-image::formatted/chelsea.jpg[align="center"]
+image::formatted/chelsea.jpg[align = "center"]
 {nbsp} +
 
-(live url: https://www.youtube.com/watch?v=YFrmQDCpgxs - the panel is with Ben Fry).
+(version en ligne : https://www.youtube.com/watch?v=YFrmQDCpgxs - le panel est avec Ben Fry).
 
-//+
-So until 2012 and 2013 I'd say that we were in the golden age of #dataviz in terms of discoveries and charting new paths: excited comments on new productions by the NYT, debates around the goals of #dataviz: is it a way to tell stories? To open new worlds? To educate?
-//+
-New connections made with new comers, new agencies, people meeting for the first time in conferences after exchanging on Twitter for years, new positions, big clients...
-//+
-And in 2015, things seem to have stabilized and normalized.
+// +
+Donc, jusqu'en 2012 et 2013, je dirais que nous étions à l'âge d'or de la #dataviz en termes de découvertes et de nouvelles voies: commentaires enthousiastes sur les nouvelles productions du NYT, débats autour des objectifs de #dataviz: est-ce un moyen de raconter des histoires? Ouvrir de nouveaux mondes? Pour éduquer?
+// +
+Nouvelles connexions nouées avec de nouveaux arrivants, nouvelles agences, personnes se rencontrant pour la première fois lors de conférences après avoir échangé sur Twitter pendant des années, nouveaux postes, gros clients ...
+// +
+Et en 2015, les choses semblent s'être stabilisées et normalisées.
 
-//+
-The energy has changed.
-The conversation on Twitter has slowed down a lot.
-The sense of being pioneers has eroded, because time has passed and because we have indeed tried and explored many low hanging fruits.
-//+
-Many individuals are now engaged in more industrial, long term projects.
+// +
+L'énergie a changé.
+La conversation sur Twitter a beaucoup ralenti.
+Le sentiment d'être des pionniers s'est érodé, car le temps a passé et parce que nous avons en effet essayé et exploré de nombreux fruits à portée de main.
+// +
+De nombreuses personnes sont désormais engagées dans des projets plus industriels à long terme.
 
-So that's not bad news: dataviz is now mainstream and well established, people are less obliged to enter free competitions and work on long personal projects at weekends and nights to get their name out, that's good.
-//+
-But I miss a bit the excitement of the previous years when you had one framework or one big personal project published per month, and when you had all these big shots chatting on Twitter about the upcoming developments for dataviz.
+Ce n’est donc pas une mauvaise nouvelle : la dataviz est maintenant bien établie et bien établie, les gens sont moins obligés de participer à des compétitions gratuites et de travailler sur de longs projets personnels les week-ends et les nuits pour se faire connaître, c’est bien.
+// +
+Mais l'excitation des années précédentes me manque un peu, quand vous aviez une techno ou un grand projet personnel publié par mois et quand vous aviez toutes ces grandes discussions sur Twitter à propos des développements à venir pour la dataviz.
 
-== 5. 2015 onwards: where is dataviz going?
-So... where is dataviz going?
-As I said, you have this first exciting phase that passed, and we are now in a stage where processes for the creation of dataviz are more industrialized, commodified, stabilized.
+== 5. À partir de 2015 : où va la dataviz?
 
-//+
-This means that innovation will find other places to erupt.
-Why? Because the landscape of technologies keeps changing, and creative minds will seize the opportunity to play and explore these opportunities in places where no "client" is yet waiting for them.
-//+
-To illustrate possible paths, I like to give the example of the career of http://www.seb.ly[Seb Lee-Delisle], who defined himself as a creative coder and now as a digital artist.
+Comme je l'ai dit, la première phase passionnante est passée et nous en sommes maintenant au stade où les processus de création de dataviz sont plus industrialisés, commercialisés et stabilisés.
 
-//+
-I follow his work on Twitter since about 2009.
-He is not at the heart of the "dataviz" network and does not define himself in regards to this label, but you'd find him on Jeff Clark's map of dataviz in 2012 nonetheless (see map above).
+// +
+Cela signifie que l'innovation trouvera d'autres endroits pour faire surface.
+Pourquoi? Parce que le paysage des technologies ne cesse de changer et que les esprits créatifs saisiront l’occasion de jouer et d’explorer ces opportunités là où aucun «client» ne les attend encore.
+// +
+Pour illustrer les pistes possibles, j'aime donner l'exemple de la carrière de https://seb.ly/[Seb Lee-Delisle], qui s'est défini comme un codeur créatif et maintenant comme un artiste numérique.
 
-//+
-- he was using Adobe Flash as one of his main technologies until 2009, contributing to http://helloenjoy.com/project/papervision3d/[PaperVision3D], a framework to build 3D games and animations in the Flash Player.
-//+
-- He plays a bit with http://seb.ly/2009/12/electroserver-flex-simple-chat/[Adobe Flex] in 2009,
-//+
-- in 2010,Flash is definitely behind so he moves to HTML5 technologies, using and teaching http://seb.ly/2011/02/html5-canvas-3d-particles-uniform-distribution/[animated graphics in HTML5 + Javascript]
-//+
-- in 2012, he does the lunar trail project: http://seb.ly/work/lunar-trails/
-//+
-- in 2013, he does pixelpyros: http://pixelpyros.org/
-//+
-- in in 2014/2015, he launches workshops on "Stuff that talk to the Internets": http://seb.ly/st4i-stuff-that-talks-to-the-interwebs/
+// +
+Je suis son travail sur Twitter depuis environ 2009.
+Il n'est pas au cœur du réseau "dataviz" et ne se définit pas par rapport à cette étiquette, mais vous le trouverez néanmoins sur la carte de la dataviz de Jeff Clark en 2012 (voir la carte ci-dessus).
 
-//+
-This path, and similar paths followed by others, suggest that:
+// +
+- Il utilisait Adobe Flash comme l'une de ses principales technologies jusqu'en 2009, en contribuant à https://en.wikipedia.org/wiki/Papervision3D[PaperVision3D], un framework permettant de créer des animations et des jeux 3D dans Flash Player.
+// +
+- Il joue un peu avec http://seb.ly/2009/12/electroserver-flex-simple-chat/[Adobe Flex] en 2009,
+// +
+- en 2010, Flash est définitivement derrière, il passe donc aux technologies HTML5, utilisant et enseignant https://seb.ly/2011/02/html5-canvas-3d-particles-uniform-distribution/[les visualisations interactives in HTML5 + Javascript]
+// +
+- en 2012, il réalise un projet de "sentier lunaire": http://seb.ly/work/lunar-trails/
+// +
+- en 2013, il continue avec les installations mais en plus grand: https://twitter.com/pixelpyros[pixelpyros] est un feu d'artifice interactif sur écran géant.
+// +
+- En 2014/2015, il démocratise ce qu'il a appris et lance des ateliers sur "Des choses qui parlent aux internets": http://seb.ly/st4i-stuff-that-talks-to-the-interwebs/
 
-//+
-- The computer screen and even the screen of the mobile phone is becoming less hegemonic as the medium where data can be visualized. Objects, sculptures, buildings, furniture... this is the next frontier to be explored. Not just mapping data on a flat surface, but maybe even http://www.nand.io/visualisation/emoto-installation[actual construction of data objects by Moritz Stefaner((("Stefaner, Moritz")))].
-//+
-- Interaction is taking place in richer environments than we are used to (desktop or mobile), interactions with the user become more diverse. Not just the hand and the click of the mouse, but the whole body. Not one individual facing an object, but possibly a crowd, possibly moving, possibly gesturing.
-//+
-- And "data" is in the process of getting an even larger meaning.
-When you move away from the screen and start connecting to a variety of objects and sensors, and with a variety of people, data takes still other forms: real time measurements from the external physical environment, from the internal (body) environment, from local or distant social interactions as they unfold, all while staying connected to the APIs we are already familiar with... the mix can be bring impactful results.
+// +
+Ce chemin et des chemins similaires empruntés par d’autres suggèrent que:
 
-//+
-So, if visualizing data from the Twitter API was the cliché of #dataviz in 2010 - 2015, the next cliché could be the instantaneous 3D printing of data generated from the connected objects and bodies in a home or a workspace.
-//+
-This is just my vision for dataviz, I'd be happy to discuss it with you now!
+// +
+- L'écran d'ordinateur et même l'écran du téléphone mobile deviennent moins hégémoniques que le support où les données peuvent être visualisées. Objets, sculptures, bâtiments, meubles ... c'est la prochaine frontière à explorer.
+Non seulement mapper des données sur une surface plane, mais peut-être même en 3D: voir https://vimeo.com/49679699[cette installation] par Moritz Stefaner ((("Stefaner, Moritz"))).
+// +
+- Les interactions ont lieu dans des environnements plus riches que ceux auxquels nous sommes habitués (ordinateurs de bureau ou mobiles), les interactions avec l'utilisateur se diversifiant.
+Pas seulement la main et le clic de la souris, mais tout le corps.
+Pas une seule personne face à un objet, mais éventuellement une foule, éventuellement en mouvement, éventuellement en faisant des gestes.
+// +
+- Et "les données" sont en train de prendre un sens encore plus grand.
+Lorsque vous vous éloignez de l'écran et commencez à vous connecter à une variété d'objets et de capteurs et à une variété de personnes, les données prennent encore d'autres formes: mesures en temps réel de l'environnement physique externe, de l'environnement interne (du corps), de l'environnement local, ou des interactions sociales lointaines au fur et à mesure de leur évolution, tout en restant connectés aux APIs avec lesquelles nous sommes déjà familiarisés ... le mélange peut donner des résultats percutants.
 
-**Thank you!**
+// +
+Ainsi, si la visualisation des données de l'API Twitter était le cliché de #dataviz en 2010 - 2015, le prochain cliché pourrait être l'impression 3D instantanée de données générées à partir d'objets et de corps connectés dans une maison ou un espace de travail.
+// +
+Ceci est juste ma vision pour la dataviz, je serais heureux d'en discuter avec vous maintenant!
 
+**Je vous remercie!**
+
+**Publié en 2015**
 
 == The end
 //+
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 This course is made by Clement Levallois.
 

@@ -1,4 +1,5 @@
 = Building a data-centric product: the 4D methodology
+== !
 Clément Levallois <levallois@em-lyon.com>
 v1.0, 2017-31-07
 
@@ -64,6 +65,7 @@ So I take the opportunity of this talk to reflect on data visualization, which i
 
 [IMPORTANT]
 ===
+== !
 I am more an observer than a participant in this field.
 
 My view is the one of somebody who came to data visualization around 2009 through network visualizations with http://www.gephi.org[Gephi], getting my information mostly from the discussions, links and podcasts shared by data visualizers which I follow and interact with on Twitter.
@@ -649,7 +651,7 @@ This is just my vision for dataviz, I'd be happy to discuss it with you now!
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

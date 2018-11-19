@@ -1,4 +1,5 @@
 = Preface
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-11-01
 
@@ -48,7 +49,7 @@ If you are unsure, try this simple test: http://bit.ly/essentials-1-test
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

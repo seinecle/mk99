@@ -259,12 +259,13 @@ c. Adequate ((organizational culture)):
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+itter.com/seinecle[@seinecle]
  afforded by these new way to manage customer relationships.
 - The organization needs to invest and devote enough operational resources to stop doing "business as usual" and develop a data-driven CRM.
 

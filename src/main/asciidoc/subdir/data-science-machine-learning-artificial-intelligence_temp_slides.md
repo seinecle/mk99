@@ -1,4 +1,5 @@
 = Machine learning, data science and artificial intelligence
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-11-01
 
@@ -147,7 +148,7 @@ Graphic cards (or GPUs: graphics processing units) are these electronic boards f
 
 == !
 [.stretch]
-image::gpu.jpg[pdfwidth="50%", align="center", title="A graphic card sold by NVidia, a leading manufacturer", width="300", book="keep"]
+image::gpu.jpg[pdfwidth="50%", align="center", title="A graphic card sold by NVidia - a leading manufacturer", width="300", book="keep"]
 == !
 
 
@@ -586,7 +587,7 @@ video::-O01G3tSYpU[youtube, width= 500, height=400]
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

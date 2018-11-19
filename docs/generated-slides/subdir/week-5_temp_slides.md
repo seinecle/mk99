@@ -1,4 +1,5 @@
 = Big data for business: Week 5 - Value creation with data
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-10-03
 
@@ -120,7 +121,7 @@ What you should do:
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

@@ -148,7 +148,7 @@ video::145332585[vimeo]
 === b. Not just Feltron
 Insurance companies are interested in boosting individual health, using connected objects as monitoring devices
 
-image:autodesk.jpg[align="center",title="http://www.forbes.com/sites/parmyolson/2014/06/19/wearable-tech-health-insurance/[Employee at Autodeck wearing a Jawbone as part of a company challenge]"][align="center",title="http://www.forbes.com/sites/parmyolson/2014/06/19/wearable-tech-health-insurance/
+image:autodesk.jpg[align="center",title="http://www.forbes.com/sites/parmyolson/2014/06/19/wearable-tech-health-insurance/[Employee at Autodeck wearing a Jawbone as part of a company challenge]"]
 
 Companies are looking to provide a 360 degree solution to health and well being through constant monitoring:
 
@@ -196,7 +196,7 @@ or see (in French) how https://medium.com/@djo/obsession-service-client-captain-
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

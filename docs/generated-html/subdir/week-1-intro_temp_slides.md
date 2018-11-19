@@ -1,4 +1,5 @@
 = Big data for business: Week 1 - intro
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-09-10
 
@@ -31,7 +32,7 @@ Also head of the Data R&D Institute, launched this Summer with colleagues:
 
 //ST: !
 
-image:cherny.png[align="center", title="Lynn Cherny"] image:savinien.png[align="center", title="Lynn Cherny"][align="center", title="Lynn Cherny"] image:savinien.png
+image:cherny.png[align="center", title="Lynn Cherny"] image:savinien.png[align="center", title="Lynn Cherny"]
 
 //ST: !
 
@@ -158,7 +159,7 @@ Need help? Passionate about data science and want to contribute? Use the office 
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

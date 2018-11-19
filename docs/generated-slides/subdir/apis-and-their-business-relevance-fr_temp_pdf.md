@@ -83,10 +83,10 @@ Exemple: l'API de Microsoft PowerPoint permet l'importation de tableaux Excel da
 Une API Web est une API qui permet à deux logiciels de communiquer via Internet. *Ils n'ont pas besoin d'être installés sur le même ordinateur.*
 
 === c. Les avantages d'une API Web par rapport à un EDI
-- Contrairement à un *EDI* (((API, différence avec les EDI)), une API web supprime toute contrainte techniqu spécifique à l'industrie. Les API Web sont simplement une convention suivant les standards du web pour envoyer et recevoir des données sur Internet, sans dire quoi que ce soit sur le contenu des données.
+- Contrairement à un *EDI* (((API, différence avec les EDI))), une API web supprime toute contrainte technique spécifique à l'industrie. Les API Web sont simplement une convention suivant les standards du web pour envoyer et recevoir des données sur Internet, sans dire quoi que ce soit sur le contenu des données.
 // +
 - Les données envoyées et reçues peuvent être des factures, des pages Web, des horaires de train, de l'audio, de la vidéo ... peu importe.
-- Contrairement à un EDI, une entreprise qui crée une API web peut choisir de laisser un accès *ouvert* à son API : n'importe quel ordinateur capable de son brancher à Internet peut alors se brancher à ce que cette entreprise rend disponible via cette API (rappelez-vous que les EDI ont besoin que les deux parties aient un accord préétabli).
+- Contrairement à un EDI, une entreprise qui crée une API web peut choisir de laisser un accès *ouvert* à son API : n'importe quel ordinateur capable de se brancher à Internet peut alors se brancher à ce que cette entreprise rend disponible via cette API (rappelez-vous que les EDI ont besoin que les deux parties aient un accord préétabli).
 // +
 - Un client potentiel intéressé par l'API Web d'une entreprise peut s'y "brancher" en quelques lignes de code, au lieu d'attendre des semaines ou des mois avant la signature d'un contrat et la configuration de l'EDI.
 
@@ -101,7 +101,7 @@ Dire que les API sont ouvertes ne signifie pas une absence de sécurité (((API,
 Deux conventions d'API web populaires ont émergé dans les années 1990 et ont rivalisé en terme d'adoption :
 
 - https://fr.wikipedia.org/wiki/SOAP[((SOAP: Simple Object Access Protocol))]
-- (https://fr.wikipedia.org/wiki/Representational_state_transfer[((REST: Representational State Transfer))]
+- https://fr.wikipedia.org/wiki/Representational_state_transfer[((REST: Representational State Transfer))]
 
 // +
 *Les API REST* (((API, protocole REST))) sont finalement devenues les plus répandues, car elles utilisent les mêmes principes simples que les pages Web utilisent pour être transférées sur Internet (le protocole "http" que vous voyez dans les adresses de pages web).
@@ -126,6 +126,22 @@ Salesforce prend une commission sur les ventes réalisées par ces applications 
 Grâce à l'API, il est désormais plus facile d'ajouter des blocs logiciels et de créer de nouvelles applications, même si ces blocs logiciels proviennent de différents pays ou industries.
 // +
 À titre d'exemple extrême : la police australienne de Victoria a déployé un projet de reconnaissance des véhicules volés grâce à la reconnaissance vidéo des plaques d'immatriculation des voitures circulant dans la rue (les véhicules volés se voient immédiatement reconnaître leurs plaques d'immatriculation). C'est un projet de 86 000 000 $. Un individu a répliqué ce https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9[projet avec seulement 57 lignes de code et une webcam]. Comment? Simplement parce qu'il a pu utiliser un logiciel existant pour la reconnaissance de plaques d'immatriculation, disponible en tant qu'API, au lieu de le re-développer par lui-même.
+// +
+Un autre exemple significatif est l'application imaginée par https://levels.io/[Peter Levels]: un service mondial de livraison de bagages, porte à porte, conçu sans une ligne de code:
+
+image::luggage-api.jpg[align="center", title="Un service de livraison de bagages porte à porte - conçu sans une ligne de code", pdfwidth="25%", width= 350, book="keep"]
+{nbsp} +
+
+Ce service est conçu en organisant plusieurs sous-services, qui se coordonnent en communiquant via leurs APIs.
+
+Comment la communication fonctionne? Qui "orchestre" ces services? Peter utilise https://zapier.com/[Zappier], un service dont le rôle est de faire communiquer ces APIs entre elles.
+
+Au-delà de ces exemples frappants, le leçons à tirer sont:
+
+- de plus en plus de services sont disponibles via API. On ne réinvente pas la roue, il suffit de s'en servir.
+- coordonner plusieurs APIs permet de créer des services entièrement nouveaux (pas simplement: "gérer mes emails par API")
+- des services comme https://zapier.com/[Zappier] permettent la coordination / communication entre APIs, mais cela favorise également l'automation.
+
 
 === c. Les API ont *ouvert* les données
 Les entreprises et les organisations publiques possèdent de nombreuses bases de données d'un grand intérêt commercial.
@@ -137,7 +153,7 @@ Prenons l'exemple d'une entreprise de transport comme la SNCF française qui tro
 
 // +
 - Les données sont sur un serveur de la SNCF
-- La SNCF ajoute https://data.sncf.com/api/fr[une API et sa documentation], mettant les données à la disposition des développeurs capables de https://youtu.be/7YcW25PHnAA[se connecter aux API, ce qui est une compétence de base dans le développement de logiciels].
+- La SNCF ajoute https://www.digital.sncf.com/startup/api[une API et sa documentation], mettant les données à la disposition des développeurs capables de https://youtu.be/7YcW25PHnAA[se connecter aux API, ce qui est une compétence de base dans le développement de logiciels].
 - Les entrepreneurs et les programmeurs en général pourront accéder aux données via l'API et les utiliser, en créant de https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja[nouveaux services basés sur ces informations sur les trains].
 
 L'*Open data* (((open data))) désigne ce mouvement pour rendre les jeux de données accessibles à un large public, et les API web ont été un ingrédient technologique clé dans ce mouvement.
@@ -169,9 +185,10 @@ image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API lan
 {nbsp} +
 
 == Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
+Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
+
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

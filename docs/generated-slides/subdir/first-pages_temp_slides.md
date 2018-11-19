@@ -1,4 +1,5 @@
 = Topics in Data Science for business: Volume 1 - Fundamentals
+== !
 Clément Levallois <levallois@em-lyon.com>
 v1.0, April 2018
 :icons!:

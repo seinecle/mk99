@@ -348,12 +348,13 @@ L'IA faible est généralement le résultat de l'application de systèmes expert
 *Donc l'IA est synonyme d'IA faible pour le moment, et couvre les trois familles de machine learning vues ci-dessus.*
 
 == Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
+Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net
 
 Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
+witter.com/seinecle[@seinecle]

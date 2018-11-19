@@ -1,4 +1,5 @@
 = GDPR and data protection globally
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-11-01
 
@@ -434,7 +435,7 @@ To have a https://uk.practicallaw.thomsonreuters.com/Browse/Home/International/D
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

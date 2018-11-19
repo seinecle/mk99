@@ -159,12 +159,13 @@ image::amazon-echo.jpg[align = "center", title = "Echo Alexa", livre = "book"]
 {nbsp} +
 
 == Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
+Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net
 
 Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
+witter.com/seinecle[@seinecle]

@@ -1,4 +1,5 @@
 = TDO: Bienvenue à "Technologies digitales et ruptures business"
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-11-02
 
@@ -131,7 +132,7 @@ Format:
 //ST: The end
 //ST: !
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

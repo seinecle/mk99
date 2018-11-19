@@ -496,7 +496,8 @@ He is not at the heart of the "dataviz" network and does not define himself in r
 This path, and similar paths followed by others, suggest that:
 
 //ST: !
-- The computer screen and even the screen of the mobile phone is becoming less hegemonic as the medium where data can be visualized. Objects, sculptures, buildings, furniture... this is the next frontier to be explored. Not just mapping data on a flat surface, but maybe even actual construction of data objects (see http://www.nand.io/visualisation/emoto-installation[this] for a nice example by Moritz Stefaner).
+- The computer screen and even the screen of the mobile phone is becoming less hegemonic as the medium where data can be visualized. Objects, sculpturehttps://vimeo.com/49679699s, buildings, furniture... this is the next frontier to be explored.
+Not just mapping data on a flat surface, but maybe even actual construction of data objects (see https://vimeo.com/49679699[this] for a nice example by Moritz Stefaner).
 
 //ST: !
 - Interaction is richer than we are used to. When we leave the "screen" environment (desktop or mobile), interactions with the user become more diverse. Not just the hand and the click of the mouse, but the whole body. Not one individual facing an object, but possibly a crowd, possibly moving, possibly gesturing.
@@ -513,18 +514,21 @@ This is just my vision for dataviz, I'd be happy to discuss it with you now!
 
 **Thank you!**
 
+**Published in 2015**
+
 
 == The end
 //ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+ecle]
 lement Levallois.
 
 Discover my other courses in data / tech for business: http://www.clementlevallois.net

@@ -1,4 +1,5 @@
 = Définition du big data
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 
@@ -328,9 +329,10 @@ Quelles sont les différences entre ces termes?
 
 == Pour aller plus loin
 == !
-Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
+Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
+
 Clement Levallois
 
 Découvrez mes autres cours et projets : https://www.clementlevallois.net

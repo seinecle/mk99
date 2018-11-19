@@ -1,4 +1,5 @@
 = Big data for business: Week 3 - CRMs and segmentation
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-10-03
 
@@ -74,7 +75,7 @@ As written in the syllabus, I will compute the grade by sampling 3 quizzes out o
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

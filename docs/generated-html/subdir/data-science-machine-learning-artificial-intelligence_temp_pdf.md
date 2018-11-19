@@ -115,7 +115,7 @@ A key illustration of the difference between statistics and machine learning can
 Graphic cards (or GPUs: graphics processing units) are these electronic boards full of chips found inside a computer, which are used for the display of images and videos on computer screens:
 
 // +
-image::gpu.jpg[pdfwidth="50%", align="center", title="A graphic card sold by NVidia, a leading manufacturer", width="300", book="keep"]
+image::gpu.jpg[pdfwidth="50%", align="center", title="A graphic card sold by NVidia - a leading manufacturer", width="300", book="keep"]
 {nbsp} +
 
 // +
@@ -444,9 +444,10 @@ video::-O01G3tSYpU[youtube, width= 500, height=400]
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+tter.com/seinecle[@seinecle]

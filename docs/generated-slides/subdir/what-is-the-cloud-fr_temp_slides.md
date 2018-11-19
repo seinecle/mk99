@@ -1,4 +1,5 @@
 = Le cloud
+== !
 Clément Levallois <levallois@em-lyon.com>
 2018-06-18
 
@@ -201,9 +202,9 @@ Par exemple, les opérations qui ne représentent pas un risque de sécurité et
 
 == Pour aller plus loin
 == !
-Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
+Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 Clement Levallois
 

@@ -35,7 +35,7 @@ Thoughts: the etymology suggests that data is "a given". Can you question this?
 Data represents either a single entity, or a collection of such entities ("data points").
 We can speak also of datasets instead of data (so a dataset is a collection of data points).
 
-== 2. The variety of data sets
+== 2. The variety of datasets
 |===
 |||
 
@@ -240,7 +240,7 @@ image::russian_dolls.jpg[align="center",title="Volumes of data"]
 == The end
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 This course is made by Clement Levallois.
 

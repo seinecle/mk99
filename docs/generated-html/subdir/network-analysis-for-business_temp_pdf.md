@@ -33,13 +33,13 @@ image::network-1.png[align="center", title="This is a network"]
 //+
 As users, we are very familiar with one type of networks - social networks:
 
-image:facebook.png[width=150][width=150]
-image:twitter.jpg[width=150][width=150]
-image:weibo.png[width=150][width=150]
-image:instagram.jpg[width=150][width=150]
-image:snapchat.png[width=150][width=150]
-image:wechat.jpg[width=150][width=150]
-image:linkedin.png[width=150][width=150]
+image:facebook.png[width=150]
+image:twitter.jpg[width=150]
+image:weibo.png[width=150]
+image:instagram.jpg[width=150]
+image:snapchat.png[width=150]
+image:wechat.jpg[width=150]
+image:linkedin.png[width=150]
 
 //+
 .A social network, visualized
@@ -147,13 +147,29 @@ video::KBIZoUikfwo[youtube]
 
 
 == 3. To go further
-image:golbeck.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Web-Jennifer-Golbeck/dp/0124055311][width=150,link=https://www.amazon.com/Analyzing-Social-Web-Jennifer-Golbeck/dp/0124055311]
-image:nodexl.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Media-Networks-NodeXL/dp/0123822297][width=150,link=https://www.amazon.com/Analyzing-Social-Media-Networks-NodeXL/dp/0123822297]
-image:newman.jpg[widtht=150,link=https://www.amazon.com/Networks-Introduction-Mark-Newman/dp/0199206651][widtht=150,link=https://www.amazon.com/Networks-Introduction-Mark-Newman/dp/0199206651]
-image:barabasi.jpg[width=150,link=https://www.amazon.com/Network-Science-Albert-L-e1szl-f3-Barab-e1si/dp/1107076269][width=150,link=https://www.amazon.com/Network-Science-Albert-L-e1szl-f3-Barab-e1si/dp/1107076269]
+image:golbeck.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Web-Jennifer-Golbeck/dp/0124055311]
+image:nodexl.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Media-Networks-NodeXL/dp/0123822297]
+image:newman.jpg[widtht=150,link=https://www.amazon.com/Networks-Introduction-Mark-Newman/dp/0199206651]
+image:barabasi.jpg[width=150,link=https://www.amazon.com/Network-Science-Albert-L-e1szl-f3-Barab-e1si/dp/1107076269]
 
 //+
 You can also visit my tutorials on ((Gephi)), the leading software to visualize large graphs:
+
+https://seinecle.github.io/gephi-tutorials/
+
+== The end
+//ST: The end
+//+
+
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+
+image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+graphs:
 
 https://seinecle.github.io/gephi-tutorials/
 

@@ -559,7 +559,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-06-25</p>
+<p>last modified: 2018-11-19</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -673,13 +673,13 @@ Il devenait de plus en plus commode de définir des conventions simples et unive
 <div class="ulist">
 <ul>
 <li>
-<p>Contrairement à un <strong>EDI</strong> (API, différence avec les EDI, une API web supprime toute contrainte techniqu spécifique à l&#8217;industrie. Les API Web sont simplement une convention suivant les standards du web pour envoyer et recevoir des données sur Internet, sans dire quoi que ce soit sur le contenu des données.</p>
+<p>Contrairement à un <strong>EDI</strong> , une API web supprime toute contrainte technique spécifique à l&#8217;industrie. Les API Web sont simplement une convention suivant les standards du web pour envoyer et recevoir des données sur Internet, sans dire quoi que ce soit sur le contenu des données.</p>
 </li>
 <li>
 <p>Les données envoyées et reçues peuvent être des factures, des pages Web, des horaires de train, de l&#8217;audio, de la vidéo &#8230;&#8203; peu importe.</p>
 </li>
 <li>
-<p>Contrairement à un EDI, une entreprise qui crée une API web peut choisir de laisser un accès <strong>ouvert</strong> à son API : n&#8217;importe quel ordinateur capable de son brancher à Internet peut alors se brancher à ce que cette entreprise rend disponible via cette API (rappelez-vous que les EDI ont besoin que les deux parties aient un accord préétabli).</p>
+<p>Contrairement à un EDI, une entreprise qui crée une API web peut choisir de laisser un accès <strong>ouvert</strong> à son API : n&#8217;importe quel ordinateur capable de se brancher à Internet peut alors se brancher à ce que cette entreprise rend disponible via cette API (rappelez-vous que les EDI ont besoin que les deux parties aient un accord préétabli).</p>
 </li>
 <li>
 <p>Un client potentiel intéressé par l&#8217;API Web d&#8217;une entreprise peut s&#8217;y "brancher" en quelques lignes de code, au lieu d&#8217;attendre des semaines ou des mois avant la signature d&#8217;un contrat et la configuration de l&#8217;EDI.</p>
@@ -712,7 +712,7 @@ Il devenait de plus en plus commode de définir des conventions simples et unive
 <p><a href="https://fr.wikipedia.org/wiki/SOAP">SOAP: Simple Object Access Protocol</a></p>
 </li>
 <li>
-<p>(<a href="https://fr.wikipedia.org/wiki/Representational_state_transfer">REST: Representational State Transfer</a></p>
+<p><a href="https://fr.wikipedia.org/wiki/Representational_state_transfer">REST: Representational State Transfer</a></p>
 </li>
 </ul>
 </div>
@@ -750,7 +750,39 @@ Salesforce prend une commission sur les ventes réalisées par ces applications 
 <h3 id="_b_les_api_ont_strong_accéléré_strong_l_innovation_logicielle">b. Les API ont <strong>accéléré</strong> l&#8217;innovation logicielle</h3>
 <div class="paragraph">
 <p>Grâce à l&#8217;API, il est désormais plus facile d&#8217;ajouter des blocs logiciels et de créer de nouvelles applications, même si ces blocs logiciels proviennent de différents pays ou industries.
-À titre d&#8217;exemple extrême : la police australienne de Victoria a déployé un projet de reconnaissance des véhicules volés grâce à la reconnaissance vidéo des plaques d&#8217;immatriculation des voitures circulant dans la rue (les véhicules volés se voient immédiatement reconnaître leurs plaques d&#8217;immatriculation). C&#8217;est un projet de 86 000 000 $. Un individu a répliqué ce <a href="https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9">projet avec seulement 57 lignes de code et une webcam</a>. Comment? Simplement parce qu&#8217;il a pu utiliser un logiciel existant pour la reconnaissance de plaques d&#8217;immatriculation, disponible en tant qu&#8217;API, au lieu de le re-développer par lui-même.</p>
+À titre d&#8217;exemple extrême : la police australienne de Victoria a déployé un projet de reconnaissance des véhicules volés grâce à la reconnaissance vidéo des plaques d&#8217;immatriculation des voitures circulant dans la rue (les véhicules volés se voient immédiatement reconnaître leurs plaques d&#8217;immatriculation). C&#8217;est un projet de 86 000 000 $. Un individu a répliqué ce <a href="https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9">projet avec seulement 57 lignes de code et une webcam</a>. Comment? Simplement parce qu&#8217;il a pu utiliser un logiciel existant pour la reconnaissance de plaques d&#8217;immatriculation, disponible en tant qu&#8217;API, au lieu de le re-développer par lui-même.
+Un autre exemple significatif est l&#8217;application imaginée par <a href="https://levels.io/">Peter Levels</a>: un service mondial de livraison de bagages, porte à porte, conçu sans une ligne de code:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/luggage-api.jpg" alt="luggage api" width="350">
+</div>
+<div class="title">Figure 1. Un service de livraison de bagages porte à porte - conçu sans une ligne de code</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Ce service est conçu en organisant plusieurs sous-services, qui se coordonnent en communiquant via leurs APIs.</p>
+</div>
+<div class="paragraph">
+<p>Comment la communication fonctionne? Qui "orchestre" ces services? Peter utilise <a href="https://zapier.com/">Zappier</a>, un service dont le rôle est de faire communiquer ces APIs entre elles.</p>
+</div>
+<div class="paragraph">
+<p>Au-delà de ces exemples frappants, le leçons à tirer sont:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>de plus en plus de services sont disponibles via API. On ne réinvente pas la roue, il suffit de s&#8217;en servir.</p>
+</li>
+<li>
+<p>coordonner plusieurs APIs permet de créer des services entièrement nouveaux (pas simplement: "gérer mes emails par API")</p>
+</li>
+<li>
+<p>des services comme <a href="https://zapier.com/">Zappier</a> permettent la coordination / communication entre APIs, mais cela favorise également l&#8217;automation.</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -767,7 +799,7 @@ Prenons l&#8217;exemple d&#8217;une entreprise de transport comme la SNCF franç
 <p>Les données sont sur un serveur de la SNCF</p>
 </li>
 <li>
-<p>La SNCF ajoute <a href="https://data.sncf.com/api/fr">une API et sa documentation</a>, mettant les données à la disposition des développeurs capables de <a href="https://youtu.be/7YcW25PHnAA">se connecter aux API, ce qui est une compétence de base dans le développement de logiciels</a>.</p>
+<p>La SNCF ajoute <a href="https://www.digital.sncf.com/startup/api">une API et sa documentation</a>, mettant les données à la disposition des développeurs capables de <a href="https://youtu.be/7YcW25PHnAA">se connecter aux API, ce qui est une compétence de base dans le développement de logiciels</a>.</p>
 </li>
 <li>
 <p>Les entrepreneurs et les programmeurs en général pourront accéder aux données via l&#8217;API et les utiliser, en créant de <a href="https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja">nouveaux services basés sur ces informations sur les trains</a>.</p>
@@ -825,7 +857,7 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 <div class="content">
 <img src="../images/api-landscape-2017.jpg" alt="api landscape 2017">
 </div>
-<div class="title">Figure 1. The API landscape in 2017 by Mehdi Medjaoui</div>
+<div class="title">Figure 2. The API landscape in 2017 by Mehdi Medjaoui</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
@@ -837,11 +869,13 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 <h2 id="_pour_aller_plus_loin">Pour aller plus loin</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Retrouvez le site complet : <a href="https://seinecle.github.io/mk99/">here</a>.</p>
+<p>Retrouvez le site complet : <a href="https://seinecle.github.io/mk99/">ici</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>[align="center", role="right"]
-Clement Levallois</p>
+<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
+</div>
+<div class="paragraph">
+<p>Clement Levallois</p>
 </div>
 <div class="paragraph">
 <p>Découvrez mes autres cours et projets : <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
@@ -872,7 +906,7 @@ Clement Levallois</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-06-25 17:31:47 CEST
+Last updated 2018-11-19 11:54:52 CET
 </div>
 </div>
 </body>

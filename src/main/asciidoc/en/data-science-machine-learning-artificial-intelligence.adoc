@@ -121,7 +121,7 @@ A key illustration of the difference between statistics and machine learning can
 Graphic cards (or GPUs: graphics processing units) are these electronic boards full of chips found inside a computer, which are used for the display of images and videos on computer screens:
 
 // +
-image::gpu.jpg[pdfwidth="50%", align="center", title="A graphic card sold by NVidia, a leading manufacturer", width="300", book="keep"]
+image::gpu.jpg[pdfwidth="50%", align="center", title="A graphic card sold by NVidia - a leading manufacturer", width="300", book="keep"]
 
 // +
 In the 1990s, video gaming developed a lot from arcades to desktop computers. Game developers created computer games showing more and more complex scenes and animations. (see https://youtu.be/3UTdxI2IEp0[an evolution of graphics], and https://www.youtube.com/watch?v=Rywkv7PCYDM[advanced graphics games in 2017]).

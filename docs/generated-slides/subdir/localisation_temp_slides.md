@@ -1,4 +1,5 @@
 = Localization and value creation
+== !
 
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
@@ -83,7 +84,7 @@ video::irydHrRdpkY[youtube]
 
 ==== c. Example - Data @GrandLyon
 == !
-image:logo-smart-data-grand-lyon.png[align"center", title="https://data.grandlyon.com/[Grand Lyon Data]"][align"center", title="https://data.grandlyon.com/
+image:logo-smart-data-grand-lyon.png[align"center", title="https://data.grandlyon.com/[Grand Lyon Data]"]
 
 //ST: !
 An initiative by the city of Lyon
@@ -314,7 +315,7 @@ https://www.amazon.com/This-Machine-Kills-Secrets-Whistleblowers/dp/0142180491/r
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

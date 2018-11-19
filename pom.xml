@@ -207,6 +207,7 @@
                                         <asciimath>asciimath</asciimath>
                                         <doc-to-process>${doc.to.process}</doc-to-process>
                                         <refresh-pics>${refresh.pics}</refresh-pics>
+                                        <magick-path>C:\Program Files\ImageMagick-7.0.8-Q16\magick</magick-path>
                                     </attributes>
                                     <extensions>
                                         <extension>
@@ -239,6 +240,8 @@
                                         <pagenums/>
                                         <toc/>
                                         <refresh-pics>${refresh.pics}</refresh-pics>
+                                        <magick-path>C:\Program Files\ImageMagick-7.0.8-Q16\magick</magick-path>
+                                        
                                     </attributes>
                                     <extensions>
                                         <extension>
@@ -283,6 +286,7 @@
                                         <doc-to-process>${doc.to.process}</doc-to-process> 
                                         <refresh-pics>${refresh.pics}</refresh-pics>
                                         <path>${basedir}</path>                                
+                                        <magick-path>C:\Program Files\ImageMagick-7.0.8-Q16\magick</magick-path>
                                     </attributes>
                                 </configuration>
                             </execution>
@@ -498,8 +502,7 @@
                                         <path>${basedir}</path>                                
                                         <refresh-pics>${refresh.pics}</refresh-pics>
                                         <images-dir>${basedir}/src/main/asciidoc/images</images-dir>
-                                        <magick-path>C:\Program Files\ImageMagick-7.0.7-Q16\magick</magick-path>
-
+                                        <magick-path>C:\Program Files\ImageMagick-7.0.8-Q16\magick</magick-path>
                                     </attributes>
                                     <extensions>
                                         <extension>

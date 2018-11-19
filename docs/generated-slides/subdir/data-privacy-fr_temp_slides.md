@@ -1,4 +1,5 @@
 = Notions essentielles sur la vie privée et la protection des données personnelles
+== !
 Clément Levallois <levallois@em-lyon.com>
 2018-06-20
 
@@ -216,9 +217,9 @@ image::amazon-echo.jpg[align = "center", title = "Echo Alexa", livre = "book"]
 
 == Pour aller plus loin
 == !
-Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
+Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 Clement Levallois
 

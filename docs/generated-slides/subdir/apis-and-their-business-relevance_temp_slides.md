@@ -1,4 +1,5 @@
 = APIs and their business relevance
+== !
 Clément Levallois <levallois@em-lyon.com>
 2017-31-07
 
@@ -212,7 +213,7 @@ Let's take the example of a transportation company like French SNCF which finds 
 
 == !
 - The data is on a server of SNCF
-- SNCF adds https://data.sncf.com/api/en[an API and its documentation], making the data available to developers able to https://youtu.be/7YcW25PHnAA[connect to APIs, which is a basic skill in software development].
+- SNCF adds http://doc.navitia.io/#getting-started[an API and its documentation], making the data available to developers able to https://youtu.be/7YcW25PHnAA[connect to APIs, which is a basic skill in software development].
 - Entrepreneurs and programmers in general will be able to access the data via the API and use it, creating https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja[new services based on this train information].
 
 == !
@@ -257,11 +258,12 @@ image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API lan
 
 == The end
 == !
-//ST: !
+
+== !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"][align="center", role="right"]
+image:round_portrait_mini_150.png[align="center", role="right"]
 
 This course is made by Clement Levallois.
 
