@@ -62,8 +62,8 @@ Infoviz est la "visualisation d'information" et est le nom d'un domaine académi
 
 
 == !
-[citation, entrée Wikipedia "Information visualisation", https://en.wikipedia.org/wiki/Information_visualization]
-l'étude de représentations visuelles (interactives) de données abstraites pour renforcer la cognition humaine.
+[quote, entrée Wikipedia "Information visualisation", https://fr.wikipedia.org/wiki/Visualisation_d%27informations]
+L'étude de la représentation visuelle de données, principalement abstraites, sur une interface graphique
 
 
 == !
