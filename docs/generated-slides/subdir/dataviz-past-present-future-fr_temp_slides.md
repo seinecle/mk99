@@ -81,7 +81,7 @@ La recherche en visualisation d'information vise à fournir des réponses solide
 
 == !
 [.stretch]
-image::example-infovis.jpg[align = "center"]
+image::example-infovis.jpg[align="center", width="400"]
 == !
 
 
@@ -101,7 +101,7 @@ L'exemple ci-dessous montre à quel point une ((infographie)) peut être coloré
 
 == !
 [.stretch]
-image::example-infographics.png[align = "center", largeur = "400"]
+image::example-infographics.png[align="center", width="400"]
 == !
 
 
@@ -117,7 +117,7 @@ Le lecteur doit faire davantage confiance au media qui publie l'infographie que 
 ==== c. Une autre communauté: la business intelligence
 == !
 [.stretch]
-image::example-bi.png[align = "center"]
+image::example-bi.png[align="center", width="400"]
 == !
 
 
@@ -260,7 +260,7 @@ Pas de l'((infovis)), pas une ((infographie)), juste une dataviz: simplicité, i
 
 == !
 [.stretch]
-image::oecd-better-life-index.jpg[align = "center"]
+image::oecd-better-life-index.jpg[align="center", width="400"]
 == !
 
 
@@ -273,7 +273,7 @@ Tulp montre qu'un mariage est possible entre la créativité et l'esthétique, d
 
 == !
 [.stretch]
-image::ghost-counties-screenshot.jpg[align = "center"]
+image::ghost-counties-screenshot.jpg[align="center", width="400"]
 == !
 
 

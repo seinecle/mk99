@@ -124,23 +124,24 @@ Quels types d'opérations peuvent être externalisés vers le cloud?
 Les entreprises peuvent ne déléguer que l'infrastructure informatique de base ou les opérations informatiques les plusau coeur de leurs activités.
 Ces différents degrés peuvent être décrits avec le *"modèle de pizza"*  (source: https://www.linkedin.com/pulse/20140730172610-9679881-pizza-as-a-service/[source]):
 
-image::pizza-a-service.jpg[align = "center", title = "Pizza as a service", book="keep"]
+image::pizza-as-a-service.jpg[align = "center", title = "Pizza as a service", book="keep"]
 {nbsp} +
 
 Ce schéma montre qu'en tant qu'entreprise, vous pouvez soit exécuter toutes les opérations vous-même ("made at home"), soit tout déléguer ("diner au restaurant").
 Chacun de ces degrés d'externalisation a un nom:
+
 // +
-* *Infrastructure en tant que service* (Infrastucture as a Service, IaaS)
+*Infrastructure en tant que service* (Infrastucture as a Service, IaaS)
 
 Ici, le cloud est utilisé pour remplacer les besoins en infrastructure informatique locale de l'entreprise. Par exemple, au lieu de stocker ses données dans une base de donnée sur place, on loue un service de stockage de données sur le cloud, qui sera facturé précisément au temps d'utilisation, à la taille de données stockées, et au volume de données écrites ou transférées (comme il s'agit d'un service de base de données, ce type de IaaS peut être appelé un DBaaS: database as a service). (((DBaaS: database as a service)))
 
 // +
-* *Plate-forme en tant que service* (Platform as as Service, Paas)
+*Plate-forme en tant que service* (Platform as as Service, Paas)
 
 Le cloud est utilisé pour exécuter les blocs de construction d'un service: pour gérer un système de messagerie, pour héberger des applications, ...
 
 // +
-* *Logiciel en tant que service* (Software as a Service, Saas)
+*Logiciel en tant que service* (Software as a Service, Saas)
 
 Le cloud est utilisé pour héberger un logiciel complet accessible "à la demande" via le navigateur.
 
@@ -148,12 +149,14 @@ Des exemples populaires sont Google Drive, https://www.d2l.com/products/learning
 
 == 4. Cloud privé ou public? cloud hybride?
 - Amazon EC2 (((Amazon, EC2))) est un exemple de *cloud public* (((cloud, cloud public))): il est accessible publiquement à tout client. Bien sûr, cela ne signifie pas que chaque client peut voir ce que les autres font sur le cloud! Chaque client a ses espaces privés sur le cloud.
+
 - De nombreuses entreprises ont des exigences de sécurité qui les empêchent d'accéder aux clouds publics.
 Ils ont besoin de leurs serveurs sur place.
 // +
 Dans ce cas, ils peuvent construire leur propre *cloud privé*: (((cloud, cloud privé))) c'est un cloud comme Amazon EC2, sauf qu'il est détenu, géré et utilisé par l'entreprise exclusivement - il n'est pas accessible à des tiers.
 // +
 Mais même privé, le cloud conserve les caractéristiques de base d'un cloud: à la demande et élastique notamment.
+
 - *Les cloud ​​hybrides* (((cloud, cloud hybride))) sont une variété de clouds ​​privés: c'est un cloud privé où certaines formes d'opérations peuvent être déléguées à un cloud public.
 
 // +

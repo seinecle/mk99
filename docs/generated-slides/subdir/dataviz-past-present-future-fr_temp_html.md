@@ -64,7 +64,7 @@ La force de ce domaine est qu'il est un banc d'essai pour de nombreuses hypothè
 //+
 La recherche en visualisation d'information vise à fournir des réponses solides et empiriques à ces questions importantes.
 
-image::example-infovis.jpg[align = "center"]
+image::example-infovis.jpg[align="center", width="400"]
 {nbsp} +
 
 Le problème est que cette emphase sur les tests d'hypothèses peut être préjudiciable à l'avancement sur un autre objectif fondamental: créer des visualisations *engageantes pour leur public*, largement adoptées et utilisées dans un monde si plein d'informations (ou de bruit). Cette attention par les individus devient la plus rare des ressources.
@@ -77,7 +77,7 @@ On pourrait dire que l'infographie est un peu le contraire de l'infovis : les ag
 //+
 L'exemple ci-dessous montre à quel point une ((infographie)) peut être colorée et accrocheuse, mais totalement inefficace pour transmettre des informations.
 
-image::example-infographics.png[align = "center", largeur = "400"]
+image::example-infographics.png[align="center", width="400"]
 {nbsp} +
 
 Bien sûr, il existe d'excellentes infographies et Alberto Cairo, professeur et journaliste de profession, nous rappelle dans son livre http://www.thefunctionalart.com/[The Functional Art] que l'infographie soigneusement réalisée est un excellent moyen de transmettre des informations complexes dans une quantité limitée d'espace.
@@ -87,7 +87,7 @@ Mais je crois comprendre que ce n'est pas dans le contrat de base de l'infograph
 Le lecteur doit faire davantage confiance au media qui publie l'infographie que dans le cas d'une infovis: selon qu'il s'agisse d'un journal établi avec une bonne équipe graphique ou d'une agence de communication faisant du travail rapide et baclé, on peut faire confiance aux infographies ou se faire induire en erreur.
 
 === c. Une autre communauté: la business intelligence
-image::example-bi.png[align = "center"]
+image::example-bi.png[align="center", width="400"]
 {nbsp} +
 
 La mission en BI consiste essentiellement à réaliser des visualisations « au niveau excel » en termes de reporting et de suivi des données métiers.
@@ -187,7 +187,7 @@ image::dataviz-group.jpg[align="center"]
 ==== i. Le "Better Life Insdex" de l'OCDE par Moritz Stefaner et al
 Pas de l'((infovis)), pas une ((infographie)), juste une dataviz: simplicité, interaction, accès aux données.
 
-image::oecd-better-life-index.jpg[align = "center"]
+image::oecd-better-life-index.jpg[align="center", width="400"]
 {nbsp} +
 
 (version en ligne: http://www.oecdbetterlifeindex.org)
@@ -195,7 +195,7 @@ image::oecd-better-life-index.jpg[align = "center"]
 ==== ii. La visualisation "Ghost Counties" de Jan Willem Tulp
 Tulp montre qu'un mariage est possible entre la créativité et l'esthétique, d'une part, et les données dures et froides, d'autre part (nombre d'expulsions de propriété par comté aux États-Unis).
 
-image::ghost-counties-screenshot.jpg[align = "center"]
+image::ghost-counties-screenshot.jpg[align="center", width="400"]
 {nbsp} +
 
 (version en ligne, nécessite Internet Explorer et le plugin Java: http://www.janwillemtulp.com/eyeo/)

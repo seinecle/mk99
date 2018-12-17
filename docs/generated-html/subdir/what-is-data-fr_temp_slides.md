@@ -162,7 +162,7 @@ Une exception positive intéressante: Uber a mis en place un "databook" stockant
 
 == !
 [.stretch]
-image::uber-databook.png[pdfwidth = "80%", align = "center", title = "Databook par Uber: rendre consultable et utilisable medatada", book = "keep"]
+image::uber-databook.png[pdfwidth = "80%", align = "center", title = "Databook par Uber: rendre consultable et utilisable la medatada", book = "keep"]
 == !
 
 
@@ -230,7 +230,7 @@ Ces données sont acquises via une transaction de marché. Ses utilisations s'ac
 == !
 ==== d. Données sociodémo vs données de comportement
 == !
-- Les données sociodémogaphiques ou *sociodémo* ((données, sociodémo))) se réfèrent aux informations sur les individus, décrivant les attributs fondamentaux de leur identité sociale: âge, sexe, lieu de résidence, profession, statut matrimonial et nombre d'enfants.
+- Les données sociodémogaphiques ou *sociodémo* (((données, sociodémo))) se réfèrent aux informations sur les individus, décrivant les attributs fondamentaux de leur identité sociale: âge, sexe, lieu de résidence, profession, statut matrimonial et nombre d'enfants.
 
 == !
 - *Les données de comportement ou "behavior data"* (((données, behavior data))) se réfèrent à toute trace numérique laissée par l'individu au cours de sa vie : clics sur des pages web, likes sur Facebook, transactions d'achat, commentaires postés sur Tripadvisor ...
@@ -241,7 +241,6 @@ Les données sociodémographiques sont généralement bien structurées ou facil
 Elles ont une longue histoire de collecte et d'analyse, essentiellement depuis que le recensement existe.
 Les données de comportement permettent de profiler les individus beaucoup plus précisément que les données sociodémographiques seules : les individus peuvent être caractérisés par leurs actes et leurs goûts, bien au-delà de ce qu'un âge ou un état matrimonial pourrait définir.
 
-== !
 Comment les données de comportement peuvent-elles "battre" les données sociodémo, en terme de précision?
 Il est difficile de prédire avec une grande précision l'orientation politique, religieuse ou sexuelle d'un individu en fonction de son code postal, de son sexe et de son âge. http://www.pnas.org/content/110/15/5802[Une équipe de recherche a pu évaluer ces attributs personnels avec une grande précision basée sur les likes que les individus font sur les pages et les messages Facebook.] L'orientation politique (précision de 85%), l'orientation sexuelle (précision de 75% à 88%) et l'orientation religieuse (exactitude de 82%) peuvent être déterminées pour les personnes ayant fait en moyenne 170 likes.
 
