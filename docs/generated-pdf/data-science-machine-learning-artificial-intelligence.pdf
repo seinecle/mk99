@@ -5,8 +5,8 @@
 /Author <feff0043006c00e9006d0065006e00740020004c006500760061006c006c006f00690073>
 /Creator (Asciidoctor PDF 1.5.0.alpha.16, based on Prawn 2.2.2)
 /Producer <feff0043006c00e9006d0065006e00740020004c006500760061006c006c006f00690073>
-/ModDate (D:20181217154721+01'00')
-/CreationDate (D:20181217154721+01'00')
+/ModDate (D:20190102111216+01'00')
+/CreationDate (D:20190102111216+01'00')
 >>
 endobj
 2 0 obj
@@ -5551,13 +5551,13 @@ endobj
 [56 0 R /XYZ 348.7359 421.1 null]
 endobj
 63 0 obj
-<< /Limits [(_1_explaining_machine_learning_in_simple_terms) (__indexterm-1320552)]
-/Names [(_1_explaining_machine_learning_in_simple_terms) 18 0 R (_2_three_families_of_machine_learning) 47 0 R (_3_machine_learning_and_data_science) 87 0 R (_4_artificial_intelligence) 103 0 R (__anchor-top) 13 0 R (__indexterm-1234082) 21 0 R (__indexterm-1287426) 29 0 R (__indexterm-1297628) 33 0 R (__indexterm-1299712) 35 0 R (__indexterm-1306242) 41 0 R (__indexterm-1312252) 44 0 R (__indexterm-1320552) 49 0 R]
+<< /Limits [(_1_explaining_machine_learning_in_simple_terms) (__indexterm-1345212)]
+/Names [(_1_explaining_machine_learning_in_simple_terms) 18 0 R (_2_three_families_of_machine_learning) 47 0 R (_3_machine_learning_and_data_science) 87 0 R (_4_artificial_intelligence) 103 0 R (__anchor-top) 13 0 R (__indexterm-1258742) 21 0 R (__indexterm-1312086) 29 0 R (__indexterm-1322288) 33 0 R (__indexterm-1324372) 35 0 R (__indexterm-1330902) 41 0 R (__indexterm-1336912) 44 0 R (__indexterm-1345212) 49 0 R]
 >>
 endobj
 64 0 obj
-<< /Limits [(__indexterm-1336298) (__indexterm-1409482)]
-/Names [(__indexterm-1336298) 54 0 R (__indexterm-1339210) 57 0 R (__indexterm-1339902) 58 0 R (__indexterm-1351068) 59 0 R (__indexterm-1351072) 60 0 R (__indexterm-1351076) 61 0 R (__indexterm-1351080) 62 0 R (__indexterm-1351084) 66 0 R (__indexterm-1387750) 73 0 R (__indexterm-1409482) 86 0 R]
+<< /Limits [(__indexterm-1360958) (__indexterm-1434142)]
+/Names [(__indexterm-1360958) 54 0 R (__indexterm-1363870) 57 0 R (__indexterm-1364562) 58 0 R (__indexterm-1375728) 59 0 R (__indexterm-1375732) 60 0 R (__indexterm-1375736) 61 0 R (__indexterm-1375740) 62 0 R (__indexterm-1375744) 66 0 R (__indexterm-1412410) 73 0 R (__indexterm-1434142) 86 0 R]
 >>
 endobj
 65 0 obj
@@ -9320,8 +9320,8 @@ endobj
 [84 0 R /XYZ 93.0855 238.8564 null]
 endobj
 99 0 obj
-<< /Limits [(__indexterm-1411694) (_the_end)]
-/Names [(__indexterm-1411694) 88 0 R (__indexterm-1412266) 90 0 R (__indexterm-1413600) 93 0 R (__indexterm-1414566) 95 0 R (__indexterm-1414570) 98 0 R (__indexterm-1419854) 102 0 R (__indexterm-1422840) 105 0 R (__indexterm-1424400) 106 0 R (__indexterm-1426354) 108 0 R (__indexterm-1426358) 109 0 R (__indexterm-1427292) 111 0 R (_a_a_comparison_with_classic_statistics) 20 0 R (_a_the_unsupervised_learning_approach) 48 0 R (_a_weak_vs_strong_ai_artificial_intelligence_weak_vs_strong_ai) 104 0 R (_b_an_illustration_the_case_of_the_gpu) 34 0 R (_b_the_strong_supervised_strong_learning_approach) 53 0 R (_b_two_videos_to_understand_ai_further) 107 0 R (_c_the_strong_reinforcement_strong_learning_approach) 72 0 R (_d_when_is_machine_learning_useful) 85 0 R (_the_end) 113 0 R]
+<< /Limits [(__indexterm-1436354) (_the_end)]
+/Names [(__indexterm-1436354) 88 0 R (__indexterm-1436926) 90 0 R (__indexterm-1438260) 93 0 R (__indexterm-1439226) 95 0 R (__indexterm-1439230) 98 0 R (__indexterm-1444514) 102 0 R (__indexterm-1447500) 105 0 R (__indexterm-1449060) 106 0 R (__indexterm-1451014) 108 0 R (__indexterm-1451018) 109 0 R (__indexterm-1451952) 111 0 R (_a_a_comparison_with_classic_statistics) 20 0 R (_a_the_unsupervised_learning_approach) 48 0 R (_a_weak_vs_strong_ai_artificial_intelligence_weak_vs_strong_ai) 104 0 R (_b_an_illustration_the_case_of_the_gpu) 34 0 R (_b_the_strong_supervised_strong_learning_approach) 53 0 R (_b_two_videos_to_understand_ai_further) 107 0 R (_c_the_strong_reinforcement_strong_learning_approach) 72 0 R (_d_when_is_machine_learning_useful) 85 0 R (_the_end) 113 0 R]
 >>
 endobj
 100 0 obj

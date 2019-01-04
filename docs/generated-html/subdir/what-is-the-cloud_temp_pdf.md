@@ -122,7 +122,7 @@ The cloud can fit in the budget as an operational expense instead of a capital e
 Opex are not inherently a better or cheaper option than a Capex, but they are easier for a project team or business unit to fit in their budget.
 See this blog post discussing  http://gevaperry.typepad.com/main/2009/01/accounting-for-clouds-stop-saying-capex-vs-opex.html[opex and capex in the context of the cloud], especially the critical comments in response, to continue this discussion.
 
-== 3. IaaS, PaaS, Saas
+== 3. The cloud: what it is for? IaaS, PaaS and Saas
 What is the use of the cloud? Companies can externalize operations to the cloud, instead of running these operations on their premises, using their own resources.
 
 //+
@@ -180,4 +180,3 @@ This course is made by Clement Levallois.
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-itter.com/seinecle[@seinecle]

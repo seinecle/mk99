@@ -228,7 +228,7 @@ Quelles sont les différences entre ces termes?
 * Et *data science* (((data science)))? C'est un terme général englobant l'apprentissage automatique, les statistiques et de nombreuses méthodes analytiques pour travailler avec les données et les interpréter. Souvent utilisé de manière interchangeable avec l'apprentissage automatique. *Data scientist* (((data scientist))) est une description d'emploi devenue commune, y compris en français.
 
 == Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
+Retrouvez le site complet : https://seinecle.github.io/mk99/index-fr.html[ici].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 
@@ -237,4 +237,4 @@ Clement Levallois
 Découvrez mes autres cours et projets : https://www.clementlevallois.net
 
 Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
-itter.com/seinecle[@seinecle]
+necle[@seinecle]

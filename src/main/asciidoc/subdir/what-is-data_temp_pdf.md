@@ -171,11 +171,11 @@ image::table.png[pdfwidth="100%", align="center", title="tabular data", book="ke
 - *First party data* (((data, "first party data"))): the data generated through the activities of your own organization.
 Your organization own it, which does not mean that consent from users is not required, when it comes to personal data.
 //+
-- *Second party data* (((data, "second party data"))) : the data accessed through partnerships.
-Without being the generator nor the owner of this data, partners make it available to you through an agreement.
+- *Second party data* (((data, "second party data"))) : the data acquired from a partner, which generated and owns this data.
+The partner makes these data available to you through an agreement (paying or not).
 //+
-- *Third party data* (((data, "third party data"))): the data acquired via purchase.
-This data is acquired through a market transaction. Its uses still comes with conditions, especially for personal data.
+- *Third party data* (((data, "third party data"))): the data acquired from a reseller.
+This data is acquired through a market transaction.
 
 === d. Sociodemo data vs behavior data
 - Sociodemogaphic or *sociodemo* (((data, sociodemo))) data refers to information about individuals, describing fundamental attributes of their social identity: age, gender, place of residence, occupation, marital status and number of kids.
@@ -237,6 +237,11 @@ image::russian_dolls.jpg[align="center",title="Volumes of data"]
 |20 Pb = Google Maps in 2013
 |===
 
+== To go further
+
+- https://www.thenewatlantis.com/publications/why-data-is-never-raw[Data is never raw] (🕒 10 min read).
+- https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4[Data Alone Isn’t Ground Truth] (🕒 6 min read).
+
 == The end
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
@@ -247,4 +252,3 @@ This course is made by Clement Levallois.
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-witter.com/seinecle[@seinecle]

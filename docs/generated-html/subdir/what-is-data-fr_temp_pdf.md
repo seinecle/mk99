@@ -169,11 +169,11 @@ image::table.png[pdfwidth = "100%", align = "center", title = "données tabulair
 - *First party data* (((données, "first party data"))): les données générées par les activités de votre propre organisation.
 Votre organisation en est propriétaire, ce qui ne signifie pas que le consentement des utilisateurs n'est pas requis en ce qui concerne les données personnelles.
 // +
-- *Second party data* (((données, "second party data"))): les données accessibles via des partenariats.
-Sans être le générateur ni le propriétaire de ces données, les partenaires le mettent à votre disposition dans le cadre d'un accord.
+- *Second party data* (((données, "second party data"))): les données acquises auprès de partenaires qui ont généré cette donnée.
+Les partenaires mettent ces données, dont ils sont propriétaires, à votre disposition dans le cadre d'un accord ou d'une transaction payante.
 // +
-- *Données tierces ou "third party data"* (((données, "third party data"))): les données acquises par un achat.
-Ces données sont acquises via une transaction de marché. Ses utilisations s'accompagnent toujours de conditions, notamment pour les données personnelles.
+- *Données tierces ou "third party data"* (((données, "third party data"))): les données acquises auprès de revendeurs.
+Ces données sont le plus souvent acquises via une transaction de marché.
 
 === d. Données sociodémo vs données de comportement
 - Les données sociodémogaphiques ou *sociodémo* (((données, sociodémo))) se réfèrent aux informations sur les individus, décrivant les attributs fondamentaux de leur identité sociale: âge, sexe, lieu de résidence, profession, statut matrimonial et nombre d'enfants.
@@ -239,7 +239,7 @@ image::russian_dolls.jpg[align = "center", title = "Volumes de données"]
 |===
 
 == Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
+Retrouvez le site complet : https://seinecle.github.io/mk99/index-fr.html[ici].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 
@@ -248,4 +248,5 @@ Clement Levallois
 Découvrez mes autres cours et projets : https://www.clementlevallois.net
 
 Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
+om/seinecle[@seinecle]
 witter.com/seinecle[@seinecle]

@@ -89,7 +89,7 @@ Le terme * cloud * (((cloud, définition))) a été rendu populaire par ((Amazon
 
 
 == !
-- on ne loue plus un serveur en particulier, mais on achète à Amazon du "temps d'utilisation de serveur, doté d'une certaine puissance". En pratique, pour  livrer ce service, Amazon pourra mettre en route 1 gros serveur, ou 2 petits, ou attribuer juste la moitié d'un énorme serveur partagé avec un autre client : cela est géré de façon transparente pour le client.  *Ce n'est donc plus la location d'une "machine" qui est facturée mais le temps d'utilisation d'un service.*
+- on ne loue plus un serveur en particulier, mais on achète à Amazon du "temps d'utilisation de serveur, doté d'une certaine puissance". En pratique, pour  livrer ce service, Amazon pourra mettre en route 1 gros serveur, ou 2 petits, ou attribuer juste la moitié d'un énorme serveur partagé avec un autre client : cela est géré de façon transparente pour le client. Cette façon de découpler le service rendu à l'utilisateur des ressources sous-jacentes s'appelle la *virtualisation*. *Ce n'est donc plus la location de tel ou tel serveur qui est facturée mais le temps d'utilisation d'un service correspondant à telle rapidité de calcul, telle capacité de stockage, etc.*
 - on met l'accent sur la facilité d'utilisation : pas besoin de connaître les détails techniques de ces serveurs (comment ils sont branchés, comment ils sont configurés ...)
 
 == !
@@ -97,7 +97,7 @@ Le terme * cloud * (((cloud, définition))) a été rendu populaire par ((Amazon
 - c'est "élastique": si le besoin du client évolue et qu'un serveur plus puissant devient nécessaire, ou plus d'espace de stockage, cela est pris en compte sur la facturation sans que les aspects techniques de ces changements ne soient venus ralentir la fourniture du service. Pas besoin de signer un nouveau contrat ou d'évaluer si Amazon bien des serveurs ou disques durs disponibles à la location ... le service est dimensionné pour que le changement soit possible et instantané.
 
 == !
-Comparons une situation avec ou sans (cloud)) :
+Comparons une situation avec ou sans ((cloud)) :
 
 
 == !
@@ -144,7 +144,7 @@ Le cloud peut s'intégrer dans le budget en tant que dépense opérationnelle au
 Les Opex ne sont pas intrinsèquement une option meilleure ou moins chère qu'un Capex, mais ils sont plus faciles à intégrer pour une équipe de projet ou une unité d'affaires dans leur budget.
 Voir cet article sur http://gevaperry.typepad.com/main/2009/01/accounting-for-clouds-stop-saying-capex-vs-opex.html[opex et capex dans le contexte du cloud], en particulier les commentaires critiques en réponse, pour continuer cette discussion.
 
-== 3. IaaS, PaaS, Saas
+== 3. Le cloud : à quoi cela sert-il? IaaS, PaaS, SaaS
 == !
 A quoi sert le cloud pour une entreprise? Les entreprises peuvent externaliser leurs opérations sur le cloud plutôt que de les exécuter chez elles, en utilisant leurs propres ressources.
 
@@ -172,13 +172,13 @@ Ici, le cloud est utilisé pour remplacer les besoins en infrastructure informat
 
 
 == !
-*Plate-forme en tant que service* (Platform as as Service, Paas)
+*Plate-forme en tant que service* (Platform as as Service, PaaS)
 
 Le cloud est utilisé pour exécuter les blocs de construction d'un service: pour gérer un système de messagerie, pour héberger des applications, ...
 
 
 == !
-*Logiciel en tant que service* (Software as a Service, Saas)
+*Logiciel en tant que service* (Software as a Service, SaaS)
 
 Le cloud est utilisé pour héberger un logiciel complet accessible "à la demande" via le navigateur.
 
@@ -205,7 +205,7 @@ Par exemple, les opérations qui ne représentent pas un risque de sécurité et
 
 == Pour aller plus loin
 == !
-Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
+Retrouvez le site complet : https://seinecle.github.io/mk99/index-fr.html[ici].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 

@@ -531,7 +531,7 @@ table.CodeRay td.code>pre{padding:0}
 <ul class="sectlevel1">
 <li><a href="#_1_note_sur_la_terminologie_qu_est_ce_qu_un_serveur">1. Note sur la terminologie: qu&#8217;est-ce qu&#8217;un serveur?</a></li>
 <li><a href="#_2_le_cloud">2. Le cloud</a></li>
-<li><a href="#_3_iaas_paas_saas">3. IaaS, PaaS, Saas</a></li>
+<li><a href="#_3_le_cloud_à_quoi_cela_sert_il_iaas_paas_saas">3. Le cloud : à quoi cela sert-il? IaaS, PaaS, SaaS</a></li>
 <li><a href="#_4_cloud_privé_ou_public_cloud_hybride">4. Cloud privé ou public? cloud hybride?</a></li>
 <li><a href="#_pour_aller_plus_loin">Pour aller plus loin</a></li>
 </ul>
@@ -541,7 +541,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-12-17</p>
+<p>last modified: 2019-01-02</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -649,7 +649,7 @@ Lorsque de nombreux serveurs sont empilés ensemble et mis dans une grande armoi
 <div class="ulist">
 <ul>
 <li>
-<p>on ne loue plus un serveur en particulier, mais on achète à Amazon du "temps d&#8217;utilisation de serveur, doté d&#8217;une certaine puissance". En pratique, pour  livrer ce service, Amazon pourra mettre en route 1 gros serveur, ou 2 petits, ou attribuer juste la moitié d&#8217;un énorme serveur partagé avec un autre client : cela est géré de façon transparente pour le client.  <strong>Ce n&#8217;est donc plus la location d&#8217;une "machine" qui est facturée mais le temps d&#8217;utilisation d&#8217;un service.</strong></p>
+<p>on ne loue plus un serveur en particulier, mais on achète à Amazon du "temps d&#8217;utilisation de serveur, doté d&#8217;une certaine puissance". En pratique, pour  livrer ce service, Amazon pourra mettre en route 1 gros serveur, ou 2 petits, ou attribuer juste la moitié d&#8217;un énorme serveur partagé avec un autre client : cela est géré de façon transparente pour le client. Cette façon de découpler le service rendu à l&#8217;utilisateur des ressources sous-jacentes s&#8217;appelle la <strong>virtualisation</strong>. <strong>Ce n&#8217;est donc plus la location de tel ou tel serveur qui est facturée mais le temps d&#8217;utilisation d&#8217;un service correspondant à telle rapidité de calcul, telle capacité de stockage, etc.</strong></p>
 </li>
 <li>
 <p>on met l&#8217;accent sur la facilité d&#8217;utilisation : pas besoin de connaître les détails techniques de ces serveurs (comment ils sont branchés, comment ils sont configurés &#8230;&#8203;)</p>
@@ -659,7 +659,7 @@ Lorsque de nombreux serveurs sont empilés ensemble et mis dans une grande armoi
 </li>
 <li>
 <p>c&#8217;est "élastique": si le besoin du client évolue et qu&#8217;un serveur plus puissant devient nécessaire, ou plus d&#8217;espace de stockage, cela est pris en compte sur la facturation sans que les aspects techniques de ces changements ne soient venus ralentir la fourniture du service. Pas besoin de signer un nouveau contrat ou d&#8217;évaluer si Amazon bien des serveurs ou disques durs disponibles à la location &#8230;&#8203; le service est dimensionné pour que le changement soit possible et instantané.
-Comparons une situation avec ou sans (cloud)) :</p>
+Comparons une situation avec ou sans cloud :</p>
 </li>
 </ul>
 </div>
@@ -713,7 +713,7 @@ Voir cet article sur <a href="http://gevaperry.typepad.com/main/2009/01/accounti
 </div>
 </div>
 <div class="sect1">
-<h2 id="_3_iaas_paas_saas">3. IaaS, PaaS, Saas</h2>
+<h2 id="_3_le_cloud_à_quoi_cela_sert_il_iaas_paas_saas">3. Le cloud : à quoi cela sert-il? IaaS, PaaS, SaaS</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>A quoi sert le cloud pour une entreprise? Les entreprises peuvent externaliser leurs opérations sur le cloud plutôt que de les exécuter chez elles, en utilisant leurs propres ressources.</p>
@@ -745,13 +745,13 @@ Chacun de ces degrés d&#8217;externalisation a un nom:</p>
 <p>Ici, le cloud est utilisé pour remplacer les besoins en infrastructure informatique locale de l&#8217;entreprise. Par exemple, au lieu de stocker ses données dans une base de donnée sur place, on loue un service de stockage de données sur le cloud, qui sera facturé précisément au temps d&#8217;utilisation, à la taille de données stockées, et au volume de données écrites ou transférées (comme il s&#8217;agit d&#8217;un service de base de données, ce type de IaaS peut être appelé un DBaaS: database as a service). </p>
 </div>
 <div class="paragraph">
-<p><strong>Plate-forme en tant que service</strong> (Platform as as Service, Paas)</p>
+<p><strong>Plate-forme en tant que service</strong> (Platform as as Service, PaaS)</p>
 </div>
 <div class="paragraph">
 <p>Le cloud est utilisé pour exécuter les blocs de construction d&#8217;un service: pour gérer un système de messagerie, pour héberger des applications, &#8230;&#8203;</p>
 </div>
 <div class="paragraph">
-<p><strong>Logiciel en tant que service</strong> (Software as a Service, Saas)</p>
+<p><strong>Logiciel en tant que service</strong> (Software as a Service, SaaS)</p>
 </div>
 <div class="paragraph">
 <p>Le cloud est utilisé pour héberger un logiciel complet accessible "à la demande" via le navigateur.</p>
@@ -789,7 +789,7 @@ Mais même privé, le cloud conserve les caractéristiques de base d&#8217;un cl
 <h2 id="_pour_aller_plus_loin">Pour aller plus loin</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Retrouvez le site complet : <a href="https://seinecle.github.io/mk99/">ici</a>.</p>
+<p>Retrouvez le site complet : <a href="https://seinecle.github.io/mk99/index-fr.html">ici</a>.</p>
 </div>
 <div class="paragraph">
 <p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
@@ -826,7 +826,7 @@ Mais même privé, le cloud conserve les caractéristiques de base d&#8217;un cl
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-12-17 15:41:34 CET
+Last updated 2019-01-02 11:10:52 CET
 </div>
 </div>
 </body>

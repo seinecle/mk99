@@ -158,7 +158,36 @@ Prenons l'exemple d'une entreprise de transport comme la SNCF française qui tro
 
 L'*Open data* (((open data))) désigne ce mouvement pour rendre les jeux de données accessibles à un large public, et les API web ont été un ingrédient technologique clé dans ce mouvement.
 
-== 4. L'écosystème des API
+== 4. Votre entreprise doit-elle ouvrir une API pour partager ses données?
+
+Une entreprise peut créer ses propres APIs pour "projeter" ses services plus loin et plus fort que par la simple interface "page web".
+Comment faire?
+// +
+Ici il faut brainstormer, avec deux repères à garder en tête.
+Ces deux repères ou "balises" sont exemplifiées par ce qu'a vécu Pieter Levels, un entrepreneur hollandais qui se spécialise dans la création de plateformes web au service des personnes qui travaillent à distance ("remote workers").
+Il a  créé:
+
+// +
+- https://nomadlist.com/[Nomadlist], qui présente les villes du monde et en quoi elles peuvent être attractives pour y vivre et travailler
+- https://remoteok.io/[RemoteOK], qui est un job board pour annonces exclusivement de jobs à distance.
+
+// +
+Pieter Levels a mis en place des APIs pour que des utilisateurs puissent accéder ("consommer") ces deux services, *avec des résultats bien différents*:
+
+// +
+- L'accès de NomadList par API, sans contrôle, a abouti à se faire siphonner ses datas par des concurrents qui s'en sont servi pour faire des copycats. (relisez les tweets annonçant https://twitter.com/levelsio/status/622988506856562690?lang=en[l'ouverture de l'API] et https://twitter.com/NomadList/status/822832479648129024[sa fermeture]).
+- L'accès aux annonces de RemoteOK par une API permet à des plateformes tierces d'intégrer le catalogue d'annonces de RemoteOK aux leurs : c'est du référencement gratuit et à grande échelle, qui accroît la probabilité qu'une annonce trouve un candidat (relisez le tweet qui annonce https://twitter.com/levelsio/status/986281024907755520?lang=en[l'ouverture de l'API]).
+
+La capture d'écran ci-dessous résume le contraste entre les deux situations : bien que dans les deux cas il s'agisse d'ouvrir ses données via une API, le résultat est opposé :
+
+image::pieterlevelsapi.jpg[align="center",book="keep",title="Pieter Levels explique ses raisons pour ouvrir ou fermer une API"]
+{nbsp} +
+
+Il faut donc une appréciation fine des usages que l'ouverture d'une API permettra de stimuler.
+Un des effets les plus vertueux est celui d'une *"caisse de résonance"* : en réutilisant notre contenu pour leurs propres objectifs , les utilisateurs de l'API vont sans le vouloir faire la promotion de notre contenu, ce qui en renforce l'efficacité.
+
+
+== 5. L'écosystème des API
 === a. Une multitude d'API
 Pour découvrir de nouvelles API, ou pour faciliter la découverte de vos API, l'endroit le plus connu est https://www.programmableweb.com/[le site Web "Programmable Web"] (voir aussi http://apis.io/[apis.io]). En effectuant une recherche sur ce site, vous trouverez des https://www.programmableweb.com/api/coca-cola-enterprises[APIs fournissant des services commerciaux], ou des https://www.programmableweb.com/api/itsthisforthat[APIs d'un genre amusant ou absurde].
 
@@ -185,6 +214,11 @@ image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API lan
 {nbsp} +
 
 == Pour aller plus loin
+
+- https://www.kissmyfrogs.com/mehdi-medjaoui-oauth-api-startup/[Mehdi Medjaoui : “Le design des API conditionne la forme du monde de demain”]. (🕒 10 min de lecture)
+- https://www.linkedin.com/pulse/au-del%C3%A0-de-la-technologie-penser-lapi-comme-un-produit-romain-lalanne/[Au-delà de la technologie : penser l'API comme un produit] (🕒 10 min  de lecture).
+- https://medium.com/@mercier_remi/c-est-quoi-une-api-f37ae350cb9[C’est quoi une API ? Une explication (compréhensible) pour les utilisateurs métier] (🕒 10 min de lecture)
+
 Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
 
 image:round_portrait_mini_150.png[align="center", role="right"]

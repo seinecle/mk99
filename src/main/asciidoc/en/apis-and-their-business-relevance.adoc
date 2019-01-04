@@ -162,7 +162,34 @@ Let's take the example of a transportation company like French SNCF which finds 
 //+
 *Open data* (((open data))) designates this movement to make datasets available to a broad audience, and web APIs have been a key technological ingredient in this movement.
 
-== 4. The ecosystem of APIs
+== 4. Does your company need to open an API to share its data?
+
+A company can create its own APIs to "project" its services farther and stronger than just the "web page" interface.
+When is it a good idea to do that?
+// +
+Here we must brainstorm, with two benchmarks to keep in mind. These examples are taken from Pieter Levels, a Dutch entrepreneur who specializes in creating web platforms for remote workers.
+He created:
+
+// +
+- https://nomadlist.com/[Nomadlist], which presents the cities of the world and how they can be attractive to live and work
+- https://remoteok.io/[RemoteOK], which is a job board for ads exclusively for remote jobs.
+
+// +
+Pieter Levels has implemented APIs so that users can access ("consume") these two services, *with very different results*:
+
+// +
+- The access of NomadList by API, without control, has resulted in siphoning its data by competitors who used it to develop copycats. (read the tweets announcing https://twitter.com/levelsio/status/622988506856562690?lang=en[the opening of the API] and https://twitter.com/NomadList/status/822832479648129024[its closing]).
+- Access to RemoteOK ads by an API allows third-party platforms to integrate the RemoteOK ad catalog with their own: it amounts to free and large-scale referencing, which increases the likelihood of an ad finding a candidate (read again the tweet that announces https://twitter.com/levelsio/status/986281024907755520?lang=en[the opening of the API]).
+
+The screenshot below summarizes the contrast between the two situations: although in both cases it involves opening its data via an API. Between NomadList and RemoteOK, the results are opposite:
+
+image::pieterlevelsapi.jpg[align = "center", book = "keep", title = "Pieter Levels explains his reasons for opening or closing an API"]
+
+Product managers must have a fine appreciation of the uses that the opening of an API will stimulate.
+One of the most virtuous effects is that of a "sound box": by reusing our content for their own purposes, the users of the API will unwittingly promote our content, which reinforces the efficiency of our product.
+
+
+== 5. The ecosystem of APIs
 === a. A wealth of APIs
 To discover new APIs, or to make your APIs easier to discover, the most well known place is https://www.programmableweb.com/[the website "Programmable Web"] (see also http://apis.io/[apis.io]). Searching on this website, you will find  https://www.programmableweb.com/api/coca-cola-enterprises[APIs providing business services], or   https://www.programmableweb.com/api/itsthisforthat[APIs of a fun and odd sort].
 
@@ -188,8 +215,10 @@ As a result, a large number of services associated to APIs have developed to cat
 //+
 image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui", book="keep"]
 
-== The end
-//+
+== To go further
+
+- https://www.slideshare.net/jmusser/j-musser-apibizmodels2013[API Business Models: 20 models in 20 minutes] (🕒 20 min read).
+- https://zapier.com/learn/apis/[An introduction to APIs: a complete course for real beginners]. A short online course, just a bit technical, on APIs. (🕒 4 hours).
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 

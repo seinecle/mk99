@@ -222,12 +222,12 @@ image::table.png[pdfwidth="100%", align="center", title="tabular data", book="ke
 Your organization own it, which does not mean that consent from users is not required, when it comes to personal data.
 
 == !
-- *Second party data* (((data, "second party data"))) : the data accessed through partnerships.
-Without being the generator nor the owner of this data, partners make it available to you through an agreement.
+- *Second party data* (((data, "second party data"))) : the data acquired from a partner, which generated and owns this data.
+The partner makes these data available to you through an agreement (paying or not).
 
 == !
-- *Third party data* (((data, "third party data"))): the data acquired via purchase.
-This data is acquired through a market transaction. Its uses still comes with conditions, especially for personal data.
+- *Third party data* (((data, "third party data"))): the data acquired from a reseller.
+This data is acquired through a market transaction.
 
 == !
 ==== d. Sociodemo data vs behavior data
@@ -298,6 +298,12 @@ image::russian_dolls.jpg[align="center",title="Volumes of data"]
 |1 petabyte (Pb)
 |20 Pb = Google Maps in 2013
 |===
+
+== To go further
+== !
+
+- https://www.thenewatlantis.com/publications/why-data-is-never-raw[Data is never raw] (🕒 10 min read).
+- https://medium.com/@angebassa/data-alone-isnt-ground-truth-9e733079dfd4[Data Alone Isn’t Ground Truth] (🕒 6 min read).
 
 == The end
 == !

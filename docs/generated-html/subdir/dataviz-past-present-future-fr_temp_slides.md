@@ -551,20 +551,20 @@ Ceci est juste ma vision pour la dataviz, je serais heureux d'en discuter avec v
 
 **Publié en 2015**
 
-== The end
+== Pour aller plus loin
 == !
 
 == !
 
-Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+Retrouvez le site complet https://seinecle.github.io/mk99/index-fr.html[ici].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 
-This course is made by Clement Levallois.
+Ce cours est développé par Clement Levallois.
 
-Discover my other courses in data / tech for business: https://www.clementlevallois.net
+Découvrez mes autres cours : https://www.clementlevallois.net
 
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+Ou contactez-moi via Twitter : https://www.twitter.com/seinecle[@seinecle]
 pass:[    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;

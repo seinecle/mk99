@@ -313,7 +313,7 @@ Pour avoir une https://uk.practicallaw.thomsonreuters.com/Browse/Home/Internatio
 
 == Pour aller plus loin
 == !
-Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
+Retrouvez le site complet : https://seinecle.github.io/mk99/index-fr.html[ici].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 

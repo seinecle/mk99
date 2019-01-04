@@ -545,7 +545,8 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#_c_les_api_ont_strong_ouvert_strong_les_données">c. Les API ont <strong>ouvert</strong> les données</a></li>
 </ul>
 </li>
-<li><a href="#_4_l_écosystème_des_api">4. L&#8217;écosystème des API</a>
+<li><a href="#_4_votre_entreprise_doit_elle_ouvrir_une_api_pour_partager_ses_données">4. Votre entreprise doit-elle ouvrir une API pour partager ses données?</a></li>
+<li><a href="#_5_l_écosystème_des_api">5. L&#8217;écosystème des API</a>
 <ul class="sectlevel2">
 <li><a href="#_a_une_multitude_d_api">a. Une multitude d&#8217;API</a></li>
 <li><a href="#_b_api_un_monde_professionnel_à_part_entière">b. API: un monde professionnel à part entière</a></li>
@@ -559,7 +560,7 @@ table.CodeRay td.code>pre{padding:0}
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-11-19</p>
+<p>last modified: 2019-01-02</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -813,7 +814,58 @@ Prenons l&#8217;exemple d&#8217;une entreprise de transport comme la SNCF franç
 </div>
 </div>
 <div class="sect1">
-<h2 id="_4_l_écosystème_des_api">4. L&#8217;écosystème des API</h2>
+<h2 id="_4_votre_entreprise_doit_elle_ouvrir_une_api_pour_partager_ses_données">4. Votre entreprise doit-elle ouvrir une API pour partager ses données?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Une entreprise peut créer ses propres APIs pour "projeter" ses services plus loin et plus fort que par la simple interface "page web".
+Comment faire?
+Ici il faut brainstormer, avec deux repères à garder en tête.
+Ces deux repères ou "balises" sont exemplifiées par ce qu&#8217;a vécu Pieter Levels, un entrepreneur hollandais qui se spécialise dans la création de plateformes web au service des personnes qui travaillent à distance ("remote workers").
+Il a  créé:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://nomadlist.com/">Nomadlist</a>, qui présente les villes du monde et en quoi elles peuvent être attractives pour y vivre et travailler</p>
+</li>
+<li>
+<p><a href="https://remoteok.io/">RemoteOK</a>, qui est un job board pour annonces exclusivement de jobs à distance.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Pieter Levels a mis en place des APIs pour que des utilisateurs puissent accéder ("consommer") ces deux services, <strong>avec des résultats bien différents</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;accès de NomadList par API, sans contrôle, a abouti à se faire siphonner ses datas par des concurrents qui s&#8217;en sont servi pour faire des copycats. (relisez les tweets annonçant <a href="https://twitter.com/levelsio/status/622988506856562690?lang=en">l&#8217;ouverture de l&#8217;API</a> et <a href="https://twitter.com/NomadList/status/822832479648129024">sa fermeture</a>).</p>
+</li>
+<li>
+<p>L&#8217;accès aux annonces de RemoteOK par une API permet à des plateformes tierces d&#8217;intégrer le catalogue d&#8217;annonces de RemoteOK aux leurs : c&#8217;est du référencement gratuit et à grande échelle, qui accroît la probabilité qu&#8217;une annonce trouve un candidat (relisez le tweet qui annonce <a href="https://twitter.com/levelsio/status/986281024907755520?lang=en">l&#8217;ouverture de l&#8217;API</a>).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>La capture d&#8217;écran ci-dessous résume le contraste entre les deux situations : bien que dans les deux cas il s&#8217;agisse d&#8217;ouvrir ses données via une API, le résultat est opposé :</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/pieterlevelsapi.jpg" alt="pieterlevelsapi">
+</div>
+<div class="title">Figure 2. Pieter Levels explique ses raisons pour ouvrir ou fermer une API</div>
+</div>
+<div class="paragraph">
+<p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Il faut donc une appréciation fine des usages que l&#8217;ouverture d&#8217;une API permettra de stimuler.
+Un des effets les plus vertueux est celui d&#8217;une <strong>"caisse de résonance"</strong> : en réutilisant notre contenu pour leurs propres objectifs , les utilisateurs de l&#8217;API vont sans le vouloir faire la promotion de notre contenu, ce qui en renforce l&#8217;efficacité.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_l_écosystème_des_api">5. L&#8217;écosystème des API</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_a_une_multitude_d_api">a. Une multitude d&#8217;API</h3>
@@ -857,7 +909,7 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 <div class="content">
 <img src="../images/api-landscape-2017.jpg" alt="api landscape 2017">
 </div>
-<div class="title">Figure 2. The API landscape in 2017 by Mehdi Medjaoui</div>
+<div class="title">Figure 3. The API landscape in 2017 by Mehdi Medjaoui</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
@@ -868,8 +920,21 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 <div class="sect1">
 <h2 id="_pour_aller_plus_loin">Pour aller plus loin</h2>
 <div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.kissmyfrogs.com/mehdi-medjaoui-oauth-api-startup/">Mehdi Medjaoui : “Le design des API conditionne la forme du monde de demain”</a>. (🕒 10 min de lecture)</p>
+</li>
+<li>
+<p><a href="https://www.linkedin.com/pulse/au-del%C3%A0-de-la-technologie-penser-lapi-comme-un-produit-romain-lalanne/">Au-delà de la technologie : penser l&#8217;API comme un produit</a> (🕒 10 min  de lecture).</p>
+</li>
+<li>
+<p><a href="https://medium.com/@mercier_remi/c-est-quoi-une-api-f37ae350cb9">C’est quoi une API ? Une explication (compréhensible) pour les utilisateurs métier</a> (🕒 10 min de lecture)</p>
+</li>
+</ul>
+</div>
 <div class="paragraph">
-<p>Retrouvez le site complet : <a href="https://seinecle.github.io/mk99/">ici</a>.</p>
+<p>Retrouvez le site complet : <a href="https://seinecle.github.io/mk99/index-fr.html">ici</a>.</p>
 </div>
 <div class="paragraph">
 <p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
@@ -906,7 +971,7 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-11-19 11:54:52 CET
+Last updated 2019-01-02 11:08:42 CET
 </div>
 </div>
 </body>
