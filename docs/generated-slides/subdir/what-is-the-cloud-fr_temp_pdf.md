@@ -163,7 +163,7 @@ Mais même privé, le cloud conserve les caractéristiques de base d'un cloud: �
 Par exemple, les opérations qui ne représentent pas un risque de sécurité et qui nécessitent une capacité de calcul supérieure à ce que le cloud privé de l'entreprise peut fournir.
 
 == Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
+Retrouvez le site complet : https://seinecle.github.io/mk99/index-fr.html[ici].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 

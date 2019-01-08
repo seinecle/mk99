@@ -290,7 +290,7 @@ image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API lan
 - https://www.linkedin.com/pulse/au-del%C3%A0-de-la-technologie-penser-lapi-comme-un-produit-romain-lalanne/[Au-delà de la technologie : penser l'API comme un produit] (🕒 10 min  de lecture).
 - https://medium.com/@mercier_remi/c-est-quoi-une-api-f37ae350cb9[C’est quoi une API ? Une explication (compréhensible) pour les utilisateurs métier] (🕒 10 min de lecture)
 
-Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
+Retrouvez le site complet : https://seinecle.github.io/mk99/index-fr.html[ici].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 

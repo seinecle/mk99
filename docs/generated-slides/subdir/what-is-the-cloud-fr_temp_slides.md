@@ -205,7 +205,7 @@ Par exemple, les opérations qui ne représentent pas un risque de sécurité et
 
 == Pour aller plus loin
 == !
-Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
+Retrouvez le site complet : https://seinecle.github.io/mk99/index-fr.html[ici].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 

@@ -239,7 +239,7 @@ image::russian_dolls.jpg[align = "center", title = "Volumes de données"]
 |===
 
 == Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[ici].
+Retrouvez le site complet : https://seinecle.github.io/mk99/index-fr.html[ici].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 
