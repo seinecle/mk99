@@ -20,29 +20,13 @@ image::EMLyon_logo_corp.png[align="center"]
 
 == 1. Privacy: just one aspect of data protection
 
-// +
 image::Defining-data-protection.png[align="center", title="Defining data protection", book="keep"]
 {nbsp} +
 
 == 2. When is personal information considered "data"?
-
-// +
 At the most basic level, anything could count as "data" with possibly a personal character to it, including comments written about somebody in a personal notebook.
 
-In practice, "data" starts to to be considered as such when:
-
-// +
-This is information capable of being processed *automatically*
-
--> Hint: data on computers, not unstructured written notes
-
-// +
-*Or* information intended to be processed automatically
-
--> Hint: paper records to be fed in a computer (eg, via scanning), not any pile of paper on your desk.
-
-// +
-Or *structured information* that can be used to facilitate the retrieval of specific information on specific individuals
+In practice, "data" starts to to be considered as such when it can be *processed automatically* or when it consists in *structured records* that can be used to facilitate the retrieval of specific information on specific individuals.
 
 -> Hint: paper records, filing systems, databases
 

@@ -342,6 +342,10 @@ L'IA faible est généralement le résultat de l'application de systèmes expert
 // +
 *Donc l'IA est synonyme d'IA faible pour le moment, et couvre les trois familles de machine learning vues ci-dessus.*
 
+== Des vidéos sur le sujet
+- La qualité de la donnée, un enjeu pour le machine learning : https://youtu.be/tL7ojiOTQho?t=972
+- Intelligence artificielle faible et forte : quels impacts sur les métiers? https://youtu.be/xO8c257G4ms
+
 == Pour aller plus loin
 Retrouvez le site complet : https://seinecle.github.io/mk99/index-fr.html[ici].
 

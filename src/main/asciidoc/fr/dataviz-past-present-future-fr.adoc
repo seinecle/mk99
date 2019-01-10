@@ -374,6 +374,10 @@ Ceci est juste ma vision pour la dataviz, je serais heureux d'en discuter avec v
 
 **Publié en 2015**
 
+== Des vidéos sur le sujet
+
+- La data visualization : https://youtu.be/TlOW52_TPrE
+
 == Pour aller plus loin
 //+
 

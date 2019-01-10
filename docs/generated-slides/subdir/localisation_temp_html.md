@@ -16,27 +16,19 @@ last modified: {docdate}
 image::EMLyon_logo_corp.png[width="242" align="center"]
 {nbsp} +
 
-//ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
+ 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 
 == 1. Localization brings interesting new dimensions
 Localization relates activities to physical space, in at least 4 different ways:
 
-//ST: !
-Place: Where is this activity happening?
-
-//ST: !
-Distance: Are these two agents neighbors?
-
-//ST: !
-Movement: Is this agent travelling?
-
-(together with *speed* and *acceleration*)
-
-//ST: !
-Structure: How are these agents and activities *configured* in space?
+- Place: Where is this activity happening?
+- Distance: Are these two agents neighbors?
+- Movement: Is this agent travelling? (together with *speed* and *acceleration*)
+- Structure: How are these agents and activities *configured* in space?
 
 === a. Example - Facebook Local Awareness Feature
+
 image::fb-aware.png[align"center", title="Facebook Local Awareness Ad Feature"]
 {nbsp} +
 
@@ -51,6 +43,7 @@ video::-YE90ygswoU[youtube]
 {nbsp} +
 
 === b. Example - Placemeter
+
 image::placemeter.png[align"center", title="Placemeter analyzes pedestrian traffic through video"]
 {nbsp} +
 
@@ -66,16 +59,15 @@ video::irydHrRdpkY[youtube]
 {nbsp} +
 
 === c. Example - Data @GrandLyon
+
 image:logo-smart-data-grand-lyon.png[align"center", title="https://data.grandlyon.com/[Grand Lyon Data]"]
 
-//ST: !
-An initiative by the city of Lyon
 
 -> Making data open to foster innovation for citizens and businesses
 
 -> Includes many datasets with geographical relevance
 
-//ST: !
+// +
 Similar initiatives in large cities:
 
 https://data.amsterdam.nl/[image:amsterdam.gif[width=150]]
@@ -87,30 +79,29 @@ http://smartcityinnovationlab.com/[image:lisboa.png[width=150]]
 == 2. The visual power of maps
 === a. Map: useful metaphors with a political dimension
 
-- The visual metaphor of the map is widely understood
-
-- Makes exploration easy: all visible at once, while zoom allows for details as well
-
-- Multiple information cues (colors, symbols, shapes, layers, etc.)
-
-//ST: !
-- Keep in mind: maps are always *political*
-
-- Watch this extract from the TV series "The West Wing“, Season 2, Episode 16:
+The visual metaphor of the map is widely understood. It makes exploration easy: all is visible at once, while zoom allows for details as well.
+Multiple information cues (colors, symbols, shapes, layers, etc.) help display information.
+// +
+To keep in mind: maps always an interpretative layer on the territory they display.
+Watch this extract from the TV series "The West Wing“, Season 2, Episode 16:
 
 video::vVX-PrBRtTY[youtube]
 {nbsp} +
 
 === b. Example: how to explore the real estate market in the Netherlands
+
+image:waag.png[align"center", title="Visual exploration of real estate in NL"]
+
+(source: http://code.waag.org/buildings/)
+
 - Every single building of the Netherlands on a map
 - Colored by year of construction
 - With role (retail or housing?) and surface highlighted
 - Zoomable and draggable
 
-//ST: !
-http://code.waag.org/buildings/[image:waag.png[align"center", title="Visual exploration of real estate in NL"]]
 
 === c. Key resources to work with maps
+
 image::stamen.jpg[align="center", title="Stamen Design"]
 {nbsp} +
 
@@ -131,39 +122,34 @@ image::openstreetmap.png[align="center", title="Openstreetmap"]
 
 == 3. How to represent “space” in data format?
 === a. The specifity of geospatial data
+
 Data is traditionally stored in tables in relational databases, taking this form:
 
 image::table-example.png[align="center", title="A table with two entries"]
 {nbsp} +
 
-//ST: !
+
 A table can have millions of rows. How to retrieve information such as "get all customers living in Rotterdam"?
-
 "SQL" (Structured Query Language) is a system to express these kinds of queries.
-
-//ST: !
+// +
 In the table shown above, a query written in SQL look in the "Address" column and inspect all the text to find if "Rotterdam" is present or not.
-
-//ST: !
+// +
 This is highly inefficient (slow), and more complex queries would not work.
-
 For example, the table above could not be queried for "get all customers living in a 10 miles radius around Rotterdam".
-
-//ST: !
+// +
 So how to store ((geospatial data)) in a way that makes it easy to retrieve?
 
 === b. Solutions to store and retrieve geospatial data
+
 1. SQL solutions
 
 Even if SQL does not perform well on geospatial data "out of the box", extra modules have been developed to deal with it.
-
-//ST: !
+// +
 Microsoft SQL server since 2008:
 
 - Possible to store and query “geometric” and “geographic” objects
 - Possible to use complex queries on these objects
 
-//ST: !
 [start=2]
 2. NoSQL (((SQL vs NoSQL))) solutions
 
@@ -190,74 +176,58 @@ GeoJSon and TopoJSon: 2 data formats to represent geometric and geographic data 
 
 == 4. Two friends for localization: personalization and real-time
 Knowing the person, its location, at a precise time unlocks meaningful push notifications
-
-//ST: !
+// +
 Push notifications are these alerts sent by an app on your mobile, visible as transient icons.
-
-//ST: !
-Gets “push marketing” back on solid foundations:
-
-Push marketing actions only to the right person, at the right place, at the right time (and at the right frequency!)
+It gets “push marketing” back on solid foundations: only to the right person, at the right place, at the right time (and at the right frequency)
 
 == 5. Ending with a provocation: Challenging the usefulness of location
 === a. Localization is about people and __territories__
-- Data is a fungible and universal material (just 0s and 1s)
 
+- Data is a fungible and universal material (just 0s and 1s)
 - Geographical coordinates are perfectly universal (just need a longitude and latitude)
 
-and yet …
-
-//ST: !
-The logic of territories is shaping data: there is a geography of data.
-
-Cultural, social, political, linguistic, economic dimensions to data.
-
--> representations with a supposedly universal and transparent coordinate system blinds us to this fact.
-
-//ST: !
+and yet... the logic of territories is shaping data: there is a geography of data.
+Representations with a supposedly universal and transparent coordinate system blinds us to this fact.
+// +
 This argument is made by Frederic Martel (((Martel, Frederic))) in his book "Smart": Internet does not flatten everything into one big model. There are several Internets with their geography, politics and sociology.
 
-//ST: !
-https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=smart+frederic+martel&rh=i%3Aaps%2Ck%3Asmart+frederic+martel[image:smart.jpg[align="center", title="Smart by Frederic Martel"]]
+image:smart.jpg[align="center", title="Smart by Frederic Martel"]
 
-//ST: !
+Here are a few dimensions on which geography plays a strong role:
+
 - Data protection: http://www.darkreading.com/cloud/privacy-security-and-the-geography-of-data-protection-/a/d-id/1315480[not all countries are equal]
 
-//ST: !
-- Data handling devices
+// +
+- Data handling devices: India and Africa  have a larger shareof mobile devices.
 
-India and Africa  have ++ share of mobile devices
-
-//ST: !
-- Data production
-
-*Amazon Mechanical Turk* (((Amazon, Amazon Mechanical Turk))) is a service of data production through the hiring of a distributed crowd of workers. Tends to "erase distance".
-
+// +
+- Data production: *Amazon Mechanical Turk* (((Amazon, Amazon Mechanical Turk))) is a service of data production through the hiring of a distributed crowd of workers. It tends to "erase distance", since workers can be hired by anyone anywhere.
+// +
 Yet, the geographical distribution of workers on Amazon Mechanical Turk is far from even. The following figure is taken  http://aclweb.org/anthology/Q14-1007[from this study]:
 
 image::amt-distribution.png[align="center", title="Distribution of Amazon Mechanical Turk workers"]
 {nbsp} +
 
+It shows that the dream of "data and the web" erasing distances and geographical disparities is just a dream, social geography remains a strong factor in the structuring of remote workers.
+
 === b. Distributed systems – the end of territories?
 The libertarian dream of the cypher-punks: individuals transact without consideration for their nationality, currency, legal system, political regime.
-
-//ST: !
+// +
 Organizations, banking, voting systems, … any aggregated human activity could emerge without reference to local territories or institutions. Just groups of individuals transacting voluntarily and securely, without a notion of place or distance.
 
-//ST: !
+// +
 - Bitcoin: the currency for these transactions?
 - Torrent: The exchange platform for numeric goods?
 - Ethereum: the platform where contracts are made and executed?
 
-//ST: !
-https://www.amazon.com/This-Machine-Kills-Secrets-Whistleblowers/dp/0142180491/ref=sr_1_1?ie=UTF8&qid=1508079962&sr=8-1&keywords=this+machine+kills+secrets[image:cypherpunks.png[align="center",title="This machine kills secrets by Andy Greenberg"]]
+image:cypherpunks.png[align="center",title="This machine kills secrets by Andy Greenberg"]
 
 == The end
-//ST: !
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
+
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

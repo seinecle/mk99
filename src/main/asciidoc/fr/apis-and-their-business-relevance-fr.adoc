@@ -210,8 +210,13 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 
 image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui", book="keep"]
 
-== Pour aller plus loin
+== Des vidéos simples sur le sujet
 
+- Qu'est-ce qu'une API? https://youtu.be/yKlDe-dXNA4
+- L'API management expliqué à mon boss : https://youtu.be/vUI_y43ao2M
+
+== Pour aller plus loin
+// +
 - https://www.kissmyfrogs.com/mehdi-medjaoui-oauth-api-startup/[Mehdi Medjaoui : “Le design des API conditionne la forme du monde de demain”]. (🕒 10 min de lecture)
 - https://www.linkedin.com/pulse/au-del%C3%A0-de-la-technologie-penser-lapi-comme-un-produit-romain-lalanne/[Au-delà de la technologie : penser l'API comme un produit] (🕒 10 min  de lecture).
 - https://medium.com/@mercier_remi/c-est-quoi-une-api-f37ae350cb9[C’est quoi une API ? Une explication (compréhensible) pour les utilisateurs métier] (🕒 10 min de lecture)
