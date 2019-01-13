@@ -166,8 +166,6 @@ image::uber-databook.png[pdfwidth = "80%", align = "center", title = "Databook p
 == !
 
 
-
-== !
 Les employés peuvent rechercher dans cette base de données pour découvrir et accéder aux données dont ils ont besoin.
 
 == !
@@ -241,9 +239,10 @@ Les données sociodémographiques sont généralement bien structurées ou facil
 Elles ont une longue histoire de collecte et d'analyse, essentiellement depuis que le recensement existe.
 Les données de comportement permettent de profiler les individus beaucoup plus précisément que les données sociodémographiques seules : les individus peuvent être caractérisés par leurs actes et leurs goûts, bien au-delà de ce qu'un âge ou un état matrimonial pourrait définir.
 
+
+== !
 Comment les données de comportement peuvent-elles "battre" les données sociodémo, en terme de précision?
 Il est difficile de prédire avec une grande précision l'orientation politique, religieuse ou sexuelle d'un individu en fonction de son code postal, de son sexe et de son âge. http://www.pnas.org/content/110/15/5802[Une équipe de recherche a pu évaluer ces attributs personnels avec une grande précision basée sur les likes que les individus font sur les pages et les messages Facebook.] L'orientation politique (précision de 85%), l'orientation sexuelle (précision de 75% à 88%) et l'orientation religieuse (exactitude de 82%) peuvent être déterminées pour les personnes ayant fait en moyenne 170 likes.
-
 
 == !
 Mais les données comportementales ne sont généralement pas bien structurées, ce qui les rend plus coûteux à collecter, en terme de solution technologique, que de collecter des données sociodémographiques.
@@ -299,6 +298,12 @@ image::russian_dolls.jpg[align = "center", title = "Volumes de données"]
 1 pétaoctet (Pb)
 | 20 Pb = Google Maps en 2013
 |===
+
+== Des vidéos simples sur le sujet
+== !
+
+- Qu'est-ce que la donnée? https://youtu.be/ODb-CaVmczY
+- Que faire de la donnée? https://youtu.be/mthHsZ0oC8A
 
 == Pour aller plus loin
 == !
