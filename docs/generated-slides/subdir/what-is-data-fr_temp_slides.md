@@ -193,10 +193,10 @@ image::tweet.png[align = "center", book = "garder"]
 - Le texte est formaté en *texte brut* (ce qui signifie, pas de formatage spécial), par opposition aux *formats d'échange de données* qui sont des marques de mise en forme ajoutées au texte pour faciliter sa lisibilité par un logiciel (https://codingislove.com/json-tutorial-indepth/[csv, json et xml]).
 
 == !
-- L'*encodage* (((data, encoding))) du texte est UTF-8 (un des encodages issus de la norme Unicode). L'encodage traite de la question : comment représenter les alphabets, les signes (par exemple: emojis) et les symboles, de différentes langues, dans le texte? UTF-8 est un encodage qui est l'un des plus universels.
+- L'*encodage*(((data, encoding))) du texte est UTF-8 (un des encodages issus de la norme Unicode). L'encodage traite de la question : comment représenter les alphabets, les signes (par exemple: emojis) et les symboles, de différentes langues, dans le texte? UTF-8 est un encodage qui est l'un des plus universels.
 
 == !
-- Le tweet fait partie d'une liste de tweets. La liste représente la *structure de données* (((données, structure))) de l'ensemble de données, c'est la façon dont les données sont organisées. Il existe de nombreuses structures de données alternatives: tableaux, ensembles, "dics", "maps" ...
+- Le tweet fait partie d'une liste de tweets. La liste représente la *structure de données*(((données, structure))) de l'ensemble de données, c'est la façon dont les données sont organisées. Il existe de nombreuses structures de données alternatives: tableaux, ensembles, "dics", "maps" ...
 
 == !
 - Le tweet est stocké sous forme d'image (fichier png) sur le disque dur. "png" est le *format de fichier*. Les données sont *persistées* en tant que fichier sur le disque (elles auraient pu être stockées dans une base de données à la place).
@@ -204,7 +204,7 @@ image::tweet.png[align = "center", book = "garder"]
 == !
 ==== b. Données tabulaires
 == !
-*Les données tabulaires* (((données, tabulaires))) sont un moyen courant de gérer les ensembles de données, en les organisant en lignes et en colonnes :
+*Les données tabulaires*(((données, tabulaires))) sont un moyen courant de gérer les ensembles de données, en les organisant en lignes et en colonnes :
 
 == !
 [.stretch]
@@ -214,35 +214,39 @@ image::table.png[pdfwidth = "100%", align = "center", title = "données tabulair
 
 ==== c. Données "first party", "second party" et "third party"
 == !
-- *First party data* (((données, "first party data"))): les données générées par les activités de votre propre organisation.
+- *First party data*(((données, "first party data"))): les données générées par les activités de votre propre organisation.
 Votre organisation en est propriétaire, ce qui ne signifie pas que le consentement des utilisateurs n'est pas requis en ce qui concerne les données personnelles.
 
 == !
-- *Second party data* (((données, "second party data"))): les données acquises auprès de partenaires qui ont généré cette donnée.
+- *Second party data*(((données, "second party data"))): les données acquises auprès de partenaires qui ont généré cette donnée.
 Les partenaires mettent ces données, dont ils sont propriétaires, à votre disposition dans le cadre d'un accord ou d'une transaction payante.
 
 == !
-- *Données tierces ou "third party data"* (((données, "third party data"))): les données acquises auprès de revendeurs.
+- *Données tierces ou "third party data"*(((données, "third party data"))): les données acquises auprès de revendeurs.
 Ces données sont le plus souvent acquises via une transaction de marché.
 
 == !
 ==== d. Données sociodémo vs données de comportement
 == !
-- Les données sociodémogaphiques ou *sociodémo* (((données, sociodémo))) se réfèrent aux informations sur les individus, décrivant les attributs fondamentaux de leur identité sociale: âge, sexe, lieu de résidence, profession, statut matrimonial et nombre d'enfants.
+- Les données sociodémogaphiques ou *sociodémo*(((données, sociodémo))) se réfèrent aux informations sur les individus, décrivant les attributs fondamentaux de leur identité sociale: âge, sexe, lieu de résidence, profession, statut matrimonial et nombre d'enfants.
 
 == !
-- *Les données de comportement ou "behavior data"* (((données, behavior data))) se réfèrent à toute trace numérique laissée par l'individu au cours de sa vie : clics sur des pages web, likes sur Facebook, transactions d'achat, commentaires postés sur Tripadvisor ...
+- *Les données de comportement ou "behavior data"*(((données, behavior data))) se réfèrent à toute trace numérique laissée par l'individu au cours de sa vie : clics sur des pages web, likes sur Facebook, transactions d'achat, commentaires postés sur Tripadvisor ...
 
 
 == !
 Les données sociodémographiques sont généralement bien structurées ou faciles à structurer.
 Elles ont une longue histoire de collecte et d'analyse, essentiellement depuis que le recensement existe.
-Les données de comportement permettent de profiler les individus beaucoup plus précisément que les données sociodémographiques seules : les individus peuvent être caractérisés par leurs actes et leurs goûts, bien au-delà de ce qu'un âge ou un état matrimonial pourrait définir.
 
+== !
+Les données de comportement permettent de profiler les individus beaucoup plus précisément que les données sociodémographiques seules : les individus peuvent être caractérisés par leurs actes et leurs goûts, bien au-delà de ce qu'un âge ou un état matrimonial pourrait définir.
 
 == !
 Comment les données de comportement peuvent-elles "battre" les données sociodémo, en terme de précision?
-Il est difficile de prédire avec une grande précision l'orientation politique, religieuse ou sexuelle d'un individu en fonction de son code postal, de son sexe et de son âge. http://www.pnas.org/content/110/15/5802[Une équipe de recherche a pu évaluer ces attributs personnels avec une grande précision basée sur les likes que les individus font sur les pages et les messages Facebook.] L'orientation politique (précision de 85%), l'orientation sexuelle (précision de 75% à 88%) et l'orientation religieuse (exactitude de 82%) peuvent être déterminées pour les personnes ayant fait en moyenne 170 likes.
+Il est difficile de prédire avec une grande précision l'orientation politique, religieuse ou sexuelle d'un individu en fonction de son code postal, de son sexe et de son âge. http://www.pnas.org/content/110/15/5802[Une équipe de recherche a pu évaluer ces attributs personnels avec une grande précision basée sur les likes que les individus font sur les pages et les messages Facebook.]
+
+== !
+L'orientation politique (précision de 85%), l'orientation sexuelle (précision de 75% à 88%) et l'orientation religieuse (exactitude de 82%) peuvent être déterminées pour les personnes ayant fait en moyenne 170 likes.
 
 == !
 Mais les données comportementales ne sont généralement pas bien structurées, ce qui les rend plus coûteux à collecter, en terme de solution technologique, que de collecter des données sociodémographiques.

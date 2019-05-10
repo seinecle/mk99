@@ -197,10 +197,10 @@ image::tweet.png[align="center",book="keep"]
 - The text is formatted in *plain text* (meaning, no special formatting), as opposed to *data-interchange formats* which are formatting marks added to the text to facilitate its readability by software (check https://codingislove.com/json-tutorial-indepth/[csv, json and xml]).
 
 == !
-- The *encoding* (((data, encoding))) of the text is UTF-8 (one of encodings deriving from the Unicode standard). Encoding deals with the issue: how to represent alphabets, signs (for instance: emojis) and symbols, from different languages, in text? UTF-8 is an encoding which is one of the most universal.
+- The *encoding*(((data, encoding))) of the text is UTF-8 (one of encodings deriving from the Unicode standard). Encoding deals with the issue: how to represent alphabets, signs (for instance: emojis) and symbols, from different languages, in text? UTF-8 is an encoding which is one of the most universal.
 
 == !
-- The tweet is part of a list of tweets. The list represents the *data structure* (((data, structure))) of the dataset, it is the way the data is organized. There are many alternative data structures: arrays, sets, dics, maps...
+- The tweet is part of a list of tweets. The list represents the *data structure*(((data, structure))) of the dataset, it is the way the data is organized. There are many alternative data structures: arrays, sets, dics, maps...
 
 == !
 - The tweet is stored as a picture (png file) on the hard disk. "png" is the *file format*. The data is *persisted* as a file on disk (could have been stored in a database instead).
@@ -208,7 +208,7 @@ image::tweet.png[align="center",book="keep"]
 == !
 ==== b. Tabular data
 == !
-*Tabular data* ((( data, tabular))) is a common way to handle datasets, by organizing it in lines and columns:
+*Tabular data*((( data, tabular))) is a common way to handle datasets, by organizing it in lines and columns:
 
 == !
 [.stretch]
@@ -218,24 +218,24 @@ image::table.png[pdfwidth="100%", align="center", title="tabular data", book="ke
 
 ==== c. First party, second party and third party data
 == !
-- *First party data* (((data, "first party data"))): the data generated through the activities of your own organization.
-Your organization own it, which does not mean that consent from users is not required, when it comes to personal data.
+- *First party data*(((data, "first party data"))): the data generated through the activities of your own organization.
+Your organization controls it, which does not mean that consent from users is not required, when it comes to personal data.
 
 == !
-- *Second party data* (((data, "second party data"))) : the data acquired from a partner, which generated and owns this data.
+- *Second party data*(((data, "second party data"))) : the data acquired from a partner, which generated and controls this data.
 The partner makes these data available to you through an agreement (paying or not).
 
 == !
-- *Third party data* (((data, "third party data"))): the data acquired from a reseller.
+- *Third party data*(((data, "third party data"))): the data acquired from a reseller.
 This data is acquired through a market transaction.
 
 == !
 ==== d. Sociodemo data vs behavior data
 == !
-- Sociodemogaphic or *sociodemo* (((data, sociodemo))) data refers to information about individuals, describing fundamental attributes of their social identity: age, gender, place of residence, occupation, marital status and number of kids.
+- Sociodemogaphic or *sociodemo*(((data, sociodemo))) data refers to information about individuals, describing fundamental attributes of their social identity: age, gender, place of residence, occupation, marital status and number of kids.
 
 == !
-- *Behavior data* (((data, behavior))) refers to any digital trace left by the individual in the course of it life: clicks on web pages, likes on Facebook, purchase transactions, comments posted on Tripadvisor...
+- *Behavior data*(((data, behavior))) refers to any digital trace left by the individual in the course of it life: clicks on web pages, likes on Facebook, purchase transactions, comments posted on Tripadvisor...
 
 
 == !

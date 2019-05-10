@@ -86,7 +86,7 @@ The https://en.wikipedia.org/wiki/International_Safe_Harbor_Privacy_Principles[S
 
 
 == !
-In October 2015, https://en.wikipedia.org/wiki/Max_Schrems[Maximillian Schrems] (a student in law in Austria) ((("Schrems, Max"))) launched a lawsuit against Facebook for failure to protect his personal data against the spying of the NSA in the USA.
+In October 2015, https://en.wikipedia.org/wiki/Max_Schrems[Maximillian Schrems] (a student in law in Austria)((("Schrems, Max"))) launched a lawsuit against Facebook for failure to protect his personal data against the spying of the NSA in the USA.
 
 
 == !
@@ -148,7 +148,7 @@ Before examining the GDPR in more details, we define the legal terms used in it:
 
 
 == !
-Source for these key definitions : a synthetic https://github.com/seinecle/mk99/blob/master/src/main/asciidoc/resources/DATAIKU-WP-DATA-GDPR.pdf[whitepaper on the GDPR by Dataiku]. (((Dataiku)))
+Source for these key definitions : a synthetic https://github.com/seinecle/mk99/blob/master/src/main/asciidoc/resources/DATAIKU-WP-DATA-GDPR.pdf[whitepaper on the GDPR by Dataiku].(((Dataiku)))
 
 
 == !
@@ -157,7 +157,7 @@ Source for these key definitions : a synthetic https://github.com/seinecle/mk99/
 
 
 == !
-Personal data (((data, personal data))) is any information related to a human being (or data subject) that can be used to directly or indirectly identify that person.
+Personal data(((data, personal data))) is any information related to a human being (or data subject) that can be used to directly or indirectly identify that person.
 
 For example: name, photos, email addresses, bank details, posts on social networking websites, medical information, IP addresses, etc.
 
@@ -168,7 +168,7 @@ For example: name, photos, email addresses, bank details, posts on social networ
 
 
 == !
-Sensitive data (((data, sensitive data))) is a special category of personal data (including personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade-union membership, and data concerning health or sex life) to which additional protections apply.
+Sensitive data(((data, sensitive data))) is a special category of personal data (including personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade-union membership, and data concerning health or sex life) to which additional protections apply.
 
 
 == !
@@ -221,7 +221,7 @@ Starting in 2018 with the ((GDPR)) (see next), the DP is co-responsible with the
 
 
 == !
-Prior consent (((prior consent))) is required before collecting personal data in view of processing it:
+Prior consent(((prior consent))) is required before collecting personal data in view of processing it:
 
 - Data collection policy should be made clearly available to users
 - Opt out should be possible
@@ -247,7 +247,7 @@ Time out: information should be deleted when service stops. In France, there is 
 
 
 == !
--> Information should be available on request (((data, portability of)))
+-> Information should be available on request(((data, portability of)))
 
 In 2011 Max Schrems requested all his Facebook data. He received 1,200 pages of it.
 
@@ -329,7 +329,7 @@ Under the ((GDPR)), companies will no longer be able to use long, illegible term
 
 
 == !
-Increased regulation surrounding the disclosure of *data breaches* (((data, data breaches))); specifically, much quicker reporting is required (within 72 hours).
+Increased regulation surrounding the disclosure of *data breaches*(((data, data breaches))); specifically, much quicker reporting is required (within 72 hours).
 
 
 == !
@@ -342,7 +342,7 @@ EU data subjects have expanded rights when it comes to data protection, includin
 
 
 == !
-- the *right to be forgotten* (((right to be forgotten))) (have their data erased),
+- the *right to be forgotten*(((right to be forgotten))) (have their data erased),
 - the right to access (obtain information about exactly what data is being processed where and for what purpose),
 - and the right to data portability (receive a copy of the personal data concerning them).
 
@@ -357,7 +357,7 @@ Citizens now also have the right to question and fight decisions that affect the
 
 
 == !
-*Privacy by design* (((privacy, privacy by design))) is a legal requirement to consider data privacy on the onset of all projects and initiatives, not as an afterthought.
+*Privacy by design*(((privacy, privacy by design))) is a legal requirement to consider data privacy on the onset of all projects and initiatives, not as an afterthought.
 
 
 

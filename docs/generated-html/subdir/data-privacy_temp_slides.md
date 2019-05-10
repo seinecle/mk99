@@ -35,7 +35,7 @@ At the most basic level, anything could count as "data" with possibly a personal
 
 In practice, "data" starts to to be considered as such when it can be *processed automatically* or when it consists in *structured records* that can be used to facilitate the retrieval of specific information on specific individuals.
 
--> Hint: paper records, filing systems, databases
+-> Hint: paper records, filing systems, databases.
 
 == 3. Personal data matters because of privacy
 == !
@@ -70,7 +70,7 @@ This article from the Declaration is found in similar forms in most of the conve
 
 
 == !
-This *right to privacy* (((privacy, right to privacy))) enables individuals to define their identity in relation to the world, by giving each individual the power to control what to keep for themselves, and what to reveal / share with the world.
+This *right to privacy*(((privacy, right to privacy))) enables individuals to define their identity in relation to the world, by giving each individual the power to control what to keep for themselves, and what to reveal / share with the world.
 
 
 == !
@@ -130,7 +130,7 @@ image::truman.jpg[align="center", title="The Truman Show, 1998", book="keep"]
 == !
 
 //ST]: !
-Thanks to whistleblowers like https://en.wikipedia.org/wiki/Edward_Snowden[Edward Snowden], ((("Snowden, Edward"))) a former contractor for the National Security Agency - NSA, the extent of privacy breaches by governmental agencies is now better known.
+Thanks to whistleblowers like https://en.wikipedia.org/wiki/Edward_Snowden[Edward Snowden],((("Snowden, Edward"))) a former contractor for the National Security Agency - NSA, the extent of privacy breaches by governmental agencies is now better known.
 
 This trailer for "CitizenFour" gives a sense of the dangers whistleblowers face when revealing how governmental agencies spy on their citizens:
 
@@ -168,7 +168,7 @@ Her argument is that besides "surveillance" and "lack of privacy", companies lik
 
 
 == !
-*Tufekci* ((("Tufekci, Zeynep"))) does not argue that Google, Facebook or the likes inherently have anti-democratic purposes, but that:
+*Tufekci*((("Tufekci, Zeynep"))) does not argue that Google, Facebook or the likes inherently have anti-democratic purposes, but that:
 
 
 == !
@@ -198,7 +198,7 @@ The topic engages the https://en.wikipedia.org/wiki/Corporate_social_responsibil
 
 
 == !
-The nature of the *business model* (((business model, based on consumer profiling))) itself - profiling consumers in the most specific way - has profound consequences on the design of the environment surrounding individuals.
+The nature of the *business model*(((business model, based on consumer profiling))) itself - profiling consumers in the most specific way - has profound consequences on the design of the environment surrounding individuals.
 
 
 == !
@@ -233,7 +233,7 @@ image::amazon-echo.jpg[align="center", title="Echo Alexa", book="keep"]
 
 
 == !
-*Echo Alexa* (((Amazon, Echo Alexa))) is a home assistant with a conversational interface, providing services personalized with the data provided by the user.
+*Echo Alexa*(((Amazon, Echo Alexa))) is a home assistant with a conversational interface, providing services personalized with the data provided by the user.
 
 == The end
 == !

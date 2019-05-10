@@ -45,7 +45,7 @@ Les volumes de données augmentent à un rythme *accéléré*. Selon des sources
 (((données, structurées vs non structurées)))
 
 ==== A - Données structurées
-*Données structurées* (((données structurées))) se réfère à des données formatées et organisées selon un ensemble de règles bien défini, ce qui les rend *lisibles par une machine*. Par exemple, les codes postaux sont un ensemble de données structuré car ils suivent une convention précise concernant le nombre de lettres et de chiffres qui les composent, ce qui facilite l'identification et leur « lecture » par un lecteur optique et un logiciel. Pareil avec les plaques d'immatriculation, les numéros de sécurité sociale ... Mais ce sont des exemples simples.
+*Données structurées*(((données structurées))) se réfère à des données formatées et organisées selon un ensemble de règles bien défini, ce qui les rend *lisibles par une machine*. Par exemple, les codes postaux sont un ensemble de données structuré car ils suivent une convention précise concernant le nombre de lettres et de chiffres qui les composent, ce qui facilite l'identification et leur « lecture » par un lecteur optique et un logiciel. Pareil avec les plaques d'immatriculation, les numéros de sécurité sociale ... Mais ce sont des exemples simples.
 
 // +
 Qu'en est-il, par exemple, d'un formulaire d'impôt? Si chaque champ du formulaire est bien défini, alors les données collectées à travers le formulaire peuvent être dites « structurées ». En revanche, une forme où l'utilisateur peut écrire du texte libre (pensez à un commentaire sur un article de blog, ou un espace vide où les utilisateurs peuvent écrire un commentaire) produit des données non structurées : données qui ne suivent pas une convention spéciale pour leur taille et leur contenu. C'est généralement beaucoup plus difficile à traiter par le logiciel, donc à analyser.
@@ -57,7 +57,7 @@ image::book.png[align = "center", title="Un livre de comptes montrant des donné
 {nbsp} +
 
 ==== B - Données non structurées
-*Données non structurées* (((données non structurées))) se réfère à des ensembles d'éléments "indisciplinés": texte de n'importe quelle longueur, sans catégorisation appropriée, codé dans différents formats, y compris éventuellement des images, du son, des coordonnées géographiques...
+*Données non structurées*(((données non structurées))) se réfère à des ensembles d'éléments "indisciplinés": texte de n'importe quelle longueur, sans catégorisation appropriée, codé dans différents formats, y compris éventuellement des images, du son, des coordonnées géographiques...
 
 // +
 Ces ensembles de données sont beaucoup plus difficiles à traiter et à analyser, car ils sont pleins d'exceptions et de différences. Mais ils sont porteurs d'informations généralement riches: texte libre, informations enregistrées "dans la nature" ...
@@ -74,7 +74,7 @@ En un mot, http://www.zdnet.com/article/volume-velocity-and-variety-understandin
 image::firehose.jpg[align = "center", title="Le firehose de Twitter"]
 {nbsp} +
 
-- *Les données de capteur* (((données de capteur)) sont également susceptibles d'augmenter la vitesse. Alors que les images, les tweets, les enregistrements individuels ... sont des données mono-élément envoyées à intervalles réguliers, de plus en plus de capteurs peuvent envoyer des données *en flux continu* (mesures de mouvement, son, etc.)
+- *Les données de capteur*(((données de capteur)) sont également susceptibles d'augmenter la vitesse. Alors que les images, les tweets, les enregistrements individuels ... sont des données mono-élément envoyées à intervalles réguliers, de plus en plus de capteurs peuvent envoyer des données *en flux continu* (mesures de mouvement, son, etc.)
 
 // +
 Ainsi, la vitesse pose des défis qui lui sont propres : alors qu'un système peut gérer (stocker, analyser) 100 Go de données dans un temps donné (jour ou mois), il peut ne pas être capable de le faire en une seconde. Le big data fait référence aux problèmes et aux solutions que soulève la vitesse des données.
@@ -141,7 +141,7 @@ image::Réduction-des-coûts-de-stockage-des-données.png[align="center", title=
 À la fin des années 1990, les développeurs de logiciels ont rapidement changé d'habitudes : ils avaient tendance à utiliser de plus en plus de logiciels libres et à publier leurs logiciels en tant que logiciels libres.
 Jusque-là, la plupart des logiciels étaient "à source fermée": vous achetez un logiciel *sans possibilité* de réutiliser / modifier / augmenter son code source. Vous ne pouvez que l'utiliser tel quel.
 // +
-L'open source (((open source))) facilite l'accès aux logiciels construits par d'autres, il est possible d'utiliser ces logiciels libres pour développer de nouvelles choses. Après plusieurs décennies, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[le logiciel open source s'est banalisé].
+L'open source(((open source))) facilite l'accès aux logiciels construits par d'autres, il est possible d'utiliser ces logiciels libres pour développer de nouvelles choses. Après plusieurs décennies, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[le logiciel open source s'est banalisé].
 
 === f. Les promesses et attentes exagérées sur le big data
 
@@ -192,11 +192,11 @@ Vous trouverez une https://mattturck.com/bigdata2017/[version haute résolution 
 
 == 5. Quel est l'avenir du Big Data?
 === a. Plus de données arrivent
-L'*Internet des objets* (((IoT - Internet des objets))) désigne l' https://seinecle.github.io/IoT4Entrepreneurs/[extension d'Internet aux objets, au-delà des pages web ou des emails].
+L'*Internet des objets*(((IoT - Internet des objets))) désigne l' https://seinecle.github.io/IoT4Entrepreneurs/[extension d'Internet aux objets, au-delà des pages web ou des emails].
 // +
-L' *IoT* (((IoT - Internet des objets))) est utilisé pour *faire* des choses (affichage d'informations à l'écran, robots pilotes, etc.) mais aussi beaucoup pour *collecter des données* dans leurs environnements, via des capteurs.
+L' *IoT*(((IoT - Internet des objets))) est utilisé pour *faire* des choses (affichage d'informations à l'écran, robots pilotes, etc.) mais aussi beaucoup pour *collecter des données* dans leurs environnements, via des capteurs.
 // +
-Ainsi, le développement des *objets connectés* (((IoT - Internet des objets))) conduira à une augmentation considérable du volume de données collectées.
+Ainsi, le développement des *objets connectés*(((IoT - Internet des objets))) conduira à une augmentation considérable du volume de données collectées.
 
 === b. Les cadres réglementaires vont augmenter en complexité
 Les impacts sociétaux du big data et de l'IA ne sont pas banals, allant de la discrimination raciale, financière et médicale à des fuites géantes de données, ou au déséquilibre économique à l'ère des robots et de l'IA sur le lieu de travail.
@@ -217,11 +217,11 @@ image::gtrends.png[pdfwidth="100%", align="center", title="Recherches Google pou
 Quelles sont les différences entre ces termes?
 
 * "Big Data" est maintenant un terme générique.
-* *Machine learning* (((apprentissage automatique))) met l'accent sur les capacités de génie scientifique et logiciel permettant de faire quelque chose d'utile avec les données (prédire, catégoriser, marquer ...)
+* *Machine learning*(((apprentissage automatique))) met l'accent sur les capacités de génie scientifique et logiciel permettant de faire quelque chose d'utile avec les données (prédire, catégoriser, marquer ...)
 // +
-* *Intelligence artificielle* (((intelligence artificielle))) met l'accent sur les possibilités "quasi-humaines" offertes par l'apprentissage automatique. Le terme est souvent utilisé de manière interchangeable avec l'apprentissage automatique. L'intelligence artificielle est alimentée par des données, de sorte que l'avenir des big data se recoupe avec ce que deviendra l'IA.
+* *Intelligence artificielle*(((intelligence artificielle))) met l'accent sur les possibilités "quasi-humaines" offertes par l'apprentissage automatique. Le terme est souvent utilisé de manière interchangeable avec l'apprentissage automatique. L'intelligence artificielle est alimentée par des données, de sorte que l'avenir des big data se recoupe avec ce que deviendra l'IA.
 // +
-* Et *data science* (((data science)))? C'est un terme général englobant l'apprentissage automatique, les statistiques et de nombreuses méthodes analytiques pour travailler avec les données et les interpréter. Souvent utilisé de manière interchangeable avec l'apprentissage automatique. *Data scientist* (((data scientist))) est une description d'emploi devenue commune, y compris en français.
+* Et *data science*(((data science)))? C'est un terme général englobant l'apprentissage automatique, les statistiques et de nombreuses méthodes analytiques pour travailler avec les données et les interpréter. Souvent utilisé de manière interchangeable avec l'apprentissage automatique. *Data scientist*(((data scientist))) est une description d'emploi devenue commune, y compris en français.
 
 == Pour aller plus loin
 Retrouvez le site complet : https://seinecle.github.io/mk99/[here].

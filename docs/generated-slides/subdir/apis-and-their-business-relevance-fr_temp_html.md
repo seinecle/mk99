@@ -19,7 +19,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 == 1. Définition de l'API
 API: acronyme de *Application Programming Interface*. Une ((API)) est le moyen de rendre les logiciels "faciles à brancher et à partager" avec d'autres programmes.
- (((API, définition)))
+(((API, définition)))
 // +
 Une API est simplement un groupe de règles (que l'on peut aussi appeler une convention, ou un accord ...) que les programmeurs suivent lorsqu'ils écrivent la partie de leur code qui est en charge de communiquer avec d'autres logiciels.
 Ces règles sont ensuite publiées (sur une page Web par exemple), afin que toute personne ayant besoin de se connecter au programme puisse apprendre quelles règles suivre.
@@ -41,7 +41,7 @@ Ces reçus, factures ... peuvent être imprimés et envoyés par la poste (cette
 Avec l'évolution de l'informatique dans les années 1970 et 1980, un nouveau système d'échange de données et de documents est apparu: l'échange d'informations par ordinateur : l'https://fr.wikipedia.org/wiki/%C3%89change_de_donn%C3%A9es_informatis%C3%A9[Échange de données informatisé (EDI)].
 
 === a. EDI: Échange de données informatisé
-*EDI* (((EDI - Échange de données informatisé))) n'est pas un échange de pièces jointes dans les emails ou via un transfert de fichiers sur un site web, car les emails et les sites n'existaient pas à l'époque! (Les courriels et le Web ont été adoptés par les entreprises à la fin des années 1990).
+*EDI*(((EDI - Échange de données informatisé))) n'est pas un échange de pièces jointes dans les emails ou via un transfert de fichiers sur un site web, car les emails et les sites n'existaient pas à l'époque! (Les courriels et le Web ont été adoptés par les entreprises à la fin des années 1990).
 // +
 Au lieu de cela, l'échange de données via EDI consistait à utiliser des outils électroniques de transmission par l'équivalent d'une ligne téléphonique (comme le fax mais encore plus compliqué). Ce système d'EDI était complexe et lourd pour les raisons suivantes :
 
@@ -67,11 +67,11 @@ Il devenait de plus en plus commode de définir des conventions simples et unive
 
 // +
 - *API* pour faire court
-- *web services* (((API, web service)))
+- *web services*(((API, web service)))
 - *REST* API (voir ci-dessous).
 
 // +
-Une *API Web* (((API, web service))) étend la logique des API que nous avons vues au début de ce document, à la communication logicielle *via le web*. Pour rappel, une API est une convention suivie lors de l'écriture d'un logiciel, rendant ce logiciel disponible pour d'autres logiciels.
+Une *API Web*(((API, web service))) étend la logique des API que nous avons vues au début de ce document, à la communication logicielle *via le web*. Pour rappel, une API est une convention suivie lors de l'écriture d'un logiciel, rendant ce logiciel disponible pour d'autres logiciels.
 
 // +
 [NOTE]
@@ -83,7 +83,7 @@ Exemple: l'API de Microsoft PowerPoint permet l'importation de tableaux Excel da
 Une API Web est une API qui permet à deux logiciels de communiquer via Internet. *Ils n'ont pas besoin d'être installés sur le même ordinateur.*
 
 === c. Les avantages d'une API Web par rapport à un EDI
-- Contrairement à un *EDI* (((API, différence avec les EDI))), une API web supprime toute contrainte technique spécifique à l'industrie. Les API Web sont simplement une convention suivant les standards du web pour envoyer et recevoir des données sur Internet, sans dire quoi que ce soit sur le contenu des données.
+- Contrairement à un *EDI*(((API, différence avec les EDI))), une API web supprime toute contrainte technique spécifique à l'industrie. Les API Web sont simplement une convention suivant les standards du web pour envoyer et recevoir des données sur Internet, sans dire quoi que ce soit sur le contenu des données.
 // +
 - Les données envoyées et reçues peuvent être des factures, des pages Web, des horaires de train, de l'audio, de la vidéo ... peu importe.
 - Contrairement à un EDI, une entreprise qui crée une API web peut choisir de laisser un accès *ouvert* à son API : n'importe quel ordinateur capable de se brancher à Internet peut alors se brancher à ce que cette entreprise rend disponible via cette API (rappelez-vous que les EDI ont besoin que les deux parties aient un accord préétabli).
@@ -93,7 +93,7 @@ Une API Web est une API qui permet à deux logiciels de communiquer via Internet
 // +
 [WARNING]
 ====
-Dire que les API sont ouvertes ne signifie pas une absence de sécurité (((API, sécurité de))): la communication via les API peut facilement être identifiée et cryptée, selon les besoins.
+Dire que les API sont ouvertes ne signifie pas une absence de sécurité(((API, sécurité de))): la communication via les API peut facilement être identifiée et cryptée, selon les besoins.
 ====
 
 // +
@@ -104,7 +104,7 @@ Deux conventions d'API web populaires ont émergé dans les années 1990 et ont 
 - https://fr.wikipedia.org/wiki/Representational_state_transfer[((REST: Representational State Transfer))]
 
 // +
-*Les API REST* (((API, protocole REST))) sont finalement devenues les plus répandues, car elles utilisent les mêmes principes simples que les pages Web utilisent pour être transférées sur Internet (le protocole "http" que vous voyez dans les adresses de pages web).
+*Les API REST*(((API, protocole REST))) sont finalement devenues les plus répandues, car elles utilisent les mêmes principes simples que les pages Web utilisent pour être transférées sur Internet (le protocole "http" que vous voyez dans les adresses de pages web).
 C'est pourquoi les API sont souvent appelées https://www.youtube.com/watch?v=7YcW25PHnAA[ API REST, présentées dans cette vidéo pédagogique].
 // +
 En 2000-2010, il est devenu de plus en plus facile et naturel d'adopter la convention REST pour mettre son logiciel et ses données à la disposition d'un autre ordinateur via Internet.
@@ -156,7 +156,7 @@ Prenons l'exemple d'une entreprise de transport comme la SNCF française qui tro
 - La SNCF ajoute https://www.digital.sncf.com/startup/api[une API et sa documentation], mettant les données à la disposition des développeurs capables de https://youtu.be/7YcW25PHnAA[se connecter aux API, ce qui est une compétence de base dans le développement de logiciels].
 - Les entrepreneurs et les programmeurs en général pourront accéder aux données via l'API et les utiliser, en créant de https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja[nouveaux services basés sur ces informations sur les trains].
 
-L'*Open data* (((open data))) désigne ce mouvement pour rendre les jeux de données accessibles à un large public, et les API web ont été un ingrédient technologique clé dans ce mouvement.
+L'*Open data*(((open data))) désigne ce mouvement pour rendre les jeux de données accessibles à un large public, et les API web ont été un ingrédient technologique clé dans ce mouvement.
 
 == 4. Votre entreprise doit-elle ouvrir une API pour partager ses données?
 
@@ -195,7 +195,7 @@ Pour découvrir de nouvelles API, ou pour faciliter la découverte de vos API, l
 Pourtant, de nombreuses API ne sont pas listées sur ce site. Dans ce cas, une recherche google du type "info dont j'ai besoin + API" est aussi un bon moyen de savoir si l'API que vous recherchez existe. http://hotline.whalemuseum.org/api[Intéressé par les observations de baleines? Il y a une API pour ça].
 
 === b. API: un monde professionnel à part entière
-*Les API* (((API))) sont devenus essentielles à l'économie.
+*Les API*(((API))) sont devenus essentielles à l'économie.
 En conséquence, un grand nombre de services associés aux API ont été développés pour répondre à tous les besoins des entreprises qui les utilisent :
 
 // +
@@ -213,8 +213,13 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui", book="keep"]
 {nbsp} +
 
-== Pour aller plus loin
+== Des vidéos simples sur le sujet
 
+- Qu'est-ce qu'une API? https://youtu.be/yKlDe-dXNA4
+- L'API management expliqué à mon boss : https://youtu.be/vUI_y43ao2M
+
+== Pour aller plus loin
+// +
 - https://www.kissmyfrogs.com/mehdi-medjaoui-oauth-api-startup/[Mehdi Medjaoui : “Le design des API conditionne la forme du monde de demain”]. (🕒 10 min de lecture)
 - https://www.linkedin.com/pulse/au-del%C3%A0-de-la-technologie-penser-lapi-comme-un-produit-romain-lalanne/[Au-delà de la technologie : penser l'API comme un produit] (🕒 10 min  de lecture).
 - https://medium.com/@mercier_remi/c-est-quoi-une-api-f37ae350cb9[C’est quoi une API ? Une explication (compréhensible) pour les utilisateurs métier] (🕒 10 min de lecture)

@@ -73,7 +73,7 @@ ____
 Cet article de la Déclaration se retrouve sous des formes similaires dans la plupart des conventions sur les droits de l'homme dans le monde.
 
 == !
-Ce *droit à la vie privée* (((vie privée, droit à la))) permet aux individus de définir leur identité par rapport au monde, en donnant à chacun le pouvoir de contrôler ce qu'il préfère garder pour développer sa vie intérieure, et ce qu'il choisit de révéler le monde. Construire sa propre image, et l'image qu'on présente au monde : c'est construire son identité, et c'est qu'une vie privée contribue à maintenir.
+Ce *droit à la vie privée*(((vie privée, droit à la))) permet aux individus de définir leur identité par rapport au monde, en donnant à chacun le pouvoir de contrôler ce qu'il préfère garder pour développer sa vie intérieure, et ce qu'il choisit de révéler le monde. Construire sa propre image, et l'image qu'on présente au monde : c'est construire son identité, et c'est qu'une vie privée contribue à maintenir.
 
 
 == !
@@ -127,7 +127,7 @@ image::truman.jpg[align = "center", title = "Le Truman SHow - film de 1998", liv
 
 == 5. Vie privée du consommateur et vie privée des citoyens: les relations entre les deux
 == !
-Grâce aux lanceurs d'alerte comme https://en.wikipedia.org/wiki/Edward_Snowden[Edward Snowden], ((("Snowden, Edward"))) un ancien consultant pour la National Security Agency - NSA, l'ampleur des violations de la vie privée par les agences gouvernementales sont maintenant mieux connues.
+Grâce aux lanceurs d'alerte comme https://en.wikipedia.org/wiki/Edward_Snowden[Edward Snowden],((("Snowden, Edward"))) un ancien consultant pour la National Security Agency - NSA, l'ampleur des violations de la vie privée par les agences gouvernementales sont maintenant mieux connues.
 
 == !
 Ce trailer de "CitizenFour" donne une idée des dangers auxquels sont confrontés les lanceurs d'alerte lorsqu'ils révèlent comment les agences gouvernementales espionnent leurs citoyens :
@@ -160,7 +160,7 @@ Selon elle, outre la surveillance et la perte de vie privée, des entreprises co
 
 
 == !
-*Tufekci* ((("Tufekci, Zeynep"))) ne fait pas valoir que Google, Facebook ou les goûts ont intrinsèquement des fins antidémocratiques, mais que:
+*Tufekci*((("Tufekci, Zeynep"))) ne fait pas valoir que Google, Facebook ou les goûts ont intrinsèquement des fins antidémocratiques, mais que:
 
 
 == !
@@ -184,7 +184,7 @@ La collecte et le traitement des données à caractère personnel par les entrep
 Le sujet engage la https://en.wikipedia.org/wiki/Corporate_social_responsibility[Responsabilité sociale de l'entreprise].
 
 == !
-La nature du *business model* (((business model, basé sur le profilage du consommateur))) - elle-même, profilant les consommateurs de la manière la plus spécifique - a des conséquences profondes sur la société.
+La nature du *business model*(((business model, basé sur le profilage du consommateur))) - elle-même, profilant les consommateurs de la manière la plus spécifique - a des conséquences profondes sur la société.
 
 
 == !

@@ -87,7 +87,7 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .delete .delete{color:#800}
 .CodeRay .change .change{color:#66f}
 .CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>Customer Relationship Management (CRM)</h1><h2>their transformation in the age of data</h2><div class="preamble"><div class="paragraph"><p>2017-31-07</p></div>
-<div class="paragraph"><p>last modified: 2018-07-02</p></div></div><p class="author"><small>== !</small></p></section>
+<div class="paragraph"><p>last modified: 2019-05-09</p></div></div><p class="author"><small>== !</small></p></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></section>
 <section></section>
 <section id="_1_definition_of_crm"><h2>1. Definition of CRM</h2></section>
@@ -124,230 +124,73 @@ table.CodeRay td.code>pre{padding:0}
 <section><div class="paragraph"><p>Changes occurring in the past decade have transformed the landscape of the customer relationship.
 We should realize that:</p></div></section>
 <section><h3>a. Until 2006 only half of US and EU households, and 10% of the Chinese population, had Internet broadband access at home:</h3></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/broadband.png" alt="broadband" height="100%" /></div><div class="title">Figure 3. Home broadband use in the US</div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/eu-broadband.png" alt="eu broadband" height="100%" /></div><div class="title">Figure 4. Households with internet access and with broadband connection EU-28 over 2007-2016</div></section>
+<section><div class="paragraph"><p>(source: <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/E-commerce_statistics_for_individuals">Eurostat</a>)</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/china-internet.png" alt="china internet" height="100%" /></div><div class="title">Figure 5. China Internet Users over 2000-2016</div></section>
+<section><div class="paragraph"><p>(source: <a href="http://www.internetlivestats.com/internet-users/china/">Internetlivestats.com</a>)</p></div></section>
+<section><h3>b. Smartphones as we know them appeared just in 2007</h3></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/first-iphone.jpg" alt="first iphone" height="100%" /></div><div class="title">Figure 6. Steve Jobs presenting the iPhone in 2007</div></section>
+<section><div class="paragraph"><p></p></div></section>
+<section><h3>c. Until 2009 social media was just taking off</h3></section>
+<section><iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Kh6Sf0XDOZf1-FU4VznSydrxIRm3NRJfJHIq4KYKGV2_TAtbqoI634NSu9SR0LYk3UihYLvrlHhs/pubchart?oid=412747728&amp;format=interactive"></iframe></section>
+<section><h3>d. Online retail is growing at a steady pace</h3></section>
+<section><div class="paragraph"><p>
+Together, Alibaba and Amazon have tripled customers in 5 years, nearing 900 million customers in 2017:</p></div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/alibaba-users.png" alt="alibaba users" height="100%" /></div><div class="title">Figure 7. Active consumers on Alibaba, 2012-2017</div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/amazon-users.png" alt="amazon users" height="100%" /></div><div class="title">Figure 8. Active consumers on Amazon, 2012-2016</div></section>
+<section><h3>e. The technology for ad campaigns has transformed</h3></section>
+<section><div class="paragraph"><p>Three key aspects for ad buying and selling:</p></div></section>
+<section><div class="ulist"><ul><li><p>It became programmatic: ad space and ad inventories are bought and sold through automated market places (through <a href="https://digiday.com/media/wtf-supply-side-platform/">SSP</a>, <a href="http://adage.com/lookbook/article/dsp/demand-side-platforms-work/299456/">DSP</a> and <a href="http://adage.com/lookbook/article/ad-exchange/needed-ad-exchanges-work/298394/">Ad exchanges</a>).</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Ads are displayed across many channels (with <a href="https://en.wikipedia.org/wiki/Site_retargeting">retargeting</a>)</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Ads are personalized (started with Search Engine Advertising showing ads matching search queries, then cookies, then (see <a href="https://panopticlick.eff.org/">browser fingerprinting</a>) and <a href="https://www.theguardian.com/technology/2017/jul/03/facebook-track-browsing-history-california-lawsuit">other tracking techniques</a>)</p></li></ul></div></section>
+<section id="_4_consequence_of_this_digital_transformation_the_customer_relationship_and_crms_have_evolved"><h2>4. Consequence of this digital transformation: the customer relationship and CRMs have evolved</h2></section>
+<section><h3>a. CRMs must handle multiple channels (distribution and communication)</h3></section>
+<section><div class="paragraph"><p>Distribution and communication channels have multiplied and fragmented, and each have their different rules for content generation, data streams and communication modes.</p></div></section>
+<section><div class="paragraph"><p>Distribution channels:</p></div>
+<div class="ulist"><ul><li><p>retail stores (as usual)</p></li><li><p>ecommerce websites (since 2000s) and mobile apps (since 2010s)</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>third party platforms (such as Amazon and Alibaba, taking off since 2010s)</p></li><li><p>resellers becoming primary sellers (eg, <a href="http://leboncoin.fr">leboncoin.fr</a> or <a href="http://marktplaats.nl">marktplaats.nl</a> selling cars, housing and jobs) - since 2010s.</p></li></ul></div></section>
+<section><div class="paragraph"><p>Multiplication of distribution channels</p></div>
+<div class="paragraph"><p>&#8594; it becomes increasingly hard to record customers actions (is this customer in my shop the same that clicked on this web page 2 minutes ago?): "click and collect" for example, one example of the broader trend called " <a href="https://www.seo.com/blog/phygital-marketing-where-the-physical-and-digital-worlds-converge/">phygital marketing</a> ".</p></div></section>
+<section><div class="paragraph"><p>Note how traditional CRMs are unequipped to command and control this variety of distribution channels.</p></div></section>
+<section><div class="paragraph"><p>Communication channels:</p></div>
+<div class="paragraph"><p>From brick and mortar + call centers + sms + emails to &#8230;&#8203;</p></div>
+<div class="paragraph"><p>&#8594; Live chat in websites + Facebook + Twitter + Instagram</p></div></section>
+<section><h3>b. CRMs must handle complex communication patterns, not just "push campaigns"</h3></section>
+<section><div class="paragraph"><p>Communication used to be mainly "outbound" (company pushing campaigns to customers) and occasionally inbound (customers calling or emailing back).</p></div>
+<div class="paragraph"><p>Three evolutions:</p></div></section>
+<section><div class="ulist"><ul><li><p>customers expect their point of view to be heard, without being prompted for it.</p></li><li><p>cross customer conversation has spread (without the intervention of companies and brands)</p></li><li><p>The high cost of pushing content through ads incentivizes firms to develop inbound communication - this is <a href="https://www.hubspot.com/inbound-marketing">"inbound marketing"</a>.</p></li></ul></div></section>
+<section><h3>c. CRMs must accomodate multiple, fragmented touchpoints</h3></section>
+<section><div class="ulist"><ul><li><p>TV, radio, outdoor advertising, in store and outdoor displays: it continues</p></li><li><p>mobile phones:  (<a href="http://fortune.com/2017/06/22/apple-app-store-removals/">operating systems with constantly evolving techs and rules of play - 1</a>)</p></li><li><p>desktops, tablets, social TVs, home assistants, but also&#8230;&#8203; watches? cars? homes?</p></li></ul></div></section>
+<section><h3>d. CRMs must handle personalized content</h3></section>
+<section><div class="ulist"><ul><li><p>The expectations of customers have elevated: if your company has a Facebook page, it should not just display a catalogue. It should engage (converse) with customers.</p></li><li><p>Same with all steps of the customer journey: a CRM should adapt the product (or service) to the profile of the customer.</p></li></ul></div></section>
+<section><div class="paragraph"><p>Several remarks on personalization:</p></div></section>
+<section><div class="olist loweralpha"><ol class="loweralpha" type="a"><li><p>"personalization" is the extreme end: one different view for each different customer or prospect.</p></li></ol></div>
+<div class="paragraph"><p><strong>Micro-segmentation</strong> is the step just before: identifying very precise, tiny segments in the population of customers and prospects.</p></div></section>
+<section><div class="paragraph"><p>ii. "personalization" has been blamed for reinforcing "bubbles" or "tribes" views of the world (<a href="http://pubsonline.informs.org/doi/pdf/10.1287/mnsc.2013.1808">paying version</a> of the paper, free version <a href="https://www.researchgate.net/profile/Kartik_Hosanagar/publication/228233814_Will_the_Global_Village_Fracture_Into_Tribes_Recommender_Systems_and_Their_Effects_on_Consumer_Fragmentation/links/0046352960e0b2e12c000000/Will-the-Global-Village-Fracture-Into-Tribes-Recommender-Systems-and-Their-Effects-on-Consumer-Fragmentation.pdf">here</a>).</p></div></section>
+<section><div class="paragraph"><p>Content personalization is also blamed for favoring political polarization via an "echo chamber effect": social media tend to show me content I already agree with (paying version of the paper <a href="http://www.sciencedirect.com/science/article/pii/S0740624X16300375">here</a>, free version <a href="https://www.academia.edu/24798528/Political_Polarization_on_Twitter_Implications_for_the_Use_of_Social_Media_in_Digital_Governments?auto=download">here</a>).</p></div></section>
+<section><div class="paragraph"><p>iii. Personalizing the customer relationship, even when effective, is not inherently a good thing. It has been shown that the <a href="http://www.coca-colacompany.com/stories/summer-of-sharing-share-a-coke-campaign-rolls-out-in-the-us">Coca-Cola =ShareaCoke campaign</a> is effective at making more children choose a soda with a label to their name, over a healthy drink (<a href="http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract">paying version of the ShareaCoke study here</a>, free version not available).</p></div></section>
+<section><div class="paragraph"><p>iv. Personalization through smart CRMs? Companies rated with the best customer service do personalization differently: with <strong>humans</strong>.</p></div></section>
+<section><div class="paragraph"><p>See how Zappos offers a great service to their customers:</p></div></section>
+<section><div class="videoblock stretch stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/vApoQPISmvs?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="paragraph"><p>(another (<a href="https://www.youtube.com/watch?v=IwE1zb9fiVs">impactful talk by the CEO of Zappos</a> here).</p></div></section>
+<section><div class="paragraph"><p>or see (in French) how <a href="https://medium.com/@djo/obsession-service-client-captain-train-cb0b91467fd9">Trainline makes its customers happy</a>.</p></div></section>
+<section id="_5_todays_s_crms_must_be_data_driven"><h2>5. Todays&#8217;s CRMs must be data-driven</h2></section>
+<section><div class="paragraph"><p>Explaining the expression "data-driven CRMs":</p></div>
+<div class="paragraph"><p>&#8594; CRMs must turn from a system "supporting the firm&#8217;s administration needs" to a a system tuned to "plug, host, analyze and push actions from multiple data sources".</p></div></section>
+<section><div class="paragraph"><p>To get such a CRM to run in an organization, the right resources must be gathered:</p></div></section>
+<section><div class="olist loweralpha"><ol class="loweralpha" type="a"><li><p>Adequate software:</p><div class="ulist"><ul><li><p>the CRM itself - recent enough that it can plug and play with a DMP and a large variety of data sources.</p></li><li><p>a Data Management Platform (<strong>DMP</strong>) as well. The DMP is the software specializing in receiving data streams from a variety of sources and in a variety of formats, and reconciling them.</p></li></ul></div></li></ol></div></section>
+<section><div class="ulist"><ul><li><p>a Data Lake to store and query data.</p></li><li><p>software bricks for additional analysis, as needed. For example, Dataiku&#8217;s <a href="https://www.dataiku.com/learn/">DSS platform</a>.</p></li></ul></div></section>
+<section><div class="olist loweralpha"><ol class="loweralpha" start="2" type="a"><li><p>Adequate human resources:</p><div class="ulist"><ul><li><p>product managers with a tech culture (you), able to design and deploy a marketing strategy in a data intensive environment.</p></li><li><p>data scientists who will implement the strategy.</p></li><li><p>IT engineers to run the software.</p></li></ul></div></li></ol></div></section>
+<section><div class="olist loweralpha"><ol class="loweralpha" start="3" type="a"><li><p>Adequate organizational culture:</p><div class="ulist"><ul><li><p>This is probably the hardest part: making the top management, and the rest of the organization pay attention and believe in the possibilities afforded by these new way to manage customer relationships.</p></li><li><p>The organization needs to invest and devote enough operational resources to stop doing "business as usual" and develop a data-driven CRM.</p></li></ul></div></li></ol></div></section>
+<section id="_the_end"><h2>The end</h2></section>
 <section></section>
-<section><iframe src="http://www.pewinternet.org/chart/home-broadband-use/iframe/" id="pew17070" scrolling="no" width="100%" height="100px" frameborder="0"></iframe>
-<div class="paragraph"><p>&lt;script type='text/javascript&#8217;id='pew-iframe'&gt;(function(){function async_load(){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='http://www.pewinternet.org/wp-content/plugins/pew-scripts/js/iframeResizer.min.js';s.onload=s.onreadystatechange=function(){var rs=this.readyState;try{iFrameResize([],'iframe=pew17070')}catch(e){}};var embedder=document.getElementById('pew-iframe');embedder.parentNode.insertBefore(s,embedder)}if(window.attachEvent)window.attachEvent('onload',async_load);else window.addEventListener('load',async_load,false)})();&lt;/script&gt;</p></div>
-== !
-[.stretch]
-image::eu-broadband.png[align="center", title="Households with internet access and with broadband connection EU-28 over 2007-2016"]
-== !
-
-
-source: http://ec.europa.eu/eurostat/statistics-explained/index.php/E-commerce_statistics_for_individuals[Eurostat]
-
-== !
-[.stretch]
-image::china-internet.png[align="center", title="China Internet Users over 2000-2016"]
-== !
-
-
-source: http://www.internetlivestats.com/internet-users/china/[Internetlivestats.com]
-
-
-== !
-==== b. Smartphones as we know them appeared just in 2007
-== !
-[.stretch]
-image::first-iphone.jpg[align="center", title="Steve Jobs presenting the iPhone in 2007"]
-== !
-
-
-(((smartphones)))
-
-== !
-==== c. Until 2009 ((social media)) was just taking off
-== !
-<div class="paragraph"><p>&lt;iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4Kh6Sf0XDOZf1-FU4VznSydrxIRm3NRJfJHIq4KYKGV2_TAtbqoI634NSu9SR0LYk3UihYLvrlHhs/pubchart?oid=412747728&amp;format=interactive"&gt;&lt;/iframe&gt;</p></div>
-== !
-==== d. Online retail is growing at a steady pace
-== !
-(((online retail)))
-Together, Alibaba and Amazon have tripled customers in 5 years, nearing 900 million customers in 2017:
-
-== !
-[.stretch]
-image::alibaba-users.png[align="center",title="Active consumers on Alibaba, 2012-2017"]
-== !
-
-
-[.stretch]
-image::amazon-users.png[align="center",title="Active consumers on Amazon, 2012-2016"]
-== !
-
-
-==== e. The technology for ad campaigns has transformed
-== !
-Three key aspects for ad buying and selling:
-
-
-== !
-- It became ((programmatic)): ad space and ad inventories are bought and sold through automated market places (through https://digiday.com/media/wtf-supply-side-platform/[SSP], http://adage.com/lookbook/article/dsp/demand-side-platforms-work/299456/[DSP] and http://adage.com/lookbook/article/ad-exchange/needed-ad-exchanges-work/298394/[Ad exchanges]).
-
-== !
-- Ads are displayed across many channels (with https://en.wikipedia.org/wiki/Site_retargeting[retargeting])
-
-== !
-- Ads are personalized (started with Search Engine Advertising showing ads matching search queries, then cookies, then (see https://panopticlick.eff.org/[browser fingerprinting]) and https://www.theguardian.com/technology/2017/jul/03/facebook-track-browsing-history-california-lawsuit[other tracking techniques])
-
-
-== 4. Consequence of this digital transformation: the customer relationship and CRMs have evolved
-== !
-==== a. CRMs must handle multiple channels (distribution and communication)
-== !
-Distribution and communication channels have multiplied and fragmented, and each have their different rules for content generation, data streams and communication modes.
-
-
-== !
-Distribution channels:
-
-- retail stores (as usual)
-- ecommerce websites (since 2000s) and mobile apps (since 2010s)
-
-== !
-- third party platforms (such as Amazon and Alibaba, taking off since 2010s)
-- resellers becoming primary sellers (eg, http://leboncoin.fr[leboncoin.fr] or http://marktplaats.nl[marktplaats.nl] selling cars, housing and jobs) - since 2010s.
-
-
-== !
-Multiplication of distribution channels
-
--> it becomes increasingly hard to record customers actions (is this customer in my shop the same that clicked on this web page 2 minutes ago?): "click and collect" for example, one example of the broader trend called " https://www.seo.com/blog/phygital-marketing-where-the-physical-and-digital-worlds-converge/[phygital marketing] ".
-
-
-== !
-Note how traditional CRMs are unequipped to command and control this variety of distribution channels.
-
-
-== !
-Communication channels:
-
-From brick and mortar + call centers + sms + emails to ...
-
--> Live chat in websites + Facebook + Twitter + Instagram
-
-== !
-==== b. CRMs must handle complex communication patterns, not just "push campaigns"
-== !
-Communication used to be mainly "outbound" (company pushing campaigns to customers) and occasionally inbound (customers calling or emailing back).
-
-Three evolutions:
-
-
-== !
-- customers expect their point of view to be heard, without being prompted for it.
-- cross customer conversation has spread (without the intervention of companies and brands)
-- The high cost of pushing content through ads incentivizes firms to develop inbound communication - this is https://www.hubspot.com/inbound-marketing["inbound marketing"].
-
-== !
-==== c. CRMs must accomodate multiple, fragmented touchpoints
-== !
-
-- TV, radio, outdoor advertising, in store and outdoor displays: it continues
-- mobile phones:  (http://fortune.com/2017/06/22/apple-app-store-removals/[operating systems with constantly evolving techs and rules of play - 1])
-- desktops, tablets, social TVs, home assistants, but also... watches? cars? homes?
-
-== !
-==== d. CRMs must handle personalized content
-== !
-
-- The expectations of customers have elevated: if your company has a Facebook page, it should not just display a catalogue. It should engage (converse) with customers.
-- Same with all steps of the customer journey: a CRM should adapt the product (or service) to the profile of the customer.
-
-
-== !
-Several remarks on personalization:
-
-
-== !
-i. "((personalization))" is the extreme end: one different view for each different customer or prospect.
-
-*((Micro-segmentation))* is the step just before: identifying very precise, tiny segments in the population of customers and prospects.
-
-
-== !
-ii. "personalization" has been blamed for reinforcing "bubbles" or "tribes" views of the world (http://pubsonline.informs.org/doi/pdf/10.1287/mnsc.2013.1808[paying version] of the paper, free version https://www.researchgate.net/profile/Kartik_Hosanagar/publication/228233814_Will_the_Global_Village_Fracture_Into_Tribes_Recommender_Systems_and_Their_Effects_on_Consumer_Fragmentation/links/0046352960e0b2e12c000000/Will-the-Global-Village-Fracture-Into-Tribes-Recommender-Systems-and-Their-Effects-on-Consumer-Fragmentation.pdf[here]).
-
-
-== !
-Content personalization is also blamed for favoring political polarization via an "echo chamber effect": social media tend to show me content I already agree with (paying version of the paper http://www.sciencedirect.com/science/article/pii/S0740624X16300375[here], free version https://www.academia.edu/24798528/Political_Polarization_on_Twitter_Implications_for_the_Use_of_Social_Media_in_Digital_Governments?auto=download[here]).
-
-
-== !
-iii. Personalizing the customer relationship, even when effective, is not inherently a good thing. It has been shown that the http://www.coca-colacompany.com/stories/summer-of-sharing-share-a-coke-campaign-rolls-out-in-the-us[Coca-Cola =ShareaCoke campaign] is effective at making more children choose a soda with a label to their name, over a healthy drink (http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract[paying version of the ShareaCoke study here], free version not available).
-
-
-== !
-iv. Personalization through smart CRMs? Companies rated with the best customer service do personalization differently: with *humans*.
-
-
-== !
-See how Zappos offers a great service to their customers:
-
-== !
-[.stretch]
-video::vApoQPISmvs[youtube]
-== !
-
-
-(another (https://www.youtube.com/watch?v=IwE1zb9fiVs[impactful talk by the CEO of Zappos] here).
-
-
-== !
-or see (in French) how https://medium.com/@djo/obsession-service-client-captain-train-cb0b91467fd9[Trainline makes its customers happy].
-
-
-== 5. Todays's CRMs must be data-driven
-== !
-Explaining the expression "data-driven CRMs":
-
--> CRMs must turn from a system "supporting the firm's administration needs" to a a system tuned to "plug, host, analyze and push actions from multiple data sources".
-
-== !
-To get such a CRM to run in an organization, the right resources must be gathered:
-
-
-== !
-a. Adequate software:
-
-- the CRM itself - recent enough that it can plug and play with a DMP and a large variety of data sources.
-- a Data Management Platform (*DMP*) as well. The DMP is the software specializing in receiving data streams from a variety of sources and in a variety of formats, and reconciling them.
-
-== !
-- a Data Lake to store and query data.
-- software bricks for additional analysis, as needed. For example, Dataiku's https://www.dataiku.com/learn/[DSS platform].
-
-
-== !
-[start  = 2]
-b. Adequate human resources:
-
-- product managers with a tech culture (you), able to design and deploy a marketing strategy in a data intensive environment.
-- data scientists who will implement the strategy.
-- IT engineers to run the software.
-
-
-== !
-[start  = 3]
-c. Adequate ((organizational culture)):
-
-- This is probably the hardest part: making the top management, and the rest of the organization pay attention and believe in the possibilities afforded by these new way to manage customer relationships.
-- The organization needs to invest and devote enough operational resources to stop doing "business as usual" and develop a data-driven CRM.
-
-
-== The end
-== !
-
-== !
-
-Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
-
-image:round_portrait_mini_150.png[align="center", role="right"]
-This course is made by Clement Levallois.
-
-Discover my other courses in data / tech for business: https://www.clementlevallois.net
-
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-pass:[    <!-- Start of StatCounter Code for Default Guide -->
+<section><div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p></div>
+<div class="paragraph"><p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>
+This course is made by Clement Levallois.</p></div>
+<div class="paragraph"><p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p></div>
+<div class="paragraph"><p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+    <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;
         var sc_invisible = 1;
@@ -363,7 +206,7 @@ pass:[    <!-- Start of StatCounter Code for Default Guide -->
     class="statcounter"
     src="//c.statcounter.com/11411204/0/11411204/1/" alt="site
     stats"></a></div></noscript>
-    <!-- End of StatCounter Code for Default Guide -->]</section></div></div><script src="reveal.js-3.6.0/lib/js/head.min.js"></script><script src="reveal.js-3.6.0/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+    <!-- End of StatCounter Code for Default Guide --></p></div></section></div></div><script src="reveal.js-3.6.0/lib/js/head.min.js"></script><script src="reveal.js-3.6.0/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
 Reveal.initialize({
   // Display controls in the bottom right corner
   controls: true,

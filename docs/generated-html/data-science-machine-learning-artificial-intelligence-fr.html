@@ -524,7 +524,7 @@ table.CodeRay td.code>pre{padding:0}
 <div class="details">
 <span id="author" class="author">Clément Levallois</span><br>
 <span id="email" class="email"><a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a></span><br>
-<span id="revdate">2018-06-20</span>
+<span id="revdate">2019-05-09</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -544,11 +544,8 @@ table.CodeRay td.code>pre{padding:0}
 </ul>
 </li>
 <li><a href="#_3_apprentissage_automatique_et_data_science">3. Apprentissage automatique et data science</a></li>
-<li><a href="#_4_intelligence_artificielle">4. Intelligence artificielle</a>
-<ul class="sectlevel2">
-<li><a href="#_a_faible_vs_forte_ia_intelligence_artificielle_faible_vs_forte_ai">a. Faible vs forte IA intelligence artificielle, faible vs forte AI</a></li>
-</ul>
-</li>
+<li><a href="#_4_intelligence_artificielle_faible_vs_forte">4. Intelligence artificielle faible vs forte</a></li>
+<li><a href="#_des_vidéos_sur_le_sujet">Des vidéos sur le sujet</a></li>
 <li><a href="#_pour_aller_plus_loin">Pour aller plus loin</a></li>
 </ul>
 </div>
@@ -556,9 +553,6 @@ table.CodeRay td.code>pre{padding:0}
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
-<p>last modified: 2019-01-02</p>
-</div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
 <img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
@@ -566,6 +560,9 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>Première version : 2018-06-20</p>
 </div>
 </div>
 </div>
@@ -583,9 +580,17 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 </div>
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8dKfwxvgz3ALH8Y1FzxWk9lZtiVBlQdZYUrKJqRXNqBFRjKIP3LUvv29QSIBbGx2-ray5nK8cALMH/pubchart?oid=1075418595&format=interactive"></iframe>
 <div class="paragraph">
-<p>Les "statistiques régulières" permettent, entre autres :
-1. trouver la relation numérique entre les deux séries, basée sur un modèle formel pré-établi (par exemple, <a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_des_moindres_carr%C3%A9s_ordinaire">la méthode des moindres carrés ordinaire</a>).
-&#8594; on voit que les ventes sont corrélées avec les dépenses marketing. Il est probable que plus de dépenses de marketing entraîne plus de ventes.</p>
+<p>Les "statistiques régulières" permettent, entre autres :</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>trouver la relation numérique entre les deux séries, basée sur un modèle formel pré-établi (par exemple, <a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_des_moindres_carr%C3%A9s_ordinaire">la méthode des moindres carrés ordinaire</a>).</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>&#8594; on voit que les ventes sont corrélées avec les dépenses marketing. Il est probable que plus de dépenses de marketing entraîne plus de ventes.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic" start="2">
@@ -603,10 +608,12 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>sont hautement qualifiés en mathématiques
-&#8594; leur objectif est de trouver l&#8217;expression mathématique exacte définissant la situation, dans des conditions rigoureuses</p>
+<p>sont hautement qualifiés en mathématiques</p>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p>&#8594; leur objectif est de trouver l&#8217;expression mathématique exacte définissant la situation, dans des conditions rigoureuses</p>
 </div>
 <div class="paragraph">
 <p>&#8594; une approche clé est <strong>l&#8217;inférence</strong>: en définissant un <strong>échantillon des données</strong> de la taille juste, nous pouvons arriver à des conclusions valables pour l&#8217;ensemble de données entier.</p>
@@ -625,7 +632,7 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 <p>&#8594; puisqu&#8217;ils se concentrent sur <strong>l&#8217;échantillonnage</strong> des données, ils ne sont pas concernés par le traitement de jeux de données entiers avec des problèmes informatiques connexes.</p>
 </div>
 <div class="paragraph">
-<p>Le <strong>Machine learning</strong> ou  fait des choses similaires à la statistique, mais d&#8217;une manière légèrement différente:</p>
+<p>Le <strong>Machine learning</strong>  ("apprentissage automatique" en français) fait des choses similaires à la statistique, mais d&#8217;une manière légèrement différente :</p>
 </div>
 <div class="ulist">
 <ul>
@@ -662,7 +669,7 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 <div class="ulist">
 <ul>
 <li>
-<p>qui ont besoin des opérations algébriques minimales / les plus simples à exécuter: la meilleure technique est sans valeur si elle est trop longue ou trop chère à calculer.</p>
+<p>qui ont besoin des opérations algébriques minimales / les plus simples à exécuter : la meilleure technique est sans valeur si elle est trop longue ou trop chère à calculer.</p>
 </li>
 <li>
 <p>qui peut être exécuté de telle sorte que plusieurs ordinateurs travaillent en parallèle (simultanément) pour le résoudre.</p>
@@ -679,7 +686,7 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 <div class="sect2">
 <h3 id="_b_une_illustration_le_cas_des_gpus">b. Une illustration: le cas des GPUs</h3>
 <div class="paragraph">
-<p>Une illustration clé de la différence entre les statistiques et l&#8217;apprentissage automatique peut être fournie avec l&#8217;utilisation de <strong>cartes graphiques</strong> .
+<p>Une illustration clé de la différence entre les statistiques et l&#8217;apprentissage automatique peut être fournie avec l&#8217;utilisation de <strong>cartes graphiques</strong>.
 Les cartes graphiques (ou GPU: unités de traitement graphique) sont ces composants électroniques pleines de puces trouvées dans un ordinateur, qui sont utilisées pour l&#8217;affichage d&#8217;images et de vidéos sur des écrans :</p>
 </div>
 <div class="imageblock" style="text-align: center">
@@ -692,17 +699,20 @@ Les cartes graphiques (ou GPU: unités de traitement graphique) sont ces composa
 <p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>Dans les années 1990, le jeu vidéo s&#8217;est beaucoup développé, des arcades aux ordinateurs de bureau. Les développeurs de jeux ont créé des jeux informatiques montrant des scènes et des animations de plus en plus complexes. (voir <a href="https://youtu.be/3UTdxI2IEp0">une évolution des graphiques en jeux vidéo</a>, et <a href="https://www.youtube.com/watch?v=Rywkv7PCYDM">les jeux graphiques avancés en 2017</a>).
-Ces jeux vidéo ont besoin de puissantes cartes vidéo (aussi appelés <a href="https://fr.wikipedia.org/wiki/Processeur_graphique">processeurs graphiques</a>)
+<p>Dans les années 1990, le jeu vidéo s&#8217;est beaucoup développé, des consoles et arcades aux ordinateurs de bureau.
+Les développeurs de jeux ont créé des jeux informatiques montrant des scènes et des animations de plus en plus complexes. (voir <a href="https://youtu.be/3UTdxI2IEp0">une évolution des graphiques en jeux vidéo</a>, et <a href="https://www.youtube.com/watch?v=Rywkv7PCYDM">les jeux graphiques avancés en 2017</a>).
+Ces jeux vidéo ont besoin de puissantes cartes vidéo (aussi appelés <a href="https://fr.wikipedia.org/wiki/Processeur_graphique">processeurs graphiques</a> ou GPU)
 pour restituer des scènes complexes dans les moindres détails - avec des calculs sur les effets de lumière et les animations <strong>réalisés en temps réel</strong>.
-Cela a poussé au développement de <strong>GPUs</strong> plus puissants .
-Leurs caractéristiques sont qu&#8217;ils peuvent calculer des opérations simples pour changer les couleurs des pixels, <strong>pour chacun des millions de pixels de l&#8217;écran en parallèle</strong>, de sorte que la prochaine séquence de l&#8217;image peut être rendue en millisecondes.</p>
+Cela a poussé au développement de <strong>GPUs</strong> plus puissants.
+Leurs caractéristiques sont qu&#8217;ils peuvent calculer des opérations simples pour changer les couleurs des pixels, <strong>pour chacun des millions de pixels de l&#8217;écran en parallèle</strong>, de sorte que la prochaine séquence de l&#8217;image peut être affichée en millisecondes.</p>
 </div>
 <div class="paragraph">
-<p>Des millions d&#8217;opérations simples se déroulent en parallèle pour le prix d&#8217;un GPU (quelques centaines de dollars), pas le prix de douzaines d&#8217;ordinateurs fonctionnant en parallèle (peut être des dizaines de milliers de dollars)?
-C&#8217;est intéressant pour les calculs sur les big data!
+<p>Des millions d&#8217;opérations simples se déroulent en parallèle pour le prix d&#8217;un GPU (quelques centaines de dollars), pas le prix de douzaines d&#8217;ordinateurs fonctionnant en parallèle (peut être des dizaines de milliers de dollars)?</p>
+</div>
+<div class="paragraph">
+<p>&#8594; C&#8217;est intéressant pour les calculs sur les big data!
 Si un problème statistique de prédiction peut être décomposé en opérations simples pouvant être exécutées sur un GPU, alors un grand ensemble de données peut être analysé en secondes ou en minutes sur un ordinateur portable, au lieu d&#8217;un cluster d&#8217;ordinateurs.
-Pour illustrer la différence de vitesse entre une opération mathématique exécutée sans ou avec un <strong>GPU</strong> :</p>
+Pour illustrer la différence de vitesse entre une opération mathématique exécutée sans ou avec un <strong>GPU</strong>:</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -713,7 +723,7 @@ Pour illustrer la différence de vitesse entre une opération mathématique exé
 <p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez conceptualiser le problème comme un qui peut être :</p>
+<p>Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez conceptualiser le problème pour qu&#8217;il soit :</p>
 </div>
 <div class="ulist">
 <ul>
@@ -744,10 +754,12 @@ L&#8217;apprentissage automatique ou machine learning prête généralement atte
 <div class="sect2">
 <h3 id="_a_l_apprentissage_non_supervisé">a. L&#8217;apprentissage non supervisé</h3>
 <div class="paragraph">
-<p><strong>Apprentissage non supervisé</strong>  désigne les méthodes qui utilisent un jeu de données nouveau et y trouvent des modèles intéressants, <strong>sans que cela ne soit par apprentissage sur de précédents ensembles de données similaires</strong>.</p>
+<p><strong>Apprentissage non supervisé</strong> désigne les méthodes qui utilisent un jeu de données nouveau et y trouvent des modèles intéressants, <strong>sans que cela ne soit par apprentissage sur de précédents ensembles de données similaires</strong>.</p>
 </div>
 <div class="paragraph">
-<p>Comment l&#8217;apprentissage supervisé fonctionne-t-il ? Prenons un exemple. Dans une réception de mariage, comment asseoir des gens avec des intérêts similaires aux mêmes tables?</p>
+<p>Comment l&#8217;apprentissage supervisé fonctionne-t-il ?
+Prenons un exemple.
+Dans une réception de mariage, comment asseoir des gens avec des intérêts similaires aux mêmes tables?</p>
 </div>
 <div class="paragraph">
 <p>Les données initiales du problème :</p>
@@ -798,7 +810,8 @@ L&#8217;apprentissage automatique ou machine learning prête généralement atte
 </ol>
 </div>
 <div class="paragraph">
-<p>Cette approche permet d&#8217;identifier des groupes de personnes qui ont des points communs. C&#8217;est évidemment d&#8217;une grande utilité pour organiser des données, depuis une segmentation de clientèle ou de prospects, jusqu&#8217;à une classification de produits en catégories à des fins d&#8217;évaluation ou de gestion de portefeuille.</p>
+<p>Cette approche permet d&#8217;identifier des groupes de personnes qui ont des points communs.
+C&#8217;est évidemment d&#8217;une grande utilité pour organiser des données, depuis une segmentation de clientèle ou de prospects, jusqu&#8217;à une classification de produits en catégories à des fins d&#8217;évaluation ou de gestion de portefeuille.</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -813,7 +826,7 @@ L&#8217;apprentissage automatique ou machine learning prête généralement atte
 <div class="sect2">
 <h3 id="_b_l_approche_d_apprentissage_strong_supervisé_strong">b. L&#8217;approche d&#8217;apprentissage  <strong>supervisé</strong></h3>
 <div class="paragraph">
-<p>L'<strong>Apprentissage supervisé</strong>  est l&#8217;approche consistant à calibrer un modèle basé sur l&#8217;histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
+<p>L'<strong>Apprentissage supervisé</strong> est l&#8217;approche consistant à calibrer un modèle basé sur l&#8217;histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
 Prenons l&#8217;exemple suivant : comment faire pour qu&#8217;un ordinateur "devine" si une image représente un chat ou un chien? Pour cela, en approche supervisée, nous allons commencer par récolter 50000 images ou plus de chats et de chiens, avec leurs légendes associées, comme ceci:</p>
 </div>
 <div class="ulist">
@@ -835,10 +848,10 @@ Prenons l&#8217;exemple suivant : comment faire pour qu&#8217;un ordinateur "dev
 <div class="ulist">
 <ul>
 <li>
-<p>Ces 50000 images et leur légende s&#8217;appelle le <em>training set</em>. .</p>
+<p>Ces 50000 images et leur légende s&#8217;appelle le <em>training set</em>..</p>
 </li>
 <li>
-<p>Ceci est aussi appelé un ensemble de données <strong>annotées</strong> , ce qui signifie que nous avons une étiquette décrivant chacune des observations (en anglais : <em>labelled set</em>).</p>
+<p>Ceci est aussi appelé un ensemble de données <strong>annotées</strong>, ce qui signifie que nous avons une étiquette décrivant chacune des observations (en anglais : <em>labelled set</em>).</p>
 </li>
 </ul>
 </div>
@@ -858,7 +871,7 @@ Prenons l&#8217;exemple suivant : comment faire pour qu&#8217;un ordinateur "dev
 <p>les étiquettes peuvent être fournies par les utilisateurs d&#8217;un service. Par exemple, les photos sur Instagram légendées par des hashtags sont exactement cela: une image avec une étiquette. L&#8217;étiquetage est fait par les utilisateurs d&#8217;Instagram affichant les photos et en écrivant les hashtags ci-dessous. Instagram est un service gratuit, mais les jeu de données libellées qu&#8217;il crée sont d&#8217;une grande valeur pour une entreprise comme Instagram (et pour Facebook, qui a racheté Instagram).</p>
 </li>
 <li>
-<p>ils peuvent être produits par des travailleurs humains . En pratique, les humains sont payés quelques centimes par image qu&#8217;ils doivent étiqueter (est-ce un chat? Est-ce un chien? Etc.). Une grande industrie et un marché du travail associé se développent pour effectuer une variété de tâches de ce genre. Une main-d&#8217;œuvre croissante fournit leur travail numérique aux entreprises qui ont besoin de <strong>l&#8217;annotation des données</strong> (données, annotation des données ou de <strong>nettoyer, classer ou qualifier les données</strong>. Voir le travail de <a href="http://www.casilli.fr/about/">Antonio Casilli</a>  sur ces sujets.</p>
+<p>ils peuvent être produits par des travailleurs humains. En pratique, les humains sont payés quelques centimes par image qu&#8217;ils doivent étiqueter (est-ce un chat? Est-ce un chien? Etc.). Une grande industrie et un marché du travail associé se développent pour effectuer une variété de tâches de ce genre. Une main-d&#8217;œuvre croissante fournit leur travail numérique aux entreprises qui ont besoin de <strong>l&#8217;annotation des données</strong>(données, annotation des données ou de <strong>nettoyer, classer ou qualifier les données</strong>. Voir le travail de <a href="http://www.casilli.fr/about/">Antonio Casilli</a> sur ces sujets.</p>
 </li>
 </ul>
 </div>
@@ -928,7 +941,7 @@ Prenons l&#8217;exemple suivant : comment faire pour qu&#8217;un ordinateur "dev
 <div class="sect2">
 <h3 id="_c_l_approche_de_l_apprentissage_par_strong_renforcement_strong_reinforcement_learning">c. L&#8217;approche de l&#8217;apprentissage par <strong>renforcement</strong> (reinforcement learning)</h3>
 <div class="paragraph">
-<p>Pour comprendre l&#8217;apprentissage par renforcement , nous pouvons penser intuitivement comment les animaux peuvent apprendre rapidement en <strong>ignorant</strong> les comportements indésirables et en <strong>récompensant</strong> les comportements souhaitables.</p>
+<p>Pour comprendre l&#8217;apprentissage par renforcement, nous pouvons penser intuitivement comment les animaux peuvent apprendre rapidement en <strong>ignorant</strong> les comportements indésirables et en <strong>récompensant</strong> les comportements souhaitables.</p>
 </div>
 <div class="paragraph">
 <p>C&#8217;est facile et ne prend que quelques secondes. La vidéo suivante montre B.F. Skinner, figure centrale de la psychologie comportemenale dans les années 1950-1970, qui fait faire un tour sur lui-même à un pigeon simplement en récompensant le fait de tourner par des graines :</p>
@@ -1033,8 +1046,8 @@ Prenons le cas d&#8217;un jeu vidéo comme Super Mario Bros:</p>
 <p>L&#8217;utilisation de l&#8217;apprentissage automatique peut être un gaspillage de ressources, lorsque des statistiques bien connues peuvent être facilement appliquées.
 Des indices que la modélisation statistique "classique" (peut-être aussi simple qu&#8217;une régression linéaire) devrait suffire:
 - L&#8217;ensemble de données n&#8217;est pas grand (moins de 50k observations), l&#8217;apprentissage supervisé ne fonctionnera pas
-- Les données sont parfaitement structurées (données tabulaires) 
-- Les points de données ont peu de dimensions (chaque observation a peu d&#8217;attributs - il y apeu "colonnes" dans une représentation sous forme de tableau)</p>
+- Les données sont parfaitement structurées (données tabulaires)
+- Les points de données ont peu de dimensions (chaque observation a peu d&#8217;attributs - il y a peu de "colonnes" dans une représentation sous forme de tableau)</p>
 </div>
 <div class="paragraph">
 <p>Cas où la modélisation des statistiques "classiques" est <strong>nécessaire</strong>:</p>
@@ -1042,7 +1055,7 @@ Des indices que la modélisation statistique "classique" (peut-être aussi simpl
 <div class="ulist">
 <ul>
 <li>
-<p>La question concerne la contribution relative des variables indépendantes à la détermination d&#8217;un résultat</p>
+<p>La question concerne la <em>contribution relative</em> des variables indépendantes à la détermination d&#8217;un résultat.</p>
 </li>
 </ul>
 </div>
@@ -1069,7 +1082,7 @@ Le processus du traitement et de l&#8217;analyse des données a été formalisé
 <p>Des représentations plus récentes des étapes du traitement des données ont été suggérées, laissant place au rôle de la visualisation de données :</p>
 </div>
 <div class="paragraph">
-<p>&#8594; voir <a href="https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400">le processus de conception de l&#8217;information par Ben Fry</a>  et ce workflow de  <a href="http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html">visualisation des données par Moritz Stefaner</a>  :</p>
+<p>&#8594; voir <a href="https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400">le processus de conception de l&#8217;information par Ben Fry</a> et ce workflow de  <a href="http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html">visualisation des données par Moritz Stefaner</a> :</p>
 </div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
@@ -1086,27 +1099,44 @@ Le processus du traitement et de l&#8217;analyse des données a été formalisé
 <div class="paragraph">
 <p>Les compétences d&#8217;une équipe de (data scientist) sont souvent représentées comme la réunion de trois domaines distincts :</p>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/conway.png" alt="conway">
+</div>
+<div class="title">Figure 7. Le Diagramme de Venn de la science des données par Drew Conway</div>
+</div>
 <div class="paragraph">
-<p>image::conway.png[The Diagramme de Venn de la science des données par Drew Conway", book =" keep "][pdfwidth = "40%", align = "center", title = "http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
-&#160;<br></p>
+<p>&#160;<br></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_4_intelligence_artificielle">4. Intelligence artificielle</h2>
+<h2 id="_4_intelligence_artificielle_faible_vs_forte">4. Intelligence artificielle faible vs forte</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_a_faible_vs_forte_ia_intelligence_artificielle_faible_vs_forte_ai">a. Faible vs forte IA intelligence artificielle, faible vs forte AI</h3>
 <div class="paragraph">
-<p><strong>IA faible</strong>  désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).
-L&#8217;IA faible est généralement le résultat de l&#8217;application de systèmes experts ou des techniques d&#8217;apprentissage machine vues ci-dessus.</p>
+<p><strong>IA faible</strong> désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).
+L&#8217;IA faible est généralement le résultat de l&#8217;application de systèmes experts ou des techniques d&#8217;apprentissage automatique vues ci-dessus.</p>
 </div>
 <div class="paragraph">
-<p><strong>IA forte</strong>  est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d&#8217;elle-même. Rien ne s&#8217;approche de ça.</p>
+<p><strong>IA forte</strong> est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d&#8217;elle-même. Rien ne s&#8217;approche de ça.</p>
 </div>
 <div class="paragraph">
 <p><strong>Donc l&#8217;IA est synonyme d&#8217;IA faible pour le moment, et couvre les trois familles de machine learning vues ci-dessus.</strong></p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_des_vidéos_sur_le_sujet">Des vidéos sur le sujet</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>La qualité de la donnée, un enjeu pour le machine learning : <a href="https://youtu.be/tL7ojiOTQho?t=972" class="bare">https://youtu.be/tL7ojiOTQho?t=972</a></p>
+</li>
+<li>
+<p>Intelligence artificielle faible et forte : quels impacts sur les métiers? <a href="https://youtu.be/xO8c257G4ms" class="bare">https://youtu.be/xO8c257G4ms</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1151,7 +1181,7 @@ L&#8217;IA faible est généralement le résultat de l&#8217;application de syst
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2019-01-02 11:09:01 CET
+Last updated 2019-05-09 22:35:28 CEST
 </div>
 </div>
 </body>

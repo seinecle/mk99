@@ -52,7 +52,7 @@ Cela facilite l'empilement des serveurs les uns sur les autres.
 Parce que Google et d'autres entreprises ont besoin de beaucoup de serveurs pour gérer leurs données, gagner de l'espace est un véritable problème.
 
 == !
-Lorsque de nombreux serveurs sont empilés ensemble et mis dans une grande armoire, cela s'appelle un *rack* (((serveur, rack de))) de serveurs, et ressemble à ceci :
+Lorsque de nombreux serveurs sont empilés ensemble et mis dans une grande armoire, cela s'appelle un *rack*(((serveur, rack de))) de serveurs, et ressemble à ceci :
 
 == !
 [.stretch]
@@ -60,7 +60,7 @@ image::rack.jpg[pdfwidth = "40%", align = "center", title = "Un rack de serveurs
 == !
 
 
-Lorsque tous les racks de serveurs sont placés dans la même pièce, cela s'appelle un *data center* (((serveur, data center))) et ressemble à ceci:
+Lorsque tous les racks de serveurs sont placés dans la même pièce, cela s'appelle un *data center*(((serveur, data center))) et ressemble à ceci:
 
 == !
 [.stretch]
@@ -85,7 +85,7 @@ Ensuite, le "cloud" a changé cela.
 
 == 2. Le cloud
 == !
-Le terme * cloud * (((cloud, définition))) a été rendu populaire par ((Amazon)) avec leur service "Amazon Elastic Compute Cloud" : *Amazon EC2* (((Amazon, EC2))) lancé en 2006. Ce service était nouveau à bien des égards :
+Le terme * cloud *(((cloud, définition))) a été rendu populaire par ((Amazon)) avec leur service "Amazon Elastic Compute Cloud" : *Amazon EC2*(((Amazon, EC2))) lancé en 2006. Ce service était nouveau à bien des égards :
 
 
 == !
@@ -168,7 +168,7 @@ Chacun de ces degrés d'externalisation a un nom:
 == !
 *Infrastructure en tant que service* (Infrastucture as a Service, IaaS)
 
-Ici, le cloud est utilisé pour remplacer les besoins en infrastructure informatique locale de l'entreprise. Par exemple, au lieu de stocker ses données dans une base de donnée sur place, on loue un service de stockage de données sur le cloud, qui sera facturé précisément au temps d'utilisation, à la taille de données stockées, et au volume de données écrites ou transférées (comme il s'agit d'un service de base de données, ce type de IaaS peut être appelé un DBaaS: database as a service). (((DBaaS: database as a service)))
+Ici, le cloud est utilisé pour remplacer les besoins en infrastructure informatique locale de l'entreprise. Par exemple, au lieu de stocker ses données dans une base de donnée sur place, on loue un service de stockage de données sur le cloud, qui sera facturé précisément au temps d'utilisation, à la taille de données stockées, et au volume de données écrites ou transférées (comme il s'agit d'un service de base de données, ce type de IaaS peut être appelé un DBaaS: database as a service).(((DBaaS: database as a service)))
 
 
 == !
@@ -186,18 +186,18 @@ Des exemples populaires sont Google Drive, https://www.d2l.com/products/learning
 
 == 4. Cloud privé ou public? cloud hybride?
 == !
-- Amazon EC2 (((Amazon, EC2))) est un exemple de *cloud public* (((cloud, cloud public))): il est accessible publiquement à tout client. Bien sûr, cela ne signifie pas que chaque client peut voir ce que les autres font sur le cloud! Chaque client a ses espaces privés sur le cloud.
+- Amazon EC2(((Amazon, EC2))) est un exemple de *cloud public*(((cloud, cloud public))): il est accessible publiquement à tout client. Bien sûr, cela ne signifie pas que chaque client peut voir ce que les autres font sur le cloud! Chaque client a ses espaces privés sur le cloud.
 
 - De nombreuses entreprises ont des exigences de sécurité qui les empêchent d'accéder aux clouds publics.
 Ils ont besoin de leurs serveurs sur place.
 
 == !
-Dans ce cas, ils peuvent construire leur propre *cloud privé*: (((cloud, cloud privé))) c'est un cloud comme Amazon EC2, sauf qu'il est détenu, géré et utilisé par l'entreprise exclusivement - il n'est pas accessible à des tiers.
+Dans ce cas, ils peuvent construire leur propre *cloud privé*:(((cloud, cloud privé))) c'est un cloud comme Amazon EC2, sauf qu'il est détenu, géré et utilisé par l'entreprise exclusivement - il n'est pas accessible à des tiers.
 
 == !
 Mais même privé, le cloud conserve les caractéristiques de base d'un cloud: à la demande et élastique notamment.
 
-- *Les cloud ​​hybrides* (((cloud, cloud hybride))) sont une variété de clouds ​​privés: c'est un cloud privé où certaines formes d'opérations peuvent être déléguées à un cloud public.
+- *Les cloud ​​hybrides*(((cloud, cloud hybride))) sont une variété de clouds ​​privés: c'est un cloud privé où certaines formes d'opérations peuvent être déléguées à un cloud public.
 
 
 == !

@@ -198,7 +198,7 @@ Microsoft SQL server since 2008:
 - Possible to use complex queries on these objects
 
 [start=2]
-2. NoSQL (((SQL vs NoSQL))) solutions
+2. NoSQL(((SQL vs NoSQL))) solutions
 
 Since ~ 2005, new types of databases have been developed, which don't follow a table structure in order to facilitate the query of special kinds of data, like geospatial data or network data.
 
@@ -250,7 +250,7 @@ and yet... the logic of territories is shaping data: there is a geography of dat
 Representations with a supposedly universal and transparent coordinate system blinds us to this fact.
 
 == !
-This argument is made by Frederic Martel (((Martel, Frederic))) in his book "Smart": Internet does not flatten everything into one big model. There are several Internets with their geography, politics and sociology.
+This argument is made by Frederic Martel(((Martel, Frederic))) in his book "Smart": Internet does not flatten everything into one big model. There are several Internets with their geography, politics and sociology.
 
 image:smart.jpg[align="center", title="Smart by Frederic Martel"]
 
@@ -264,7 +264,7 @@ Here are a few dimensions on which geography plays a strong role:
 
 
 == !
-- Data production: *Amazon Mechanical Turk* (((Amazon, Amazon Mechanical Turk))) is a service of data production through the hiring of a distributed crowd of workers. It tends to "erase distance", since workers can be hired by anyone anywhere.
+- Data production: *Amazon Mechanical Turk*(((Amazon, Amazon Mechanical Turk))) is a service of data production through the hiring of a distributed crowd of workers. It tends to "erase distance", since workers can be hired by anyone anywhere.
 
 == !
 Yet, the geographical distribution of workers on Amazon Mechanical Turk is far from even. The following figure is taken  http://aclweb.org/anthology/Q14-1007[from this study]:

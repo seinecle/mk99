@@ -60,7 +60,7 @@ The volumes of data are increasing at an *accelerating rate*. According to sourc
 == !
 ==== A - Structured data
 == !
-*Structured data* (((structured data))) refers to data which is formatted and organized according to a well defined set of rules, which makes it *machine readable*.
+*Structured data*(((structured data))) refers to data which is formatted and organized according to a well defined set of rules, which makes it *machine readable*.
 
 == !
 For example, zip codes are a structured dataset because they follow a precise convention regarding the number of letters and digits composing them, making it easy for an optical reader and software to identify and "read" them.
@@ -91,7 +91,7 @@ image::book.png[align="center", title="A book of accounts showing structured dat
 
 ==== B - Unstructured data
 == !
-*Unstructured data* (((unstructured data))) refers to datasets made of "unruly" items: text of any length, without proper categorization, encoded in different formats, including possibly pictures, sound, geographical coordinates and what not...
+*Unstructured data*(((unstructured data))) refers to datasets made of "unruly" items: text of any length, without proper categorization, encoded in different formats, including possibly pictures, sound, geographical coordinates and what not...
 
 
 == !
@@ -117,7 +117,7 @@ image::firehose.jpg[align="center", title="The Twitter Firehose"]
 == !
 
 
-- *Sensor data* (((sensor data))) is bound to increase speed as well. While pictures, tweets, individual records... are single item data sent at intervals, more and more sensors can send data *in a continuous stream* (measures of movement, sound, etc.)
+- *Sensor data*(((sensor data))) is bound to increase speed as well. While pictures, tweets, individual records... are single item data sent at intervals, more and more sensors can send data *in a continuous stream* (measures of movement, sound, etc.)
 
 
 == !
@@ -219,7 +219,7 @@ In the late 1990s, a rapid shift in the habits of software developers kicked in:
 Until then, most of the software was "closed source": you buy a software *without the possibility* to reuse / modify / augment its source code. Just use it as is.
 
 == !
-*Open source* (((open source))) software made it easy to get access to software built by others and use it to develop new things. After several decades, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[open source software have become common place].
+*Open source*(((open source))) software made it easy to get access to software built by others and use it to develop new things. After several decades, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[open source software have become common place].
 
 == !
 ==== f. Hype kicked in
@@ -292,13 +292,13 @@ You can find a https://mattturck.com/bigdata2017/[high res version of the Big da
 == !
 ==== a. More data is coming
 == !
-The *Internet of things* (((IoT - Internet of things))) designates the https://seinecle.github.io/IoT4Entrepreneurs/[extension of Internet to objects beyond web pages or emails].
+The *Internet of things*(((IoT - Internet of things))) designates the https://seinecle.github.io/IoT4Entrepreneurs/[extension of Internet to objects beyond web pages or emails].
 
 == !
-The *IoT* (((IoT - Internet of things))) is used to *do* things (display information on screen, pilote robots, etc.) but also very much to *collect data* in their environments, through sensors.
+The *IoT*(((IoT - Internet of things))) is used to *do* things (display information on screen, pilote robots, etc.) but also very much to *collect data* in their environments, through sensors.
 
 == !
-Hence, the development of *connected objects* (((IoT - Internet of things))) will lead to a tremendous increase in the volume of data collected.
+Hence, the development of *connected objects*(((IoT - Internet of things))) will lead to a tremendous increase in the volume of data collected.
 
 == !
 ==== b. Regulatory frameworks will grow in complexity
@@ -316,21 +316,21 @@ As technology evolves quickly, we can anticipate that societal impacts of big da
 For big data, we observe that it is peaking in 2017, while new terms appear:
 
 == !
-pass:[<iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe> ]
-
-
+[.stretch]
+image::gtrends.png[pdfwidth="100%", align="center", title="Google searches for big data, machine learning and AI", book="keep"]
 == !
+
 
 What are the differences between these terms?
 
 * "Big data" is by now a generic term
-* *Machine learning* (((machine learning))) puts the focus on the scientific and software engineering capabilities enabling to do something useful with the data (predict, categorize, score...)
+* *Machine learning*(((machine learning))) puts the focus on the scientific and software engineering capabilities enabling to do something useful with the data (predict, categorize, score...)
 
 == !
-* *Artificial intelligence* (((artificial intelligence))) puts the emphasis on human-like possibilities afforded by machine learning. Often used interchangeably with machine learning. AI is fed on data, so the future of big data will intersect with what AI becomes.
+* *Artificial intelligence*(((artificial intelligence))) puts the emphasis on human-like possibilities afforded by machine learning. Often used interchangeably with machine learning. AI is fed on data, so the future of big data will intersect with what AI becomes.
 
 == !
-* And *data science* (((data science)))? This is a broad term encompassing machine learning, statistics, and many analytical methods to work with data and interpret it. Often used interchangeably with machine learning. *Data scientist* (((data scientist))) is a common job description in the field.
+* And *data science*(((data science)))? This is a broad term encompassing machine learning, statistics, and many analytical methods to work with data and interpret it. Often used interchangeably with machine learning. *Data scientist*(((data scientist))) is a common job description in the field.
 
 == The end
 == !

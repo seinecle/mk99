@@ -46,7 +46,7 @@ Mon point de vue est celui de quelqu'un qui est venu à la visualisation de donn
 
 
 == !
-Je sens qu'au cours des six dernières années, la *dataviz* (((data visualisation))) a évolué de manière significative: elle est apparue et a cristallisé en un sujet distinct, a vécu à travers un âge d'or, et nous sommes aujourd'hui ailleurs. Commençons par le début.
+Je sens qu'au cours des six dernières années, la *dataviz*(((data visualisation))) a évolué de manière significative: elle est apparue et a cristallisé en un sujet distinct, a vécu à travers un âge d'or, et nous sommes aujourd'hui ailleurs. Commençons par le début.
 
 
 == 2. Avant la dataviz
@@ -529,7 +529,7 @@ Ce chemin et des chemins similaires empruntés par d’autres suggèrent que:
 
 == !
 - L'écran d'ordinateur et même l'écran du téléphone mobile deviennent moins hégémoniques que le support où les données peuvent être visualisées. Objets, sculptures, bâtiments, meubles ... c'est la prochaine frontière à explorer.
-Non seulement mapper des données sur une surface plane, mais peut-être même en 3D: voir https://vimeo.com/49679699[cette installation] par Moritz Stefaner ((("Stefaner, Moritz"))).
+Non seulement mapper des données sur une surface plane, mais peut-être même en 3D: voir https://vimeo.com/49679699[cette installation] par Moritz Stefaner((("Stefaner, Moritz"))).
 
 == !
 - Les interactions ont lieu dans des environnements plus riches que ceux auxquels nous sommes habitués (ordinateurs de bureau ou mobiles), les interactions avec l'utilisateur se diversifiant.
@@ -550,6 +550,11 @@ Ceci est juste ma vision pour la dataviz, je serais heureux d'en discuter avec v
 **Je vous remercie!**
 
 **Publié en 2015**
+
+== Des vidéos sur le sujet
+== !
+
+- La data visualization : https://youtu.be/TlOW52_TPrE
 
 == Pour aller plus loin
 == !

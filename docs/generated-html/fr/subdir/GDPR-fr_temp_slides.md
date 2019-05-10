@@ -83,7 +83,7 @@ Les principes du https://en.wikipedia.org/wiki/International_Safe_Harbor_Privacy
 
 
 == !
-En Octobre 2015, https://en.wikipedia.org/wiki/Max_Schrems[Maximillian Schrems] (un étudiant en droit en Autriche) ((("Schrems, Max"))) a lancé une action en justice contre Facebook pour défaut de protection de ses données personnelles contre l'espionnage de la NSA aux Etats-Unis.
+En Octobre 2015, https://en.wikipedia.org/wiki/Max_Schrems[Maximillian Schrems] (un étudiant en droit en Autriche)((("Schrems, Max"))) a lancé une action en justice contre Facebook pour défaut de protection de ses données personnelles contre l'espionnage de la NSA aux Etats-Unis.
 
 
 == !
@@ -141,12 +141,12 @@ Source pour ces définitions de clé: un  https://github.com/seinecle/mk99/blob/
 == !
 ==== a. Données personnelles
 == !
-Toute information identifiant directement ou indirectement une personne physique (ex. nom, no d’immatriculation, no de téléphone, photographie, date de naissance, commune de résidence, empreinte digitale...). (((données, données personnelles)))
+Toute information identifiant directement ou indirectement une personne physique (ex. nom, no d’immatriculation, no de téléphone, photographie, date de naissance, commune de résidence, empreinte digitale...).(((données, données personnelles)))
 
 == !
 ==== b. Données sensibles
 == !
-Les données sensibles (((données, données sensibles))) constituent une catégorie particulière de données personnelles (notamment données personnelles révélant l'origine raciale ou ethnique, opinions politiques, croyances religieuses ou philosophiques, appartenance à un syndicat, données sur la santé ou la vie sexuelle) à laquelle des protections supplémentaires s'appliquent.
+Les données sensibles(((données, données sensibles))) constituent une catégorie particulière de données personnelles (notamment données personnelles révélant l'origine raciale ou ethnique, opinions politiques, croyances religieuses ou philosophiques, appartenance à un syndicat, données sur la santé ou la vie sexuelle) à laquelle des protections supplémentaires s'appliquent.
 
 == !
 ==== c. Personne concernée
@@ -160,14 +160,14 @@ Une ((personne concernée)) est un être humain sur lequel des données personne
 
 
 == !
-Un responsable de traitement ((("data controller, responsable de traitement"))) est une entité qui détermine les objectifs, les conditions et les moyens du traitement des données personnelles. Lorsque l'organisation est suffisamment grande, une position dédiée de "Responsable de traitement" peut être créée, sinon c'est le responsable légal de l'organisation.
+Un responsable de traitement((("data controller, responsable de traitement"))) est une entité qui détermine les objectifs, les conditions et les moyens du traitement des données personnelles. Lorsque l'organisation est suffisamment grande, une position dédiée de "Responsable de traitement" peut être créée, sinon c'est le responsable légal de l'organisation.
 
 Ex: en France, le responsable de traitement est chargé de déclarer les données personnelles traitées à la https://www.cnil.fr/fr/home[CNIL].
 
 == !
 ==== e. Sous-traitant ("Data processor" en anglais)
 == !
-Un sous-traitant ((("data processor, sous-traitant"))) est une entité qui traite des données personnelles pour le compte du responsable de traitement (par exemple, fournisseurs d'hébergement cloud et de centre de données).
+Un sous-traitant((("data processor, sous-traitant"))) est une entité qui traite des données personnelles pour le compte du responsable de traitement (par exemple, fournisseurs d'hébergement cloud et de centre de données).
 
 
 == !
@@ -202,7 +202,7 @@ Time out: les informations doivent être supprimées lorsque le service s'arrêt
 == !
 ==== c. Portabilité
 == !
--> L'information doit être disponible sur demande (((données, portabilité de)))
+-> L'information doit être disponible sur demande(((données, portabilité de)))
 
 En 2011, Max Schrems a demandé toutes ses données Facebook. Il en a reçu 1200 pages.
 
@@ -253,7 +253,7 @@ En vertu du ((RGPD)), les entreprises ne pourront plus utiliser des termes longs
 == !
 ==== e. Les violations de données
 == !
-Réglementation accrue entourant la divulgation de *violations de données* (((données, violations de données))). Plus précisément, des rapports beaucoup plus rapides sont requis (dans les 72 heures).
+Réglementation accrue entourant la divulgation de *violations de données*(((données, violations de données))). Plus précisément, des rapports beaucoup plus rapides sont requis (dans les 72 heures).
 
 == !
 ==== f. Droits des sujets de données
@@ -274,7 +274,7 @@ Les citoyens ont maintenant également le droit de questionner et remettre en ca
 == !
 ==== g. Confidentialité "by design"
 == !
-*Confidentialité by design* (((vie privée, confidentialité by design))) est une obligation légale de considérer la confidentialité des données dès le début de tous les projets et initiatives, et non après coup.
+*Confidentialité by design*(((vie privée, confidentialité by design))) est une obligation légale de considérer la confidentialité des données dès le début de tous les projets et initiatives, et non après coup.
 
 
 == !

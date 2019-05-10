@@ -28,7 +28,7 @@ At the most basic level, anything could count as "data" with possibly a personal
 
 In practice, "data" starts to to be considered as such when it can be *processed automatically* or when it consists in *structured records* that can be used to facilitate the retrieval of specific information on specific individuals.
 
--> Hint: paper records, filing systems, databases
+-> Hint: paper records, filing systems, databases.
 
 == 3. Personal data matters because of privacy
 
@@ -56,7 +56,7 @@ ____
 This article from the Declaration is found in similar forms in most of the conventions on human rights in the world.
 
 // +
-This *right to privacy* (((privacy, right to privacy))) enables individuals to define their identity in relation to the world, by giving each individual the power to control what to keep for themselves, and what to reveal / share with the world.
+This *right to privacy*(((privacy, right to privacy))) enables individuals to define their identity in relation to the world, by giving each individual the power to control what to keep for themselves, and what to reveal / share with the world.
 
 // +
 In 2005, a report on https://books.google.fr/books?id=yeVRrrJw-zAC&pg=PA1&dq=right+to+privacy+tel+aviv&hl=en&ei=T0IhTaWhEI-msQOizMWZCg&sa=X&oi=book_result&ct=result&redir_esc=y#v=onepage&q=right%20to%20privacy%20tel%20aviv&f=false[Privacy in the Digital Environment] by the Haifa Center of Law & Technology develops:
@@ -102,7 +102,7 @@ image::truman.jpg[align="center", title="The Truman Show, 1998", book="keep"]
 == 5. Privacy of the consumer and privacy of citizens: the relations between the two
 
 //ST]: !
-Thanks to whistleblowers like https://en.wikipedia.org/wiki/Edward_Snowden[Edward Snowden], ((("Snowden, Edward"))) a former contractor for the National Security Agency - NSA, the extent of privacy breaches by governmental agencies is now better known.
+Thanks to whistleblowers like https://en.wikipedia.org/wiki/Edward_Snowden[Edward Snowden],((("Snowden, Edward"))) a former contractor for the National Security Agency - NSA, the extent of privacy breaches by governmental agencies is now better known.
 
 This trailer for "CitizenFour" gives a sense of the dangers whistleblowers face when revealing how governmental agencies spy on their citizens:
 
@@ -131,7 +131,7 @@ Sociologist of technology http://technosociology.org/[Zeynep Tufekci] goes furth
 Her argument is that besides "surveillance" and "lack of privacy", companies like Google and Facebook developing a business model based on ad targeting by analytics on personal data, design a *persuasion architecture* which can be used / highjacked for political purposes.
 
 // +
-*Tufekci* ((("Tufekci, Zeynep"))) does not argue that Google, Facebook or the likes inherently have anti-democratic purposes, but that:
+*Tufekci*((("Tufekci, Zeynep"))) does not argue that Google, Facebook or the likes inherently have anti-democratic purposes, but that:
 
 // +
 - they develop of an information architecture which has the potential to shape opinions of crowds,
@@ -152,7 +152,7 @@ The collection and treatment of personal data by businesses has far reaching imp
 The topic engages the https://en.wikipedia.org/wiki/Corporate_social_responsibility[Corporate social responsibility] of the firm.
 
 // +
-The nature of the *business model* (((business model, based on consumer profiling))) itself - profiling consumers in the most specific way - has profound consequences on the design of the environment surrounding individuals.
+The nature of the *business model*(((business model, based on consumer profiling))) itself - profiling consumers in the most specific way - has profound consequences on the design of the environment surrounding individuals.
 
 // +
 What are the next steps? Several trends can be identified:
@@ -176,7 +176,7 @@ image::amazon-echo.jpg[align="center", title="Echo Alexa", book="keep"]
 {nbsp} +
 
 // +
-*Echo Alexa* (((Amazon, Echo Alexa))) is a home assistant with a conversational interface, providing services personalized with the data provided by the user.
+*Echo Alexa*(((Amazon, Echo Alexa))) is a home assistant with a conversational interface, providing services personalized with the data provided by the user.
 
 == The end
 // +
@@ -189,7 +189,8 @@ This course is made by Clement Levallois.
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-nd_portrait_mini_150.png[align="center", role="right"]
+cle]
+d_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net

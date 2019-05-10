@@ -1,9 +1,7 @@
 = Machine learning, data science and artificial intelligence
 == !
 Clément Levallois <levallois@em-lyon.com>
-2017-11-01
-
-last modified: {docdate}
+{docdate}
 
 :icons!:
 :iconsfont:   font-awesome
@@ -18,6 +16,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 == !
 
 
+first edition: 2017-11-01
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 
@@ -90,7 +89,7 @@ To illustrate, we take some data about marketing budgets and sales figures in th
 
 
 == !
-*Machine learning* (((machine learning))) does similar things to statistics, but in a slightly different way:
+*Machine learning*(((machine learning))) does similar things to statistics, but in a slightly different way:
 
 - there is an emphasis on getting the prediction right, not caring for identifying the underlying mathematical model
 - the prediction needs to be achievable in the time available, with the computing resources available
@@ -139,7 +138,7 @@ The pursuit of improved models in traditional statistics is not immune to the no
 
 
 == !
-A key illustration of the difference between statistics and machine learning can be provided with the use of *graphic cards* (((GPU - graphic cards))).
+A key illustration of the difference between statistics and machine learning can be provided with the use of *graphic cards*(((GPU - graphic cards))).
 
 
 == !
@@ -162,7 +161,7 @@ These video games need powerful video cards (aka https://en.wikipedia.org/wiki/G
 
 
 == !
-This pushed for the development of ever more powerful *GPUs* (((GPU - graphic cards))).
+This pushed for the development of ever more powerful *GPUs*(((GPU - graphic cards))).
 Their characteristics is that they can compute simple operations to change pixel colors, *for each of the millions of pixels of the screen in parallel*, so that the next frame of the picture can be rendered in milliseconds.
 
 
@@ -176,7 +175,7 @@ If a statistical problem for prediction can be broken down into simple operation
 
 
 == !
-To illustrate the difference in speed between a mathematical operation run without / with a *GPU* (((GPU - graphic cards))):
+To illustrate the difference in speed between a mathematical operation run without / with a *GPU*(((GPU - graphic cards))):
 
 
 == !
@@ -208,7 +207,7 @@ Machine learning can be categorized in 3 families of tricks:
 == !
 ==== a. The unsupervised learning approach
 == !
-*Unsupervised learning* (((machine learning, unsupervised learning))) designates the methods which take a fresh dataset and find interesting patterns in it, *without inferring from previous, similar datasets*.
+*Unsupervised learning*(((machine learning, unsupervised learning))) designates the methods which take a fresh dataset and find interesting patterns in it, *without inferring from previous, similar datasets*.
 
 How does supervised learning work? Let's take an example. In a wedding reception, how to sit people with similar interests at the same tables?
 
@@ -261,22 +260,22 @@ image::kmeans.jpg[pdfwidth="60%", align="center", title="k-means clustering - an
 
 ==== b. The *supervised* learning approach
 == !
-*Supervised learning* (((machine learning, supervised learning))) is the approach consisting in calibrating a model based on the history of past experiences in order to guess / predict a new occurrence of the same experience.
+*Supervised learning*(((machine learning, supervised learning))) is the approach consisting in calibrating a model based on the history of past experiences in order to guess / predict a new occurrence of the same experience.
 
 Take 50,000 or more observations, or data points, like:
 
-**an image of a cat, with the caption "cat"
+** an image of a cat, with the caption "cat"
 
-**an image of a dog, with the caption "dog"
+** an image of a dog, with the caption "dog"
 
-**another image of a cat, with the caption "cat"
+** another image of a cat, with the caption "cat"
 
 etc....
 
 
 == !
-- you need 50,000 observations of this kind, or more! It is called the *training set* (((machine learning, training set))).
-- this is also called a *labelled dataset* (((machine learning, labelled dataset))), meaning that we have a label describing each of the observation.
+- you need 50,000 observations of this kind, or more! It is called the *training set*(((machine learning, training set))).
+- this is also called a *labelled dataset*(((machine learning, labelled dataset))), meaning that we have a label describing each of the observation.
 
 
 == !
@@ -285,7 +284,7 @@ etc....
 In a trained dataset, where do the labels come from?
 
 - they can be simply be provided by users of a service. For instance, pics on Instagram captioned by hashtags are exactly that: a picture with a label. The labelling is done by the users of Instagram posting the pictures and writing the hashtags below it. Instagram is a free service but the training sets it creates are of great value to the company (Instagram is owned by Facebook).
-- they can be produced by human workers (((human labor))). In practice, humans are paid a few cents per picture which they have to label (is it a cat? is it a dog? etc.). A large industry and job market is developing to perform a variety of tasks of this kind. There is a growing workforce providing their ((digital labor)) to companies in need of *data labeling* (((data, data labeling))) or *data curation* (((data, data curation))). See the work of http://www.casilli.fr/about/[Antonio Casilli] ((("Casilli, Antonio"))) for further reference.
+- they can be produced by human workers(((human labor))). In practice, humans are paid a few cents per picture which they have to label (is it a cat? is it a dog? etc.). A large industry and job market is developing to perform a variety of tasks of this kind. There is a growing workforce providing their ((digital labor)) to companies in need of *data labeling*(((data, data labeling))) or *data curation*(((data, data curation))). See the work of http://www.casilli.fr/about/[Antonio Casilli]((("Casilli, Antonio"))) for further reference.
 ====
 
 
@@ -353,7 +352,7 @@ Important take away on the supervised approach:
 
 
 == !
-To understand reinforcement learning  (((machine learning, reinforcement learning))) in an intuitive sense, we can think of how animals can learn quickly by *ignoring* undesirable behavior and rewarding desirable behavior.
+To understand reinforcement learning(((machine learning, reinforcement learning))) in an intuitive sense, we can think of how animals can learn quickly by *ignoring* undesirable behavior and rewarding desirable behavior.
 
 This is easy and takes just seconds. The following video shows B.F. Skinner, main figure in psychology in the 1950s-1970s:
 
@@ -462,7 +461,7 @@ Hints that "classic" statistical modeling (maybe as simple as a linear regressio
 
 == !
 - The dataset is not large (below 50k observations), supervised learning is not going to work
-- The data is perfectly structured (tabular data) (((structured data)))
+- The data is perfectly structured (tabular data)(((structured data)))
 - The data points have few features
 
 
@@ -493,12 +492,12 @@ image::kdd.png[align="center", title="KDD - knowledge discovery in databases", w
 == !
 More recent representations of the steps in data processing have been suggested, making room for the role of ((data visualization)):
 
--> see https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400[the information design process by Ben Fry] ((("Fry, Ben"))) and this http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html[data visualization workflow by Moritz Stefaner] ((("Stefaner, Moritz"))):
+-> see https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400[the information design process by Ben Fry]((("Fry, Ben"))) and this http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html[data visualization workflow by Moritz Stefaner]((("Stefaner, Moritz"))):
 
 
 == !
 [.stretch]
-image::stefaner.png[align="center", title="data visualization workflow by Moritz Stefaner", width=500, book="keep"][pdfwidth="90%",
+image::stefaner.png[pdfwidth="90%", align="center", title="data visualization workflow by Moritz Stefaner", width=500, book="keep"]
 == !
 
 
@@ -523,7 +522,7 @@ The skills of a ((data scientist)) are often represented as the meeting of three
 
 == !
 [.stretch]
-image::conway.png[The Venn diagram of data science by Drew Conway]", book="keep"][pdfwidth="40%", align="center", title="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
+image::conway.png[pdfwidth="40%", align="center", title="The Venn diagram of data science by Drew Conway", book="keep"]
 == !
 
 
@@ -533,12 +532,12 @@ image::conway.png[The Venn diagram of data science by Drew Conway]", book="keep"
 
 
 == !
-==== a. Weak vs Strong AI artificial intelligence, weak vs strong AI
+==== a. Weak vs Strong AI
 == !
 
 
 == !
-*Weak AI* (((artificial intelligence, weak AI))) designates computer programs able to outperform humans at complex tasks with a narrow focus (playing chess)
+*Weak AI*(((artificial intelligence, weak AI))) designates computer programs able to outperform humans at complex tasks with a narrow focus (playing chess)
 
 
 == !
@@ -546,7 +545,7 @@ Weak AI is typically the result of applying expert systems or machine learning t
 
 
 == !
-Strong AI (((artificial intelligence, strong AI))) is an intelligence that would be general in scope, able to set its own goal, and conscious of itself.
+*Strong AI*(((artificial intelligence, strong AI))) is an intelligence that would be general in scope, able to set its own goal, and conscious of itself.
 Nothing is close to that yet.
 
 
@@ -560,7 +559,7 @@ So AI is a synonymous with weak AI at the moment.
 
 
 == !
-Laurent Alexandre ((("Alexandre, Laurent"))) on the social and economic stakes of *AI* (((artificial intelligence))) (in French):
+Laurent Alexandre((("Alexandre, Laurent"))) on the social and economic stakes of *AI*(((artificial intelligence))) (in French):
 
 
 == !
@@ -571,7 +570,7 @@ video::rJowm24piM4[youtube, width= 500, height=400]
 
 
 == !
-John Launchbury, Director of DARPA's (((DARPA))) Information Innovation Office (I2O) in 2017:
+John Launchbury, Director of DARPA's(((DARPA))) Information Innovation Office (I2O) in 2017:
 
 
 == !

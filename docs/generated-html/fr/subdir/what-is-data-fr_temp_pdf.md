@@ -122,32 +122,32 @@ image::tweet.png[align = "center", book = "garder"]
 // +
 - Le texte est formaté en *texte brut* (ce qui signifie, pas de formatage spécial), par opposition aux *formats d'échange de données* qui sont des marques de mise en forme ajoutées au texte pour faciliter sa lisibilité par un logiciel (https://codingislove.com/json-tutorial-indepth/[csv, json et xml]).
 // +
-- L'*encodage* (((data, encoding))) du texte est UTF-8 (un des encodages issus de la norme Unicode). L'encodage traite de la question : comment représenter les alphabets, les signes (par exemple: emojis) et les symboles, de différentes langues, dans le texte? UTF-8 est un encodage qui est l'un des plus universels.
+- L'*encodage*(((data, encoding))) du texte est UTF-8 (un des encodages issus de la norme Unicode). L'encodage traite de la question : comment représenter les alphabets, les signes (par exemple: emojis) et les symboles, de différentes langues, dans le texte? UTF-8 est un encodage qui est l'un des plus universels.
 // +
-- Le tweet fait partie d'une liste de tweets. La liste représente la *structure de données* (((données, structure))) de l'ensemble de données, c'est la façon dont les données sont organisées. Il existe de nombreuses structures de données alternatives: tableaux, ensembles, "dics", "maps" ...
+- Le tweet fait partie d'une liste de tweets. La liste représente la *structure de données*(((données, structure))) de l'ensemble de données, c'est la façon dont les données sont organisées. Il existe de nombreuses structures de données alternatives: tableaux, ensembles, "dics", "maps" ...
 // +
 - Le tweet est stocké sous forme d'image (fichier png) sur le disque dur. "png" est le *format de fichier*. Les données sont *persistées* en tant que fichier sur le disque (elles auraient pu être stockées dans une base de données à la place).
 
 === b. Données tabulaires
-*Les données tabulaires* (((données, tabulaires))) sont un moyen courant de gérer les ensembles de données, en les organisant en lignes et en colonnes :
+*Les données tabulaires*(((données, tabulaires))) sont un moyen courant de gérer les ensembles de données, en les organisant en lignes et en colonnes :
 
 image::table.png[pdfwidth = "100%", align = "center", title = "données tabulaires", book = "keep"]
 {nbsp} +
 
 === c. Données "first party", "second party" et "third party"
-- *First party data* (((données, "first party data"))): les données générées par les activités de votre propre organisation.
+- *First party data*(((données, "first party data"))): les données générées par les activités de votre propre organisation.
 Votre organisation en est propriétaire, ce qui ne signifie pas que le consentement des utilisateurs n'est pas requis en ce qui concerne les données personnelles.
 // +
-- *Second party data* (((données, "second party data"))): les données accessibles via des partenariats.
+- *Second party data*(((données, "second party data"))): les données accessibles via des partenariats.
 Sans être le générateur ni le propriétaire de ces données, les partenaires le mettent à votre disposition dans le cadre d'un accord.
 // +
-- *Données tierces ou "third party data"* (((données, "third party data"))): les données acquises par un achat.
+- *Données tierces ou "third party data"*(((données, "third party data"))): les données acquises par un achat.
 Ces données sont acquises via une transaction de marché. Ses utilisations s'accompagnent toujours de conditions, notamment pour les données personnelles.
 
 === d. Données sociodémo vs données de comportement
 - Les données sociodémogaphiques ou *sociodémo* ((données, sociodémo))) se réfèrent aux informations sur les individus, décrivant les attributs fondamentaux de leur identité sociale: âge, sexe, lieu de résidence, profession, statut matrimonial et nombre d'enfants.
 // +
-- *Les données de comportement ou "behavior data"* (((données, behavior data))) se réfèrent à toute trace numérique laissée par l'individu au cours de sa vie : clics sur des pages web, likes sur Facebook, transactions d'achat, commentaires postés sur Tripadvisor ...
+- *Les données de comportement ou "behavior data"*(((données, behavior data))) se réfèrent à toute trace numérique laissée par l'individu au cours de sa vie : clics sur des pages web, likes sur Facebook, transactions d'achat, commentaires postés sur Tripadvisor ...
 
 // +
 Les données sociodémographiques sont généralement bien structurées ou faciles à structurer.

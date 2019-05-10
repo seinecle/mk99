@@ -22,7 +22,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 == 1. Définition de l'API
 == !
 API: acronyme de *Application Programming Interface*. Une ((API)) est le moyen de rendre les logiciels "faciles à brancher et à partager" avec d'autres programmes.
- (((API, définition)))
+(((API, définition)))
 
 == !
 Une API est simplement un groupe de règles (que l'on peut aussi appeler une convention, ou un accord ...) que les programmeurs suivent lorsqu'ils écrivent la partie de leur code qui est en charge de communiquer avec d'autres logiciels.
@@ -53,7 +53,7 @@ Avec l'évolution de l'informatique dans les années 1970 et 1980, un nouveau sy
 == !
 ==== a. EDI: Échange de données informatisé
 == !
-*EDI* (((EDI - Échange de données informatisé))) n'est pas un échange de pièces jointes dans les emails ou via un transfert de fichiers sur un site web, car les emails et les sites n'existaient pas à l'époque! (Les courriels et le Web ont été adoptés par les entreprises à la fin des années 1990).
+*EDI*(((EDI - Échange de données informatisé))) n'est pas un échange de pièces jointes dans les emails ou via un transfert de fichiers sur un site web, car les emails et les sites n'existaient pas à l'époque! (Les courriels et le Web ont été adoptés par les entreprises à la fin des années 1990).
 
 == !
 Au lieu de cela, l'échange de données via EDI consistait à utiliser des outils électroniques de transmission par l'équivalent d'une ligne téléphonique (comme le fax mais encore plus compliqué). Ce système d'EDI était complexe et lourd pour les raisons suivantes :
@@ -89,12 +89,12 @@ Il devenait de plus en plus commode de définir des conventions simples et unive
 
 == !
 - *API* pour faire court
-- *web services* (((API, web service)))
+- *web services*(((API, web service)))
 - *REST* API (voir ci-dessous).
 
 
 == !
-Une *API Web* (((API, web service))) étend la logique des API que nous avons vues au début de ce document, à la communication logicielle *via le web*. Pour rappel, une API est une convention suivie lors de l'écriture d'un logiciel, rendant ce logiciel disponible pour d'autres logiciels.
+Une *API Web*(((API, web service))) étend la logique des API que nous avons vues au début de ce document, à la communication logicielle *via le web*. Pour rappel, une API est une convention suivie lors de l'écriture d'un logiciel, rendant ce logiciel disponible pour d'autres logiciels.
 
 
 == !
@@ -110,7 +110,7 @@ Une API Web est une API qui permet à deux logiciels de communiquer via Internet
 == !
 ==== c. Les avantages d'une API Web par rapport à un EDI
 == !
-- Contrairement à un *EDI* (((API, différence avec les EDI)), une API web supprime toute contrainte techniqu spécifique à l'industrie. Les API Web sont simplement une convention suivant les standards du web pour envoyer et recevoir des données sur Internet, sans dire quoi que ce soit sur le contenu des données.
+- Contrairement à un *EDI*(((API, différence avec les EDI)), une API web supprime toute contrainte techniqu spécifique à l'industrie. Les API Web sont simplement une convention suivant les standards du web pour envoyer et recevoir des données sur Internet, sans dire quoi que ce soit sur le contenu des données.
 
 == !
 - Les données envoyées et reçues peuvent être des factures, des pages Web, des horaires de train, de l'audio, de la vidéo ... peu importe.
@@ -123,7 +123,7 @@ Une API Web est une API qui permet à deux logiciels de communiquer via Internet
 == !
 [WARNING]
 ====
-Dire que les API sont ouvertes ne signifie pas une absence de sécurité (((API, sécurité de))): la communication via les API peut facilement être identifiée et cryptée, selon les besoins.
+Dire que les API sont ouvertes ne signifie pas une absence de sécurité(((API, sécurité de))): la communication via les API peut facilement être identifiée et cryptée, selon les besoins.
 ====
 
 
@@ -137,7 +137,7 @@ Deux conventions d'API web populaires ont émergé dans les années 1990 et ont 
 
 
 == !
-*Les API REST* (((API, protocole REST))) sont finalement devenues les plus répandues, car elles utilisent les mêmes principes simples que les pages Web utilisent pour être transférées sur Internet (le protocole "http" que vous voyez dans les adresses de pages web).
+*Les API REST*(((API, protocole REST))) sont finalement devenues les plus répandues, car elles utilisent les mêmes principes simples que les pages Web utilisent pour être transférées sur Internet (le protocole "http" que vous voyez dans les adresses de pages web).
 C'est pourquoi les API sont souvent appelées https://www.youtube.com/watch?v=7YcW25PHnAA[ API REST, présentées dans cette vidéo pédagogique].
 
 == !
@@ -187,7 +187,7 @@ Prenons l'exemple d'une entreprise de transport comme la SNCF française qui tro
 - La SNCF ajoute https://data.sncf.com/api/fr[une API et sa documentation], mettant les données à la disposition des développeurs capables de https://youtu.be/7YcW25PHnAA[se connecter aux API, ce qui est une compétence de base dans le développement de logiciels].
 - Les entrepreneurs et les programmeurs en général pourront accéder aux données via l'API et les utiliser, en créant de https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja[nouveaux services basés sur ces informations sur les trains].
 
-L'*Open data* (((open data))) désigne ce mouvement pour rendre les jeux de données accessibles à un large public, et les API web ont été un ingrédient technologique clé dans ce mouvement.
+L'*Open data*(((open data))) désigne ce mouvement pour rendre les jeux de données accessibles à un large public, et les API web ont été un ingrédient technologique clé dans ce mouvement.
 
 == 4. L'écosystème des API
 == !
@@ -202,7 +202,7 @@ Pourtant, de nombreuses API ne sont pas listées sur ce site. Dans ce cas, une r
 == !
 ==== b. API: un monde professionnel à part entière
 == !
-*Les API* (((API))) sont devenus essentielles à l'économie.
+*Les API*(((API))) sont devenus essentielles à l'économie.
 En conséquence, un grand nombre de services associés aux API ont été développés pour répondre à tous les besoins des entreprises qui les utilisent :
 
 

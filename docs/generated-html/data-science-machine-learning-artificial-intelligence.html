@@ -524,7 +524,7 @@ table.CodeRay td.code>pre{padding:0}
 <div class="details">
 <span id="author" class="author">Clément Levallois</span><br>
 <span id="email" class="email"><a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a></span><br>
-<span id="revdate">2017-11-01</span>
+<span id="revdate">2019-05-09</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -546,7 +546,7 @@ table.CodeRay td.code>pre{padding:0}
 <li><a href="#_3_machine_learning_and_data_science">3. Machine Learning and Data Science</a></li>
 <li><a href="#_4_artificial_intelligence">4. Artificial intelligence</a>
 <ul class="sectlevel2">
-<li><a href="#_a_weak_vs_strong_ai_artificial_intelligence_weak_vs_strong_ai">a. Weak vs Strong AI artificial intelligence, weak vs strong AI</a></li>
+<li><a href="#_a_weak_vs_strong_ai">a. Weak vs Strong AI</a></li>
 <li><a href="#_b_two_videos_to_understand_ai_further">b. Two videos to understand AI further</a></li>
 </ul>
 </li>
@@ -557,9 +557,6 @@ table.CodeRay td.code>pre{padding:0}
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
-<p>last modified: 2018-10-17</p>
-</div>
 <div class="imageblock" style="text-align: center">
 <div class="content">
 <img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
@@ -567,6 +564,9 @@ table.CodeRay td.code>pre{padding:0}
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
+</div>
+<div class="paragraph">
+<p>first edition: 2017-11-01</p>
 </div>
 </div>
 </div>
@@ -638,7 +638,7 @@ table.CodeRay td.code>pre{padding:0}
 <p>&#8594; since they focus on <strong>sampling</strong> the data, they are not concerned with handling entire datasets with related IT issues.</p>
 </div>
 <div class="paragraph">
-<p><strong>Machine learning</strong>  does similar things to statistics, but in a slightly different way:</p>
+<p><strong>Machine learning</strong> does similar things to statistics, but in a slightly different way:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -700,7 +700,7 @@ table.CodeRay td.code>pre{padding:0}
 <div class="sect2">
 <h3 id="_b_an_illustration_the_case_of_the_gpu">b. An illustration: the case of the GPU</h3>
 <div class="paragraph">
-<p>A key illustration of the difference between statistics and machine learning can be provided with the use of <strong>graphic cards</strong> .</p>
+<p>A key illustration of the difference between statistics and machine learning can be provided with the use of <strong>graphic cards</strong>.</p>
 </div>
 <div class="paragraph">
 <p>Graphic cards (or GPUs: graphics processing units) are these electronic boards full of chips found inside a computer, which are used for the display of images and videos on computer screens:</p>
@@ -721,7 +721,7 @@ table.CodeRay td.code>pre{padding:0}
 <p>These video games need powerful video cards (aka <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPUs</a>) to render complex scenes in full details - with calculations on light effects and animations <strong>made in real time</strong>.</p>
 </div>
 <div class="paragraph">
-<p>This pushed for the development of ever more powerful <strong>GPUs</strong> .
+<p>This pushed for the development of ever more powerful <strong>GPUs</strong>.
 Their characteristics is that they can compute simple operations to change pixel colors, <strong>for each of the millions of pixels of the screen in parallel</strong>, so that the next frame of the picture can be rendered in milliseconds.</p>
 </div>
 <div class="paragraph">
@@ -732,7 +732,7 @@ This is interesting for computations on big data!</p>
 <p>If a statistical problem for prediction can be broken down into simple operations which can be run on a GPU, then a large dataset can be analyzed in seconds or minutes on a laptop, instead of  cluster of computers.</p>
 </div>
 <div class="paragraph">
-<p>To illustrate the difference in speed between a mathematical operation run without / with a <strong>GPU</strong> :</p>
+<p>To illustrate the difference in speed between a mathematical operation run without / with a <strong>GPU</strong>:</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -776,7 +776,7 @@ This is interesting for computations on big data!</p>
 <div class="sect2">
 <h3 id="_a_the_unsupervised_learning_approach">a. The unsupervised learning approach</h3>
 <div class="paragraph">
-<p><strong>Unsupervised learning</strong>  designates the methods which take a fresh dataset and find interesting patterns in it, <strong>without inferring from previous, similar datasets</strong>.</p>
+<p><strong>Unsupervised learning</strong> designates the methods which take a fresh dataset and find interesting patterns in it, <strong>without inferring from previous, similar datasets</strong>.</p>
 </div>
 <div class="paragraph">
 <p>How does supervised learning work? Let&#8217;s take an example. In a wedding reception, how to sit people with similar interests at the same tables?</p>
@@ -860,19 +860,23 @@ One of the most popular of these techniques remains the"k-means", and was invent
 <div class="sect2">
 <h3 id="_b_the_strong_supervised_strong_learning_approach">b. The <strong>supervised</strong> learning approach</h3>
 <div class="paragraph">
-<p><strong>Supervised learning</strong>  is the approach consisting in calibrating a model based on the history of past experiences in order to guess / predict a new occurrence of the same experience.</p>
+<p><strong>Supervised learning</strong> is the approach consisting in calibrating a model based on the history of past experiences in order to guess / predict a new occurrence of the same experience.</p>
 </div>
 <div class="paragraph">
 <p>Take 50,000 or more observations, or data points, like:</p>
 </div>
-<div class="paragraph">
-<p>**an image of a cat, with the caption "cat"</p>
-</div>
-<div class="paragraph">
-<p>**an image of a dog, with the caption "dog"</p>
-</div>
-<div class="paragraph">
-<p>**another image of a cat, with the caption "cat"</p>
+<div class="ulist">
+<ul>
+<li>
+<p>an image of a cat, with the caption "cat"</p>
+</li>
+<li>
+<p>an image of a dog, with the caption "dog"</p>
+</li>
+<li>
+<p>another image of a cat, with the caption "cat"</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>etc&#8230;&#8203;.</p>
@@ -880,10 +884,10 @@ One of the most popular of these techniques remains the"k-means", and was invent
 <div class="ulist">
 <ul>
 <li>
-<p>you need 50,000 observations of this kind, or more! It is called the <strong>training set</strong> .</p>
+<p>you need 50,000 observations of this kind, or more! It is called the <strong>training set</strong>.</p>
 </li>
 <li>
-<p>this is also called a <strong>labelled dataset</strong> , meaning that we have a label describing each of the observation.</p>
+<p>this is also called a <strong>labelled dataset</strong>, meaning that we have a label describing each of the observation.</p>
 </li>
 </ul>
 </div>
@@ -903,7 +907,7 @@ One of the most popular of these techniques remains the"k-means", and was invent
 <p>they can be simply be provided by users of a service. For instance, pics on Instagram captioned by hashtags are exactly that: a picture with a label. The labelling is done by the users of Instagram posting the pictures and writing the hashtags below it. Instagram is a free service but the training sets it creates are of great value to the company (Instagram is owned by Facebook).</p>
 </li>
 <li>
-<p>they can be produced by human workers . In practice, humans are paid a few cents per picture which they have to label (is it a cat? is it a dog? etc.). A large industry and job market is developing to perform a variety of tasks of this kind. There is a growing workforce providing their digital labor to companies in need of <strong>data labeling</strong>  or <strong>data curation</strong> . See the work of <a href="http://www.casilli.fr/about/">Antonio Casilli</a>  for further reference.</p>
+<p>they can be produced by human workers. In practice, humans are paid a few cents per picture which they have to label (is it a cat? is it a dog? etc.). A large industry and job market is developing to perform a variety of tasks of this kind. There is a growing workforce providing their digital labor to companies in need of <strong>data labeling</strong> or <strong>data curation</strong>. See the work of <a href="http://www.casilli.fr/about/">Antonio Casilli</a> for further reference.</p>
 </li>
 </ul>
 </div>
@@ -1000,7 +1004,7 @@ One of the most popular of these techniques remains the"k-means", and was invent
 <div class="sect2">
 <h3 id="_c_the_strong_reinforcement_strong_learning_approach">c. The <strong>reinforcement</strong> learning approach</h3>
 <div class="paragraph">
-<p>To understand reinforcement learning   in an intuitive sense, we can think of how animals can learn quickly by <strong>ignoring</strong> undesirable behavior and rewarding desirable behavior.</p>
+<p>To understand reinforcement learning in an intuitive sense, we can think of how animals can learn quickly by <strong>ignoring</strong> undesirable behavior and rewarding desirable behavior.</p>
 </div>
 <div class="paragraph">
 <p>This is easy and takes just seconds. The following video shows B.F. Skinner, main figure in psychology in the 1950s-1970s:</p>
@@ -1153,7 +1157,7 @@ One of the most popular of these techniques remains the"k-means", and was invent
 <p>The dataset is not large (below 50k observations), supervised learning is not going to work</p>
 </li>
 <li>
-<p>The data is perfectly structured (tabular data) </p>
+<p>The data is perfectly structured (tabular data)</p>
 </li>
 <li>
 <p>The data points have few features</p>
@@ -1195,11 +1199,16 @@ One of the most popular of these techniques remains the"k-means", and was invent
 <p>More recent representations of the steps in data processing have been suggested, making room for the role of data visualization:</p>
 </div>
 <div class="paragraph">
-<p>&#8594; see <a href="https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400">the information design process by Ben Fry</a>  and this <a href="http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html">data visualization workflow by Moritz Stefaner</a> :</p>
+<p>&#8594; see <a href="https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400">the information design process by Ben Fry</a> and this <a href="http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html">data visualization workflow by Moritz Stefaner</a>:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/stefaner.png" alt="stefaner" width="500">
+</div>
+<div class="title">Figure 7. data visualization workflow by Moritz Stefaner</div>
 </div>
 <div class="paragraph">
-<p>image::stefaner.png[align="center", title="data visualization workflow by Moritz Stefaner", width=500, book="keep"][pdfwidth="90%",
-&#160;<br></p>
+<p>&#160;<br></p>
 </div>
 <div class="paragraph">
 <p>Machine learning is one of the techniques (along with traditional statistics) that intervenes at the step of "Data mining".</p>
@@ -1216,9 +1225,14 @@ One of the most popular of these techniques remains the"k-means", and was invent
 <div class="paragraph">
 <p>The skills of a data scientist are often represented as the meeting of three separate domains:</p>
 </div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="../images/conway.png" alt="conway">
+</div>
+<div class="title">Figure 8. The Venn diagram of data science by Drew Conway</div>
+</div>
 <div class="paragraph">
-<p>image::conway.png[The Venn diagram of data science by Drew Conway]", book="keep"][pdfwidth="40%", align="center", title="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
-&#160;<br></p>
+<p>&#160;<br></p>
 </div>
 </div>
 </div>
@@ -1226,15 +1240,15 @@ One of the most popular of these techniques remains the"k-means", and was invent
 <h2 id="_4_artificial_intelligence">4. Artificial intelligence</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_a_weak_vs_strong_ai_artificial_intelligence_weak_vs_strong_ai">a. Weak vs Strong AI artificial intelligence, weak vs strong AI</h3>
+<h3 id="_a_weak_vs_strong_ai">a. Weak vs Strong AI</h3>
 <div class="paragraph">
-<p><strong>Weak AI</strong>  designates computer programs able to outperform humans at complex tasks with a narrow focus (playing chess)</p>
+<p><strong>Weak AI</strong> designates computer programs able to outperform humans at complex tasks with a narrow focus (playing chess)</p>
 </div>
 <div class="paragraph">
 <p>Weak AI is typically the result of applying expert systems or machine learning techniques seen above.</p>
 </div>
 <div class="paragraph">
-<p>Strong AI  is an intelligence that would be general in scope, able to set its own goal, and conscious of itself.
+<p><strong>Strong AI</strong> is an intelligence that would be general in scope, able to set its own goal, and conscious of itself.
 Nothing is close to that yet.</p>
 </div>
 <div class="paragraph">
@@ -1244,7 +1258,7 @@ Nothing is close to that yet.</p>
 <div class="sect2">
 <h3 id="_b_two_videos_to_understand_ai_further">b. Two videos to understand AI further</h3>
 <div class="paragraph">
-<p>Laurent Alexandre  on the social and economic stakes of <strong>AI</strong>  (in French):</p>
+<p>Laurent Alexandre on the social and economic stakes of <strong>AI</strong> (in French):</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -1255,7 +1269,7 @@ Nothing is close to that yet.</p>
 <p>&#160;<br></p>
 </div>
 <div class="paragraph">
-<p>John Launchbury, Director of DARPA&#8217;s  Information Innovation Office (I2O) in 2017:</p>
+<p>John Launchbury, Director of DARPA&#8217;s Information Innovation Office (I2O) in 2017:</p>
 </div>
 <div class="videoblock">
 <div class="content">
@@ -1307,7 +1321,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-10-17 23:39:42 CEST
+Last updated 2019-05-09 22:34:19 CEST
 </div>
 </div>
 </body>

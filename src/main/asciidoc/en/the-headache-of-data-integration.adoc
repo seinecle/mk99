@@ -173,7 +173,7 @@ image::https://docs.google.com/drawings/d/e/2PACX-1vRG0mporN7EVk-PRPujhmyneQ7r7C
 
 In 2015/2016 a new acronym started to trend: "DMP", standing for *"Data Management Platform"*.
 
-Basically a *DMP* (((DMP - data management platform))) is an information system dedicated to solving the issues of data integration:
+Basically a *DMP*(((DMP - data management platform))) is an information system dedicated to solving the issues of data integration:
 
 //ST: !
 
@@ -195,22 +195,22 @@ Basically a *DMP* (((DMP - data management platform))) is an information system 
 === b. DMP in relation to other components of the information system
 
 //ST: !
-*DMPs* (((DMP - data management platform))) are relatively new. They integrate with 3 other information systems in the firm:
+*DMPs*(((DMP - data management platform))) are relatively new. They integrate with 3 other information systems in the firm:
 
 //ST: !
-- CRM (((CRM - Customer Relationship Management)))
+- CRM(((CRM - Customer Relationship Management)))
 ** This is the software *gathering* data related to customers and sales. It is a major source of *input data* for a DMP.
 
 //ST: !
-- ERP (((ERP - Enterprise Resource Planning)))
+- ERP(((ERP - Enterprise Resource Planning)))
 ** Large software synchronizing information systems from finance, sales, logistics and more. The CRM can be independent or part of the ERP.
 
 //ST: !
-- DSP (((DSP - Demand Side Platform)))
+- DSP(((DSP - Demand Side Platform)))
 ** https://digiday.com/media/wtf-demand-side-platform/[Piece of software automatizing ad buying]. The audiences identified in the DMP could be served corresponding ads with a DSP.
 
 //ST: !
-- Data lake (((data lake)))
+- Data lake(((data lake)))
 ** Data lakes are databases specializing in storing large amounts of unstructured data. They respond to the need of "storing today, for future use". A data lake is not meant to be optimized for queries. They are meant to store everything we collect today, in the case this data will serve future usages. When this happens, data can be extracted from the data lake and put in a database, in a form which makes it convenient to query and analyze.
 
 //ST: !

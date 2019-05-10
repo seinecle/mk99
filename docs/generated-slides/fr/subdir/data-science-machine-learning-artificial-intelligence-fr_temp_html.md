@@ -67,7 +67,7 @@ Les "statistiques régulières" sont le domaine de travail de scientifiques qui:
 -> puisqu'ils se concentrent sur *l'échantillonnage* des données, ils ne sont pas concernés par le traitement de jeux de données entiers avec des problèmes informatiques connexes.
 
 // +
-Le *Machine learning* ou (((machine learning))) fait des choses similaires à la statistique, mais d'une manière légèrement différente:
+Le *Machine learning* ou(((machine learning))) fait des choses similaires à la statistique, mais d'une manière légèrement différente:
 
 - on met l'accent sur la bonne prédiction, sans se soucier d'identifier le modèle mathématique sous-jacent
 - la prévision doit être réalisable dans le temps disponible, avec les ressources informatiques disponibles
@@ -100,7 +100,7 @@ L'apprentissage automatique met l'accent sur les techniques qui sont «adéquate
 La poursuite de modèles améliorés dans les statistiques traditionnelles n'ignore pas la question de la charge de calcul ("computational effiency") - elle est considérée comme une propriété souhaitable - mais dans l'apprentissage automatique, c'est en grande partie un pré-requis.
 
 === b. Une illustration: le cas des GPUs
-Une illustration clé de la différence entre les statistiques et l'apprentissage automatique peut être fournie avec l'utilisation de *cartes graphiques* (((GPU - cartes graphiques))).
+Une illustration clé de la différence entre les statistiques et l'apprentissage automatique peut être fournie avec l'utilisation de *cartes graphiques*(((GPU - cartes graphiques))).
 // +
 Les cartes graphiques (ou GPU: unités de traitement graphique) sont ces composants électroniques pleines de puces trouvées dans un ordinateur, qui sont utilisées pour l'affichage d'images et de vidéos sur des écrans :
 
@@ -114,7 +114,7 @@ Dans les années 1990, le jeu vidéo s'est beaucoup développé, des arcades aux
 Ces jeux vidéo ont besoin de puissantes cartes vidéo (aussi appelés https://fr.wikipedia.org/wiki/Processeur_graphique[processeurs graphiques])
 pour restituer des scènes complexes dans les moindres détails - avec des calculs sur les effets de lumière et les animations *réalisés en temps réel*.
 // +
-Cela a poussé au développement de *GPUs* plus puissants (((GPU - cartes graphiques))).
+Cela a poussé au développement de *GPUs* plus puissants(((GPU - cartes graphiques))).
 Leurs caractéristiques sont qu'ils peuvent calculer des opérations simples pour changer les couleurs des pixels, *pour chacun des millions de pixels de l'écran en parallèle*, de sorte que la prochaine séquence de l'image peut être rendue en millisecondes.
 
 // +
@@ -123,7 +123,7 @@ C'est intéressant pour les calculs sur les big data!
 // +
 Si un problème statistique de prédiction peut être décomposé en opérations simples pouvant être exécutées sur un GPU, alors un grand ensemble de données peut être analysé en secondes ou en minutes sur un ordinateur portable, au lieu d'un cluster d'ordinateurs.
 // +
-Pour illustrer la différence de vitesse entre une opération mathématique exécutée sans ou avec un *GPU* (((GPU - cartes graphiques))):
+Pour illustrer la différence de vitesse entre une opération mathématique exécutée sans ou avec un *GPU*(((GPU - cartes graphiques))):
 
 video::-P28LKWTzrI[youtube, width = 500, height = 400]
 
@@ -142,7 +142,7 @@ L'apprentissage automatique peut être catégorisé en 3 familles :
 
 == 2. Trois familles d'apprentissage automatique
 === a. L'apprentissage non supervisé
-*Apprentissage non supervisé* (((apprentissage automatique, apprentissage non supervisé))) désigne les méthodes qui utilisent un jeu de données nouveau et y trouvent des modèles intéressants, *sans que cela ne soit par apprentissage sur de précédents ensembles de données similaires*.
+*Apprentissage non supervisé*(((apprentissage automatique, apprentissage non supervisé))) désigne les méthodes qui utilisent un jeu de données nouveau et y trouvent des modèles intéressants, *sans que cela ne soit par apprentissage sur de précédents ensembles de données similaires*.
 
 // +
 Comment l'apprentissage supervisé fonctionne-t-il ? Prenons un exemple. Dans une réception de mariage, comment asseoir des gens avec des intérêts similaires aux mêmes tables?
@@ -177,7 +177,7 @@ image::kmeans.jpg[pdfwidth = "60%", align = "center", title = "K-means, une appr
 {nbsp} +
 
 === b. L'approche d'apprentissage  *supervisé*
-L'*Apprentissage supervisé* (((apprentissage machine, apprentissage supervisé))) est l'approche consistant à calibrer un modèle basé sur l'histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
+L'*Apprentissage supervisé*(((apprentissage machine, apprentissage supervisé))) est l'approche consistant à calibrer un modèle basé sur l'histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
 // +
 Prenons l'exemple suivant : comment faire pour qu'un ordinateur "devine" si une image représente un chat ou un chien? Pour cela, en approche supervisée, nous allons commencer par récolter 50000 images ou plus de chats et de chiens, avec leurs légendes associées, comme ceci:
 
@@ -192,8 +192,8 @@ Prenons l'exemple suivant : comment faire pour qu'un ordinateur "devine" si une 
 etc....
 
 // +
-- Ces 50000 images et leur légende s'appelle le _training set_. (((apprentissage automatique, training set))).
-- Ceci est aussi appelé un ensemble de données *annotées* (((apprentissage automatique, ensemble de données libellées))), ce qui signifie que nous avons une étiquette décrivant chacune des observations (en anglais : _labelled set_).
+- Ces 50000 images et leur légende s'appelle le _training set_.(((apprentissage automatique, training set))).
+- Ceci est aussi appelé un ensemble de données *annotées*(((apprentissage automatique, ensemble de données libellées))), ce qui signifie que nous avons une étiquette décrivant chacune des observations (en anglais : _labelled set_).
 
 // +
 [TIP]
@@ -202,7 +202,7 @@ Dans un jeu de données libellé, d'où viennent les étiquettes?
 
 - les étiquettes peuvent être fournies par les utilisateurs d'un service. Par exemple, les photos sur Instagram légendées par des hashtags sont exactement cela: une image avec une étiquette. L'étiquetage est fait par les utilisateurs d'Instagram affichant les photos et en écrivant les hashtags ci-dessous. Instagram est un service gratuit, mais les jeu de données libellées qu'il crée sont d'une grande valeur pour une entreprise comme Instagram (et pour Facebook, qui a racheté Instagram).
 
-- ils peuvent être produits par des travailleurs humains (((data science et travail humain))). En pratique, les humains sont payés quelques centimes par image qu'ils doivent étiqueter (est-ce un chat? Est-ce un chien? Etc.). Une grande industrie et un marché du travail associé se développent pour effectuer une variété de tâches de ce genre. Une main-d'œuvre croissante fournit leur ((travail numérique)) aux entreprises qui ont besoin de *l'annotation des données* (((données, annotation des données)) ou de *nettoyer, classer ou qualifier les données*. Voir le travail de http://www.casilli.fr/about/[Antonio Casilli] ((("Casilli, Antonio"))) sur ces sujets.
+- ils peuvent être produits par des travailleurs humains(((data science et travail humain))). En pratique, les humains sont payés quelques centimes par image qu'ils doivent étiqueter (est-ce un chat? Est-ce un chien? Etc.). Une grande industrie et un marché du travail associé se développent pour effectuer une variété de tâches de ce genre. Une main-d'œuvre croissante fournit leur ((travail numérique)) aux entreprises qui ont besoin de *l'annotation des données*(((données, annotation des données)) ou de *nettoyer, classer ou qualifier les données*. Voir le travail de http://www.casilli.fr/about/[Antonio Casilli]((("Casilli, Antonio"))) sur ces sujets.
 ====
 
 // +
@@ -296,7 +296,7 @@ L'utilisation de l'apprentissage automatique peut être un gaspillage de ressour
 Des indices que la modélisation statistique "classique" (peut-être aussi simple qu'une régression linéaire) devrait suffire:
 // +
 - L'ensemble de données n'est pas grand (moins de 50k observations), l'apprentissage supervisé ne fonctionnera pas
-- Les données sont parfaitement structurées (données tabulaires) (((données structurées)))
+- Les données sont parfaitement structurées (données tabulaires)(((données structurées)))
 - Les points de données ont peu de dimensions (chaque observation a peu d'attributs - il y apeu "colonnes" dans une représentation sous forme de tableau)
 
 // +
@@ -313,7 +313,7 @@ image::kdd.png[align = "center", title = "KDD - découverte des connaissances da
 
 Des représentations plus récentes des étapes du traitement des données ont été suggérées, laissant place au rôle de la ((visualisation de données)) :
 
--> voir https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400[le processus de conception de l'information par Ben Fry] ((("Fry, Ben"))) et ce workflow de  http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html[visualisation des données par Moritz Stefaner] ((("Stefaner, Moritz"))) :
+-> voir https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400[le processus de conception de l'information par Ben Fry]((("Fry, Ben"))) et ce workflow de  http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html[visualisation des données par Moritz Stefaner]((("Stefaner, Moritz"))) :
 
 // +
 image::stefaner.png[pdfwidth = "90%", align = "center", title = "workflow de visualisation des données par Moritz Stefaner", width = 500, book = "keep"]
@@ -331,11 +331,11 @@ image::conway.png[pdfwidth = "40%", align = "center", title = "http://drewconway
 
 == 4. Intelligence artificielle
 === a. Faible vs forte IA intelligence artificielle, faible vs forte AI
-*IA faible* (((intelligence artificielle, faible))) désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).
+*IA faible*(((intelligence artificielle, faible))) désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).
 L'IA faible est généralement le résultat de l'application de systèmes experts ou des techniques d'apprentissage machine vues ci-dessus.
 
 // +
-*IA forte* (((intelligence artificielle, forte))) est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d'elle-même. Rien ne s'approche de ça.
+*IA forte*(((intelligence artificielle, forte))) est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d'elle-même. Rien ne s'approche de ça.
 
 // +
 *Donc l'IA est synonyme d'IA faible pour le moment, et couvre les trois familles de machine learning vues ci-dessus.*

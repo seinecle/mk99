@@ -18,7 +18,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 == 1. Definition of API
-API: acronym for *Application Programming Interface* (((API, definition))). An ((API)) is the way to make software programs “easy to plug and share” with other programs.
+API: acronym for *Application Programming Interface*(((API, definition))). An ((API)) is the way to make software programs “easy to plug and share” with other programs.
 //+
 An API is simply a group of rules (you can also call it a convention, or an agreement...) which programmers follow when writing the part of their code which is in charge of communicating with other software.
 These rules are then published (on a webpage for example), so that anyone who needs to connect to the program can learn what rules to follow.
@@ -66,11 +66,11 @@ It became increasingly convenient to define simple and universal conventions tha
 
 //+
 - *API* for short
-- *web services* (((API, web service)))
+- *web services*(((API, web service)))
 - *REST* API (see below for this last one).
 
 //+
-A *web API* (((API, web service))) extends the logic of the APIs we have seen in the beginning of this document, to software communicating via the web. To recall, an API is a convention followed when writing a software, making this software available to other software.
+A *web API*(((API, web service))) extends the logic of the APIs we have seen in the beginning of this document, to software communicating via the web. To recall, an API is a convention followed when writing a software, making this software available to other software.
 
 //+
 [NOTE]
@@ -82,7 +82,7 @@ Example: the API of Microsoft PowerPoint enables the import of Excel tables in p
 A Web API is an API which enables two pieces of software to communicate, via Internet. *They do not need to be installed on the same computer.*
 
 === c. The benefits of a web API compared to an EDI
-Unlike an *EDI* (((API, difference with EDIs))), a web API drops any industry-specific concern. Web APIs are just a convention to send and receive data over the Internet, without any saying on the content of the data.
+Unlike an *EDI*(((API, difference with EDIs))), a web API drops any industry-specific concern. Web APIs are just a convention to send and receive data over the Internet, without any saying on the content of the data.
 //+
 The data sent and received can be invoices, webpages, train schedules, audio, video... whatever.
 Contrary to an EDI, a company creating a web API can choose to leave its access [underline]#open# (remember that EDIs need the two parties to have a pre-established agreement).
@@ -92,7 +92,7 @@ So that a potential client interested in using the web API of a company can set 
 //+
 [WARNING]
 ====
-Saying that APIs are open does not mean an absence of security (((API, security of))): communication through APIs can easily be identified and encrypted, as needed.
+Saying that APIs are open does not mean an absence of security(((API, security of))): communication through APIs can easily be identified and encrypted, as needed.
 ====
 
 //+
@@ -103,7 +103,7 @@ Two popular web API conventions emerged in the 1990s and competed for popularity
 - (https://en.wikipedia.org/wiki/Representational_state_transfer[((REST: Representational State Transfer))]
 
 //+
-*REST APIs* (((API, REST protocol))) became ultimately the most widely adopted, because it uses the same simple principles that webpages use to be transferred over the Internet (the "http" protocol that you see in web page addresses).
+*REST APIs*(((API, REST protocol))) became ultimately the most widely adopted, because it uses the same simple principles that webpages use to be transferred over the Internet (the "http" protocol that you see in web page addresses).
 This is why APIs are often called https://www.youtube.com/watch?v=7YcW25PHnAA["REST APIs, presented in this pedagogical video"].
 //+
 In 2000-2010, it became increasingly easy and natural to adopt the REST convention to make one's software and data available to another computer.
@@ -161,7 +161,7 @@ Let's take the example of a transportation company like French SNCF which finds 
 - SNCF adds http://doc.navitia.io/#getting-started[an API and its documentation], making the data available to developers able to https://youtu.be/7YcW25PHnAA[connect to APIs, which is a basic skill in software development].
 - Entrepreneurs and programmers in general will be able to access the data via the API and use it, creating https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja[new services based on this train information].
 //+
-*Open data* (((open data))) designates this movement to make datasets available to a broad audience, and web APIs have been a key technological ingredient in this movement.
+*Open data*(((open data))) designates this movement to make datasets available to a broad audience, and web APIs have been a key technological ingredient in this movement.
 
 == 4. Does your company need to open an API to share its data?
 
@@ -199,7 +199,7 @@ To discover new APIs, or to make your APIs easier to discover, the most well kno
 Still, many APIs are not listed on this website, and a google search for "info I need + API" is also a good way to find if the API you need exists. http://hotline.whalemuseum.org/api[Interested in whale sightings? There is an API for that].
 
 === b. APIs: a business world of its own
-*APIs* (((API))) have become central to the economy.
+*APIs*(((API))) have become central to the economy.
 As a result, a large number of services associated to APIs have developed to cater for all the needs of companies that use them:
 
 //+

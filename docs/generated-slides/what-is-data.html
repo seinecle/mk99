@@ -87,7 +87,7 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .delete .delete{color:#800}
 .CodeRay .change .change{color:#66f}
 .CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>Data, a concept with multiple layers</h1><div class="preamble"><div class="paragraph"><p>2017-31-07</p></div>
-<div class="paragraph"><p>last modified: 2019-01-02</p></div></div><p class="author"><small>== !</small></p></section>
+<div class="paragraph"><p>last modified: 2019-05-09</p></div></div><p class="author"><small>== !</small></p></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></section>
 <section></section>
 <section id="_1_definition_of_data"><h2>1. Definition of data</h2></section>
@@ -138,22 +138,22 @@ Defining data ownership an important cogwheel in the data governance of a firm.<
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/tweet.png" alt="tweet" height="100%" /></div></section>
 <section><div class="ulist"><ul><li><p>This is a digital <strong>medium</strong> (because it&#8217;s on screen as opposed to analogical, if we had printed the pic on paper)</p></li><li><p>The <strong>type</strong> of the data is textual + image</p></li></ul></div></section>
 <section><div class="ulist"><ul><li><p>The text is formatted in <strong>plain text</strong> (meaning, no special formatting), as opposed to <strong>data-interchange formats</strong> which are formatting marks added to the text to facilitate its readability by software (check <a href="https://codingislove.com/json-tutorial-indepth/">csv, json and xml</a>).</p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p>The <strong>encoding</strong>  of the text is UTF-8 (one of encodings deriving from the Unicode standard). Encoding deals with the issue: how to represent alphabets, signs (for instance: emojis) and symbols, from different languages, in text? UTF-8 is an encoding which is one of the most universal.</p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p>The tweet is part of a list of tweets. The list represents the <strong>data structure</strong>  of the dataset, it is the way the data is organized. There are many alternative data structures: arrays, sets, dics, maps&#8230;&#8203;</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>The <strong>encoding</strong> of the text is UTF-8 (one of encodings deriving from the Unicode standard). Encoding deals with the issue: how to represent alphabets, signs (for instance: emojis) and symbols, from different languages, in text? UTF-8 is an encoding which is one of the most universal.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>The tweet is part of a list of tweets. The list represents the <strong>data structure</strong> of the dataset, it is the way the data is organized. There are many alternative data structures: arrays, sets, dics, maps&#8230;&#8203;</p></li></ul></div></section>
 <section><div class="ulist"><ul><li><p>The tweet is stored as a picture (png file) on the hard disk. "png" is the <strong>file format</strong>. The data is <strong>persisted</strong> as a file on disk (could have been stored in a database instead).</p></li></ul></div></section>
 <section><h3>b. Tabular data</h3></section>
-<section><div class="paragraph"><p><strong>Tabular data</strong>  is a common way to handle datasets, by organizing it in lines and columns:</p></div></section>
+<section><div class="paragraph"><p><strong>Tabular data</strong> is a common way to handle datasets, by organizing it in lines and columns:</p></div></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/table.png" alt="table" height="100%" /></div><div class="title">Figure 4. tabular data</div></section>
 <section><h3>c. First party, second party and third party data</h3></section>
-<section><div class="ulist"><ul><li><p><strong>First party data</strong> : the data generated through the activities of your own organization.
-Your organization own it, which does not mean that consent from users is not required, when it comes to personal data.</p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p><strong>Second party data</strong>  : the data acquired from a partner, which generated and owns this data.
+<section><div class="ulist"><ul><li><p><strong>First party data</strong>: the data generated through the activities of your own organization.
+Your organization controls it, which does not mean that consent from users is not required, when it comes to personal data.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p><strong>Second party data</strong> : the data acquired from a partner, which generated and controls this data.
 The partner makes these data available to you through an agreement (paying or not).</p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p><strong>Third party data</strong> : the data acquired from a reseller.
+<section><div class="ulist"><ul><li><p><strong>Third party data</strong>: the data acquired from a reseller.
 This data is acquired through a market transaction.</p></li></ul></div></section>
 <section><h3>d. Sociodemo data vs behavior data</h3></section>
-<section><div class="ulist"><ul><li><p>Sociodemogaphic or <strong>sociodemo</strong>  data refers to information about individuals, describing fundamental attributes of their social identity: age, gender, place of residence, occupation, marital status and number of kids.</p></li></ul></div></section>
-<section><div class="ulist"><ul><li><p><strong>Behavior data</strong>  refers to any digital trace left by the individual in the course of it life: clicks on web pages, likes on Facebook, purchase transactions, comments posted on Tripadvisor&#8230;&#8203;</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p>Sociodemogaphic or <strong>sociodemo</strong> data refers to information about individuals, describing fundamental attributes of their social identity: age, gender, place of residence, occupation, marital status and number of kids.</p></li></ul></div></section>
+<section><div class="ulist"><ul><li><p><strong>Behavior data</strong> refers to any digital trace left by the individual in the course of it life: clicks on web pages, likes on Facebook, purchase transactions, comments posted on Tripadvisor&#8230;&#8203;</p></li></ul></div></section>
 <section><div class="paragraph"><p>Sociodemo data is typically well structured or easy to structure.
 It has a long history of collection and analysis, basically since census exists.
 Behavior data allows to profile individuals much more precisely than sociodemo data alone could do: individuals can be characterized by their acts and tastes, well beyond what an age or marital status could define.</p></div></section>

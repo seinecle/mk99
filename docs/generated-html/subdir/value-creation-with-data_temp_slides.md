@@ -74,7 +74,7 @@ image::curation.jpg[pdfwidth="25%", align="center"]
 
 ==== a. Examples of companies
 == !
-1. ((Clarivate Analytics)) curating metadata (((data, data curation))) from scientific publishing image:crv_logo_rgb_rev.png[pdfwidth="100", width="100", book="keep"]
+1. ((Clarivate Analytics)) curating metadata(((data, data curation))) from scientific publishing image:crv_logo_rgb_rev.png[pdfwidth="100", width="100", book="keep"]
 2. ((Nielsen)) and IRI curating and selling retail data image:nielsen.jpg[width="100"] image:iri.jpg[pdfwidth="100", width="100", book="keep"]
 3. ImDB curating and selling movie data image:imdb.jpg[pdfwidth="100", width="100", book="keep"]
 4. NomadList providing practical info on global cities for nomad workers image:nomadlist.jpg[pdfwidth="100", width="100", book="keep"]
@@ -161,7 +161,7 @@ image::generate.jpg[pdfwidth="25%", align="center"]
 
 == !
 3. https://www.cxcompany.com/digitalcx/[Virtual assistants] image:cx.jpg[pdfwidth="100", width="100", book="keep"]
-4. https://deepart.io/[Image generation] image:deepart.png[pdfwidth="100", width="100", book="keep"] (((image generation)))
+4. https://deepart.io/[Image generation] image:deepart.png[pdfwidth="100", width="100", book="keep"](((image generation)))
 
 == !
 5. Close-to-real-life https://deepmind.com/blog/wavenet-generative-model-raw-audio/[((speech synthesis))] image:google.jpg[pdfwidth="100", width="100", book="keep"]

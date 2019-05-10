@@ -42,7 +42,7 @@ The volumes of data are increasing at an *accelerating rate*. According to sourc
 (((data, structured vs unstructured)))
 
 ==== A - Structured data
-*Structured data* (((structured data))) refers to data which is formatted and organized according to a well defined set of rules, which makes it *machine readable*.
+*Structured data*(((structured data))) refers to data which is formatted and organized according to a well defined set of rules, which makes it *machine readable*.
 //+
 For example, zip codes are a structured dataset because they follow a precise convention regarding the number of letters and digits composing them, making it easy for an optical reader and software to identify and "read" them.
 Same with license plates, social security numbers... *these are examples of structured data*.
@@ -63,7 +63,7 @@ To summarize, think of structured data as as anything that can be represented as
 image::book.png[align="center", title="A book of accounts showing structured data", book="keep"]
 
 ==== B - Unstructured data
-*Unstructured data* (((unstructured data))) refers to datasets made of "unruly" items: text of any length, without proper categorization, encoded in different formats, including possibly pictures, sound, geographical coordinates and what not...
+*Unstructured data*(((unstructured data))) refers to datasets made of "unruly" items: text of any length, without proper categorization, encoded in different formats, including possibly pictures, sound, geographical coordinates and what not...
 
 //+
 These datasets are much harder to process and analyze, since they are full of exceptions and differences. But they are carry typically rich information: free text, information recorded "in the wild"...
@@ -78,7 +78,7 @@ In a nutshell, http://www.zdnet.com/article/volume-velocity-and-variety-understa
 
 image::firehose.jpg[align="center", title="The Twitter Firehose"]
 
-- *Sensor data* (((sensor data))) is bound to increase speed as well. While pictures, tweets, individual records... are single item data sent at intervals, more and more sensors can send data *in a continuous stream* (measures of movement, sound, etc.)
+- *Sensor data*(((sensor data))) is bound to increase speed as well. While pictures, tweets, individual records... are single item data sent at intervals, more and more sensors can send data *in a continuous stream* (measures of movement, sound, etc.)
 
 //+
 So, velocity poses challenges of its own: while a system can handle (store, analyze) say 100Gb of data in a given time (day or month), it might not be able to do it in say, a single second. Big data refers to the problems and solutions raised by the velocity of data.
@@ -142,7 +142,7 @@ image::https://docs.google.com/drawings/d/e/2PACX-1vRzSlhst7wf_9MYiyiKkQlqfxMt9V
 In the late 1990s, a rapid shift in the habits of software developers kicked in: they tended to use more and more open source software, and to release their software as open source.
 Until then, most of the software was "closed source": you buy a software *without the possibility* to reuse / modify / augment its source code. Just use it as is.
 //+
-*Open source* (((open source))) software made it easy to get access to software built by others and use it to develop new things. After several decades, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[open source software have become common place].
+*Open source*(((open source))) software made it easy to get access to software built by others and use it to develop new things. After several decades, https://en.wikipedia.org/wiki/History_of_free_and_open-source_software[open source software have become common place].
 
 === f. Hype kicked in
 The http://www.gartner.com/technology/research/methodologies/hype-cycle.jsp[((Gartner hype cycle))] is a tool measuring the maturity of a technology, differentiating expectations from actual returns:
@@ -189,11 +189,11 @@ You can find a https://mattturck.com/bigdata2017/[high res version of the Big da
 
 == 5. What is the future of big data?
 === a. More data is coming
-The *Internet of things* (((IoT - Internet of things))) designates the https://seinecle.github.io/IoT4Entrepreneurs/[extension of Internet to objects beyond web pages or emails].
+The *Internet of things*(((IoT - Internet of things))) designates the https://seinecle.github.io/IoT4Entrepreneurs/[extension of Internet to objects beyond web pages or emails].
 //+
-The *IoT* (((IoT - Internet of things))) is used to *do* things (display information on screen, pilote robots, etc.) but also very much to *collect data* in their environments, through sensors.
+The *IoT*(((IoT - Internet of things))) is used to *do* things (display information on screen, pilote robots, etc.) but also very much to *collect data* in their environments, through sensors.
 //+
-Hence, the development of *connected objects* (((IoT - Internet of things))) will lead to a tremendous increase in the volume of data collected.
+Hence, the development of *connected objects*(((IoT - Internet of things))) will lead to a tremendous increase in the volume of data collected.
 
 === b. Regulatory frameworks will grow in complexity
 Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic (un)stability in the age of robots and AI in the workplace.
@@ -204,24 +204,17 @@ As technology evolves quickly, we can anticipate that societal impacts of big da
 === c. as an expression, "big data" is evolving
 * It is interesting to note that "hot" expressions, like "big data", tend to wear out fast. They are too hyped, used in all circumstances, become vague and over sold.
 For big data, we observe that it is peaking in 2017, while new terms appear:
-//+
-ifndef::backend-pdf[]
-pass:[<iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe> ]
-endif::[]
 
-ifdef::backend-pdf[]
 image::gtrends.png[pdfwidth="100%", align="center", title="Google searches for big data, machine learning and AI", book="keep"]
-endif::[]
-//+
 
 What are the differences between these terms?
 
 * "Big data" is by now a generic term
-* *Machine learning* (((machine learning))) puts the focus on the scientific and software engineering capabilities enabling to do something useful with the data (predict, categorize, score...)
+* *Machine learning*(((machine learning))) puts the focus on the scientific and software engineering capabilities enabling to do something useful with the data (predict, categorize, score...)
 //+
-* *Artificial intelligence* (((artificial intelligence))) puts the emphasis on human-like possibilities afforded by machine learning. Often used interchangeably with machine learning. AI is fed on data, so the future of big data will intersect with what AI becomes.
+* *Artificial intelligence*(((artificial intelligence))) puts the emphasis on human-like possibilities afforded by machine learning. Often used interchangeably with machine learning. AI is fed on data, so the future of big data will intersect with what AI becomes.
 //+
-* And *data science* (((data science)))? This is a broad term encompassing machine learning, statistics, and many analytical methods to work with data and interpret it. Often used interchangeably with machine learning. *Data scientist* (((data scientist))) is a common job description in the field.
+* And *data science*(((data science)))? This is a broad term encompassing machine learning, statistics, and many analytical methods to work with data and interpret it. Often used interchangeably with machine learning. *Data scientist*(((data scientist))) is a common job description in the field.
 
 == The end
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].

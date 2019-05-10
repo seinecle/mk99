@@ -38,12 +38,12 @@ Take a look at the shape: rectangular and very slim.
 This makes it easy to stack up servers one on the other.
 Because for Google and other companies crunching data for their business, a lot of servers are needed, so gaining on space is a real issue.
 //+
-When many servers are piled up together and put in a big tall box, this is called a *rack* (((server, rack of))) of servers, and look like this:
+When many servers are piled up together and put in a big tall box, this is called a *rack*(((server, rack of))) of servers, and look like this:
 
 image::rack.jpg[pdfwidth= "40%",align="center",title="A rack of servers", book="keep"]
 {nbsp} +
 
-When all the racks of servers are put in the same room, this is called a *data center* (((server, data center))) and looks like this:
+When all the racks of servers are put in the same room, this is called a *data center*(((server, data center))) and looks like this:
 
 image::datacenter.jpg[pdfwidth= "40%",align="center",title="A data center", book="keep"]
 {nbsp} +
@@ -61,7 +61,7 @@ Usually, until 2005 roughly, companies had two options:
 Then the "cloud" changed this.
 
 == 2. The cloud
-The term *cloud* (((cloud, definition))) was made popular by ((Amazon)) with their service “Amazon Elastic Compute Cloud”: *Amazon EC2* (((Amazon, EC2))) launched in 2006. This service was new in many ways:
+The term *cloud*(((cloud, definition))) was made popular by ((Amazon)) with their service “Amazon Elastic Compute Cloud”: *Amazon EC2*(((Amazon, EC2))) launched in 2006. This service was new in many ways:
 
 //+
 - it is not about renting or buying a particular piece of server anymore.
@@ -143,7 +143,7 @@ Each of these degrees of externalization has a name:
 The cloud is used to replace the company's local IT infrastructure needs such storing data, or computing operations.
 For example, instead of storing your data in an on-site database, it is possible to rent a cloud data storage service.
 It will be charged specifically to the time of use, the size of the data stored, and the volume of data being to and from the cloud.
-As it is a database service, this type of IaaS can be called a DBaaS: database as a service). (((DBaaS: database as a service)))
+As it is a database service, this type of IaaS can be called a DBaaS: database as a service).(((DBaaS: database as a service)))
 
 //+
 *Platform as a Service* (Paas)
@@ -158,14 +158,14 @@ Popular examples are Google Drive, https://www.d2l.com/products/learning-environ
 
 == 4. Private or public cloud? Hybrid cloud?
 
-- Amazon EC2 (((Amazon, EC2))) is an example of a *public cloud* (((cloud, public cloud))): it is publicly accessible to any customer. Of course, this does not mean that every customer can see what the others are doing on the cloud! Each customer have their private spaces on the cloud.
+- Amazon EC2(((Amazon, EC2))) is an example of a *public cloud*(((cloud, public cloud))): it is publicly accessible to any customer. Of course, this does not mean that every customer can see what the others are doing on the cloud! Each customer have their private spaces on the cloud.
 - Many companies have security requirements which prevent them from accessing public clouds.
 They need to have their servers on premises.
 //+
-In this case, they can build their own *private cloud*: (((cloud, private cloud))) it is a cloud just like Amazon EC2, except that it is owned, managed and used by the company exclusively - it is not accessible to third parties.
+In this case, they can build their own *private cloud*:(((cloud, private cloud))) it is a cloud just like Amazon EC2, except that it is owned, managed and used by the company exclusively - it is not accessible to third parties.
 //+
 But even private, the cloud keeps the basic characteristics of a cloud: on-demand and elastic in particular.
-- *Hybrid clouds* (((cloud, hybrid cloud))) are a variety of private clouds: it is a private cloud where some forms of operations can be delegated to a public cloud.
+- *Hybrid clouds*(((cloud, hybrid cloud))) are a variety of private clouds: it is a private cloud where some forms of operations can be delegated to a public cloud.
 
 //+
 For example, operations which are not security sensitive and which need a capacity of computing in excess of what the private cloud of the company can provide.
@@ -180,3 +180,4 @@ This course is made by Clement Levallois.
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+einecle]
