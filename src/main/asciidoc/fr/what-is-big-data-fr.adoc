@@ -191,38 +191,35 @@ L' *IoT*(((IoT - Internet des objets))) est utilisé pour *faire* des choses (af
 // +
 Ainsi, le développement des *objets connectés*(((IoT - Internet des objets))) conduira à une augmentation considérable du volume de données collectées.
 
-=== b. Les cadres réglementaires vont augmenter en complexité
+=== b. le "big data" gagne en importance avec l'intelligence artificielle
+image::gtrends.png[pdfwidth="100%", align="center", title="Recherches Google pour les termes big data - machine learning et IA", book="keep"]
+
+*L'intelligence artificielle*(((intelligence artificielle))) (IA) permet à un ordinateur d'obtenir des résultats similaires ou supérieurs à ce que peuvent faire les humains: jouer aux échecs, deviner quels objets sont visibles sur une photo, conduire un véhicule, ...
+// +
+Bien qu'il existe plusieurs familles d'IA, la technique prédominante en IA nécessite de gros volumes de données pour fonctionner correctement.
+Par exemple, une IA qui peut "deviner" les objets visibles sur une image doit être "entraînée" sur des millions d'images avant de pouvoir obtenir de bons résultats.
+
+// +
+C’est là que le big data et l’IA se rejoignent : le "big data" est le carburant qui permet à l’AI de fonctionner.
+Toutes les industries développent aujourd'hui des produits et des services basés sur l'IA.
+En conséquence, ces industries intensifient leurs efforts en big data: collecter, stocker et analyser des volumes toujours plus importants et une variété toujours plus grande de données.
+
+// +
+Pour mieux comprendre l'IA en relation au big data, une leçon sur l'intelligence artificielle peut être trouvée https://emlyon.github.io/mk99/generated-html/data-science-machine-learning-artificial-intelligence-fr.html[ici] et une carte mémo sur l'IA est disponible https://emlyon.github.io/chaire-segeco/content/fr/ia.pdf[ici].
+
+
+=== c. Les cadres réglementaires vont évoluer
 Les impacts sociétaux du big data et de l'IA ne sont pas banals, allant de la discrimination raciale, financière et médicale à des fuites géantes de données, ou au déséquilibre économique à l'ère des robots et de l'IA sur le lieu de travail.
 // +
 Les réglementations publiques aux niveaux national et international tentent de rattraper ces défis.
 À mesure que la technologie évolue rapidement, nous pouvons anticiper que les impacts sociétaux des big data occuperont une place centrale.
 
-=== c. en tant qu'expression, "big data" évolue
-* Il est intéressant de noter que les expressions "à la mode", comme "big data", ont tendance à s'user rapidement. Elles sont sur-utilisées, mentionnées en toutes circonstances, deviennent vagues et trop vendues.
-Pour les données volumineuses, nous observons qu'on atteint un sommet en 2017, alors que de nouveaux termes apparaissent:
-
-//+
-ifndef::backend-pdf[]
-++++
-<iframe scrolling="no" style="border:none;" width="640" height="600" src="https://www.google.com/trends/fetchComponent?hl=en-US&amp;q=big data,machine learning,artificial intelligence%20&amp;content=1&amp;cid=TIMESERIES_GRAPH_0&amp;export=5&amp;w=640&amp;h=600"></iframe>
-++++
-endif::[]
-
-ifdef::backend-pdf[]
-image::gtrends.png[pdfwidth="100%", align="center", title="Recherches Google pour les termes big data - machine learning et IA", book="keep"]
-endif::[]
-//+
-
-Quelles sont les différences entre ces termes?
-
-* "Big Data" est maintenant un terme générique.
-* *Machine learning*(((apprentissage automatique))) met l'accent sur les capacités de génie scientifique et logiciel permettant de faire quelque chose d'utile avec les données (prédire, catégoriser, marquer ...)
 // +
-* *Intelligence artificielle*(((intelligence artificielle))) met l'accent sur les possibilités "quasi-humaines" offertes par l'apprentissage automatique. Le terme est souvent utilisé de manière interchangeable avec l'apprentissage automatique. L'intelligence artificielle est alimentée par des données, de sorte que l'avenir des big data se recoupe avec ce que deviendra l'IA.
+Le RGPD, un règlement adopté par l'Union européenne en 2019 pour protéger les données à caractère personnel des citoyens, répond directement aux nouvelles préoccupations en matière de confidentialité soulevées par le Big Data.
 // +
-* Et *data science*(((data science)))? C'est un terme général englobant l'apprentissage automatique, les statistiques et de nombreuses méthodes analytiques pour travailler avec les données et les interpréter. Souvent utilisé de manière interchangeable avec l'apprentissage automatique. *Data scientist*(((data scientist))) est une description d'emploi devenue commune, y compris en français.
+Vous pouvez trouver une leçon sur le RGPD https://emlyon.github.io/mk99/generated-html/GDPR-fr.html[ici] et une carte mémo https://emlyon.github.io/chaire-segeco/content/fr/rgpd.pdf[ici].
 
-== Des vidéos simple sur le sujet
+== Des vidéos simples sur le sujet
 
 - Qu'est-ce que le big data? https://youtu.be/an86433PT8Q
 

@@ -257,7 +257,10 @@ video::tL7ojiOTQho?t=16m31s[youtube,start=971]
 === c. L'approche de l'apprentissage par *renforcement* (reinforcement learning)
 Pour comprendre l'apprentissage par renforcement(((apprentissage automatique, apprentissage par renforcement))), nous pouvons penser intuitivement comment les animaux peuvent apprendre rapidement en *ignorant* les comportements indésirables et en *récompensant* les comportements souhaitables.
 
-C'est facile et ne prend que quelques secondes. La vidéo suivante montre B.F. Skinner, figure centrale de la psychologie comportemenale dans les années 1950-1970, qui fait faire un tour sur lui-même à un pigeon simplement en récompensant le fait de tourner par des graines :
+C'est facile et ne prend que quelques secondes.
+La vidéo suivante montre B.F. Skinner, figure centrale de la psychologie comportementale dans les années 1950-1970, qui apprend à un pigeon à faire un tour sur lui-même.
+Pour cela, Skinner procède simplement en récompensant le pigeon par des graines, dès que le pigeon fait des mouvements de rotation.
+A force, le pigeon finit par faire un tour complet sur lui-même, car il a appris que cela allait lui donner une récompense.
 
 video::TtfQlkGwE2U[youtube, largeur = 500, hauteur = 400]
 {nbsp} +
@@ -295,7 +298,7 @@ L'apprentissage par renforcement fonctionne de la manière suivante :
 // +
 Après avoir bouclé de 1. à 4. des milliers de fois, et enregistré à chaque fois des combinaisons d'actions favorables à répéter, et défavorables à éviter, Mario finit par arriver au bout du jeu, sans qu'aucun joueur humain ne tienne les commandes :
 
-video::iakFfOmanJU[youtube, width = 500, height = 400]
+video::qv6UVOQ0F44[youtube, width = 500, height = 400]
 {nbsp} +
 
 L'apprentissage par renforcement est perçu comme correspondant à un aspect important de l'apprentissage humain / de l'intelligence humaine (axé sur les buts, «essai et erreur»).

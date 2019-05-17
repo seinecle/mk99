@@ -11,7 +11,7 @@
 
     <properties>
         <medium.publish>false</medium.publish>
-        <asciidoctorj.diagram.version>1.5.0</asciidoctorj.diagram.version>
+        <asciidoctorj.diagram.version>1.5.16</asciidoctorj.diagram.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>

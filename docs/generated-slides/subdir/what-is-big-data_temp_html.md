@@ -206,27 +206,33 @@ The *IoT*(((IoT - Internet of things))) is used to *do* things (display informat
 //+
 Hence, the development of *connected objects*(((IoT - Internet of things))) will lead to a tremendous increase in the volume of data collected.
 
-=== b. Regulatory frameworks will grow in complexity
+=== b. "big data" gains new importance with artificial intelligence
+image::gtrends.png[pdfwidth="100%", align="center", title="Google searches for big data, machine learning and AI", book="keep"]
+{nbsp} +
+
+*Artificial intelligence*(((artificial intelligence))) (AI) enables a computer to achieve results similar or better than what humans can do: play chess, guess which objects are visible on a picture, drive a vehicule, ...
+//+
+While there are several families of AI, the predominant technique for AI needs large volumes of data to perform well.
+For example, an AI which can "guess" which objects are visible on a picture needs to be "trained" on millions of pictures to get good results.
+
+//+
+This is where big data and AI bridge: "big data" is the fuel that enables AI to work.
+All industries today develop products and services based on AI.
+As a result, these industries increase their effort in big data: collecting, storin and analyzing greater volumes and a variety of data.
+
+//+
+A lesson on AI can be found https://emlyon.github.io/mk99/generated-html/data-science-machine-learning-artificial-intelligence.html[here] and a memo card on AI is avalaible https://emlyon.github.io/chaire-segeco/content/en/ia.pdf[here].
+
+=== c. Regulatory frameworks will grow in complexity
 Societal impacts of big data and AI are not trivial, ranging from racial, financial and medical discrimination to giant data leaks, or economic (un)stability in the age of robots and AI in the workplace.
 //+
 Public regulations at the national and international levels are trying to catch up with these challenges.
 As technology evolves quickly, we can anticipate that societal impacts of big data will take center stage.
 
-=== c. as an expression, "big data" is evolving
-* It is interesting to note that "hot" expressions, like "big data", tend to wear out fast. They are too hyped, used in all circumstances, become vague and over sold.
-For big data, we observe that it is peaking in 2017, while new terms appear:
+GDPR, a regulation passed by the European Union in 2019 protecting the personal data of citizens, is directly addressing the new concerns for privacy raised by big data.
 
-image::gtrends.png[pdfwidth="100%", align="center", title="Google searches for big data, machine learning and AI", book="keep"]
-{nbsp} +
-
-What are the differences between these terms?
-
-* "Big data" is by now a generic term
-* *Machine learning*(((machine learning))) puts the focus on the scientific and software engineering capabilities enabling to do something useful with the data (predict, categorize, score...)
 //+
-* *Artificial intelligence*(((artificial intelligence))) puts the emphasis on human-like possibilities afforded by machine learning. Often used interchangeably with machine learning. AI is fed on data, so the future of big data will intersect with what AI becomes.
-//+
-* And *data science*(((data science)))? This is a broad term encompassing machine learning, statistics, and many analytical methods to work with data and interpret it. Often used interchangeably with machine learning. *Data scientist*(((data scientist))) is a common job description in the field.
+You can find a lesson on the GDPR https://emlyon.github.io/mk99/generated-html/GDPR.html[here] and a memo card https://emlyon.github.io/chaire-segeco/content/en/rgpd.pdf[here].
 
 == The end
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].

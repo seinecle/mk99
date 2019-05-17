@@ -1,0 +1,289 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="== !" /><title>La RGPD et la protection des données dans le monde</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.6.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.6.0/css/theme/white.css" id="theme" /><style>/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
+pre.CodeRay{background:#f7f7f8}
+.CodeRay .line-numbers{border-right:1px solid currentColor;opacity:.35;padding:0 .5em 0 0}
+.CodeRay span.line-numbers{display:inline-block;margin-right:.75em}
+.CodeRay .line-numbers strong{color:#000}
+table.CodeRay{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.CodeRay td{vertical-align:top;line-height:inherit}
+table.CodeRay td.line-numbers{text-align:right}
+table.CodeRay td.code{padding:0 0 0 .75em}
+.CodeRay .debug{color:#fff !important;background:#000080 !important}
+.CodeRay .annotation{color:#007}
+.CodeRay .attribute-name{color:#000080}
+.CodeRay .attribute-value{color:#700}
+.CodeRay .binary{color:#509}
+.CodeRay .comment{color:#998;font-style:italic}
+.CodeRay .char{color:#04d}
+.CodeRay .char .content{color:#04d}
+.CodeRay .char .delimiter{color:#039}
+.CodeRay .class{color:#458;font-weight:bold}
+.CodeRay .complex{color:#a08}
+.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
+.CodeRay .color{color:#099}
+.CodeRay .class-variable{color:#369}
+.CodeRay .decorator{color:#b0b}
+.CodeRay .definition{color:#099}
+.CodeRay .delimiter{color:#000}
+.CodeRay .doc{color:#970}
+.CodeRay .doctype{color:#34b}
+.CodeRay .doc-string{color:#d42}
+.CodeRay .escape{color:#666}
+.CodeRay .entity{color:#800}
+.CodeRay .error{color:#808}
+.CodeRay .exception{color:inherit}
+.CodeRay .filename{color:#099}
+.CodeRay .function{color:#900;font-weight:bold}
+.CodeRay .global-variable{color:#008080}
+.CodeRay .hex{color:#058}
+.CodeRay .integer,.CodeRay .float{color:#099}
+.CodeRay .include{color:#555}
+.CodeRay .inline{color:#000}
+.CodeRay .inline .inline{background:#ccc}
+.CodeRay .inline .inline .inline{background:#bbb}
+.CodeRay .inline .inline-delimiter{color:#d14}
+.CodeRay .inline-delimiter{color:#d14}
+.CodeRay .important{color:#555;font-weight:bold}
+.CodeRay .interpreted{color:#b2b}
+.CodeRay .instance-variable{color:#008080}
+.CodeRay .label{color:#970}
+.CodeRay .local-variable{color:#963}
+.CodeRay .octal{color:#40e}
+.CodeRay .predefined{color:#369}
+.CodeRay .preprocessor{color:#579}
+.CodeRay .pseudo-class{color:#555}
+.CodeRay .directive{font-weight:bold}
+.CodeRay .type{font-weight:bold}
+.CodeRay .predefined-type{color:inherit}
+.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
+.CodeRay .key{color:#808}
+.CodeRay .key .delimiter{color:#606}
+.CodeRay .key .char{color:#80f}
+.CodeRay .value{color:#088}
+.CodeRay .regexp .delimiter{color:#808}
+.CodeRay .regexp .content{color:#808}
+.CodeRay .regexp .modifier{color:#808}
+.CodeRay .regexp .char{color:#d14}
+.CodeRay .regexp .function{color:#404;font-weight:bold}
+.CodeRay .string{color:#d20}
+.CodeRay .string .string .string{background:#ffd0d0}
+.CodeRay .string .content{color:#d14}
+.CodeRay .string .char{color:#d14}
+.CodeRay .string .delimiter{color:#d14}
+.CodeRay .shell{color:#d14}
+.CodeRay .shell .delimiter{color:#d14}
+.CodeRay .symbol{color:#990073}
+.CodeRay .symbol .content{color:#a60}
+.CodeRay .symbol .delimiter{color:#630}
+.CodeRay .tag{color:#008080}
+.CodeRay .tag-special{color:#d70}
+.CodeRay .variable{color:#036}
+.CodeRay .insert{background:#afa}
+.CodeRay .delete{background:#faa}
+.CodeRay .change{color:#aaf;background:#007}
+.CodeRay .head{color:#f8f;background:#505}
+.CodeRay .insert .insert{color:#080}
+.CodeRay .delete .delete{color:#800}
+.CodeRay .change .change{color:#66f}
+.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>La RGPD et la protection des données dans le monde</h1><div class="preamble"><div class="paragraph"><p>2018-06-20</p></div>
+<div class="paragraph"><p>last modified: 2019-05-09</p></div></div><p class="author"><small>== !</small></p></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" height="100%" /></div></section>
+<section></section>
+<section id="_1_evolution_de_la_rglementation_de_la_protection_des_donnes_dans_lue"><h2>1. Evolution de la réglementation de la protection des données dans l&#8217;UE</h2></section>
+<section></section>
+<section><h3>a. La directive sur la protection des données de l&#8217;UE en 1995</h3></section>
+<section><div class="paragraph"><p>La présente directive découle des lignes directrices antérieures adoptées par l&#8217;OCDE dès 1980 sur <a href="http://www.oecd.org/internet/ieconomy/oecdguidelinesontheprotectionofprivacyandtransborderflowsofpersonaldata.htm">la protection de la vie privée et les flux transfrontières de données personnelles</a>.</p></div></section>
+<section><div class="paragraph"><p>Ces lignes directrices ont été adoptées par les membres de l&#8217;OCDE mais n&#8217;étaient pas contraignantes: par exemple, <a href="https://en.wikipedia.org/wiki/Data_Protection_Directive#Context">les États-Unis n&#8217;ont pas traduit les lignes directrices de l&#8217;OCDE sur la protection de la vie privée dans leur législation</a>. En revanche, ces lignes directrices ont été transformées en directive par l&#8217;UE en 1995.</p></div></section>
+<section><div class="ulist"><ul><li><p><a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31995L0046:fr:HTML">tout le texte de la directive européenne sur la protection des données</a></p></li><li><p><a href="https://en.wikipedia.org/wiki/Data_Protection_Directive">Présentation de la directive de l&#8217;UE sur la protection des données</a></p></li></ul></div></section>
+<section><div class="paragraph"><p>Cette directive garantit et facilite la libre circulation des données à caractère personnel entre les États membres de l&#8217;UE, en fournissant un cadre valable pour tous les États membres pour la protection des données à caractère personnel des citoyens de l&#8217;UE. <strong>Cela répond à la volonté de créer un marché commun, qui doit évoluer dans un cadre réglementaire uniforme</strong>.</p></div></section>
+<section><div class="paragraph"><p>Comment est traitée la question des données de l&#8217;UE détenues par des sociétés non européennes? Par exemple, quel est le niveau de protection des données personnelles d&#8217;un individu français appartenant à une entreprise américaine sur un serveur situé aux États-Unis?</p></div></section>
+<section><div class="paragraph"><p>&#8594; Selon la directive de 1995, la règle était simple: <strong>il est interdit d&#8217;exporter des données personnelles vers un pays hors UE avec un niveau plus faible de protection des données personnelles.</strong></p></div></section>
+<section><h3>b. Le cas des données sur les citoyens de l&#8217;UE hébergées par des entreprises américaines</h3></section>
+<section></section>
+<section><div class="paragraph"><p>L&#8217;affaire est importante car les principaux fournisseurs de services impliquant des données personnelles (google search, gmail, gmaps, facebook, etc.) sont hébergés aux États-Unis.</p></div></section>
+<section><div class="paragraph"><p>La question est: quel est le niveau de protection des données dans ce cas? Niveau de protection américain ou UE?</p></div></section>
+<section><div class="paragraph"><p>Il ne devrait pas être possible d&#8217;héberger des données personnelles des citoyens de l&#8217;UE aux États-Unis parce que les États-Unis ont des réglementations beaucoup moins strictes en la matière. En effet, aux États-Unis:</p></div></section>
+<section><div class="ulist"><ul><li><p>Il existe un cadre réglementaire sur la protection des données pour les données collectées ou détenues par le gouvernement fédéral.</p></li><li><p>Mais il n&#8217;existe pas de cadre général sur la protection des données en dehors du gouvernement fédéral (niveau des États).</p></li></ul></div></section>
+<section><div class="paragraph"><p>Pour remédier à cette situation, les principes du Safe Harbor sont un accord international entre les États-Unis et l&#8217;UE qui a été mis en place en 2000.</p></div></section>
+<section><div class="paragraph"><p>Les principes du <a href="https://en.wikipedia.org/wiki/International_Safe_Harbor_Privacy_Principles">Safe Harbor</a> sont une série de règlements que les entreprises américaines peuvent accepter de suivre si elles veulent héberger des données personnelles l&#8217;UE sur le sol américain. Ces règles fournissent un niveau de protection des données équivalent à celui garanti par la directive sur la protection des données de 1995 dans l&#8217;UE.</p></div></section>
+<section><div class="paragraph"><p>En Octobre 2015, <a href="https://en.wikipedia.org/wiki/Max_Schrems">Maximillian Schrems</a> (un étudiant en droit en Autriche) a lancé une action en justice contre Facebook pour défaut de protection de ses données personnelles contre l&#8217;espionnage de la NSA aux Etats-Unis.</p></div></section>
+<section><div class="paragraph"><p>La défense de Facebook était de faire valoir qu&#8217;elle était conforme à la Safe Harbor Act. La plainte a été portée devant la Cour européenne de justice, qui a fini par déclarer <strong>invalide le Safe Harbor Act</strong> parce que:</p></div></section>
+<section><div class="literalblock"><div class="content"><pre>"Une législation permettant aux pouvoirs publics d'accéder de manière généralisée au contenu des communications électroniques doit être considérée comme compromettant l'essence même du droit fondamental au respect de la vie privée".</pre></div></div></section>
+<section><div class="paragraph"><p>Les mois suivants ont été marqués par une incertitude juridique car les données de l&#8217;UE hébergées sur des serveurs américains ne l&#8217;étaient plus dans des conditions légales - le Safe Harbor Act avait cessé d&#8217;exister.</p></div></section>
+<section><div class="paragraph"><p>Le 2 février 2016, l&#8217;UE et les États-Unis ont créé un nouvel accord juridique connu sous le nom de <a href="https://en.wikipedia.org/wiki/EU-US_Privacy_Shield">EU-US Privacy Shield</a>, qui est le successeur du Safe Harbor Act. Le <a href="https://www.scmagazineuk.com/how-will-the-new-eu-us-privacy-shield-fit-with-the-upcoming-general-data-protection-regulation/article/531527/">Privacy Shield</a> diffère du Safe Harbor Act dans ce qui suit:</p></div></section>
+<section><div class="olist arabic"><ol class="arabic"><li><p>Des obligations plus fortes pour les entreprises aux États-Unis de protéger les données personnelles des Européens et de renforcer le contrôle et l&#8217;application par le Département du Commerce des États-Unis et la Federal Trade Commission.</p></li></ol></div></section>
+<section><div class="olist arabic"><ol class="arabic"><li><p>L&#8217;accès aux données personnelles transférées en vertu du nouvel arrangement par les autorités publiques aux États-Unis devait être soumis à des conditions, des limites et une surveillance claires, empêchant l&#8217;accès généralisé des organismes de surveillance de l&#8217;État.</p></li></ol></div></section>
+<section><div class="olist arabic"><ol class="arabic"><li><p>Protection effective des droits des citoyens de l&#8217;UE avec plusieurs possibilités de recours.</p></li></ol></div></section>
+<section><div class="olist arabic"><ol class="arabic"><li><p>Un mécanisme d&#8217;examen conjoint annuel entre l&#8217;UE et les États-Unis.</p></li></ol></div></section>
+<section><h3>c. RGPD, un nouveau cadre légal</h3></section>
+<section><div class="paragraph"><p>Le traitement des données des citoyens de l&#8217;UE en dehors de l&#8217;UE est d&#8217;une grande complexité juridique, comme en témoigne la fragilité des accords juridiques entre l&#8217;UE et les États-Unis. L&#8217;UE devrait-elle créer des accords juridiques spéciaux avec tous les pays souhaitant que leurs entreprises puissent héberger des données personnelles de l&#8217;UE? Cela ressemble à un cauchemar bureaucratique (ou au rêve d&#8217;un avocat).</p></div></section>
+<section><div class="paragraph"><p>Au lieu de cela, l&#8217;UE a conçu <strong>un nouveau principe juridique</strong> s&#8217;appliquant à tous les pays détenant des données personnelles de l&#8217;UE, sans avoir besoin d&#8217;accords bilatéraux. <strong>Ceci est le RGPD</strong>.</p></div></section>
+<section><div class="paragraph"><p>Le <strong>RGPD: Règlement général sur la protection des données</strong> est un cadre juridique entré en vigueur en 2018 qui remplace la directive de 1995 par une nouvelle règle simple: les données des citoyens de l&#8217;UE doivent être traitées conformément aux règles établies par l&#8217;UE</p></div></section>
+<section><div class="paragraph"><p>Avant d&#8217;examiner le RGPD plus en détail, nous définissons les termes juridiques qui y sont utilisés:</p></div></section>
+<section id="_2_dfinitions_cls"><h2>2. Définitions clés</h2></section>
+<section><div class="paragraph"><p>Source pour ces définitions de clé: un  <a href="https://github.com/seinecle/mk99/blob/master/src/main/asciidoc/resources/DATAIKU-WP-DATA-RGPD.pdf">livre blanc synthétique sur le RGPD par Dataiku</a> et le <a href="https://www.cnil.fr/fr/glossaire">glossaire de la CNIL</a>.</p></div></section>
+<section><h3>a. Données personnelles</h3></section>
+<section><div class="paragraph"><p>Toute information identifiant directement ou indirectement une personne physique (ex. nom, no d’immatriculation, no de téléphone, photographie, date de naissance, commune de résidence, empreinte digitale&#8230;&#8203;).</p></div></section>
+<section><h3>b. Données sensibles</h3></section>
+<section><div class="paragraph"><p>Les données sensibles constituent une catégorie particulière de données personnelles (notamment données personnelles révélant l&#8217;origine raciale ou ethnique, opinions politiques, croyances religieuses ou philosophiques, appartenance à un syndicat, données sur la santé ou la vie sexuelle) à laquelle des protections supplémentaires s&#8217;appliquent.</p></div></section>
+<section><h3>c. Personne concernée</h3></section>
+<section><div class="paragraph"><p>Une personne concernée est un être humain sur lequel des données personnelles sont collectées.</p></div></section>
+<section><h3>d. Responsable de traitement ("Data controller" en anglais)</h3></section>
+<section><div class="paragraph"><p>Un responsable de traitement est une entité qui détermine les objectifs, les conditions et les moyens du traitement des données personnelles. Lorsque l&#8217;organisation est suffisamment grande, une position dédiée de "Responsable de traitement" peut être créée, sinon c&#8217;est le responsable légal de l&#8217;organisation.</p></div>
+<div class="paragraph"><p>Ex: en France, le responsable de traitement est chargé de déclarer les données personnelles traitées à la <a href="https://www.cnil.fr/fr/home">CNIL</a>.</p></div></section>
+<section><h3>e. Sous-traitant ("Data processor" en anglais)</h3></section>
+<section><div class="paragraph"><p>Un sous-traitant est une entité qui traite des données personnelles pour le compte du responsable de traitement (par exemple, fournisseurs d&#8217;hébergement cloud et de centre de données).</p></div></section>
+<section><div class="paragraph"><p>Jusqu&#8217;en 2017, il a été considéré que le sous-traitant "exécute" simplement la mission donnée par le responsable de traitement:</p></div>
+<div class="ulist"><ul><li><p>le sous-traitant est chargé des mesures de sécurité appropriées pour assurer la protection des données contre la violation, la perte &#8230;&#8203;</p></li><li><p>mais le sous-traitant n&#8217;est pas responsable des procédures de collecte inappropriées des données personnelles établies par le responsable du traitement.</p></li></ul></div></section>
+<section><div class="paragraph"><p>À partir de 2018 avec le RGPD, <strong>le sous-traitant est co-responsable avec le responsable de traitement en cas de violation de données compromettant les données personnelles des personnes concernées</strong>.</p></div></section>
+<section id="_4_quatre_principes_cls_pour_le_traitement_lgitime_des_donnes_personnelles"><h2>4. Quatre principes clés pour le traitement légitime des données personnelles</h2></section>
+<section><h3>a. Consentement préalable</h3></section>
+<section><div class="paragraph"><p>Le consentement préalable est requis avant de recueillir des données personnelles en vue de leur traitement:</p></div>
+<div class="ulist"><ul><li><p>La politique de collecte de données doit être clairement mise à la disposition des utilisateurs</p></li><li><p>L&#8217;exclusion doit être possible</p></li><li><p>Le consentement doit être présenté clairement</p></li></ul></div></section>
+<section><h3>b. Adéquation / objectif légitime</h3></section>
+<section><div class="paragraph"><p>Les données collectées doivent être exactement nécessaires pour exécuter le service, pas plus.</p></div>
+<div class="paragraph"><p>Time out: les informations doivent être supprimées lorsque le service s&#8217;arrête. En France, il y a une limite de 13 mois après laquelle le consentement doit être renouvelé.</p></div></section>
+<section><h3>c. Portabilité</h3></section>
+<section><div class="paragraph"><p>&#8594; L&#8217;information doit être disponible sur demande</p></div>
+<div class="paragraph"><p>En 2011, Max Schrems a demandé toutes ses données Facebook. Il en a reçu 1200 pages.</p></div>
+<div class="paragraph"><p>Grâce à ses efforts, maintenant la plupart des médias sociaux offrent un téléchargement en un clic de vos données personnelles.</p></div>
+<div class="paragraph"><p>La portabilité couvre également <a href="https://journals.openedition.org/revdh/840">le «droit à l&#8217;oubli», détaillé sur dans cette article</a>.</p></div></section>
+<section><h3>d. sécurité</h3></section>
+<section><div class="paragraph"><p>Toutes les précautions raisonnables doivent être prises contre les violations de données.
+Les précautions prises devraient être proportionnées aux dommages qui résulteraient d&#8217;une violation de la sécurité.</p></div></section>
+<section><div class="paragraph"><p>Notions de base: définir et gérer les droits d&#8217;accès à chaque aspect pertinent des données.
+Les utilisateurs doivent être informés des violations de sécurité susceptibles d&#8217;affecter leurs données</p></div></section>
+<section id="_5_en_2018_le_rgpd_et_ce_quil_change"><h2>5. En 2018: le RGPD et ce qu&#8217;il change</h2></section>
+<section><div class="paragraph"><p>RGPD signifie "Règlement Général sur la Protection des Données". Il a été adopté par l&#8217;UE le 14 avril 2016 et est appliqué depuis le <strong>25 mai 2018</strong>.</p></div>
+<div class="paragraph"><p>Ses principales nouveautés, par rapport à la directive européenne sur la protection des données, sont:</p></div></section>
+<section><h3>a. Application</h3></section>
+<section><div class="paragraph"><p>Le RGPD s&#8217;applique à toute entreprise (<strong>quel que soit son emplacement</strong>, sa taille et son secteur) traitant les données personnelles des personnes résidant dans l&#8217;UE.</p></div></section>
+<section><div class="paragraph"><p>Par exemple, une entreprise qui traite les données personnelles aux États-Unis de citoyens de l&#8217;UE est tenue de se conformer au RGPD.</p></div></section>
+<section><h3>b. Responsabilité</h3></section>
+<section><div class="paragraph"><p>Sous le RGPD, le responsable de traitement et le sous-traitant doivent se conformer à la législation. En vertu de la directive précédente sur la protection des données, seuls les responsables du traitement des données étaient tenus responsables de la conformité à la protection des données, et non des processeurs de données.</p></div></section>
+<section><h3>c. Pénalités</h3></section>
+<section><div class="paragraph"><p>Avec une amende pouvant aller jusqu&#8217;à 4% du chiffre d&#8217;affaires global annuel ou 20 millions d&#8217;euros (selon le montant le plus élevé), les pénalités pour non-conformité sont élevées.</p></div></section>
+<section><h3>d. Consentement</h3></section>
+<section><div class="paragraph"><p>En vertu du RGPD, les entreprises ne pourront plus utiliser des termes longs et illisibles remplis de jargon juridique; consentement pour la collecte et l&#8217;utilisation des données personnelles doit être en langage clair et en détail le but du traitement des données.</p></div></section>
+<section><h3>e. Les violations de données</h3></section>
+<section><div class="paragraph"><p>Réglementation accrue entourant la divulgation de <strong>violations de données</strong>. Plus précisément, des rapports beaucoup plus rapides sont requis (dans les 72 heures).</p></div></section>
+<section><h3>f. Droits des sujets de données</h3></section>
+<section><div class="paragraph"><p>Les personnes concernées dans l&#8217;UE ont élargi leurs droits en matière de protection des données, notamment:</p></div></section>
+<section><div class="ulist"><ul><li><p>le droit à l&#8217;oubli (effacement de leurs données),</p></li><li><p>le droit d&#8217;accès (obtenir des informations sur exactement quelles données sont traitées où et dans quel but),</p></li><li><p>et le droit à la portabilité des données (recevoir une copie des données personnelles les concernant).</p></li></ul></div></section>
+<section><div class="paragraph"><p>Les citoyens ont maintenant également le droit de questionner et remettre en cause les décisions qui les affectent sur une base purement algorithmique.</p></div></section>
+<section><h3>g. Confidentialité "by design"</h3></section>
+<section><div class="paragraph"><p><strong>Confidentialité by design</strong> est une obligation légale de considérer la confidentialité des données dès le début de tous les projets et initiatives, et non après coup.</p></div></section>
+<section><h3>h. Nomination d&#8217;un délégué à la protection des données (DPD)</h3></section>
+<section><div class="paragraph"><p>Les Contrôleurs et processeurs dont le cœur de métier est le suivi régulier et systématique des données personnelles à grande échelle ou qui traitent de catégories particulières de données, devront désigner un délégués à la protection des données. Le DPD peut être nommé en interne, embauché ou sous contrat, mais (parmi d&#8217;autres exigences spécifiques) il doit être un expert en droit et en pratiques de protection des données.</p></div></section>
+<section id="_6_protection_des_donnes_un_aperu_rapide_en_dehors_de_lue"><h2>6. Protection des données: un aperçu rapide en dehors de l&#8217;UE</h2></section>
+<section><h3>a. ETATS-UNIS</h3></section>
+<section><div class="ulist"><ul><li><p>Cadre sur la protection des données pour les données collectées / détenues par le gouvernement fédéral</p></li><li><p>Mais pas de cadre général sur la protection des données en dehors du gouvernement fédéral</p></li></ul></div></section>
+<section><h3>b. Inde</h3></section>
+<section><div class="paragraph"><p>IT Act de 2000 + <a href="http://www.wipo.int/wipolex/en/details.jsp?id=15063">Règlement IT 2011</a></p></div>
+<div class="ulist"><ul><li><p>Met l&#8217;accent sur les informations personnelles <strong>sensibles</strong>: mots de passe, informations financières, état de santé, orientation sexuelle, informations biométriques.</p></li><li><p>Pas besoin de déclarer les activités de traitement de données à une autorité</p></li></ul></div></section>
+<section><h3>c. Chine</h3></section>
+<section><div class="paragraph"><p>
+En Chine, la protection des données n&#8217;est pas promulguée dans une seule loi, à l&#8217;exception de lois de portée plus large: le Comité permanent du Congrès national du peuple a promulgué une <a href="http://tinyurl.com/npcdecision">Décision concernant le renforcement de la protection de l&#8217;information sur les réseaux</a>.</p></div></section>
+<section><div class="paragraph"><p>La Chine a plutôt des textes législatifs sectoriels, tels que le règlement sur la protection des renseignements personnels des utilisateurs de services de télécommunication et d&#8217;Internet (<a href="http://tinyurl.com/miitdecision">MIIT Regulation</a>).</p></div></section>
+<section><div class="paragraph"><p>L&#8217;Etat chinois développe des initiatives telles que <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_cr%C3%A9dit_social">le Système de Crédit social</a> qui reposent sur un système de surveillance de masse, en opposition à la libre maîtrise pour un individu de ses données personnelles.</p></div></section>
+<section><h3>d. Législation pour la protection des données personnelles dans d&#8217;autres pays</h3></section>
+<section><div class="paragraph"><p>Pour avoir une <a href="https://uk.practicallaw.thomsonreuters.com/Browse/Home/International/DataProtectionGlobalGuide?__lrTS=20171113205355950&amp;transitionType=Default&amp;contextData=(sc.Default)&amp;firstPage=true&amp;bhcp=1">vue synthétique des lois sur la protection des données dans d&#8217;autres pays, visitez ce site Web par Thomson Reuters</a>.</p></div></section>
+<section id="_pour_aller_plus_loin"><h2>Pour aller plus loin</h2></section>
+<section><div class="paragraph"><p>Retrouvez le site complet : <a href="https://seinecle.github.io/mk99/index-fr.html">ici</a>.</p></div>
+<div class="paragraph"><p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span></p></div>
+<div class="paragraph"><p>Clement Levallois</p></div>
+<div class="paragraph"><p>Découvrez mes autres cours et projets : <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p></div>
+<div class="paragraph"><p>Ou contactez-moi via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 11411204;
+        var sc_invisible = 1;
+        var sc_security = "11411204";
+        var scJsHost = (("https:" == document.location.protocol) ?
+            "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript><div class="statcounter"><a title="site stats"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="//c.statcounter.com/11411204/0/11411204/1/" alt="site
+    stats"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide --></p></div></section></div></div><script src="reveal.js-3.6.0/lib/js/head.min.js"></script><script src="reveal.js-3.6.0/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+Reveal.initialize({
+  // Display controls in the bottom right corner
+  controls: true,
+  // Display a presentation progress bar
+  progress: true,
+  // Display the page number of the current slide
+  slideNumber: false,
+  // Push each slide change to the browser history
+  history: false,
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+  // Enable the slide overview mode
+  overview: true,
+  // Vertical centering of slides
+  center: true,
+  // Enables touch navigation on devices with touch input
+  touch: true,
+  // Loop the presentation
+  loop: false,
+  // Change the presentation direction to be RTL
+  rtl: false,
+  // Turns fragments on and off globally
+  fragments: true,
+  // Flags if the presentation is running in an embedded mode,
+  // i.e. contained within a limited portion of the screen
+  embedded: false,
+  // Number of milliseconds between automatically proceeding to the
+  // next slide, disabled when set to 0, this value can be overwritten
+  // by using a data-autoslide attribute on your slides
+  autoSlide: 0,
+  // Stop auto-sliding after user input
+  autoSlideStoppable: true,
+  // Enable slide navigation via mouse wheel
+  mouseWheel: false,
+  // Hides the address bar on mobile devices
+  hideAddressBar: true,
+  // Opens links in an iframe preview overlay
+  previewLinks: false,
+  // Theme (e.g., beige, black, league, night, serif, simple, sky, solarized, white)
+  // NOTE setting the theme in the config no longer works in reveal.js 3.x
+  //theme: Reveal.getQueryHash().theme || 'white',
+  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
+  transition: Reveal.getQueryHash().transition || 'linear',
+  // Transition speed (e.g., default, fast, slow)
+  transitionSpeed: 'default',
+  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
+  backgroundTransition: 'fade',
+  // Number of slides away from the current that are visible
+  viewDistance: 3,
+  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
+  parallaxBackgroundImage: '',
+  // Parallax background size in CSS syntax (e.g., "2100px 900px")
+  parallaxBackgroundSize: '',
+
+  // The "normal" size of the presentation, aspect ratio will be preserved
+  // when the presentation is scaled to fit different resolutions. Can be
+  // specified using percentage units.
+  width: 960,
+  height: 700,
+
+  // Factor of the display size that should remain empty around the content
+  margin: 0.1,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  minScale: 0.2,
+  maxScale: 10.0,
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+      { src: 'reveal.js-3.6.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'reveal.js-3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal.js-3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'reveal.js-3.6.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal.js-3.6.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});</script></body></html>
