@@ -27,7 +27,7 @@ Première version : 2018-06-20
 
 (((machine learning, rapport aux statistiques)))
 
-Nous allons comparer l'apprentissage automatique à un exemple classique de la statistique: calculer une ligne de régression pour identifier une tendance dans un nuage de points.
+Nous allons comparer le machine learning (*en français: apprentissage automatique ou apprentissage machine*) à un exemple classique de la statistique: calculer une ligne de régression pour identifier une tendance dans un nuage de points.
 
 == !
 Pour illustrer, nous prenons quelques données sur les budgets de marketing et les chiffres de vente dans la période correspondante :
@@ -77,15 +77,15 @@ Les "statistiques régulières" sont le domaine de travail de scientifiques qui:
 
 
 == !
--> puisqu'ils se concentrent sur *l'échantillonnage* des données, ils ne sont pas concernés par le traitement de jeux de données entiers avec des problèmes informatiques connexes.
+-> puisqu'ils se concentrent sur *l'échantillonnage* des données, ils ne sont pas concernés par le traitement de jeux de données entiers avec les problèmes informatiques que cela pose (coût, lenteur, complexité technique de mise en oeuvre...).
 
 
 == !
-Le *Machine learning*  ("apprentissage automatique" en français)(((machine learning))) fait des choses similaires à la statistique, mais d'une manière légèrement différente :
+Le *machine learning* ("apprentissage automatique" en français)(((machine learning))) fait des choses similaires à la statistique, mais d'une manière légèrement différente :
 
 - on met l'accent sur la bonne prédiction, sans se soucier d'identifier le modèle mathématique sous-jacent
 - la prévision doit être réalisable dans le temps disponible, avec les ressources informatiques disponibles
-- les données d'intérêt sont dans un format / dans un volume qui n'est pas couramment traité par les outils de statistiques standards (par exemple: images, observations comportant des centaines de paramètres)
+- les données d'intérêt sont dans un format / dans un volume qui n'est pas couramment traité par les outils de statistiques standards (par exemple : images, vidéos, observations comportant des centaines de paramètres...)
 
 
 == !
@@ -119,7 +119,7 @@ L'apprentissage automatique met l'accent sur les techniques qui sont «adéquate
 
 
 == !
-La poursuite de modèles améliorés dans les statistiques traditionnelles n'ignore pas la question de la charge de calcul ("computational effiency") - elle est considérée comme une propriété souhaitable - mais dans l'apprentissage automatique, c'est en grande partie un pré-requis.
+La recherche en statistiques traditionnelles n'ignore pas la question de la charge de calcul ("computational effiency") - elle est considérée comme une propriété souhaitable - mais dans l'apprentissage automatique, c'est en grande partie un pré-requis.
 
 == !
 ==== b. Une illustration: le cas des GPUs
@@ -127,8 +127,7 @@ La poursuite de modèles améliorés dans les statistiques traditionnelles n'ign
 Une illustration clé de la différence entre les statistiques et l'apprentissage automatique peut être fournie avec l'utilisation de *cartes graphiques*(((GPU - cartes graphiques))).
 
 == !
-Les cartes graphiques (ou GPU: unités de traitement graphique) sont ces composants électroniques pleines de puces trouvées dans un ordinateur, qui sont utilisées pour l'affichage d'images et de vidéos sur des écrans :
-
+Les cartes graphiques (ou GPU: unités de traitement graphique) sont ces composants électroniques pleins de puces trouvées dans un ordinateur, qui sont utilisées pour l'affichage d'images et de vidéos sur des écrans :
 
 == !
 [.stretch]
@@ -136,8 +135,6 @@ image::gpu.jpg[pdfwidth = "50%", align = "center", title = "Une carte graphique 
 == !
 
 
-
-== !
 Dans les années 1990, le jeu vidéo s'est beaucoup développé, des consoles et arcades aux ordinateurs de bureau.
 Les développeurs de jeux ont créé des jeux informatiques montrant des scènes et des animations de plus en plus complexes. (voir https://youtu.be/3UTdxI2IEp0[une évolution des graphiques en jeux vidéo], et https://www.youtube.com/watch?v=Rywkv7PCYDM[les jeux graphiques avancés en 2017]).
 
@@ -163,7 +160,7 @@ Pour illustrer la différence de vitesse entre une opération mathématique exé
 
 == !
 [.stretch]
-video::-P28LKWTzrI[youtube, width = 500, height = 400]
+video::-P28LKWTzrI[youtube, width = 500, height = 400, align = "center"]
 == !
 
 
@@ -171,12 +168,15 @@ Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez 
 
 
 == !
-- décomposé en une très grande série
-- d'opérations très simples (fondamentalement, des sommes ou des multiplications, rien de complexe comme des racines carrées ou des polynômes)
-- qui peuvent fonctionner indépendamment les uns des autres.
+- décomposé en une très grande série...
+- ... d'opérations très simples (fondamentalement, des sommes ou des multiplications, rien de complexe comme des racines carrées ou des polynômes)
+- ... qui peuvent fonctionner indépendamment les uns des autres.
+
+-> alors, les calculs vont pouvoir se faire sur un GPU, ce qui peut accélérer le traitement par 10x, 100x ou plus.
+
 
 == !
-L'apprentissage automatique ou machine learning prête généralement attention à cette dimension du problème dès la phase de conception des modèles et des techniques, là où les statistiques "classiques" ne considèrent généralement pas le problème, ou seulement en aval : non pas au stade de la conception mais à la phase de mise en œuvre - ce qui est souvent trop tard.
+-> L'apprentissage automatique ou machine learning prête attention à ces dimensions du problème dès la phase de conception des modèles et des techniques, là où les statistiques "classiques" ne considèrent généralement pas le problème, ou seulement en aval : non pas au stade de la conception mais à la phase de mise en œuvre - ce qui est souvent trop tard.
 
 
 == !
@@ -186,7 +186,7 @@ L'apprentissage automatique peut être catégorisé en 3 familles :
 
 == 2. Trois familles d'apprentissage automatique
 == !
-==== a. L'apprentissage non supervisé
+==== a. L'apprentissage *non supervisé*
 == !
 *Apprentissage non supervisé*(((apprentissage automatique, apprentissage non supervisé))) désigne les méthodes qui utilisent un jeu de données nouveau et y trouvent des modèles intéressants, *sans que cela ne soit par apprentissage sur de précédents ensembles de données similaires*.
 
@@ -239,7 +239,7 @@ image::kmeans.jpg[pdfwidth = "60%", align = "center", title = "K-means, une appr
 
 ==== b. L'approche d'apprentissage  *supervisé*
 == !
-L'*Apprentissage supervisé*(((apprentissage automatique, apprentissage supervisé))) est l'approche consistant à calibrer un modèle basé sur l'histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
+L'*apprentissage supervisé*(((apprentissage automatique, apprentissage supervisé))) est l'approche consistant à calibrer un modèle basé sur l'histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
 
 == !
 Prenons l'exemple suivant : comment faire pour qu'un ordinateur "devine" si une image représente un chat ou un chien? Pour cela, en approche supervisée, nous allons commencer par récolter 50000 images ou plus de chats et de chiens, avec leurs légendes associées, comme ceci:
@@ -278,6 +278,7 @@ La tâche est la suivante: si nous donnons à notre ordinateur une nouvelle imag
 
 == !
 La méthode:
+
 - prendre une liste de coefficients aléatoires (en pratique, la liste est un vecteur, ou une matrice).
 
 == !
@@ -304,8 +305,6 @@ image::muffin.jpg[pdfwidth = "60%", align = "center", title = "Un cas de test di
 == !
 
 
-
-== !
 C'est donc ce qu'on appelle l'apprentissage *supervisé* car l'apprentissage est guidé, dirigé, encadré par des exemples passés.
 
 
@@ -328,7 +327,7 @@ Ce dernier point est explicité par Maryne Cotty-Eslous, fondatrice de https://p
 
 == !
 [.stretch]
-video::tL7ojiOTQho?t=16m31s[youtube,start=971]
+video::tL7ojiOTQho?t=16m31s[youtube,start=971, width = 500, height = 400, align = "center"]
 == !
 
 
@@ -339,11 +338,11 @@ Pour comprendre l'apprentissage par renforcement(((apprentissage automatique, ap
 C'est facile et ne prend que quelques secondes.
 La vidéo suivante montre B.F. Skinner, figure centrale de la psychologie comportementale dans les années 1950-1970, qui apprend à un pigeon à faire un tour sur lui-même.
 Pour cela, Skinner procède simplement en récompensant le pigeon par des graines, dès que le pigeon fait des mouvements de rotation.
-A force, le pigeon finit par faire un tour complet sur lui-même, car il a appris que cela allait lui donner une récompense.
+A la fin, le pigeon finit par faire un tour complet sur lui-même, car il a appris que cela allait lui donner une récompense.
 
 == !
 [.stretch]
-video::TtfQlkGwE2U[youtube, largeur = 500, hauteur = 400]
+video::TtfQlkGwE2U[youtube, largeur = 500, hauteur = 400, align = "center"]
 == !
 
 
@@ -352,7 +351,7 @@ Prenons le cas d'un jeu vidéo comme Super Mario Bros:
 
 == !
 [.stretch]
-image::mario.jpg[pdfwidth = "60%", align = "center", title = "Mario Bros, un jeu vidéo populaire"]
+image::mario.jpg[pdfwidth = "60%", align = "center", title = "Mario Bros - un jeu vidéo populaire", width = 400]
 == !
 
 
@@ -390,7 +389,7 @@ Après avoir bouclé de 1. à 4. des milliers de fois, et enregistré à chaque 
 
 == !
 [.stretch]
-video::qv6UVOQ0F44[youtube, width = 500, height = 400]
+video::qv6UVOQ0F44[youtube, width = 500, height = 400, align="center"]
 == !
 
 
@@ -399,12 +398,13 @@ L'apprentissage par renforcement est perçu comme correspondant à un aspect imp
 
 
 == !
-==== d. Quand l'apprentissage automatique est-il utile?
+==== d. Quand le machine learning est-il utile? Quand ne l'est-il pas?
 == !
 L'utilisation de l'apprentissage automatique peut être un gaspillage de ressources, lorsque des statistiques bien connues peuvent être facilement appliquées.
 
 == !
 Des indices que la modélisation statistique "classique" (peut-être aussi simple qu'une régression linéaire) devrait suffire:
+
 
 == !
 - L'ensemble de données n'est pas grand (moins de 50k observations), l'apprentissage supervisé ne fonctionnera pas
@@ -413,13 +413,17 @@ Des indices que la modélisation statistique "classique" (peut-être aussi simpl
 
 
 == !
-Cas où la modélisation des statistiques "classiques" est *nécessaire*:
+Enfin, il existe une situation dans laquelle *le machine learning n'est absolument pas la bonne solution*.
+Si la question est celle du rôle de tel ou tel facteur dans la détermination d'un résultat, le machine learning reste silencieux sur ce sujet.
+Reprenons l'exemple des images de chats et chiens:
 
-- La question concerne la _contribution relative_ des variables indépendantes à la détermination d'un résultat.
+- l'apprentissage supervisé est très efficace pour arriver à "deviner" si une image est celle d'un chat ou d'un chien, après entraînement sur des milliers d'images de chats ou de chiens.
+- mais rien ne nous dit "comment" l'apprentissage supervisé a fait. Est-ce que la longueur des moustaches, la forme des oreilles, la couleur du poil... aide à classer une image comme celle d'un chat ou d'un chien? L'apprentissage supervisé ne répond pas à ces questions.
+- des https://distill.pub/2018/building-blocks/[travaux ont été publiés] pour rendre intelligible comment l'apprentissage supervisé détermine le résultat "chat" ou "chien". Cependant ce type de travaux reste assez peu courant. L'apprentissage supervisé reste très largement une https://fr.wikipedia.org/wiki/Bo%C3%AEte_noire_(syst%C3%A8me)[boîte noire].
 
-== 3. Apprentissage automatique et data science
+== 3. Machine learning et data science
 == !
-L'apprentissage automatique est une seule étape dans la longue chaîne du traitement et de l'analyse des données.
+Le machine learning est une seule des étapes dans la longue chaîne du traitement et de l'analyse des données.
 Le processus du traitement et de l'analyse des données a été formalisé dans les années 1980 sous le nom de "data mining", "exploration des données", "fouille de données," ou https://en.wikipedia.org/wiki/Data_mining#Process[((kdd: Knowledge Discovery in Databases))].
 
 == !
@@ -432,45 +436,59 @@ Des représentations plus récentes des étapes du traitement des données ont �
 
 -> voir https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400[le processus de conception de l'information par Ben Fry]((("Fry, Ben"))) et ce workflow de  http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html[visualisation des données par Moritz Stefaner]((("Stefaner, Moritz"))) :
 
+== !
+[.stretch]
+image::stefaner.png[pdfwidth="90%", align="center", title="workflow de visualisation des données par Moritz Stefaner", width = 500, book = "keep"]
+== !
+
+
+- *L'apprentissage machine* est l'une des techniques intervenant à l'étape du "Data mining".
+- *La data science* a) dans un sens restrictif: est synonyme de "data mining" ou b) désigne la totalité de la chaîne de traitement des données.
+
+
+== !
+Pour effectuer toute la chaîne de traitement de données, une grande variété de compétences est nécessaire :
+
+- capacité à mettre en place et gérer l'infrastructure informatique permettant de collecter, stocker et accéder à de gros volumes de données (types de compétences "ingénieur base de données", "back-end").
+- capacité à appliquer des données mathématiques et des modèles statistiques aux données (compétences "data scientist", "data mining")
+- capacité à communiquer efficacement les résultats (compétences en "visualisation de données", types de compétences "front-end")
+
+== !
+Les compétences d'une équipe de ((data scientist)) sont souvent représentées comme la réunion de trois domaines distincts :
 
 == !
 [.stretch]
-image::stefaner.png[pdfwidth = "90%", align = "center", title = "workflow de visualisation des données par Moritz Stefaner", width = 500, book = "keep"]
+image::conway.png[pdfwidth="40%", align="center", title="Le Diagramme de Venn de la science des données par Drew Conway", book="keep"]
 == !
 
 
+Ce diagramme met en évidence un point important : la science des données n’est pas simplement un ensemble de compétences en informatique et en mathématiques.
+Une "connaissance du domaine" ou "expertise métier" est également requise: des personnes connaissant parfaitement le contexte organisationnel et la problématique métier sous-jacente.
 
 == !
-L'apprentissage automatique est l'une des techniques (avec les statistiques traditionnelles) qui intervient à une des étapes de la data science. Mais la data science demande un ensemble de compétences bien plus vaste que la seule capacité d'analyse via du machine learning.
+En pratique, cet équilibre de compétences est rarement trouvé chez un seul individu.
+On passe donc le plus souvent par la création d' *équipes de data science* comprenant des informaticiens, des analystes et des représentants des métiers de l'entreprise.
 
-
+== 4. Rapport entre machine learning et intelligence artificielle (faible et forte)
 == !
-Les compétences d'une équipe de (data scientist) sont souvent représentées comme la réunion de trois domaines distincts :
-
-== !
-[.stretch]
-image::conway.png[pdfwidth = "40%", align = "center", title = "Le Diagramme de Venn de la science des données par Drew Conway", book="keep"]
-== !
-
-
-
-== 4. Intelligence artificielle faible vs forte
-== !
-*IA faible*(((intelligence artificielle, faible))) désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).
-L'IA faible est généralement le résultat de l'application de systèmes experts ou des techniques d'apprentissage automatique vues ci-dessus.
+*IA faible*(((intelligence artificielle, faible))) désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes sur un domaine étroitement et précisément délimité (comme jouer aux échecs).
+L'IA faible fonctionne grâce à des systèmes experts ou des techniques de machine learning vues ci-dessus.
+L'IA que nous voyons fonctionner aujourd'hui est une IA faible: reconnaissance d'image, aide à la conduite et véhicules autonomes, chatbots, ordinateurs capables de battre des humains au jeu de GO ou à Mario, ...
 
 
 == !
-*IA forte*(((intelligence artificielle, forte))) est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d'elle-même. Rien ne s'approche de ça.
+*IA forte*(((intelligence artificielle, forte))) est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, d'être consciente d'elle-même, ou de résoudre des problèmes variés et originaux.
+Aujourd'hui, rien ne s'approche de cela et le consensus dit que les techniques de machine learning actuelles ne sont pas adaptées à la mise au point de ce type d'intelligence.
 
 
 == !
-*Donc l'IA est synonyme d'IA faible pour le moment, et couvre les trois familles de machine learning vues ci-dessus.*
+*Donc l'IA est synonyme d'IA faible aujourd'hui, et couvre les trois familles de machine learning présentées ci-dessus.*
 
-== Des vidéos sur le sujet
+== 5. Vidéos sur machine learning et intelligence artificielle
 == !
 - La qualité de la donnée, un enjeu pour le machine learning : https://youtu.be/tL7ojiOTQho?t=972
 - Intelligence artificielle faible et forte : quels impacts sur les métiers? https://youtu.be/xO8c257G4ms
+- Laurent Alexandre((("Alexandre, Laurent"))) sur les enjeux sociétaux de l'IA : https://youtu.be/rJowm24piM4
 
 == Pour aller plus loin
 == !

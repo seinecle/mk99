@@ -443,7 +443,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Clément Levallois</span><br>
 <span id="email" class="email"><a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a></span><br>
-<span id="revdate">2019-05-16</span>
+<span id="revdate">2019-05-20</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -456,15 +456,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_2_trois_familles_dapprentissage_automatique">2. Trois familles d&#8217;apprentissage automatique</a>
 <ul class="sectlevel2">
-<li><a href="#_a_lapprentissage_non_supervisé">a. L&#8217;apprentissage non supervisé</a></li>
+<li><a href="#_a_lapprentissage_non_supervisé">a. L&#8217;apprentissage <strong>non supervisé</strong></a></li>
 <li><a href="#_b_lapproche_dapprentissage_supervisé">b. L&#8217;approche d&#8217;apprentissage  <strong>supervisé</strong></a></li>
 <li><a href="#_c_lapproche_de_lapprentissage_par_renforcement_reinforcement_learning">c. L&#8217;approche de l&#8217;apprentissage par <strong>renforcement</strong> (reinforcement learning)</a></li>
-<li><a href="#_d_quand_lapprentissage_automatique_est_il_utile">d. Quand l&#8217;apprentissage automatique est-il utile?</a></li>
+<li><a href="#_d_quand_le_machine_learning_est_il_utile_quand_ne_lest_il_pas">d. Quand le machine learning est-il utile? Quand ne l&#8217;est-il pas?</a></li>
 </ul>
 </li>
-<li><a href="#_3_apprentissage_automatique_et_data_science">3. Apprentissage automatique et data science</a></li>
-<li><a href="#_4_intelligence_artificielle_faible_vs_forte">4. Intelligence artificielle faible vs forte</a></li>
-<li><a href="#_des_vidéos_sur_le_sujet">Des vidéos sur le sujet</a></li>
+<li><a href="#_3_machine_learning_et_data_science">3. Machine learning et data science</a></li>
+<li><a href="#_4_rapport_entre_machine_learning_et_intelligence_artificielle_faible_et_forte">4. Rapport entre machine learning et intelligence artificielle (faible et forte)</a></li>
+<li><a href="#_5_vidéos_sur_machine_learning_et_intelligence_artificielle">5. Vidéos sur machine learning et intelligence artificielle</a></li>
 <li><a href="#_pour_aller_plus_loin">Pour aller plus loin</a></li>
 </ul>
 </div>
@@ -494,7 +494,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p></p>
 </div>
 <div class="paragraph">
-<p>Nous allons comparer l&#8217;apprentissage automatique à un exemple classique de la statistique: calculer une ligne de régression pour identifier une tendance dans un nuage de points.
+<p>Nous allons comparer le machine learning (<strong>en français: apprentissage automatique ou apprentissage machine</strong>) à un exemple classique de la statistique: calculer une ligne de régression pour identifier une tendance dans un nuage de points.
 Pour illustrer, nous prenons quelques données sur les budgets de marketing et les chiffres de vente dans la période correspondante :</p>
 </div>
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8dKfwxvgz3ALH8Y1FzxWk9lZtiVBlQdZYUrKJqRXNqBFRjKIP3LUvv29QSIBbGx2-ray5nK8cALMH/pubchart?oid=1075418595&format=interactive"></iframe>
@@ -548,10 +548,10 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 <p>&#8594; ils ne sont pas concernés par la difficulté d&#8217;éxecution de leurs modèles sur des ordinateurs, en termes de calculs à effectuer.</p>
 </div>
 <div class="paragraph">
-<p>&#8594; puisqu&#8217;ils se concentrent sur <strong>l&#8217;échantillonnage</strong> des données, ils ne sont pas concernés par le traitement de jeux de données entiers avec des problèmes informatiques connexes.</p>
+<p>&#8594; puisqu&#8217;ils se concentrent sur <strong>l&#8217;échantillonnage</strong> des données, ils ne sont pas concernés par le traitement de jeux de données entiers avec les problèmes informatiques que cela pose (coût, lenteur, complexité technique de mise en oeuvre&#8230;&#8203;).</p>
 </div>
 <div class="paragraph">
-<p>Le <strong>Machine learning</strong>  ("apprentissage automatique" en français) fait des choses similaires à la statistique, mais d&#8217;une manière légèrement différente :</p>
+<p>Le <strong>machine learning</strong> ("apprentissage automatique" en français) fait des choses similaires à la statistique, mais d&#8217;une manière légèrement différente :</p>
 </div>
 <div class="ulist">
 <ul>
@@ -562,7 +562,7 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 <p>la prévision doit être réalisable dans le temps disponible, avec les ressources informatiques disponibles</p>
 </li>
 <li>
-<p>les données d&#8217;intérêt sont dans un format / dans un volume qui n&#8217;est pas couramment traité par les outils de statistiques standards (par exemple: images, observations comportant des centaines de paramètres)</p>
+<p>les données d&#8217;intérêt sont dans un format / dans un volume qui n&#8217;est pas couramment traité par les outils de statistiques standards (par exemple : images, vidéos, observations comportant des centaines de paramètres&#8230;&#8203;)</p>
 </li>
 </ul>
 </div>
@@ -599,14 +599,14 @@ Pour illustrer, nous prenons quelques données sur les budgets de marketing et l
 <p>(note de bas de page: donc l&#8217;apprentissage automatique, à mon avis, partage l&#8217;esprit de "faire avancer les choses" comme l&#8217;était  <a href="https://fr.wikipedia.org/wiki/Recherche_op%C3%A9rationnelle#Historique">la recherche opérationnelle pendant la Seconde Guerre mondiale</a>)</p>
 </div>
 <div class="paragraph">
-<p>La poursuite de modèles améliorés dans les statistiques traditionnelles n&#8217;ignore pas la question de la charge de calcul ("computational effiency") - elle est considérée comme une propriété souhaitable - mais dans l&#8217;apprentissage automatique, c&#8217;est en grande partie un pré-requis.</p>
+<p>La recherche en statistiques traditionnelles n&#8217;ignore pas la question de la charge de calcul ("computational effiency") - elle est considérée comme une propriété souhaitable - mais dans l&#8217;apprentissage automatique, c&#8217;est en grande partie un pré-requis.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_b_une_illustration_le_cas_des_gpus">b. Une illustration: le cas des GPUs</h3>
 <div class="paragraph">
 <p>Une illustration clé de la différence entre les statistiques et l&#8217;apprentissage automatique peut être fournie avec l&#8217;utilisation de <strong>cartes graphiques</strong>.
-Les cartes graphiques (ou GPU: unités de traitement graphique) sont ces composants électroniques pleines de puces trouvées dans un ordinateur, qui sont utilisées pour l&#8217;affichage d&#8217;images et de vidéos sur des écrans :</p>
+Les cartes graphiques (ou GPU: unités de traitement graphique) sont ces composants électroniques pleins de puces trouvées dans un ordinateur, qui sont utilisées pour l&#8217;affichage d&#8217;images et de vidéos sur des écrans :</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -633,7 +633,7 @@ Leurs caractéristiques sont qu&#8217;ils peuvent calculer des opérations simpl
 Si un problème statistique de prédiction peut être décomposé en opérations simples pouvant être exécutées sur un GPU, alors un grand ensemble de données peut être analysé en secondes ou en minutes sur un ordinateur portable, au lieu d&#8217;un cluster d&#8217;ordinateurs.
 Pour illustrer la différence de vitesse entre une opération mathématique exécutée sans ou avec un <strong>GPU</strong>:</p>
 </div>
-<div class="videoblock">
+<div class="videoblock text-center">
 <div class="content">
 <iframe width="500" height="400" src="https://www.youtube.com/embed/-P28LKWTzrI?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -647,16 +647,21 @@ Pour illustrer la différence de vitesse entre une opération mathématique exé
 <div class="ulist">
 <ul>
 <li>
-<p>décomposé en une très grande série</p>
+<p>décomposé en une très grande série&#8230;&#8203;</p>
 </li>
 <li>
-<p>d&#8217;opérations très simples (fondamentalement, des sommes ou des multiplications, rien de complexe comme des racines carrées ou des polynômes)</p>
+<p>&#8230;&#8203; d&#8217;opérations très simples (fondamentalement, des sommes ou des multiplications, rien de complexe comme des racines carrées ou des polynômes)</p>
 </li>
 <li>
-<p>qui peuvent fonctionner indépendamment les uns des autres.
-L&#8217;apprentissage automatique ou machine learning prête généralement attention à cette dimension du problème dès la phase de conception des modèles et des techniques, là où les statistiques "classiques" ne considèrent généralement pas le problème, ou seulement en aval : non pas au stade de la conception mais à la phase de mise en œuvre - ce qui est souvent trop tard.</p>
+<p>&#8230;&#8203; qui peuvent fonctionner indépendamment les uns des autres.</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>&#8594; alors, les calculs vont pouvoir se faire sur un GPU, ce qui peut accélérer le traitement par 10x, 100x ou plus.</p>
+</div>
+<div class="paragraph">
+<p>&#8594; L&#8217;apprentissage automatique ou machine learning prête attention à ces dimensions du problème dès la phase de conception des modèles et des techniques, là où les statistiques "classiques" ne considèrent généralement pas le problème, ou seulement en aval : non pas au stade de la conception mais à la phase de mise en œuvre - ce qui est souvent trop tard.</p>
 </div>
 <div class="paragraph">
 <p>Maintenant que nous avons vu comment les statistiques et l&#8217;apprentissage machine diffèrent dans leur approche, nous devons encore comprendre comment l&#8217;apprentissage automatique obtient de bons résultats, s&#8217;il ne repose pas sur la modélisation / l&#8217;échantillonnage des données comme le font les statistiques.</p>
@@ -671,7 +676,7 @@ L&#8217;apprentissage automatique ou machine learning prête généralement atte
 <h2 id="_2_trois_familles_dapprentissage_automatique">2. Trois familles d&#8217;apprentissage automatique</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_a_lapprentissage_non_supervisé">a. L&#8217;apprentissage non supervisé</h3>
+<h3 id="_a_lapprentissage_non_supervisé">a. L&#8217;apprentissage <strong>non supervisé</strong></h3>
 <div class="paragraph">
 <p><strong>Apprentissage non supervisé</strong> désigne les méthodes qui utilisent un jeu de données nouveau et y trouvent des modèles intéressants, <strong>sans que cela ne soit par apprentissage sur de précédents ensembles de données similaires</strong>.</p>
 </div>
@@ -745,7 +750,7 @@ C&#8217;est évidemment d&#8217;une grande utilité pour organiser des données,
 <div class="sect2">
 <h3 id="_b_lapproche_dapprentissage_supervisé">b. L&#8217;approche d&#8217;apprentissage  <strong>supervisé</strong></h3>
 <div class="paragraph">
-<p>L'<strong>Apprentissage supervisé</strong> est l&#8217;approche consistant à calibrer un modèle basé sur l&#8217;histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
+<p>L'<strong>apprentissage supervisé</strong> est l&#8217;approche consistant à calibrer un modèle basé sur l&#8217;histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
 Prenons l&#8217;exemple suivant : comment faire pour qu&#8217;un ordinateur "devine" si une image représente un chat ou un chien? Pour cela, en approche supervisée, nous allons commencer par récolter 50000 images ou plus de chats et de chiens, avec leurs légendes associées, comme ceci:</p>
 </div>
 <div class="ulist">
@@ -802,14 +807,36 @@ Prenons l&#8217;exemple suivant : comment faire pour qu&#8217;un ordinateur "dev
 <p>La tâche est la suivante: si nous donnons à notre ordinateur une nouvelle image d&#8217;un chat <em>sans étiquette</em>, pourra-t-il deviner l&#8217;étiquette "chat"?</p>
 </div>
 <div class="paragraph">
-<p>La méthode:
-- prendre une liste de coefficients aléatoires (en pratique, la liste est un vecteur, ou une matrice).
-- pour chacune des 50 000 photos de chiens et de chats:
-<strong> appliquer les coefficients à l&#8217;image à portée de main (disons que nous avons un chien ici)
-</strong> Si le résultat est "chien", ne faites rien, ça marche!
-<strong> Si le résultat est "chat", modifiez légèrement les coefficients.
-</strong> passer à l&#8217;image suivante
-- Après avoir parcouru 50 000 images en boucle, les paramètres ont été ajustés et réglés. C&#8217;était <strong>l&#8217;entraînement du modèle</strong>.</p>
+<p>La méthode:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>prendre une liste de coefficients aléatoires (en pratique, la liste est un vecteur, ou une matrice).</p>
+</li>
+<li>
+<p>pour chacune des 50 000 photos de chiens et de chats:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>appliquer les coefficients à l&#8217;image à portée de main (disons que nous avons un chien ici)</p>
+</li>
+<li>
+<p>Si le résultat est "chien", ne faites rien, ça marche!</p>
+</li>
+<li>
+<p>Si le résultat est "chat", modifiez légèrement les coefficients.</p>
+</li>
+<li>
+<p>passer à l&#8217;image suivante</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Après avoir parcouru 50 000 images en boucle, les paramètres ont été ajustés et réglés. C&#8217;était <strong>l&#8217;entraînement du modèle</strong>.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>Maintenant, lorsque vous présentez une nouvelle image au logiciel que vous venez d&#8217;entraîner, l&#8217;application du modèle devrait produire une prédiction correcte ("chat" ou "chien").</p>
@@ -848,9 +875,9 @@ Prenons l&#8217;exemple suivant : comment faire pour qu&#8217;un ordinateur "dev
 <div class="paragraph">
 <p>Ce dernier point est explicité par Maryne Cotty-Eslous, fondatrice de <a href="https://projet-lucine.com/#/">Lucine, une app de reconnaissance et d&#8217;analyse de la douleur</a>:</p>
 </div>
-<div class="videoblock">
+<div class="videoblock text-center">
 <div class="content">
-<iframe src="https://www.youtube.com/embed/tL7ojiOTQho?t=16m31s?rel=0&amp;start=971" frameborder="0" allowfullscreen></iframe>
+<iframe width="500" height="400" src="https://www.youtube.com/embed/tL7ojiOTQho?t=16m31s?rel=0&amp;start=971" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 <div class="paragraph">
@@ -866,9 +893,9 @@ Prenons l&#8217;exemple suivant : comment faire pour qu&#8217;un ordinateur "dev
 <p>C&#8217;est facile et ne prend que quelques secondes.
 La vidéo suivante montre B.F. Skinner, figure centrale de la psychologie comportementale dans les années 1950-1970, qui apprend à un pigeon à faire un tour sur lui-même.
 Pour cela, Skinner procède simplement en récompensant le pigeon par des graines, dès que le pigeon fait des mouvements de rotation.
-A force, le pigeon finit par faire un tour complet sur lui-même, car il a appris que cela allait lui donner une récompense.</p>
+A la fin, le pigeon finit par faire un tour complet sur lui-même, car il a appris que cela allait lui donner une récompense.</p>
 </div>
-<div class="videoblock">
+<div class="videoblock text-center">
 <div class="content">
 <iframe src="https://www.youtube.com/embed/TtfQlkGwE2U?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -882,9 +909,9 @@ Prenons le cas d&#8217;un jeu vidéo comme Super Mario Bros:</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/mario.jpg" alt="mario">
+<img src="../images/mario.jpg" alt="mario" width="400">
 </div>
-<div class="title">Figure 4. Mario Bros, un jeu vidéo populaire</div>
+<div class="title">Figure 4. Mario Bros - un jeu vidéo populaire</div>
 </div>
 <div class="paragraph">
 <p>&#160;<br></p>
@@ -950,7 +977,7 @@ Prenons le cas d&#8217;un jeu vidéo comme Super Mario Bros:</p>
 <div class="paragraph">
 <p>Après avoir bouclé de 1. à 4. des milliers de fois, et enregistré à chaque fois des combinaisons d&#8217;actions favorables à répéter, et défavorables à éviter, Mario finit par arriver au bout du jeu, sans qu&#8217;aucun joueur humain ne tienne les commandes :</p>
 </div>
-<div class="videoblock">
+<div class="videoblock text-center">
 <div class="content">
 <iframe width="500" height="400" src="https://www.youtube.com/embed/qv6UVOQ0F44?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -963,21 +990,39 @@ Prenons le cas d&#8217;un jeu vidéo comme Super Mario Bros:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_d_quand_lapprentissage_automatique_est_il_utile">d. Quand l&#8217;apprentissage automatique est-il utile?</h3>
+<h3 id="_d_quand_le_machine_learning_est_il_utile_quand_ne_lest_il_pas">d. Quand le machine learning est-il utile? Quand ne l&#8217;est-il pas?</h3>
 <div class="paragraph">
 <p>L&#8217;utilisation de l&#8217;apprentissage automatique peut être un gaspillage de ressources, lorsque des statistiques bien connues peuvent être facilement appliquées.
-Des indices que la modélisation statistique "classique" (peut-être aussi simple qu&#8217;une régression linéaire) devrait suffire:
-- L&#8217;ensemble de données n&#8217;est pas grand (moins de 50k observations), l&#8217;apprentissage supervisé ne fonctionnera pas
-- Les données sont parfaitement structurées (données tabulaires)
-- Les points de données ont peu de dimensions (chaque observation a peu d&#8217;attributs - il y a peu de "colonnes" dans une représentation sous forme de tableau)</p>
-</div>
-<div class="paragraph">
-<p>Cas où la modélisation des statistiques "classiques" est <strong>nécessaire</strong>:</p>
+Des indices que la modélisation statistique "classique" (peut-être aussi simple qu&#8217;une régression linéaire) devrait suffire:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>La question concerne la <em>contribution relative</em> des variables indépendantes à la détermination d&#8217;un résultat.</p>
+<p>L&#8217;ensemble de données n&#8217;est pas grand (moins de 50k observations), l&#8217;apprentissage supervisé ne fonctionnera pas</p>
+</li>
+<li>
+<p>Les données sont parfaitement structurées (données tabulaires)</p>
+</li>
+<li>
+<p>Les points de données ont peu de dimensions (chaque observation a peu d&#8217;attributs - il y a peu de "colonnes" dans une représentation sous forme de tableau)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Enfin, il existe une situation dans laquelle <strong>le machine learning n&#8217;est absolument pas la bonne solution</strong>.
+Si la question est celle du rôle de tel ou tel facteur dans la détermination d&#8217;un résultat, le machine learning reste silencieux sur ce sujet.
+Reprenons l&#8217;exemple des images de chats et chiens:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>l&#8217;apprentissage supervisé est très efficace pour arriver à "deviner" si une image est celle d&#8217;un chat ou d&#8217;un chien, après entraînement sur des milliers d&#8217;images de chats ou de chiens.</p>
+</li>
+<li>
+<p>mais rien ne nous dit "comment" l&#8217;apprentissage supervisé a fait. Est-ce que la longueur des moustaches, la forme des oreilles, la couleur du poil&#8230;&#8203; aide à classer une image comme celle d&#8217;un chat ou d&#8217;un chien? L&#8217;apprentissage supervisé ne répond pas à ces questions.</p>
+</li>
+<li>
+<p>des <a href="https://distill.pub/2018/building-blocks/">travaux ont été publiés</a> pour rendre intelligible comment l&#8217;apprentissage supervisé détermine le résultat "chat" ou "chien". Cependant ce type de travaux reste assez peu courant. L&#8217;apprentissage supervisé reste très largement une <a href="https://fr.wikipedia.org/wiki/Bo%C3%AEte_noire_(syst%C3%A8me)">boîte noire</a>.</p>
 </li>
 </ul>
 </div>
@@ -985,10 +1030,10 @@ Des indices que la modélisation statistique "classique" (peut-être aussi simpl
 </div>
 </div>
 <div class="sect1">
-<h2 id="_3_apprentissage_automatique_et_data_science">3. Apprentissage automatique et data science</h2>
+<h2 id="_3_machine_learning_et_data_science">3. Machine learning et data science</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>L&#8217;apprentissage automatique est une seule étape dans la longue chaîne du traitement et de l&#8217;analyse des données.
+<p>Le machine learning est une seule des étapes dans la longue chaîne du traitement et de l&#8217;analyse des données.
 Le processus du traitement et de l&#8217;analyse des données a été formalisé dans les années 1980 sous le nom de "data mining", "exploration des données", "fouille de données," ou <a href="https://en.wikipedia.org/wiki/Data_mining#Process">kdd: Knowledge Discovery in Databases</a>.</p>
 </div>
 <div class="imageblock text-center">
@@ -1015,11 +1060,32 @@ Le processus du traitement et de l&#8217;analyse des données a été formalisé
 <div class="paragraph">
 <p>&#160;<br></p>
 </div>
-<div class="paragraph">
-<p>L&#8217;apprentissage automatique est l&#8217;une des techniques (avec les statistiques traditionnelles) qui intervient à une des étapes de la data science. Mais la data science demande un ensemble de compétences bien plus vaste que la seule capacité d&#8217;analyse via du machine learning.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>L&#8217;apprentissage machine</strong> est l&#8217;une des techniques intervenant à l&#8217;étape du "Data mining".</p>
+</li>
+<li>
+<p><strong>La data science</strong> a) dans un sens restrictif: est synonyme de "data mining" ou b) désigne la totalité de la chaîne de traitement des données.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Les compétences d&#8217;une équipe de (data scientist) sont souvent représentées comme la réunion de trois domaines distincts :</p>
+<p>Pour effectuer toute la chaîne de traitement de données, une grande variété de compétences est nécessaire :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>capacité à mettre en place et gérer l&#8217;infrastructure informatique permettant de collecter, stocker et accéder à de gros volumes de données (types de compétences "ingénieur base de données", "back-end").</p>
+</li>
+<li>
+<p>capacité à appliquer des données mathématiques et des modèles statistiques aux données (compétences "data scientist", "data mining")</p>
+</li>
+<li>
+<p>capacité à communiquer efficacement les résultats (compétences en "visualisation de données", types de compétences "front-end")
+Les compétences d&#8217;une équipe de data scientist sont souvent représentées comme la réunion de trois domaines distincts :</p>
+</li>
+</ul>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -1030,25 +1096,33 @@ Le processus du traitement et de l&#8217;analyse des données a été formalisé
 <div class="paragraph">
 <p>&#160;<br></p>
 </div>
+<div class="paragraph">
+<p>Ce diagramme met en évidence un point important : la science des données n’est pas simplement un ensemble de compétences en informatique et en mathématiques.
+Une "connaissance du domaine" ou "expertise métier" est également requise: des personnes connaissant parfaitement le contexte organisationnel et la problématique métier sous-jacente.
+En pratique, cet équilibre de compétences est rarement trouvé chez un seul individu.
+On passe donc le plus souvent par la création d' <strong>équipes de data science</strong> comprenant des informaticiens, des analystes et des représentants des métiers de l&#8217;entreprise.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_4_intelligence_artificielle_faible_vs_forte">4. Intelligence artificielle faible vs forte</h2>
+<h2 id="_4_rapport_entre_machine_learning_et_intelligence_artificielle_faible_et_forte">4. Rapport entre machine learning et intelligence artificielle (faible et forte)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>IA faible</strong> désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).
-L&#8217;IA faible est généralement le résultat de l&#8217;application de systèmes experts ou des techniques d&#8217;apprentissage automatique vues ci-dessus.</p>
+<p><strong>IA faible</strong> désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes sur un domaine étroitement et précisément délimité (comme jouer aux échecs).
+L&#8217;IA faible fonctionne grâce à des systèmes experts ou des techniques de machine learning vues ci-dessus.
+L&#8217;IA que nous voyons fonctionner aujourd&#8217;hui est une IA faible: reconnaissance d&#8217;image, aide à la conduite et véhicules autonomes, chatbots, ordinateurs capables de battre des humains au jeu de GO ou à Mario, &#8230;&#8203;</p>
 </div>
 <div class="paragraph">
-<p><strong>IA forte</strong> est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d&#8217;elle-même. Rien ne s&#8217;approche de ça.</p>
+<p><strong>IA forte</strong> est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, d&#8217;être consciente d&#8217;elle-même, ou de résoudre des problèmes variés et originaux.
+Aujourd&#8217;hui, rien ne s&#8217;approche de cela et le consensus dit que les techniques de machine learning actuelles ne sont pas adaptées à la mise au point de ce type d&#8217;intelligence.</p>
 </div>
 <div class="paragraph">
-<p><strong>Donc l&#8217;IA est synonyme d&#8217;IA faible pour le moment, et couvre les trois familles de machine learning vues ci-dessus.</strong></p>
+<p><strong>Donc l&#8217;IA est synonyme d&#8217;IA faible aujourd&#8217;hui, et couvre les trois familles de machine learning présentées ci-dessus.</strong></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_des_vidéos_sur_le_sujet">Des vidéos sur le sujet</h2>
+<h2 id="_5_vidéos_sur_machine_learning_et_intelligence_artificielle">5. Vidéos sur machine learning et intelligence artificielle</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -1057,6 +1131,9 @@ L&#8217;IA faible est généralement le résultat de l&#8217;application de syst
 </li>
 <li>
 <p>Intelligence artificielle faible et forte : quels impacts sur les métiers? <a href="https://youtu.be/xO8c257G4ms" class="bare">https://youtu.be/xO8c257G4ms</a></p>
+</li>
+<li>
+<p>Laurent Alexandre sur les enjeux sociétaux de l&#8217;IA : <a href="https://youtu.be/rJowm24piM4" class="bare">https://youtu.be/rJowm24piM4</a></p>
 </li>
 </ul>
 </div>
@@ -1103,7 +1180,7 @@ L&#8217;IA faible est généralement le résultat de l&#8217;application de syst
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2019-05-16 08:41:21 +0200
+Last updated 2019-05-20 15:28:24 +0200
 </div>
 </div>
 </body>
