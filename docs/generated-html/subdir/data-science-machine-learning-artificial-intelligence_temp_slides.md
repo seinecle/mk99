@@ -73,7 +73,7 @@ To illustrate, we take some data about marketing budgets and sales figures in th
 [start=2]
 2. have no training in computer science / software engineering
 
--> they neglect how hard it can be to to run their models on computers, in terms of taking advantage of new types of hardward (ex: GPUs, see below).
+-> they neglect how hard it can be to run their models on computers, in terms of taking advantage of new types of hardward (ex: GPUs, see below).
 
 -> since they focus on *sampling* the data, they are not concerned with handling entire datasets with related IT issues.
 
@@ -162,7 +162,7 @@ To illustrate the difference in speed between a mathematical operation run witho
 
 == !
 [.stretch]
-video::-P28LKWTzrI[youtube, width= 500, height=400]
+video::-P28LKWTzrI[youtube, align="center"]
 == !
 
 
@@ -308,6 +308,8 @@ image::muffin.jpg[pdfwidth="60%", align="center", title="A hard test case for su
 == !
 
 
+(https://www.freecodecamp.org/news/chihuahua-or-muffin-my-search-for-the-best-computer-vision-api-cbda4d6b425d/[source])
+
 It is called *supervised* learning because the learning is very much constrained / supervised by the intensive training performed:
 
 -> there is limited or no "unsupervised discovery" of novelty.
@@ -332,7 +334,7 @@ At the end, the pigeon finally made a complete turn on himself, because he learn
 
 == !
 [.stretch]
-video::TtfQlkGwE2U[youtube, width=500, height=400]
+video::TtfQlkGwE2U[youtube, align="center"]
 == !
 
 
@@ -397,11 +399,17 @@ After looping from 1. to 4. thousands of times, Mario memorizes all the actions 
 
 == !
 [.stretch]
-video::qv6UVOQ0F44[youtube, width=500, height=400]
+video::qv6UVOQ0F44[youtube, align="center"]
 == !
 
 
 Reinforcement learning is perceived as corresponding to an important side of human learning / human intelligence (goal oriented, "trial and error").
+
+
+== !
+Now, let's imagine that we create a game in which two learning machines are competing: one that controls Mario Bros, the other who controls an enemy character in the game, and tries to defeat Mario Bros.
+By having them battle thousands of rounds and adapt their behavior by learning from their mistakes, the two will learn much faster and improve a lot more than by reinforcement learning alone.
+This type of artificial intelligence is called "generative antagonistic networks" and many observers see a bright future for it in AI.
 
 == !
 ==== d. When is machine learning useful? When is it not?
@@ -430,7 +438,7 @@ Let's take the example of pictures of cats and dogs:
 - but nothing tells us "how" supervised learning has done its job. Does the length of the whiskers, the shape of the ears, the color of the hair ... help to classify an image like that of a cat or a dog? Supervised learning does not answer these questions.
 - https://distill.pub/2018/building-blocks/[Works have been published] to make intelligible how supervised learning determines the result "cat" or "dog". However this type of work remains quite uncommon. Supervised learning remains largely a https://en.wikipedia.org/wiki/Black_box[black box].
 
-== 3. What relation between machine learning and data science ?
+== 3. What relation between machine learning and data science?
 == !
 Machine learning is one of the steps in the broader chain of steps in ((data processing)).
 
@@ -471,7 +479,7 @@ The skills of a ((data scientist)) are often represented as the meeting of three
 
 == !
 [.stretch]
-image::conway.png[pdfwidth="40%", align="center", title="The Venn diagram of data science by Drew Conway", book="keep"]
+image::conway.png[pdfwidth="40%", align="center", title="A diagram representing data science by Drew Conway", book="keep"]
 == !
 
 

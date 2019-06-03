@@ -60,7 +60,7 @@ To illustrate, we take some data about marketing budgets and sales figures in th
 [start=2]
 2. have no training in computer science / software engineering
 
--> they neglect how hard it can be to to run their models on computers, in terms of taking advantage of new types of hardward (ex: GPUs, see below).
+-> they neglect how hard it can be to run their models on computers, in terms of taking advantage of new types of hardward (ex: GPUs, see below).
 
 -> since they focus on *sampling* the data, they are not concerned with handling entire datasets with related IT issues.
 
@@ -127,7 +127,7 @@ If a statistical problem for prediction can be broken down into simple operation
 // +
 To illustrate the difference in speed between a mathematical operation run without / with a *GPU*(((GPU - graphic cards))):
 
-video::-P28LKWTzrI[youtube, width= 500, height=400]
+video::-P28LKWTzrI[youtube, align="center"]
 {nbsp} +
 
 The issue is: to use a GPU for calculations, you need to conceptualize the problem at hand as one that can be:
@@ -245,6 +245,8 @@ Supervised learning is currently the most popular family of machine learning and
 image::muffin.jpg[pdfwidth="60%", align="center", title="A hard test case for supervised learning", width=400, book="keep"]
 {nbsp} +
 
+(https://www.freecodecamp.org/news/chihuahua-or-muffin-my-search-for-the-best-computer-vision-api-cbda4d6b425d/[source])
+
 It is called *supervised* learning because the learning is very much constrained / supervised by the intensive training performed:
 
 -> there is limited or no "unsupervised discovery" of novelty.
@@ -264,7 +266,7 @@ The following video shows B. F. Skinner, a central figure in behavioral psycholo
 For this, Skinner proceeds simply by rewarding the pigeon with seeds, as soon as the pigeon makes rotational movements.
 At the end, the pigeon finally made a complete turn on himself, because he learned that it would give him a reward.
 
-video::TtfQlkGwE2U[youtube, width=500, height=400]
+video::TtfQlkGwE2U[youtube, align="center"]
 {nbsp} +
 
 Footnote: how does this apply to learning in humans?
@@ -316,10 +318,15 @@ Reinforcement learning works by:
 // +
 After looping from 1. to 4. thousands of times, Mario memorizes all the actions to do to complete the game, without any human player:
 
-video::qv6UVOQ0F44[youtube, width=500, height=400]
+video::qv6UVOQ0F44[youtube, align="center"]
 {nbsp} +
 
 Reinforcement learning is perceived as corresponding to an important side of human learning / human intelligence (goal oriented, "trial and error").
+
+// +
+Now, let's imagine that we create a game in which two learning machines are competing: one that controls Mario Bros, the other who controls an enemy character in the game, and tries to defeat Mario Bros.
+By having them battle thousands of rounds and adapt their behavior by learning from their mistakes, the two will learn much faster and improve a lot more than by reinforcement learning alone.
+This type of artificial intelligence is called "generative antagonistic networks" and many observers see a bright future for it in AI.
 
 === d. When is machine learning useful? When is it not?
 Using machine learning can be a waste of resource, when well known statistics could be easily applied.
@@ -342,7 +349,7 @@ Let's take the example of pictures of cats and dogs:
 - but nothing tells us "how" supervised learning has done its job. Does the length of the whiskers, the shape of the ears, the color of the hair ... help to classify an image like that of a cat or a dog? Supervised learning does not answer these questions.
 - https://distill.pub/2018/building-blocks/[Works have been published] to make intelligible how supervised learning determines the result "cat" or "dog". However this type of work remains quite uncommon. Supervised learning remains largely a https://en.wikipedia.org/wiki/Black_box[black box].
 
-== 3. What relation between machine learning and data science ?
+== 3. What relation between machine learning and data science?
 Machine learning is one of the steps in the broader chain of steps in ((data processing)).
 
 // +
@@ -372,7 +379,7 @@ To perform the entire chain of data processing, a large variety of skills is nee
 
 The skills of a ((data scientist)) are often represented as the meeting of three separate domains:
 
-image::conway.png[pdfwidth="40%", align="center", title="The Venn diagram of data science by Drew Conway", book="keep"]
+image::conway.png[pdfwidth="40%", align="center", title="A diagram representing data science by Drew Conway", book="keep"]
 {nbsp} +
 
 This diagram makes an important point: data science is not just a set of IT and maths skills.

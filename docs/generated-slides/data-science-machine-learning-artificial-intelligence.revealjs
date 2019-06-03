@@ -84,7 +84,7 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 .CodeRay .insert .insert{color:#080}
 .CodeRay .delete .delete{color:#800}
 .CodeRay .change .change{color:#66f}
-.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>Machine learning, data science and artificial intelligence</h1><div class="preamble"><div class="paragraph"><p>2019-05-20</p></div></div><p class="author"><small>== !</small></p></section>
+.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>Machine learning, data science and artificial intelligence</h1><div class="preamble"><div class="paragraph"><p>2019-06-02</p></div></div><p class="author"><small>== !</small></p></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></section>
 <section><div class="paragraph"><p>first edition: 2017-11-01</p></div></section>
 <section id="_1_explaining_machine_learning_in_simple_terms"><h2>1. Explaining machine learning in simple terms</h2></section>
@@ -103,7 +103,7 @@ table.CodeRay td.code{padding:0 0 0 .75em}
 <section><div class="paragraph"><p>&#8594; their goal is to find the exact mathematical expression defining the situation at hand, under rigorous conditions</p></div></section>
 <section><div class="paragraph"><p>&#8594; a key approach is <strong>inference</strong>: by defining a <strong>sample of the data</strong> of just the correct size, we can reach conclusions which are valid for the entire dataset.</p></div></section>
 <section><div class="olist arabic"><ol class="arabic" start="2"><li><p>have no training in computer science / software engineering</p></li></ol></div>
-<div class="paragraph"><p>&#8594; they neglect how hard it can be to to run their models on computers, in terms of taking advantage of new types of hardward (ex: GPUs, see below).</p></div>
+<div class="paragraph"><p>&#8594; they neglect how hard it can be to run their models on computers, in terms of taking advantage of new types of hardward (ex: GPUs, see below).</p></div>
 <div class="paragraph"><p>&#8594; since they focus on <strong>sampling</strong> the data, they are not concerned with handling entire datasets with related IT issues.</p></div></section>
 <section><div class="paragraph"><p><strong>Machine learning</strong> does similar things to statistics, but in a slightly different way:</p></div>
 <div class="ulist"><ul><li><p>there is an emphasis on getting the prediction right, not caring for identifying the underlying mathematical model</p></li><li><p>the prediction needs to be achievable in the time available, with the computing resources available</p></li><li><p>the data of interest is in a format / in a volume which is not commonly handled by regular statistics package (eg: images, observations with hundreds of features)</p></li></ul></div></section>
@@ -127,7 +127,7 @@ Their characteristics is that they can compute simple operations to change pixel
 This is interesting for computations on big data!</p></div></section>
 <section><div class="paragraph"><p>If a statistical problem for prediction can be broken down into simple operations which can be run on a GPU, then a large dataset can be analyzed in seconds or minutes on a laptop, instead of  cluster of computers.</p></div></section>
 <section><div class="paragraph"><p>To illustrate the difference in speed between a mathematical operation run without / with a <strong>GPU</strong>:</p></div></section>
-<section><div class="videoblock stretch"><iframe width="500" height="400" src="https://www.youtube.com/embed/-P28LKWTzrI?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="videoblock stretch stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/-P28LKWTzrI?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
 <section><div class="paragraph"><p>The issue is: to use a GPU for calculations, you need to conceptualize the problem at hand as one that can be:</p></div>
 <div class="ulist"><ul><li><p>broken into a very large series&#8230;&#8203;</p></li><li><p>&#8230;&#8203; of very simple operations (basically, sums or multiplications, nothing complex like square roots or polynomials)</p></li><li><p>&#8230;&#8203; which can run independently from each other.</p></li></ul></div>
 <div class="paragraph"><p>&#8594; then, the calculations will be able to be done on a GPU, which can accelerate the treatment by 10x, 100x or more.</p></div></section>
@@ -171,7 +171,8 @@ Let&#8217;s take an exmple.</p></div>
 <section><div class="paragraph"><p>Now, when you get new pictures of cats and dogs (the <strong>fresh set</strong>), applying the trained model should output a correct prediction (label "cat" or label "dog").</p></div></section>
 <section><div class="paragraph"><p>Supervised learning is currently the most popular family of machine learning and obtains excellent results especially in image recognition, even though some cases remain hard to crack:</p></div></section>
 <section><div class="imageblock stretch" style="text-align: center"><img src="../images/muffin.jpg" alt="muffin" width="400" /></div><div class="title">Figure 3. A hard test case for supervised learning</div></section>
-<section><div class="paragraph"><p>It is called <strong>supervised</strong> learning because the learning is very much constrained / supervised by the intensive training performed:</p></div>
+<section><div class="paragraph"><p>(<a href="https://www.freecodecamp.org/news/chihuahua-or-muffin-my-search-for-the-best-computer-vision-api-cbda4d6b425d/">source</a>)</p></div>
+<div class="paragraph"><p>It is called <strong>supervised</strong> learning because the learning is very much constrained / supervised by the intensive training performed:</p></div>
 <div class="paragraph"><p>&#8594; there is limited or no "unsupervised discovery" of novelty.</p></div></section>
 <section><div class="paragraph"><p>Important take aways on the supervised approach:</p></div>
 <div class="ulist"><ul><li><p><strong>collecting <em>large</em> datasets for training is key</strong>. Without these data, no supervised learning.</p></li><li><p>the training set should be <em>specific</em>: if you want the software to learn how to "recognize" cats and dogs, you should train it with pictures of cats and dogs, not pictures from random animals.</p></li><li><p>supervised learning is not good at analyzing situations entirely different from what is in the training set.</p></li></ul></div></section>
@@ -181,7 +182,7 @@ Let&#8217;s take an exmple.</p></div>
 The following video shows B. F. Skinner, a central figure in behavioral psychology in the 1950s-1970s, who teaches a pigeon how to turn around.
 For this, Skinner proceeds simply by rewarding the pigeon with seeds, as soon as the pigeon makes rotational movements.
 At the end, the pigeon finally made a complete turn on himself, because he learned that it would give him a reward.</p></div></section>
-<section><div class="videoblock stretch"><iframe width="500" height="400" src="https://www.youtube.com/embed/TtfQlkGwE2U?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="videoblock stretch stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/TtfQlkGwE2U?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
 <section><div class="paragraph"><p>Footnote: how does this apply to learning in humans?
 On the topic of learning and decision making, I warmly recommend <a href="https://global.oup.com/academic/product/foundations-of-neuroeconomic-analysis-9780199744251">Foundations of Neuroeconomic Analysis by Paul Glimcher</a>, professor of neuroscience, psychology and economics at NYU:</p></div></section>
 <section><div class="admonitionblock tip"><table><tr><td class="icon"><div class="title"></div></td><td class="content"><div class="paragraph"><p>this is a very hard book to read as it covers three disciplines in depth.
@@ -198,8 +199,11 @@ The biological mechanisms of decision making it describes can be inspiring to de
 <section><div class="olist arabic"><ol class="arabic" start="3"><li><p>This result is stored somewhere:</p><div class="ulist"><ul><li><p>if Mario moved to the right = good (because the goal of the game is to go completely to the right)</p></li><li><p>getting hit by an enemy or falling in a hole = bad</p></li></ul></div></li></ol></div></section>
 <section><div class="olist arabic"><ol class="arabic" start="4"><li><p>Game starts over (back to step 1) with a a combination of</p><div class="ulist"><ul><li><p>continue doing the actions that were recorded as positive in step 3</p></li><li><p>try something new (jump, shoot?) when close to a situation associated with a negative outcome in step 3</p></li></ul></div></li></ol></div></section>
 <section><div class="paragraph"><p>After looping from 1. to 4. thousands of times, Mario memorizes all the actions to do to complete the game, without any human player:</p></div></section>
-<section><div class="videoblock stretch"><iframe width="500" height="400" src="https://www.youtube.com/embed/qv6UVOQ0F44?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
+<section><div class="videoblock stretch stretch"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/qv6UVOQ0F44?rel=0" frameborder="0" allowfullscreen=""></iframe></div></section>
 <section><div class="paragraph"><p>Reinforcement learning is perceived as corresponding to an important side of human learning / human intelligence (goal oriented, "trial and error").</p></div></section>
+<section><div class="paragraph"><p>Now, let&#8217;s imagine that we create a game in which two learning machines are competing: one that controls Mario Bros, the other who controls an enemy character in the game, and tries to defeat Mario Bros.
+By having them battle thousands of rounds and adapt their behavior by learning from their mistakes, the two will learn much faster and improve a lot more than by reinforcement learning alone.
+This type of artificial intelligence is called "generative antagonistic networks" and many observers see a bright future for it in AI.</p></div></section>
 <section><h3>d. When is machine learning useful? When is it not?</h3></section>
 <section><div class="paragraph"><p>Using machine learning can be a waste of resource, when well known statistics could be easily applied.</p></div></section>
 <section><div class="paragraph"><p>Hints that "classic" statistical modeling (maybe as simple as a linear regression) should be enough:</p></div></section>
@@ -208,7 +212,7 @@ The biological mechanisms of decision making it describes can be inspiring to de
 If the question is that of the role of this or that factor in the determination of a result, machine learning remains silent on this subject.
 Let&#8217;s take the example of pictures of cats and dogs:</p></div></section>
 <section><div class="ulist"><ul><li><p>supervised learning is very effective to "guess" if an image is that of a cat or a dog, after training on thousands of images of cats and dogs.</p></li><li><p>but nothing tells us "how" supervised learning has done its job. Does the length of the whiskers, the shape of the ears, the color of the hair &#8230;&#8203; help to classify an image like that of a cat or a dog? Supervised learning does not answer these questions.</p></li><li><p><a href="https://distill.pub/2018/building-blocks/">Works have been published</a> to make intelligible how supervised learning determines the result "cat" or "dog". However this type of work remains quite uncommon. Supervised learning remains largely a <a href="https://en.wikipedia.org/wiki/Black_box">black box</a>.</p></li></ul></div></section>
-<section id="_3_what_relation_between_machine_learning_and_data_science"><h2>3. What relation between machine learning and data science ?</h2></section>
+<section id="_3_what_relation_between_machine_learning_and_data_science"><h2>3. What relation between machine learning and data science?</h2></section>
 <section><div class="paragraph"><p>Machine learning is one of the steps in the broader chain of steps in data processing.</p></div></section>
 <section><div class="paragraph"><p>The chain of data processing consists in collecting data, storing it, analyzing it to discover some isnsights, and finally delivering a result.
 This chain of processing was not invented in the 2000s, and has ressemblance to the concept of <a href="https://en.wikipedia.org/wiki/Data_mining#Process">kdd</a>: "Knowledge Discovery in Databases" from the 1990s:</p></div></section>
@@ -220,7 +224,7 @@ This chain of processing was not invented in the 2000s, and has ressemblance to 
 <section><div class="paragraph"><p>To perform the entire chain of data processing, a large variety of skills is needed:</p></div>
 <div class="ulist"><ul><li><p>capacity to setup up the IT infrastructure to collect, store and access large volumes of data ("data engineer", "back end" types of skills)</p></li><li><p>capacity to apply maths and statistical models to the data ("data scientist" ,"data mining" types of skills)</p></li><li><p>capacity to communicate the results effectively ("data visualization", "front end" types of skills)</p></li></ul></div>
 <div class="paragraph"><p>The skills of a data scientist are often represented as the meeting of three separate domains:</p></div></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="../images/conway.png" alt="conway" height="100%" /></div><div class="title">Figure 8. The Venn diagram of data science by Drew Conway</div></section>
+<section><div class="imageblock stretch" style="text-align: center"><img src="../images/conway.png" alt="conway" height="100%" /></div><div class="title">Figure 8. A diagram representing data science by Drew Conway</div></section>
 <section><div class="paragraph"><p>This diagram makes an important point: data science is not just a set of IT and maths skills.
 "Substantive expertise", also known as "domain knowledge", is also required: people who know intimately  about the context of the application being developed.</p></div></section>
 <section><div class="paragraph"><p>In practice, this balance of skills is rarely found in just one individual.

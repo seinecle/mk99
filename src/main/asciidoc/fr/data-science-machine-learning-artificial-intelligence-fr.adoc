@@ -68,10 +68,10 @@ Les "statistiques régulières" sont le domaine de travail de scientifiques qui:
 -> ils ne sont pas concernés par la difficulté d'éxecution de leurs modèles sur des ordinateurs, en termes de calculs à effectuer.
 
 // +
--> puisqu'ils se concentrent sur *l'échantillonnage* des données, ils ne sont pas concernés par le traitement de jeux de données entiers avec les problèmes informatiques que cela pose (coût, lenteur, complexité technique de mise en oeuvre...).
+-> puisqu'ils se concentrent sur *l'échantillonnage* des données, ils ne sont pas concernés par le traitement de jeux de données entiers avec les problèmes informatiques que cela pose : coût, lenteur, complexité technique de mise en oeuvre...
 
 // +
-Le *machine learning* ("apprentissage automatique" en français)(((machine learning))) fait des choses similaires à la statistique, mais d'une manière légèrement différente :
+Le *machine learning* (((machine learning))) fait des choses similaires à la statistique, mais d'une manière légèrement différente :
 
 - on met l'accent sur la bonne prédiction, sans se soucier d'identifier le modèle mathématique sous-jacent
 - la prévision doit être réalisable dans le temps disponible, avec les ressources informatiques disponibles
@@ -128,7 +128,7 @@ Si un problème statistique de prédiction peut être décomposé en opérations
 // +
 Pour illustrer la différence de vitesse entre une opération mathématique exécutée sans ou avec un *GPU*(((GPU - cartes graphiques))):
 
-video::-P28LKWTzrI[youtube, width = 500, height = 400, align = "center"]
+video::-P28LKWTzrI[youtube, align = "center"]
 
 Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez conceptualiser le problème pour qu'il soit :
 
@@ -238,22 +238,24 @@ L'apprentissage supervisé est actuellement la famille d'apprentissage automatiq
 
 image::muffin.jpg[pdfwidth = "60%", align = "center", title = "Un cas de test difficile pour l'apprentissage supervisé", width = 400, book = "keep"]
 
+(https://www.freecodecamp.org/news/chihuahua-or-muffin-my-search-for-the-best-computer-vision-api-cbda4d6b425d/[source])
+
 C'est donc ce qu'on appelle l'apprentissage *supervisé* car l'apprentissage est guidé, dirigé, encadré par des exemples passés.
 
 // +
 Trois conditions à retenir sur l'apprentissage supervisé :
 
 // +
-- pour l'apprentissage supervisé soit possible, *il est nécessaire de disposer de grands ensembles de données pour la phase d'entraînement*. Sans ces données, pas d'apprentissage supervisé.
+- pour que l'apprentissage supervisé soit possible, *il est nécessaire de disposer de grands ensembles de données pour la phase d'entraînement*. Sans ces données, pas d'apprentissage supervisé.
 // +
-- l'apprentissage supervisé *permet d'analyser des situations similaires à celles représentées dans le jeu de données sur lequel l'apprentissage a été entrainé*. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.
+- l'apprentissage supervisé *permet d'analyser des situations similaires à celles représentées dans le jeu de données sur lequel l'apprentissage a été entraîné*. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.
 // +
 - les données d'apprentissage doivent être spécifiques. Si l'on souhaite apprendre à un algo à reconnaître un chihuhua, le training set doit être fait de chihuahuas - plutôt que des chiens de toutes races.
 
 // +
 Ce dernier point est explicité par Maryne Cotty-Eslous, fondatrice de https://projet-lucine.com/#/[Lucine, une app de reconnaissance et d'analyse de la douleur]:
 
-video::tL7ojiOTQho?t=16m31s[youtube,start=971, width = 500, height = 400, align = "center"]
+video::tL7ojiOTQho?t=16m31s[youtube,start=971, align = "center"]
 
 === c. L'approche de l'apprentissage par *renforcement* (reinforcement learning)
 Pour comprendre l'apprentissage par renforcement(((apprentissage automatique, apprentissage par renforcement))), nous pouvons penser intuitivement comment les animaux peuvent apprendre rapidement en *ignorant* les comportements indésirables et en *récompensant* les comportements souhaitables.
@@ -263,7 +265,7 @@ La vidéo suivante montre B.F. Skinner, figure centrale de la psychologie compor
 Pour cela, Skinner procède simplement en récompensant le pigeon par des graines, dès que le pigeon fait des mouvements de rotation.
 A la fin, le pigeon finit par faire un tour complet sur lui-même, car il a appris que cela allait lui donner une récompense.
 
-video::TtfQlkGwE2U[youtube, largeur = 500, hauteur = 400, align = "center"]
+video::TtfQlkGwE2U[youtube, align = "center"]
 
 Outre les pigeons, l'apprentissage par renforcement peut être appliqué à tout type d' "agents experts".
 Prenons le cas d'un jeu vidéo comme Super Mario Bros:
@@ -272,11 +274,11 @@ image::mario.jpg[pdfwidth = "60%", align = "center", title = "Mario Bros - un je
 
 Structure du jeu / de la tâche:
 
-- But de la tâche: Mario doit collecter des pièces d'or et compléter le jeu en atteignant l'extrême droite de l'écran.
-- Résultat négatif à éviter: se faire tuer par des ennemis ou en tombant dans des trous.
+- But de la tâche : Mario doit collecter des pièces d'or et compléter le jeu en atteignant l'extrême droite de l'écran.
+- Résultat négatif à éviter : se faire tuer par des ennemis ou en tombant dans des trous.
 // +
-- Point de départ: Mario Bros est debout au début du jeu.
-- Actions possibles: se déplacer à droite, à gauche, sauter, s'accroupir, tirer en avant.
+- Point de départ : Mario Bros est debout au début du jeu.
+- Actions possibles : se déplacer à droite, à gauche, sauter, s'accroupir, tirer en avant.
 
 // +
 L'apprentissage par renforcement fonctionne de la manière suivante :
@@ -285,7 +287,7 @@ L'apprentissage par renforcement fonctionne de la manière suivante :
 2. Le jeu se termine (Mario a bougé à droite, a été touché par un ennemi et est mort)
 // +
 [début = 3]
-3. Ce résultat est stocké quelque part:
+3. Ce résultat est stocké quelque part :
 ** se déplacer à droite => bien (on a progressé dans le jeu, même si c'est très peu). A refaire!
 ** marcher près d'un ennemi et être touché par celui-ci => mauvais. A éviter! Déclenchons une autre action à proximité d'un ennemi (comme "sauter en avançant", par exempe).
 // +
@@ -295,14 +297,18 @@ L'apprentissage par renforcement fonctionne de la manière suivante :
 ** essais de nouvelles choses (sauter, tirer?) à proximité d'une situation associée à un résultat négatif au tour précédent.
 
 // +
-Après avoir bouclé de 1. à 4. des milliers de fois, et enregistré à chaque fois des combinaisons d'actions favorables à répéter, et défavorables à éviter, Mario finit par arriver au bout du jeu, sans qu'aucun joueur humain ne tienne les commandes :
+Après avoir répété les étapes de 1. à 4. des milliers de fois, et enregistré à chaque fois les combinaisons d'actions favorables à répéter, et défavorables à éviter, Mario finit par arriver au bout du jeu, sans qu'aucun joueur humain ne tienne les commandes :
 
-video::qv6UVOQ0F44[youtube, width = 500, height = 400, align="center"]
+video::qv6UVOQ0F44[youtube, align="center"]
 
 L'apprentissage par renforcement est perçu comme correspondant à un aspect important de l'apprentissage humain / de l'intelligence humaine (axé sur les buts, «essai et erreur»).
 
-
 // +
+Maintenant, imaginons que nous créons une situation dans laquelle deux machines apprenantes se font concurrence: l'une qui contrôle Mario Bros, l'autre qui contrôle un personnage ennemi dans le jeu, et qui essaie de faire échouer Mario Bros.
+En les faisant combattre l'une contre l'autre des milliers de fois, les deux machines vont adapter leur comportement en apprenant de leurs erreurs.
+Ainsi, elles vont apprendre beaucoup plus vite et se perfectionner beaucoup plus.
+Ce type d'intelligence artificielle s'appelle "réseaux antagonistes génératifs" et beaucoup d'observateurs y voient une voie de progrès futur majeur pour l'IA.
+
 === d. Quand le machine learning est-il utile? Quand ne l'est-il pas?
 L'utilisation de l'apprentissage automatique peut être un gaspillage de ressources, lorsque des statistiques bien connues peuvent être facilement appliquées.
 // +

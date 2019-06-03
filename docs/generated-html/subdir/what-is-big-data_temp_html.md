@@ -229,6 +229,7 @@ Societal impacts of big data and AI are not trivial, ranging from racial, financ
 Public regulations at the national and international levels are trying to catch up with these challenges.
 As technology evolves quickly, we can anticipate that societal impacts of big data will take center stage.
 
+//+
 GDPR, a regulation passed by the European Union in 2019 protecting the personal data of citizens, is directly addressing the new concerns for privacy raised by big data.
 
 //+
