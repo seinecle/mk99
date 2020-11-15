@@ -147,7 +147,7 @@ Without being the generator nor the owner of this data, partners make it availab
 This data is acquired through a market transaction. Its uses still comes with conditions, especially for personal data.
 
 === d. Sociodemo data vs behavior data
-- Sociodemogaphic or *sociodemio* (((data, sociodemo))) data refers to information about individuals, describing fundamental attributes of their social identity: age, gender, place of residence, occupation, marital status and number of kids.
+- Sociodemogaphic or *sociodemo* (((data, sociodemo))) data refers to information about individuals, describing fundamental attributes of their social identity: age, gender, place of residence, occupation, marital status and number of kids.
 //+
 - *Behavior data* (((data, behavior))) refers to any digital trace left by the individual in the course of it life: clicks on web pages, likes on Facebook, purchase transactions, comments posted on Tripadvisor...
 
@@ -213,10 +213,5 @@ image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.
 
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
-
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-ecle]
-com/seinecle[@seinecle]
-llois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]

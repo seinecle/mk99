@@ -8,8 +8,8 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-ifndef::imagesdir[:imagesdir: ../images]
-ifndef::sourcedir[:sourcedir: ../../../main/java]
+:imagesdir: images
+
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -132,11 +132,11 @@ video::rpjJHoJixYA[youtube]
 
 image::nicholas_felton3.jpg[align="center", title="Nicholas Felton"]
 
-http://feltron.com/[Nicholas Felton] is a designer and data artist who produced printed annual reports from 2005 to 2014.
+http://feltron.com[Nicholas Felton] is a designer and data artist who produced printed annual reports from 2005 to 2014.
 
 These reports synthesize his bodily data and social life, which he measures __constantly__ during the year. This practice (pushed to the extreme in this case) belongs to the https://en.wikipedia.org/wiki/Quantified_self[((quantified self))] movement.
 
-video::145332585[vimeo]
+video::QvAFp5j7nRI[youtube]
 
 === b. Not just Feltron
 Insurance companies are interested in boosting individual health, using connected objects as monitoring devices
@@ -183,9 +183,7 @@ or see (in French) how https://medium.com/@djo/obsession-service-client-captain-
 
 
 == The end
-//+
-
-Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
 This course is made by Clement Levallois.

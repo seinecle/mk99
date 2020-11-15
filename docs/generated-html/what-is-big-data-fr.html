@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.8">
+<meta name="generator" content="Asciidoctor 2.0.10">
 <meta name="author" content="Clément Levallois">
 <title>Définition du big data</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -241,7 +241,7 @@ table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;pad
 pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
 pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
-.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
 .quoteblock blockquote{margin:0;padding:0;border:0}
 .quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
@@ -258,7 +258,8 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
 .quoteblock.abstract{margin:0 1em 1.25em;display:block}
 .quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
-.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 table.tableblock{max-width:100%;border-collapse:separate}
@@ -492,15 +493,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2019-05-17</p>
+<p>last modified: 2020-11-15</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
+<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 </div>
@@ -509,12 +511,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/ariely.png" alt="ariely">
+<img src="images/ariely.png" alt="ariely">
 </div>
 <div class="title">Figure 1. Message de Facebook de Dan Ariely en 2013</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Ironie à part, le big data demande effectivement un travail de définition. Apportons une certaine clarté.</p>
@@ -535,12 +538,13 @@ Nous produisons une quantité phénomènale de données dans le cours de notre v
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/grandma.png" alt="grandma">
+<img src="images/grandma.png" alt="grandma">
 </div>
 <div class="title">Figure 2. Nous collectons des données à chaque instant - ou pas</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Les volumes de données augmentent à un rythme <strong>accéléré</strong>. Selon des sources, <a href="https://www.sciencedaily.com/releases/2013/05/130522085217.htm">90% de toutes les données dans le monde a été généré au cours des deux dernières années</a> (déclaration de 2013) ou dit différemment , <a href="https://appdevelopermagazine.com/4773/2016/12/23/more-data-will-be-created-in-2017-than-the-previous-5,000-years-of-humanity-/">plus de données être créé en 2017 que dans les 5000 ans de l&#8217;histoire de l&#8217;humanité</a>.</p>
@@ -570,12 +574,13 @@ C&#8217;est généralement beaucoup plus difficile à traiter par le logiciel, d
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/book.png" alt="book">
+<img src="images/book.png" alt="book">
 </div>
 <div class="title">Figure 3. Un livre de comptes montrant des données structurées</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect3">
@@ -589,12 +594,13 @@ Mais ils sont porteurs d&#8217;informations généralement riches: texte libre, 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/unstructured-data.png" alt="unstructured data">
+<img src="images/unstructured-data.png" alt="unstructured data">
 </div>
 <div class="title">Figure 4. Données structurées vs données non structurées</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 </div>
@@ -607,12 +613,13 @@ Mais ils sont porteurs d&#8217;informations généralement riches: texte libre, 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/firehose.jpg" alt="firehose">
+<img src="images/firehose.jpg" alt="firehose">
 </div>
 <div class="title">Figure 5. Le firehose de Twitter</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="ulist">
 <ul>
@@ -708,36 +715,39 @@ Ainsi, en réaction à des ensembles de données volumineux, non structurés et 
 <h3 id="_a_la_numérisation_de_léconomie_a_généré_de_nouveaux_volumes_de_données">a. La numérisation de l&#8217;économie a généré de nouveaux volumes de données</h3>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/Cinéma-vs-Netflix.png" alt="Cinéma vs Netflix">
+<img src="images/Cinéma-vs-Netflix.png" alt="Cinéma vs Netflix">
 </div>
 <div class="title">Figure 6. Cinéma vs Netflix</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_b_les_ordinateurs_sont_devenus_plus_puissants">b. Les ordinateurs sont devenus plus puissants</h3>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/La-loi-de-Moore.png" alt="La loi de Moore">
+<img src="images/La-loi-de-Moore.png" alt="La loi de Moore">
 </div>
 <div class="title">Figure 7. La loi de Moore</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_c_le_stockage_des_données_est_devenu_moins_cher_chaque_année">c. Le stockage des données est devenu moins cher chaque année</h3>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/Réduction-des-coûts-de-stockage-des-données.png" alt="Réduction des coûts de stockage des données">
+<img src="images/Réduction-des-coûts-de-stockage-des-données.png" alt="Réduction des coûts de stockage des données">
 </div>
 <div class="title">Figure 8. Réduction des coûts de stockage des données</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
@@ -772,12 +782,13 @@ L&#8217;open source facilite l&#8217;accès aux logiciels construits par d&#8217
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/Cycle-Gartner-Hype-pour-2014.png" alt="Cycle Gartner Hype pour 2014">
+<img src="images/Cycle-Gartner-Hype-pour-2014.png" alt="Cycle Gartner Hype pour 2014">
 </div>
 <div class="title">Figure 9. Cycle Gartner Hype pour 2014</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Ce graphique montre le modèle que toutes les technologies suivent au cours de leur vie:</p>
@@ -824,12 +835,13 @@ En 2017, le «big data» est toujours au top des technologies hype, mais se déc
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/Gartner-Hype-Cycle-pour-2017.png" alt="Gartner Hype Cycle pour 2017">
+<img src="images/Gartner-Hype-Cycle-pour-2017.png" alt="Gartner Hype Cycle pour 2017">
 </div>
 <div class="title">Figure 10. Gartner Hype Cycle pour 2017 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
@@ -841,12 +853,13 @@ En 2017, le «big data» est toujours au top des technologies hype, mais se déc
 <div style="page-break-after: always;"></div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/Matt-Turck-FirstMark-2017-Big-Data-Landscape.png" alt="Matt Turck FirstMark 2017 Big Data Landscape">
+<img src="images/Matt-Turck-FirstMark-2017-Big-Data-Landscape.png" alt="Matt Turck FirstMark 2017 Big Data Landscape">
 </div>
 <div class="title">Figure 11. Paysage de données pour 2017</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Vous trouverez une <a href="https://mattturck.com/bigdata2017/">version haute résolution de ce panorama Big data</a>, une version Excel et un commentaire très intéressant sur ce site : <a href="https://mattturck.com/bigdata2017/" class="bare">https://mattturck.com/bigdata2017/</a></p>
@@ -869,12 +882,13 @@ Ainsi, le développement des <strong>objets connectés</strong> conduira à une 
 <h3 id="_b_le_big_data_gagne_en_importance_avec_lintelligence_artificielle">b. le "big data" gagne en importance avec l&#8217;intelligence artificielle</h3>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/gtrends.png" alt="gtrends">
+<img src="images/gtrends.png" alt="gtrends">
 </div>
 <div class="title">Figure 12. Recherches Google pour les termes big data - machine learning et IA</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p><strong>L&#8217;intelligence artificielle</strong> (IA) permet à un ordinateur d&#8217;obtenir des résultats similaires ou supérieurs à ce que peuvent faire les humains: jouer aux échecs, deviner quels objets sont visibles sur une photo, conduire un véhicule, &#8230;&#8203;
@@ -923,13 +937,17 @@ Vous pouvez trouver une leçon sur le RGPD <a href="https://emlyon.github.io/mk9
 <p>Retrouvez le site complet : <a href="https://seinecle.github.io/mk99/index-fr.html">ici</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
+<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
 </div>
 <div class="paragraph">
 <p>Clement Levallois</p>
 </div>
 <div class="paragraph">
 <p>Découvrez mes autres cours et projets : <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
+</div>
+<div class="paragraph">
+<p>Ou contactez-moi via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+ntlevallois.net</p>
 </div>
 <div class="paragraph">
 <p>Ou contactez-moi via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
@@ -957,7 +975,7 @@ Vous pouvez trouver une leçon sur le RGPD <a href="https://emlyon.github.io/mk9
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2019-05-17 13:55:14 +0200
+Last updated 2020-11-15 17:45:56 +0100
 </div>
 </div>
 </body>

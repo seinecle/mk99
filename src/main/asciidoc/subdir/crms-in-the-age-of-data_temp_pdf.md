@@ -136,7 +136,7 @@ Three key aspects for ad buying and selling:
 //+
 - Ads are displayed across many channels (with https://en.wikipedia.org/wiki/Site_retargeting[retargeting])
 //+
-- Ads are personalized (started with Search Engine Advertising showing ads matching search queries, then cookies, then (see https://panopticlick.eff.org/[browser fingerprinting]) and https://www.theguardian.com/technology/2017/jul/03/facebook-track-browsing-history-california-lawsuit[other tracking techniques])
+- Ads are personalized. It started with Search Engine Advertising showing ads matching search queries. Then cookies tracking your web browsing history appeared, sending this personal information to ad agencies which in turn can serve ads tuned to your browsing behavior. After this, "browser finger printing" is a technique which enables a given ad agency tracking web visitors, not based on info recorded in cookies, but leveraging the fact that each web browser is slightly different - like a finger print (see the tool by https://panopticlick.eff.org/[the Electronic Frontier Foundation] or https://privacy.net/analyzer/[this other privacy analyzer] to have a demonstration on your own browser). The list of tracking techniques is endless, see for example the technique used by Facebook https://www.theguardian.com/technology/2017/jul/03/facebook-track-browsing-history-california-lawsuit[to track your browsing behavior outside of Facebook].
 
 
 == 4. Consequence of this digital transformation: the customer relationship and CRMs have evolved
@@ -263,21 +263,4 @@ This course is made by Clement Levallois.
 Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
 Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
-
-itter.com/seinecle[@seinecle]
- afforded by these new way to manage customer relationships.
-- The organization needs to invest and devote enough operational resources to stop doing "business as usual" and develop a data-driven CRM.
-
-
-== The end
-//ST: The end
-//ST: !
-
-Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
-
-image:round_portrait_mini_150.png[align="center", role="right"]
-This course is made by Clement Levallois.
-
-Discover my other courses in data / tech for business: http://www.clementlevallois.net
-
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+e]

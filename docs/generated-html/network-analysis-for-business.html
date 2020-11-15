@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.8">
+<meta name="generator" content="Asciidoctor 2.0.10">
 <meta name="author" content="Clément Levallois">
 <title>A primer on network analysis for business</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -241,7 +241,7 @@ table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;pad
 pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
 pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
-.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
 .quoteblock blockquote{margin:0;padding:0;border:0}
 .quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
@@ -258,7 +258,8 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
 .quoteblock.abstract{margin:0 1em 1.25em;display:block}
 .quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
-.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 table.tableblock{max-width:100%;border-collapse:separate}
@@ -473,15 +474,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-09-10</p>
+<p>last modified: 2020-11-15</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
+<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 </div>
@@ -496,12 +498,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/network-1.png" alt="network 1">
+<img src="images/network-1.png" alt="network 1">
 </div>
 <div class="title">Figure 1. This is a network</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="sect2">
 <h3 id="_a_social_networks">a. Social networks</h3>
@@ -512,22 +515,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>As users, we are very familiar with one type of networks - social networks:</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../images/facebook.png" alt="facebook" width="150"></span>
-<span class="image"><img src="../images/twitter.jpg" alt="twitter" width="150"></span>
-<span class="image"><img src="../images/weibo.png" alt="weibo" width="150"></span>
-<span class="image"><img src="../images/instagram.jpg" alt="instagram" width="150"></span>
-<span class="image"><img src="../images/snapchat.png" alt="snapchat" width="150"></span>
-<span class="image"><img src="../images/wechat.jpg" alt="wechat" width="150"></span>
-<span class="image"><img src="../images/linkedin.png" alt="linkedin" width="150"></span></p>
+<p><span class="image"><img src="images/facebook.png" alt="facebook" width="150"></span>
+<span class="image"><img src="images/twitter.jpg" alt="twitter" width="150"></span>
+<span class="image"><img src="images/weibo.png" alt="weibo" width="150"></span>
+<span class="image"><img src="images/instagram.jpg" alt="instagram" width="150"></span>
+<span class="image"><img src="images/snapchat.png" alt="snapchat" width="150"></span>
+<span class="image"><img src="images/wechat.jpg" alt="wechat" width="150"></span>
+<span class="image"><img src="images/linkedin.png" alt="linkedin" width="150"></span></p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="http://www.minanacheva.com/getting-visual-with-facebook-data/"><img src="../images/colored-network.png" alt="colored network"></a>
+<a class="image" href="http://www.minanacheva.com/getting-visual-with-facebook-data/"><img src="images/colored-network.png" alt="colored network"></a>
 </div>
 <div class="title">Figure 2. source: <a href="http://www.minanacheva.com/getting-visual-with-facebook-data/" class="bare">http://www.minanacheva.com/getting-visual-with-facebook-data/</a></div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
@@ -542,12 +546,13 @@ For example, it is possible to imagine a network made out of cooking recipes.
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="http://arxiv.org/abs/1111.3919"><img src="../images/ingredients-network.png" alt="ingredients network"></a>
+<a class="image" href="http://arxiv.org/abs/1111.3919"><img src="images/ingredients-network.png" alt="ingredients network"></a>
 </div>
 <div class="title">Figure 3. source: <a href="http://arxiv.org/abs/1111.3919" class="bare">http://arxiv.org/abs/1111.3919</a></div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Semantic networks are another broad category of networks.
@@ -556,12 +561,13 @@ The general idea is the same as in cooking recipes: 2 terms of a text will be co
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="http://www.nature.com/nature/journal/v463/n7278/full/463157a.html"><img src="../images/editorials.png" alt="editorials"></a>
+<a class="image" href="http://www.nature.com/nature/journal/v463/n7278/full/463157a.html"><img src="images/editorials.png" alt="editorials"></a>
 </div>
 <div class="title">Figure 4. source: <a href="http://www.nature.com/nature/journal/v463/n7278/full/463157a.html" class="bare">http://www.nature.com/nature/journal/v463/n7278/full/463157a.html</a></div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
@@ -584,24 +590,26 @@ In the next visualization, we can see a network of 90,000 Swedish speakers and t
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<a class="image" href="http://twittercensus.se/graph2015/"><img src="../images/swedish.png" alt="swedish"></a>
+<a class="image" href="http://twittercensus.se/graph2015/"><img src="images/swedish.png" alt="swedish"></a>
 </div>
 <div class="title">Figure 5. source: <a href="http://twittercensus.se/graph2015/" class="bare">http://twittercensus.se/graph2015/</a></div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_d_how_to_discuss_networks_some_vocabulary">d. How to discuss networks? Some vocabulary</h3>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/Terminology.png" alt="Terminology">
+<img src="images/Terminology.png" alt="Terminology">
 </div>
 <div class="title">Figure 6. Terminology</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 </div>
@@ -628,24 +636,26 @@ In the next visualization, we can see a network of 90,000 Swedish speakers and t
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/segmentation-with-community-detection-in-networks.png" alt="segmentation with community detection in networks">
+<img src="images/segmentation-with-community-detection-in-networks.png" alt="segmentation with community detection in networks">
 </div>
 <div class="title">Figure 7. segmentation with community detection in networks</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_b_finding_key_players">b. Finding key players</h3>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/Key-players-visualized-by-resizing-nodes.png" alt="Key players visualized by resizing nodes">
+<img src="images/Key-players-visualized-by-resizing-nodes.png" alt="Key players visualized by resizing nodes">
 </div>
 <div class="title">Figure 8. Key players visualized by resizing nodes</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
@@ -656,12 +666,13 @@ The service is now discontinued (Twitter datan was too expensive to buy) but the
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/Where-Does-my-Tweet-Go-by-MFGLabs.png" alt="Where Does my Tweet Go by MFGLabs">
+<img src="images/Where-Does-my-Tweet-Go-by-MFGLabs.png" alt="Where Does my Tweet Go by MFGLabs">
 </div>
 <div class="title">Figure 9. Where Does my Tweet Go by MFGLabs</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
@@ -679,7 +690,8 @@ The service is now discontinued (Twitter datan was too expensive to buy) but the
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Another example: connecting seemingly unrelated measures of business performance with <a href="https://www.oracle.com/solutions/business-analytics/business-intelligence/index.html">Oracle BI</a> and <a href="https://linkurio.us/">Linkurious</a>:</p>
@@ -690,7 +702,8 @@ The service is now discontinued (Twitter datan was too expensive to buy) but the
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 </div>
@@ -699,10 +712,10 @@ The service is now discontinued (Twitter datan was too expensive to buy) but the
 <h2 id="_3_to_go_further">3. To go further</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><span class="image"><a class="image" href="https://www.amazon.com/Analyzing-Social-Web-Jennifer-Golbeck/dp/0124055311"><img src="../images/golbeck.jpg" alt="golbeck" width="150"></a></span>
-<span class="image"><a class="image" href="https://www.amazon.com/Analyzing-Social-Media-Networks-NodeXL/dp/0123822297"><img src="../images/nodexl.jpg" alt="nodexl" width="150"></a></span>
-<span class="image"><a class="image" href="https://www.amazon.com/Networks-Introduction-Mark-Newman/dp/0199206651"><img src="../images/newman.jpg" alt="newman"></a></span>
-<span class="image"><a class="image" href="https://www.amazon.com/Network-Science-Albert-L-e1szl-f3-Barab-e1si/dp/1107076269"><img src="../images/barabasi.jpg" alt="barabasi" width="150"></a></span></p>
+<p><span class="image"><a class="image" href="https://www.amazon.com/Analyzing-Social-Web-Jennifer-Golbeck/dp/0124055311"><img src="images/golbeck.jpg" alt="golbeck" width="150"></a></span>
+<span class="image"><a class="image" href="https://www.amazon.com/Analyzing-Social-Media-Networks-NodeXL/dp/0123822297"><img src="images/nodexl.jpg" alt="nodexl" width="150"></a></span>
+<span class="image"><a class="image" href="https://www.amazon.com/Networks-Introduction-Mark-Newman/dp/0199206651"><img src="images/newman.jpg" alt="newman"></a></span>
+<span class="image"><a class="image" href="https://www.amazon.com/Network-Science-Albert-L-e1szl-f3-Barab-e1si/dp/1107076269"><img src="images/barabasi.jpg" alt="barabasi" width="150"></a></span></p>
 </div>
 <div class="paragraph">
 <p>You can also visit my tutorials on Gephi, the leading software to visualize large graphs:</p>
@@ -719,11 +732,15 @@ The service is now discontinued (Twitter datan was too expensive to buy) but the
 <p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
+<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
 This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
 <p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
+</div>
+<div class="paragraph">
+<p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+llois.net</p>
 </div>
 <div class="paragraph">
 <p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
@@ -751,7 +768,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-09-10 11:40:32 +0200
+Last updated 2020-11-15 17:45:55 +0100
 </div>
 </div>
 </body>

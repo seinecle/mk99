@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.8">
+<meta name="generator" content="Asciidoctor 2.0.10">
 <meta name="author" content="Clément Levallois">
 <title>3 families of business models centered on data</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -241,7 +241,7 @@ table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;pad
 pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
 pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
-.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
 .quoteblock blockquote{margin:0;padding:0;border:0}
 .quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
@@ -258,7 +258,8 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
 .quoteblock.abstract{margin:0 1em 1.25em;display:block}
 .quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
-.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 table.tableblock{max-width:100%;border-collapse:separate}
@@ -448,15 +449,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="paragraph">
-<p>last modified: 2018-05-10</p>
+<p>last modified: 2020-11-15</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp">
+<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Not a closed list, not a recipe!</p>
@@ -477,51 +479,52 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/spices.jpg" alt="spices">
+<img src="images/spices.jpg" alt="spices">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Thomson Reuters collecting &amp; selling data from finance, scientific research, medicine and news. <span class="image"><img src="../images/thomson-reuters.png" alt="thomson reuters" width="100"></span></p>
+<p>Thomson Reuters collecting &amp; selling data from finance, scientific research, medicine and news. <span class="image"><img src="images/thomson-reuters.png" alt="thomson reuters" width="100"></span></p>
 </li>
 </ul>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Nielsen collecting &amp; selling market data <span class="image"><img src="../images/nielsen.jpg" alt="nielsen" width="100"></span></p>
+<p>Nielsen collecting &amp; selling market data <span class="image"><img src="images/nielsen.jpg" alt="nielsen" width="100"></span></p>
 </li>
 </ul>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Twitter collecting &amp; selling tweets through its own branch (<a href="https://developer.twitter.com/en/enterprise">GNIP</a>) or partners (<a href="http://datasift.com/">DataSift</a>) <span class="image"><img src="../images/twitter.jpg" alt="twitter" width="100"></span></p>
+<p>Twitter collecting &amp; selling tweets through its own branch (<a href="https://developer.twitter.com/en/enterprise">GNIP</a>) or partners (<a href="http://datasift.com/">DataSift</a>) <span class="image"><img src="images/twitter.jpg" alt="twitter" width="100"></span></p>
 </li>
 </ul>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://www.meteofrance.com/accueil">Meteo France</a> or <a href="http://www.theweathercompany.com/">The Weather Company</a> (purchased by IBM) collecting &amp; selling meterological data <span class="image"><img src="../images/meteo-france.jpg" alt="meteo france" width="100"></span> <span class="image"><img src="../images/weather.jpg" alt="weather" width="100"></span></p>
+<p><a href="http://www.meteofrance.com/accueil">Meteo France</a> or <a href="http://www.theweathercompany.com/">The Weather Company</a> (purchased by IBM) collecting &amp; selling meterological data <span class="image"><img src="images/meteo-france.jpg" alt="meteo france" width="100"></span> <span class="image"><img src="images/weather.jpg" alt="weather" width="100"></span></p>
 </li>
 </ul>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://datavenue.orange.com/flux-vision">Datavenue</a>, a business service by Orange (French Telecom company) collecting &amp; selling info to cities and companies about car traffic and flows of tourists in public places (museums…) based on the (anomymized) geolocalisation of mobile phones. <span class="image"><img src="../images/orange.png" alt="orange" width="100"></span></p>
+<p><a href="https://datavenue.orange.com/flux-vision">Datavenue</a>, a business service by Orange (French Telecom company) collecting &amp; selling info to cities and companies about car traffic and flows of tourists in public places (museums…) based on the (anomymized) geolocalisation of mobile phones. <span class="image"><img src="images/orange.png" alt="orange" width="100"></span></p>
 </li>
 </ul>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>ImDB Inc. collecting data through <a href="http://imdb.com">imdb.com</a> &amp; selling data through <a href="http://pro.imdb.com">pro.imdb.com</a> to various stakeholders of the entertainment industry. <span class="image"><img src="../images/imdbpro.png" alt="imdbpro" width="100"></span></p>
+<p>ImDB Inc. collecting data through <a href="http://imdb.com">imdb.com</a> &amp; selling data through <a href="http://pro.imdb.com">pro.imdb.com</a> to various stakeholders of the entertainment industry. <span class="image"><img src="images/imdbpro.png" alt="imdbpro" width="100"></span></p>
 </li>
 </ul>
 </div>
@@ -530,11 +533,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/targeted-ads.jpg" alt="targeted ads">
+<img src="images/targeted-ads.jpg" alt="targeted ads">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>This is the business model of Google and Facebook, as well as many free services offered online.</p>
@@ -548,24 +552,26 @@ This allows the service to sell this qualified audience to ad providers.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/google-revenues.png" alt="google revenues">
+<img src="images/google-revenues.png" alt="google revenues">
 </div>
 <div class="title">Figure 1. Google revenues as of 2015</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Same for Facebook, which makes most of its $7 billion revenues out of ads, based on the data they collect from Facebook users:</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/facebook-revenues.png" alt="facebook revenues">
+<img src="images/facebook-revenues.png" alt="facebook revenues">
 </div>
 <div class="title">Figure 2. Facebook revenues as of 2016</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>== 3. COLLECTING DATA, SELLING PRODUCTS and SERVICES
@@ -580,12 +586,13 @@ This allows the service to sell this qualified audience to ad providers.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/nokia-health.jpg" alt="nokia health">
+<img src="images/nokia-health.jpg" alt="nokia health">
 </div>
 <div class="title">Figure 3. Nokia products collecting data to deliver services</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="ulist">
 <ul>
@@ -596,12 +603,13 @@ This allows the service to sell this qualified audience to ad providers.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/nest.jpeg" alt="nest">
+<img src="images/nest.jpeg" alt="nest">
 </div>
 <div class="title">Figure 4. Nest thermostats collect data from their surroundings and users to deliver services</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="ulist">
 <ul>
@@ -625,11 +633,12 @@ This allows the service to sell this qualified audience to ad providers.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/abn-amro.jpg" alt="abn amro">
+<img src="images/abn-amro.jpg" alt="abn amro">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="ulist">
 <ul>
@@ -640,12 +649,13 @@ This allows the service to sell this qualified audience to ad providers.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/klm-meet-and-seat.jpg" alt="klm meet and seat">
+<img src="images/klm-meet-and-seat.jpg" alt="klm meet and seat">
 </div>
 <div class="title">Figure 5. KLM adds a nice-to-have with a matching service based on customer profiles</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>== The end</p>
@@ -654,7 +664,7 @@ This allows the service to sell this qualified audience to ad providers.</p>
 <p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
+<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
 This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
@@ -662,6 +672,7 @@ This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
 <p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;
@@ -686,7 +697,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-05-10 13:45:01 +0200
+Last updated 2020-11-15 17:45:53 +0100
 </div>
 </div>
 </body>

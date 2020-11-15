@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.8">
+<meta name="generator" content="Asciidoctor 2.0.10">
 <meta name="author" content="Clément Levallois">
 <title>Personalization and value creation</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -241,7 +241,7 @@ table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;pad
 pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
 pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
-.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
 .quoteblock blockquote{margin:0;padding:0;border:0}
 .quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
@@ -258,7 +258,8 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
 .quoteblock.abstract{margin:0 1em 1.25em;display:block}
 .quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
-.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 table.tableblock{max-width:100%;border-collapse:separate}
@@ -471,15 +472,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-07-02</p>
+<p>last modified: 2020-11-15</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
+<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 </div>
@@ -511,12 +513,13 @@ Inconvenient: operational complexity</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/amazon-personalization.png" alt="amazon personalization">
+<img src="images/amazon-personalization.png" alt="amazon personalization">
 </div>
 <div class="title">Figure 1. How is an Amazon page (old version!) personalized</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 </div>
@@ -525,12 +528,13 @@ Inconvenient: operational complexity</p>
 <div class="sectionbody">
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/The-relation-between-connected-objects-and-personalization.png" alt="The relation between connected objects and personalization">
+<img src="images/The-relation-between-connected-objects-and-personalization.png" alt="The relation between connected objects and personalization">
 </div>
 <div class="title">Figure 2. The relation between connected objects and personalization</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>A list of bodily aspects being measured with examples:</p>
@@ -569,7 +573,7 @@ Inconvenient: operational complexity</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
-<img src="../images/gmap-location-history.png" alt="gmap location history" width="120">
+<img src="images/gmap-location-history.png" alt="gmap location history" width="120">
 </div>
 </div></div></td>
 </tr>
@@ -609,7 +613,7 @@ Inconvenient: operational complexity</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
-<img src="../images/fuelband.jpg" alt="fuelband" width="120">
+<img src="images/fuelband.jpg" alt="fuelband" width="120">
 </div>
 </div></div></td>
 </tr>
@@ -649,7 +653,7 @@ Inconvenient: operational complexity</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
-<img src="../images/myo.png" alt="myo" width="120">
+<img src="images/myo.png" alt="myo" width="120">
 </div>
 </div></div></td>
 </tr>
@@ -689,7 +693,7 @@ Inconvenient: operational complexity</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
-<img src="../images/withings.png" alt="withings" width="120">
+<img src="images/withings.png" alt="withings" width="120">
 </div>
 </div></div></td>
 </tr>
@@ -729,7 +733,7 @@ Inconvenient: operational complexity</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
-<img src="../images/aura.jpg" alt="aura" width="120">
+<img src="images/aura.jpg" alt="aura" width="120">
 </div>
 </div></div></td>
 </tr>
@@ -769,7 +773,7 @@ Inconvenient: operational complexity</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
-<img src="../images/fingerprint.jpg" alt="fingerprint" width="120">
+<img src="images/fingerprint.jpg" alt="fingerprint" width="120">
 </div>
 </div></div></td>
 </tr>
@@ -809,7 +813,7 @@ Inconvenient: operational complexity</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
-<img src="../images/facial-recognition.jpg" alt="facial recognition" width="120">
+<img src="images/facial-recognition.jpg" alt="facial recognition" width="120">
 </div>
 </div></div></td>
 </tr>
@@ -849,7 +853,7 @@ Inconvenient: operational complexity</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
-<img src="../images/crowdsight.png" alt="crowdsight" width="120">
+<img src="images/crowdsight.png" alt="crowdsight" width="120">
 </div>
 </div></div></td>
 </tr>
@@ -861,7 +865,8 @@ Inconvenient: operational complexity</p>
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 9. Behavior in public places</caption>
@@ -897,7 +902,7 @@ Inconvenient: operational complexity</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock text-center">
 <div class="content">
-<img src="../images/agt.png" alt="agt" width="120">
+<img src="images/agt.png" alt="agt" width="120">
 </div>
 </div></div></td>
 </tr>
@@ -921,9 +926,15 @@ Inconvenient: operational complexity</p>
 <div class="paragraph">
 <p>A description of how AGT monitors large audiences in public events (click on the pic for the full document):</p>
 </div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/agt-2.png" alt="agt 2">
+</div>
+<div class="title">Figure 3. source: <a href="https://www.agtinternational.com/wp-content/uploads/2014/10/AGT_AAG_MegaEvent-02Oct2014-2.pdf">AGT services for crowd management</a></div>
+</div>
 <div class="paragraph">
-<p>image::agt-2.png[AGT services for crowd management]"][align="center", title="source: <a href="https://www.agtinternational.com/wp-content/uploads/2014/10/AGT_AAG_MegaEvent-02Oct2014-2.pdf" class="bare">https://www.agtinternational.com/wp-content/uploads/2014/10/AGT_AAG_MegaEvent-02Oct2014-2.pdf</a>
-&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Video showing how Placemeter monitors pedestrian traffic:</p>
@@ -934,7 +945,8 @@ Inconvenient: operational complexity</p>
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 </div>
@@ -948,26 +960,28 @@ Inconvenient: operational complexity</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/nicholas_felton3.jpg" alt="nicholas felton3">
+<img src="images/nicholas_felton3.jpg" alt="nicholas felton3">
 </div>
-<div class="title">Figure 3. Nicholas Felton</div>
-</div>
-<div class="paragraph">
-<p>&#160;<br></p>
+<div class="title">Figure 4. Nicholas Felton</div>
 </div>
 <div class="paragraph">
-<p><a href="http://feltron.com/">Nicholas Felton</a> is a designer and data artist who produced printed annual reports from 2005 to 2014.</p>
+<p>&#160;
+&#160;</p>
+</div>
+<div class="paragraph">
+<p><a href="http://feltron.com">Nicholas Felton</a> is a designer and data artist who produced printed annual reports from 2005 to 2014.</p>
 </div>
 <div class="paragraph">
 <p>These reports synthesize his bodily data and social life, which he measures <em>constantly</em> during the year. This practice (pushed to the extreme in this case) belongs to the <a href="https://en.wikipedia.org/wiki/Quantified_self">quantified self</a> movement.</p>
 </div>
 <div class="videoblock">
 <div class="content">
-<iframe src="https://player.vimeo.com/video/145332585" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/QvAFp5j7nRI?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
@@ -976,7 +990,7 @@ Inconvenient: operational complexity</p>
 <p>Insurance companies are interested in boosting individual health, using connected objects as monitoring devices</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="../images/autodesk.jpg" alt="autodesk" title=""http://www.forbes.com/sites/parmyolson/2014/06/19/wearable-tech-health-insurance/[Employee at Autodeck wearing a Jawbone as part of a company challenge"></span>"]</p>
+<p><span class="image"><img src="images/autodesk.jpg" alt="autodesk" title=""http://www.forbes.com/sites/parmyolson/2014/06/19/wearable-tech-health-insurance/[Employee at Autodeck wearing a Jawbone as part of a company challenge"></span>"]</p>
 </div>
 <div class="paragraph">
 <p>Companies are looking to provide a 360 degree solution to health and well being through constant monitoring:</p>
@@ -987,7 +1001,8 @@ Inconvenient: operational complexity</p>
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Monitoring on health is also a B2B market to achieve "corporate welfare". See <a href="resources/corporate_wellness_smartdata_nokia.pdf">Nokia&#8217;s brochure on the topic of health services</a>.</p>
@@ -1034,7 +1049,8 @@ A full session of this series is devoted to discussing these issues.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(<a href="https://www.youtube.com/watch?v=IwE1zb9fiVs">another impactful version here</a>)</p>
@@ -1049,10 +1065,10 @@ A full session of this series is devoted to discussing these issues.</p>
 <h2 id="_the_end">The end</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p>
+<p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
+<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
 This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
@@ -1060,6 +1076,10 @@ This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
 <p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a></p>
+</div>
+<div class="paragraph">
+<p>]
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;
@@ -1084,7 +1104,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-07-02 17:17:17 +0200
+Last updated 2020-11-15 17:45:55 +0100
 </div>
 </div>
 </body>

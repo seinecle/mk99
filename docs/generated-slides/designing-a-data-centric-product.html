@@ -1,97 +1,156 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="author" content="== !" /><title>Building a data-centric product: the 4D methodology</title><meta content="yes" name="apple-mobile-web-app-capable" /><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport" /><link href="reveal.js-3.6.0/css/reveal.css" rel="stylesheet" /><link rel="stylesheet" href="reveal.js-3.6.0/css/theme/white.css" id="theme" /><style>/* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
-/*pre.CodeRay {background-color:#f7f7f8;}*/
-.CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
-.CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
-.CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
-table.CodeRay{border-collapse:separate;border-spacing:0;margin-bottom:0;border:0;background:none}
-table.CodeRay td{vertical-align: top;line-height:1.45}
-table.CodeRay td.line-numbers{text-align:right}
-table.CodeRay td.line-numbers>pre{padding:0;color:rgba(0,0,0,.3)}
-table.CodeRay td.code{padding:0 0 0 .5em}
-table.CodeRay td.code>pre{padding:0}
-.CodeRay .debug{color:#fff !important;background:#000080 !important}
-.CodeRay .annotation{color:#007}
-.CodeRay .attribute-name{color:#000080}
-.CodeRay .attribute-value{color:#700}
-.CodeRay .binary{color:#509}
-.CodeRay .comment{color:#998;font-style:italic}
-.CodeRay .char{color:#04d}
-.CodeRay .char .content{color:#04d}
-.CodeRay .char .delimiter{color:#039}
-.CodeRay .class{color:#458;font-weight:bold}
-.CodeRay .complex{color:#a08}
-.CodeRay .constant,.CodeRay .predefined-constant{color:#008080}
-.CodeRay .color{color:#099}
-.CodeRay .class-variable{color:#369}
-.CodeRay .decorator{color:#b0b}
-.CodeRay .definition{color:#099}
-.CodeRay .delimiter{color:#000}
-.CodeRay .doc{color:#970}
-.CodeRay .doctype{color:#34b}
-.CodeRay .doc-string{color:#d42}
-.CodeRay .escape{color:#666}
-.CodeRay .entity{color:#800}
-.CodeRay .error{color:#808}
-.CodeRay .exception{color:inherit}
-.CodeRay .filename{color:#099}
-.CodeRay .function{color:#900;font-weight:bold}
-.CodeRay .global-variable{color:#008080}
-.CodeRay .hex{color:#058}
-.CodeRay .integer,.CodeRay .float{color:#099}
-.CodeRay .include{color:#555}
-.CodeRay .inline{color:#000}
-.CodeRay .inline .inline{background:#ccc}
-.CodeRay .inline .inline .inline{background:#bbb}
-.CodeRay .inline .inline-delimiter{color:#d14}
-.CodeRay .inline-delimiter{color:#d14}
-.CodeRay .important{color:#555;font-weight:bold}
-.CodeRay .interpreted{color:#b2b}
-.CodeRay .instance-variable{color:#008080}
-.CodeRay .label{color:#970}
-.CodeRay .local-variable{color:#963}
-.CodeRay .octal{color:#40e}
-.CodeRay .predefined{color:#369}
-.CodeRay .preprocessor{color:#579}
-.CodeRay .pseudo-class{color:#555}
-.CodeRay .directive{font-weight:bold}
-.CodeRay .type{font-weight:bold}
-.CodeRay .predefined-type{color:inherit}
-.CodeRay .reserved,.CodeRay .keyword {color:#000;font-weight:bold}
-.CodeRay .key{color:#808}
-.CodeRay .key .delimiter{color:#606}
-.CodeRay .key .char{color:#80f}
-.CodeRay .value{color:#088}
-.CodeRay .regexp .delimiter{color:#808}
-.CodeRay .regexp .content{color:#808}
-.CodeRay .regexp .modifier{color:#808}
-.CodeRay .regexp .char{color:#d14}
-.CodeRay .regexp .function{color:#404;font-weight:bold}
-.CodeRay .string{color:#d20}
-.CodeRay .string .string .string{background:#ffd0d0}
-.CodeRay .string .content{color:#d14}
-.CodeRay .string .char{color:#d14}
-.CodeRay .string .delimiter{color:#d14}
-.CodeRay .shell{color:#d14}
-.CodeRay .shell .delimiter{color:#d14}
-.CodeRay .symbol{color:#990073}
-.CodeRay .symbol .content{color:#a60}
-.CodeRay .symbol .delimiter{color:#630}
-.CodeRay .tag{color:#008080}
-.CodeRay .tag-special{color:#d70}
-.CodeRay .variable{color:#036}
-.CodeRay .insert{background:#afa}
-.CodeRay .delete{background:#faa}
-.CodeRay .change{color:#aaf;background:#007}
-.CodeRay .head{color:#f8f;background:#505}
-.CodeRay .insert .insert{color:#080}
-.CodeRay .delete .delete{color:#800}
-.CodeRay .change .change{color:#66f}
-.CodeRay .head .head{color:#f4f}</style><link href="reveal.js-3.6.0/lib/css/zenburn.css" rel="stylesheet" /><script>document.write( '<link rel="stylesheet" href="reveal.js-3.6.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>Building a data-centric product</h1><h2>the 4D methodology</h2><div class="preamble"><div class="paragraph"><p>v1.0, 2017-31-07</p></div>
-<div class="paragraph"><p>last modified: 2018-05-10</p></div></div><p class="author"><small>== !</small></p></section>
-<section><div class="imageblock stretch" style="text-align: center"><img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242" /></div></section>
-<section><div class="paragraph"><p>Data: Diagnostic, Design, Delivery</p></div></section>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"><title>Building a data-centric product: the 4D methodology</title><meta name="author" content="== !"><link rel="stylesheet" href="reveal.js-3.9.2/css/reset.css"><link rel="stylesheet" href="reveal.js-3.9.2/css/reveal.css"><link rel="stylesheet" href="reveal.js-3.9.2/css/theme/white.css" id="theme"><!--This CSS is generated by the Asciidoctor reveal.js converter to further integrate AsciiDoc's existing semantic with reveal.js--><style type="text/css">.reveal div.right{float:right}
+
+/* listing block */
+.reveal .listingblock.stretch>.content{height: 100%}
+.reveal .listingblock.stretch>.content>pre{height: 100%}
+.reveal .listingblock.stretch>.content>pre>code{height:100%;max-height:100%}
+
+/* tables */
+table{border-collapse:collapse;border-spacing:0}
+table{margin-bottom:1.25em;border:solid 1px #dedede}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+td.tableblock>.content{margin-bottom:1.25em}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+.reveal table th.halign-left,.reveal table td.halign-left{text-align:left}
+.reveal table th.halign-right,.reveal table td.halign-right{text-align:right}
+.reveal table th.halign-center,.reveal table td.halign-center{text-align:center}
+.reveal table th.valign-top,.reveal table td.valign-top{vertical-align:top}
+.reveal table th.valign-bottom,.reveal table td.valign-bottom{vertical-align:bottom}
+.reveal table th.valign-middle,.reveal table td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{font-weight:bold}
+thead{display:table-header-group}
+
+.reveal table.grid-none th,.reveal table.grid-none td{border-bottom:0!important}
+
+/* kbd macro */
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+
+/* callouts */
+.conum[data-value] {display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:50%;border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]:after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+/* Callout list */
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+/* Disabled from Asciidoctor CSS because it caused callout list to go under the
+ * source listing when .stretch is applied (see #335)
+ * .literalblock+.colist,.listingblock+.colist{margin-top:-.5em} */
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+
+/* Override Asciidoctor CSS that causes issues with reveal.js features */
+.reveal .hljs table{border: 0}
+/* Callout list rows would have a bottom border with some reveal.js themes (see #335) */
+.reveal .colist>table th, .reveal .colist>table td {border-bottom:0}
+/* Fixes line height with Highlight.js source listing when linenums enabled (see #331) */
+.reveal .hljs table thead tr th, .reveal .hljs table tfoot tr th, .reveal .hljs table tbody tr td, .reveal .hljs table tr td, .reveal .hljs table tfoot tr td{line-height:inherit}
+
+/* Columns layout */
+.columns .slide-content {
+  display: flex;
+}
+
+.columns.wrap .slide-content {
+  flex-wrap: wrap;
+}
+
+.columns.is-vcentered .slide-content {
+  align-items: center;
+}
+
+.columns .slide-content > .column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: .75rem;
+}
+
+.columns .slide-content > .column.is-full {
+  flex: none;
+  width: 100%;
+}
+
+.columns .slide-content > .column.is-four-fifths {
+  flex: none;
+  width: 80%;
+}
+
+.columns .slide-content > .column.is-three-quarters {
+  flex: none;
+  width: 75%;
+}
+
+.columns .slide-content > .column.is-two-thirds {
+  flex: none;
+  width: 66.6666%;
+}
+
+.columns .slide-content > .column.is-three-fifths {
+  flex: none;
+  width: 60%;
+}
+
+.columns .slide-content > .column.is-half {
+  flex: none;
+  width: 50%;
+}
+
+.columns .slide-content > .column.is-two-fifths {
+  flex: none;
+  width: 40%;
+}
+
+.columns .slide-content > .column.is-one-third {
+  flex: none;
+  width: 33.3333%;
+}
+
+.columns .slide-content > .column.is-one-quarter {
+  flex: none;
+  width: 25%;
+}
+
+.columns .slide-content > .column.is-one-fifth {
+  flex: none;
+  width: 20%;
+}
+</style><!--Printing and PDF exports--><script>var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? "reveal.js-3.9.2/css/print/pdf.css" : "reveal.js-3.9.2/css/print/paper.css";
+document.getElementsByTagName( 'head' )[0].appendChild( link );</script></head><body><div class="reveal"><div class="slides"><section class="title" data-state="title"><h1>Building a data-centric product</h1><h2>the 4D methodology</h2><div class="preamble"><div class="paragraph"><p>v1.0, 2017-31-07</p></div>
+<div class="paragraph"><p>last modified: 2020-11-15</p></div></div><p class="author"><small>== !</small></p></section>
+<section><div class="slide-content"><div class="imageblock stretch" style="text-align: center"><img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242"></div></div></section>
+<section><div class="slide-content"><div class="paragraph"><p>&#160;
+&#160;</p></div>
+<div class="paragraph"><p>Data: Diagnostic, Design, Delivery</p></div></div></section>
 <section id="_1_the_method"><h2>1. The method</h2></section>
-<section><div class="paragraph"><p>The 4D method is the product of years of experience teaching at emlyon business school about "data for business" to a variety of participants.</p></div>
+<section><div class="slide-content"><div class="paragraph"><p>The 4D method is the product of years of experience teaching at emlyon business school about "data for business" to a variety of participants.</p></div>
 <div class="paragraph"><p>Managers need to acquire a "data literacy", which is the ability to understand what role "data" can play in a business context. This is what my course <a href="http://seinecle.github.io/mk99">Big data for business</a> offers.</p></div>
 <div class="paragraph"><p>But once they grasp these fundamentals, managers also need a roadmap to kick-start and ship data-centric projects.</p></div>
 <div class="paragraph"><p>The basic issue many of them face is: "Data is the new oil, I am in charge of delivering on this promise. Where do I start?"</p></div>
@@ -103,7 +162,7 @@ table.CodeRay td.code>pre{padding:0}
 Every 6 months or so, there is a new kid on the block in machine learning, mobile app development or text mining.</p></div>
 <div class="paragraph"><p>This makes it hard to stay at the forefront of these fields, and sometimes we might even loose perspective as to the meaning and goals of what was the field we formed an interest in, just a couple of years back.</p></div>
 <div class="paragraph"><p>So I take the opportunity of this talk to reflect on data visualization, which is such a young field. I&#8217;d like to explore how data visualization has evolved, why there was a need for it to emerge, where it stands today, and I will try to imagine where it will evolve in the coming years.</p></div>
-<div class="admonitionblock important"><table><tr><td class="icon"><div class="title"></div></td><td class="content">===
+<div class="admonitionblock important"><table><tr><td class="icon"><div class="title">Important</div></td><td class="content">===
 == !
 I am more an observer than a participant in this field.</td></tr></table></div>
 <div class="paragraph"><p>My view is the one of somebody who came to data visualization around 2009 through network visualizations with <a href="http://www.gephi.org">Gephi</a>, getting my information mostly from the discussions, links and podcasts shared by data visualizers which I follow and interact with on Twitter.</p></div>
@@ -116,13 +175,15 @@ I am more an observer than a participant in this field.</td></tr></table></div>
 ==== a. Infoviz
 == !</p></div>
 <div class="paragraph"><p>Infoviz is "information visualisation" and is the name of an academic field concerned with:</p></div>
-<div class="quoteblock"><blockquote>the study of (interactive) visual representations of abstract data to reinforce human cognition.</blockquote><div class="attribution"><cite>https://en.wikipedia.org/wiki/Information_visualization</cite><br />&#8212; Wikipedia entry "Information visualization"</div></div>
+<div class="quoteblock"><blockquote>the study of (interactive) visual representations of abstract data to reinforce human cognition.</blockquote><div class="attribution"><cite>https://en.wikipedia.org/wiki/Information_visualization</cite><br>&#8212; Wikipedia entry "Information visualization"</div></div>
 <div class="paragraph"><p>The strength of this field is that it is a test bench for many assumptions you&#8217;d have on how visualizations can be effective, in terms of "reinforcing human cognition":</p></div>
 <div class="ulist"><ul><li><p>How do colors work?</p></li><li><p>What about different scales?</p></li><li><p>What is the performance of users at solving given problems when reading graph represented as a matrix, versus graphs represented as networks? Should longitudinal data be presented as time slices or animated movies for best understanding?</p></li></ul></div>
 <div class="paragraph"><p>Research in information visualization is concerned with providing solid, empirical answers to these important questions.</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/example-infovis.jpg" alt="example infovis" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/example-infovis.jpg" alt="example infovis" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>The issue is, this emphasis on hypothesis testing can be detrimental to the advancing on another fundamental goal: creating visualizations that are <strong>engaging to their audience</strong>, widely adopted and used in a world so full of information (or call it noise) that attention by individuals is becoming the scarcest of resources.</p></div>
 <div class="paragraph"><p>As illustrated by the figure above, and if I were to be a bit tough on infoviz, I&#8217;d say you need a PhD to get it: the interfaces they design are not engaging enough, not implemented on the platforms that viewers are now using, and the information displayed hardly enhances human cognition for laymen like me.</p></div>
 <div class="paragraph"><p>== !
@@ -131,24 +192,30 @@ I am more an observer than a participant in this field.</td></tr></table></div>
 <div class="paragraph"><p>You could say that infographics is a bit the contrary of infovis: communication agencies doing pretty much what they want to catch the attention of their readers, at the expense of truthfulness and reliability of the data they invoke.</p></div>
 <div class="paragraph"><p>The example below shows how colorful and catchy an infographics can be, and yet completely ineffective at conveying information.</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/example-infographics.png" alt="example infographics" width="400" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/example-infographics.png" alt="example infographics" width="400"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>Of course there are excellent infographics and Alberto Cairo, a professor and journalist by trade, reminds us in his book <a href="http://www.thefunctionalart.com/">The Functional Art</a> that carefully executed infographics are an excellent way to convey complex information in a limited amount of space.</p></div>
 <div class="paragraph"><p>But my understanding is that it is not in the basic contract of infographics to have a one to one relation with data, there is a license to <strong>illustrate</strong> the data. The reader must trust the source of the infographics much more than in information visualisation: depending on whether this is an established newspaper with a good graphics team or a communication agency doing quick and dirty work, infographics can be trusted or badly misleading.</p></div>
 <div class="paragraph"><p>== !
 ==== c. Business intelligence is still another crowd
 == !</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/example-bi.png" alt="example bi" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/example-bi.png" alt="example bi" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>The mission is basically to do "excel-level" visualizations in terms of reporting and monitoring business data.</p></div>
 <div class="paragraph"><p>Nothing fancy usually there: bar charts, pie charts (often in 3D as in the illustration above, which is wrong), line charts and progress bars assembled in dashboards, sold by companies more versed in the business side of things than graphical design.</p></div>
 <div class="paragraph"><p>== !
 ==== d. And GIS.
 == !</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/formatted/gis.jpg" alt="gis" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/formatted/gis.jpg" alt="gis" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>Geographical Information Systems (GIS) may have a claim for the longest tradition in visualizing data.</p></div>
 <div class="paragraph"><p>This is after all their business to draw maps, which is geolocalized data.</p></div>
 <div class="paragraph"><p>It could be that this long tradition was also a curse: because they developed these desktop software that were widely used in the 1990s, the 2000s and still today, they were entrenched in technologies that could not be easily adapted when web technologies opened up richer, more engaging ways to draw maps and to project overlays of data on them.</p></div>
@@ -179,8 +246,10 @@ I am more an observer than a participant in this field.</td></tr></table></div>
 <div class="paragraph"><p>Coding skills for the preparation of the data (Python or R for example), skills in javascript and other scripting language for visual design (ActionScript, Processing), a knowledge of the rules of design and a feel for esthetics, and creativity.</p></div>
 <div class="paragraph"><p>That is what you need to create this:</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/mta.jpg" alt="mta" width="500" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/mta.jpg" alt="mta" width="500"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="http://www.mta.me" class="bare">http://www.mta.me</a>)
 (by Alexander Chen, a Creative Director at Google Creative Lab)</p></div>
 <div class="paragraph"><p>== !
@@ -188,8 +257,10 @@ I am more an observer than a participant in this field.</td></tr></table></div>
 == !</p></div>
 <div class="paragraph"><p>In this community, people evaluate each other&#8217;s works, shared their latest realization chat about past and upcoming conferences but more importantly exhchange info about new frameworks and resources.</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/dataviz-communities.jpg" alt="dataviz communities" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/dataviz-communities.jpg" alt="dataviz communities" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="http://neoformix.com/2012/DataVisFieldSubGroups.html" class="bare">http://neoformix.com/2012/DataVisFieldSubGroups.html</a>)</p></div>
 <div class="paragraph"><p>== !
 ==== c. A tight knit group across the US and Europe.
@@ -198,8 +269,10 @@ I am more an observer than a participant in this field.</td></tr></table></div>
 <div class="paragraph"><p>They were particularly active in spreading news about dataviz and sharing their critical insights which contributed shaping boundaries for the field.</p></div>
 <div class="paragraph"><p>This is a personal and of course biased observation, a systematic investigation reveals a different picture (see above, and below, which is a zoom on the group where I think we would find most people self identifying as dataviz specialists):</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/dataviz-group.jpg" alt="dataviz group" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/dataviz-group.jpg" alt="dataviz group" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="http://neoformix.com/2012/DataVisField1000_Group2.pdf" class="bare">http://neoformix.com/2012/DataVisField1000_Group2.pdf</a>)</p></div>
 <div class="paragraph"><p>== !
 ==== d. A couple of emblematic projects
@@ -209,24 +282,30 @@ I am more an observer than a participant in this field.</td></tr></table></div>
 == !</p></div>
 <div class="paragraph"><p>Not infovis, not infographics, just dataviz: simplicity, interaction, access to the data.</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/oecd-better-life-index.jpg" alt="oecd better life index" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/oecd-better-life-index.jpg" alt="oecd better life index" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="http://www.oecdbetterlifeindex.org/" class="bare">http://www.oecdbetterlifeindex.org/</a>)</p></div>
 <div class="paragraph"><p>== !
 ==== ii. The "Ghost Counties" visualization by Jan Willem Tulp
 == !</p></div>
 <div class="paragraph"><p>It shows that a marriage is possible between creativity and esthetics on one hand, and cold hard data on the other hand (foreclosures per county in the US).</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/ghost-counties-screenshot.jpg" alt="ghost counties screenshot" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/ghost-counties-screenshot.jpg" alt="ghost counties screenshot" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url, needs Internet Explorer and the Java plugin: <a href="http://www.janwillemtulp.com/eyeo/" class="bare">http://www.janwillemtulp.com/eyeo/</a>)</p></div>
 <div class="paragraph"><p>== !
 ==== iii. U.S. Gun Deaths by Periscopic
 == !</p></div>
 <div class="paragraph"><p>It illustrates the power of tory telling (through the intro), granularity of the data, and impact.</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/gun-deaths.jpg" alt="gun deaths" width="500" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/gun-deaths.jpg" alt="gun deaths" width="500"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="http://guns.periscopic.com/?year=2013" class="bare">http://guns.periscopic.com/?year=2013</a>)</p></div>
 <div class="paragraph"><p>The emergence of data visualisation as a set of practice and professionals was coinciding with the surge in the new importance of data as a driver of value for business.</p></div>
 <div class="paragraph"><p>"Data visualization" became positioned as one powerful lever to extract value from datasets: it possesses both the rigor needed to report objectively on key data features, that you&#8217;d find otherwise in information visualisation, and the power to be engaging with the domain specialists or the managers in charge of finding insights in the data.</p></div>
@@ -240,8 +319,10 @@ I am more an observer than a participant in this field.</td></tr></table></div>
 <div class="paragraph"><p>What data visualization brought was impactful visualizations making engagement with data just stronger, more powerful.</p></div>
 <div class="paragraph"><p>Stamen, an agency with strong ties in the data visualization community, does this kind of maps:</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/stamen-viz.jpg" alt="stamen viz" width="500" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/stamen-viz.jpg" alt="stamen viz" width="500"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500" class="bare">http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500</a>)</p></div>
 <div class="paragraph"><p>This interactive map by Stamen is quite different from your usual GIS mapping!</p></div>
 <div class="paragraph"><p>What this kind of map brings is: interaction, custom-made design, and most of all enhanced <strong>engagement</strong> with the viewers.</p></div>
@@ -250,12 +331,16 @@ I am more an observer than a participant in this field.</td></tr></table></div>
 == !</p></div>
 <div class="paragraph"><p>In terms of networks, a pre-dataviz typical network would look like:</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/formatted/ucinet.jpg" alt="ucinet" width="500" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/formatted/ucinet.jpg" alt="ucinet" width="500"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>Dataviz brought interaction, web-based interactions:</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/d3-force-layout.jpg" alt="d3 force layout" width="500" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/d3-force-layout.jpg" alt="d3 force layout" width="500"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="http://bl.ocks.org/mbostock/1062288" class="bare">http://bl.ocks.org/mbostock/1062288</a>)</p></div>
 <div class="paragraph"><p>This type of visualization is different because:</p></div>
 <div class="ulist"><ul><li><p>you can explore the viz, not just stare at it.</p></li><li><p>you can share it - just paste the url.</p></li></ul></div>
@@ -279,34 +364,46 @@ I am more an observer than a participant in this field.</td></tr></table></div>
 <div class="paragraph"><p>The sense of esthetics and the particularity of the datasets makes of each dataviz a craftwork.</p></div>
 <div class="paragraph"><p>One of the best examples of a creative and simple design is this one by Hint.fm:</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/formatted/windmap.jpg" alt="windmap" width="500" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/formatted/windmap.jpg" alt="windmap" width="500"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="http://hint.fm/wind/" class="bare">http://hint.fm/wind/</a>)</p></div>
 <div class="paragraph"><p>(live url for a worldwide version: <a href="http://earth.nullschool.net/" class="bare">http://earth.nullschool.net/</a>)</p></div>
 <div class="paragraph"><p>== 4. 2014-2015: The stabilization of dataviz
 == !</p></div>
 <div class="paragraph"><p>Anyhow, industrialization in dataviz came in rapidly, with Tableau becoming the leader for general purpose viz, dashboards reinvented themselves in dataviz-style with Bime, Qlik, Palantir to name a few.</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/logos-bi.png" alt="logos bi" width="500" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/logos-bi.png" alt="logos bi" width="500"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>Dataviz became integrated into the business discourse on big data: the Harvard Business Review features in 2012 a blog section on data visualization where Jer Thorp contributed to set perspectives straight on data,</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/jer-thorp.jpg" alt="jer thorp" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/jer-thorp.jpg" alt="jer thorp" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="https://hbr.org/2012/11/data-humans-and-the-new-oil/" class="bare">https://hbr.org/2012/11/data-humans-and-the-new-oil/</a>)</p></div>
 <div class="paragraph"><p>Nielsen, the leader of market data and market research, worked on its corporate identity to include data visualization, with data-driven visuals custom made by Jan Willem Tulp:</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/nielsen-viz.jpg" alt="nielsen viz" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/nielsen-viz.jpg" alt="nielsen viz" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>Since 2012 or so, General Electric partners with Fathom, the agency founded by Ben Fry (co-creator of Processing!) to build visualizations relative to their corporate identity, with some impressive realizations:</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/formatted/ge.jpg" alt="ge" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/formatted/ge.jpg" alt="ge" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="http://visualization.geblogs.com/visualization/powering/" class="bare">http://visualization.geblogs.com/visualization/powering/</a>)</p></div>
 <div class="paragraph"><p>And in 2015, you know dataviz has fully stabilized when you see a panel on dataviz with Chelsea Clinton:</p></div>
 <div class="paragraph"><p>== !</p></div>
-<div class="imageblock stretch" style="text-align: center"><img src="../images/formatted/chelsea.jpg" alt="chelsea" height="100%" /></div>
-<div class="paragraph"><p>== !</p></div>
+<div class="imageblock stretch" style="text-align: center"><img src="images/formatted/chelsea.jpg" alt="chelsea" height="100%"></div>
+<div class="paragraph"><p>== !
+&#160;
+&#160;</p></div>
 <div class="paragraph"><p>(live url: <a href="https://www.youtube.com/watch?v=YFrmQDCpgxs" class="bare">https://www.youtube.com/watch?v=YFrmQDCpgxs</a> - the panel is with Ben Fry).</p></div>
 <div class="paragraph"><p>So until 2012 and 2013 I&#8217;d say that we were in the golden age of #dataviz in terms of discoveries and charting new paths: excited comments on new productions by the NYT, debates around the goals of #dataviz: is it a way to tell stories? To open new worlds? To educate?</p></div>
 <div class="paragraph"><p>New connections made with new comers, new agencies, people meeting for the first time in conferences after exchanging on Twitter for years, new positions, big clients&#8230;&#8203;</p></div>
@@ -343,9 +440,11 @@ When you move away from the screen and start connecting to a variety of objects 
 <div class="paragraph"><p>== The end
 == !</p></div>
 <div class="paragraph"><p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p></div>
-<div class="paragraph"><p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150" /></span>
+<div class="paragraph"><p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
 This course is made by Clement Levallois.</p></div>
 <div class="paragraph"><p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p></div>
+<div class="paragraph"><p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+ses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p></div>
 <div class="paragraph"><p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
@@ -363,15 +462,41 @@ This course is made by Clement Levallois.</p></div>
     class="statcounter"
     src="//c.statcounter.com/11411204/0/11411204/1/" alt="site
     stats"></a></div></noscript>
-    <!-- End of StatCounter Code for Default Guide --></p></div></div></div></section></div></div><script src="reveal.js-3.6.0/lib/js/head.min.js"></script><script src="reveal.js-3.6.0/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+    <!-- End of StatCounter Code for Default Guide --></p></div></div></div></div></section></div></div><script src="reveal.js-3.9.2/js/reveal.js"></script><script>Array.prototype.slice.call(document.querySelectorAll('.slides section')).forEach(function(slide) {
+  if (slide.getAttribute('data-background-color')) return;
+  // user needs to explicitly say he wants CSS color to override otherwise we might break custom css or theme (#226)
+  if (!(slide.classList.contains('canvas') || slide.classList.contains('background'))) return;
+  var bgColor = getComputedStyle(slide).backgroundColor;
+  if (bgColor !== 'rgba(0, 0, 0, 0)' && bgColor !== 'transparent') {
+    slide.setAttribute('data-background-color', bgColor);
+    slide.style.backgroundColor = 'transparent';
+  }
+});
+
+// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
 Reveal.initialize({
-  // Display controls in the bottom right corner
+  // Display presentation control arrows
   controls: true,
+  // Help the user learn the controls by providing hints, for example by
+  // bouncing the down arrow when they first encounter a vertical slide
+  controlsTutorial: true,
+  // Determines where controls appear, "edges" or "bottom-right"
+  controlsLayout: 'bottom-right',
+  // Visibility rule for backwards navigation arrows; "faded", "hidden"
+  // or "visible"
+  controlsBackArrows: 'faded',
   // Display a presentation progress bar
   progress: true,
   // Display the page number of the current slide
   slideNumber: false,
-  // Push each slide change to the browser history
+  // Control which views the slide number displays on
+  showSlideNumber: 'all',
+  // Add the current slide number to the URL hash so that reloading the
+  // page/copying the URL will return you to the same slide
+  hash: false,
+  // Push each slide change to the browser history. Implies `hash: true`
   history: false,
   // Enable keyboard shortcuts for navigation
   keyboard: true,
@@ -385,38 +510,92 @@ Reveal.initialize({
   loop: false,
   // Change the presentation direction to be RTL
   rtl: false,
+  // See https://github.com/hakimel/reveal.js/#navigation-mode
+  navigationMode: 'default',
+  // Randomizes the order of slides each time the presentation loads
+  shuffle: false,
   // Turns fragments on and off globally
   fragments: true,
+  // Flags whether to include the current fragment in the URL,
+  // so that reloading brings you to the same fragment position
+  fragmentInURL: false,
   // Flags if the presentation is running in an embedded mode,
   // i.e. contained within a limited portion of the screen
   embedded: false,
+  // Flags if we should show a help overlay when the questionmark
+  // key is pressed
+  help: true,
+  // Flags if speaker notes should be visible to all viewers
+  showNotes: false,
+  // Global override for autolaying embedded media (video/audio/iframe)
+  // - null: Media will only autoplay if data-autoplay is present
+  // - true: All media will autoplay, regardless of individual setting
+  // - false: No media will autoplay, regardless of individual setting
+  autoPlayMedia: null,
+  // Global override for preloading lazy-loaded iframes
+  // - null: Iframes with data-src AND data-preload will be loaded when within
+  //   the viewDistance, iframes with only data-src will be loaded when visible
+  // - true: All iframes with data-src will be loaded when within the viewDistance
+  // - false: All iframes with data-src will be loaded only when visible
+  preloadIframes: null,
   // Number of milliseconds between automatically proceeding to the
   // next slide, disabled when set to 0, this value can be overwritten
   // by using a data-autoslide attribute on your slides
   autoSlide: 0,
   // Stop auto-sliding after user input
   autoSlideStoppable: true,
+  // Use this method for navigation when auto-sliding
+  autoSlideMethod: Reveal.navigateNext,
+  // Specify the average time in seconds that you think you will spend
+  // presenting each slide. This is used to show a pacing timer in the
+  // speaker view
+  defaultTiming: 120,
+  // Specify the total time in seconds that is available to
+  // present.  If this is set to a nonzero value, the pacing
+  // timer will work out the time available for each slide,
+  // instead of using the defaultTiming value
+  totalTime: 0,
+  // Specify the minimum amount of time you want to allot to
+  // each slide, if using the totalTime calculation method.  If
+  // the automated time allocation causes slide pacing to fall
+  // below this threshold, then you will see an alert in the
+  // speaker notes window
+  minimumTimePerSlide: 0,
   // Enable slide navigation via mouse wheel
   mouseWheel: false,
+  // Hide cursor if inactive
+  hideInactiveCursor: true,
+  // Time before the cursor is hidden (in ms)
+  hideCursorTime: 5000,
   // Hides the address bar on mobile devices
   hideAddressBar: true,
   // Opens links in an iframe preview overlay
+  // Add `data-preview-link` and `data-preview-link="false"` to customise each link
+  // individually
   previewLinks: false,
-  // Theme (e.g., beige, black, league, night, serif, simple, sky, solarized, white)
-  // NOTE setting the theme in the config no longer works in reveal.js 3.x
-  //theme: Reveal.getQueryHash().theme || 'white',
   // Transition style (e.g., none, fade, slide, convex, concave, zoom)
-  transition: Reveal.getQueryHash().transition || 'linear',
+  transition: 'linear',
   // Transition speed (e.g., default, fast, slow)
   transitionSpeed: 'default',
   // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
   backgroundTransition: 'fade',
   // Number of slides away from the current that are visible
   viewDistance: 3,
+  // Number of slides away from the current that are visible on mobile
+  // devices. It is advisable to set this to a lower number than
+  // viewDistance in order to save resources.
+  mobileViewDistance: 3,
   // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
   parallaxBackgroundImage: '',
   // Parallax background size in CSS syntax (e.g., "2100px 900px")
   parallaxBackgroundSize: '',
+  // Number of pixels to move the parallax background per slide
+  // - Calculated automatically unless specified
+  // - Set to 0 to disable movement along an axis
+  parallaxBackgroundHorizontal: null,
+  parallaxBackgroundVertical: null,
+  // The display mode that will be used to show slides
+  display: 'block',
 
   // The "normal" size of the presentation, aspect ratio will be preserved
   // when the presentation is scaled to fit different resolutions. Can be
@@ -431,13 +610,81 @@ Reveal.initialize({
   minScale: 0.2,
   maxScale: 10.0,
 
+  // PDF Export Options
+  // Put each fragment on a separate page
+  pdfSeparateFragments: true,
+  // For slides that do not fit on a page, max number of pages
+  pdfMaxPagesPerSlide: 1,
+
   // Optional libraries used to extend on reveal.js
   dependencies: [
-      { src: 'reveal.js-3.6.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: 'reveal.js-3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'reveal.js-3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      
-      { src: 'reveal.js-3.6.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'reveal.js-3.6.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-  ]
+      { src: 'reveal.js-3.9.2/plugin/zoom-js/zoom.js', async: true },
+      { src: 'reveal.js-3.9.2/plugin/notes/notes.js', async: true }
+  ],
+
+  
+
+});</script><script>var dom = {};
+dom.slides = document.querySelector('.reveal .slides');
+
+function getRemainingHeight(element, slideElement, height) {
+  height = height || 0;
+  if (element) {
+    var newHeight, oldHeight = element.style.height;
+    // Change the .stretch element height to 0 in order find the height of all
+    // the other elements
+    element.style.height = '0px';
+    // In Overview mode, the parent (.slide) height is set of 700px.
+    // Restore it temporarily to its natural height.
+    slideElement.style.height = 'auto';
+    newHeight = height - slideElement.offsetHeight;
+    // Restore the old height, just in case
+    element.style.height = oldHeight + 'px';
+    // Clear the parent (.slide) height. .removeProperty works in IE9+
+    slideElement.style.removeProperty('height');
+    return newHeight;
+  }
+  return height;
+}
+
+function layoutSlideContents(width, height) {
+  // Handle sizing of elements with the 'stretch' class
+  toArray(dom.slides.querySelectorAll('section .stretch')).forEach(function (element) {
+    // Determine how much vertical space we can use
+    var limit = 5; // hard limit
+    var parent = element.parentNode;
+    while (parent.nodeName !== 'SECTION' && limit > 0) {
+      parent = parent.parentNode;
+      limit--;
+    }
+    if (limit === 0) {
+      // unable to find parent, aborting!
+      return;
+    }
+    var remainingHeight = getRemainingHeight(element, parent, height);
+    // Consider the aspect ratio of media elements
+    if (/(img|video)/gi.test(element.nodeName)) {
+      var nw = element.naturalWidth || element.videoWidth, nh = element.naturalHeight || element.videoHeight;
+      var es = Math.min(width / nw, remainingHeight / nh);
+      element.style.width = (nw * es) + 'px';
+      element.style.height = (nh * es) + 'px';
+    } else {
+      element.style.width = width + 'px';
+      element.style.height = remainingHeight + 'px';
+    }
+  });
+}
+
+function toArray(o) {
+  return Array.prototype.slice.call(o);
+}
+
+Reveal.addEventListener('slidechanged', function () {
+  layoutSlideContents(960, 700)
+});
+Reveal.addEventListener('ready', function () {
+  layoutSlideContents(960, 700)
+});
+Reveal.addEventListener('resize', function () {
+  layoutSlideContents(960, 700)
 });</script></body></html>

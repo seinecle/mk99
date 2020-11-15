@@ -9,7 +9,7 @@ last modified: {docdate}
 :revnumber: 1.0
 :example-caption!:
 :sourcedir: ../../../main/java
-ifndef::imagesdir[:imagesdir: ../images]
+:imagesdir: images
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 

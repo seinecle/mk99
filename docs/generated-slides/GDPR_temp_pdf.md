@@ -1,6 +1,6 @@
-= La RGPD et la protection des données dans le monde
+= GDPR and data protection globally
 Clément Levallois <levallois@em-lyon.com>
-2018-06-20
+2017-11-01
 
 last modified: {docdate}
 
@@ -17,229 +17,315 @@ image::EMLyon_logo_corp.png[align="center"]
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-== 1. Evolution de la réglementation de la protection des données dans l'UE
+
+== 1. Evolution of data protection regulations in the EU
 
 // +
-=== a. La directive sur la protection des données de l'UE en 1995
+=== a. The Directive on Data Protection by the EU in 1995
 
-La présente directive découle des lignes directrices antérieures adoptées par l'OCDE dès 1980 sur http://www.oecd.org/internet/ieconomy/oecdguidelinesontheprotectionofprivacyandtransborderflowsofpersonaldata.htm[la protection de la vie privée et les flux transfrontières de données personnelles].
-
-// +
-Ces lignes directrices ont été adoptées par les membres de l'OCDE mais n'étaient pas contraignantes: par exemple, https://en.wikipedia.org/wiki/Data_Protection_Directive#Context[les États-Unis n'ont pas traduit les lignes directrices de l'OCDE sur la protection de la vie privée dans leur législation]. En revanche, ces lignes directrices ont été transformées en directive par l'UE en 1995.
+This Directive derives from earlier guidelines adopted by the OECD as far back as 1980 on http://www.oecd.org/internet/ieconomy/oecdguidelinesontheprotectionofprivacyandtransborderflowsofpersonaldata.htm[the Protection of Privacy and Transborder Flows of Personal Data].
 
 // +
-- http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31995L0046:fr:HTML[tout le texte de la directive européenne sur la protection des données]
-- https://en.wikipedia.org/wiki/Data_Protection_Directive[Présentation de la directive de l'UE sur la protection des données]
+These guidelines were adopted by OECD members but were non binding: for instance, https://en.wikipedia.org/wiki/Data_Protection_Directive#Context[the US did not translate the OECD guidelines on the protection of privacy into their legislation]. In contrast, these guidelines were turned into a Directive in the EU, in 1995.
 
 // +
-Cette directive garantit et facilite la libre circulation des données à caractère personnel entre les États membres de l'UE, en fournissant un cadre valable pour tous les États membres pour la protection des données à caractère personnel des citoyens de l'UE. *Cela répond à la volonté de créer un marché commun, qui doit évoluer dans un cadre réglementaire uniforme*.
+- http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:31995L0046:en:HTML[full text of the EU Directive on Data Protection]
+- https://en.wikipedia.org/wiki/Data_Protection_Directive[Wikipedia presentation of the EU Directive on Data Protection on]
 
 // +
-Comment est traitée la question des données de l'UE détenues par des sociétés non européennes? Par exemple, quel est le niveau de protection des données personnelles d'un individu français appartenant à une entreprise américaine sur un serveur situé aux États-Unis?
+This Directive guarantees and facilitates the free movement of personal data across EU States, by providing a framework valid for all member States for the protection of personal data of EU citizens.
 
 // +
--> Selon la directive de 1995, la règle était simple: *il est interdit d'exporter des données personnelles vers un pays hors UE avec un niveau plus faible de protection des données personnelles.*
+How is handled the issue of EU data owned by non EU companies? For example, what is the level of protection for the personal data of a French individual, owned by a US company on a server located in the US?
+
+// +
+-> According to the 1995 Directive, th rule was simple: *it is forbidden to export personal data to a non EU-country with a lower level of personal data protection.*
 
 
 // +
-=== b. Le cas des données sur les citoyens de l'UE hébergées par des entreprises américaines
+=== b. The case of EU citizen data hosted by US-based companies
 
 // +
-L'affaire est importante car les principaux fournisseurs de services impliquant des données personnelles (google search, gmail, gmaps, facebook, etc.) sont hébergés aux États-Unis.
+The case is important as major providers of services involving personal data (google search, gmail, gmaps, facebook, etc.) is hosted in the US.
 
 // +
-La question est: quel est le niveau de protection des données dans ce cas? Niveau de protection américain ou UE?
+The question is: what it the level of data protection in this case? US-level of protection or EU?
 
 // +
-Il ne devrait pas être possible d'héberger des données personnelles des citoyens de l'UE aux États-Unis parce que les États-Unis ont des réglementations beaucoup moins strictes en la matière. En effet, aux États-Unis:
+It should not be possible to host EU citizen personal data in the US because the US have much less stringent regulations in these matters. Indeed, in the US:
 
 // +
-- Il existe un cadre réglementaire sur la protection des données pour les données collectées ou détenues par le gouvernement fédéral.
-- Mais il n'existe pas de cadre général sur la protection des données en dehors du gouvernement fédéral (niveau des États).
+- There is a regulatory framework on data protection for data collected or held by the Federal government
+
+- But there is no general framework on data protection outside the Federal government (states level).
 
 // +
-Pour remédier à cette situation, les principes du ((Safe Harbor)) sont un accord international entre les États-Unis et l'UE qui a été mis en place en 2000.
+To remedy this situation, the ((Safe Harbor)) principles is an international agreement between the USA and EU which was put in place in 2000.
 
 // +
-Les principes du https://en.wikipedia.org/wiki/International_Safe_Harbor_Privacy_Principles[Safe Harbor] sont une série de règlements que les entreprises américaines peuvent accepter de suivre si elles veulent héberger des données personnelles l'UE sur le sol américain. Ces règles fournissent un niveau de protection des données équivalent à celui garanti par la directive sur la protection des données de 1995 dans l'UE.
+The https://en.wikipedia.org/wiki/International_Safe_Harbor_Privacy_Principles[Safe Harbor principles] are a series of regulations which US companies can agree to follow if they want to host EU personal data outside the EU. These rules provide a level of data protection equivalent to the one guaranteed by the 1995 Data Protection Directive in the EU.
 
 // +
-En Octobre 2015, https://en.wikipedia.org/wiki/Max_Schrems[Maximillian Schrems] (un étudiant en droit en Autriche) ((("Schrems, Max"))) a lancé une action en justice contre Facebook pour défaut de protection de ses données personnelles contre l'espionnage de la NSA aux Etats-Unis.
+In October 2015, https://en.wikipedia.org/wiki/Max_Schrems[Maximillian Schrems] (a student in law in Austria)((("Schrems, Max"))) launched a lawsuit against Facebook for failure to protect his personal data against the spying of the NSA in the USA.
 
 // +
-La défense de Facebook était de faire valoir qu'elle était conforme à la Safe Harbor Act. La plainte a été portée devant la Cour européenne de justice, qui a fini par déclarer *invalide le Safe Harbor Act* parce que:
+The defense of Facebook was to argue that it complied with the Safe Harbor Act. The lawsuit went to the European Court of Justice which ended up *declaring the Safe Harbor Act invalid* because:
 
 // +
- "Une législation permettant aux pouvoirs publics d'accéder de manière généralisée au contenu des communications électroniques doit être considérée comme compromettant l'essence même du droit fondamental au respect de la vie privée".
+"legislation permitting the public authorities to have access on a generalized basis to the content of electronic communications must be regarded as compromising the essence of the fundamental right to respect for private life"."
 
 // +
-Les mois suivants ont été marqués par une incertitude juridique car les données de l'UE hébergées sur des serveurs américains ne l'étaient plus dans des conditions légales - le Safe Harbor Act avait cessé d'exister.
+The following months were a state of legal uncertainty as the EU data hosted on US servers were so under no legal conditions.
 
 // +
-Le 2 février 2016, l'UE et les États-Unis ont créé un nouvel accord juridique connu sous le nom de https://en.wikipedia.org/wiki/EU-US_Privacy_Shield[EU-US Privacy Shield], qui est le successeur du Safe Harbor Act. Le https://www.scmagazineuk.com/how-will-the-new-eu-us-privacy-shield-fit-with-the-upcoming-general-data-protection-regulation/article/531527/[((Privacy Shield))] diffère du Safe Harbor Act dans ce qui suit:
+On 2nd February 2016, the EU and the US created a new legal agreement known as the https://en.wikipedia.org/wiki/EU-US_Privacy_Shield[EU-US Privacy Shield]. The https://www.scmagazineuk.com/how-will-the-new-eu-us-privacy-shield-fit-with-the-upcoming-general-data-protection-regulation/article/531527/[the ((Privacy Shield)) differs from the Safe Harbor Act] in the following:
 
 // +
-1. Des obligations plus fortes pour les entreprises aux États-Unis de protéger les données personnelles des Européens et de renforcer le contrôle et l'application par le Département du Commerce des États-Unis et la Federal Trade Commission.
-// +
-[début = 2]
-2. L'accès aux données personnelles transférées en vertu du nouvel arrangement par les autorités publiques aux États-Unis devait être soumis à des conditions, des limites et une surveillance claires, empêchant l'accès généralisé des organismes de surveillance de l'État.
-// +
-[début = 3]
-3. Protection effective des droits des citoyens de l'UE avec plusieurs possibilités de recours.
-// +
-[début = 4]
-4. Un mécanisme d'examen conjoint annuel entre l'UE et les États-Unis.
-
-=== c. RGPD, un nouveau cadre légal
-Le traitement des données des citoyens de l'UE en dehors de l'UE est d'une grande complexité juridique, comme en témoigne la fragilité des accords juridiques entre l'UE et les États-Unis. L'UE devrait-elle créer des accords juridiques spéciaux avec tous les pays souhaitant que leurs entreprises puissent héberger des données personnelles de l'UE? Cela ressemble à un cauchemar bureaucratique (ou au rêve d'un avocat).
-// +
-Au lieu de cela, l'UE a conçu *un nouveau principe juridique* s'appliquant à tous les pays détenant des données personnelles de l'UE, sans avoir besoin d'accords bilatéraux. *Ceci est le RGPD*.
+1. Stronger obligations on companies in the US to protect the personal data of Europeans' and stronger monitoring and enforcement by the US Department of Commerce and Federal Trade Commission.
 
 // +
-Le *RGPD: Règlement général sur la protection des données* est un cadre juridique entré en vigueur en 2018 qui remplace la directive de 1995 par une nouvelle règle simple: les données des citoyens de l'UE doivent être traitées conformément aux règles établies par l'UE
+[start=2]
+2. Access to personal data transferred under the new arrangement by public authorities on the US was scheduled to be subject to clear conditions, limitations and oversight, preventing generalized access by state surveillance organizations.
 
 // +
-Avant d'examiner le RGPD plus en détail, nous définissons les termes juridiques qui y sont utilisés:
-
-
-== 2. Définitions clés
-Source pour ces définitions de clé: un  https://github.com/seinecle/mk99/blob/master/src/main/asciidoc/resources/DATAIKU-WP-DATA-RGPD.pdf[livre blanc synthétique sur le RGPD par ((Dataiku))] et le https://www.cnil.fr/fr/glossaire[glossaire de la CNIL].
-
-=== a. Données personnelles
-Toute information identifiant directement ou indirectement une personne physique (ex. nom, no d’immatriculation, no de téléphone, photographie, date de naissance, commune de résidence, empreinte digitale...). (((données, données personnelles)))
-
-=== b. Données sensibles
-Les données sensibles (((données, données sensibles))) constituent une catégorie particulière de données personnelles (notamment données personnelles révélant l'origine raciale ou ethnique, opinions politiques, croyances religieuses ou philosophiques, appartenance à un syndicat, données sur la santé ou la vie sexuelle) à laquelle des protections supplémentaires s'appliquent.
-
-=== c. Personne concernée
-Une ((personne concernée)) est un être humain sur lequel des données personnelles sont collectées.
+[start=3]
+3. Effective protection of EU citizens' rights with several redress possibilities.
 
 // +
-=== d. Responsable de traitement ("Data controller" en anglais)
+[start=4]
+4. An annual joint review mechanism between the EU and the US.
 
 // +
-Un responsable de traitement ((("data controller, responsable de traitement"))) est une entité qui détermine les objectifs, les conditions et les moyens du traitement des données personnelles. Lorsque l'organisation est suffisamment grande, une position dédiée de "Responsable de traitement" peut être créée, sinon c'est le responsable légal de l'organisation.
-
-Ex: en France, le responsable de traitement est chargé de déclarer les données personnelles traitées à la https://www.cnil.fr/fr/home[CNIL].
-
-=== e. Sous-traitant ("Data processor" en anglais)
-Un sous-traitant ((("data processor, sous-traitant"))) est une entité qui traite des données personnelles pour le compte du responsable de traitement (par exemple, fournisseurs d'hébergement cloud et de centre de données).
+=== c. GDPR, a new legal framework
 
 // +
-Jusqu'en 2017, il a été considéré que le sous-traitant "exécute" simplement la mission donnée par le responsable de traitement:
+The handling of EU citizen data outside of the EU is of a great legal complexity, as evidenced by the fragility of the EU-US legal agreements. Should the EU create special legal agreements with each and every country wishing for their companies to be able to host EU personal data? This seems like a bureaucratic nightmare (or a lawyer's dream).
 
-- le sous-traitant est chargé des mesures de sécurité appropriées pour assurer la protection des données contre la violation, la perte ...
-- mais le sous-traitant n'est pas responsable des procédures de collecte inappropriées des données personnelles établies par le responsable du traitement.
-
-// +
-À partir de 2018 avec le ((RGPD)), *le sous-traitant est co-responsable avec le responsable de traitement en cas de violation de données compromettant les données personnelles des personnes concernées*.
-
-
-== 4. Quatre principes clés pour le traitement légitime des données personnelles
-
-=== a. Consentement préalable
-Le ((consentement préalable)) est requis avant de recueillir des données personnelles en vue de leur traitement:
-
-- La politique de collecte de données doit être clairement mise à la disposition des utilisateurs
-- L'exclusion doit être possible
-- Le consentement doit être présenté clairement
-
-=== b. Adéquation / objectif légitime
-Les données collectées doivent être exactement nécessaires pour exécuter le service, pas plus.
-
-Time out: les informations doivent être supprimées lorsque le service s'arrête. En France, il y a une limite de 13 mois après laquelle le consentement doit être renouvelé.
-
-=== c. Portabilité
--> L'information doit être disponible sur demande (((données, portabilité de)))
-
-En 2011, Max Schrems a demandé toutes ses données Facebook. Il en a reçu 1200 pages.
-
-Grâce à ses efforts, maintenant la plupart des médias sociaux offrent un téléchargement en un clic de vos données personnelles.
-
-La portabilité couvre également https://journals.openedition.org/revdh/840[le «droit à l'oubli», détaillé sur dans cette article].
-
-=== d. sécurité
-Toutes les précautions raisonnables doivent être prises contre les violations de données.
-Les précautions prises devraient être proportionnées aux dommages qui résulteraient d'une violation de la sécurité.
+Instead, the EU has designed *a new legal principle* applying to all countries holding EU personal data, without the need for bilateral agreements. *This is the GDPR*.
 
 // +
-Notions de base: définir et gérer les droits d'accès à chaque aspect pertinent des données.
-Les utilisateurs doivent être informés des violations de sécurité susceptibles d'affecter leurs données
+The *GDPR: General Data Protection Regulation* is a legal framework coming into place in 2018, replacing the 1995 Directive by a new, simple rule: EU citizen data must be handled according to the rules stated by the EU, *wherever these data are stored or processed*.
 
-== 5. En 2018: le RGPD et ce qu'il change
-RGPD signifie "Règlement Général sur la Protection des Données". Il a été adopté par l'UE le 14 avril 2016 et est appliqué depuis le *25 mai 2018*.
+// +
+Before examining the GDPR in more details, we define the legal terms used in it:
 
-Ses principales nouveautés, par rapport à la directive européenne sur la protection des données, sont:
 
+== 2. Key definitions
+
+// +
+Source for these key definitions : a synthetic https://github.com/seinecle/mk99/blob/master/src/main/asciidoc/resources/DATAIKU-WP-DATA-GDPR.pdf[whitepaper on the GDPR by Dataiku].(((Dataiku)))
+
+// +
+=== a. Personal data
+
+// +
+Personal data(((data, personal data))) is any information related to a human being (or data subject) that can be used to directly or indirectly identify that person.
+
+For example: name, photos, email addresses, bank details, posts on social networking websites, medical information, IP addresses, etc.
+
+// +
+=== b. Sensitive data
+
+// +
+Sensitive data(((data, sensitive data))) is a special category of personal data (including personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade-union membership, and data concerning health or sex life) to which additional protections apply.
+
+// +
+=== c. Data subject
+
+// +
+A ((data subject)) is a human being on whom personal data is being collected.
+
+// +
+=== d. Data controller (DC)
+
+// +
+A ((data controller)) is an entity that determines the purposes, conditions, and means of the processing of personal data. When the organization is large enough, a dedicated position of "Data Controller" can be created.
+
+Ex: in France, the DC is in charge of declaring the personal data being processed to the https://www.cnil.fr/en/home[CNIL].
+
+// +
+=== e. Data processor (DP)
+
+// +
+A ((data processor)) An entity that processes personal data on behalf of the controller (e.g., cloud and data center providers).
+
+// +
+Until 2017, it was considered that the data processor is just "executing" the mission given by the DC:
+
+- the DP is in charge of proper security measures to ensure data protection against breach, loss...
+- but the DP is not liable for the improper collection procedures of personal data set up by the data controller.
+
+// +
+Starting in 2018 with the ((GDPR)) (see next), the DP is co-responsible with the DC in case of a data breach compromising the personal data of subjects.
+
+
+== 4. Four key principles for the rightful processing of personal data
+
+// +
+=== a. Prior consent
+
+// +
+Prior consent(((prior consent))) is required before collecting personal data in view of processing it:
+
+- Data collection policy should be made clearly available to users
+- Opt out should be possible
+- Consent should be presented clearly
+
+// +
+=== b. Adequacy / legitimate purpose
+
+// +
+The data collected should be exactly necessary to run the service, not more.
+
+// +
+Time out: information should be deleted when service stops. In France, there is a 13 month limit after which consent must be renewed.
+
+// +
+=== c. Portability
+
+// +
+-> Information should be available on request(((data, portability of)))
+
+In 2011 Max Schrems requested all his Facebook data. He received 1,200 pages of it.
+
+Thanks to his efforts, now most of social media offer a one-click download of your personal data.
+
+Portability also covers https://www.bbc.com/news/world-europe-27388289[the "right to be forgotten"].
+
+
+// +
+=== d. Safety
+
+// +
+All reasonable precautions should be taken against data breaches.
+
+Precautions taken should be scaled to the damage which would result from a breach in security.
+
+// +
+Basics: define and manage access rights to each relevant aspects of the data.
+
+Users should be told about security breaches potentially affecting their data
+
+== 5. In 2018: the GDPR and what it changes
+
+// +
+GDPR stands for "General Data Protection Regulation". It was adopted by the EU on April 14, 2016 and was enforced on *May 25, 2018*.
+
+Its key novelties, compared to the EU Data Protection Directive, are:
+
+// +
 === a. Application
-Le RGPD s'applique à toute entreprise (*quel que soit son emplacement*, sa taille et son secteur) traitant les données personnelles des personnes résidant dans l'UE.
-// +
-Par exemple, une entreprise qui traite les données personnelles aux États-Unis de citoyens de l'UE est tenue de se conformer au RGPD.
-
-=== b. Responsabilité
-Sous le RGPD, le responsable de traitement et le sous-traitant doivent se conformer à la législation. En vertu de la directive précédente sur la protection des données, seuls les responsables du traitement des données étaient tenus responsables de la conformité à la protection des données, et non des processeurs de données.
-
-=== c. Pénalités
-Avec une amende pouvant aller jusqu'à 4% du chiffre d'affaires global annuel ou 20 millions d'euros (selon le montant le plus élevé), les pénalités pour non-conformité sont élevées.
-
-=== d. Consentement
-En vertu du ((RGPD)), les entreprises ne pourront plus utiliser des termes longs et illisibles remplis de jargon juridique; consentement pour la collecte et l'utilisation des données personnelles doit être en langage clair et en détail le but du traitement des données.
-
-=== e. Les violations de données
-Réglementation accrue entourant la divulgation de *violations de données* (((données, violations de données))). Plus précisément, des rapports beaucoup plus rapides sont requis (dans les 72 heures).
-
-=== f. Droits des sujets de données
-Les personnes concernées dans l'UE ont élargi leurs droits en matière de protection des données, notamment:
 
 // +
-- le ((droit à l'oubli)) (effacement de leurs données),
-- le droit d'accès (obtenir des informations sur exactement quelles données sont traitées où et dans quel but),
-- et le droit à la portabilité des données (recevoir une copie des données personnelles les concernant).
+The GDPR applies to any company (regardless of their location, size, and sector) processing the personal data of people residing in the EU.
 
 // +
-Les citoyens ont maintenant également le droit de questionner et remettre en cause les décisions qui les affectent sur une base purement algorithmique.
+For example, a US-based company processing the personal data within the United States of EU citizens is required to comply.
 
 // +
-=== g. Confidentialité "by design"
-*Confidentialité by design* (((vie privée, confidentialité by design))) est une obligation légale de considérer la confidentialité des données dès le début de tous les projets et initiatives, et non après coup.
-
-
-=== h. Nomination d'un délégué à la protection des données (DPD)
-Les Contrôleurs et processeurs dont le cœur de métier est le suivi régulier et systématique des données personnelles à grande échelle ou qui traitent de catégories particulières de données, devront désigner un délégués à la protection des données. Le DPD peut être nommé en interne, embauché ou sous contrat, mais (parmi d'autres exigences spécifiques) il doit être un expert en droit et en pratiques de protection des données.
-
-== 6. Protection des données: un aperçu rapide en dehors de l'UE
-
-=== a. ETATS-UNIS
-- Cadre sur la protection des données pour les données collectées / détenues par le gouvernement fédéral
-- Mais pas de cadre général sur la protection des données en dehors du gouvernement fédéral
-
-=== b. Inde
-IT Act de 2000 + http://www.wipo.int/wipolex/en/details.jsp?id=15063[Règlement IT 2011]
-
-- Met l'accent sur les informations personnelles *sensibles*: mots de passe, informations financières, état de santé, orientation sexuelle, informations biométriques.
-
-- Pas besoin de déclarer les activités de traitement de données à une autorité
-
-=== c. Chine
-(((Chine)))
-// +
-En Chine, la protection des données n'est pas promulguée dans une seule loi, à l'exception de lois de portée plus large: le Comité permanent du Congrès national du peuple a promulgué une http://tinyurl.com/npcdecision[Décision concernant le renforcement de la protection de l'information sur les réseaux].
-// +
-La Chine a plutôt des textes législatifs sectoriels, tels que le règlement sur la protection des renseignements personnels des utilisateurs de services de télécommunication et d'Internet (http://tinyurl.com/miitdecision[((MIIT Regulation))]).
+=== b. Responsibility
 
 // +
-L'Etat chinois développe des initiatives telles que https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_cr%C3%A9dit_social[le Système de Crédit social] qui reposent sur un système de surveillance de masse, en opposition à la libre maîtrise pour un individu de ses données personnelles.
+Under the GDPR, both the ((data controller)) and the ((data processor)) must comply with the legislation. Under the previous/current Data Protection Directive, only data controllers were held liable for data protection compliance, not data processors.
 
-==== d. Législation pour la protection des données personnelles dans d'autres pays
+// +
+=== c. Penalties
 
-Pour avoir une https://uk.practicallaw.thomsonreuters.com/Browse/Home/International/DataProtectionGlobalGuide?__lrTS=20171113205355950&transitionType=Default&contextData=(sc.Default)&firstPage=true&bhcp=1[vue synthétique des lois sur la protection des données dans d'autres pays, visitez ce site Web par Thomson Reuters].
+// +
+With a maximum fine of up to 4 percent of annual global turnover or €20 million (whichever is greater), penalties for non-compliance are steep.
 
-== Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
+// +
+=== d. Consent
+
+// +
+Under the ((GDPR)), companies will no longer be able to use long, illegible terms and conditions full of legalese; consent for collection and use of personal data must be in plain language and detail the purpose of data processing.
+
+// +
+=== e. Data breaches
+
+// +
+Increased regulation surrounding the disclosure of *data breaches*(((data, data breaches))); specifically, much quicker reporting is required (within 72 hours).
+
+// +
+=== f. Data Subjects’ Rights
+
+// +
+EU data subjects have expanded rights when it comes to data protection, including:
+
+// +
+- the *right to be forgotten*(((right to be forgotten))) (have their data erased),
+- the right to access (obtain information about exactly what data is being processed where and for what purpose),
+- and the right to data portability (receive a copy of the personal data concerning them).
+
+// +
+Citizens now also have the right to question and fight decisions that affect them that have been made on a purely algorithmic basis.
+
+// +
+=== g. Privacy by design
+
+// +
+*Privacy by design*(((privacy, privacy by design))) is a legal requirement to consider data privacy on the onset of all projects and initiatives, not as an afterthought.
+
+
+// +
+=== h. Data Protection Officer (DPO) Appointment
+
+// +
+Controllers and processors whose core business is regular and systematic monitoring of data subjects on a large scale or who deal with special categories of data will be required to appoint a DPO. The DPO may be appointed from within, hired, or contracted, but (among other specific requirements) (s)he must be an expert on data protection law and practices.
+
+== 6. Data protection: a quick view outside the EU
+
+// +
+=== a. U.S.A.
+
+// +
+-> Framework on data protection for data collected / held by the Federal government
+
+-> But no general framework on data protection outside the Fed. gov
+
+// +
+=== b. India
+
+// +
+IT Act of 2000 + http://www.wipo.int/wipolex/en/details.jsp?id=15063[IT Rules 2011]
+
+// +
+-> Focus on *sensitive* personal information:
+
+Passwords, financial information, health condition, sexual orientation, biometric information
+
+-> No need to declare data processing activities to an authority
+
+// +
+=== c. China
+
+(((China)))
+
+// +
+In China, data protection is not enacted in a single piece of legislation, except for laws of a broader scope: National People’s Congress Standing Committee http://tinyurl.com/npcdecision[Decision concerning Strengthening Network Information Protection].
+
+// +
+Rather, China has sector based pieces of legislation, such as the Regulation on Personal Information Protection of Telecom and Internet Users (http://tinyurl.com/miitdecision[MIIT Regulation]).
+
+// +
+The Chinese state is developing initiatives such as the https://en.wikipedia.org/wiki/Social_Credit_System[Social Credit System], which are based on a mass surveillance systems, as opposed to the free control for an individual of his personal data.
+
+// +
+==== d. Legislation for the protection of personal data in other countries
+
+// +
+To have a https://uk.practicallaw.thomsonreuters.com/Browse/Home/International/DataProtectionGlobalGuide?__lrTS=20171113205355950&transitionType=Default&contextData=(sc.Default)&firstPage=true&bhcp=1[synthetic view of data protection laws in other countries, visit this website by Thomson Reuters].
+
+== The end
+// +
+
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
-Clement Levallois
+This course is made by Clement Levallois.
 
-Découvrez mes autres cours et projets : https://www.clementlevallois.net
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
-Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+einecle]
+itter.com/seinecle[@seinecle]

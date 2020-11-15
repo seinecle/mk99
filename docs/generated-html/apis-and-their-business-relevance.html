@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.8">
+<meta name="generator" content="Asciidoctor 2.0.10">
 <meta name="author" content="Clément Levallois">
 <title>APIs and their business relevance</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -241,7 +241,7 @@ table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;pad
 pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
 pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
-.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
 .quoteblock blockquote{margin:0;padding:0;border:0}
 .quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
@@ -258,7 +258,8 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
 .quoteblock.abstract{margin:0 1em 1.25em;display:block}
 .quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
-.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 table.tableblock{max-width:100%;border-collapse:separate}
@@ -479,15 +480,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2019-05-09</p>
+<p>last modified: 2020-11-15</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
+<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 </div>
@@ -665,12 +667,13 @@ Without a line of code:</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/luggage-api.jpg" alt="luggage api" width="350">
+<img src="images/luggage-api.jpg" alt="luggage api" width="350">
 </div>
 <div class="title">Figure 1. Building a world wide luggage delivery service without code</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>This service is designed by organizing several sub-services, which coordinate by communicating via their APIs.
@@ -743,12 +746,13 @@ He created:</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/pieterlevelsapi.jpg" alt="pieterlevelsapi">
+<img src="images/pieterlevelsapi.jpg" alt="pieterlevelsapi">
 </div>
 <div class="title">Figure 2. Pieter Levels explains his reasons for opening or closing an API</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Product managers must have a fine appreciation of the uses that the opening of an API will stimulate.
@@ -799,12 +803,13 @@ As a result, a large number of services associated to APIs have developed to cat
 <div style="page-break-after: always;"></div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/api-landscape-2017.jpg" alt="api landscape 2017">
+<img src="images/api-landscape-2017.jpg" alt="api landscape 2017">
 </div>
 <div class="title">Figure 3. The API landscape in 2017 by Mehdi Medjaoui</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 </div>
@@ -818,7 +823,7 @@ As a result, a large number of services associated to APIs have developed to cat
 <p><a href="https://www.slideshare.net/jmusser/j-musser-apibizmodels2013">API Business Models: 20 models in 20 minutes</a> (🕒 20 min read).</p>
 </li>
 <li>
-<p><a href="https://zapier.com/learn/apis/">An introduction to APIs: a complete course for real beginners</a>. A short online course, just a bit technical, on APIs. (🕒 4 hours).</p>
+<p><a href="https://zapier.com/learn/apis">An introduction to APIs: a complete course for real beginners</a>. A short online course, just a bit technical, on APIs. (🕒 4 hours).</p>
 </li>
 </ul>
 </div>
@@ -826,7 +831,7 @@ As a result, a large number of services associated to APIs have developed to cat
 <p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
+<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
 </div>
 <div class="paragraph">
 <p>This course is made by Clement Levallois.</p>
@@ -836,6 +841,7 @@ As a result, a large number of services associated to APIs have developed to cat
 </div>
 <div class="paragraph">
 <p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+ter.com/seinecle[@seinecle]
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project = 11411204;
@@ -860,7 +866,7 @@ As a result, a large number of services associated to APIs have developed to cat
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2019-05-09 22:35:10 +0200
+Last updated 2020-11-15 17:45:53 +0100
 </div>
 </div>
 </body>

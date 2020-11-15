@@ -1,8 +1,6 @@
-= Machine learning, data science et intelligence artificielle
+= Machine learning, data science and artificial intelligence
 Clément Levallois <levallois@em-lyon.com>
-2018-06-20
-
-last modified: {docdate}
+{docdate}
 
 :icons!:
 :iconsfont:   font-awesome
@@ -15,17 +13,18 @@ last modified: {docdate}
 image::EMLyon_logo_corp.png[width="242" align="center"]
 {nbsp} +
 
+first edition: 2017-11-01
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
 
-== 1. Expliquer le machine learning en termes simples
-=== a. Une comparaison avec les statistiques classiques
+== 1. Explaining machine learning in simple terms
+=== a. A comparison with classic statistics
 
-(((machine learning, rapport aux statistiques)))
+(((machine learning, in relation to statistics)))
 
-Nous allons comparer l'apprentissage automatique à un exemple classique de la statistique: calculer une ligne de régression pour identifier une tendance dans un nuage de points.
-// +
-Pour illustrer, nous prenons quelques données sur les budgets de marketing et les chiffres de vente dans la période correspondante :
+We will https://stats.stackexchange.com/questions/6/the-two-cultures-statistics-vs-machine-learning[compare machine learning to a classic example from statistics]: computing a regression line to identify a trend in a scatter plot.
+
+To illustrate, we take some data about marketing budgets and sales figures in the corresponding period:
 
 // +
 
@@ -33,333 +32,389 @@ image::regression-line.png[pdfwidth="100%", align="center", title="A linear regr
 {nbsp} +
 
 // +
-Les "statistiques régulières" permettent, entre autres :
-// +
-1. trouver la relation numérique entre les deux séries, basée sur un modèle formel pré-établi (par exemple, https://fr.wikipedia.org/wiki/M%C3%A9thode_des_moindres_carr%C3%A9s_ordinaire[la méthode des moindres carrés ordinaire]).
-// +
--> on voit que les ventes sont corrélées avec les dépenses marketing. Il est probable que plus de dépenses de marketing entraîne plus de ventes.
+*"Regular statistics" enables, among other things:*
 
 // +
-[start=2]
-2. prédire, sur la base de ce modèle:
+1. to find the numerical relation between the 2 series, based on a pre-established formal model (eg, https://en.wikipedia.org/wiki/Ordinary_least_squares[ordinary least squares]).
 
--> en traçant la ligne plus loin (en utilisant le modèle formel), nous pouvons prédire l'effet de plus de dépenses de marketing
-
-// +
-Les "statistiques régulières" sont le domaine de travail de scientifiques qui:
-
-1. sont hautement qualifiés en mathématiques
-// +
--> leur objectif est de trouver l'expression mathématique exacte définissant la situation, dans des conditions rigoureuses
-
-// +
--> une approche clé est *l'inférence*: en définissant un *échantillon des données* de la taille juste, nous pouvons arriver à des conclusions valables pour l'ensemble de données entier.
+-> we see that sales are correlated with marketing spendings. It is likely that more marketing spending causes more sales.
 
 // +
 [start=2]
-2. n'ont pas de formation en informatique
+2. to predict, based on this model:
 
--> ils ne sont pas concernés par la difficulté d'éxecution de leurs modèles sur des ordinateurs, en termes de calculs à effectuer.
-
-// +
--> puisqu'ils se concentrent sur *l'échantillonnage* des données, ils ne sont pas concernés par le traitement de jeux de données entiers avec des problèmes informatiques connexes.
+-> by tracing the line further (using the formal model), we can predict the effect of more marketing spending
 
 // +
-Le *Machine learning* (((machine learning))) fait des choses similaires à la statistique, mais d'une manière légèrement différente:
+*"Regular statistics" is advanced by scientists who:*
 
-- on met l'accent sur la bonne prédiction, sans se soucier d'identifier le modèle mathématique sous-jacent
-- la prévision doit être réalisable dans le temps disponible, avec les ressources informatiques disponibles
-- les données d'intérêt sont dans un format / dans un volume qui n'est pas couramment traité par les outils de statistiques standards (par exemple: images, observations comportant des centaines de paramètres)
+1. are highly skilled in mathematics
+// +
+-> their goal is to find the exact mathematical expression defining the situation at hand, under rigorous conditions
 
 // +
-L'apprentissage automatique est le domaine de travail de scientifiques qui sont typiquement :
+-> a key approach is *inference*: by defining a *sample of the data* of just the correct size, we can reach conclusions which are valid for the entire dataset.
+
+// +
+[start=2]
+2. have no training in computer science / software engineering
+
+-> they neglect how hard it can be to run their models on computers, in terms of taking advantage of new types of hardward (ex: GPUs, see below).
+
+-> since they focus on *sampling* the data, they are not concerned with handling entire datasets with related IT issues.
+
+// +
+*Machine learning*(((machine learning))) does similar things to statistics, but in a slightly different way:
+
+- there is an emphasis on getting the prediction right, not caring for identifying the underlying mathematical model
+- the prediction needs to be achievable in the time available, with the computing resources available
+- the data of interest is in a format / in a volume which is not commonly handled by regular statistics package (eg: images, observations with hundreds of features)
+
+// +
+*Machine learning is advanced by scientists who are typically:*
 
 // +
 [start=1]
-1. hautement qualifiés en statistiques (les statistiques "classiques" que nous avons vu ci-dessus)
+1. highly skilled in statistics (the "classic" statistics we have seen above)
+
 // +
 [start=2]
-2. avec une formation ou une expérience en informatique, familiers du travail sur données non structurées / big data
+2. with a training or experience in computer science, familiar with working with unstructured data / big data
+
 // +
 [start=3]
-3. habitués au travail dans des environnements (industriels, militaires, ...) où les aspects opérationnels du problème sont des déterminants clés (données non structurées, limites sur les ressources informatiques)
+
+3. working in environments (industry, military, ...) where the operational aspects of the problem are key determinants (unstructured data, limits on computing resources)
+// +
+Machine learning puts a premium on techniques which are "computationally adequate":
 
 // +
-L'apprentissage automatique met l'accent sur les techniques qui sont «adéquates en termes de calculs» :
+- which need the minimum / the simplest algebraic operations to run: the best technique is worthless if it's too long or expensive to compute.
+- which can be run in such a way that multiple computers work in parallel (simultaneously) to solve it.
 
 // +
-- qui ont besoin des opérations algébriques minimales / les plus simples à exécuter: la meilleure technique est sans valeur si elle est trop longue ou trop chère à calculer.
-- qui peut être exécuté de telle sorte que plusieurs ordinateurs travaillent en parallèle (simultanément) pour le résoudre.
+(footnote: so machine learning, in my opinion, shares the spirit of "getting things done" as was https://en.wikipedia.org/wiki/Operations_research#Second_World_War[operations research in  the early days])
 
 // +
-(note de bas de page: donc l'apprentissage automatique, à mon avis, partage l'esprit de "faire avancer les choses" comme l'était  https://fr.wikipedia.org/wiki/Recherche_op%C3%A9rationnelle#Historique[la recherche opérationnelle pendant la Seconde Guerre mondiale])
+The pursuit of improved models in traditional statistics is not immune to the notion of ((computational efficiency)) - it does count as a desirable property - but in machine learning this is largely a pre-requisite.
+
+=== b. An illustration: the case of the GPU
+A key illustration of the difference between statistics and machine learning can be provided with the use of *graphic cards*(((GPU - graphic cards))).
 
 // +
-La poursuite de modèles améliorés dans les statistiques traditionnelles n'ignore pas la question de la charge de calcul ("computational effiency") - elle est considérée comme une propriété souhaitable - mais dans l'apprentissage automatique, c'est en grande partie un pré-requis.
+Graphic cards (also called GPUs: graphics processing units) are these electronic boards full of chips found inside a computer, which are used for the display of images and videos on computer screens:
 
-=== b. Une illustration: le cas des GPUs
-Une illustration clé de la différence entre les statistiques et l'apprentissage automatique peut être fournie avec l'utilisation de *cartes graphiques* (((GPU - cartes graphiques))).
-// +
-Les cartes graphiques (ou GPU: unités de traitement graphique) sont ces composants électroniques pleines de puces trouvées dans un ordinateur, qui sont utilisées pour l'affichage d'images et de vidéos sur des écrans :
-
-// +
-image::gpu.jpg[pdfwidth = "50%", align = "center", title = "Une carte graphique vendue par NVidia- un des principaux fabricants",width="300",book="keep"]
+image::gpu.jpg[pdfwidth="50%", align="center", title="A graphic card sold by NVidia - a leading manufacturer", width="300", book="keep"]
 {nbsp} +
 
-// +
-Dans les années 1990, le jeu vidéo s'est beaucoup développé, des arcades aux ordinateurs de bureau. Les développeurs de jeux ont créé des jeux informatiques montrant des scènes et des animations de plus en plus complexes. (voir https://youtu.be/3UTdxI2IEp0[une évolution des graphiques en jeux vidéo], et https://www.youtube.com/watch?v=Rywkv7PCYDM[les jeux graphiques avancés en 2017]).
-// +
-Ces jeux vidéo ont besoin de puissantes cartes vidéo (aussi appelés https://fr.wikipedia.org/wiki/Processeur_graphique[processeurs graphiques])
-pour restituer des scènes complexes dans les moindres détails - avec des calculs sur les effets de lumière et les animations *réalisés en temps réel*.
-// +
-Cela a poussé au développement de *GPUs* plus puissants (((GPU - cartes graphiques))).
-Leurs caractéristiques sont qu'ils peuvent calculer des opérations simples pour changer les couleurs des pixels, *pour chacun des millions de pixels de l'écran en parallèle*, de sorte que la prochaine séquence de l'image peut être rendue en millisecondes.
+In the 1990s, video gaming developed a lot from arcades to desktop computers. Game developers created computer games showing more and more complex scenes and animations. (see https://youtu.be/3UTdxI2IEp0[an evolution of graphics], and https://www.youtube.com/watch?v=Rywkv7PCYDM[advanced graphics games in 2017]).
 
 // +
-Des millions d'opérations simples se déroulent en parallèle pour le prix d'un GPU (quelques centaines de dollars), pas le prix de douzaines d'ordinateurs fonctionnant en parallèle (peut être des dizaines de milliers de dollars)?
-C'est intéressant pour les calculs sur les big data!
-// +
-Si un problème statistique de prédiction peut être décomposé en opérations simples pouvant être exécutées sur un GPU, alors un grand ensemble de données peut être analysé en secondes ou en minutes sur un ordinateur portable, au lieu d'un cluster d'ordinateurs.
-// +
-Pour illustrer la différence de vitesse entre une opération mathématique exécutée sans ou avec un *GPU* (((GPU - cartes graphiques))):
+These video games need powerful video cards (aka https://en.wikipedia.org/wiki/Graphics_processing_unit[GPUs]) to render complex scenes in full details - with calculations on light effects and animations *made in real time*.
 
 // +
-vidéo::-P28LKWTzrI[youtube, width = 500, height = 400]
+This pushed for the development of ever more powerful *GPUs*(((GPU - graphic cards))).
+Their characteristics is that they can compute simple operations to change pixel colors, *for each of the millions of pixels of the screen in parallel*, so that the next frame of the picture can be rendered in milliseconds.
 
 // +
-Le problème est le suivant : pour utiliser un GPU pour les calculs, vous devez conceptualiser le problème comme un qui peut être :
-// +
-- décomposé en une très grande série
-- d'opérations très simples (fondamentalement, des sommes ou des multiplications, rien de complexe comme des racines carrées ou des polynômes)
-- qui peuvent fonctionner indépendamment les uns des autres.
-// +
-L'apprentissage automatique ou machine learning prête généralement attention à cette dimension du problème dès la phase de conception des modèles et des techniques, là où les statistiques "classiques" ne considèrent généralement pas le problème, ou seulement en aval : non pas au stade de la conception mais à la phase de mise en œuvre - ce qui est souvent trop tard.
+Millions of simple operations run in parallel for the price of a GPU (a couple of hundreds of dollars), not the price of dozens of computers running in parallel (can be dozens of thousands of dollars)?
+This is interesting for computations on big data!
 
 // +
-Maintenant que nous avons vu comment les statistiques et l'apprentissage machine diffèrent dans leur approche, nous devons encore comprendre comment l'apprentissage automatique obtient de bons résultats, s'il ne repose pas sur la modélisation / l'échantillonnage des données comme le font les statistiques.
-
-L'apprentissage automatique peut être catégorisé en 3 familles :
-
-== 2. Trois familles d'apprentissage automatique
-=== a. L'apprentissage non supervisé
-*Apprentissage non supervisé* (((apprentissage automatique, apprentissage non supervisé))) désigne les méthodes qui utilisent un jeu de données nouveau et y trouvent des modèles intéressants, *sans que cela ne soit par apprentissage sur de précédents ensembles de données similaires*.
+If a statistical problem for prediction can be broken down into simple operations which can be run on a GPU, then a large dataset can be analyzed in seconds or minutes on a laptop, instead of  cluster of computers.
 
 // +
-Comment l'apprentissage supervisé fonctionne-t-il ? Prenons un exemple. Dans une réception de mariage, comment asseoir des gens avec des intérêts similaires aux mêmes tables?
+To illustrate the difference in speed between a mathematical operation run without / with a *GPU*(((GPU - graphic cards))):
 
-// +
-Les données initiales du problème :
-
-- une liste de 100 invités, et pour chaque invité, une liste de 3 goûts que vous connaissez d'eux
-- 10 tables avec 10 sièges chacune.
-// +
-- une mesure de similitude entre 2 invités: 2 invités ont une similitude de 0% s'ils partagent 0 goût, 33% s'ils partagent 1 goût, 66% avec 2 goûts en commun, 100% avec trois intérêts correspondants.
-// +
-- une mesure de similitude au niveau d'une table : la somme des similitudes entre toutes les paires d'invités à la table (45 paires possibles pour une table de 10).
-
-// +
-Une solution possible au problème peut être apportée en utilisant une approche non supervisée :
-
-// +
-1. Sur un ordinateur, assigner au hasard les 100 invités aux 10 tables.
-2. prendre une table :
-// +
-** mesurer le degré de similitude des goûts pour la table
-** échanger le siège de 1 personne à cette table, avec le siège d'une personne à une table différente.
-** mesurer à nouveau le degré de similarité de la table: si elle s'est améliorée (parce que maintenant, les personnes à cette table ont plus de goûts en commun), alors garder les nouvelles assises. Sinon, annuler l'échange de place et revenir à la situation avant l'échange.
-// +
-3. Répéter l'étape 2 pour toutes les tables, plusieurs fois, jusqu'à ce que plus aucun échange de sièges n'améliore le degréé de similitude à aucune table. Lorsque cette étape est atteinte, nous disons que le modèle a "*convergé*".
-
-// +
-Cette approche permet d'identifier des groupes de personnes qui ont des points communs. C'est évidemment d'une grande utilité pour organiser des données, depuis une segmentation de clientèle ou de prospects, jusqu'à une classification de produits en catégories à des fins d'évaluation ou de gestion de portefeuille.
-
-// +
-image::kmeans.jpg[pdfwidth = "60%", align = "center", title = "K-means, une approche d'apprentissage non supervisée", width = 300]
+video::-P28LKWTzrI[youtube, align="center"]
 {nbsp} +
 
-=== b. L'approche d'apprentissage * supervisée *
-L'*Apprentissage supervisé* (((apprentissage machine, apprentissage supervisé))) est l'approche consistant à calibrer un modèle basé sur l'histoire des expériences passées afin de deviner / prédire une nouvelle occurrence de la même expérience.
+The issue is: to use a GPU for calculations, you need to conceptualize the problem at hand as one that can be:
+
+- broken into a very large series...
+- ... of very simple operations (basically, sums or multiplications, nothing complex like square roots or polynomials)
+- ... which can run independently from each other.
+
+-> then, the calculations will be able to be done on a GPU, which can accelerate the treatment by 10x, 100x or more.
+
 // +
-Prenons l'exemple suivant : comment faire pour qu'un ordinateur "devine" si une image représente un chat ou un chien? Pour cela, en approche supervisée, nous allons commencer par récolter 50000 images ou plus de chats et de chiens, avec leurs légendes associées, comme ceci:
-
+Machine learning typically pays attention to these dimensions of the problem right from the design phase of models and techniques, where classic statistics would typically not consider the issue, or only downstream: not at the design phase but at the implementation phase, which is too late.
 
 // +
-** une image d'un chat, avec la légende "chat"
+Now that we have seen how statistics and machine learning differ in their approach, we still need to understand how does machine learning get good results, if it does not rely on modelling / sampling the data like statistics does?
 
-** une image d'un chien, avec la légende "chien"
+Machine learning can be categorized in 3 families of tricks:
 
-** une autre image d'un chat, avec la légende "chat"
+== 2. Three families of machine learning
+=== a. The *unsupervised* learning approach
+*Unsupervised learning*(((machine learning, unsupervised learning))) designates the methods which take a fresh dataset and find interesting patterns in it, *without inferring from previous, similar datasets*.
+
+How does supervised learning work?
+Let's take an example.
+In a wedding reception, how to sit people with similar interests at the same tables?
+
+// +
+The set up:
+
+- a list of 100 guests, and 3 tastes you know they have for each of them
+- 10 tables with 10 sits each.
+
+// +
+- a measure of similarity between 2 guests: 2 guests have similarity of 0% if they share 0 tastes, 33% if they share 1 taste, 66% with 2 tastes in common, 100% with three matching interests.
+
+// +
+- a measure of similarity at the level of a table: the sum of similarities between all pairs of guests at the table (45 pairs possible for a table of 10).
+
+// +
+A possible solution using an unsupervised approach:
+
+// +
+- on a computer, assign randomly the 100 guests to the 10 tables.
+
+// +
+- for each table:
+** measure the degree of similarity of tastes for the table
+** exchange the sit of 1 person at this table, with the sit of a person at a different table.
+** measure again the degree of similarity for the table: if it improves, keep the new sits, if not, revert to before the exchange
+
+And repeat for all tables, many times, until no exchange of sits improves the similarity.
+When this stage is achieved, we say the model has "*converged*" to one of the best possible solutions.
+
+// +
+This approach makes it possible to identify groups of people who have common points.
+It is obviously very useful to organize the world around us in business, from a segmentation of customers or prospects, to a classification of products in categories for evaluation or portfolio management purposes.
+// +
+There is a very large field of scientific research devoted to designing better clustering techniques suiting a variety of situations.
+One of the most popular of these techniques remains the"k-means", and was invented in the 1950s:
+
+image::kmeans.jpg[pdfwidth="60%", align="center", title="k-means clustering - an unsupervised learning approach", width="300"]
+{nbsp} +
+
+=== b. The *supervised* learning approach
+*Supervised learning*(((machine learning, supervised learning))) is the approach consisting in calibrating a model based on the history of past experiences, in order to predict a new occurrence of the same experience with great accuracy.
+Let's take an exmple.
+
+Imagine we collected from Instagram 50,000 images of cats and dogs.
+
+** an image of a cat, with the hashtag "#cat"
+
+** an image of a dog, with the caption "#dog"
+
+** another image of a cat, with the caption "#cat"
 
 etc....
 
 // +
-- Ces 50000 images et leur légende s'appelle le _trainin set_. (((apprentissage automatique, training set))).
-- Ceci est aussi appelé un ensemble de données *libellées* (((apprentissage automatique, ensemble de données libellées))), ce qui signifie que nous avons une étiquette décrivant chacune des observations (en anglais : _labelled set_).
+- This collection of 50,000 images with their captions is called the *training set*(((machine learning, training set))).
+- this is also called a *labelled dataset*(((machine learning, labelled dataset))), meaning that we have a label describing each of the observation.
 
 // +
 [TIP]
 ====
-Dans un jeu de données libellé, d'où viennent les étiquettes?
+In a training set, where do the labels come from?
 
-- les étiquettes peuvent être fournies par les utilisateurs d'un service. Par exemple, les photos sur Instagram légendées par des hashtags sont exactement cela: une image avec une étiquette. L'étiquetage est fait par les utilisateurs d'Instagram affichant les photos et en écrivant les hashtags ci-dessous. Instagram est un service gratuit, mais les jeu de données libellées qu'il crée sont d'une grande valeur pour une entreprise comme Instagram (et pour Facebook, qui a racheté Instagram).
-
-- ils peuvent être produits par des travailleurs humains (((data science et travail humain))). En pratique, les humains sont payés quelques centimes par image qu'ils doivent étiqueter (est-ce un chat? Est-ce un chien? Etc.). Une grande industrie et un marché du travail associé se développent pour effectuer une variété de tâches de ce genre. Une main-d'œuvre croissante fournit leur ((travail numérique)) aux entreprises qui ont besoin de *l'étiquetage des données* (((données, étiquetage des données)) ou de *nettoyer, classer ou qualifier les données*. Voir le travail de http://www.casilli.fr/about/[Antonio Casilli] ((("Casilli, Antonio"))) sur ces sujets.
+- they can simply be provided by users of a service. For instance, pics on Instagram captioned by hashtags are exactly that: a picture with a label. The labelling is done by the users of Instagram posting the pictures and writing the hashtags below it. Instagram is a free service but the training sets it creates are of great value to the company (Instagram is owned by Facebook).
+- they can be produced by human workers(((human labor))). In practice, humans are paid a few cents per picture which they have to label (is it a cat? is it a dog? etc.). A large industry and job market is developing to perform a variety of tasks of this kind (this is sometimes called the http://www.bbc.co.uk/newsbeat/article/37908263/deliveroo-and-uber-what-is-the-gig-economy[gig economy]). There is a growing workforce providing their ((digital labor)) to companies in need of *data labeling*(((data, data labeling))) or *data curation*(((data, data curation))). See the work of http://www.casilli.fr/about/[Antonio Casilli]((("Casilli, Antonio"))) for further reference.
 ====
 
 // +
-La tâche est la suivante: si nous donnons à notre ordinateur une nouvelle image d'un chat __sans étiquette__, pourra-t-il deviner l'étiquette "chat"?
+The challenge for the computer / software is this one: if we get a new image of a cat *without a caption*, will it be able to guess the label "cat"?
 
 // +
-La méthode:
-- prendre une liste de coefficients aléatoires (en pratique, la liste est un vecteur, ou une matrice).
-// +
-- pour chacune des 50 000 photos de chiens et de chats:
-** appliquer les coefficients à l'image à portée de main (disons que nous avons un chien ici)
-** Si le résultat est "chien", ne faites rien, ça marche!
-** Si le résultat est "chat", modifiez légèrement les coefficients.
-** passer à l'image suivante
-// +
-- Après avoir parcouru 50 000 images en boucle, les paramètres ont été ajustés et réglés. C'était *l'entraînement du modèle*.
+Supervised learning proceeds this way:
+
+- take a list of random coefficients (in practice, the list is a vector, or a matrix).
 
 // +
-Maintenant, lorsque vous présentez une nouvelle image au logiciel que vous venez d'entraîner, l'application du modèle devrait produire une prédiction correcte ("chat" ou "chien").
+- for each of the 50,000 pictures of dogs and cats:
+** apply the coefficients to the picture at hand (let's say we have a dog here)
+** If the result is "dog", do nothing, it works!
+** If the result is "cat", change slightly the coefficients.
+** move to the next picture
 
 // +
-L'apprentissage supervisé est actuellement la famille d'apprentissage automatique la plus populaire et obtient d'excellents résultats notamment en reconnaissance d'image, même si certains cas restent difficiles à résoudre:
+- After looping through 50,000 pictures the coefficients have hopefully converged. This was the *training of the model*.
 
 // +
-image::muffin.jpg[pdfwidth = "60%", align = "center", title = "Un cas de test difficile pour l'apprentissage supervisé", width = 400, book = "keep"]
+Now, when you get new pictures of cats and dogs (the *fresh set*), applying the trained model should output a correct prediction (label "cat" or label "dog").
+
+// +
+Supervised learning is currently the most popular family of machine learning and obtains excellent results especially in image recognition, even though some cases remain hard to crack:
+
+image::muffin.jpg[pdfwidth="60%", align="center", title="A hard test case for supervised learning", width=400, book="keep"]
 {nbsp} +
 
-// +
-C'est ce qu'on appelle l'apprentissage *supervisé* car l'apprentissage est guidé, dirigé, encadré par des exemples passés.
+(https://www.freecodecamp.org/news/chihuahua-or-muffin-my-search-for-the-best-computer-vision-api-cbda4d6b425d/[source])
+
+It is called *supervised* learning because the learning is very much constrained / supervised by the intensive training performed:
+
+-> there is limited or no "unsupervised discovery" of novelty.
 
 // +
-video::4HCE1P-m1l8[youtube, largeur = 500, hauteur = 400]
+Important take aways on the supervised approach:
 
-// +
-Il est important de retenir que :
+- *collecting __large__ datasets for training is key*. Without these data, no supervised learning.
+- the training set should be __specific__: if you want the software to learn how to "recognize" cats and dogs, you should train it with pictures of cats and dogs, not pictures from random animals.
+- supervised learning is not good at analyzing situations entirely different from what is in the training set.
 
-- *La collecte de grands ensembles de données pour la phase d'entraînement est clé*. Sans ces données, pas d'apprentissage supervisé.
-- l'apprentissage supervisé ne permet pas d'analyser des situations entièrement différentes de ce qui est représenté dans le jeu de données sur lequel l'apprentissage a été entrainé. Un modèle entraîné sur 50,000 photos de chats et de chiens ne saura pas reconnaître un dauphin.
+=== c. The *reinforcement* learning approach
+To understand reinforcement learning(((machine learning, reinforcement learning))) in an intuitive sense, we can think of how animals can learn quickly by *ignoring* undesirable behavior and rewarding desirable behavior.
 
+It's easy and only takes a few seconds.
+The following video shows B. F. Skinner, a central figure in behavioral psychology in the 1950s-1970s, who teaches a pigeon how to turn around.
+For this, Skinner proceeds simply by rewarding the pigeon with seeds, as soon as the pigeon makes rotational movements.
+At the end, the pigeon finally made a complete turn on himself, because he learned that it would give him a reward.
 
-// +
-=== c. L'approche de l'apprentissage par *renforcement* (reinforcement learning)
-Pour comprendre l'apprentissage par renforcement ((apprentissage automatique, apprentissage par renforcement))), nous pouvons penser intuitivement comment les animaux peuvent apprendre rapidement en *ignorant* les comportements indésirables et en *récompensant* les comportements souhaitables.
-
-C'est facile et ne prend que quelques secondes. La vidéo suivante montre B.F. Skinner, figure centrale de la psychologie comportemenale dans les années 1950-1970, qui fait faire un tour sur lui-même à un pigeon simplement en récompensant le fait de tourner par des graines :
-
-// +
-video::TtfQlkGwE2U[youtube, largeur = 500, hauteur = 400]
-
-// +
-Outre les pigeons, l'apprentissage par renforcement peut être appliqué à tout type d' "agents experts".
-
-Prenons le cas d'un jeu vidéo comme Super Mario Bros:
-
-// +
-image::mario.jpg[pdfwidth = "60%", align = "center", title = "Mario Bros, un jeu vidéo populaire"]
+video::TtfQlkGwE2U[youtube, align="center"]
 {nbsp} +
 
+Footnote: how does this apply to learning in humans?
+On the topic of learning and decision making, I warmly recommend https://global.oup.com/academic/product/foundations-of-neuroeconomic-analysis-9780199744251[Foundations of Neuroeconomic Analysis by Paul Glimcher], professor of neuroscience, psychology and economics at NYU:
 
 // +
-Structure du jeu / de la tâche:
+[TIP]
+====
+this is a very hard book to read as it covers three disciplines in depth.
+The biological mechanisms of decision making it describes can be inspiring to design new computational approaches.
+====
 
-- But de la tâche: Mario doit collecter des pièces d'or et compléter le jeu en atteignant l'extrême droite de l'écran.
-- Résultat négatif à éviter: se faire tuer par des ennemis ou en tombant dans des trous.
-// +
-- Point de départ: Mario Bros est debout au début du jeu.
-- Actions possibles: se déplacer à droite, à gauche, sauter, s'accroupir, tirer en avant.
-
-// +
-L'apprentissage par renforcement fonctionne de la manière suivante :
-
-1. Faire faire à Mario une nouvelle action aléatoire ("essayer quelque chose"), par exemple: "déplace-toi à droite".
-2. Le jeu se termine (Mario a bougé à droite, a été touché par un ennemi et est mort)
-// +
-[début = 3]
-3. Ce résultat est stocké quelque part:
-** se déplacer à droite => bien (on a progressé dans le jeu, même si c'est très peu). A refaire!
-** marcher près d'un ennemi et être touché par celui-ci => mauvais. A éviter! Déclenchons une autre action à proximité d'un ennemi (comme "sauter en avançant", par exempe).
-// +
-[début = 4]
-4. Le jeu recommence (retour à l'étape 1) avec une combinaison de :
-** actions qui ont été enregistrées comme positives lors de l'étape précédente
-** essais de nouvelles choses (sauter, tirer?) à proximité d'une situation associée à un résultat négatif au tour précédent.
-
-// +
-Après avoir bouclé de 1. à 4. des milliers de fois, et enregistré à chaque fois des combinaisons d'actions favorables à répéter, et défavorables à éviter, Mario finit par arriver au bout du jeu, sans qu'aucun joueur humain ne tienne les commandes :
-
-// +
-video::iakFfOmanJU[youtube, width = 500, height = 400]
-
-// +
-L'apprentissage par renforcement est perçu comme correspondant à un aspect important de l'apprentissage humain / de l'intelligence humaine (axé sur les buts, «essai et erreur»).
-
-
-// +
-=== d. Quand l'apprentissage automatique est-il utile?
-L'utilisation de l'apprentissage automatique peut être un gaspillage de ressources, lorsque des statistiques bien connues peuvent être facilement appliquées.
-// +
-Des indices que la modélisation statistique "classique" (peut-être aussi simple qu'une régression linéaire) devrait suffire:
-// +
-- L'ensemble de données n'est pas grand (moins de 50k observations), l'apprentissage supervisé ne fonctionnera pas
-- Les données sont parfaitement structurées (données tabulaires) (((données structurées)))
-- Les points de données ont peu de dimensions (chaque observation a peu d'attributs - il y apeu "colonnes" dans une représentation sous forme de tableau)
-
-// +
-Cas où la modélisation des statistiques "classiques" est *nécessaire*:
-
-- La question concerne la contribution relative des variables indépendantes à la détermination d'un résultat
-
-== 3. Apprentissage automatique et data science
-L'apprentissage automatique est une seule étape dans la longue chaîne du traitement et de l'analyse des données.
-Le processus du traitement et de l'analyse des données a été formalisé dans les années 1980 sous le nom de "data mining", "exploration des données", "fouille de données," ou https://en.wikipedia.org/wiki/Data_mining#Process[((kdd: Knowledge Discovery in Databases))].
-
-// +
-image::kdd.png[align = "center", title = "KDD - découverte des connaissances dans les bases de données", width = 500, book = "keep"]
+image::glimcher.jpg[pdfwidth="40%", align="center",title="Foundations of Neuroeconomics by Paul Glimcher - 2010", width="250", book="keep"]
 {nbsp} +
 
-// +
-Des représentations plus récentes des étapes du traitement des données ont été suggérées, laissant place au rôle de la ((visualisation de données)) :
+Besides pigeons, reinforcement learning can be applied to any kind of "expert agents".
 
--> voir https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400[le processus de conception de l'information par Ben Fry] ((("Fry, Ben"))) et ce workflow de  http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html[visualisation des données par Moritz Stefaner] ((("Stefaner, Moritz"))) :
+Take the case of a video game like Super Mario Bros:
 
-// +
-image::stefaner.png[pdfwidth = "90%", align = "center", title = "workflow de visualisation des données par Moritz Stefaner", width = 500, book = "keep"]
+image::mario.jpg[pdfwidth="60%", align="center",title="Mario Bros - a popular video game", width="250"]
 {nbsp} +
 
-// +
-L'apprentissage automatique est l'une des techniques (avec les statistiques traditionnelles) qui intervient à une des étapes de la data science. Mais la data science demande un ensemble de compétences bien plus vaste que la seule capacité d'analyse via du machine learning.
+Structure of the game / the task:
+
+- Goal of the task: Mario should collect gold coins and complete the game by reaching the far right of the screen.
+- Negative outcome to be avoided: Mario getting killed by enemies or falling into holes.
 
 // +
-Les compétences d'une équipe de (data scientist) sont souvent représentées comme la réunion de trois domaines distincts :
+- Starting point: Mario Bros is standing at the beginning of the game, doing nothing, at the far left of the screen.
+- Possible actions: move right, jump, stand & do nothing, shoot ahead.
+
+Reinforcement learning works by:
+
+1. Making Mario do a new random action ("try something"), for example: "move right"
+2. The game ends (Mario moved right, gets hit by a enemy)
 
 // +
-image::conway.png[pdfwidth = "40%", align = "center", title = "http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram[The Diagramme de Venn de la science des données par Drew Conway", book =" keep "]
+[start=3]
+3. This result is stored somewhere:
+** if Mario moved to the right = good (because the goal of the game is to go completely to the right)
+** getting hit by an enemy or falling in a hole = bad
+
+// +
+[start=4]
+4. Game starts over (back to step 1) with a a combination of
+** continue doing the actions that were recorded as positive in step 3
+** try something new (jump, shoot?) when close to a situation associated with a negative outcome in step 3
+
+// +
+After looping from 1. to 4. thousands of times, Mario memorizes all the actions to do to complete the game, without any human player:
+
+video::qv6UVOQ0F44[youtube, align="center"]
 {nbsp} +
 
-
-== 4. Intelligence artificielle
-=== a. Faible vs forte IA intelligence artificielle, faible vs forte AI
-*IA faible* (((intelligence artificielle, faible))) désigne des programmes informatiques capables de surpasser les humains dans des tâches complexes avec un focus étroit (comme jouer aux échecs, et seulement à ce jeu).
+Reinforcement learning is perceived as corresponding to an important side of human learning / human intelligence (goal oriented, "trial and error").
 
 // +
-L'IA faible est généralement le résultat de l'application de systèmes experts ou des techniques d'apprentissage machine vues ci-dessus.
+Now, let's imagine that we create a game in which two learning machines are competing: one that controls Mario Bros, the other who controls an enemy character in the game, and tries to defeat Mario Bros.
+By having them battle thousands of rounds and adapt their behavior by learning from their mistakes, the two will learn much faster and improve a lot more than by reinforcement learning alone.
+This type of artificial intelligence is called "generative antagonistic networks" and many observers see a bright future for it in AI.
+
+=== d. When is machine learning useful? When is it not?
+Using machine learning can be a waste of resource, when well known statistics could be easily applied.
 
 // +
-*IA forte" (((intelligence artificielle, forte))) est une intelligence qui serait capable de résoudre des problèmes de portée générale, capable de fixer son propre but, et consciente d'elle-même. Rien ne s'approche de ça.
+Hints that "classic" statistical modeling (maybe as simple as a linear regression) should be enough:
 
 // +
-*Donc l'IA est synonyme d'IA faible pour le moment, et couvre les trois familles de machine learning vues ci-dessus.*
+- The dataset is not large (below 50k observations), supervised learning is not going to work
+- The data is perfectly structured (tabular data)(((structured data)))
+- The data points have few features
 
-== Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
+// +
+Finally, there is a situation in which machine learning is absolutely not the right solution.
+If the question is that of the role of this or that factor in the determination of a result, machine learning remains silent on this subject.
+Let's take the example of pictures of cats and dogs:
+
+// +
+- supervised learning is very effective to "guess" if an image is that of a cat or a dog, after training on thousands of images of cats and dogs.
+- but nothing tells us "how" supervised learning has done its job. Does the length of the whiskers, the shape of the ears, the color of the hair ... help to classify an image like that of a cat or a dog? Supervised learning does not answer these questions.
+- https://distill.pub/2018/building-blocks/[Works have been published] to make intelligible how supervised learning determines the result "cat" or "dog". However this type of work remains quite uncommon. Supervised learning remains largely a https://en.wikipedia.org/wiki/Black_box[black box].
+
+== 3. What relation between machine learning and data science?
+Machine learning is one of the steps in the broader chain of steps in ((data processing)).
+
+// +
+The chain of data processing consists in collecting data, storing it, analyzing it to discover some isnsights, and finally delivering a result.
+This chain of processing was not invented in the 2000s, and has ressemblance to the concept of https://en.wikipedia.org/wiki/Data_mining#Process[kdd]: "((Knowledge Discovery in Databases))" from the 1990s:
+
+image::kdd.png[align="center", title="KDD - knowledge discovery in databases", width=500, book="keep"]
+{nbsp} +
+
+More recent representations of the steps in data processing have been suggested, making room for the role of ((data visualization)):
+
+-> see https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400[the information design process by Ben Fry]((("Fry, Ben"))) and this http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html[data visualization workflow by Moritz Stefaner]((("Stefaner, Moritz"))):
+
+image::stefaner.png[pdfwidth="90%", align="center", title="data visualization workflow by Moritz Stefaner", width=500, book="keep"]
+{nbsp} +
+
+- *Machine learning* is one of the techniques that intervenes at the step of "Data mining".
+- *Data science* designates either the "data mining" step (when it is used narrowly), or the whole data processing chain (when it is used broadly).
+
+// +
+To perform the entire chain of data processing, a large variety of skills is needed:
+
+- capacity to setup up the IT infrastructure to collect, store and access large volumes of data ("data engineer", "back end" types of skills)
+- capacity to apply maths and statistical models to the data ("data scientist" ,"data mining" types of skills)
+- capacity to communicate the results effectively ("data visualization", "front end" types of skills)
+
+
+The skills of a ((data scientist)) are often represented as the meeting of three separate domains:
+
+image::conway.png[pdfwidth="40%", align="center", title="A diagram representing data science by Drew Conway", book="keep"]
+{nbsp} +
+
+This diagram makes an important point: data science is not just a set of IT and maths skills.
+"Substantive expertise", also known as "domain knowledge", is also required: people who know intimately  about the context of the application being developed.
+// +
+In practice, this balance of skills is rarely found in just one individual.
+It is achieved by creating data science *teams* which include IT staff, analysts and people from the business.
+
+== 4. Machine learning and Artificial intelligence (weak and strong)
+=== a. Weak vs Strong AI
+*Weak AI*(((artificial intelligence, weak))) designates computer programs capable of surpassing humans in complex tasks on a narrow and precisely delimited domain (such as playing chess).
+Weak AI works through expert systems or with machine learning techniques as seen above.
+The AI applications we see all around us are weak AI: driving aids and autonomous vehicles, chatbots, computers capable of beating humans at go or Mario Bros, ...
+
+// +
+*Strong AI*(((artificial intelligence, strong))) is an intelligence that would be able to solve problems of general scope, able to set its own goals, to be aware of itself, or to solve problems of varied and original natures.
+Today, nothing approaches this and the consensus says that *current machine learning techniques are not adapted to create this type of intelligence*.
+
+// +
+This means that talks on current applications of AI mean we actually discuss __weak__ AI, which is largely synonymous with __machine learning__.
+
+=== b. Videos to understand AI further
+- "A DARPA perspective on Artificial Intelligence" by John Launchbury, Director of DARPA's(((DARPA))) Information Innovation Office (I2O) in 2017: https://youtu.be/-O01G3tSYpU
+- "AI: What's Working, What's Not" by Frank Chen from Andreessen Horowitz in 2017: https://youtu.be/od7quAx9nMw
+
+=== c. To go further: a dense slideshow on the state of AI in 2018
+https://www.slideshare.net/nb410/the-state-of-artificial-intelligence-in-2018-a-good-old-fashioned-report-103568798[This presentation] is by https://twitter.com/soundboy[Ian Hogarth] and https://twitter.com/NathanBenaich[Nathan Benaich].
+
+
+== The end
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
-Clement Levallois
 
-Découvrez mes autres cours et projets : https://www.clementlevallois.net
+This course is made by Clement Levallois.
 
-Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]

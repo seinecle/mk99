@@ -1,6 +1,6 @@
-= Le cloud
+= The cloud
 Clément Levallois <levallois@em-lyon.com>
-2018-06-18
+2017-31-07
 
 last modified: {docdate}
 
@@ -8,7 +8,6 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-:sourcedir: ../../../main/java
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -17,134 +16,136 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-== 1. Note sur la terminologie: qu'est-ce qu'un serveur?
+== 1. Note on the terminology: what is a server?
 
-Pour comprendre le ((cloud)) précisément, nous devons d'abord avoir une vision claire de ce qu'est un ((serveur)). Un serveur est tout simplement un ordinateur dépourvu de tout ce qui n'est pas essentiel (écran, souris, carte graphique, carte son, clavier) ...
-// +
-Pour illustrer ceci: lorsque Google calcule quels sont les meilleurs résultats pour votre recherche "restaurant bon marché et délicieux à Lyon", ce calcul doit être fait sur un ordinateur, n'est-ce pas?
-// +
-Le type d'ordinateur utilisé pour faire ce calcul n'est *pas* celui-ci:
+To understand the ((cloud)) precisely, We need first to have a clear vision of what a ((server)) is. A server is simply a computer stripped of everything unessential (screen, mouse, graphic card, sound card, keyboard)...
+//+
+To illustrate: when Google is calculating what the best results are for your search "what are cheap and delicious restaurants in Lyon", this calculation must be done on a computer, right?
+//+
+The kind of computer used to do this calculation is *not* this one:
 
-image::desktop.jpg[pdfwidth = "40%", align = "center", title = "Un ordinateur de bureau", book = "keep"]
+image::desktop.jpg[pdfwidth= "40%",align="center",title="A desktop computer", book="keep"]
 {nbsp} +
 
-En effet, pour faire cette recherche Google n'a pas besoin d'un écran, une souris, un bureau, et même pas de la grande boîte contenant l'ordinateur lui-même.
-Ils prennent trop de place, consomment de l'énergie et ils sont juste inutiles dans ce cas.
-Donc quand toutes les parties inutiles sont enlevées, l'ordinateur ressemble à ceci, et s'appelle un "serveur":
+The reason is, we don't need a screen, mouse, desktop, and not even the big box containing the computer itself.
+They take too much space, consume energy, and there is no need for them.
+So when all the unnecessary parts are removed, the computer looks like this, and is called a "server":
 
-image::server.jpg[pdfwidth = "40%", align = "center", book = "keep", title = "Un serveur"]
+image::server.jpg[pdfwidth= "40%",align="center", book="keep", title="A server"]
 {nbsp} +
 
-Jetons un oeil à la forme : rectangulaire et très mince.
-Cela facilite l'empilement des serveurs les uns sur les autres.
-Parce que Google et d'autres entreprises ont besoin de beaucoup de serveurs pour gérer leurs données, gagner de l'espace est un véritable problème.
-// +
-Lorsque de nombreux serveurs sont empilés ensemble et mis dans une grande armoire, cela s'appelle un *rack* (((serveur, rack de))) de serveurs, et ressemble à ceci :
+Take a look at the shape: rectangular and very slim.
+This makes it easy to stack up servers one on the other.
+Because for Google and other companies crunching data for their business, a lot of servers are needed, so gaining on space is a real issue.
+//+
+When many servers are piled up together and put in a big tall box, this is called a *rack* (((server, rack of))) of servers, and look like this:
 
-image::rack.jpg[pdfwidth = "40%", align = "center", title = "Un rack de serveurs", book = "keep"]
+image::rack.jpg[pdfwidth= "40%",align="center",title="A rack of servers", book="keep"]
 {nbsp} +
 
-Lorsque tous les racks de serveurs sont placés dans la même pièce, cela s'appelle un *data center* (((serveur, data center))) et ressemble à ceci:
+When all the racks of servers are put in the same room, this is called a *data center* (((server, data center))) and looks like this:
 
-image::datacenter.jpg[pdfwidth = "40%", align = "center", title = "Un centre de données", book = "keep"]
+image::datacenter.jpg[pdfwidth= "40%",align="center",title="A data center", book="keep"]
 {nbsp} +
 
-Pour avoir une idée de la façon dont "le cloud" est réellement un espace physique, regardez cette vidéo montrant une visite d'un centre de données chez Google :
+To get a sens of how "the cloud" is actually a physical space, watch this video showing a tour of a data center at Google:
 
 video::XZmGGAbHqa0[youtube]
 
-Habituellement, jusqu'en 2005 à peu près, les entreprises avaient deux options:
+Usually, until 2005 roughly, companies had two options:
 
-- acheter leurs propres serveurs et les utiliser dans leurs locaux (sur leur site).
-- payer les services de sociétés spécialisées dans la gestion de centres de données.
+- buying their own servers and using them on their premises (at their location).
+- paying the services of companies specializing in managing data centers.
 
-Ensuite, le "cloud" a changé cela.
+Then the "cloud" changed this.
 
-== 2. Le cloud
-Le terme * cloud * (((cloud, définition))) a été rendu populaire par ((Amazon)) avec leur service "Amazon Elastic Compute Cloud" : *Amazon EC2* (((Amazon, EC2))) lancé en 2006. Ce service était nouveau à bien des égards :
+== 2. The cloud
+The term *cloud* (((cloud, definition))) was made popular by ((Amazon)) with their service “Amazon Elastic Compute Cloud”: *Amazon EC2* (((Amazon, EC2))) launched in 2006. This service was new in many ways:
 
-// +
-- on ne loue plus un serveur en particulier, mais on achète à Amazon du "temps d'utilisation de serveur, doté d'une certaine puissance". En pratique, pour  livrer ce service, Amazon pourra mettre en route 1 gros serveur, ou 2 petits, ou attribuer juste la moitié d'un énorme serveur partagé avec un autre client : cela est géré de façon transparente pour le client.  *Ce n'est donc plus la location d'une "machine" qui est facturée mais le temps d'utilisation d'un service.*
-- on met l'accent sur la facilité d'utilisation : pas besoin de connaître les détails techniques de ces serveurs (comment ils sont branchés, comment ils sont configurés ...)
-// +
-- besoin d'un simple identifiant +  mot de passe pour commencer à utiliser ces serveurs.
-- c'est "élastique": si le besoin du client évolue et qu'un serveur plus puissant devient nécessaire, ou plus d'espace de stockage, cela est pris en compte sur la facturation sans que les aspects techniques de ces changements ne soient venus ralentir la fourniture du service. Pas besoin de signer un nouveau contrat ou d'évaluer si Amazon bien des serveurs ou disques durs disponibles à la location ... le service est dimensionné pour que le changement soit possible et instantané.
-// +
-Comparons une situation avec ou sans (cloud)) :
+//+
+- it is not about renting or buying a particular piece of server anymore. Instead, the user *rents from Amazon a service* of "usage time of a type of server", characterized by a computing power, and a memory size, which you choose. In practice, to deliver this service, Amazon will be able to start 1 large server, or 2 small, or just allocate half of a huge shared server with another client: this is managed transparently for the client. *It is no longer the rental of a "machine" that is billed but the time of use of a service.*
+- there is an emphasis on ease of use: no need to know the technical details of these servers (how they are plugged, how they are configured…)
+//+
+- you are just given a login + password and you can start using these servers for your needs.
+- it's *elastic*: if you need more servers, or more powerful servers, this change can be done instantly. No need for signing a new contract, or to worry about stopping the rental of one machine to switch to another. Amazon manages this transparently for you.
+//+
+Let's compare a situation with or without the ((cloud)):
 
-// +
-[width = "100%"]
+//+
+[width="100%"]
 |=====
-| *Sans le cloud* | *Avec le cloud*
-| Vous faites une étude de marché pour quel serveur acheter
+|*Without the cloud* |*With the cloud*
+|You make a market study for which server to buy
 
-Obtenez l'approbation de votre service financier pour l'acheter (c'est un actif fixe!)
+Get the approval by your finance department to buy it (that’s a fixed asset!)
 
-Attendez que le serveur soit expédié
+Wait for the server to ship
 
-Installez-le et configurez-le
+Install it and configure it
 
-Maintenez-le (sécurité, etc.)
+Maintain it (security, etc.)
 
-Quand le travail est terminé: que faites-vous avec votre serveur? C'est un coût irrécupérable.
+When the job is over: what do you do with your server? That’s a sunk cost.
 
-Si le travail nécessite plus de capacité de calcul que votre serveur ne l'offre: vous êtes coincé avec votre trop petit serveur!
+If the job happens to need more computing capacity than your server offers: you are stuck with your too-small-server!
 
-|Sur le site https://aws.amazon.com/ec2/?nc1=h_ls[Amazon 'EC2], vous cliquez pour choisir un type de serveur parmi ceux proposés : c'est *sur demande*
+|On https://aws.amazon.com/ec2/?nc1=h_ls[Amazon’ EC2 website], you click to choose a server among those on offer: it is *on demand*
 
-Vous exécutez votre travail dessus. Les coûts sont mesurés avec précision.
+You run your job on it. Costs are metered precisely.
 
-Lorsque votre travail est terminé, vous arrêtez le serveur avec un clic et payez la facture.
+When your job is over, you stop the server with a click and pay the bill.
 
-Si le travail nécessite plus de capacité de calcul, vous passez à un serveur plus grand en un seul clic, ou vous pouvez le faire automatiquement: c'est *elastic*.
-| C'est un capex | C'est un opex
+If the job happens to need more computing capacity, you switch to a bigger server with a single click, or it can be done for you automatically: it is *elastic*.
+|It is a capex|It is an opex
 |=====
 
-// +
-Le cloud peut s'intégrer dans le budget en tant que dépense opérationnelle au lieu d'une dépense en capital.
-Les Opex ne sont pas intrinsèquement une option meilleure ou moins chère qu'un Capex, mais ils sont plus faciles à intégrer pour une équipe de projet ou une unité d'affaires dans leur budget.
-Voir cet article sur http://gevaperry.typepad.com/main/2009/01/accounting-for-clouds-stop-saying-capex-vs-opex.html[opex et capex dans le contexte du cloud], en particulier les commentaires critiques en réponse, pour continuer cette discussion.
+//+
+The cloud can fit in the budget as an operational expense instead of a capital expenditure.
+Opex are not inherently a better or cheaper option than a Capex, but they are easier for a project team or business unit to fit in their budget.
+See this blog post discussing  http://gevaperry.typepad.com/main/2009/01/accounting-for-clouds-stop-saying-capex-vs-opex.html[opex and capex in the context of the cloud], especially the critical comments in response, to continue this discussion.
 
 == 3. IaaS, PaaS, Saas
-Quelle est l'utilisation du cloud? Les entreprises peuvent l'utiliser pour exécuter des opérations élémentaires, jusqu'à des opérations plus complexes:
+What is the use of the cloud? Companies can use it to run elementary operations, up to more complex ones:
 
-// +
-* *Infrastructure en tant que service* (Infrastucture as a Service, IaaS)
+//+
+*Infrastructure as a service* (IaaS)
 
-Ici, le cloud est utilisé pour remplacer les besoins en infrastructure informatique locale de l'entreprise. Par exemple, au lieu de stocker ses données dans une base de donnée sur place, on loue un service de stockage de données sur le cloud, qui sera facturé précisément au temps d'utilisation, à la taille de données stockées, et au volume de données écrites ou transférées (comme il s'agit d'un service de base de données, ce type de IaaS peut être appelé un DBaaS: database as a service). (((DBaaS: database as a service)))
+The cloud is used to replace the company's local IT infrastructure needs such storing data, or computing operations.
+For example, instead of storing your data in an on-site database, it is possible to rent a cloud data storage service.
+It will be charged specifically to the time of use, the size of the data stored, and the volume of data being to and from the cloud.
+As it is a database service, this type of IaaS can be called a DBaaS: database as a service). (((DBaaS: database as a service)))
 
-// +
-* *Plate-forme en tant que service* (Platform as as Service, Paas)
+//+
+*Platform as a Service* (Paas)
 
-Le cloud est utilisé pour exécuter les blocs de construction d'un service: pour gérer un système de messagerie, pour héberger des applications, ...
+The cloud is used to run the building blocks of a service: to manage a messaging system, to host apps, ...
 
-// +
-* *Logiciel en tant que service* (Software as a Service, Saas)
+//+
+*Software as a Service* (Saas)
 
-Le cloud est utilisé pour héberger un logiciel complet accessible "à la demande" via le navigateur.
+The cloud is used to host a full software accessible "on demand" through the browser.
+Popular examples are Google Drive, https://www.d2l.com/products/learning-environment/[Brightspace] or https://www.salesforce.com/fr/?ir=1[((SalesForce))].
 
-Des exemples populaires sont Google Drive, https://www.d2l.com/products/learning-environment/[Brightspace] ou https://www.salesforce.com/fr/?ir=1[((SalesForce))].
+== 4. Private or public cloud? Hybrid cloud?
 
-== 4. Cloud privé ou public? cloud hybride?
+- Amazon EC2 (((Amazon, EC2))) is an example of a *public cloud* (((cloud, public cloud))): it is publicly accessible to any customer. Of course, this does not mean that every customer can see what the others are doing on the cloud! Each customer have their private spaces on the cloud.
+- Many companies have security requirements which prevent them from accessing public clouds.
+They need to have their servers on premises.
+//+
+In this case, they can build their own *private cloud*: (((cloud, private cloud))) it is a cloud just like Amazon EC2, except that it is owned, managed and used by the company exclusively - it is not accessible to third parties.
+//+
+But even private, the cloud keeps the basic characteristics of a cloud: on-demand and elastic in particular.
+- *Hybrid clouds* (((cloud, hybrid cloud))) are a variety of private clouds: it is a private cloud where some forms of operations can be delegated to a public cloud.
 
-- Amazon EC2 (((Amazon, EC2))) est un exemple de *cloud public* (((cloud, cloud public))): il est accessible publiquement à tout client. Bien sûr, cela ne signifie pas que chaque client peut voir ce que les autres font sur le cloud! Chaque client a ses espaces privés sur le cloud.
-- De nombreuses entreprises ont des exigences de sécurité qui les empêchent d'accéder aux clouds publics.
-Ils ont besoin de leurs serveurs sur place.
-// +
-Dans ce cas, ils peuvent construire leur propre *cloud privé*: (((cloud, cloud privé))) c'est un cloud comme Amazon EC2, sauf qu'il est détenu, géré et utilisé par l'entreprise exclusivement - il n'est pas accessible à des tiers.
-// +
-Mais même privé, le cloud conserve les caractéristiques de base d'un cloud: à la demande et élastique notamment.
-- *Les cloud ​​hybrides* (((cloud, cloud hybride))) sont une variété de clouds ​​privés: c'est un cloud privé où certaines formes d'opérations peuvent être déléguées à un cloud public.
+//+
+For example, operations which are not security sensitive and which need a capacity of computing in excess of what the private cloud of the company can provide.
 
-// +
-Par exemple, les opérations qui ne représentent pas un risque de sécurité et qui nécessitent une capacité de calcul supérieure à ce que le cloud privé de l'entreprise peut fournir.
-
-== Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
+== The end
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
-Clement Levallois
+This course is made by Clement Levallois.
 
-Découvrez mes autres cours et projets : https://www.clementlevallois.net
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
 
-Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]

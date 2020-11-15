@@ -8,8 +8,8 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-ifndef::imagesdir[:imagesdir: ../images]
-ifndef::sourcedir[:sourcedir: ../../../main/java]
+:imagesdir: images
+
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -218,7 +218,7 @@ image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API lan
 == To go further
 
 - https://www.slideshare.net/jmusser/j-musser-apibizmodels2013[API Business Models: 20 models in 20 minutes] (🕒 20 min read).
-- https://zapier.com/learn/apis/[An introduction to APIs: a complete course for real beginners]. A short online course, just a bit technical, on APIs. (🕒 4 hours).
+- https://zapier.com/learn/apis[An introduction to APIs: a complete course for real beginners]. A short online course, just a bit technical, on APIs. (🕒 4 hours).
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 

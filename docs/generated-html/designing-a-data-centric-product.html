@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.8">
+<meta name="generator" content="Asciidoctor 2.0.10">
 <meta name="author" content="Clément Levallois">
 <title>Building a data-centric product: the 4D methodology</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -241,7 +241,7 @@ table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;pad
 pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
 pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
-.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
 .quoteblock blockquote{margin:0;padding:0;border:0}
 .quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
@@ -258,7 +258,8 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
 .quoteblock.abstract{margin:0 1em 1.25em;display:block}
 .quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
-.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 table.tableblock{max-width:100%;border-collapse:separate}
@@ -457,15 +458,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>last modified: 2018-05-10</p>
+<p>last modified: 2020-11-15</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
+<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Data: Diagnostic, Design, Delivery</p>
@@ -588,11 +590,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/example-infovis.jpg" alt="example infovis">
+<img src="images/example-infovis.jpg" alt="example infovis">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>The issue is, this emphasis on hypothesis testing can be detrimental to the advancing on another fundamental goal: creating visualizations that are <strong>engaging to their audience</strong>, widely adopted and used in a world so full of information (or call it noise) that attention by individuals is becoming the scarcest of resources.</p>
@@ -611,11 +614,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/example-infographics.png" alt="example infographics" width="400">
+<img src="images/example-infographics.png" alt="example infographics" width="400">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Of course there are excellent infographics and Alberto Cairo, a professor and journalist by trade, reminds us in his book <a href="http://www.thefunctionalart.com/">The Functional Art</a> that carefully executed infographics are an excellent way to convey complex information in a limited amount of space.</p>
@@ -628,11 +632,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/example-bi.png" alt="example bi">
+<img src="images/example-bi.png" alt="example bi">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>The mission is basically to do "excel-level" visualizations in terms of reporting and monitoring business data.</p>
@@ -645,11 +650,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/formatted/gis.jpg" alt="gis">
+<img src="images/formatted/gis.jpg" alt="gis">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Geographical Information Systems (GIS) may have a claim for the longest tradition in visualizing data.</p>
@@ -741,11 +747,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/mta.jpg" alt="mta" width="500">
+<img src="images/mta.jpg" alt="mta" width="500">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="http://www.mta.me" class="bare">http://www.mta.me</a>)
@@ -759,11 +766,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/dataviz-communities.jpg" alt="dataviz communities">
+<img src="images/dataviz-communities.jpg" alt="dataviz communities">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="http://neoformix.com/2012/DataVisFieldSubGroups.html" class="bare">http://neoformix.com/2012/DataVisFieldSubGroups.html</a>)</p>
@@ -782,11 +790,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/dataviz-group.jpg" alt="dataviz group">
+<img src="images/dataviz-group.jpg" alt="dataviz group">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="http://neoformix.com/2012/DataVisField1000_Group2.pdf" class="bare">http://neoformix.com/2012/DataVisField1000_Group2.pdf</a>)</p>
@@ -802,11 +811,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/oecd-better-life-index.jpg" alt="oecd better life index">
+<img src="images/oecd-better-life-index.jpg" alt="oecd better life index">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="http://www.oecdbetterlifeindex.org/" class="bare">http://www.oecdbetterlifeindex.org/</a>)</p>
@@ -819,11 +829,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/ghost-counties-screenshot.jpg" alt="ghost counties screenshot">
+<img src="images/ghost-counties-screenshot.jpg" alt="ghost counties screenshot">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url, needs Internet Explorer and the Java plugin: <a href="http://www.janwillemtulp.com/eyeo/" class="bare">http://www.janwillemtulp.com/eyeo/</a>)</p>
@@ -836,11 +847,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/gun-deaths.jpg" alt="gun deaths" width="500">
+<img src="images/gun-deaths.jpg" alt="gun deaths" width="500">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="http://guns.periscopic.com/?year=2013" class="bare">http://guns.periscopic.com/?year=2013</a>)</p>
@@ -868,11 +880,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/stamen-viz.jpg" alt="stamen viz" width="500">
+<img src="images/stamen-viz.jpg" alt="stamen viz" width="500">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500" class="bare">http://prettymaps.stamen.com/201008/#10.00/38.7250/-9.1500</a>)</p>
@@ -891,22 +904,24 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/formatted/ucinet.jpg" alt="ucinet" width="500">
+<img src="images/formatted/ucinet.jpg" alt="ucinet" width="500">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Dataviz brought interaction, web-based interactions:</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/d3-force-layout.jpg" alt="d3 force layout" width="500">
+<img src="images/d3-force-layout.jpg" alt="d3 force layout" width="500">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="http://bl.ocks.org/mbostock/1062288" class="bare">http://bl.ocks.org/mbostock/1062288</a>)</p>
@@ -972,11 +987,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/formatted/windmap.jpg" alt="windmap" width="500">
+<img src="images/formatted/windmap.jpg" alt="windmap" width="500">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="http://hint.fm/wind/" class="bare">http://hint.fm/wind/</a>)</p>
@@ -992,22 +1008,24 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/logos-bi.png" alt="logos bi" width="500">
+<img src="images/logos-bi.png" alt="logos bi" width="500">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Dataviz became integrated into the business discourse on big data: the Harvard Business Review features in 2012 a blog section on data visualization where Jer Thorp contributed to set perspectives straight on data,</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/jer-thorp.jpg" alt="jer thorp">
+<img src="images/jer-thorp.jpg" alt="jer thorp">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="https://hbr.org/2012/11/data-humans-and-the-new-oil/" class="bare">https://hbr.org/2012/11/data-humans-and-the-new-oil/</a>)</p>
@@ -1017,22 +1035,24 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/nielsen-viz.jpg" alt="nielsen viz">
+<img src="images/nielsen-viz.jpg" alt="nielsen viz">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Since 2012 or so, General Electric partners with Fathom, the agency founded by Ben Fry (co-creator of Processing!) to build visualizations relative to their corporate identity, with some impressive realizations:</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/formatted/ge.jpg" alt="ge">
+<img src="images/formatted/ge.jpg" alt="ge">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="http://visualization.geblogs.com/visualization/powering/" class="bare">http://visualization.geblogs.com/visualization/powering/</a>)</p>
@@ -1042,11 +1062,12 @@ the study of (interactive) visual representations of abstract data to reinforce 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/formatted/chelsea.jpg" alt="chelsea">
+<img src="images/formatted/chelsea.jpg" alt="chelsea">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(live url: <a href="https://www.youtube.com/watch?v=YFrmQDCpgxs" class="bare">https://www.youtube.com/watch?v=YFrmQDCpgxs</a> - the panel is with Ben Fry).</p>
@@ -1175,11 +1196,15 @@ When you move away from the screen and start connecting to a variety of objects 
 <p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
+<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span>
 This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
 <p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
+</div>
+<div class="paragraph">
+<p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+ses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
 </div>
 <div class="paragraph">
 <p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
@@ -1209,7 +1234,7 @@ This course is made by Clement Levallois.</p>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2018-05-10 13:45:01 +0200
+Last updated 2020-11-15 17:45:54 +0100
 </div>
 </div>
 </body>

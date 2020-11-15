@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.8">
+<meta name="generator" content="Asciidoctor 2.0.10">
 <meta name="author" content="Clément Levallois">
 <title>Machine learning, data science and artificial intelligence</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -241,7 +241,7 @@ table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;pad
 pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
 pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
-.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
 .quoteblock blockquote{margin:0;padding:0;border:0}
 .quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
@@ -258,7 +258,8 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
 .quoteblock.abstract{margin:0 1em 1.25em;display:block}
 .quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
-.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 table.tableblock{max-width:100%;border-collapse:separate}
@@ -443,7 +444,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Clément Levallois</span><br>
 <span id="email" class="email"><a href="mailto:levallois@em-lyon.com">levallois@em-lyon.com</a></span><br>
-<span id="revdate">2019-06-02</span>
+<span id="revdate">2020-11-15</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -479,11 +480,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
+<img src="images/EMLyon_logo_corp.png" alt="EMLyon logo corp" width="242">
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>first edition: 2017-11-01</p>
@@ -623,12 +625,13 @@ Machine learning puts a premium on techniques which are "computationally adequat
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/gpu.jpg" alt="gpu" width="300">
+<img src="images/gpu.jpg" alt="gpu" width="300">
 </div>
 <div class="title">Figure 1. A graphic card sold by NVidia - a leading manufacturer</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>In the 1990s, video gaming developed a lot from arcades to desktop computers. Game developers created computer games showing more and more complex scenes and animations. (see <a href="https://youtu.be/3UTdxI2IEp0">an evolution of graphics</a>, and <a href="https://www.youtube.com/watch?v=Rywkv7PCYDM">advanced graphics games in 2017</a>).</p>
@@ -656,7 +659,8 @@ This is interesting for computations on big data!</p>
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>The issue is: to use a GPU for calculations, you need to conceptualize the problem at hand as one that can be:</p>
@@ -771,12 +775,13 @@ One of the most popular of these techniques remains the"k-means", and was invent
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/kmeans.jpg" alt="kmeans" width="300">
+<img src="images/kmeans.jpg" alt="kmeans" width="300">
 </div>
 <div class="title">Figure 2. k-means clustering - an unsupervised learning approach</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 </div>
 <div class="sect2">
@@ -889,12 +894,13 @@ Let&#8217;s take an exmple.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/muffin.jpg" alt="muffin" width="400">
+<img src="images/muffin.jpg" alt="muffin" width="400">
 </div>
 <div class="title">Figure 3. A hard test case for supervised learning</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>(<a href="https://www.freecodecamp.org/news/chihuahua-or-muffin-my-search-for-the-best-computer-vision-api-cbda4d6b425d/">source</a>)</p>
@@ -939,7 +945,8 @@ At the end, the pigeon finally made a complete turn on himself, because he learn
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Footnote: how does this apply to learning in humans?
@@ -962,12 +969,13 @@ The biological mechanisms of decision making it describes can be inspiring to de
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/glimcher.jpg" alt="glimcher" width="250">
+<img src="images/glimcher.jpg" alt="glimcher" width="250">
 </div>
 <div class="title">Figure 4. Foundations of Neuroeconomics by Paul Glimcher - 2010</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Besides pigeons, reinforcement learning can be applied to any kind of "expert agents".</p>
@@ -977,12 +985,13 @@ The biological mechanisms of decision making it describes can be inspiring to de
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/mario.jpg" alt="mario" width="250">
+<img src="images/mario.jpg" alt="mario" width="250">
 </div>
 <div class="title">Figure 5. Mario Bros - a popular video game</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Structure of the game / the task:</p>
@@ -1063,7 +1072,8 @@ The biological mechanisms of decision making it describes can be inspiring to de
 </div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>Reinforcement learning is perceived as corresponding to an important side of human learning / human intelligence (goal oriented, "trial and error").</p>
@@ -1128,12 +1138,13 @@ This chain of processing was not invented in the 2000s, and has ressemblance to 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/kdd.png" alt="kdd" width="500">
+<img src="images/kdd.png" alt="kdd" width="500">
 </div>
 <div class="title">Figure 6. KDD - knowledge discovery in databases</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>More recent representations of the steps in data processing have been suggested, making room for the role of data visualization:</p>
@@ -1143,12 +1154,13 @@ This chain of processing was not invented in the 2000s, and has ressemblance to 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/stefaner.png" alt="stefaner" width="500">
+<img src="images/stefaner.png" alt="stefaner" width="500">
 </div>
 <div class="title">Figure 7. data visualization workflow by Moritz Stefaner</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1181,12 +1193,13 @@ This chain of processing was not invented in the 2000s, and has ressemblance to 
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../images/conway.png" alt="conway">
+<img src="images/conway.png" alt="conway">
 </div>
 <div class="title">Figure 8. A diagram representing data science by Drew Conway</div>
 </div>
 <div class="paragraph">
-<p>&#160;<br></p>
+<p>&#160;
+&#160;</p>
 </div>
 <div class="paragraph">
 <p>This diagram makes an important point: data science is not just a set of IT and maths skills.
@@ -1242,13 +1255,17 @@ Today, nothing approaches this and the consensus says that <strong>current machi
 <p>Find references for this lesson, and other lessons, <a href="https://seinecle.github.io/mk99/">here</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
+<p><span class="image right"><img src="images/round_portrait_mini_150.png" alt="round portrait mini 150"></span></p>
 </div>
 <div class="paragraph">
 <p>This course is made by Clement Levallois.</p>
 </div>
 <div class="paragraph">
 <p>Discover my other courses in data / tech for business: <a href="https://www.clementlevallois.net" class="bare">https://www.clementlevallois.net</a></p>
+</div>
+<div class="paragraph">
+<p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
+llois.net</p>
 </div>
 <div class="paragraph">
 <p>Or get in touch via Twitter: <a href="https://www.twitter.com/seinecle">@seinecle</a>
@@ -1276,7 +1293,7 @@ Today, nothing approaches this and the consensus says that <strong>current machi
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2019-06-02 23:10:22 +0200
+Last updated 2020-11-15 17:45:54 +0100
 </div>
 </div>
 </body>

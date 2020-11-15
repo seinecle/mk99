@@ -1,6 +1,6 @@
-= Les APIs et leurs enjeux business
+= APIs and their business relevance
 Clément Levallois <levallois@em-lyon.com>
-2018-06-20
+2017-31-07
 
 last modified: {docdate}
 
@@ -17,163 +17,219 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 //ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
 
-== 1. Définition de l'API
-API: acronyme de *Application Programming Interface* (((API, définition))). Une ((API)) est le moyen de rendre les logiciels "faciles à brancher et à partager" avec d'autres programmes.
-// +
-Une API est simplement un groupe de règles (que l'on peut aussi appeler une convention, ou un accord ...) que les programmeurs suivent lorsqu'ils écrivent la partie de leur code qui est en charge de communiquer avec d'autres logiciels.
-Ces règles sont ensuite publiées (sur une page Web par exemple), afin que toute personne ayant besoin de se connecter au programme puisse apprendre quelles règles suivre.
+== 1. Definition of API
+API: acronym for *Application Programming Interface*(((API, definition))). An ((API)) is the way to make software programs “easy to plug and share” with other programs.
+//+
+An API is simply a group of rules (you can also call it a convention, or an agreement...) which programmers follow when writing the part of their code which is in charge of communicating with other software.
+These rules are then published (on a webpage for example), so that anyone who needs to connect to the program can learn what rules to follow.
 
-// +
-Une API est-elle simplement un moyen d'écrire du code pour s'interfacer avec d'autres programmes? Oui. Pourquoi les API suscitent-elles tant d'enthousiasme alors? Avoir des conventions sur la façon d'écrire un logiciel pour que quelqu'un puisse le brancher à son propre logiciel est une chose.
-https://dzone.com/articles/how-design-good-regular-api[APIs comme un aspect de la conception de logiciels] est un sujet classique en informatique, mais nous ne sommes pas concernés par cela ici.
-// +
-Les API que nous allons discuter concernent la communication entre des ordinateurs distants, dans un contexte professionnel. Pour mieux comprendre leur pertinence commerciale, il est utile de rappeler un bref historique des API:
+//+
+Is an API simply a way to write code to  interface with other programs? Yes. Why the fuss then? Having conventions on how to write a software so that somebody can plug it to its own software is one thing.
+https://dzone.com/articles/how-design-good-regular-api[APIs as an aspect of software design] is a classic topic in computer science, but we are not concerned with this here.
+//+
+APIs we are going to discuss are about communication between distant computers, in a business context. To understand better their business relevance, it is useful to recall a brief history of APIs:
 
-== 2. L'origine des API
-Les entreprises qui ont besoin d'échanger des données n'ont rien de nouveau.
-Fabricants, détaillants, banques, ... ils ont besoin d'échanger des informations à intervalles réguliers.
-// +
-Envoi de factures, réception de reçus pour la marchandise et de nombreux autres documents administratifs générés dans le cours des affaires.
-// +
-Ces reçus, factures ... peuvent être imprimés et envoyés par la poste (cette solution existe toujours bien sûr).
-// +
-Avec l'évolution de l'informatique dans les années 1970 et 1980, un nouveau système d'échange de données et de documents est apparu: l'échange d'informations par ordinateur : l'https://fr.wikipedia.org/wiki/%C3%89change_de_donn%C3%A9es_informatis%C3%A9[Échange de données informatisé (EDI)].
+== 2. The origin of APIs
+Companies which need to exchange data is nothing new.
+Manufacturers, retailers, banks, ... they need to exchange information at regular interval.
+//+
+Sending invoices, receiving receipts for merchandise, and many other administrative records generated in the course of business.
+//+
+These receipts, invoices... can be printed and mailed (this solution still exists of course).
+//+
+With informatics developing in the 1970s and 1980s, a new system emerged: the exchange of information via computers: https://en.wikipedia.org/wiki/Electronic_data_interchange[Electronic Data Interchange].
 
-=== a. EDI: Échange de données informatisé
-*EDI* (((EDI - Échange de données informatisé))) n'est pas un échange de pièces jointes dans les emails ou via un transfert de fichiers sur un site web, car les emails et les sites n'existaient pas à l'époque! (Les courriels et le Web ont été adoptés par les entreprises à la fin des années 1990).
-// +
-Au lieu de cela, l'échange de données via EDI consistait à utiliser des outils électroniques de transmission par l'équivalent d'une ligne téléphonique (comme le fax mais encore plus compliqué). Ce système d'EDI était complexe et lourd pour les raisons suivantes :
+=== a. EDI: Electronic Data Interchange
+*EDI* ((EDI - Eletronic Data Interchange)) is not an exchange of file attachments in emails or via a file transfer on a website, because emails and websites did not exist yet! (emails and the Web were adopted by firms in the late 1990s).
+//+
+Instead, exchanging data via EDI consisted in using complex electronic tools (like the fax but even more complicated) because:
 
-// +
-- chaque industrie a son propre protocole d'échange de données (un protocole pour la logistique, un pour les paiements, un pour telle ou telle chaîne de détaillants, etc.)
-- vous avez besoin d'un périphérique ou d'un logiciel dédié pour chaque protocole EDI, et ceux-ci ne sont pas fournis gratuitement
-// +
-- Les protocoles EDI peuvent varier d'un pays à l'autre
-- Les protocoles EDI sont contrôlés par des associations industrielles qui n'adoptent pas l'innovation rapidement
-// +
-- Les protocoles EDI ont créé des «systèmes fermés»: une entreprise A peut se connecter à la société B via un EDI uniquement si les deux ont un accord préalable pour utiliser cet EDI.
+//+
+- each industry has its own protocol to exchange data (one protocol for logistics, one for payments, one for this or that retailer chain, etc.)
+- you need a dedicated device or software for each EDI protocol, and these are not given for free
+//+
+- EDI protocols can vary from one country to another
+- EDI protocols are controlled by industry associations which do not adopt innovation quickly
+//+
+- EDI protocols created "closed systems": a company A can connect to company B via an EDI only if the two have a pre-agreement to use this EDI.
 
-// +
-Pour résumer : les EDI sont fragmentés, compliqués à mettre en œuvre, lents à évoluer, chers, et limitent la communication à un «club» de partenaires qui ont accepté de l'utiliser.
-// +
-Les http://cerasis.com/2014/12/11/edi-in-transportation/[EDIs existent toujours], en particulier dans les grandes industries B2B comme le transport, mais il a perdu en popularité dans l'économie en général parce que ... les API sont arrivées.
+//+
+To summarize: EDIs are fragmented, complicated to implement, slow to evolve, expensive and restricts the communication to a "club" of partners who agreed to use it.
+//+
+http://cerasis.com/2014/12/11/edi-in-transportation/[EDIs still exist], especially in large B2B industries like transportation, but it lost in popularity in the wider economy because...  APIs have arrived.
 
-=== b. L'émergence des API web
-À la fin des années 1990 et au début des années 2000, Internet et le ((World Wide Web)) se sont considérablement développés.
-De plus en plus de serveurs dans différentes parties du monde ont besoin d'échanger des données entre eux, ce qui nécessite d'utiliser des interfaces plus pratiques que les EDI.
-// +
-Il devenait de plus en plus commode de définir des conventions simples et universelles que tout le monde pouvait apprendre et suivre pour standardiser ces échanges, gratuitement et facilement. C'est ce que font les *API web*. Elles sont aussi souvent appelées:
+=== b. The emergence of web APIs
+In the late 1990s and early 2000s, Internet and the ((World Wide Web)) expanded dramatically.
+More and more servers in different parts of the world needed to exchange data with each other, and this required to use interfaces more convenient than EDIs.
+//+
+It became increasingly convenient to define simple and universal conventions that everyone could learn and follow to standardize these exchanges, for free and easily. That is what *web APIs* do. They are also often called:
 
-// +
-- *API* pour faire court
-- *web services* (((API, web service)))
-- *REST* API (voir ci-dessous).
+//+
+- *API* for short
+- *web services*(((API, web service)))
+- *REST* API (see below for this last one).
 
-// +
-Une *API Web* (((API, web service))) étend la logique des API que nous avons vues au début de ce document, à la communication logicielle *via le web*. Pour rappel, une API est une convention suivie lors de l'écriture d'un logiciel, rendant ce logiciel disponible pour d'autres logiciels.
+//+
+A *web API*(((API, web service))) extends the logic of the APIs we have seen in the beginning of this document, to software communicating via the web. To recall, an API is a convention followed when writing a software, making this software available to other software.
 
-// +
+//+
 [NOTE]
 ====
-Exemple: l'API de Microsoft PowerPoint permet l'importation de tableaux Excel dans des documents pptx, car l'API de Powerpoint se branche sur l'API d'Excel. Dans cet exemple, Excel et Powerpoint sont censés être installés sur le même ordinateur bien sûr!
+Example: the API of Microsoft PowerPoint enables the import of Excel tables in pptx documents, because the API of Powerpoint plugs to the API of Excel. In this example Excel and Powerpoint are supposed to be installed on the same computer of course!
 ====
 
-// +
-Une API Web est une API qui permet à deux logiciels de communiquer via Internet. *Ils n'ont pas besoin d'être installés sur le même ordinateur.*
+//+
+A Web API is an API which enables two pieces of software to communicate, via Internet. *They do not need to be installed on the same computer.*
 
-=== c. Les avantages d'une API Web par rapport à un EDI
-- Contrairement à un *EDI* (((API, différence avec les EDI)), une API web supprime toute contrainte techniqu spécifique à l'industrie. Les API Web sont simplement une convention suivant les standards du web pour envoyer et recevoir des données sur Internet, sans dire quoi que ce soit sur le contenu des données.
-// +
-- Les données envoyées et reçues peuvent être des factures, des pages Web, des horaires de train, de l'audio, de la vidéo ... peu importe.
-- Contrairement à un EDI, une entreprise qui crée une API web peut choisir de laisser un accès *ouvert* à son API : n'importe quel ordinateur capable de son brancher à Internet peut alors se brancher à ce que cette entreprise rend disponible via cette API (rappelez-vous que les EDI ont besoin que les deux parties aient un accord préétabli).
-// +
-- Un client potentiel intéressé par l'API Web d'une entreprise peut s'y "brancher" en quelques lignes de code, au lieu d'attendre des semaines ou des mois avant la signature d'un contrat et la configuration de l'EDI.
+=== c. The benefits of a web API compared to an EDI
+Unlike an *EDI*(((API, difference with EDIs))), a web API drops any industry-specific concern. Web APIs are just a convention to send and receive data over the Internet, without any saying on the content of the data.
+//+
+The data sent and received can be invoices, webpages, train schedules, audio, video... whatever.
+Contrary to an EDI, a company creating a web API can choose to leave its access [underline]#open# (remember that EDIs need the two parties to have a pre-established agreement).
+//+
+So that a potential client interested in using the web API of a company can set it up in a couple of clicks, instead of waiting weeks or months before a contract is signed and the EDI is setup.
 
-// +
+//+
 [WARNING]
 ====
-Dire que les API sont ouvertes ne signifie pas une absence de sécurité (((API, sécurité de))): la communication via les API peut facilement être identifiée et cryptée, selon les besoins.
+Saying that APIs are open does not mean an absence of security(((API, security of))): communication through APIs can easily be identified and encrypted, as needed.
 ====
 
-// +
-=== d. API REST?
-Deux conventions d'API web populaires ont émergé dans les années 1990 et ont rivalisé en terme d'adoption :
+//+
+=== d. REST API?
+Two popular web API conventions emerged in the 1990s and competed for popularity:
 
-- https://fr.wikipedia.org/wiki/SOAP[((SOAP: Simple Object Access Protocol))]
-- (https://fr.wikipedia.org/wiki/Representational_state_transfer[((REST: Representational State Transfer))]
+- https://en.wikipedia.org/wiki/SOAP[((SOAP: Simple Object Access Protocol))]
+- (https://en.wikipedia.org/wiki/Representational_state_transfer[((REST: Representational State Transfer))]
+
+//+
+*REST APIs*(((API, REST protocol))) became ultimately the most widely adopted, because it uses the same simple principles that webpages use to be transferred over the Internet (the "http" protocol that you see in web page addresses).
+This is why APIs are often called https://www.youtube.com/watch?v=7YcW25PHnAA["REST APIs, presented in this pedagogical video"].
+//+
+In 2000-2010, it became increasingly easy and natural to adopt the REST convention to make one's software and data available to another computer.
+This simple evolution to ease interoperability had *immense effects*:
+
+== 3. Business consequences of APIs
+=== a. APIs *opened* software to the world
+An API transforms a closed software into something that can be plugged to anything other computer or object, as long as it is connected to the Internet.
+//+
+For instance, APIs were a key factor of success for https://en.wikipedia.org/wiki/Salesforce.com[SalesForce] in the early 2000s. SalesForce, created in 1999, has a revenue of US$8.39 billion in 2017:
+//+
+- ((SalesForce)) developed a CRM as a SaaS where features of the CRM were *exposed as APIs* (meaning, these features could be plugged to external apps via the REST protocol).
+//+
+- SalesForce created a ((PaaS)) to host apps that could plug to the SalesForce CRM via the APIs developed by SalesForce. This platform is called https://www.salesforce.com/products/platform/products/force/[Force.com] and external developers can put their apps there, as long as they are compatible with the SalesForce API.
+//+
+SalesForce takes a commission on the sales made by these third party apps hosted on Force.com, but more importantly, the platform creates an *ecosystem* of apps and developers around the SalesForce products which makes it hard for a customer company to switch to a different product.
+
+=== b. APIs *accelerated* software innovation
+Thanks to API it is now easier to add software blocks together and create new apps, even if these software blocks originate from different countries, industries, big and small.
+//+
+As an extreme example:
+the Australian Victoria Police deployed a project for the recognition of stolen vehicles through the video recognition of licence plates on cars passing in the street (stolen vehicles get their license plates immediately recognized).
+This is a $86,000,000 project.
+An individual actually replicated this https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9[project with just 57 lines of code and a dashcam].
+How so?
+Just because he could use existing software for licence plate recognition, available as an API, instead of re-developing this by himself.
+
+//+
+Another example:
+https://twitter.com/levelsio/status/880241628580937728?lang=en[Peter Levels] demonstrated the potential of APIs by building a "Luggage delivery service" just with existing apps connected together via their APIs.
+Without a line of code:
+
+image::luggage-api.jpg[align="center", title="Building a world wide luggage delivery service without code", pdfwidth="25%", width= 350, book="keep"]
+{nbsp} +
+
+This service is designed by organizing several sub-services, which coordinate by communicating via their APIs.
+//+
+How does communication work? Who "orchestrates" these services? Peter uses https://zapier.com/[Zappier], a service whose role is to make these APIs communicate with each other.
+Beyond these striking examples, the lessons to be learned are:
+//+
+- more and more services are available via API. Do not reinvent the wheel, just use the APIs.
+- coordinating multiple APIs allows you to create entirely new services (not just: "manage my emails by API")
+- services like https://zapier.com/[Zappier] allow coordination / communication between APIs, but it also favors *automation*.
+
+=== c. APIs *opened* data
+Companies and public organization own many datasets of great business interest.
+The use of these datasets can be free (for small projects and NGOs) or monetized if the user is an enterprise.
+//+
+Without APIs, datasets can be made publicly available as docs (eg, Excel spreadsheets) to download but this is not practical (try downloading something like `all_train_schedules_2000_to_2017.xls` !).
+//+
+Let's take the example of a transportation company like French SNCF which finds it interesting to publish station names, train schedules, real time information on train traffic, etc. because it could be used by other companies to build new services : how can it do it?
+
+//+
+- The data is on a server of SNCF
+- SNCF adds http://doc.navitia.io/#getting-started[an API and its documentation], making the data available to developers able to https://youtu.be/7YcW25PHnAA[connect to APIs, which is a basic skill in software development].
+- Entrepreneurs and programmers in general will be able to access the data via the API and use it, creating https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja[new services based on this train information].
+//+
+*Open data*(((open data))) designates this movement to make datasets available to a broad audience, and web APIs have been a key technological ingredient in this movement.
+
+== 4. Does your company need to open an API to share its data?
+
+A company can create its own APIs to "project" its services farther and stronger than just the "web page" interface.
+When is it a good idea to do that?
+// +
+Here we must brainstorm, with two benchmarks to keep in mind. These examples are taken from Pieter Levels, a Dutch entrepreneur who specializes in creating web platforms for remote workers.
+He created:
 
 // +
-*Les API REST* (((API, protocole REST))) sont finalement devenues les plus répandues, car elles utilisent les mêmes principes simples que les pages Web utilisent pour être transférées sur Internet (le protocole "http" que vous voyez dans les adresses de pages web).
-C'est pourquoi les API sont souvent appelées https://www.youtube.com/watch?v=7YcW25PHnAA[ API REST, présentées dans cette vidéo pédagogique].
-// +
-En 2000-2010, il est devenu de plus en plus facile et naturel d'adopter la convention REST pour mettre son logiciel et ses données à la disposition d'un autre ordinateur via Internet.
-Cette évolution simple pour faciliter l'interopérabilité a eu *des effets immenses* :
-
-== 3. Les conséquences commerciales des API
-=== a. Les APIs ont *ouvert* le logiciel au monde
-Une API transforme un logiciel fermé en quelque chose qui peut être branché sur n'importe quel autre ordinateur ou objet, à condition qu'il soit connecté à Internet.
-// +
-Par exemple, les API ont été un facteur clé de succès pour https://fr.wikipedia.org/wiki/Salesforce.com[SalesForce] au début des années 2000. SalesForce, créé en 1999, a réalisé un chiffre d'affaires de 8,39 milliards de dollars en 2017 :
-
-- ((SalesForce)) a développé un CRM en tant que SaaS où les fonctionnalités du CRM étaient *exposées en tant qu'API* (ce qui signifie que ces fonctionnalités pouvaient être connectées à des applications externes via le protocole REST).
-// +
-- SalesForce a créé un ((PaaS)) pour héberger des applications pouvant être connectées au CRM SalesForce via les API développées par SalesForce. Cette plate-forme est appelée https://www.salesforce.com/products/platform/products/force/[Force.com] et les développeurs externes peuvent y mettre leurs applications, à condition qu'elles soient compatibles avec les APIs SalesForce.
-// +
-Salesforce prend une commission sur les ventes réalisées par ces applications tierces hébergées sur Force.com, mais plus important encore, la plate-forme crée un *écosystème* d'applications et de développeurs autour des produits Salesforce, ce qui rend difficile pour une entreprise cliente de passer à un produit différent.
-
-=== b. Les API ont *accéléré* l'innovation logicielle
-Grâce à l'API, il est désormais plus facile d'ajouter des blocs logiciels et de créer de nouvelles applications, même si ces blocs logiciels proviennent de différents pays ou industries.
-// +
-À titre d'exemple extrême : la police australienne de Victoria a déployé un projet de reconnaissance des véhicules volés grâce à la reconnaissance vidéo des plaques d'immatriculation des voitures circulant dans la rue (les véhicules volés se voient immédiatement reconnaître leurs plaques d'immatriculation). C'est un projet de 86 000 000 $. Un individu a répliqué ce https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9[projet avec seulement 57 lignes de code et une webcam]. Comment? Simplement parce qu'il a pu utiliser un logiciel existant pour la reconnaissance de plaques d'immatriculation, disponible en tant qu'API, au lieu de le re-développer par lui-même.
-
-=== c. Les API ont *ouvert* les données
-Les entreprises et les organisations publiques possèdent de nombreuses bases de données d'un grand intérêt commercial.
-L'utilisation de ces ensembles de données peut être gratuite (quand l'utilisateur est développe un projet à but non lucratif par exemple) ou monétisée si l'utilisateur est une entreprise.
-// +
-Sans APIs, les ensembles de données peuvent être rendus disponibles publiquement sous forme de docs (par exemple, tableurs Excel) à télécharger mais ce n'est pas pratique (essayez de télécharger quelque chose comme `all_train_schedules_2000_to_2017.xls`!).
-// +
-Prenons l'exemple d'une entreprise de transport comme la SNCF française qui trouve intéressant de publier les noms des gares, les horaires des trains, les informations en temps réel sur le trafic ferroviaire, etc. car elle pourrait être utilisée par d'autres entreprises pour construire de nouveaux services: comment faire?
+- https://nomadlist.com/[Nomadlist], which presents the cities of the world and how they can be attractive to live and work
+- https://remoteok.io/[RemoteOK], which is a job board for ads exclusively for remote jobs.
 
 // +
-- Les données sont sur un serveur de la SNCF
-- La SNCF ajoute https://data.sncf.com/api/fr[une API et sa documentation], mettant les données à la disposition des développeurs capables de https://youtu.be/7YcW25PHnAA[se connecter aux API, ce qui est une compétence de base dans le développement de logiciels].
-- Les entrepreneurs et les programmeurs en général pourront accéder aux données via l'API et les utiliser, en créant de https://www.digital.sncf.com/actualites/api-sncf-deux-ans-deja[nouveaux services basés sur ces informations sur les trains].
-
-L'*Open data* (((open data))) désigne ce mouvement pour rendre les jeux de données accessibles à un large public, et les API web ont été un ingrédient technologique clé dans ce mouvement.
-
-== 4. L'écosystème des API
-=== a. Une multitude d'API
-Pour découvrir de nouvelles API, ou pour faciliter la découverte de vos API, l'endroit le plus connu est https://www.programmableweb.com/[le site Web "Programmable Web"] (voir aussi http://apis.io/[apis.io]). En effectuant une recherche sur ce site, vous trouverez des https://www.programmableweb.com/api/coca-cola-enterprises[APIs fournissant des services commerciaux], ou des https://www.programmableweb.com/api/itsthisforthat[APIs d'un genre amusant ou absurde].
+Pieter Levels has implemented APIs so that users can access ("consume") these two services, *with very different results*:
 
 // +
-Pourtant, de nombreuses API ne sont pas listées sur ce site. Dans ce cas, une recherche google du type "info dont j'ai besoin + API" est aussi un bon moyen de savoir si l'API que vous recherchez existe. http://hotline.whalemuseum.org/api[Intéressé par les observations de baleines? Il y a une API pour ça].
+- The access of NomadList by API, without control, has resulted in siphoning its data by competitors who used it to develop copycats. (read the tweets announcing https://twitter.com/levelsio/status/622988506856562690?lang=en[the opening of the API] and https://twitter.com/NomadList/status/822832479648129024[its closing]).
+- Access to RemoteOK ads by an API allows third-party platforms to integrate the RemoteOK ad catalog with their own: it amounts to free and large-scale referencing, which increases the likelihood of an ad finding a candidate (read again the tweet that announces https://twitter.com/levelsio/status/986281024907755520?lang=en[the opening of the API]).
 
-=== b. API: un monde professionnel à part entière
-*Les API* (((API))) sont devenus essentielles à l'économie.
-En conséquence, un grand nombre de services associés aux API ont été développés pour répondre à tous les besoins des entreprises qui les utilisent :
+The screenshot below summarizes the contrast between the two situations: although in both cases it involves opening its data via an API. Between NomadList and RemoteOK, the results are opposite:
 
-// +
-- comment créer une API
-- comment gérer la documentation d'un grand nombre d'API
-- comment connecter une grande variété d'API
-- comment contrôler et auditer la sécurité des API
-- comment monétiser les API ...
+image::pieterlevelsapi.jpg[align = "center", book = "keep", title = "Pieter Levels explains his reasons for opening or closing an API"]
+{nbsp} +
 
-// +
--> Beaucoup de grandes entreprises et de startups se spécialisent désormais dans tous ces domaines d'activité. Voici le https://twitter.com/medjawii?lang=en[panorama des principales entreprises actives dans l'industrie de l'API]:
+Product managers must have a fine appreciation of the uses that the opening of an API will stimulate.
+One of the most virtuous effects is that of a "sound box": by reusing our content for their own purposes, the users of the API will unwittingly promote our content, which reinforces the efficiency of our product.
+
+
+== 5. The ecosystem of APIs
+=== a. A wealth of APIs
+To discover new APIs, or to make your APIs easier to discover, the most well known place is https://www.programmableweb.com/[the website "Programmable Web"] (see also http://apis.io/[apis.io]). Searching on this website, you will find  https://www.programmableweb.com/api/coca-cola-enterprises[APIs providing business services], or   https://www.programmableweb.com/api/itsthisforthat[APIs of a fun and odd sort].
+
+//+
+Still, many APIs are not listed on this website, and a google search for "info I need + API" is also a good way to find if the API you need exists. http://hotline.whalemuseum.org/api[Interested in whale sightings? There is an API for that].
+
+=== b. APIs: a business world of its own
+*APIs*(((API))) have become central to the economy.
+As a result, a large number of services associated to APIs have developed to cater for all the needs of companies that use them:
+
+//+
+- how to create an API
+- how to manage the documentation of a large number of APIs
+- how to connect a wide variety of APIs
+- how to control and audit the security of APIs
+- how to monetize and API...
+
+//+
+-> Many large firms and startups now specialize in all these domains of activity. This is the https://twitter.com/medjawii?lang=en[landscape of the main companies active in the API industry]:
 
 <<<<
 
 //+
-image::C:\Users\levallois\Google Drive\open\mk99\docs\src\main\asciidoc\images/api-landscape-2017_panorama.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui", book="keep"]
+image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui", book="keep"]
 {nbsp} +
 
-== Pour aller plus loin
-Retrouvez le site complet : https://seinecle.github.io/mk99/[here].
+== To go further
+
+- https://www.slideshare.net/jmusser/j-musser-apibizmodels2013[API Business Models: 20 models in 20 minutes] (🕒 20 min read).
+- https://zapier.com/learn/apis/[An introduction to APIs: a complete course for real beginners]. A short online course, just a bit technical, on APIs. (🕒 4 hours).
+
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
 image:round_portrait_mini_150.png[align="center", role="right"]
-Clement Levallois
 
-Découvrez mes autres cours et projets : https://www.clementlevallois.net
+This course is made by Clement Levallois.
 
-Ou contactez-moi via Twitter: https://www.twitter.com/seinecle[@seinecle]
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+inecle]

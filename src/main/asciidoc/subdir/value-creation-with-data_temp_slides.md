@@ -167,6 +167,9 @@ image::generate.jpg[pdfwidth="25%", align="center"]
 5. Close-to-real-life https://deepmind.com/blog/wavenet-generative-model-raw-audio/[((speech synthesis))] image:google.jpg[pdfwidth="100", width="100", book="keep"]
 6. Generating realistic car models from a few parameters by https://www.autodeskresearch.com/publications/exploring_generative_3d_shapes[Autodesk]: image:autodesk.png[pdfwidth="100", width="100", title="Autodesk", book="keep"]
 
+== !
+7. Generating summaries and comments from financial reports https://yseop.com/[Yseop]: image:Yseop-Logo.png[pdfwidth="100", width="100", title="Yseop", book="keep"]
+
 
 == !
 A video on the generation of car models by Autodesk:
