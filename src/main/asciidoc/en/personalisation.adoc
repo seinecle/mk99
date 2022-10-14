@@ -44,82 +44,91 @@ A list of bodily aspects being measured with examples:
 .Location
 [cols="a,a,a,a,a",options="header"]
 |===============
-|Bodily Measurement       |Device         |Company              |Product  |Picture
-|Location                 |Mobile phone   |Samsung, Apple, etc. |Phone    |image::gmap-location-history.png[align="center",width=120]
+|Bodily Measurement       |Device         |Company              |Product
+|Location                 |Mobile phone   |Samsung, Apple, etc. |Phone
 |===============
 
+image::gmap-location-history.png[align="center",width=120]
 
-//+
+
 .Movement
 [cols="a,a,a,a,a",options="header"]
 |===============
-|Bodily Measurement       |Device         |Company              |Product     |Picture
-|Movement                 |Wrist band     |Nike                 |Fuelband    |image::fuelband.jpg[align="center",width=120]
+|Bodily Measurement       |Device         |Company              |Product
+|Movement                 |Wrist band     |Nike                 |Fuelband
 |===============
 
-//+
+image::fuelband.jpg[align="center",width=120]
+
 .Gestures
 [cols="a,a,a,a,a",options="header"]
 |===============
-|Bodily Measurement       |Device         |Company              |Product                            |Picture
-|Gestures                  |Arm band       |Thalmic Labs         |https://www.myo.com/[Myo]          |image::myo.png[align="center",width=120]
+|Bodily Measurement       |Device         |Company              |Product
+|Gestures                  |Arm band       |Thalmic Labs         |https://www.myo.com/[Myo]
 |===============
 
-//+
+image::myo.png[align="center",width=120]
+
 .Weight, heart rate
 [cols="a,a,a,a,a",options="header"]
 |===============
-|Bodily Measurement       |Device         |Company              |Product              |Picture
-|Weight, heart rate               |Body scale     |Nokia                |https://support.health.nokia.com/hc/en-us/categories/200118207-Smart-Body-Analyzer-WS-50-[Smart Body Analyzer]   |image::withings.png[align="center",width=120]
+|Bodily Measurement       |Device         |Company              |Product
+|Weight, heart rate               |Body scale     |Nokia                |https://support.health.nokia.com/hc/en-us/categories/200118207-Smart-Body-Analyzer-WS-50-[Smart Body Analyzer]
 |===============
 
-//+
+image::withings.png[align="center",width=120]
+
 .Sleep
 [cols="a,a,a,a,a",options="header"]
 |===============
-|Bodily Measurement       |Device         |Company              |Product              |Picture
-|Sleep                    |Undermat       |Nokia                |https://support.health.nokia.com/hc/en-us/categories/200189426-Withings-Aura[Aura]                 |image::aura.jpg[align="center",width=120]
+|Bodily Measurement       |Device         |Company              |Product
+|Sleep                    |Undermat       |Nokia                |https://support.health.nokia.com/hc/en-us/categories/200189426-Withings-Aura[Aura]
 |===============
 
-//+
+image::aura.jpg[align="center",width=120]
+
 .Fingerprint
 [cols="a,a,a,a,a",options="header"]
 |===============
-|Bodily Measurement       |Device         |Company              |Product              |Picture
-|Fingerprint              |Mobile Phone   |Apple                |iPhone 5             |image::fingerprint.jpg[align="center",width=120]
+|Bodily Measurement       |Device         |Company              |Product
+|Fingerprint              |Mobile Phone   |Apple                |iPhone 5
 |===============
 
-//+
+image::fingerprint.jpg[align="center",width=120]
+
 .Facial recognition
 [cols="a,a,a,a,a",options="header"]
 |===============
-|Bodily Measurement       |Device         |Company              |Product              |Picture
-|Facial recognition       |Mobile Phone   |Apple                |iPhone 8             |image::facial-recognition.jpg[align="center",width=120]
+|Bodily Measurement       |Device         |Company              |Product
+|Facial recognition       |Mobile Phone   |Apple                |iPhone 8
 |===============
 
-//+
+image::facial-recognition.jpg[align="center",width=120]
+
 .Emotions
 [cols="a,a,a,a,a",options="header"]
 |===============
-|Bodily Measurement       |Device         |Company              |Product              |Picture
-|Emotions                 |Camera         |SightCorp            |http://sightcorp.com/crowdsight/[CrowdSight SDK]       |image::crowdsight.png[align="center",width=120]
+|Bodily Measurement       |Device         |Company              |Product
+|Emotions                 |Camera         |SightCorp            |http://sightcorp.com/crowdsight/[CrowdSight SDK]
 |===============
+
+image::crowdsight.png[align="center",width=120]
 
 video::7V8jrdH5tAQ[youtube]
 
-//+
 .Behavior in public places
 [cols="a,a,a,a,a",options="header"]
 |===============
-|Bodily Measurement       |Device             |Company                  |Product                          |Picture
-|Behavior in public areas |Multiple devices   |AGT International        |https://www.agtinternational.com/analytics/iot-analytics/crowd-analytics/[Mega Events Management Solution]  |image::agt.png[align="center",width=120]
-|Pedestrian traffic       |Cameras            |https://placemeter.com[Placemeter]                         |Placemeter                       |
+|Bodily Measurement       |Device             |Company                  |Product
+|Behavior in public areas |Multiple devices   |AGT International        |https://www.agtinternational.com/analytics/iot-analytics/crowd-analytics/[Mega Events Management Solution]
+|Pedestrian traffic       |Cameras            |https://placemeter.com[Placemeter]                         |Placemeter
 |===============
 
-//+
+image::agt.png[align="center",width=120]
+
 A description of how AGT monitors large audiences in public events (click on the pic for the full document):
 
-image::agt-2.png[align="center", title="source: https://www.agtinternational.com/wp-content/uploads/2014/10/AGT_AAG_MegaEvent-02Oct2014-2.pdf[AGT services for crowd management]"]
+image::agt-2.png[align="center", title="source: https://www.agtinternational.com/wp-content/uploads/2014/10/AGT_AAG_MegaEvent-02Oct2014-2.pdf"]
 
 Video showing how Placemeter monitors pedestrian traffic:
 
@@ -128,20 +137,19 @@ video::rpjJHoJixYA[youtube]
 
 == 3. The case of *Nicholas Felton*: constant data monitoring
 === a. The Feltron reports
-(((Felton, Nicholas)))
 
 image::nicholas_felton3.jpg[align="center", title="Nicholas Felton"]
 
 http://feltron.com[Nicholas Felton] is a designer and data artist who produced printed annual reports from 2005 to 2014.
 
-These reports synthesize his bodily data and social life, which he measures __constantly__ during the year. This practice (pushed to the extreme in this case) belongs to the https://en.wikipedia.org/wiki/Quantified_self[((quantified self))] movement.
+These reports synthesize his bodily data and social life, which he measures __constantly__ during the year. This practice (pushed to the extreme in this case) belongs to the https://en.wikipedia.org/wiki/Quantified_self[quantified self] movement.
 
 video::QvAFp5j7nRI[youtube]
 
 === b. Not just Feltron
 Insurance companies are interested in boosting individual health, using connected objects as monitoring devices
 
-image:autodesk.jpg[align="center",title="http://www.forbes.com/sites/parmyolson/2014/06/19/wearable-tech-health-insurance/[Employee at Autodeck wearing a Jawbone as part of a company challenge]"]
+image:autodesk.jpg[align="center",title="http://www.forbes.com/sites/parmyolson/2014/06/19/wearable-tech-health-insurance"]
 
 Companies are looking to provide a 360 degree solution to health and well being through constant monitoring:
 
@@ -156,7 +164,6 @@ A full session of this series is devoted to discussing these issues.
 
 //+
 For the moment, let us just repeat cautionary remarks already mentioned in a different session:
-
 
 === a. "personalization" has been blamed for reinforcing "bubbles" or "tribes" views of the world
 

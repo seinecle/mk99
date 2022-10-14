@@ -56,7 +56,7 @@ video::irydHrRdpkY[youtube]
 
 === c. Example - Data @GrandLyon
 
-image:logo-smart-data-grand-lyon.png[align"center", title="https://data.grandlyon.com/[Grand Lyon Data]"]
+image::logo-smart-data-grand-lyon.png[align"center", title="https://data.grandlyon.com]
 
 
 -> Making data open to foster innovation for citizens and businesses
@@ -66,11 +66,15 @@ image:logo-smart-data-grand-lyon.png[align"center", title="https://data.grandlyo
 // +
 Similar initiatives in large cities:
 
-https://data.amsterdam.nl/[image:amsterdam.gif[width=150]]
-https://www.beijingcitylab.com/[image:bjcitylab.jpg[width=150]]
-http://www.milanosmartcity.org/joomla/[image:milano.jpg[width=150]]
-http://smartcity.jakarta.go.id/[image:jakarta.png[width=150]]
-http://smartcityinnovationlab.com/[image:lisboa.png[width=150]]
+image::amsterdam.gif[width=150]
+
+image::bjcitylab.jpg[width=150]
+
+image::milano.jpg[width=150]
+
+image::jakarta.png[width=150]
+
+image::lisboa.png[width=150]
 
 == 2. The visual power of maps
 === a. Map: useful metaphors with a political dimension
@@ -85,7 +89,7 @@ video::vVX-PrBRtTY[youtube]
 
 === b. Example: how to explore the real estate market in the Netherlands
 
-image:waag.png[align"center", title="Visual exploration of real estate in NL"]
+image::waag.png[align"center", title="Visual exploration of real estate in NL"]
 
 (source: http://code.waag.org/buildings/)
 
@@ -179,7 +183,7 @@ Representations with a supposedly universal and transparent coordinate system bl
 // +
 This argument is made by Frederic Martel(((Martel, Frederic))) in his book "Smart": Internet does not flatten everything into one big model. There are several Internets with their geography, politics and sociology.
 
-image:smart.jpg[align="center", title="Smart by Frederic Martel"]
+image::smart.jpg[align="center", title="Smart by Frederic Martel"]
 
 Here are a few dimensions on which geography plays a strong role:
 

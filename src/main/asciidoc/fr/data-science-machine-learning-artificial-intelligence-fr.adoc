@@ -35,7 +35,7 @@ endif::[]
 
 // +
 ifdef::backend-pdf[]
-image::regression-line.png[pdfwidth="100%", align="center", title="A linear regression", book="keep"]
+image::regression-line.png[pdfwidth="100%", align="center", title="A linear regression"]
 endif::[]
 
 // +
@@ -352,7 +352,7 @@ Pour effectuer toute la chaîne de traitement de données, une grande variété 
 // +
 Les compétences d'une équipe de ((data scientist)) sont souvent représentées comme la réunion de trois domaines distincts :
 
-image::conway.png[pdfwidth="40%", align="center", title="Le Diagramme de Venn de la science des données par Drew Conway", book="keep"]
+image::conway.png[pdfwidth="40%", align="center", title="Le Diagramme de Venn de la science des données par Drew Conway"]
 
 Ce diagramme met en évidence un point important : la science des données n’est pas simplement un ensemble de compétences en informatique et en mathématiques.
 Une "connaissance du domaine" ou "expertise métier" est également requise: des personnes connaissant parfaitement le contexte organisationnel et la problématique métier sous-jacente.

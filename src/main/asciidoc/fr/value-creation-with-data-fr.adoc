@@ -27,9 +27,17 @@ Ce sont plutôt des pistes de réflexion sur la façon dont la donnée contribue
 image::prediction.jpg[pdfwidth="25%", align="center",title="prediction"]
 
 === a. Entreprises qui créent des services sur cette base
-1. Prédire les délits image:predpol.png[pdfwidth="100", width="100", book="keep"]
-2. Prédire qu'un deal va se faire image:tilkee.png[pdfwidth="100", width="100", book="keep"]
-3. Maintenance prédictive image:cat.jpg[pdfwidth="100", width="100", book="keep"]
+1. Prédire les délits
+
+image::predpol.png[pdfwidth="100", width="100"]
+
+2. Prédire qu'un deal va se faire
+
+image::tilkee.png[pdfwidth="100", width="100"]
+
+3. Maintenance prédictive
+
+image::cat.jpg[pdfwidth="100", width="100"]
 
 === b. Le rôle de la prédiction dans une plateforme
 
@@ -42,17 +50,23 @@ C'est un facteur clé de succès des plateformes car ce faisant, elles peuvent b
 3. Amazon prédit une gestion de stocks optimale, malgré la diversité des fournisseurs
 
 === c. Obstacles et difficultés
-1. Le https://indatalabs.com/blog/data-science/cold-start-problem-in-recommender-systems[((cold start problem))]
-2. Risque de manquer la ((long tail)), ((algorithmic discrimination)), ((stereotyping))
+1. Le https://indatalabs.com/blog/data-science/cold-start-problem-in-recommender-systems[cold start problem]
+2. Risque de manquer la long tail, algorithmic discrimination, stereotyping
 3. Négligence de la nouveauté radicale
 
 == 2. Suggérer
 image::suggestion.jpg[pdfwidth="25%", align="center"]
 
 === a. Entreprises qui créent des services sur cette base
-1. Amazon’s product recommendation system image:amazon.jpg[pdfwidth="100", width="100", book="keep"]
-2. Google’s “Related searches…” image:google.jpg[pdfwidth="100", width="100", book="keep"]
-3. Les recommendations de produits personnalisées sur les tickets de caisse image:auchan.jpg[pdfwidth="100", width="100", book="keep"]
+1. Amazon’s product recommendation system
+
+image::amazon.jpg[pdfwidth="100", width="100"]
+
+2. Google’s “Related searches…”
+
+image::google.jpg[pdfwidth="100", width="100"]
+
+3. Les recommendations de produits personnalisées sur les tickets de caisse image::auchan.jpg[pdfwidth="100", width="100"]
 
 === c. Le rôle de la suggestion dans une plateforme
 
@@ -64,7 +78,7 @@ Cela vient donc améliorer la coordination des acteurs en abaissant les coûts d
 
 
 === b. Obstacles et difficultés
-1. Le ((cold start problem)), gérer la https://doi.org/10.1016/j.knosys.2016.08.014[((sérendipité))] et les http://wwwconference.org/proceedings/www2014/proceedings/p677.pdf[((effets de bulle))].
+1. Le cold start problem, gérer la https://doi.org/10.1016/j.knosys.2016.08.014[sérendipité] et les http://wwwconference.org/proceedings/www2014/proceedings/p677.pdf[effets de bulle].
 
 
 == 3. Curation
@@ -74,10 +88,21 @@ image::curation.jpg[pdfwidth="25%", align="center"]
 
 Il est intéressant de noter que *tous les exemples suivants sont proches d'un modèle de plateforme*, ce qui indique que la curation serait au coeur de la notion de plateforme.
 
-1. ((Clarivate Analytics)) curating metadata(((data, data curation))) from scientific publishing image:crv_logo_rgb_rev.png[pdfwidth="100", width="100", book="keep"]
-2. ((Nielsen)) and IRI curating and selling retail data image:nielsen.jpg[width="100"] image:iri.jpg[pdfwidth="100", width="100", book="keep"]
-3. ImDB curating and selling movie data image:imdb.jpg[pdfwidth="100", width="100", book="keep"]
-4. NomadList providing practical info on global cities for nomad workers image:nomadlist.jpg[pdfwidth="100", width="100", book="keep"]
+1. ((Clarivate Analytics)) curating metadata(((data, data curation))) from scientific publishing
+
+image::crv_logo_rgb_rev.png[pdfwidth="100", width="100"]
+
+2. ((Nielsen)) and IRI curating and selling retail data image:nielsen.jpg[width="100"]
+
+image::iri.jpg[pdfwidth="100", width="100"]
+
+3. ImDB curating and selling movie data
+
+image::imdb.jpg[pdfwidth="100", width="100"]
+
+4. NomadList providing practical info on global cities for nomad workers
+
+image::nomadlist.jpg[pdfwidth="100", width="100"]
 
 === b. Obstacles et difficultés
 1. Progrès lent : la curation demande d'organiser un travail sur tâches simples. Les plateformes de crowd working fournissent ce service.
@@ -89,8 +114,14 @@ Il est intéressant de noter que *tous les exemples suivants sont proches d'un m
 image::enrich.jpg[pdfwidth="25%", align="center",width="500"]
 
 === a. Entreprises qui créent des services sur cette base
-1. Selling methods and tools to enrich datasets image:watson.png[pdfwidth="100", width="100", book="keep"]
-2. Selling aggregated indicators image:edf.jpg[pdfwidth="100", width="100", book="keep"]
+1. Selling methods and tools to enrich datasets
+
+image::watson.png[pdfwidth="100", width="100"]
+
+2. Selling aggregated indicators
+
+image::edf.jpg[pdfwidth="100", width="100"]
+
 3. Selling credit scores
 
 === Obstacles and difficulties
@@ -102,8 +133,14 @@ image::enrich.jpg[pdfwidth="25%", align="center",width="500"]
 image::rank.jpg[pdfwidth="25%", align="center",width="500"]
 
 === Examples of companies
-1. Search engines ranking results image:google.jpg[pdfwidth="100", width="100", book="keep"]
-2. Yelp, Tripadvisor, etc… which rank places image:tripadvisor.jpg[pdfwidth="100", width="100", book="keep"]
+1. Search engines ranking results
+
+image::google.jpg[pdfwidth="100", width="100"]
+
+2. Yelp, Tripadvisor, etc… which rank places
+
+image::tripadvisor.jpg[pdfwidth="100", width="100"]
+
 3. Any system that needs to filter out best quality entities among a crowd of candidates
 
 === Obstacles and difficulties
@@ -115,8 +152,10 @@ image::rank.jpg[pdfwidth="25%", align="center",width="500"]
 image::muffin.jpg[pdfwidth="25%", align="center",width="500"]
 
 === Examples of companies
-1. Tools for discovery / exploratory analysis by ((segmentation))
-2. Diagnostic tools (spam or not? buy, hold or sell? healthy or not?) image:medimsight.png[pdfwidth="100", width="100", book="keep"]
+1. Tools for discovery / exploratory analysis by segmentation
+2. Diagnostic tools (spam or not? buy, hold or sell? healthy or not?)
+
+image::medimsight.png[pdfwidth="100", width="100"]
 
 === Obstacles and difficulties
 1. Evaluating the quality of the comparison
@@ -127,23 +166,37 @@ image::muffin.jpg[pdfwidth="25%", align="center",width="500"]
 image::generate.jpg[pdfwidth="25%", align="center"]
 
 === Examples of companies
-1. Intelligent BI with https://www.aiden.ai/[Aiden] image:aiden.png[pdfwidth="100", width="100", book="keep"]
-2. https://wit.ai/[wit.ai], the ((chatbot)) by FB image:wit.png[pdfwidth="100", width="100", book="keep"]
-//+
-3. https://www.cxcompany.com/digitalcx/[Virtual assistants] image:cx.jpg[pdfwidth="100", width="100", book="keep"]
-4. https://deepart.io/[Image generation] image:deepart.png[pdfwidth="100", width="100", book="keep"](((image generation)))
-//+
-5. Close-to-real-life https://deepmind.com/blog/wavenet-generative-model-raw-audio/[((speech synthesis))] image:google.jpg[pdfwidth="100", width="100", book="keep"]
-6. Generating realistic car models from a few parameters by https://www.autodeskresearch.com/publications/exploring_generative_3d_shapes[Autodesk]: image:autodesk.png[pdfwidth="100", width="100", title="Autodesk", book="keep"]
+1. Intelligent BI with https://www.aiden.ai/[Aiden]
 
-//+
+image::aiden.png[pdfwidth="100", width="100"]
+
+2. https://wit.ai/[wit.ai], the ((chatbot)) by FB 
+
+image::wit.png[pdfwidth="100", width="100"]
+
+3. https://www.cxcompany.com/digitalcx/[Virtual assistants]
+
+image::cx.jpg[pdfwidth="100", width="100"]
+
+4. https://deepart.io/[Image generation]
+
+image::deepart.png[pdfwidth="100", width="100"]
+
+5. Close-to-real-life https://deepmind.com/blog/wavenet-generative-model-raw-audio/[speech synthesis]
+
+image::google.jpg[pdfwidth="100", width="100"]
+
+6. Generating realistic car models from a few parameters by https://www.autodeskresearch.com/publications/exploring_generative_3d_shapes[Autodesk]
+
+image::autodesk.png[pdfwidth="100", width="100", title="Autodesk"]
+
 A video on the generation of car models by Autodesk:
 
 video::25xQs0Hs1z0[youtube]
 
 === Obstacles and difficulties
 1. Should not create a failed product / false expectations
-2. Both classic (think of image:clippy.jpg[pdfwidth="50", width="50", book="keep"]) and frontier science: not sure where it’s going
+2. Both classic (think of image:clippy.jpg[pdfwidth="50", width="50"]) and frontier science: not sure where it’s going
 
 == Combos
 
@@ -153,7 +206,7 @@ image::https://docs.google.com/drawings/d/e/2PACX-1vSZ17KjLwMvyxd1K1PcsjHVYoFKum
 endif::[]
 
 ifdef::backend-pdf[]
-image::data-driven-value-creation.png[pdfwidth="100%", align="center", title="Combinations", book="keep"]
+image::data-driven-value-creation.png[pdfwidth="100%", align="center", title="Combinations"]
 endif::[]
 
 

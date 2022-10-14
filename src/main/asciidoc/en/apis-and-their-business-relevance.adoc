@@ -136,7 +136,7 @@ Another example:
 https://twitter.com/levelsio/status/880241628580937728?lang=en[Peter Levels] demonstrated the potential of APIs by building a "Luggage delivery service" just with existing apps connected together via their APIs.
 Without a line of code:
 
-image::luggage-api.jpg[align="center", title="Building a world wide luggage delivery service without code", pdfwidth="25%", width= 350, book="keep"]
+image::luggage-api.jpg[align="center", title="Building a world wide luggage delivery service without code", pdfwidth="25%", width= 350]
 
 This service is designed by organizing several sub-services, which coordinate by communicating via their APIs.
 //+
@@ -212,8 +212,7 @@ As a result, a large number of services associated to APIs have developed to cat
 
 <<<<
 
-//+
-image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui", book="keep"]
+image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui"]
 
 == To go further
 
@@ -222,10 +221,6 @@ image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API lan
 
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
 
-image:round_portrait_mini_150.png[align="center", role="right"]
+image::round_portrait_mini_150.png[align="center", role="right"]
 
-This course is made by Clement Levallois.
-
-Discover my other courses in data / tech for business: https://www.clementlevallois.net
-
-Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]
+Discover https://www.clementlevallois.net[my other courses in data / tech for business] or get in touch via Twitter: https://www.twitter.com/seinecle[seinecle]

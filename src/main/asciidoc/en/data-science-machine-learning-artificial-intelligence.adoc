@@ -34,7 +34,7 @@ ifndef::backend-pdf[]
 endif::[]
 
 ifdef::backend-pdf[]
-image::regression-line.png[pdfwidth="100%", align="center", title="A linear regression", book="keep"]
+image::regression-line.png[pdfwidth="100%", align="center", title="A linear regression"]
 endif::[]
 
 // +
@@ -110,7 +110,7 @@ A key illustration of the difference between statistics and machine learning can
 // +
 Graphic cards (also called GPUs: graphics processing units) are these electronic boards full of chips found inside a computer, which are used for the display of images and videos on computer screens:
 
-image::gpu.jpg[pdfwidth="50%", align="center", title="A graphic card sold by NVidia - a leading manufacturer", width="300", book="keep"]
+image::gpu.jpg[pdfwidth="50%", align="center", title="A graphic card sold by NVidia - a leading manufacturer", width="300"]
 
 In the 1990s, video gaming developed a lot from arcades to desktop computers. Game developers created computer games showing more and more complex scenes and animations. (see https://youtu.be/3UTdxI2IEp0[an evolution of graphics], and https://www.youtube.com/watch?v=Rywkv7PCYDM[advanced graphics games in 2017]).
 
@@ -244,7 +244,7 @@ Now, when you get new pictures of cats and dogs (the *fresh set*), applying the 
 // +
 Supervised learning is currently the most popular family of machine learning and obtains excellent results especially in image recognition, even though some cases remain hard to crack:
 
-image::muffin.jpg[pdfwidth="60%", align="center", title="A hard test case for supervised learning", width=400, book="keep"]
+image::muffin.jpg[pdfwidth="60%", align="center", title="A hard test case for supervised learning", width=400]
 
 (https://www.freecodecamp.org/news/chihuahua-or-muffin-my-search-for-the-best-computer-vision-api-cbda4d6b425d/[source])
 
@@ -279,7 +279,7 @@ this is a very hard book to read as it covers three disciplines in depth.
 The biological mechanisms of decision making it describes can be inspiring to design new computational approaches.
 ====
 
-image::glimcher.jpg[pdfwidth="40%", align="center",title="Foundations of Neuroeconomics by Paul Glimcher - 2010", width="250", book="keep"]
+image::glimcher.jpg[pdfwidth="40%", align="center",title="Foundations of Neuroeconomics by Paul Glimcher - 2010", width="250"]
 
 Besides pigeons, reinforcement learning can be applied to any kind of "expert agents".
 
@@ -353,13 +353,13 @@ Machine learning is one of the steps in the broader chain of steps in ((data pro
 The chain of data processing consists in collecting data, storing it, analyzing it to discover some isnsights, and finally delivering a result.
 This chain of processing was not invented in the 2000s, and has ressemblance to the concept of https://en.wikipedia.org/wiki/Data_mining#Process[kdd]: "((Knowledge Discovery in Databases))" from the 1990s:
 
-image::kdd.png[align="center", title="KDD - knowledge discovery in databases", width=500, book="keep"]
+image::kdd.png[align="center", title="KDD - knowledge discovery in databases", width=500]
 
 More recent representations of the steps in data processing have been suggested, making room for the role of ((data visualization)):
 
 -> see https://image.slidesharecdn.com/datavisualizationforbusiness-141017095602-conversion-gate01/95/data-visualization-for-business-13-638.jpg?cb=1414060400[the information design process by Ben Fry]((("Fry, Ben"))) and this http://blogger.ghostweather.com/2013/11/data-vis-consulting-advice-for-newbies.html[data visualization workflow by Moritz Stefaner]((("Stefaner, Moritz"))):
 
-image::stefaner.png[pdfwidth="90%", align="center", title="data visualization workflow by Moritz Stefaner", width=500, book="keep"]
+image::stefaner.png[pdfwidth="90%", align="center", title="data visualization workflow by Moritz Stefaner", width=500]
 
 - *Machine learning* is one of the techniques that intervenes at the step of "Data mining".
 - *Data science* designates either the "data mining" step (when it is used narrowly), or the whole data processing chain (when it is used broadly).
@@ -374,7 +374,7 @@ To perform the entire chain of data processing, a large variety of skills is nee
 
 The skills of a ((data scientist)) are often represented as the meeting of three separate domains:
 
-image::conway.png[pdfwidth="40%", align="center", title="A diagram representing data science by Drew Conway", book="keep"]
+image::conway.png[pdfwidth="40%", align="center", title="A diagram representing data science by Drew Conway"]
 
 This diagram makes an important point: data science is not just a set of IT and maths skills.
 "Substantive expertise", also known as "domain knowledge", is also required: people who know intimately  about the context of the application being developed.

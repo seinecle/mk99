@@ -129,7 +129,7 @@ Grâce à l'API, il est désormais plus facile d'ajouter des blocs logiciels et 
 // +
 Un autre exemple significatif est l'application imaginée par https://levels.io/[Peter Levels]: un service mondial de livraison de bagages, porte à porte, conçu sans une ligne de code:
 
-image::luggage-api.jpg[align="center", title="Un service de livraison de bagages porte à porte - conçu sans une ligne de code", pdfwidth="25%", width= 350, book="keep"]
+image::luggage-api.jpg[align="center", title="Un service de livraison de bagages porte à porte - conçu sans une ligne de code", pdfwidth="25%", width= 350]
 
 Ce service est conçu en organisant plusieurs sous-services, qui se coordonnent en communiquant via leurs APIs.
 
@@ -208,7 +208,7 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 
 <<<<
 
-image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui", book="keep"]
+image::api-landscape-2017.jpg[pdfwidth="90%", align="center", title="The API landscape in 2017 by Mehdi Medjaoui"]
 
 == Des vidéos simples sur le sujet
 

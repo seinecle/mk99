@@ -8,8 +8,8 @@ last modified: {docdate}
 :iconsfont:   font-awesome
 :revnumber: 1.0
 :example-caption!:
-:sourcedir: ../../../main/java
 :imagesdir: images
+
 
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
@@ -125,12 +125,12 @@ ____
 [[data-inventory]]
 Where is data located? An inventory must be made. From Douglas Laney's https://www.amazon.com/Infonomics-Monetize-Information-Competitive-Advantage/dp/1138090387/ref=sr_1_1?ie=UTF8&qid=1536573809&sr=8-1&keywords=infonomics[Infonomics]:
 
-image::infonomics_1.jpg[pdfwidth="80%", align="center", title="Information Asset Inventory", book="keep"]
+image::infonomics_1.jpg[pdfwidth="80%", align="center", title="Information Asset Inventory"]
 
 As highlighted in the quote above, not many companies put in place a "data management" to make sure data is known, listed of good quality and actionable.
 An interesting positive exception: Uber has put in place a "databook" storing the metadata about the datasets in the company:
 
-image::uber-databook.png[pdfwidth="80%", align="center", title="Databook by Uber: making medatada searchable and usable", book="keep"]
+image::uber-databook.png[pdfwidth="80%", align="center", title="Databook by Uber: making medatada searchable and usable"]
 
 //+
 Employees can search this database to discover and access the data they need.
@@ -160,7 +160,7 @@ image::tweet.png[align="center",book="keep"]
 === b. Tabular data
 *Tabular data*((( data, tabular))) is a common way to handle datasets, by organizing it in lines and columns:
 
-image::table.png[pdfwidth="100%", align="center", title="tabular data", book="keep"]
+image::table.png[pdfwidth="100%", align="center", title="tabular data"]
 
 === c. First party, second party and third party data
 - *First party data*(((data, "first party data"))): the data generated through the activities of your own organization.

@@ -119,7 +119,7 @@ Quels types d'opérations peuvent être externalisés vers le cloud?
 Les entreprises peuvent ne déléguer que l'infrastructure informatique de base ou les opérations informatiques les plusau coeur de leurs activités.
 Ces différents degrés peuvent être décrits avec le *"modèle de pizza"*  (source: https://www.linkedin.com/pulse/20140730172610-9679881-pizza-as-a-service/[source]):
 
-image::pizza-as-a-service.jpg[align = "center", title = "Pizza as a service", book="keep"]
+image::pizza-as-a-service.jpg[align = "center", title = "Pizza as a service"]
 
 Ce schéma montre qu'en tant qu'entreprise, vous pouvez soit exécuter toutes les opérations vous-même ("made at home"), soit tout déléguer ("diner au restaurant").
 Chacun de ces degrés d'externalisation a un nom:

@@ -91,7 +91,7 @@ La mission en BI consiste essentiellement à réaliser des visualisations « au 
 Rien d'extraordinaire ici : histogrammes, camemberts (souvent en 3D comme dans l'illustration ci-dessus, ce qui est mauvais) et graphiques linéaires assemblés dans des tableaux de bord, vendus par des entreprises plus expérimentées dans le développement logiciel qu'en graphisme.
 
 === d. Et les SIG
-image::formatted/gis.jpg[align = "center"]
+image::gis.jpg[align = "center"]
 
 Les ((Système d'information Géolocalisés (SIG))) (GIS en anglais) peuvent prétendre détenir la plus longue tradition de visualisation des données.
 C'est après tout leur fonction première de dessiner des cartes, à partir de ((données géolocalisées)).
@@ -228,7 +228,7 @@ Ce type de carte apporte: une interaction, une conception sur mesure et, surtout
 ==== ii. Les réseaux
 En termes de réseaux, un réseau typique pré-dataviz ressemblerait à ceci:
 
-image::formatted/ucinet.jpg[align ="center",width="500"]
+image::ucinet.jpg[align ="center",width="500"]
 
 La dataviz a apporté interaction, interactions Web:
 
@@ -270,7 +270,7 @@ Le sens de l'esthétique et la particularité des jeux de données font de chaqu
 // +
 L'un des meilleurs exemples de conception simple et créative est celui de Hint.fm:
 
-image::formatted/windmap.jpg[align = "center", width = "500"]
+image::windmap.jpg[align = "center", width = "500"]
 
 (version en ligne : http://hint.fm/wind/)
 
@@ -295,14 +295,14 @@ image::nielsen-viz.jpg[align = "center"]
 
 Depuis 2012 environ, https://www.ge.com/[General Electric] s'associe à https://fathom.info/[Fathom], l'agence créée par Ben Fry (co-créateur de Processing!) pour créer des visualisations en rapport à leur identité visuelle, avec quelques réalisations impressionnantes :
 
-image::formatted/ge.jpg[align = "center"]
+image::ge.jpg[align = "center"]
 
 (URL en direct: https://fathom.info/notebook/2124/)
 
 // +
 Et en 2015, vous savez que la dataviz est complètement stabilisée lorsque vous voyez un panel avec Chelsea Clinton :
 
-image::formatted/chelsea.jpg[align = "center"]
+image::chelsea.jpg[align = "center"]
 
 (version en ligne : https://www.youtube.com/watch?v=YFrmQDCpgxs - le panel est avec Ben Fry).
 

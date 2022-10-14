@@ -46,7 +46,7 @@ It is not a given. Instead, this is a design made of multiple primary data sourc
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/e/2PACX-1vS66crjtVZJl7wZs6VJuuGah31Mrkjp570-runMXm9UPljNxzGjnjhqFHxC5xDlQJgZYczKeTQrmeAm/pub?w=1179&h=794[align="center", title="Multiple sources of customer data", book="keep"]
+image::https://docs.google.com/drawings/d/e/2PACX-1vS66crjtVZJl7wZs6VJuuGah31Mrkjp570-runMXm9UPljNxzGjnjhqFHxC5xDlQJgZYczKeTQrmeAm/pub?w=1179&h=794[align="center", title="Multiple sources of customer data"]
 
 //ST: !
 > Analysts often spend 50-80% of their time preparing and transforming data sets before they begin more formal analysis work.
@@ -155,11 +155,11 @@ Customers increasingly expect:
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/e/2PACX-1vRTlm7CB2q96F0PzKdaCr-M2EKPwbdgxx1bde4uIBBy3Twv5eOZMJ1iTHvAKdWa14ETHHflutAkNOjj/pub?w=1426&h=871[pdfwidth="80%", align="center", title="Before - a couple of data sources across a few channels", book="keep"]
+image::https://docs.google.com/drawings/d/e/2PACX-1vRTlm7CB2q96F0PzKdaCr-M2EKPwbdgxx1bde4uIBBy3Twv5eOZMJ1iTHvAKdWa14ETHHflutAkNOjj/pub?w=1426&h=871[pdfwidth="80%", align="center", title="Before - a couple of data sources across a few channels"]
 
 //ST: !
 
-image::https://docs.google.com/drawings/d/e/2PACX-1vRG0mporN7EVk-PRPujhmyneQ7r7Cy9NyqyqTsu_G7OUTrK81BaeEmZIOBuU6-va9zxtNKt0NAZMt77/pub?w=1426&h=871[pdfwidth="80%", align="center", title="Now - many data sources across a variety of channels", book="keep"]
+image::https://docs.google.com/drawings/d/e/2PACX-1vRG0mporN7EVk-PRPujhmyneQ7r7Cy9NyqyqTsu_G7OUTrK81BaeEmZIOBuU6-va9zxtNKt0NAZMt77/pub?w=1426&h=871[pdfwidth="80%", align="center", title="Now - many data sources across a variety of channels"]
 
 //ST: !
 

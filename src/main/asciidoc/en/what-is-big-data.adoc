@@ -11,6 +11,7 @@ last modified: {docdate}
 :imagesdir: images
 
 
+
 :title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
 
 image::EMLyon_logo_corp.png[width="242" align="center"]
@@ -20,7 +21,7 @@ image::EMLyon_logo_corp.png[width="242" align="center"]
 
 == 1. Big data is a mess
 
-image::ariely.png[align="center", title="Facebook post by Dan Ariely in 2013", book="keep"]
+image::ariely.png[align="center", title="Facebook post by Dan Ariely in 2013"]
 
 Jokes aside, defining big data and what it covers needs a bit of precision. Let's bring in some clarity.
 
@@ -60,7 +61,7 @@ This is typically much harder for software to process, hence to analyze.
 //+
 To summarize, think of structured data as as anything that can be represented as well organized tables of numbers and short pieces of text with the expected format, size, and conventions of writing: phonebooks, accounting books, governmental statistics...
 
-image::book.png[align="center", title="A book of accounts showing structured data", book="keep"]
+image::book.png[align="center", title="A book of accounts showing structured data"]
 
 ==== B - Unstructured data
 *Unstructured data*(((unstructured data))) refers to datasets made of "unruly" items: text of any length, without proper categorization, encoded in different formats, including possibly pictures, sound, geographical coordinates and what not...
@@ -68,7 +69,7 @@ image::book.png[align="center", title="A book of accounts showing structured dat
 //+
 These datasets are much harder to process and analyze, since they are full of exceptions and differences. But they are carry typically rich information: free text, information recorded "in the wild"...
 
-image::unstructured-data.png[align="center", title="Structured vs unstructured data", book="keep"]
+image::unstructured-data.png[align="center", title="Structured vs unstructured data"]
 
 === *V* for Velocity
 In a nutshell, http://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/[the speed of creation and communication of data is accelerating]:
@@ -120,15 +121,15 @@ So, in reaction to large, unstructured and badly curated datasets with low value
 == 4. Where did big data come from?
 === a. The digitalization of the economy generated new volumes of data
 
-image::https://docs.google.com/drawings/d/e/2PACX-1vSCKXAZC19RpcJCM-PmGx3t95gmqy__EcTJMStPun00im1NOjyTWLpvwa1c4KLTwPeibcMk_rZDUswI/pub?w=1440&h=1080[align="center", title="Movie theater vs Netflix", book="keep"]
+image::https://docs.google.com/drawings/d/e/2PACX-1vSCKXAZC19RpcJCM-PmGx3t95gmqy__EcTJMStPun00im1NOjyTWLpvwa1c4KLTwPeibcMk_rZDUswI/pub?w=1440&h=1080[align="center", title="Movie theater vs Netflix"]
 
 === b. Computers became more powerful
 
-image::https://docs.google.com/drawings/d/e/2PACX-1vSH02P_ShpoDfUQBzE2AxHvg6W2FCey5Oe7ifw-1YDpbUVMI7po227HuqNh1vgIOJIb0s2PbbWkhl8N/pub?w=1440&h=1080[align="center", title="The law of Moore", book="keep"]
+image::https://docs.google.com/drawings/d/e/2PACX-1vSH02P_ShpoDfUQBzE2AxHvg6W2FCey5Oe7ifw-1YDpbUVMI7po227HuqNh1vgIOJIb0s2PbbWkhl8N/pub?w=1440&h=1080[align="center", title="The law of Moore"]
 
 === c. Storing data became cheaper every year
 
-image::https://docs.google.com/drawings/d/e/2PACX-1vRzSlhst7wf_9MYiyiKkQlqfxMt9VGPl-ezHTDM-Oi2MRRVmJYkFqs0otxUQYYSRKPY2WHSHaXsrXpU/pub?w=1440&h=1080[align="center", title="Decreasing costs of data storage", book="keep"]
+image::https://docs.google.com/drawings/d/e/2PACX-1vRzSlhst7wf_9MYiyiKkQlqfxMt9VGPl-ezHTDM-Oi2MRRVmJYkFqs0otxUQYYSRKPY2WHSHaXsrXpU/pub?w=1440&h=1080[align="center", title="Decreasing costs of data storage"]
 
 === d. The mindset changed as to what "counts" as data
 * Unstructured data (see above for definition of "unstructured") was usually not stored: it takes a lot space, and software to query it was not sufficiently developed.
@@ -147,7 +148,7 @@ Until then, most of the software was "closed source": you buy a software *withou
 === f. Hype kicked in
 The http://www.gartner.com/technology/research/methodologies/hype-cycle.jsp[((Gartner hype cycle))] is a tool measuring the maturity of a technology, differentiating expectations from actual returns:
 
-image::https://docs.google.com/drawings/d/e/2PACX-1vREam0xnMnyCm_2suQKP-jQnXlmoNWHHcE1BqrGZLa3fjprE8WqqaZQpU7lDINYuxwthVYaokryOYDG/pub?w=990&h=929[align="center", title="Gartner Hype Cycle for 2014", book="keep"]
+image::https://docs.google.com/drawings/d/e/2PACX-1vREam0xnMnyCm_2suQKP-jQnXlmoNWHHcE1BqrGZLa3fjprE8WqqaZQpU7lDINYuxwthVYaokryOYDG/pub?w=990&h=929[align="center", title="Gartner Hype Cycle for 2014"]
 
 This graph shows the pattern that all technologies follow along their lifetime:
 
@@ -174,7 +175,7 @@ In 2014, big data was near the top of the curve: it was getting a lot of attenti
 //+
 In 2017, "big data" is still on top of hyped technologies, but is broken down in "deep learning" and "machine learning". Note also the "Artificial General Intelligence" category:
 
-image::https://docs.google.com/drawings/d/e/2PACX-1vRC3kq-lAcPuWT-ELG5RWoX7naYrVMM_Ukt2bQ2RGbuEGHk83Y-BLjeCKgkjlXygixtM-mAOQaRF5hN/pub?w=987&h=803[align="center", title="Gartner Hype Cycle for 2017", book="keep"]
+image::https://docs.google.com/drawings/d/e/2PACX-1vRC3kq-lAcPuWT-ELG5RWoX7naYrVMM_Ukt2bQ2RGbuEGHk83Y-BLjeCKgkjlXygixtM-mAOQaRF5hN/pub?w=987&h=803[align="center", title="Gartner Hype Cycle for 2017"]
 
 === g. Big data transforms industries, and has become an industry in itself
 Firms active in "Big data" divide in many sub-domains: the industry to manage the IT infrastructure for big data, the consulting firms, software providers, industry-specific applications, etc...
@@ -183,7 +184,7 @@ https://twitter.com/mattturck[Matt Turck, VC at FirstMarkCap], creates every yea
 
 <<<<
 
-image::Matt-Turck-FirstMark-2017-Big-Data-Landscape.png[pdfwidth="100%", align="center", title="Big data landscape for 2017", book="keep"]
+image::Matt-Turck-FirstMark-2017-Big-Data-Landscape.png[pdfwidth="100%", align="center", title="Big data landscape for 2017"]
 
 You can find a https://mattturck.com/bigdata2017/[high res version of the Big data panorama], an Excel sheet version, and a very interesting comment on this website: https://mattturck.com/bigdata2017/
 
@@ -196,7 +197,7 @@ The *IoT*(((IoT - Internet of things))) is used to *do* things (display informat
 Hence, the development of *connected objects*(((IoT - Internet of things))) will lead to a tremendous increase in the volume of data collected.
 
 === b. "big data" gains new importance with artificial intelligence
-image::gtrends.png[pdfwidth="100%", align="center", title="Google searches for big data, machine learning and AI", book="keep"]
+image::gtrends.png[pdfwidth="100%", align="center", title="Google searches for big data, machine learning and AI"]
 
 *Artificial intelligence*(((artificial intelligence))) (AI) enables a computer to achieve results similar or better than what humans can do: play chess, guess which objects are visible on a picture, drive a vehicule, ...
 //+

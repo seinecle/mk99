@@ -118,10 +118,10 @@ image::https://docs.google.com/drawings/d/e/2PACX-1vSCKXAZC19RpcJCM-PmGx3t95gmqy
 
 === b. Les ordinateurs sont devenus plus puissants
 
-image::https://docs.google.com/drawings/d/e/2PACX-1vSH02P_ShpoDfUQBzE2AxHvg6W2FCey5Oe7ifw-1YDpbUVMI7po227HuqNh1vgIOJIb0s2PbbWkhl8N/pub?w=1440&h=1080[align = "center", title="La loi de Moore", book="keep"]
+image::https://docs.google.com/drawings/d/e/2PACX-1vSH02P_ShpoDfUQBzE2AxHvg6W2FCey5Oe7ifw-1YDpbUVMI7po227HuqNh1vgIOJIb0s2PbbWkhl8N/pub?w=1440&h=1080[align = "center", title="La loi de Moore"]
 
 === c. Le stockage des données est devenu moins cher chaque année
-image::https://docs.google.com/drawings/d/e/2PACX-1vRzSlhst7wf_9MYiyiKkQlqfxMt9VGPl-ezHTDM-Oi2MRRVmJYkFqs0otxUQYYSRKPY2WHSHaXsrXpU/pub?w=1440&h=1080[align="center", title="Réduction des coûts de stockage des données" , book="keep"]
+image::https://docs.google.com/drawings/d/e/2PACX-1vRzSlhst7wf_9MYiyiKkQlqfxMt9VGPl-ezHTDM-Oi2MRRVmJYkFqs0otxUQYYSRKPY2WHSHaXsrXpU/pub?w=1440&h=1080[align="center", title="Réduction des coûts de stockage des données" ]
 
 === d. L'état d'esprit a changé sur ce qui "compte" comme données
 
@@ -192,7 +192,7 @@ L' *IoT*(((IoT - Internet des objets))) est utilisé pour *faire* des choses (af
 Ainsi, le développement des *objets connectés*(((IoT - Internet des objets))) conduira à une augmentation considérable du volume de données collectées.
 
 === b. le "big data" gagne en importance avec l'intelligence artificielle
-image::gtrends.png[pdfwidth="100%", align="center", title="Recherches Google pour les termes big data - machine learning et IA", book="keep"]
+image::gtrends.png[pdfwidth="100%", align="center", title="Recherches Google pour les termes big data - machine learning et IA"]
 
 *L'intelligence artificielle*(((intelligence artificielle))) (IA) permet à un ordinateur d'obtenir des résultats similaires ou supérieurs à ce que peuvent faire les humains: jouer aux échecs, deviner quels objets sont visibles sur une photo, conduire un véhicule, ...
 // +

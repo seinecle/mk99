@@ -98,7 +98,7 @@ Many overviews of ML techniques tend to have a special category for "clustering 
 
 For example at the bottom right of this chart:
 
-image::ds_techniques_cheatsheet_1.png[align="center", title="https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/[data science techniques grouped in families]"]
+image::ds_techniques_cheatsheet_1.png[align="center", title="https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms"]
 
 Clustering means "finding groups" in the data. This is analogous to "segmenting" in marketing. So the clustering techniques from machine learning can be used for segmentation.
 //+

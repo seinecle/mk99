@@ -142,7 +142,7 @@ Nothing fancy usually there: bar charts, pie charts (often in 3D as in the illus
 === d. And GIS.
 
 //ST: !
-image::formatted/gis.jpg[align="center"]
+image::gis.jpg[align="center"]
 
 //ST: !
 Geographical Information Systems (GIS) may have a claim for the longest tradition in visualizing data.
@@ -335,7 +335,7 @@ What this kind of map brings is: interaction, custom-made design, and most of al
 In terms of networks, a pre-dataviz typical network would look like:
 
 //ST: !
-image::formatted/ucinet.jpg[align="center", width="500"]
+image::ucinet.jpg[align="center", width="500"]
 
 //ST: !
 Dataviz brought interaction, web-based interactions:
@@ -394,7 +394,7 @@ The sense of esthetics and the particularity of the datasets makes of each datav
 One of the best examples of a creative and simple design is this one by Hint.fm:
 
 //ST: !
-image::formatted/windmap.jpg[align="center", width="500"]
+image::windmap.jpg[align="center", width="500"]
 
 (live url: http://hint.fm/wind/)
 
@@ -428,7 +428,7 @@ image::nielsen-viz.jpg[align="center"]
 Since 2012 or so, General Electric partners with Fathom, the agency founded by Ben Fry (co-creator of Processing!) to build visualizations relative to their corporate identity, with some impressive realizations:
 
 //ST: !
-image::formatted/ge.jpg[align="center"]
+image::ge.jpg[align="center"]
 
 //ST: !
 (live url: http://visualization.geblogs.com/visualization/powering/)
@@ -437,7 +437,7 @@ image::formatted/ge.jpg[align="center"]
 And in 2015, you know dataviz has fully stabilized when you see a panel on dataviz with Chelsea Clinton:
 
 //ST: !
-image::formatted/chelsea.jpg[align="center"]
+image::chelsea.jpg[align="center"]
 
 //ST: !
 (live url: https://www.youtube.com/watch?v=YFrmQDCpgxs - the panel is with Ben Fry).
