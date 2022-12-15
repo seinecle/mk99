@@ -1,5 +1,7 @@
 target/
 src/main/asciidoc/subdir/
 properties/
-/target (1)/
-/Levallois Clement Mobile App/nbproject/private/
+*.gsheet
+**/*.gdraw
+**/*.gslide
+_config.yml

@@ -1,0 +1,142 @@
+= A primer on network analysis for business
+Clément Levallois <levallois@em-lyon.com>
+2017-12-08
+
+last modified: {docdate}
+
+:icons!:
+:iconsfont:   font-awesome
+:revnumber: 1.0
+:example-caption!:
+:imagesdir: images
+
+
+:title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
+
+image::EMLyon_logo_corp.png[width="242" align="center"]
+
+//ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
+
+
+== 1. Définitions
+Un réseau est un ensemble de données constitué d'entités [underline]#et de leurs relations#
+
+Les scientifiques utilisent le terme "graphe" pour parler des réseaux.
+
+image::network-1.png[align="center", title="Ceci est un réseau"]
+
+=== a. Réseaux sociaux
+En tant qu'utilisateurs, nous connaissons très bien un type de réseaux - les réseaux sociaux :
+
+image:facebook.png[width=150]
+image:twitter.jpg[width=150]
+image:weibo.png[width=150]
+image:instagram.jpg[width=150]
+image:snapchat.png[width=150]
+image:wechat.jpg[width=150]
+image:linkedin.png[width=150]
+
+.Un réseau social, visualisé
+[link=http://www.minanacheva.com/getting-visual-with-facebook-data/]
+image::colored-network.png[align="center", title="source : http://www.minanacheva.com/getting-visual-with-facebook-data/"]
+
+=== b. Autres réseaux
+Il est important de réaliser que les réseaux couvrent plus que les relations entre humains.
+Par exemple, il est possible d'imaginer un réseau constitué de recettes de cuisine.
+2 ingrédients sont liés s'ils apparaissent fréquemment dans les mêmes recettes.
+
+En scannant toutes les recettes et leurs ingrédients depuis un site de recettes de cuisine, cela donne :
+
+[link=http://arxiv.org/abs/1111.3919]
+image::ingredients-network.png[align="center", title="source : http://arxiv.org/abs/1111.3919"]
+
+Les réseaux sémantiques sont une autre grande catégorie de réseaux.
+La méthode est la même : il faut trouver un moyen de « relier » les mots dans un texte, puis on obtient un réseau.
+
+L'idée générale est la même que dans les recettes de cuisine : 2 termes d'un texte seront connectés dans le réseau s'ils apparaissent fréquemment dans les mêmes paragraphes.
+
+[link=http://www.nature.com/nature/journal/v463/n7278/full/463157a.html]
+image::editorials.png[align="center", title="source : http://www.nature.com/nature/journal/v463/n7278/full/463157a.html"]
+
+=== c. Quelle peut être la taille des réseaux ?
+Avec une augmentation de la puissance de calcul à l'ère du big data et des bases de données NOSQL adéquates (telles que https://neo4j.com/[Neo4J] ou http://orientdb.com/orientdb/[OrientDB]), nous pouvons faire face à d'énormes réseaux:
+
+//+
+Par exemple, https://www.facebook.com/notes/facebook-data-science/anatomy-of-facebook/10150388519243859/[“The Anatomy of the Facebook Social Graph” (2011)]
+
+-> étude de 721 millions d'utilisateurs Facebook actifs et des 69 milliards (!) de liens d'amitié qui les relient.
+
+//+
+Une limite est vite atteinte en termes de visualisation : il est difficile de faire tenir des millions de nœuds sur un écran.
+Dans la visualisation suivante, nous pouvons voir un réseau de 90 000 suédophones et leurs relations sur Twitter. La vue est très encombrée.
+
+(ouvrir la source pour une version interactive)
+
+[link=http://twittercensus.se/graph2015/]
+image::swedish.png[align="center", title="source : http://twittercensus.se/graph2015/"]
+
+=== d. Comment discuter des réseaux ? Un peu de vocabulaire
+image::https://docs.google.com/drawings/d/e/2PACX-1vT4tK-S6mbBjyX9XmMATOJvvbPsDfQGQQ32-Ut6Hh38DqWPH2krIYKJBDSiywIElwkaONFZL-4TbZCn/pub?w=1440&h=1080[align="center",title="Terminology"]
+
+== 2. Réseaux : pour quelle utilisation ?
+=== a. Segmentation et catégorisation
+
+Si un réseau est constitué d'entités et de leurs relations, alors un segment est un sous-groupe d'entités du réseau, qui a une certaine cohésion ou quelque chose en commun.
+
+Ce sous-groupe de nœuds du réseau est souvent appelé une « *communauté* ».
+
+//+
+La détection de communautés dans un réseau, aussi appelée "clustering", consiste à trouver des nœuds qui ont de nombreuses connexions en commun.
+
+//+
+Il s'agit d'une procédure mathématique et algorithmique, mais elle est très simple à comprendre visuellement :
+
+image::https://docs.google.com/drawings/d/e/2PACX-1vTlcblMYHWPHiUrOP6IdnZy5jmHm62FwdaLYIzy_nh62DoMyWkwWFtC1LZXyJgR_08ZNtWIaAVPcD6_/pub?w=1440&h=1080[align="center", title="segmentation with community detection in networks"]
+
+=== b. Trouver des acteurs clés
+
+image::https://docs.google.com/drawings/d/e/2PACX-1vQQupmH_0uXZw51hsmJiD4_9hObQ7dSskXukmF2K7LfnzZuVTXSKCzBZZ_u0V6KY62gf2sFnkkll0pm/pub?w=1440&h=1080[align="center", title="Key players visualized by resizing nodes"]
+
+=== c. comprendre comment l'information se propage
+
+Une société de science des données a créé "Où va mon tweet", qui retrace la propagation d'un tweet donné à travers les retweets.
+//+
+Le service est désormais discontinué mais le mécanisme s'explique :
+
+.https://mfglabs.com/works/where-does-my-tweet-go[WDMTG par MFGLabs]
+image::https://docs.google.com/drawings/d/e/2PACX-1vTNdGzgJnMC9n8qLVB5Nprlej4rRLzZhNltp332q2PdWyNZh4p8_qSwBg87cOIbWWQqXgFE2q2Fozjw/pub?w=1440&h=1080[align="center", title="Where Does my Tweet Go by MFGLabs"]
+
+=== d. Identification des modèles - pour la détection, le contrôle ou le renseignement des fraudes.
+
+Dans la vidéo suivante, on voit les https://www.dnb.nl/en/binaries/Working%20Paper%20418_tcm47-305800.pdf[les banques participant aux prêts inter bancaires en Europe].
+//+
+2 banques sont connectées si l'une prête à l'autre. Le schéma des échanges évolue au fil des ans - les banques se retirent du marché.
+
+video::YvauCrHGWYc[youtube]
+
+Autre exemple : connecter des mesures de performances commerciales apparemment sans rapport avec https://www.oracle.com/solutions/business-analytics/business-intelligence/index.html[Oracle BI] et https://linkurio.us/[Linkurious] :
+
+video::KBIZoUikfwo[youtube]
+
+== 3. Pour aller plus loin
+
+image:golbeck.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Web-Jennifer-Golbeck/dp/0124055311]
+image:nodexl.jpg[width=150,link=https://www.amazon.com/Analyzing-Social-Media-Networks-NodeXL/dp/0123822297]
+image:newman.jpg[width=150,link=https://www.amazon.com/Networks-Introduction-Mark-Newman/dp/0199206651]
+image:barabasi.jpg[width=150,link=https://www.amazon.com/Network-Science-Albert-L-e1szl-f3-Barab-e1si/dp/1107076269]
+
+//+
+Vous pouvez aussi visiter mes tutos sur Gephi, le logiciel leader pour visualiser de grands graphes :
+
+https://seinecle.github.io/gephi-tutorials/
+
+== Contact
+Trouvez des références pour cette leçon, et d'autres leçons, https://seinecle.github.io/mk99/[ici].
+
+image:round_portrait_mini_150.png[align="center", role="right"]
+//+
+Ce cours est réalisé par Clément Levallois.
+
+Découvrez mes autres formations en data/tech for business : https://www.clementlevallois.net
+
+Ou contactez-moi via Twitter : https://www.twitter.com/seinecle[@seinecle]
