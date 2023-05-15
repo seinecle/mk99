@@ -1,0 +1,200 @@
+= Personalization and value creation
+Clément Levallois <levallois@em-lyon.com>
+2017-31-07
+
+last modified: {docdate}
+
+:icons!:
+:iconsfont:   font-awesome
+:revnumber: 1.0
+:example-caption!:
+:imagesdir: images
+
+
+:title-logo-image: EMLyon_logo_corp.png[width="242" align="center"]
+
+image::EMLyon_logo_corp.png[width="242" align="center"]
+
+//ST: 'Escape' or 'o' to see all sides, F11 for full screen, 's' for speaker notes
+
+
+== 1. From segmentation to personalization
+Segmentation helps refine the picture from a mass of data to meaningful subgroups of data points.
+
+Why not go down to extreme segmentation: segments the size of an individual?
+
+//+
+- Major websites do it (Amazon, Yahoo!, Netflix, etc.)
+- Ads providers do it (Facebook)
+- News feed do it (Prismatic, Pulse)
+
+//+
+Advantages: pinpoint accuracy and relevance
+Inconvenient: operational complexity
+
+image::amazon-personalization.png[align="center", title="How is an Amazon page (old version!) personalized"]
+
+== 2. Beyond behavior: tracking individual bodies
+image::https://docs.google.com/drawings/d/e/2PACX-1vRYaz45EZcZ_qqodnQvJ0Mfn-0LLx-42d5hj0wledNfPmU1by3B9vIZVE4ctMpiIVsS-jDoR_SlaFHf/pub?w=1444&h=915[align="center",title="The relation between connected objects and personalization"]
+
+//+
+A list of bodily aspects being measured with examples:
+
+//+
+.Location
+[cols="a,a,a,a,a",options="header"]
+|===============
+|Bodily Measurement       |Device         |Company              |Product
+|Location                 |Mobile phone   |Samsung, Apple, etc. |Phone
+|===============
+
+image::gmap-location-history.png[align="center",width=120]
+
+
+.Movement
+[cols="a,a,a,a,a",options="header"]
+|===============
+|Bodily Measurement       |Device         |Company              |Product
+|Movement                 |Wrist band     |Nike                 |Fuelband
+|===============
+
+image::fuelband.jpg[align="center",width=120]
+
+.Gestures
+[cols="a,a,a,a,a",options="header"]
+|===============
+|Bodily Measurement       |Device         |Company              |Product
+|Gestures                  |Arm band       |Thalmic Labs         |https://www.myo.com/[Myo]
+|===============
+
+image::myo.png[align="center",width=120]
+
+.Weight, heart rate
+[cols="a,a,a,a,a",options="header"]
+|===============
+|Bodily Measurement       |Device         |Company              |Product
+|Weight, heart rate               |Body scale     |Nokia                |https://support.health.nokia.com/hc/en-us/categories/200118207-Smart-Body-Analyzer-WS-50-[Smart Body Analyzer]
+|===============
+
+image::withings.png[align="center",width=120]
+
+.Sleep
+[cols="a,a,a,a,a",options="header"]
+|===============
+|Bodily Measurement       |Device         |Company              |Product
+|Sleep                    |Undermat       |Nokia                |https://support.health.nokia.com/hc/en-us/categories/200189426-Withings-Aura[Aura]
+|===============
+
+image::aura.jpg[align="center",width=120]
+
+.Fingerprint
+[cols="a,a,a,a,a",options="header"]
+|===============
+|Bodily Measurement       |Device         |Company              |Product
+|Fingerprint              |Mobile Phone   |Apple                |iPhone 5
+|===============
+
+image::fingerprint.jpg[align="center",width=120]
+
+.Facial recognition
+[cols="a,a,a,a,a",options="header"]
+|===============
+|Bodily Measurement       |Device         |Company              |Product
+|Facial recognition       |Mobile Phone   |Apple                |iPhone 8
+|===============
+
+image::facial-recognition.jpg[align="center",width=120]
+
+.Emotions
+[cols="a,a,a,a,a",options="header"]
+|===============
+|Bodily Measurement       |Device         |Company              |Product
+|Emotions                 |Camera         |SightCorp            |http://sightcorp.com/crowdsight/[CrowdSight SDK]
+|===============
+
+image::crowdsight.png[align="center",width=120]
+
+video::7V8jrdH5tAQ[youtube]
+
+.Behavior in public places
+[cols="a,a,a,a,a",options="header"]
+|===============
+|Bodily Measurement       |Device             |Company                  |Product
+|Behavior in public areas |Multiple devices   |AGT International        |https://www.agtinternational.com/analytics/iot-analytics/crowd-analytics/[Mega Events Management Solution]
+|Pedestrian traffic       |Cameras            |https://placemeter.com[Placemeter]                         |Placemeter
+|===============
+
+image::agt.png[align="center",width=120]
+
+A description of how AGT monitors large audiences in public events (click on the pic for the full document):
+
+image::agt-2.png[align="center", title="source: https://www.agtinternational.com/wp-content/uploads/2014/10/AGT_AAG_MegaEvent-02Oct2014-2.pdf"]
+
+Video showing how Placemeter monitors pedestrian traffic:
+
+video::rpjJHoJixYA[youtube]
+
+
+== 3. The case of *Nicholas Felton*: constant data monitoring
+=== a. The Feltron reports
+
+image::nicholas_felton3.jpg[align="center", title="Nicholas Felton"]
+
+http://feltron.com[Nicholas Felton] is a designer and data artist who produced printed annual reports from 2005 to 2014.
+
+These reports synthesize his bodily data and social life, which he measures __constantly__ during the year. This practice (pushed to the extreme in this case) belongs to the https://en.wikipedia.org/wiki/Quantified_self[quantified self] movement.
+
+video::QvAFp5j7nRI[youtube]
+
+=== b. Not just Feltron
+Insurance companies are interested in boosting individual health, using connected objects as monitoring devices
+
+image:autodesk.jpg[align="center",title="http://www.forbes.com/sites/parmyolson/2014/06/19/wearable-tech-health-insurance"]
+
+Companies are looking to provide a 360 degree solution to health and well being through constant monitoring:
+
+video::E9jq6XpZjGo[youtube]
+
+Monitoring on health is also a B2B market to achieve "corporate welfare". See link:resources/corporate_wellness_smartdata_nokia.pdf[Nokia's brochure on the topic of health services].
+
+== 4. Issues, limits
+These technologies open a vast number of issues: from data privacy to the redefinition of well-being, and the grey boundary between monitoring and surveillance.
+//+
+A full session of this series is devoted to discussing these issues.
+
+//+
+For the moment, let us just repeat cautionary remarks already mentioned in a different session:
+
+=== a. "personalization" has been blamed for reinforcing "bubbles" or "tribes" views of the world
+
+(http://pubsonline.informs.org/doi/pdf/10.1287/mnsc.2013.1808[paying version] of the paper, free version https://www.researchgate.net/profile/Kartik_Hosanagar/publication/228233814_Will_the_Global_Village_Fracture_Into_Tribes_Recommender_Systems_and_Their_Effects_on_Consumer_Fragmentation/links/0046352960e0b2e12c000000/Will-the-Global-Village-Fracture-Into-Tribes-Recommender-Systems-and-Their-Effects-on-Consumer-Fragmentation.pdf[here]).
+
+//+
+Content personalization is also blamed for favoring political polarization via an "echo chamber effect": social media tend to show me content I already agree with (paying version of the paper http://www.sciencedirect.com/science/article/pii/S0740624X16300375[here], free version https://www.academia.edu/24798528/Political_Polarization_on_Twitter_Implications_for_the_Use_of_Social_Media_in_Digital_Governments?auto=download[here]).
+
+=== b. Personalizing the customer relationship, even when effective, is not inherently a good thing.
+It has been shown that the http://www.coca-colacompany.com/stories/summer-of-sharing-share-a-coke-campaign-rolls-out-in-the-us[Coca-Cola #ShareaCoke campaign] is effective at making more children choose a soda with a label to their name, over a healthy drink (paying version of the study http://onlinelibrary.wiley.com/doi/10.1111/ijpo.12193/abstract[here], free version not available).
+
+=== c. Does personalization always need technology?
+Companies rated with the ((customer)) service do personalization differently: with humans.
+
+//+
+See how ((Zappos)) offers a great service to their customers:
+
+video::vApoQPISmvs[youtube]
+
+(https://www.youtube.com/watch?v=IwE1zb9fiVs[another impactful version here])
+
+//+
+or see (in French) how https://medium.com/@djo/obsession-service-client-captain-train-cb0b91467fd9[Trainline makes its customers happy].
+
+
+== The end
+Find references for this lesson, and other lessons, https://seinecle.github.io/mk99[here].
+
+image:round_portrait_mini_150.png[align="center", role="right"]
+This course is made by Clement Levallois.
+
+Discover my other courses in data / tech for business: https://www.clementlevallois.net
+
+Or get in touch via Twitter: https://www.twitter.com/seinecle[@seinecle]

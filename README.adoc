@@ -1,0 +1,15 @@
+= MK99 - Big data for business
+Clément Levallois <levallois@em-lyon.com>
+2017-07-31
+:revnumber: 1.0
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: ../../main/java]
+
+IoT for Entrepreneurs is a course given to emlyon business school students by Clement Levallois.
+
+Looking for the website of the course? There -> https://seinecle.github.io/mk99/
+
+Here you will find the "raw", original content material for the course.  Stay here if you want to ask a question, or submit corrections to the course. You will need a Github account. Do you have one? Then, "open an issue", which is the way on Github to report a problem, ask a question or just give feedback!
+
+by https://clementlevallois.net[Clément Levallois], Associate Professor at https://www.em-lyon.com[emlyon business school].
