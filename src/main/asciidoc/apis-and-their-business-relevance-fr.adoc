@@ -128,15 +128,22 @@ Salesforce prend une commission sur les ventes réalisées par ces applications 
 === b. Les API ont *accéléré* l'innovation logicielle
 Grâce à l'API, il est désormais plus facile d'ajouter des blocs logiciels et de créer de nouvelles applications, même si ces blocs logiciels proviennent de différents pays ou industries.
 // +
-À titre d'exemple extrême : la police australienne de Victoria a déployé un projet de reconnaissance des véhicules volés grâce à la reconnaissance vidéo des plaques d'immatriculation des voitures circulant dans la rue (les véhicules volés se voient immédiatement reconnaître leurs plaques d'immatriculation). C'est un projet de 86 000 000 $. Un individu a répliqué ce https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9[projet avec seulement 57 lignes de code et une webcam]. Comment? Simplement parce qu'il a pu utiliser un logiciel existant pour la reconnaissance de plaques d'immatriculation, disponible en tant qu'API, au lieu de le re-développer par lui-même.
+À titre d'exemple extrême : la police australienne de Victoria a déployé un projet de reconnaissance des véhicules volés grâce à la reconnaissance vidéo des plaques d'immatriculation des voitures circulant dans la rue (les véhicules volés se voient immédiatement reconnaître leurs plaques d'immatriculation).
+C'est un projet de 86 000 000 $.
 // +
-Un autre exemple significatif est l'application imaginée par https://levels.io/[Peter Levels]: un service mondial de livraison de bagages, porte à porte, conçu sans une ligne de code:
+Un individu a répliqué ce https://medium.freecodecamp.org/how-i-replicated-an-86-million-project-in-57-lines-of-code-277031330ee9[projet avec seulement 57 lignes de code et une webcam].
+Comment?
+Simplement parce qu'il a pu utiliser un logiciel existant pour la reconnaissance de plaques d'immatriculation, disponible en tant qu'API, au lieu de le re-développer par lui-même.
+// +
+Un autre exemple significatif est l'application imaginée par https://levels.io/[Pieter Levels]: un service mondial de livraison de bagages, porte à porte, conçu sans une ligne de code:
 
 image::luggage-api.jpg[align="center", title="Un service de livraison de bagages porte à porte - conçu sans une ligne de code", pdfwidth="25%", width= 350]
 
 Ce service est conçu en organisant plusieurs sous-services, qui se coordonnent en communiquant via leurs APIs.
 
-Comment la communication fonctionne? Qui "orchestre" ces services? Peter utilise https://zapier.com/[Zappier], un service dont le rôle est de faire communiquer ces APIs entre elles.
+Comment la communication entre services est-elle possible, en pratique ?
+Qui "orchestre" ces services? Pieter Levels utilise https://zapier.com/[Zappier], un service dont le rôle est de faire communiquer ces APIs entre elles.
+// +
 
 Au-delà de ces exemples frappants, le leçons à tirer sont:
 
@@ -187,7 +194,6 @@ image::pieterlevelsapi.jpg[align="center",book="keep",title="Pieter Levels expli
 Il faut donc une appréciation fine des usages que l'ouverture d'une API permettra de stimuler.
 Un des effets les plus vertueux est celui d'une *"caisse de résonance"* : en réutilisant notre contenu pour leurs propres objectifs , les utilisateurs de l'API vont sans le vouloir faire la promotion de notre contenu, ce qui en renforce l'efficacité.
 
-
 == 5. L'écosystème des API
 === a. Une multitude d'API
 Pour découvrir de nouvelles API, ou pour faciliter la découverte de vos API, allez sur https://apilist.fun/, https://apislist.com/ ou https://publicapis.io.
@@ -209,7 +215,6 @@ En conséquence, un grand nombre de services associés aux API ont été dévelo
 - comment contrôler et auditer la sécurité des API
 - comment monétiser les API ...
 
-// +
 //+
 https://apilandscape.apiscene.io/[Mehdi Medjaoui] et https://www.apiscene.io/[APIscene] publient un https://apilandscape.apiscene.io/[panorama mis à jour et interactif] des entreprises actives dans l'écosystème des APIs:
 
