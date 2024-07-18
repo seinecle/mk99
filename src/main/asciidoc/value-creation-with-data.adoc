@@ -27,9 +27,12 @@ Rather, these are essential building blocks for a strategy of value creation bas
 image::prediction.jpg[pdfwidth="25%", align="center",title="prediction"]
 
 === a. Examples of companies
-1. Predicting crime image:predpol.png[pdfwidth="100", width="100"]
-2. Predicting deals image:tilkee.png[pdfwidth="100", width="100"]
-3. Predictive maintenance image:cat.jpg[pdfwidth="100", width="100"]
+1. Predicting crime
+image:predpol.png[pdfwidth="100", width="100"]
+2. Predicting deals
+image:tilkee.png[pdfwidth="100", width="100"]
+3. Predictive maintenance
+image:cat.jpg[pdfwidth="100", width="100"]
 
 === b. Obstacles and difficulties
 1. The https://indatalabs.com/blog/data-science/cold-start-problem-in-recommender-systems[cold start problem]
@@ -40,9 +43,12 @@ image::prediction.jpg[pdfwidth="25%", align="center",title="prediction"]
 image::suggestion.jpg[pdfwidth="25%", align="center"]
 
 === a. Examples of companies
-1. Amazon’s product recommendation system image:amazon.jpg[pdfwidth="100", width="100"]
-2. Google’s “Related searches…” image:google.jpg[pdfwidth="100", width="100"]
-3. Retailer’s personalized recommendations image:auchan.jpg[pdfwidth="100", width="100"]
+1. Amazon’s product recommendation system
+image:amazon.jpg[pdfwidth="100", width="100"]
+2. Google’s “Related searches…”
+image:google.jpg[pdfwidth="100", width="100"]
+3. Retailer’s personalized recommendations
+image:auchan.jpg[pdfwidth="100", width="100"]
 
 === b. Obstacles and difficulties
 1. The cold start problem, managing https://doi.org/10.1016/j.knosys.2016.08.014[serendipity] and http://wwwconference.org/proceedings/www2014/proceedings/p677.pdf[filter bubble effects].
@@ -52,10 +58,14 @@ image::suggestion.jpg[pdfwidth="25%", align="center"]
 image::curation.jpg[pdfwidth="25%", align="center"]
 
 === a. Examples of companies
-1. Clarivate Analytics curating metadata(data, data curation) from scientific publishing image:crv_logo_rgb_rev.png[pdfwidth="100", width="100"]
-2. Nielsen and IRI curating and selling retail data image:nielsen.jpg[width="100"] image:iri.jpg[pdfwidth="100", width="100"]
-3. ImDB curating and selling movie data image:imdb.jpg[pdfwidth="100", width="100"]
-4. NomadList providing practical info on global cities for nomad workers image:nomadlist.jpg[pdfwidth="100", width="100"]
+1. Clarivate Analytics curating metadata(data, data curation) from scientific publishing 
+image:crv_logo_rgb_rev.png[pdfwidth="100", width="100"]
+2. Nielsen and IRI curating and selling retail data image:nielsen.jpg[width="100"] 
+image:iri.jpg[pdfwidth="100", width="100"]
+3. ImDB curating and selling movie data
+image:imdb.jpg[pdfwidth="100", width="100"]
+4. NomadList providing practical info on global cities for nomad workers 
+image:nomadlist.jpg[pdfwidth="100", width="100"]
 
 === b. Obstacles and difficulties
 1. Slow progress: curation needs human labor to insure high accuracy, it does not scale the way a computerized process would.
@@ -68,8 +78,10 @@ image::curation.jpg[pdfwidth="25%", align="center"]
 image::enrich.jpg[pdfwidth="25%", align="center",width="500"]
 
 === Examples of companies
-1. Selling methods and tools to enrich datasets image:watson.png[pdfwidth="100", width="100"]
-2. Selling aggregated indicators image:edf.jpg[pdfwidth="100", width="100"]
+1. Selling methods and tools to enrich datasets
+image:watson.png[pdfwidth="100", width="100"]
+2. Selling aggregated indicators
+image:edf.jpg[pdfwidth="100", width="100"]
 3. Selling credit scores
 
 === Obstacles and difficulties
@@ -81,8 +93,10 @@ image::enrich.jpg[pdfwidth="25%", align="center",width="500"]
 image::rank.jpg[pdfwidth="25%", align="center",width="500"]
 
 === Examples of companies
-1. Search engines ranking results image:google.jpg[pdfwidth="100", width="100"]
-2. Yelp, Tripadvisor, etc… which rank places image:tripadvisor.jpg[pdfwidth="100", width="100"]
+1. Search engines ranking results
+image:google.jpg[pdfwidth="100", width="100"]
+2. Yelp, Tripadvisor, etc… which rank places
+image:tripadvisor.jpg[pdfwidth="100", width="100"]
 3. Any system that needs to filter out best quality entities among a crowd of candidates
 
 === Obstacles and difficulties
@@ -95,7 +109,8 @@ image::muffin.jpg[pdfwidth="25%", align="center",width="500"]
 
 === Examples of companies
 1. Tools for discovery / exploratory analysis by segmentation
-2. Diagnostic tools (spam or not? buy, hold or sell? healthy or not?) image:medimsight.png[pdfwidth="100", width="100"]
+2. Diagnostic tools (spam or not? buy, hold or sell? healthy or not?) 
+image:medimsight.png[pdfwidth="100", width="100"]
 
 === Obstacles and difficulties
 1. Evaluating the quality of the comparison
@@ -112,10 +127,8 @@ image::generate.jpg[pdfwidth="25%", align="center"]
 1. Legal framework still being shaped (what about the copyright of the content ChatxGPT has been trained on?)
 2. Still new, no "textbook" on how to use it at its fullest potential
 
-
 == Combos
 image::data-driven-value-creation.png[pdfwidth="100%", align="center", title="Combinations"]
-
 
 == The end
 Find references for this lesson, and other lessons, https://seinecle.github.io/mk99/[here].
